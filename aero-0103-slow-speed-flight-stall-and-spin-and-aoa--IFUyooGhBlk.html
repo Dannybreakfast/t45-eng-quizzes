@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AERO 0103 Slow Speed Flight, Stall and Spin and AOA — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · Aerodynamics</div>
+    <h1>AERO 0103 Slow Speed Flight, Stall and Spin and AOA</h1>
+    <div class="meta">22 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 22</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Aerodynamics</div>
+    <h2 style="margin:0.2rem 0">AERO 0103 Slow Speed Flight, Stall and Spin and AOA</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "T-45 geometric washout is approximately:", "opts": ["0°", "1.5°", "3.5°", "15°"], "ans": 2, "expl": "3.5° washout."}, {"q": "Stall warning (shaker + tone) activates at:", "opts": ["15.0 units", "17.0 units", "21.5 units", "26.0 units"], "ans": 2, "expl": "21.5 units."}, {"q": "Clean stall AOA is about:", "opts": ["21.5 units", "26 units", "29–30 units", "0 units"], "ans": 1, "expl": "~26 units clean (dirty 29–30)."}, {"q": "Steady-state T-45 spins (symmetric stores) are:", "opts": ["Upright only", "Inverted only", "Flat only", "Impossible"], "ans": 1, "expl": "Inverted steady spins (upright incipient unless asymmetric stores)."}, {"q": "If still out of control through 10,000 ft:", "opts": ["Continue troubleshooting", "Add power and climb", "Eject", "Lower gear"], "ans": 2, "expl": "Eject."}, {"q": "On inverted spin recovery, rudder is applied:", "opts": ["With the turn needle", "Full opposite the turn needle", "Neutral only", "Left always"], "ans": 1, "expl": "Full opposite turn needle."}, {"q": "Neutralize lateral stick if airspeed increases through:", "opts": ["85 kt", "120 kt", "160 kt", "250 kt"], "ans": 2, "expl": "160 kt."}, {"q": "Slats extend to about:", "opts": ["5°", "15°", "25°", "50°"], "ans": 1, "expl": "15°."}, {"q": "T-45 wing washout (twist)?", "opts": ["Tip at **3.5° less AOA** than root — tip still flying when root approaches stall CLmax.", "Clean ≈ **26 units**. Dirty ≈ **29–30 units**. Wing drop ~25–30°; nose falls through.", "LEX vortex re-energizes wing BL → controllable flight at much higher AOA / low speed.", "**Inverted only** unless asymmetric stores; upright spins are **incipient** and tend to transition."], "ans": 0, "expl": "Tip at **3.5° less AOA** than root — tip still flying when root approaches stall CLmax."}, {"q": "Slats — travel and stall benefit?", "opts": ["Approach with **speed brakes extended** (higher engine RPM) disrupted stab flow vs Hawk belly brake; vanes make vortex that re-energizes stab BL at approach speeds.", "Small LE strips (on slat / exposed with slat out) disrupt flow to **promote root stall**, counter tip-stall tendency → more even stall progression.", "**Controls neutralize; forcibly center rudder pedals; speed brakes retract; throttle idle.** Then check altitude, AOA, airspeed, turn needle.", "HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop)."], "ans": 3, "expl": "HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop)."}, {"q": "Stall warning triggers and margins?", "opts": ["HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop).", "**Controls neutralize; forcibly center rudder pedals; speed brakes retract; throttle idle.** Then check altitude, AOA, airspeed, turn needle.", "Small LE strips (on slat / exposed with slat out) disrupt flow to **promote root stall**, counter tip-stall tendency → more even stall progression.", "At **21.5 units** (clean & dirty): pedal shaker + undefeatable tone (~**10 kt** warning). Mild buffet ~**1 unit** before stall (~1–2 kt)."], "ans": 3, "expl": "At **21.5 units** (clean & dirty): pedal shaker + undefeatable tone (~**10 kt** warning). Mild buffet ~**1 unit** before stall (~1–2 kt)."}, {"q": "Clean vs dirty stall AOA?", "opts": ["**Inverted only** unless asymmetric stores; upright spins are **incipient** and tend to transition.", "Clean ≈ **26 units**. Dirty ≈ **29–30 units**. Wing drop ~25–30°; nose falls through.", "LEX vortex re-energizes wing BL → controllable flight at much higher AOA / low speed.", "Tip at **3.5° less AOA** than root — tip still flying when root approaches stall CLmax."], "ans": 1, "expl": "Clean ≈ **26 units**. Dirty ≈ **29–30 units**. Wing drop ~25–30°; nose falls through."}, {"q": "Stall strips — purpose?", "opts": ["Small LE strips (on slat / exposed with slat out) disrupt flow to **promote root stall**, counter tip-stall tendency → more even stall progression.", "HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop).", "**Controls neutralize; forcibly center rudder pedals; speed brakes retract; throttle idle.** Then check altitude, AOA, airspeed, turn needle.", "At **21.5 units** (clean & dirty): pedal shaker + undefeatable tone (~**10 kt** warning). Mild buffet ~**1 unit** before stall (~1–2 kt)."], "ans": 0, "expl": "Small LE strips (on slat / exposed with slat out) disrupt flow to **promote root stall**, counter tip-stall tendency → more even stall progression."}, {"q": "Why stab vanes on T-45?", "opts": ["Small LE strips (on slat / exposed with slat out) disrupt flow to **promote root stall**, counter tip-stall tendency → more even stall progression.", "HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop).", "Approach with **speed brakes extended** (higher engine RPM) disrupted stab flow vs Hawk belly brake; vanes make vortex that re-energizes stab BL at approach speeds.", "Examples: lateral-stick adverse-yaw (275→250 kt); 70° nose-high / 110° inverted / 90° nose-high (sim — spin prone). Recover with OCF procedures when attitude cannot be held."], "ans": 2, "expl": "Approach with **speed brakes extended** (higher engine RPM) disrupted stab flow vs Hawk belly brake; vanes make vortex that re-energizes stab BL at approach speeds."}, {"q": "Steady-state spin orientation on T-45?", "opts": ["Manual rudder held by ~**13 lb** spring; sideslip can blow rudder; up to **250–300 lb** leg force to re-center.", "**Inverted only** unless asymmetric stores; upright spins are **incipient** and tend to transition.", "Tip at **3.5° less AOA** than root — tip still flying when root approaches stall CLmax.", "Lateral stick is **anti-spin** in −60/−40 modes but **pro-spin** entering the **−25 α** mode above ~**160 kt**."], "ans": 1, "expl": "**Inverted only** unless asymmetric stores; upright spins are **incipient** and tend to transition."}, {"q": "Rudder blowout forces?", "opts": ["**Inverted only** unless asymmetric stores; upright spins are **incipient** and tend to transition.", "Manual rudder held by ~**13 lb** spring; sideslip can blow rudder; up to **250–300 lb** leg force to re-center.", "Tip at **3.5° less AOA** than root — tip still flying when root approaches stall CLmax.", "Lateral stick is **anti-spin** in −60/−40 modes but **pro-spin** entering the **−25 α** mode above ~**160 kt**."], "ans": 1, "expl": "Manual rudder held by ~**13 lb** spring; sideslip can blow rudder; up to **250–300 lb** leg force to re-center."}, {"q": "OCF / spin recovery first steps (boldface)?", "opts": ["Small LE strips (on slat / exposed with slat out) disrupt flow to **promote root stall**, counter tip-stall tendency → more even stall progression.", "At **21.5 units** (clean & dirty): pedal shaker + undefeatable tone (~**10 kt** warning). Mild buffet ~**1 unit** before stall (~1–2 kt).", "**Controls neutralize; forcibly center rudder pedals; speed brakes retract; throttle idle.** Then check altitude, AOA, airspeed, turn needle.", "HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop)."], "ans": 2, "expl": "**Controls neutralize; forcibly center rudder pedals; speed brakes retract; throttle idle.** Then check altitude, AOA, airspeed, turn needle."}, {"q": "Inverted spin recovery stick/rudder sense?", "opts": ["Approach with **speed brakes extended** (higher engine RPM) disrupted stab flow vs Hawk belly brake; vanes make vortex that re-energizes stab BL at approach speeds.", "Examples: lateral-stick adverse-yaw (275→250 kt); 70° nose-high / 110° inverted / 90° nose-high (sim — spin prone). Recover with OCF procedures when attitude cannot be held.", "AOA pegged **0 units**: rudder **full opposite turn needle**; lateral stick **full opposite TN**; longitudinal stick **neutral**. If pedals stuck, lateral stick helps recovery / reduces rudder force.", "HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop)."], "ans": 2, "expl": "AOA pegged **0 units**: rudder **full opposite turn needle**; lateral stick **full opposite TN**; longitudinal stick **neutral**. If pedals stuck, lateral stick helps recovery / reduces rudder force."}, {"q": "Why neutralize lateral stick by 160 KIAS on recovery?", "opts": ["**Inverted only** unless asymmetric stores; upright spins are **incipient** and tend to transition.", "Manual rudder held by ~**13 lb** spring; sideslip can blow rudder; up to **250–300 lb** leg force to re-center.", "Tip at **3.5° less AOA** than root — tip still flying when root approaches stall CLmax.", "Lateral stick is **anti-spin** in −60/−40 modes but **pro-spin** entering the **−25 α** mode above ~**160 kt**."], "ans": 3, "expl": "Lateral stick is **anti-spin** in −60/−40 modes but **pro-spin** entering the **−25 α** mode above ~**160 kt**."}, {"q": "Ejection altitude for continued OCF?", "opts": ["If still out of control **passing 10010 ft — eject** (need every bit of it).", "If still out of control **passing 10,000 ft — eject** (need every bit of it).", "If still out of control **passing 20000 ft — eject** (need every bit of it).", "If still out of control **passing 5000 ft — eject** (need every bit of it)."], "ans": 1, "expl": "If still out of control **passing 10,000 ft — eject** (need every bit of it)."}, {"q": "Leading-edge extension (LEX) benefit (F-18 example)?", "opts": ["Tip at **3.5° less AOA** than root — tip still flying when root approaches stall CLmax.", "**Inverted only** unless asymmetric stores; upright spins are **incipient** and tend to transition.", "LEX vortex re-energizes wing BL → controllable flight at much higher AOA / low speed.", "Clean ≈ **26 units**. Dirty ≈ **29–30 units**. Wing drop ~25–30°; nose falls through."], "ans": 2, "expl": "LEX vortex re-energizes wing BL → controllable flight at much higher AOA / low speed."}, {"q": "Intentional departure profiles (memory aid)?", "opts": ["Approach with **speed brakes extended** (higher engine RPM) disrupted stab flow vs Hawk belly brake; vanes make vortex that re-energizes stab BL at approach speeds.", "Small LE strips (on slat / exposed with slat out) disrupt flow to **promote root stall**, counter tip-stall tendency → more even stall progression.", "HYD slats extend **15°**; slot re-energizes BL; ≈ **+6°** stall AOA; installed because dirty stall without slats was violent (~90° uncommanded wing drop).", "Examples: lateral-stick adverse-yaw (275→250 kt); 70° nose-high / 110° inverted / 90° nose-high (sim — spin prone). Recover with OCF procedures when attitude cannot be held."], "ans": 3, "expl": "Examples: lateral-stick adverse-yaw (275→250 kt); 70° nose-high / 110° inverted / 90° nose-high (sim — spin prone). Recover with OCF procedures when attitude cannot be held."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>
