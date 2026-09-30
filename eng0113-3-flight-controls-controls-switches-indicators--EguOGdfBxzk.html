@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ENG0113 (3) Flight Controls Controls, Switches, &amp; Indicators — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · Flight Controls</div>
+    <h1>ENG0113 (3) Flight Controls Controls, Switches, &amp; Indicators</h1>
+    <div class="meta">22 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 22</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Flight Controls</div>
+    <h2 style="margin:0.2rem 0">ENG0113 (3) Flight Controls Controls, Switches, &amp; Indicators</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "Raising the standby stab trim guard:", "opts": ["Enables emerg flaps", "Disengages main stab trim", "Locks the rudder", "Starts CAUG IBIT"], "ans": 1, "expl": "Guard up → main trim motor disengaged / main stab trim INOP."}, {"q": "Aileron trim authority with gear down:", "opts": ["3°", "6°", "9°", "15.5°"], "ans": 2, "expl": "6° gear up, 9° gear down (aileron deflection range ±15.5° is separate)."}, {"q": "Main stab trim electrical bus:", "opts": ["Generator bus", "Essential Services Bus", "HYD1", "No electrical power required"], "ans": 1, "expl": "Main stab trim on ESS bus."}, {"q": "Rudder trim needle with CAUG paddled off:", "opts": ["12 o’clock", "3 o’clock", "6 o’clock", "Blank / off scale left"], "ans": 2, "expl": "6 o’clock when paddled off or GEN lost."}, {"q": "EMER FLAPS with normal HYD1 available:", "opts": ["Recommended every flight", "Can damage dump valve seat / cause jumping flaps", "Raises slats only", "Required for CAUG BIT"], "ans": 1, "expl": "Caution against emerg flaps with normal HYD1."}, {"q": "SP BRK advisory light means:", "opts": ["Speed brakes fully extended", "Speed brakes not fully retracted", "HYD1 failed", "CAUG failed"], "ans": 1, "expl": "Not fully retracted; FULL light = fully extended."}, {"q": "CONTR AUG ALL provides all of EXCEPT when conditions unmet:", "opts": ["Yaw damping", "ARI / turn coordination", "Landing gear extension", "Rudder trim and SBI"], "ans": 2, "expl": "CAUG does not extend landing gear."}, {"q": "Paddle switch with gear down also:", "opts": ["Retracts speed brakes", "Disengages NWS and lights NWS caution", "Drops emerg flaps", "Locks rudder gust lock"], "ans": 1, "expl": "CAUG off + NWS disengage if gear down."}, {"q": "Aileron trim authority gear up vs gear down?", "opts": ["UP = flaps & slats up. ½ = flaps 25°, slats 15°. DN = flaps 50°, slats 15°. Levers mechanically linked both cockpits.", "SP BRK: speed brakes not fully retracted. SP BRK FULL: fully extended. Both on MIP near AOA indicator.", "Gear up: 6°. Gear down: 9°. GEN bus powered. Full stick aileron range: gear up ±12.5°, gear down ±15.5°.", "Momentary press deactivates CONTR AUG → C AUG caution. Also disengages NWS and lights NWS caution if gear is down."], "ans": 2, "expl": "Gear up: 6°. Gear down: 9°. GEN bus powered. Full stick aileron range: gear up ±12.5°, gear down ±15.5°."}, {"q": "Main stabilator trim switch sense and authority?", "opts": ["Unavailable with CONTR AUG off or CAUG IBIT. With CAUG paddled off or generator loss, trim needle points to **6 o’clock**.", "Stick trim: forward = nose-down, aft = nose-up. Authority: 3° stab LE up (nose-down), 8° LE down (nose-up). Rate ~2°/sec. ESS bus.", "Front cockpit, right side of center pedestal. Raised = rudder locked neutral (park/wind protection). Push down = unlock.", "Main trim motor is disengaged — main stab trim becomes inoperative. Standby is GEN-bus, spring-centered OFF under the guard."], "ans": 1, "expl": "Stick trim: forward = nose-down, aft = nose-up. Authority: 3° stab LE up (nose-down), 8° LE down (nose-up). Rate ~2°/sec. ESS bus."}, {"q": "What happens if the standby stab trim guard is raised?", "opts": ["Stick trim: forward = nose-down, aft = nose-up. Authority: 3° stab LE up (nose-down), 8° LE down (nose-up). Rate ~2°/sec. ESS bus.", "Front cockpit, right side of center pedestal. Raised = rudder locked neutral (park/wind protection). Push down = unlock.", "Main trim motor is disengaged — main stab trim becomes inoperative. Standby is GEN-bus, spring-centered OFF under the guard.", "Unavailable with CONTR AUG off or CAUG IBIT. With CAUG paddled off or generator loss, trim needle points to **6 o’clock**."], "ans": 2, "expl": "Main trim motor is disengaged — main stab trim becomes inoperative. Standby is GEN-bus, spring-centered OFF under the guard."}, {"q": "Stabilator position indicator caution when setting takeoff/cat trim?", "opts": ["Lowers flaps FULL (slats remain up); overrides lever. Needs accumulator \u003e2000 psi if HYD1 failed. CAUTION: selecting DOWN with normal HYD1 can damage dump valve seat → jumping flaps.", "ALL: yaw damping, ARI (WOW off, \u003c217, flaps ½/DN), rudder trim, SBI. SBI: rudder trim + SBI. RESET (spring to SBI): resets CAUG / neutralizes rudder & SBI actuators after paddle.", "Forward = full retract. Center (spring) = stop at any extend position. Aft (momentary) = extend while held; momentary aft also interrupts retraction.", "Indicator moves with stick force or trim. It depicts trim position only with **no** longitudinal force on the stick — both pilots must not push/pull while setting trim."], "ans": 3, "expl": "Indicator moves with stick force or trim. It depicts trim position only with **no** longitudinal force on the stick — both pilots must not push/pull while setting trim."}, {"q": "Full stick stabilator travel vs trim authority?", "opts": ["Full forward ≈ 16.6° LE up (trim max 3°). Full aft ≈ 15° LE down (trim max 8°).", "Full forward ≈ 3.3° LE up (trim max 3°). Full aft ≈ 15° LE down (trim max 8°).", "Full forward ≈ 6.6° LE up (trim max 3°). Full aft ≈ 15° LE down (trim max 8°).", "Full forward ≈ 13.2° LE up (trim max 3°). Full aft ≈ 15° LE down (trim max 8°)."], "ans": 2, "expl": "Full forward ≈ 6.6° LE up (trim max 3°). Full aft ≈ 15° LE down (trim max 8°)."}, {"q": "Rudder gust lock positions?", "opts": ["Main trim motor is disengaged — main stab trim becomes inoperative. Standby is GEN-bus, spring-centered OFF under the guard.", "Stick trim: forward = nose-down, aft = nose-up. Authority: 3° stab LE up (nose-down), 8° LE down (nose-up). Rate ~2°/sec. ESS bus.", "Front cockpit, right side of center pedestal. Raised = rudder locked neutral (park/wind protection). Push down = unlock.", "Unavailable with CONTR AUG off or CAUG IBIT. With CAUG paddled off or generator loss, trim needle points to **6 o’clock**."], "ans": 2, "expl": "Front cockpit, right side of center pedestal. Raised = rudder locked neutral (park/wind protection). Push down = unlock."}, {"q": "When is rudder trim unavailable / where does the needle go?", "opts": ["Stick trim: forward = nose-down, aft = nose-up. Authority: 3° stab LE up (nose-down), 8° LE down (nose-up). Rate ~2°/sec. ESS bus.", "Main trim motor is disengaged — main stab trim becomes inoperative. Standby is GEN-bus, spring-centered OFF under the guard.", "Front cockpit, right side of center pedestal. Raised = rudder locked neutral (park/wind protection). Push down = unlock.", "Unavailable with CONTR AUG off or CAUG IBIT. With CAUG paddled off or generator loss, trim needle points to **6 o’clock**."], "ans": 3, "expl": "Unavailable with CONTR AUG off or CAUG IBIT. With CAUG paddled off or generator loss, trim needle points to **6 o’clock**."}, {"q": "Flaps/slats lever positions?", "opts": ["Gear up: 6°. Gear down: 9°. GEN bus powered. Full stick aileron range: gear up ±12.5°, gear down ±15.5°.", "UP = flaps & slats up. ½ = flaps 25°, slats 15°. DN = flaps 50°, slats 15°. Levers mechanically linked both cockpits.", "Momentary press deactivates CONTR AUG → C AUG caution. Also disengages NWS and lights NWS caution if gear is down.", "SP BRK: speed brakes not fully retracted. SP BRK FULL: fully extended. Both on MIP near AOA indicator."], "ans": 1, "expl": "UP = flaps & slats up. ½ = flaps 25°, slats 15°. DN = flaps 50°, slats 15°. Levers mechanically linked both cockpits."}, {"q": "EMER FLAPS switch — function and caution?", "opts": ["Forward = full retract. Center (spring) = stop at any extend position. Aft (momentary) = extend while held; momentary aft also interrupts retraction.", "Indicator moves with stick force or trim. It depicts trim position only with **no** longitudinal force on the stick — both pilots must not push/pull while setting trim.", "Lowers flaps FULL (slats remain up); overrides lever. Needs accumulator \u003e2000 psi if HYD1 failed. CAUTION: selecting DOWN with normal HYD1 can damage dump valve seat → jumping flaps.", "ALL: yaw damping, ARI (WOW off, \u003c217, flaps ½/DN), rudder trim, SBI. SBI: rudder trim + SBI. RESET (spring to SBI): resets CAUG / neutralizes rudder & SBI actuators after paddle."], "ans": 2, "expl": "Lowers flaps FULL (slats remain up); overrides lever. Needs accumulator \u003e2000 psi if HYD1 failed. CAUTION: selecting DOWN with normal HYD1 can damage dump valve seat → jumping flaps."}, {"q": "Can emerg flaps raise the flaps after HYD1 failure?", "opts": ["Yes — after selecting GAIN ORIDE.", "No — emerg flaps cannot raise flaps if HYD1 failed. With HYD1 restored, flaps can be raised normally after emerg extension.", "Yes — available in the aft cockpit only.", "Yes — fully available with no limitations."], "ans": 1, "expl": "No — emerg flaps cannot raise flaps if HYD1 failed. With HYD1 restored, flaps can be raised normally after emerg extension."}, {"q": "Speed brake switch positions?", "opts": ["Stick trim: forward = nose-down, aft = nose-up. Authority: 3° stab LE up (nose-down), 8° LE down (nose-up). Rate ~2°/sec. ESS bus.", "Main trim motor is disengaged — main stab trim becomes inoperative. Standby is GEN-bus, spring-centered OFF under the guard.", "Forward = full retract. Center (spring) = stop at any extend position. Aft (momentary) = extend while held; momentary aft also interrupts retraction.", "Indicator moves with stick force or trim. It depicts trim position only with **no** longitudinal force on the stick — both pilots must not push/pull while setting trim."], "ans": 2, "expl": "Forward = full retract. Center (spring) = stop at any extend position. Aft (momentary) = extend while held; momentary aft also interrupts retraction."}, {"q": "SP BRK vs SP BRK FULL lights?", "opts": ["Momentary press deactivates CONTR AUG → C AUG caution. Also disengages NWS and lights NWS caution if gear is down.", "UP = flaps & slats up. ½ = flaps 25°, slats 15°. DN = flaps 50°, slats 15°. Levers mechanically linked both cockpits.", "SP BRK: speed brakes not fully retracted. SP BRK FULL: fully extended. Both on MIP near AOA indicator.", "Gear up: 6°. Gear down: 9°. GEN bus powered. Full stick aileron range: gear up ±12.5°, gear down ±15.5°."], "ans": 2, "expl": "SP BRK: speed brakes not fully retracted. SP BRK FULL: fully extended. Both on MIP near AOA indicator."}, {"q": "CONTR AUG switch positions?", "opts": ["Indicator moves with stick force or trim. It depicts trim position only with **no** longitudinal force on the stick — both pilots must not push/pull while setting trim.", "Forward = full retract. Center (spring) = stop at any extend position. Aft (momentary) = extend while held; momentary aft also interrupts retraction.", "Lowers flaps FULL (slats remain up); overrides lever. Needs accumulator \u003e2000 psi if HYD1 failed. CAUTION: selecting DOWN with normal HYD1 can damage dump valve seat → jumping flaps.", "ALL: yaw damping, ARI (WOW off, \u003c217, flaps ½/DN), rudder trim, SBI. SBI: rudder trim + SBI. RESET (spring to SBI): resets CAUG / neutralizes rudder & SBI actuators after paddle."], "ans": 3, "expl": "ALL: yaw damping, ARI (WOW off, \u003c217, flaps ½/DN), rudder trim, SBI. SBI: rudder trim + SBI. RESET (spring to SBI): resets CAUG / neutralizes rudder & SBI actuators after paddle."}, {"q": "Paddle switch effects?", "opts": ["UP = flaps & slats up. ½ = flaps 25°, slats 15°. DN = flaps 50°, slats 15°. Levers mechanically linked both cockpits.", "Gear up: 6°. Gear down: 9°. GEN bus powered. Full stick aileron range: gear up ±12.5°, gear down ±15.5°.", "Momentary press deactivates CONTR AUG → C AUG caution. Also disengages NWS and lights NWS caution if gear is down.", "SP BRK: speed brakes not fully retracted. SP BRK FULL: fully extended. Both on MIP near AOA indicator."], "ans": 2, "expl": "Momentary press deactivates CONTR AUG → C AUG caution. Also disengages NWS and lights NWS caution if gear is down."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ENG0117 ECS System — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · ECS / OBOGS</div>
+    <h1>ENG0117 ECS System</h1>
+    <div class="meta">22 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 22</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">ECS / OBOGS</div>
+    <h2 style="margin:0.2rem 0">ENG0117 ECS System</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "ECS bleed air is taken from which compressor stage?", "opts": ["1st stage", "3rd stage", "5th stage", "Fan bypass"], "ans": 2, "expl": "Fifth-stage bleed supplies ECS (temperature, pressurization, ram air control, canopy seal, inducers)."}, {"q": "With AIR FLOW in NORMAL, approximate distribution is:", "opts": ["100% defog", "60% vent / 40% defog", "40% vent / 60% defog", "50/50"], "ans": 1, "expl": "NORMAL sends ~60% to crew ventilation and ~40% to defog ducts."}, {"q": "Full cockpit differential pressure of 4 psi is attained at about:", "opts": ["5,000 ft MSL", "10,000 ft MSL", "25,000 ft MSL", "40,000 ft MSL"], "ans": 3, "expl": "Pressurization builds from WOW roughly linearly to 4 psi at 40,000 ft MSL."}, {"q": "AV HOT caution is:", "opts": ["Always active airborne", "Ground only; \u003e67°C (153°F) in aux/avionics cooling", "Triggered by cabin alt \u003e25k", "A dual hydraulic failure cue"], "ans": 1, "expl": "Lecture: AV HOT only operative on the ground above 67°C / 153°F."}, {"q": "IPRSOV / inducers primarily compensate for:", "opts": ["HYD 1 failure", "Low ram flow through heat-exchanger scoops with gear down / slow speed", "OBOGS low concentration", "Generator dropout only"], "ans": 1, "expl": "With gear down, inducer jet pumps boost cooling air through primary/secondary heat exchangers."}, {"q": "What bleed stage feeds T-45 ECS?", "opts": ["The CAU turbine (expansion of cooled air).", "AIR FLOW OFF or weight-on-wheels.", "Positive ≤4.8 psi; negative ≤0.5 psi.", "Fifth-stage compressor bleed air."], "ans": 3, "expl": "Fifth-stage compressor bleed air."}, {"q": "When is the MPRSOV open?", "opts": ["Low ram flow through heat-exchanger scoops with gear down / slow speed", "Canopy down and locked (mechanically coupled; bleed upstream of MPRSOV).", "Whenever AIR FLOW is in any position other than OFF.", "Landing gear handle DOWN — jet pumps boost HX cooling airflow at slow speed."], "ans": 2, "expl": "Whenever AIR FLOW is in any position other than OFF."}, {"q": "Cold vs hot air paths?", "opts": ["MPRSOV/IPRSOV de-energized open — air conditioning/pressurization remain on (fail ON).", "28 VDC Essential (AC ctrl, cabin press 1, cabin press warning); 28 VDC Generator (cabin press 2).", "Raises selectable cabin delivery temperature ~10°C (18°F); old max defog valve disabled.", "Cold: through heat exchangers + CAU. Hot: bypass mixes via temperature control valve per CABIN TEMP."], "ans": 3, "expl": "Cold: through heat exchangers + CAU. Hot: bypass mixes via temperature control valve per CABIN TEMP."}, {"q": "When do inducers (IPRSOV) run?", "opts": ["Landing gear handle DOWN — jet pumps boost HX cooling airflow at slow speed.", "Low ram flow through heat-exchanger scoops with gear down / slow speed", "Canopy down and locked (mechanically coupled; bleed upstream of MPRSOV).", "MPRSOV/IPRSOV de-energized open — air conditioning/pressurization remain on (fail ON)."], "ans": 0, "expl": "Landing gear handle DOWN — jet pumps boost HX cooling airflow at slow speed."}, {"q": "What drives the CAU compressor?", "opts": ["The CAU turbine (expansion of cooled air).", "Fifth-stage compressor bleed air.", "AIR FLOW OFF or weight-on-wheels.", "~60% ventilation ducts / ~40% defog ducts."], "ans": 0, "expl": "The CAU turbine (expansion of cooled air)."}, {"q": "NORMAL airflow split?", "opts": ["~30% ventilation ducts / ~40% defog ducts.", "~70% ventilation ducts / ~40% defog ducts.", "~60% ventilation ducts / ~40% defog ducts.", "~120% ventilation ducts / ~40% defog ducts."], "ans": 2, "expl": "~60% ventilation ducts / ~40% defog ducts."}, {"q": "DEFOG airflow split?", "opts": ["~20% vent / ~60% defog.", "~40% vent / ~60% defog.", "~80% vent / ~60% defog.", "~50% vent / ~60% defog."], "ans": 1, "expl": "~40% vent / ~60% defog."}, {"q": "MAX DEFOG after AFC-291?", "opts": ["28 VDC Essential (AC ctrl, cabin press 1, cabin press warning); 28 VDC Generator (cabin press 2).", "Cold: through heat exchangers + CAU. Hot: bypass mixes via temperature control valve per CABIN TEMP.", "Raises selectable cabin delivery temperature ~10°C (18°F); old max defog valve disabled.", "MPRSOV/IPRSOV de-energized open — air conditioning/pressurization remain on (fail ON)."], "ans": 2, "expl": "Raises selectable cabin delivery temperature ~10°C (18°F); old max defog valve disabled."}, {"q": "When does ram air open?", "opts": ["The CAU turbine (expansion of cooled air).", "Fifth-stage compressor bleed air.", "AIR FLOW OFF or weight-on-wheels.", "Positive ≤4.8 psi; negative ≤0.5 psi."], "ans": 2, "expl": "AIR FLOW OFF or weight-on-wheels."}, {"q": "Ram air use / exchange time?", "opts": ["Smoke, fumes, ECS contamination; ~1–2 minutes for full cockpit air exchange.", "Smoke, fumes, ECS contamination; ~101–2 minutes for full cockpit air exchange.", "Smoke, fumes, ECS contamination; ~2–2 minutes for full cockpit air exchange.", "Smoke, fumes, ECS contamination; ~11–2 minutes for full cockpit air exchange."], "ans": 0, "expl": "Smoke, fumes, ECS contamination; ~1–2 minutes for full cockpit air exchange."}, {"q": "When does pressurization start?", "opts": ["Weight-off-wheels; builds linearly to 14 psi ΔP at 40,000 ft MSL.", "Weight-off-wheels; builds linearly to 4 psi ΔP at 40,000 ft MSL.", "Weight-off-wheels; builds linearly to 8 psi ΔP at 40,000 ft MSL.", "Weight-off-wheels; builds linearly to 2 psi ΔP at 40,000 ft MSL."], "ans": 1, "expl": "Weight-off-wheels; builds linearly to 4 psi ΔP at 40,000 ft MSL."}, {"q": "Safety relief limits?", "opts": ["Positive ≤4.8 psi; negative ≤0.5 psi.", "Positive ≤2.4 psi; negative ≤0.5 psi.", "Positive ≤9.6 psi; negative ≤0.5 psi.", "Positive ≤14.8 psi; negative ≤0.5 psi."], "ans": 0, "expl": "Positive ≤4.8 psi; negative ≤0.5 psi."}, {"q": "CABIN ALT warning threshold (video ASR)?", "opts": ["Cockpit altitude 49000 ± 500 ft (plus CAU overheat/overpressure conditions).", "Cockpit altitude 24510 ± 500 ft (plus CAU overheat/overpressure conditions).", "Cockpit altitude 12250 ± 500 ft (plus CAU overheat/overpressure conditions).", "Cockpit altitude 24,500 ± 500 ft (plus CAU overheat/overpressure conditions)."], "ans": 3, "expl": "Cockpit altitude 24,500 ± 500 ft (plus CAU overheat/overpressure conditions)."}, {"q": "Which buses power ECS controls?", "opts": ["28 VDC Essential (AC ctrl, cabin press 1, cabin press warning); 28 VDC Generator (cabin press 2).", "Raises selectable cabin delivery temperature ~10°C (18°F); old max defog valve disabled.", "MPRSOV/IPRSOV de-energized open — air conditioning/pressurization remain on (fail ON).", "Cold: through heat exchangers + CAU. Hot: bypass mixes via temperature control valve per CABIN TEMP."], "ans": 0, "expl": "28 VDC Essential (AC ctrl, cabin press 1, cabin press warning); 28 VDC Generator (cabin press 2)."}, {"q": "ECS after total electrical failure?", "opts": ["Landing gear handle DOWN — jet pumps boost HX cooling airflow at slow speed.", "28 VDC Essential (AC ctrl, cabin press 1, cabin press warning); 28 VDC Generator (cabin press 2).", "MPRSOV/IPRSOV de-energized open — air conditioning/pressurization remain on (fail ON).", "Raises selectable cabin delivery temperature ~10°C (18°F); old max defog valve disabled."], "ans": 2, "expl": "MPRSOV/IPRSOV de-energized open — air conditioning/pressurization remain on (fail ON)."}, {"q": "Cabin altitude rule of thumb (ASR)?", "opts": ["½ pressure altitude + 1250–3,000 ft.", "½ pressure altitude + 2510–3,000 ft.", "½ pressure altitude + 2,500–3,000 ft.", "½ pressure altitude + 5000–3,000 ft."], "ans": 2, "expl": "½ pressure altitude + 2,500–3,000 ft."}, {"q": "Canopy seal inflate condition?", "opts": ["Low ram flow through heat-exchanger scoops with gear down / slow speed", "Landing gear handle DOWN — jet pumps boost HX cooling airflow at slow speed.", "MPRSOV/IPRSOV de-energized open — air conditioning/pressurization remain on (fail ON).", "Canopy down and locked (mechanically coupled; bleed upstream of MPRSOV)."], "ans": 3, "expl": "Canopy down and locked (mechanically coupled; bleed upstream of MPRSOV)."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

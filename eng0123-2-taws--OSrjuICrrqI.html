@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ENG0123 (2) TAWS — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · Other Systems</div>
+    <h1>ENG0123 (2) TAWS</h1>
+    <div class="meta">17 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 17</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Other Systems</div>
+    <h2 style="margin:0.2rem 0">ENG0123 (2) TAWS</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "TAWS cockpit controls:", "opts": ["MFD pushbutton TAWS INHIBIT", "None — powers with engine start (“Power, Power”)", "Right-console rotary", "Stick pinky switch"], "ans": 1, "expl": "No switches/PBs; “Power, Power” after start."}, {"q": "Recovery response-time assumption:", "opts": ["0.5 s", "1.3 s", "5 s", "10 s"], "ans": 1, "expl": "1.3-second response assumption."}, {"q": "Warnings are issued when the system predicts passage:", "opts": ["Above 1000 ft AGL", "Below 100 ft AGL", "Below 500 ft only on takeoff", "Only with gear up"], "ans": 1, "expl": "Warn only if predicted below 100 ft AGL."}, {"q": "Hard-landing ROD threshold in landing phase:", "opts": ["\u003e500 FPM", "\u003e1000 FPM", "\u003e1398 FPM", "\u003e2000 FPM"], "ans": 2, "expl": "\u003e1398 FPM ROD."}, {"q": "“Check Gear” requires all except:", "opts": ["\u003c500 ft AGL", "\u003c200 KIAS", "≥1 min since G/A or T/O", "Master Arm ARM"], "ans": 3, "expl": "Master Arm irrelevant; gear not down-and-locked is the condition."}, {"q": "“Below Glideslope” deviation trigger:", "opts": ["Any needle movement", "More than 50% of maximum GS deviation", "Full-scale only", "Localizer only"], "ans": 1, "expl": "\u003e50% of max GS deviation (plus pre-intercept advisory)."}, {"q": "Does TAWS have cockpit switches or MFD pushbuttons?", "opts": ["Yes — after selecting GAIN ORIDE.", "Yes — available in the aft cockpit only.", "No. It powers with engine start; function is indicated by the aural cue “Power, Power.”", "Yes — fully available with no limitations."], "ans": 2, "expl": "No. It powers with engine start; function is indicated by the aural cue “Power, Power.”"}, {"q": "When do aircrew typically encounter TAWS in normal ops?", "opts": ["Prior to initial ILS GS intercept, and if aircraft descends more than 50% of maximum GS deviation. Occurs once unless the pilot corrects, then can reoccur.", "Vertical may command roll then pull, or a simple pull-up; oblique commands pull-up while in an angle of bank. Arrow on HUD/ADI shows recovery direction.", "ILS approaches (“Below Glideslope”) and the final phase of a Precautionary Approach (“Pull up, Pull up,” often with “Roll left/right”).", "1.3-second response time; based on stick deflection, G, and throttle; maintain ≥100 ft terrain clearance; warnings only if predicted to pass below 100 ft AGL."], "ans": 2, "expl": "ILS approaches (“Below Glideslope”) and the final phase of a Precautionary Approach (“Pull up, Pull up,” often with “Roll left/right”)."}, {"q": "TAWS data inputs?", "opts": ["Below 500 ft AGL and 200 KIAS, ≥1 min since G/A or T/O, and landing gear not down and locked.", "mode shifts from ground-impact avoidance to hard-landing avoidance (\u003e1398 FPM ROD).", "SADS, GINA, RALT, and re-gridded Digital Terrain Elevation Data (terrain database).", "Below 500 ft AGL and 200 KIAS, ≥1 minute since go-around or takeoff; hard landing \u003e1398 FPM rate of descent."], "ans": 2, "expl": "SADS, GINA, RALT, and re-gridded Digital Terrain Elevation Data (terrain database)."}, {"q": "Recovery trajectory assumptions?", "opts": ["1.3-second response time; based on stick deflection, G, and throttle; maintain ≥100 ft terrain clearance; warnings only if predicted to pass below 100 ft AGL.", "Vertical may command roll then pull, or a simple pull-up; oblique commands pull-up while in an angle of bank. Arrow on HUD/ADI shows recovery direction.", "ILS approaches (“Below Glideslope”) and the final phase of a Precautionary Approach (“Pull up, Pull up,” often with “Roll left/right”).", "Prior to initial ILS GS intercept, and if aircraft descends more than 50% of maximum GS deviation. Occurs once unless the pilot corrects, then can reoccur."], "ans": 0, "expl": "1.3-second response time; based on stick deflection, G, and throttle; maintain ≥100 ft terrain clearance; warnings only if predicted to pass below 100 ft AGL."}, {"q": "Landing-phase TAWS gate and hard-landing threshold?", "opts": ["SADS, GINA, RALT, and re-gridded Digital Terrain Elevation Data (terrain database).", "Below 500 ft AGL and 200 KIAS, ≥1 min since G/A or T/O, and landing gear not down and locked.", "Gear down, airspeed below 200 KIAS, altitude below 500 ft AGL — protection against hard and gear-up landings.", "Below 500 ft AGL and 200 KIAS, ≥1 minute since go-around or takeoff; hard landing \u003e1398 FPM rate of descent."], "ans": 3, "expl": "Below 500 ft AGL and 200 KIAS, ≥1 minute since go-around or takeoff; hard landing \u003e1398 FPM rate of descent."}, {"q": "When is “Check Gear” advisory issued?", "opts": ["Below 500 ft AGL and 200 KIAS, ≥1 minute since go-around or takeoff; hard landing \u003e1398 FPM rate of descent.", "mode shifts from ground-impact avoidance to hard-landing avoidance (\u003e1398 FPM ROD).", "Below 500 ft AGL and 200 KIAS, ≥1 min since G/A or T/O, and landing gear not down and locked.", "SADS, GINA, RALT, and re-gridded Digital Terrain Elevation Data (terrain database)."], "ans": 2, "expl": "Below 500 ft AGL and 200 KIAS, ≥1 min since G/A or T/O, and landing gear not down and locked."}, {"q": "When is “Below Glideslope” issued?", "opts": ["1.3-second response time; based on stick deflection, G, and throttle; maintain ≥100 ft terrain clearance; warnings only if predicted to pass below 100 ft AGL.", "Prior to initial ILS GS intercept, and if aircraft descends more than 50% of maximum GS deviation. Occurs once unless the pilot corrects, then can reoccur.", "Vertical may command roll then pull, or a simple pull-up; oblique commands pull-up while in an angle of bank. Arrow on HUD/ADI shows recovery direction.", "ILS approaches (“Below Glideslope”) and the final phase of a Precautionary Approach (“Pull up, Pull up,” often with “Roll left/right”)."], "ans": 1, "expl": "Prior to initial ILS GS intercept, and if aircraft descends more than 50% of maximum GS deviation. Occurs once unless the pilot corrects, then can reoccur."}, {"q": "Vertical vs oblique recovery?", "opts": ["Vertical may command roll then pull, or a simple pull-up; oblique commands pull-up while in an angle of bank. Arrow on HUD/ADI shows recovery direction.", "Prior to initial ILS GS intercept, and if aircraft descends more than 50% of maximum GS deviation. Occurs once unless the pilot corrects, then can reoccur.", "1.3-second response time; based on stick deflection, G, and throttle; maintain ≥100 ft terrain clearance; warnings only if predicted to pass below 100 ft AGL.", "ILS approaches (“Below Glideslope”) and the final phase of a Precautionary Approach (“Pull up, Pull up,” often with “Roll left/right”)."], "ans": 0, "expl": "Vertical may command roll then pull, or a simple pull-up; oblique commands pull-up while in an angle of bank. Arrow on HUD/ADI shows recovery direction."}, {"q": "Does TAWS absolve aircrew of CFIT responsibility?", "opts": ["Yes — after selecting GAIN ORIDE.", "No — it is a safety/survival aid; aircrew must still stay ahead of the aircraft.", "Yes — fully available with no limitations.", "Yes — available in the aft cockpit only."], "ans": 1, "expl": "No — it is a safety/survival aid; aircrew must still stay ahead of the aircraft."}, {"q": "Landing CFIT/gear protection conditions?", "opts": ["Below 500 ft AGL and 200 KIAS, ≥1 min since G/A or T/O, and landing gear not down and locked.", "SADS, GINA, RALT, and re-gridded Digital Terrain Elevation Data (terrain database).", "Gear down, airspeed below 200 KIAS, altitude below 500 ft AGL — protection against hard and gear-up landings.", "Below 500 ft AGL and 200 KIAS, ≥1 minute since go-around or takeoff; hard landing \u003e1398 FPM rate of descent."], "ans": 2, "expl": "Gear down, airspeed below 200 KIAS, altitude below 500 ft AGL — protection against hard and gear-up landings."}, {"q": "When Landing phase: \u003c500' AGL, \u003c200 KIAS, ≥1 min since go-around/takeoff, what happens?", "opts": ["mode shifts from ground-impact avoidance to hard-landing avoidance (\u003e1398 FPM ROD).", "Below 500 ft AGL and 200 KIAS, ≥1 min since G/A or T/O, and landing gear not down and locked.", "SADS, GINA, RALT, and re-gridded Digital Terrain Elevation Data (terrain database).", "Below 500 ft AGL and 200 KIAS, ≥1 minute since go-around or takeoff; hard landing \u003e1398 FPM rate of descent."], "ans": 0, "expl": "mode shifts from ground-impact avoidance to hard-landing avoidance (\u003e1398 FPM ROD)."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

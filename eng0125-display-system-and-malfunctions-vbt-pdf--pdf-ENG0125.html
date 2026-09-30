@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ENG0125 Display System and Malfunctions — VBT (PDF) — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · Displays</div>
+    <h1>ENG0125 Display System and Malfunctions — VBT (PDF)</h1>
+    <div class="meta">22 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 22</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Displays</div>
+    <h2 style="margin:0.2rem 0">ENG0125 Display System and Malfunctions — VBT (PDF)</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "ENG0125 primarily covers:", "opts": ["Only engine oil system", "Aircraft displays, nav interfaces, standby instruments, and related malfunctions/interfaces", "Only ejection seat", "Only hydraulic emergency gear"], "ans": 1, "expl": "Displays / nav interfaces / standbys / malfunction notes."}, {"q": "Always true about CDI and PLAN:", "opts": ["Both can be unboxed together", "Exactly one is boxed; boxing one unboxes the other", "PLAN requires VOR boxed", "CDI removes TACAN symbols permanently"], "ans": 1, "expl": "Mutual exclusivity of CDI and PLAN."}, {"q": "DME with VOR selected on the T-45:", "opts": ["Always shows VORTAC DME like the T-6", "Is not displayed from VOR; use TACAN or Waypoint DME", "Comes only from RADALT", "Requires PLAN boxed"], "ans": 1, "expl": "No VOR DME; TACAN or WYPT."}, {"q": "Maximum HUD AOB deflection before flashing:", "opts": ["30°", "45°", "47°", "60°"], "ans": 2, "expl": "47° then flash."}, {"q": "On-speed AOA / rudder-shaker activation:", "opts": ["12 / 14", "17 / 21.5", "14 / 17", "21.5 / 28"], "ans": 1, "expl": "17 on-speed; 21.5 shakers."}, {"q": "Static pressure feeds:", "opts": ["Only the HUD", "SADS, OBOGS, and each cockpit static manifold", "Only the TACAN", "Only the battery bus"], "ans": 1, "expl": "SADS, OBOGS, static manifolds."}, {"q": "Standby attitude indicator after total electrical failure:", "opts": ["Dies instantly", "~9 minutes of pitch/roll", "1 hour guaranteed", "Converts to GPS attitude"], "ans": 1, "expl": "About 9 minutes."}, {"q": "All electronic MFCD/HUD display data passes through:", "opts": ["OBOGS", "The DEU", "The standby manifold only", "Approach lights computer"], "ans": 1, "expl": "DEU."}, {"q": "DISPLAY POWER held to RESET for ~5 seconds:", "opts": ["Resets the DEU", "Jettisons stores", "Aligns GINA", "Turns off OBOGS"], "ans": 0, "expl": "DEU reset."}, {"q": "Display Override purpose after generator failure:", "opts": ["Kill left MFD at 30 seconds", "Retain left MFD past the 2-minute threshold", "Force CAM mode only", "Disable DEP"], "ans": 1, "expl": "Keep left MFD past 2 minutes."}, {"q": "What is the ENG0125 lecture scope?", "opts": ["GINA stores up to **5** Geo-Reference waypoints (large circled numbers). Selecting as steering WYPT converts symbol to standard. Use proper range scales for each flight stage; protect WYPT ZERO Lat/Long.", "Displays — modes of operation and systems interfaces — that provide navigation and aircraft performance data to T-45C aircrew (plus standby instruments and display malfunction / interface notes).", "Box CRS, PLAN, and a fixed nav source (TCN, WYPT, or offset) for a planometric line. Always CDI **or** PLAN. PLAN removes VOR info; CDI needed for VOR needle/bearing-to.", "17 on-speed; 12 max-range; 14 max-endurance; 21.5 shakers; 26–28 stall tics. Indexers: WOW-off + gear down; amber/red/green (+ slightly combos). Approach lights same colors but **one light only**."], "ans": 1, "expl": "Displays — modes of operation and systems interfaces — that provide navigation and aircraft performance data to T-45C aircrew (plus standby instruments and display malfunction / interface notes)."}, {"q": "PLAN mode requirements and effect vs CDI?", "opts": ["Front altimeter setting → aircraft data system. ASI ~50–60 KIAS alive; 10-kt to 200, 50-kt above. Standby VSI lags vs HUD/ADI instantaneous VVI.", "Displays — modes of operation and systems interfaces — that provide navigation and aircraft performance data to T-45C aircrew (plus standby instruments and display malfunction / interface notes).", "Box CRS, PLAN, and a fixed nav source (TCN, WYPT, or offset) for a planometric line. Always CDI **or** PLAN. PLAN removes VOR info; CDI needed for VOR needle/bearing-to.", "RADALT not above 5,000’ AGL or \u003e40° roll/pitch. Standby AI ~9 min after power loss; OFF with no power or CAGE out; lock CAGE when exiting; no takeoff with OFF flag."], "ans": 2, "expl": "Box CRS, PLAN, and a fixed nav source (TCN, WYPT, or offset) for a planometric line. Always CDI **or** PLAN. PLAN removes VOR info; CDI needed for VOR needle/bearing-to."}, {"q": "TACAN needle / ADI heading marker rules?", "opts": ["Front altimeter setting → aircraft data system. ASI ~50–60 KIAS alive; 10-kt to 200, 50-kt above. Standby VSI lags vs HUD/ADI instantaneous VVI.", "VOR selection does not show VORTAC DME (unlike T-6). DME from TACAN or Waypoint — properly tune **both** VOR and TACAN boxes.", "Magenta TACAN needle on HSI requires **TCN** boxed. Magenta ADI heading marker shows bearing (or nearest turn) to TACAN when applicable.", "RADALT not above 5,000’ AGL or \u003e40° roll/pitch. Standby AI ~9 min after power loss; OFF with no power or CAGE out; lock CAGE when exiting; no takeoff with OFF flag."], "ans": 2, "expl": "Magenta TACAN needle on HSI requires **TCN** boxed. Magenta ADI heading marker shows bearing (or nearest turn) to TACAN when applicable."}, {"q": "Offsets TO/S and WO/S?", "opts": ["17 on-speed; 12 max-range; 14 max-endurance; 21.5 shakers; 26–28 stall tics. Indexers: WOW-off + gear down; amber/red/green (+ slightly combos). Approach lights same colors but **one light only**.", "TCN offset “x” / WYPT offset “+”. With PLAN: plan line through offset; needle and corner data become offset data (range/bearing/TTG). TO/S needle/data white; TACAN symbol magenta. Fuel-remaining-at-overflight from cur...", "GINA stores up to **5** Geo-Reference waypoints (large circled numbers). Selecting as steering WYPT converts symbol to standard. Use proper range scales for each flight stage; protect WYPT ZERO Lat/Long.", "CAM = glareshield camera (limited). Unbox → HUD repeater (combiner data). Left: GS, AOA, Mach, g. Steering/range rules by source. Digital VSI; RADALT under baro; AOB 0/5/15/30/45 (flash \u003e47°); scales ≠ ADI; VV; solid/..."], "ans": 1, "expl": "TCN offset “x” / WYPT offset “+”. With PLAN: plan line through offset; needle and corner data become offset data (range/bearing/TTG). TO/S needle/data white; TACAN symbol magenta. Fuel-remaining-at-overflight from current fuel, fuel flow, TTG."}, {"q": "VOR/DME approach tuning note?", "opts": ["VOR selection does not show VORTAC DME (unlike T-6). DME from TACAN or Waypoint — properly tune **both** VOR and TACAN boxes.", "Magenta TACAN needle on HSI requires **TCN** boxed. Magenta ADI heading marker shows bearing (or nearest turn) to TACAN when applicable.", "RADALT not above 5,000’ AGL or \u003e40° roll/pitch. Standby AI ~9 min after power loss; OFF with no power or CAGE out; lock CAGE when exiting; no takeoff with OFF flag.", "Front altimeter setting → aircraft data system. ASI ~50–60 KIAS alive; 10-kt to 200, 50-kt above. Standby VSI lags vs HUD/ADI instantaneous VVI."], "ans": 0, "expl": "VOR selection does not show VORTAC DME (unlike T-6). DME from TACAN or Waypoint — properly tune **both** VOR and TACAN boxes."}, {"q": "GEOREFs and HSI scaling?", "opts": ["17 on-speed; 12 max-range; 14 max-endurance; 21.5 shakers; 26–28 stall tics. Indexers: WOW-off + gear down; amber/red/green (+ slightly combos). Approach lights same colors but **one light only**.", "Box CRS, PLAN, and a fixed nav source (TCN, WYPT, or offset) for a planometric line. Always CDI **or** PLAN. PLAN removes VOR info; CDI needed for VOR needle/bearing-to.", "GINA stores up to **5** Geo-Reference waypoints (large circled numbers). Selecting as steering WYPT converts symbol to standard. Use proper range scales for each flight stage; protect WYPT ZERO Lat/Long.", "Displays — modes of operation and systems interfaces — that provide navigation and aircraft performance data to T-45C aircrew (plus standby instruments and display malfunction / interface notes)."], "ans": 2, "expl": "GINA stores up to **5** Geo-Reference waypoints (large circled numbers). Selecting as steering WYPT converts symbol to standard. Use proper range scales for each flight stage; protect WYPT ZERO Lat/Long."}, {"q": "HUD page: CAM vs repeater; key HUD symbology?", "opts": ["GINA stores up to **5** Geo-Reference waypoints (large circled numbers). Selecting as steering WYPT converts symbol to standard. Use proper range scales for each flight stage; protect WYPT ZERO Lat/Long.", "CAM = glareshield camera (limited). Unbox → HUD repeater (combiner data). Left: GS, AOA, Mach, g. Steering/range rules by source. Digital VSI; RADALT under baro; AOB 0/5/15/30/45 (flash \u003e47°); scales ≠ ADI; VV; solid/...", "TCN offset “x” / WYPT offset “+”. With PLAN: plan line through offset; needle and corner data become offset data (range/bearing/TTG). TO/S needle/data white; TACAN symbol magenta. Fuel-remaining-at-overflight from cur...", "17 on-speed; 12 max-range; 14 max-endurance; 21.5 shakers; 26–28 stall tics. Indexers: WOW-off + gear down; amber/red/green (+ slightly combos). Approach lights same colors but **one light only**."], "ans": 1, "expl": "CAM = glareshield camera (limited). Unbox → HUD repeater (combiner data). Left: GS, AOA, Mach, g. Steering/range rules by source. Digital VSI; RADALT under baro; AOB 0/5/15/30/45 (flash \u003e47°); scales ≠ ADI; VV; solid/dashed pitch ladder."}, {"q": "Standby ASI / altimeter / VSI highlights?", "opts": ["Front altimeter setting → aircraft data system. ASI ~50–60 KIAS alive; 10-kt to 200, 50-kt above. Standby VSI lags vs HUD/ADI instantaneous VVI.", "VOR selection does not show VORTAC DME (unlike T-6). DME from TACAN or Waypoint — properly tune **both** VOR and TACAN boxes.", "Magenta TACAN needle on HSI requires **TCN** boxed. Magenta ADI heading marker shows bearing (or nearest turn) to TACAN when applicable.", "RADALT not above 5,000’ AGL or \u003e40° roll/pitch. Standby AI ~9 min after power loss; OFF with no power or CAGE out; lock CAGE when exiting; no takeoff with OFF flag."], "ans": 0, "expl": "Front altimeter setting → aircraft data system. ASI ~50–60 KIAS alive; 10-kt to 200, 50-kt above. Standby VSI lags vs HUD/ADI instantaneous VVI."}, {"q": "Pitot-static plumbing destinations?", "opts": ["Is not displayed from VOR; use TACAN or Waypoint DME", "Exactly one is boxed; boxing one unboxes the other", "Pitot → both standby ASIs + SADS. Static → SADS, OBOGS, each cockpit static manifold (standby instruments).", "Aircraft displays, nav interfaces, standby instruments, and related malfunctions/interfaces"], "ans": 2, "expl": "Pitot → both standby ASIs + SADS. Static → SADS, OBOGS, each cockpit static manifold (standby instruments)."}, {"q": "AOA numbers and indexer/approach-light behavior?", "opts": ["GINA stores up to **5** Geo-Reference waypoints (large circled numbers). Selecting as steering WYPT converts symbol to standard. Use proper range scales for each flight stage; protect WYPT ZERO Lat/Long.", "17 on-speed; 12 max-range; 14 max-endurance; 21.5 shakers; 26–28 stall tics. Indexers: WOW-off + gear down; amber/red/green (+ slightly combos). Approach lights same colors but **one light only**.", "Box CRS, PLAN, and a fixed nav source (TCN, WYPT, or offset) for a planometric line. Always CDI **or** PLAN. PLAN removes VOR info; CDI needed for VOR needle/bearing-to.", "Displays — modes of operation and systems interfaces — that provide navigation and aircraft performance data to T-45C aircrew (plus standby instruments and display malfunction / interface notes)."], "ans": 1, "expl": "17 on-speed; 12 max-range; 14 max-endurance; 21.5 shakers; 26–28 stall tics. Indexers: WOW-off + gear down; amber/red/green (+ slightly combos). Approach lights same colors but **one light only**."}, {"q": "RADALT and standby attitude limits/care?", "opts": ["Front altimeter setting → aircraft data system. ASI ~50–60 KIAS alive; 10-kt to 200, 50-kt above. Standby VSI lags vs HUD/ADI instantaneous VVI.", "Magenta TACAN needle on HSI requires **TCN** boxed. Magenta ADI heading marker shows bearing (or nearest turn) to TACAN when applicable.", "RADALT not above 5,000’ AGL or \u003e40° roll/pitch. Standby AI ~9 min after power loss; OFF with no power or CAGE out; lock CAGE when exiting; no takeoff with OFF flag.", "Box CRS, PLAN, and a fixed nav source (TCN, WYPT, or offset) for a planometric line. Always CDI **or** PLAN. PLAN removes VOR info; CDI needed for VOR needle/bearing-to."], "ans": 2, "expl": "RADALT not above 5,000’ AGL or \u003e40° roll/pitch. Standby AI ~9 min after power loss; OFF with no power or CAGE out; lock CAGE when exiting; no takeoff with OFF flag."}, {"q": "Display malfunction / DEU / override actions?", "opts": ["CAM = glareshield camera (limited). Unbox → HUD repeater (combiner data). Left: GS, AOA, Mach, g. Steering/range rules by source. Digital VSI; RADALT under baro; AOB 0/5/15/30/45 (flash \u003e47°); scales ≠ ADI; VV; solid/...", "TCN offset “x” / WYPT offset “+”. With PLAN: plan line through offset; needle and corner data become offset data (range/bearing/TTG). TO/S needle/data white; TACAN symbol magenta. Fuel-remaining-at-overflight from cur...", "Electronic MFCD/HUD data through **DEU**. Standbys reliable if plumbing OK during elec/SADS/DEU degrade. Hold **DISPLAY POWER RESET ~5 s** to reset DEU. **Display Override** retains left MFD past **2-minute** post-gen...", "GINA stores up to **5** Geo-Reference waypoints (large circled numbers). Selecting as steering WYPT converts symbol to standard. Use proper range scales for each flight stage; protect WYPT ZERO Lat/Long."], "ans": 2, "expl": "Electronic MFCD/HUD data through **DEU**. Standbys reliable if plumbing OK during elec/SADS/DEU degrade. Hold **DISPLAY POWER RESET ~5 s** to reset DEU. **Display Override** retains left MFD past **2-minute** post-generator-failure threshold. Prefer DEP for BINGO/LAW/CRS/HDG."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

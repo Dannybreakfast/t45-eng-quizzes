@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ENG0124 INS, GPS Operation and Concepts — VBT (PDF) — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · INS / GPS</div>
+    <h1>ENG0124 INS, GPS Operation and Concepts — VBT (PDF)</h1>
+    <div class="meta">24 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 24</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">INS / GPS</div>
+    <h2 style="margin:0.2rem 0">ENG0124 INS, GPS Operation and Concepts — VBT (PDF)</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "INS position accuracy decaying with time is known as:", "opts": ["Pseudo-ranging", "Drift", "Rigidity in space", "Mask angle"], "ans": 1, "expl": "Drift."}, {"q": "T-45 INS uses how many ring-laser gyros?", "opts": ["1", "2", "3 (one per aircraft axis)", "6"], "ans": 2, "expl": "Three RLGs, one per axis."}, {"q": "WGS-84 stands for:", "opts": ["Wing Geometry System 1984", "World Geodetic System, 1984", "Wide GPS Standard 1984", "Weapon Guidance Scheme 1984"], "ans": 1, "expl": "World Geodetic System, 1984."}, {"q": "Optimum GPS satellite array for triangulation (PDF):", "opts": ["All 24 in view low on horizon", "1 overhead + 3 to the sides with 120° spacing", "Exactly 2 satellites", "Only geosynchronous sats"], "ans": 1, "expl": "1 overhead + 3 at 120°."}, {"q": "GINA is powered by:", "opts": ["115 VAC Essential only", "28 Volt DC Essential bus (operates on battery alone)", "Hydraulic flow only", "28 VDC Generator bus with no battery path"], "ans": 1, "expl": "28 VDC Essential; battery-capable."}, {"q": "Best INS-only drift indicated by QUAL 0.59 OK:", "opts": ["0.59 NM per flight hour", "0.59 NM total per sortie", "5.9 kt", "59 meters CEP"], "ans": 0, "expl": "0.59 NM/FH without GPS updates."}, {"q": "Shipboard DGRO alignment normal completion time:", "opts": ["About 90 seconds", "About 3 minutes", "About 8 minutes", "About 45 minutes"], "ans": 2, "expl": "DGRO normally within ~8 minutes."}, {"q": "Initiating alignment without the parking brake set causes:", "opts": ["Immediate GINA advisory", "Automatic default to DGRO mode", "HUD blanking", "Forced full 30-minute align"], "ans": 1, "expl": "Defaults to DGRO."}, {"q": "OPGO BIT status means:", "opts": ["System off", "Passed BIT but single-channel MUX bus failure", "Dual-channel MUX failure", "Overheat only"], "ans": 1, "expl": "OPGO = passed + single-channel MUX fail."}, {"q": "With a suspect GINA, the PDF recommends:", "opts": ["Continue IMC on GINA alone", "Revert to standby instruments and attempt to maintain VMC", "Pull only the RADALT CB", "Box HYBD until it clears"], "ans": 1, "expl": "Standby instruments; maintain VMC."}, {"q": "Define a gyroscope’s key property used for attitude reference?", "opts": ["Weight on wheels, parking brake set, 28 VDC applied. Without parking brake → defaults to DGRO. INS gyrocompasses until GPS date & time valid.", "Gyroscopic inertia / rigidity in space — spin axis stays toward a fixed point in space unless external force is applied.", "“GINA” flashes lower-right on both MFCDs then solid. May also see AV BIT, ATTITUDE, CORRIDOR, MISCOMPARE, POSITION, or SIM MODE (NATOPS for meanings).", "Physically moving the gyro (aircraft A→B) causes the same apparent precession as Earth rotating an equal number of degrees of longitude."], "ans": 1, "expl": "Gyroscopic inertia / rigidity in space — spin axis stays toward a fixed point in space unless external force is applied."}, {"q": "Why were early mechanical INS gyros challenging?", "opts": ["Up to 200 coded waypoints from MDL; 15 per page; 14 pages. Selected WYPT boxed; transfer with XFER.", "After 12 h appears due west; after 24 h back due east — axis still inertially fixed; Earth rotated under it.", "Subject to friction and wear, which can lead to drift. T-45 standby attitude gyro is a mechanical example.", "If GINA degrade but INS data still good, consider not attempting an in-flight alignment — especially in IMC."], "ans": 2, "expl": "Subject to friction and wear, which can lead to drift. T-45 standby attitude gyro is a mechanical example."}, {"q": "Apparent precession equator example (spin axis due east)?", "opts": ["If GINA degrade but INS data still good, consider not attempting an in-flight alignment — especially in IMC.", "Subject to friction and wear, which can lead to drift. T-45 standby attitude gyro is a mechanical example.", "After 12 h appears due west; after 24 h back due east — axis still inertially fixed; Earth rotated under it.", "Up to 200 coded waypoints from MDL; 15 per page; 14 pages. Selected WYPT boxed; transfer with XFER."], "ans": 2, "expl": "After 12 h appears due west; after 24 h back due east — axis still inertially fixed; Earth rotated under it."}, {"q": "Apparent transport precession?", "opts": ["Gyroscopic inertia / rigidity in space — spin axis stays toward a fixed point in space unless external force is applied.", "Physically moving the gyro (aircraft A→B) causes the same apparent precession as Earth rotating an equal number of degrees of longitude.", "“GINA” flashes lower-right on both MFCDs then solid. May also see AV BIT, ATTITUDE, CORRIDOR, MISCOMPARE, POSITION, or SIM MODE (NATOPS for meanings).", "Weight on wheels, parking brake set, 28 VDC applied. Without parking brake → defaults to DGRO. INS gyrocompasses until GPS date & time valid."], "ans": 1, "expl": "Physically moving the gyro (aircraft A→B) causes the same apparent precession as Earth rotating an equal number of degrees of longitude."}, {"q": "INS definition and drift (PDF)?", "opts": ["WOW detected and tracking 4 satellites. Full vs DGRO; DGRO normally complete within ~8 minutes; full takes longer. Without parking brake, system defaults to DGRO. Fleet may use data link / ship’s INS cable.", "3 ring-laser gyros (one per axis); second-gen; no moving parts; optical laser-beam biasing; photodiode frequency discriminators measure Doppler from apparent & transport precession and math-compensate.", "Alignment ~3 min. QUAL starts 68.57 and counts to 0.59 with OK (= 0.59 NM drift/FH INS without GPS — best the system can do). Complete when INS appears on ADI and velocity vector appears on HUD.", "Self-contained system of gyros and accelerometers providing attitude, position, and velocity from inertial effects. Once aligned, continuously calculates position/velocity; accuracy decays with time = **DRIFT**."], "ans": 3, "expl": "Self-contained system of gyros and accelerometers providing attitude, position, and velocity from inertial effects. Once aligned, continuously calculates position/velocity; accuracy decays with time = **DRIFT**."}, {"q": "T-45 Litton INS gyro design highlights?", "opts": ["3 ring-laser gyros (one per axis); second-gen; no moving parts; optical laser-beam biasing; photodiode frequency discriminators measure Doppler from apparent & transport precession and math-compensate.", "Alignment ~3 min. QUAL starts 68.57 and counts to 0.59 with OK (= 0.59 NM drift/FH INS without GPS — best the system can do). Complete when INS appears on ADI and velocity vector appears on HUD.", "Self-contained system of gyros and accelerometers providing attitude, position, and velocity from inertial effects. Once aligned, continuously calculates position/velocity; accuracy decays with time = **DRIFT**.", "WOW detected and tracking 4 satellites. Full vs DGRO; DGRO normally complete within ~8 minutes; full takes longer. Without parking brake, system defaults to DGRO. Fleet may use data link / ship’s INS cable."], "ans": 0, "expl": "3 ring-laser gyros (one per axis); second-gen; no moving parts; optical laser-beam biasing; photodiode frequency discriminators measure Doppler from apparent & transport precession and math-compensate."}, {"q": "GPS constellation / orbit / datum (PDF)?", "opts": ["Check ADI mode (HYBD / INS / GPS). Check BIT page. Check ACFT DATA for alignment and 4-satellite track. Suspect GINA → standby instruments and attempt to maintain VMC.", "When RST is selected, GINA power is cycled off/on, or WYPT ZERO is manually changed. Don’t overwrite WYPT ZERO while entering nav data — dumps the system.", "“GINA” flashes lower-right on both MFCDs then solid. May also see AV BIT, ATTITUDE, CORRIDOR, MISCOMPARE, POSITION, or SIM MODE (NATOPS for meanings).", "24 sats, 6 planes, 4 ops + spare slot each (up to 30). ~12,000 miles altitude; 12-hour orbits; 60° equatorial spacing. DoD monitors. Coordinate system **WGS-84**."], "ans": 3, "expl": "24 sats, 6 planes, 4 ops + spare slot each (up to 30). ~12,000 miles altitude; 12-hour orbits; 60° equatorial spacing. DoD monitors. Coordinate system **WGS-84**."}, {"q": "Pseudo-ranging?", "opts": ["Check ADI mode (HYBD / INS / GPS). Check BIT page. Check ACFT DATA for alignment and 4-satellite track. Suspect GINA → standby instruments and attempt to maintain VMC.", "Accel, position, heading, digital & analog attitude, altitude change rates, GPS time to DEU over MUX; GPS/INS data to DEU and ADRS on **1553B**. Power: 28 VDC Essential; battery-capable.", "Passive receiver times transmissions from ≥4 satellites (lowest usable mask angle) to get distance (time-of-flight), then triangulates position by comparing transmission times.", "First US Military INS production unit combining embedded GPS with INS. Assembly in equipment bay (belly access). GPS antenna top fuselage aft of canopy — omni, passive, receive-only."], "ans": 2, "expl": "Passive receiver times transmissions from ≥4 satellites (lowest usable mask angle) to get distance (time-of-flight), then triangulates position by comparing transmission times."}, {"q": "GINA historical note and locations?", "opts": ["ADR, GINA, AUTO, Display, RADALT, MDL (+ Maintenance). GO = normal; OPGO = passed but single-channel MUX fail; DEGD = BIT fail, equipment OFF, or dual-channel MUX fail; also IN TEST, OVHT.", "First US Military INS production unit combining embedded GPS with INS. Assembly in equipment bay (belly access). GPS antenna top fuselage aft of canopy — omni, passive, receive-only.", "Passive receiver times transmissions from ≥4 satellites (lowest usable mask angle) to get distance (time-of-flight), then triangulates position by comparing transmission times.", "Accel, position, heading, digital & analog attitude, altitude change rates, GPS time to DEU over MUX; GPS/INS data to DEU and ADRS on **1553B**. Power: 28 VDC Essential; battery-capable."], "ans": 1, "expl": "First US Military INS production unit combining embedded GPS with INS. Assembly in equipment bay (belly access). GPS antenna top fuselage aft of canopy — omni, passive, receive-only."}, {"q": "LN-100G outputs and buses?", "opts": ["ADR, GINA, AUTO, Display, RADALT, MDL (+ Maintenance). GO = normal; OPGO = passed but single-channel MUX fail; DEGD = BIT fail, equipment OFF, or dual-channel MUX fail; also IN TEST, OVHT.", "Accel, position, heading, digital & analog attitude, altitude change rates, GPS time to DEU over MUX; GPS/INS data to DEU and ADRS on **1553B**. Power: 28 VDC Essential; battery-capable.", "First US Military INS production unit combining embedded GPS with INS. Assembly in equipment bay (belly access). GPS antenna top fuselage aft of canopy — omni, passive, receive-only.", "Alignment ~3 min. QUAL starts 68.57 and counts to 0.59 with OK (= 0.59 NM drift/FH INS without GPS — best the system can do). Complete when INS appears on ADI and velocity vector appears on HUD."], "ans": 1, "expl": "Accel, position, heading, digital & analog attitude, altitude change rates, GPS time to DEU over MUX; GPS/INS data to DEU and ADRS on **1553B**. Power: 28 VDC Essential; battery-capable."}, {"q": "Ground alignment QUAL and completion (PDF)?", "opts": ["Accel, position, heading, digital & analog attitude, altitude change rates, GPS time to DEU over MUX; GPS/INS data to DEU and ADRS on **1553B**. Power: 28 VDC Essential; battery-capable.", "Alignment ~3 min. QUAL starts 68.57 and counts to 0.59 with OK (= 0.59 NM drift/FH INS without GPS — best the system can do). Complete when INS appears on ADI and velocity vector appears on HUD.", "ADR, GINA, AUTO, Display, RADALT, MDL (+ Maintenance). GO = normal; OPGO = passed but single-channel MUX fail; DEGD = BIT fail, equipment OFF, or dual-channel MUX fail; also IN TEST, OVHT.", "3 ring-laser gyros (one per axis); second-gen; no moving parts; optical laser-beam biasing; photodiode frequency discriminators measure Doppler from apparent & transport precession and math-compensate."], "ans": 1, "expl": "Alignment ~3 min. QUAL starts 68.57 and counts to 0.59 with OK (= 0.59 NM drift/FH INS without GPS — best the system can do). Complete when INS appears on ADI and velocity vector appears on HUD."}, {"q": "In-flight alignment caution?", "opts": ["Up to 200 coded waypoints from MDL; 15 per page; 14 pages. Selected WYPT boxed; transfer with XFER.", "Subject to friction and wear, which can lead to drift. T-45 standby attitude gyro is a mechanical example.", "If GINA degrade but INS data still good, consider not attempting an in-flight alignment — especially in IMC.", "After 12 h appears due west; after 24 h back due east — axis still inertially fixed; Earth rotated under it."], "ans": 2, "expl": "If GINA degrade but INS data still good, consider not attempting an in-flight alignment — especially in IMC."}, {"q": "Shipboard alignment requirements and DGRO?", "opts": ["Alignment ~3 min. QUAL starts 68.57 and counts to 0.59 with OK (= 0.59 NM drift/FH INS without GPS — best the system can do). Complete when INS appears on ADI and velocity vector appears on HUD.", "3 ring-laser gyros (one per axis); second-gen; no moving parts; optical laser-beam biasing; photodiode frequency discriminators measure Doppler from apparent & transport precession and math-compensate.", "WOW detected and tracking 4 satellites. Full vs DGRO; DGRO normally complete within ~8 minutes; full takes longer. Without parking brake, system defaults to DGRO. Fleet may use data link / ship’s INS cable.", "Self-contained system of gyros and accelerometers providing attitude, position, and velocity from inertial effects. Once aligned, continuously calculates position/velocity; accuracy decays with time = **DRIFT**."], "ans": 2, "expl": "WOW detected and tracking 4 satellites. Full vs DGRO; DGRO normally complete within ~8 minutes; full takes longer. Without parking brake, system defaults to DGRO. Fleet may use data link / ship’s INS cable."}, {"q": "When is WYPT ZERO sent to GINA during alignment?", "opts": ["Weight on wheels, parking brake set, 28 VDC applied. Without parking brake → defaults to DGRO. INS gyrocompasses until GPS date & time valid.", "24 sats, 6 planes, 4 ops + spare slot each (up to 30). ~12,000 miles altitude; 12-hour orbits; 60° equatorial spacing. DoD monitors. Coordinate system **WGS-84**.", "When RST is selected, GINA power is cycled off/on, or WYPT ZERO is manually changed. Don’t overwrite WYPT ZERO while entering nav data — dumps the system.", "“GINA” flashes lower-right on both MFCDs then solid. May also see AV BIT, ATTITUDE, CORRIDOR, MISCOMPARE, POSITION, or SIM MODE (NATOPS for meanings)."], "ans": 2, "expl": "When RST is selected, GINA power is cycled off/on, or WYPT ZERO is manually changed. Don’t overwrite WYPT ZERO while entering nav data — dumps the system."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

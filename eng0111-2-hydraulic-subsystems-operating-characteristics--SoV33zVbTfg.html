@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ENG0111 (2) Hydraulic Subsystems Operating Characteristics — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · Hydraulic</div>
+    <h1>ENG0111 (2) Hydraulic Subsystems Operating Characteristics</h1>
+    <div class="meta">18 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 18</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Hydraulic</div>
+    <h2 style="margin:0.2rem 0">ENG0111 (2) Hydraulic Subsystems Operating Characteristics</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "Total normal gear extension time is about:", "opts": ["5 seconds", "10 seconds", "15 seconds", "30 seconds"], "ans": 2, "expl": "About 15 seconds extend; 10 seconds retract."}, {"q": "Fusible plugs release tire pressure at:", "opts": ["212°F", "324°F", "400°F", "Only above 175 psi"], "ans": 1, "expl": "≥324°F to prevent explosive tire failure after heavy braking."}, {"q": "NWS high gain full pedal deflection is:", "opts": ["12°", "20°", "65°", "90°"], "ans": 2, "expl": "High gain ±65° for low-speed taxi \u003c10 kt."}, {"q": "With SKID caution illuminated you should:", "opts": ["Leave A/S on", "Select anti-skid OFF", "Pull emerg gear", "Reset HYD 2"], "ans": 1, "expl": "Fail-safe isolation restores normal brakes; leaving ON can mean no brakes."}, {"q": "Approx landing gear extension / retraction times?", "opts": ["About 30 seconds extend; about 10 seconds retract.", "About 15 seconds extend; about 10 seconds retract.", "About 7 seconds extend; about 10 seconds retract.", "About 25 seconds extend; about 10 seconds retract."], "ans": 1, "expl": "About 15 seconds extend; about 10 seconds retract."}, {"q": "Gear handle detent pull force?", "opts": ["1.8–8 lb to unlock solenoid; 20–50 lb overrides (causes wear if habitual).", "13.5–8 lb to unlock solenoid; 20–50 lb overrides (causes wear if habitual).", "7–8 lb to unlock solenoid; 20–50 lb overrides (causes wear if habitual).", "3.5–8 lb to unlock solenoid; 20–50 lb overrides (causes wear if habitual)."], "ans": 3, "expl": "3.5–8 lb to unlock solenoid; 20–50 lb overrides (causes wear if habitual)."}, {"q": "Will gear retract with handle UP on deck (WOW)?", "opts": ["Yes — available in the aft cockpit only.", "Yes — after selecting GAIN ORIDE.", "No — control logic prevents UP selection from moving gear.", "Yes — fully available with no limitations."], "ans": 2, "expl": "No — control logic prevents UP selection from moving gear."}, {"q": "Emergency gear handle action?", "opts": ["Rotate clockwise and pull ~6 inches.", "Rotate clockwise and pull ~16 inches.", "Rotate clockwise and pull ~12 inches.", "Rotate clockwise and pull ~3 inches."], "ans": 0, "expl": "Rotate clockwise and pull ~6 inches."}, {"q": "What closes NLG forward doors after emerg free-fall?", "opts": ["28 VDC Essential Bus emergency door actuator (near closed).", "56 VDC Essential Bus emergency door actuator (near closed).", "14 VDC Essential Bus emergency door actuator (near closed).", "38 VDC Essential Bus emergency door actuator (near closed)."], "ans": 0, "expl": "28 VDC Essential Bus emergency door actuator (near closed)."}, {"q": "Tire fusible plug blow temperature?", "opts": ["162°F or above.", "324°F or above.", "334°F or above.", "648°F or above."], "ans": 1, "expl": "324°F or above."}, {"q": "When is anti-skid active (speed)?", "opts": ["Above ~30 kt accelerating; above ~10–13 kt decelerating (with gear down, WOW, switch ON).", "Launch bar not retracted, gear down and locked, weight off wheels (after ~10 s).", "Place anti-skid switch OFF to isolate A/S and restore normal brakes.", "Momentary paddle switch (also illuminates NWS caution)."], "ans": 0, "expl": "Above ~30 kt accelerating; above ~10–13 kt decelerating (with gear down, WOW, switch ON)."}, {"q": "Action for SKID caution?", "opts": ["Above ~30 kt accelerating; above ~10–13 kt decelerating (with gear down, WOW, switch ON).", "Launch bar not retracted, gear down and locked, weight off wheels (after ~10 s).", "Place anti-skid switch OFF to isolate A/S and restore normal brakes.", "Momentary paddle switch (also illuminates NWS caution)."], "ans": 2, "expl": "Place anti-skid switch OFF to isolate A/S and restore normal brakes."}, {"q": "NWS low-gain authority?", "opts": ["±22° nosewheel with full rudder pedal.", "±6° nosewheel with full rudder pedal.", "±24° nosewheel with full rudder pedal.", "±12° nosewheel with full rudder pedal."], "ans": 3, "expl": "±12° nosewheel with full rudder pedal."}, {"q": "NWS high-gain authority / limit?", "opts": ["±75°; use only \u003c10 kt groundspeed for taxi.", "±32°; use only \u003c10 kt groundspeed for taxi.", "±65°; use only \u003c10 kt groundspeed for taxi.", "±130°; use only \u003c10 kt groundspeed for taxi."], "ans": 2, "expl": "±65°; use only \u003c10 kt groundspeed for taxi."}, {"q": "NWS with launch bar extend (button held)?", "opts": ["Mid gain ~±10°.", "Mid gain ~±30°.", "Mid gain ~±20°.", "Mid gain ~±40°."], "ans": 2, "expl": "Mid gain ~±20°."}, {"q": "How to disengage NWS?", "opts": ["Launch bar not retracted, gear down and locked, weight off wheels (after ~10 s).", "Above ~30 kt accelerating; above ~10–13 kt decelerating (with gear down, WOW, switch ON).", "Momentary paddle switch (also illuminates NWS caution).", "Place anti-skid switch OFF to isolate A/S and restore normal brakes."], "ans": 2, "expl": "Momentary paddle switch (also illuminates NWS caution)."}, {"q": "Red launch bar light meaning?", "opts": ["Above ~30 kt accelerating; above ~10–13 kt decelerating (with gear down, WOW, switch ON).", "Place anti-skid switch OFF to isolate A/S and restore normal brakes.", "Momentary paddle switch (also illuminates NWS caution).", "Launch bar not retracted, gear down and locked, weight off wheels (after ~10 s)."], "ans": 3, "expl": "Launch bar not retracted, gear down and locked, weight off wheels (after ~10 s)."}, {"q": "Hook light timing extend/retract?", "opts": ["~11.5 s in transit extend; ~6 s or less retract.", "~3 s in transit extend; ~6 s or less retract.", "~0.8 s in transit extend; ~6 s or less retract.", "~1.5 s in transit extend; ~6 s or less retract."], "ans": 3, "expl": "~1.5 s in transit extend; ~6 s or less retract."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

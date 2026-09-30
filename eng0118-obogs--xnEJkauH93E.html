@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ENG0118 OBOGS — T-45 Quiz</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · ECS / OBOGS</div>
+    <h1>ENG0118 OBOGS</h1>
+    <div class="meta">21 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 21</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">ECS / OBOGS</div>
+    <h2 style="margin:0.2rem 0">ENG0118 OBOGS</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "OBOGS molecular sieves are cycled by the rotary valve about every:", "opts": ["1 second", "5 seconds", "30 seconds", "1 minute"], "ans": 1, "expl": "Valve cycles between sieves every five seconds (one producing, one back-flushing)."}, {"q": "After engine start, SSOM BIT runs continuously about every:", "opts": ["5 seconds", "15 seconds", "1 minute", "15 minutes"], "ans": 2, "expl": "Manual BIT after start, then continuous ~1-minute intervals."}, {"q": "Total electrical failure requires the crew to:", "opts": ["Reset OBOGS BIT", "Select MAX DEFOG", "Use emergency oxygen", "Turn AIR FLOW OFF"], "ans": 2, "expl": "Concentrator and solid-state oxygen monitor fail without Essential bus power."}, {"q": "G-suit inflation roughly:", "opts": ["Starts at 1G, full at 3G", "Starts at 2G, full at 6G", "Starts at 4G, full at 9G", "Is not related to OBOGS panel"], "ans": 1, "expl": "Lecture: inflation begins ~2G and reaches full at 6G."}, {"q": "Insufficient OBOGS flow at high altitude / low power is corrected by:", "opts": ["Selecting AIR FLOW OFF", "Increasing power above ~70–80%", "Depressing G-suit test only", "Pulling emergency oxygen immediately always"], "ans": 1, "expl": "Slightly increase power above ~70–80% to restore bleed/flow."}, {"q": "What does OBOGS stand for?", "opts": ["Increase power slightly above ~70–80%.", "Use emergency oxygen", "On-Board Oxygen Generating System.", "28 VDC Essential Services bus."], "ans": 2, "expl": "On-Board Oxygen Generating System."}, {"q": "Bleed source for OBOGS?", "opts": ["Meets peak demand, prevents surges, equalizes breathing-air temperature.", "Lacks the OBOGS/anti-g switch present in the front.", "Fifth-stage compressor bleed whenever the engine is operating.", "Concentrator and SSOM fail — use emergency oxygen."], "ans": 2, "expl": "Fifth-stage compressor bleed whenever the engine is operating."}, {"q": "How is OBOGS bleed cooled?", "opts": ["OBOGS warning light + warning tone; system still supplies reduced concentration.", "Anti-G operates anytime engine is running regardless of OBOGS/anti-g switch position.", "About every 5 seconds between the two molecular sieves (one producing, one back-flushing).", "Heat exchanger using cabin discharge air accelerated by a bleed-air inducer/jet pump."], "ans": 3, "expl": "Heat exchanger using cabin discharge air accelerated by a bleed-air inducer/jet pump."}, {"q": "Rotary valve cycle time?", "opts": ["OBOGS warning light + warning tone; system still supplies reduced concentration.", "Anti-G operates anytime engine is running regardless of OBOGS/anti-g switch position.", "About every 5 seconds between the two molecular sieves (one producing, one back-flushing).", "Heat exchanger using cabin discharge air accelerated by a bleed-air inducer/jet pump."], "ans": 2, "expl": "About every 5 seconds between the two molecular sieves (one producing, one back-flushing)."}, {"q": "Max oxygen concentration claimed?", "opts": ["Up to about 99% oxygen.", "Up to about 198% oxygen.", "Up to about 49% oxygen.", "Up to about 109% oxygen."], "ans": 0, "expl": "Up to about 99% oxygen."}, {"q": "What does the external plenum do?", "opts": ["OBOGS warning light + warning tone; system still supplies reduced concentration.", "Meets peak demand, prevents surges, equalizes breathing-air temperature.", "Fifth-stage compressor bleed whenever the engine is operating.", "Heat exchanger using cabin discharge air accelerated by a bleed-air inducer/jet pump."], "ans": 1, "expl": "Meets peak demand, prevents surges, equalizes breathing-air temperature."}, {"q": "SSOM BIT cadence?", "opts": ["Manual BIT after engine start, then continuous about every 101 minute.", "Manual BIT after engine start, then continuous about every 1 minute.", "Manual BIT after engine start, then continuous about every 2 minute.", "Manual BIT after engine start, then continuous about every 11 minute."], "ans": 1, "expl": "Manual BIT after engine start, then continuous about every 1 minute."}, {"q": "Low O2 concentration indication?", "opts": ["Anti-G operates anytime engine is running regardless of OBOGS/anti-g switch position.", "Meets peak demand, prevents surges, equalizes breathing-air temperature.", "Heat exchanger using cabin discharge air accelerated by a bleed-air inducer/jet pump.", "OBOGS warning light + warning tone; system still supplies reduced concentration."], "ans": 3, "expl": "OBOGS warning light + warning tone; system still supplies reduced concentration."}, {"q": "Low O2 pressure indication?", "opts": ["O1 PRES caution light + caution tone; also check for free-flowing mask.", "O4 PRES caution light + caution tone; also check for free-flowing mask.", "O12 PRES caution light + caution tone; also check for free-flowing mask.", "O2 PRES caution light + caution tone; also check for free-flowing mask."], "ans": 3, "expl": "O2 PRES caution light + caution tone; also check for free-flowing mask."}, {"q": "Power bus for concentrator/SSOM?", "opts": ["38 VDC Essential Services bus.", "56 VDC Essential Services bus.", "14 VDC Essential Services bus.", "28 VDC Essential Services bus."], "ans": 3, "expl": "28 VDC Essential Services bus."}, {"q": "Total electrical failure effect?", "opts": ["Concentrator and SSOM fail — use emergency oxygen.", "Fifth-stage compressor bleed whenever the engine is operating.", "Lacks the OBOGS/anti-g switch present in the front.", "Meets peak demand, prevents surges, equalizes breathing-air temperature."], "ans": 0, "expl": "Concentrator and SSOM fail — use emergency oxygen."}, {"q": "Mask regulator auto feature?", "opts": ["Increases delivery pressure automatically above ~70000 ft cabin altitude.", "Increases delivery pressure automatically above ~17500 ft cabin altitude.", "Increases delivery pressure automatically above ~35,000 ft cabin altitude.", "Increases delivery pressure automatically above ~35010 ft cabin altitude."], "ans": 2, "expl": "Increases delivery pressure automatically above ~35,000 ft cabin altitude."}, {"q": "G-suit inflation schedule?", "opts": ["Begins ~12G; full inflation ~6G; test via panel button.", "Begins ~1G; full inflation ~6G; test via panel button.", "Begins ~4G; full inflation ~6G; test via panel button.", "Begins ~2G; full inflation ~6G; test via panel button."], "ans": 3, "expl": "Begins ~2G; full inflation ~6G; test via panel button."}, {"q": "Rear cockpit panel difference?", "opts": ["Lacks the OBOGS/anti-g switch present in the front.", "Meets peak demand, prevents surges, equalizes breathing-air temperature.", "Fifth-stage compressor bleed whenever the engine is operating.", "Concentrator and SSOM fail — use emergency oxygen."], "ans": 0, "expl": "Lacks the OBOGS/anti-g switch present in the front."}, {"q": "Low flow at high altitude / low power fix?", "opts": ["Increase power slightly above ~70–80%.", "Increase power slightly above ~140–80%.", "Increase power slightly above ~80–80%.", "Increase power slightly above ~35–80%."], "ans": 0, "expl": "Increase power slightly above ~70–80%."}, {"q": "Anti-G vs OBOGS switch?", "opts": ["OBOGS warning light + warning tone; system still supplies reduced concentration.", "Anti-G operates anytime engine is running regardless of OBOGS/anti-g switch position.", "About every 5 seconds between the two molecular sieves (one producing, one back-flushing).", "Heat exchanger using cabin discharge air accelerated by a bleed-air inducer/jet pump."], "ans": 1, "expl": "Anti-G operates anytime engine is running regardless of OBOGS/anti-g switch position."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= QUESTIONS.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>
