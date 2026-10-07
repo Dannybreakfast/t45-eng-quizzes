@@ -21,37 +21,7 @@ h1 { margin:0 0 .4rem; font-size:1.6rem; }
 .crumb a { color:var(--accent); text-decoration:none; }
 .crumb a:hover { text-decoration:underline; }
 .stats { color:var(--muted); font-size:.95rem; margin-top:.5rem; }
-.section-grid {
-  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem; margin-top: 0.25rem;
-}
-a.section-btn {
-  display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
-  gap:0.35rem; min-height: 7.5rem;
-  background: linear-gradient(160deg, #1e2d44, #162033);
-  border: 1px solid var(--border); border-radius: 14px;
-  padding: 1.25rem 1.3rem; color: var(--text); text-decoration:none;
-  transition: border-color .15s, transform .15s, box-shadow .15s;
-}
-a.section-btn:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 1px rgba(61,156,240,.25);
-  transform: translateY(-1px);
-  text-decoration: none;
-}
-a.section-btn .code {
-  font-size: 1.85rem; font-weight: 800; letter-spacing: 0.04em; color: #d8ebff;
-}
-a.section-btn .name { color: var(--muted); font-size: 0.95rem; }
-a.section-btn .count {
-  margin-top: 0.35rem; font-size: 0.9rem; color: var(--accent);
-  font-weight: 600;
-}
 .topic { margin-bottom: 1.75rem; }
-.topic h2 {
-  margin:0 0 .6rem; font-size:1.15rem; color:#c5daf0;
-  border-bottom:1px solid var(--border); padding-bottom:.35rem;
-}
 ul { list-style:none; padding:0; margin:0; }
 li { margin:0 0 .4rem; }
 li a {
@@ -65,12 +35,39 @@ footer { margin-top:2rem; color:var(--muted); font-size:.85rem; }
 .back-home { margin-bottom: 1rem; }
 .back-home a { color: var(--accent); text-decoration: none; }
 .back-home a:hover { text-decoration: underline; }
+a.study-guide-banner {
+  display:flex; flex-direction:column; gap:0.25rem;
+  margin: 0 0 1.25rem;
+  background: linear-gradient(135deg, #1e3a5f, #1a2a40);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  color: var(--text); text-decoration:none;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.2);
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+a.study-guide-banner:hover {
+  border-color: #7ec4f8;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.4);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+a.study-guide-banner .sg-title {
+  font-size: 1.25rem; font-weight: 800; color: #d8ebff; letter-spacing: 0.02em;
+}
+a.study-guide-banner .sg-sub { color: var(--muted); font-size: 0.92rem; }
+a.study-guide-banner .sg-cta { color: var(--accent); font-weight: 700; font-size: 0.95rem; margin-top: 0.15rem; }
 </style></head><body><div class='wrap'>
 <header>
 <div class='crumb'><a href='index.html'>Home</a> · NAV</div>
 <h1>NAV — Navigation</h1>
 <div class='stats'>4 quizzes · 103 questions</div></header>
 <div class='back-home'><a href='index.html'>← All sections</a> · <a href='knowledge-packs/nav/index.html'>NAV knowledge packs</a></div>
+<a class='study-guide-banner' href='nav-study-guide.html'>
+<span class='sg-title'>NAV Study Guide</span>
+<span class='sg-sub'>Gouge · Voice procedures · Departures &amp; terminals · Approach plates — full prose guide with key numbers</span>
+<span class='sg-cta'>Open study guide →</span>
+</a>
 <section class='topic'><ul>
 <li><a href='nav-0104-approach-plates--nav0104.html'><span>NAV 0104 Approach Plates</span><span class='count'>24 Q</span></a></li>
 <li><a href='nav-gouge-pdf-excerpts-quizlet--gouge.html'><span>NAV Gouge (PDF excerpts + Quizlet)</span><span class='count'>24 Q</span></a></li>
