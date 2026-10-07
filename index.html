@@ -65,6 +65,29 @@ footer { margin-top:2rem; color:var(--muted); font-size:.85rem; }
 .back-home { margin-bottom: 1rem; }
 .back-home a { color: var(--accent); text-decoration: none; }
 .back-home a:hover { text-decoration: underline; }
+
+a.study-guide-banner {
+  display:flex; flex-direction:column; gap:0.25rem;
+  margin: 1rem 0 0.35rem;
+  background: linear-gradient(135deg, #1e3a5f, #1a2a40);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  color: var(--text); text-decoration:none;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.2);
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+a.study-guide-banner:hover {
+  border-color: #7ec4f8;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.4);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+a.study-guide-banner .sg-title {
+  font-size: 1.25rem; font-weight: 800; color: #d8ebff; letter-spacing: 0.02em;
+}
+a.study-guide-banner .sg-sub { color: var(--muted); font-size: 0.92rem; }
+a.study-guide-banner .sg-cta { color: var(--accent); font-weight: 700; font-size: 0.95rem; margin-top: 0.15rem; }
 </style></head><body><div class='wrap'>
 <header><h1>T-45C — Local Quizzes</h1>
 <div class='sub'>Offline multiple-choice practice. Pick a section to begin.</div>
@@ -77,4 +100,10 @@ footer { margin-top:2rem; color:var(--muted); font-size:.85rem; }
 <a class='section-btn' href='section-met.html'><span class='code'>MET</span><span class='name'>Meteorology</span><span class='count'>2 quizzes</span></a>
 <a class='section-btn' href='section-nav.html'><span class='code'>NAV</span><span class='name'>Navigation</span><span class='count'>4 quizzes</span></a>
 </div>
+<a class='study-guide-banner' href='t45-limits-flashcards-quiz.html'>
+<span class='sg-title'>T-45 Limits flashcards</span>
+<span class='sg-sub'>NATOPS operating limits — 119 flip cards · Anki/Quizlet TSV in knowledge-packs/limits/</span>
+<span class='sg-cta'>Open flashcards →</span>
+</a>
+<p style='margin:0.25rem 0 1.25rem;color:var(--muted);font-size:0.9rem'><a href='knowledge-packs/limits/index.html' style='color:var(--accent)'>Limits knowledge pack</a> (TSV · Markdown · quiz copy)</p>
 <footer>Open any quiz HTML file in a browser. Use Reset / Retry to practice again. Markdown (.md) copies sit alongside each quiz for printing or review.</footer></div></body></html>

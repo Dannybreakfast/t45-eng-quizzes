@@ -1,0 +1,119 @@
+MRT Max N₂ RPM (%)	104
+MRT Max EGT (°C)	610
+MRT Time Limit	30 Min/Flight Hour
+Transient/Acceleration Max N₂ RPM (%)	106
+Transient/Acceleration Max EGT (°C)	645
+Transient/Acceleration Time Limit	Less than 20 seconds
+Maximum Continuous Max N₂ RPM (%)	100
+Maximum Continuous Max EGT (°C)	550
+Idle Max N₂ RPM (%)	56.5 ± 2 (Note 1, 4)
+Idle Max EGT (°C)	450
+Ground Start Max EGT (°C)	550
+Airstart Max EGT (°C)	600
+Military Rated Thrust (MRT): Max N₂ RPM (%) _________ ; Max EGT(°C) _________ ; Time Limit _______ Min/Flight Hour	Military Rated Thrust (MRT): Max N₂ RPM 104%; Max EGT 610°C; Time Limit 30 Min/Flight Hour
+Transient/Acceleration (Note 5): Max N₂ RPM (%) _________ ; Max EGT(°C) _________ ; Less than ______ seconds	Transient/Acceleration (Note 5): Max N₂ RPM 106%; Max EGT 645°C; Less than 20 seconds
+Maximum Continuous: Max N₂ RPM (%) _________ ; Max EGT(°C) _________	Maximum Continuous: Max N₂ RPM 100%; Max EGT 550°C
+Idle: Max N₂ RPM ______ ± _____ (Note 1, 4) ; Max EGT(°C) _________	Idle: Max N₂ RPM 56.5 ± 2 (Note 1, 4); Max EGT 450°C
+Ground Start Max EGT(°C) _________ (Note 2)	Ground Start Max EGT 550°C (Note 2)
+Airstart Max EGT(°C) _________ (Note 3)	Airstart Max EGT 600°C (Note 3)
+1. Bleed valve ______________. Nominal RPM will vary depending on engine loading, air bleed, ambient conditions, and altitude. With airflow knob in the OFF position, idle RPM will operate approximately ______% higher than normal.	1. Bleed valve closed. Nominal RPM will vary depending on engine loading, air bleed, ambient conditions, and altitude. With airflow knob in the OFF position, idle RPM will operate approximately 2% higher than normal.
+2. Maximum overshoot of _______ °C for _______ seconds.	2. Maximum overshoot of 20 °C for 10 seconds.
+3. Maximum overshoot of _______ °C for _______ seconds (NOTE: The EGT/RPM warning light will operate at _______ ± _______ °C).	3. Maximum overshoot of 50 °C for 10 seconds (NOTE: The EGT/RPM warning light will operate at 650 ± 8 °C).
+4. Maximum shift in engine idle RPM between the Poststart and Engine Shutdown checks, corrected for standard day, is ______%. Idle RPM will normally increase approximately ______% for every _________ foot increase in altitude and ______% for every _______ °C in ambient temperature.	4. Maximum shift in engine idle RPM between the Poststart and Engine Shutdown checks, corrected for standard day, is 2%. Idle RPM will normally increase approximately 1% for every 1,500 foot increase in altitude and 1% for every 10 °C in ambient temperature.
+5. Transient/acceleration limits apply to any acceleration whether from idle to MRT or any increment in between. EGT may rise to _______ °C during or immediately following the acceleration, but must decrease to _______ °C or less within _______ seconds after the engine reaches its maximum RPM.	5. Transient/acceleration limits apply to any acceleration whether from idle to MRT or any increment in between. EGT may rise to 645 °C during or immediately following the acceleration, but must decrease to 610 °C or less within 20 seconds after the engine reaches its maximum RPM.
+Solo flying shall be conducted only from the ____________________ cockpit.	Solo flying shall be conducted only from the forward cockpit.
+Maximum altitude is ______________ feet MSL.	Maximum altitude is 41,000 feet MSL.
+1. _____________ ___________ in icing conditions shall be avoided.	1. Prolonged flight in icing conditions shall be avoided.
+2. When _________ ___________ is visible, ____________ __________ or ________ _____ ________ _________ is not authorized.	2. When airframe icing is visible, intentional stalls or use of full flaps is not authorized.
+1a. Throttle shall be at idle for: Abrupt ( _____ seconds or less from _________ to full back stick) pulls to ________ back stick.	1a. Throttle shall be at idle for: Abrupt (0.5 seconds or less from neutral to full back stick) pulls to full back stick.
+1b. Throttle shall be at idle for: Abrupt __________ ___________ ___________ inputs at ____________ _________ stick.	1b. Throttle shall be at idle for: Abrupt full lateral stick inputs at full back stick.
+1c. Throttle shall be at idle for: Airspeeds less than _______ KIAS at altitudes above _____________ feet MSL.	1c. Throttle shall be at idle for: Airspeeds less than 85 KIAS at altitudes above 15,000 feet MSL.
+2. For airpseeds ____ to ____ KIAS at altitudes above _______ feet MSL; ______ throttle movements.	2. For airspeeds 85 to 150 KIAS at altitudes above 35,000 feet MSL; slow throttle movements.
+3. Except in an emergency, engine shall be stabilized at ________ for at least ______ seconds prior to shutdown.	3. Except in an emergency, engine shall be stabilized at idle for at least 30 seconds prior to shutdown.
+4. Sustained engine operation at less than _______% N₂ above ___________ feet MSL may result in sub-idle condition leading to engine flameout.	4. Sustained engine operation at less than 70% N₂ above 30,000 feet MSL may result in sub-idle condition leading to engine flameout.
+1. _______________ ____________ is prohibited with ________________ fuel control.	1. Ground start is prohibited with manual fuel control.
+2a. With _________________ fuel control selected: N₂ ≤ _________% at altitudes greater than _____________ feet MSL.	2a. With manual fuel control selected: N₂ ≤ 90% at altitudes greater than 20,000 feet MSL.
+2b. With _________________ fuel control selected: N₂ ≤ _________% at altitudes less than or equal to _____________ feet MSL.	2b. With manual fuel control selected: N₂ ≤ 95% at altitudes less than or equal to 20,000 feet MSL.
+1. Engine start is prohibited with the throttle _____________ the ground idle detent.	1. Engine start is prohibited with the throttle above the ground idle detent.
+2. Minimum N₂ RPM required for engine start is _______%.	2. Minimum N₂ RPM required for engine start is 15%.
+3. Engine light-off during a normal start must occur within _______ seconds after moving the throttle to _________.	3. Engine light-off during a normal start must occur within 15 seconds after moving the throttle to idle.
+4. For starting, minimum voltage for each battery is ________ volts.	4. For starting, minimum voltage for each battery is 24 volts.
+5. No more than _________ successive engine start attempts may be performed. Following the _________ start attempt, a _______ minute cool down period must be observed before attempting another engine start.	5. No more than three successive engine start attempts may be performed. Following the third start attempt, a 30 minute cool down period must be observed before attempting another engine start.
+1. GTS starts not reliable at altitudes above ___________ feet MSL	1. GTS starts not reliable at altitudes above 15,000 feet MSL
+2. The GTS _______-_______________ delay between consecutive starts does not apply in emergency situations	2. The GTS 3-minute delay between consecutive starts does not apply in emergency situations
+1. GTS start with ________________ _______________ is prohibited.	1. GTS start with external power is prohibited.
+2. Minimum interval between each GTS start attempt is _____-_______________. After ________ consecutive start attempts, a minimum interval of ______-______________ is required before any further start attempts.	2. Minimum interval between each GTS start attempt is 3 minutes. After three consecutive start attempts, a minimum interval of 30 minutes is required before any further start attempts.
+3. Additional GTS start attempts after an unsuccessful GTS start attempt are prohibited until the GTS ____________ ____________ and _______________ _______________ are inspected and any residual fuel is removed, and the __________ ____________ are inspected for discoloration and warpage.	3. Additional GTS start attempts after an unsuccessful GTS start attempt are prohibited until the GTS exhaust duct and compressor section are inspected and any residual fuel is removed, and the RAT doors are inspected for discoloration and warpage.
+1a. For all configurations/store loadings: Do not use ___________ lateral inputs at less than ____ units AOA	1a. For all configurations/store loadings: Do not use large lateral inputs at less than 8 units AOA
+2a. Cruise configuration, airspeeds _______ to ________ KIAS:	2a. Cruise configuration, airspeeds 0 to 260 KIAS:
+Cruise 0–260 KIAS: From -_____ g to +_____ g — Maximum bank angle change is ________°	Cruise 0–260 KIAS: From -1 g to +1.25 g — Maximum bank angle change is 360°
+Cruise 0–260 KIAS: From +_____ g to +_____ g — Maximum bank angle change is _______°, or _______° limited to _______ lateral stick and _______ rudder pedal inputs.	Cruise 0–260 KIAS: From +1.25 g to +4 g — Maximum bank angle change is 180°, or 360° limited to half lateral stick and half rudder pedal inputs.
+Cruise 0–260 KIAS: From +_____ g to g limit — Maximum bank angle change is ________°	Cruise 0–260 KIAS: From +4 g to g limit — Maximum bank angle change is 180°
+2b. Cruise configuration, airspeeds greater than _______ KIAS to _______ Mach:	2b. Cruise configuration, airspeeds greater than 260 KIAS to 0.8 Mach:
+Cruise >260 KIAS to 0.8 Mach: From -_____ g to +_____ g — Maximum bank angle change is ________°	Cruise >260 KIAS to 0.8 Mach: From -1 g to +1.25 g — Maximum bank angle change is 360°
+Cruise >260 KIAS to 0.8 Mach: From +_____ g to +_____ g — Maximum bank angle change is _______°, or _______° limited to _______ lateral stick and _______ rudder pedal inputs.	Cruise >260 KIAS to 0.8 Mach: From +1.25 g to +4 g — Maximum bank angle change is 180°, or 360° limited to half lateral stick and half rudder pedal inputs.
+Cruise >260 KIAS to 0.8 Mach: From +____ g to g limit — Maximum bank angle change is ________°	Cruise >260 KIAS to 0.8 Mach: From +4 g to g limit — Maximum bank angle change is 180°
+2c. Cruise configuration, airspeeds greater than ____ Mach to airspeed limit:	2c. Cruise configuration, airspeeds greater than 0.8 Mach to airspeed limit:
+Cruise >0.8 Mach to airspeed limit: From +_____ g to +_____ g — Maximum bank angle change is ________°	Cruise >0.8 Mach to airspeed limit: From +0.75 g to +1.25 g — Maximum bank angle change is 360°
+Cruise >0.8 Mach to airspeed limit: From +_____ g to g limit — Maximum bank angle change is ________°	Cruise >0.8 Mach to airspeed limit: From +1.25 g to g limit — Maximum bank angle change is 180°
+3. Gear and/or flaps/slats _________: Maximum bank angle is _______°	3. Gear and/or flaps/slats down: Maximum bank angle is 90°
+1a. Maximum 90° crosswind — Single Aircraft (dry runway) _______ knots	1a. Maximum 90° crosswind — Single Aircraft (dry runway) 20 knots
+1b. Maximum 90° crosswind — Single Aircraft (wet runway) _______ knots	1b. Maximum 90° crosswind — Single Aircraft (wet runway) 15 knots
+1c. Maximum 90° crosswind — Section Takeoff _______ knots	1c. Maximum 90° crosswind — Section Takeoff 10 knots
+1d. Maximum 90° crosswind — Banner Tow _______ knots	1d. Maximum 90° crosswind — Banner Tow 10 knots
+1e. Maximum 90° crosswind — NWS Off/Failed _______ knots	1e. Maximum 90° crosswind — NWS Off/Failed 15 knots
+2. ________ __________ nosewheel steering shall be used for ________ __________ taxi operations only (less than ________ knots groundspeed).	2. High gain nosewheel steering shall be used for low speed taxi operations only (less than 10 knots groundspeed).
+3a. FCLP landings authorized: __________ loading and __________ flaps	3a. FCLP landings authorized: Clean loading and full flaps
+3b. FCLP landings authorized: Pylons ___________ or pylons ____________ PMBRs/BRU-38A, and __________ flaps.	3b. FCLP landings authorized: Pylons alone or pylons empty PMBRs/BRU-38A, and full flaps.
+4. For landings in a configuration other than those described above, sink rate shall not exceed _______ fpm.	4. For landings in a configuration other than those described above, sink rate shall not exceed 600 fpm.
+Max airspeed: _____ KIAS Max Mach: _____ M (Above _______MSL)	Max airspeed: 550 KIAS Max Mach: 1.04 M (Above 14,000 MSL)
+1. MAX AOA for the emergency configuration of flaps half or full with slats up (flaps extended by the EMER FLAPS switch in the DOWN position) is AOA for _______________/__________________ tone.	1. MAX AOA for the emergency configuration of flaps half or full with slats up (flaps extended by the EMER FLAPS switch in the DOWN position) is AOA for pedal shaker/stall warning tone.
+To prevent damage to nose gear doors and NLG strut door, minimize sideslip with landing gear in transition or extended position above _________ knots.	To prevent damage to nose gear doors and NLG strut door, minimize sideslip with landing gear in transition or extended position above 150 knots.
+1a. Forward cg limit: ________% MAC for gross weights up to __________ pounds.	1a. Forward cg limit: 14% MAC for gross weights up to 12,000 pounds.
+1b. Forward cg limit: ________% MAC above a gross weight of __________ pounds.	1b. Forward cg limit: 15.5% MAC above a gross weight of 12,760 pounds.
+2a(1). Aft cg limit Gear Up: ________% MAC for greater than 0.80 Mach	2a(1). Aft cg limit Gear Up: 21% MAC for greater than 0.80 Mach
+2a(2). Aft cg limit Gear Up: ________% MAC for less than or equal to 0.80 Mach	2a(2). Aft cg limit Gear Up: 23% MAC for less than or equal to 0.80 Mach
+2b(1). Aft cg limit Gear Down: ________% MAC with gear extended	2b(1). Aft cg limit Gear Down: 25% MAC with gear extended
+1. Field Takeoff ___________ pounds	1. Field Takeoff 14,500 pounds
+2. Catapult ___________ pounds	2. Catapult 14,200 pounds
+3. Field Landing ___________ pounds	3. Field Landing 13,360 pounds
+4. FCLP ___________ pounds	4. FCLP 13,360 pounds
+5. Carrier Landing ___________ pounds	5. Carrier Landing 13,360 pounds
+Landing Gear Transition/extended ≤ _______	Landing Gear Transition/extended ≤ 200 KIAS
+Flaps/Slats Transition/extended ≤ _______	Flaps/Slats Transition/extended ≤ 200 KIAS
+Arresting Hook Transition/extended ≤ _______	Arresting Hook Transition/extended ≤ 450 KIAS
+Stationary and towing with canopy full open — Prevailing wind speed ≤ ______ knots	Stationary and towing with canopy full open — Prevailing wind speed ≤ 32 knots
+Locking canopy in intermediate position — Permitted only for _____________ and ______________. _______________/_______________ not permitted.	Locking canopy in intermediate position — Permitted only for ingress and egress. Towing/taxiing not permitted.
+Taxi with canopy full open — Prevailing wind speed ≤ _______ knots	Taxi with canopy full open — Prevailing wind speed ≤ 20 knots
+Tires On deck ≤ _______ knots groundspeed	Tires On deck ≤ 176 knots groundspeed
+Nosewheel Steering On deck ≤ _______ knots groundspeed	Nosewheel Steering On deck ≤ 176 knots groundspeed
+Fuel System Hot refueling — Fuel level ≤ __________ pounds if ________________ unsuccessful	Fuel System Hot refueling — Fuel level ≤ 2,800 pounds if PRECHECK unsuccessful
+Prohibited Maneuver 1.	1. Intentional spins, or tailslides
+Prohibited Maneuver 2.	2. Rolling cross-control maneuvers of more than 60° bank angle change
+Prohibited Maneuver 3. (and authorized departure exceptions a–c)	3. Intentional departures except for: a. Erect rolling departure entered with full aft stick/full lateral stick; b. Erect rudder-induced departure entered with full aft stick/full rudder; c. Nose high departures (70 and 110 degrees)
+Prohibited Maneuver 3a.	3a. Erect rolling departure entered with full aft stick/full lateral stick (authorized exception)
+Prohibited Maneuver 3b.	3b. Erect rudder-induced departure entered with full aft stick/full rudder (authorized exception)
+Prohibited Maneuver 3c.	3c. Nose high departures (70 and 110 degrees) (authorized exception)
+Prohibited Maneuver 4.	4. Sustained zero or negative g flight for more than 30 seconds
+Prohibited Maneuver 5.	5. Less than 30 seconds between negative g or zero g maneuvers
+Prohibited Maneuver 6. Rolls at less than: (a–c)	6. Rolls at less than: a. Negative 1.0g at less than 260 KIAS; b. Negative 0.2g at or greater than 260 KIAS, but less than 0.80 Mach; c. Approximately positive 1.0g at or greater than 0.80 Mach
+Prohibited Maneuver 6a.	6a. Rolls at less than negative 1.0g at less than 260 KIAS
+Prohibited Maneuver 6b.	6b. Rolls at less than negative 0.2g at or greater than 260 KIAS, but less than 0.80 Mach
+Prohibited Maneuver 6c.	6c. Rolls at less than approximately positive 1.0g at or greater than 0.80 Mach
+Prohibited Maneuver 7.	7. Lateral/directional inputs below 3 units AOA
+Prohibited Maneuver 8.	8. Intentional departures with greater than 1,000 foot-pounds asymmetry
+Prohibited Maneuver 9.	9. Operations with EMER FLAPS selected, when normal HYD 1 power is available, is restricted to 30 seconds with engine rpm less than or equal to 90%. Except in actual emergency, use of EMER FLAPS is restricted to FCF profiles.
+Prohibited Maneuver 10.	10. Intentional accelerated stalls with landing gear extended while carrying stores.
+1. _______(___-_____), Jet ____, and ____++ _______(____-______) have a fuel freeze point of -______ °C (-______ °F). To avoid fuel freezing, do not allow indicated TAT in flight to dwell at or below freeze point of fuel type in use plus _____ °C (______°F).	1. A++(F-24), Jet A, and A++ 100 (F-27) have a fuel freeze point of -40 °C (-40 °F). To avoid fuel freezing, do not allow indicated TAT in flight to dwell at or below freeze point of fuel type in use plus 3 °C (5.4 °F).
+2. Operation of the T-45 aircraft is restricted to ambient temperatures above ______ °C (+______ °F) when using fuel which does not contain fuel system icing inhibitor (FSII).	2. Operation of the T-45 aircraft is restricted to ambient temperatures above 0 °C (+32 °F) when using fuel which does not contain fuel system icing inhibitor (FSII).
+1. Normal acceleration limits during landing gear transition or extended and/or with flaps half or full are _______ to +_______ g symmetrical and +_______ to +_______ g unsymmetrical	1. Normal acceleration limits during landing gear transition or extended and/or with flaps half or full are 0.0 to +2.0 g symmetrical and +1.0 to +1.5 g unsymmetrical
+Figure 6 Symmetric Limits (less than __________ lbs) / Unsymmetric Limits (less than __________ lbs)	Figure 6 Symmetric Limits (less than 13,233 lbs) / Unsymmetric Limits (less than 13,233 lbs)
+Symmetric Max above 5,000 MSL + ________ g	Symmetric Max above 5,000 MSL +7.33 g
+Symmetric Max below 5,000 MSL + ________ g	Symmetric Max below 5,000 MSL +6.5 g
+Symmetric Min ≥ 0.80 Mach - ________ g	Symmetric Min ≥ 0.80 Mach -1.0 g
+Symmetric Min < 0.80 Mach - ________ g	Symmetric Min < 0.80 Mach -3.0 g
+Unsymmetric Max above 5,000 MSL + ________ g	Unsymmetric Max above 5,000 MSL +5.86 g
+Unsymmetric Max below 5,000 MSL + ________ g	Unsymmetric Max below 5,000 MSL +5.0 g
+Unsymmetric Min ≥ 0.80 Mach + ________ g	Unsymmetric Min ≥ 0.80 Mach +1.0 g
+Unsymmetric Min ≥ 260 knots and < 0.80 Mach - ________ g	Unsymmetric Min ≥ 260 knots and < 0.80 Mach -0.2 g
+Unsymmetric Min <260 knots - ________ g	Unsymmetric Min <260 knots -1.0 g

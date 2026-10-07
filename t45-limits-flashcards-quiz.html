@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>T-45 Limits Flashcards — Local Quiz</title>
+<style>
+:root {
+  --bg:#0f1419; --panel:#1a2332; --panel2:#243044; --text:#e7eef7; --muted:#9bb0c7;
+  --accent:#3d9cf0; --good:#2ecc71; --bad:#e74c3c; --border:#2e3d52; --radius:12px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+* {box-sizing:border-box}
+body {margin:0;font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;line-height:1.45}
+.wrap {max-width:860px;margin:0 auto;padding:1.25rem 1rem 3rem}
+header {background:linear-gradient(135deg,#1a2a40,#152033);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem 1.35rem;margin-bottom:1rem}
+header .crumb {color:var(--muted);font-size:.85rem;margin-bottom:.35rem}
+header h1 {margin:0 0 .35rem;font-size:1.35rem}
+header .meta {color:var(--muted);font-size:.9rem}
+.toolbar {display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1rem;align-items:center}
+.toolbar select, .toolbar button {
+  background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:8px;
+  padding:.45rem .7rem;font:inherit;cursor:pointer;
+}
+.toolbar button.primary {background:var(--accent);border-color:var(--accent);font-weight:600}
+.toolbar button:hover {filter:brightness(1.08)}
+.progress {color:var(--muted);font-size:.9rem;margin-left:auto}
+.bar {height:6px;background:var(--panel2);border-radius:99px;overflow:hidden;margin-bottom:1rem}
+.bar>span {display:block;height:100%;background:var(--accent);width:0%;transition:width .25s}
+.flip {perspective:1200px;margin-bottom:1rem}
+.flip-inner {
+  position:relative;min-height:280px;transform-style:preserve-3d;transition:transform .45s;
+  cursor:pointer;
+}
+.flip.flipped .flip-inner {transform:rotateY(180deg)}
+.face {
+  position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.25rem 1.3rem;display:flex;flex-direction:column;
+}
+.face.back {transform:rotateY(180deg);border-color:#2f6b4f}
+.tag {display:inline-block;font-size:.75rem;color:var(--muted);background:var(--panel2);
+  border-radius:99px;padding:.15rem .55rem;margin-bottom:.75rem;width:fit-content}
+.face h2 {margin:0 0 .5rem;font-size:.85rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.face .body {flex:1;font-size:1.05rem;white-space:pre-wrap;word-break:break-word}
+.hint {color:var(--muted);font-size:.85rem;margin-top:.75rem}
+.actions {display:flex;flex-wrap:wrap;gap:.5rem}
+.actions button {
+  background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:8px;
+  padding:.55rem .85rem;font:inherit;cursor:pointer;
+}
+.actions button.good {background:#1e3d2f;border-color:#2ecc71}
+.actions button.bad {background:#3d1e1e;border-color:#e74c3c}
+.score {margin-top:1rem;color:var(--muted);font-size:.9rem}
+.list {margin-top:1.5rem}
+.list details {background:var(--panel);border:1px solid var(--border);border-radius:8px;margin-bottom:.4rem;padding:.55rem .75rem}
+.list summary {cursor:pointer;font-weight:600}
+.list .ans {color:var(--good);margin-top:.4rem;white-space:pre-wrap}
+footer {margin-top:2rem;color:var(--muted);font-size:.8rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="crumb"><a href="index.html" style="color:#3d9cf0;text-decoration:none">Home</a> · NATOPS Limits · Flashcards</div>
+  <h1>T-45 Limits Flashcards</h1>
+  <div class="meta">Source: A1-T45AC-NFM-000 IC 42 (15 FEB 2021) · 119 cards · Blank sheet → filled answer sheet pairing</div>
+</header>
+
+<div class="toolbar">
+  <label>Section
+    <select id="section"><option value="">All sections</option></select>
+  </label>
+  <button type="button" id="shuffle" class="primary">Shuffle</button>
+  <button type="button" id="reset">Reset progress</button>
+  <span class="progress" id="progress">0 / 0</span>
+</div>
+<div class="bar"><span id="bar"></span></div>
+
+<div class="flip" id="flip">
+  <div class="flip-inner" id="flipInner" title="Click to flip">
+    <div class="face front">
+      <span class="tag" id="secTag">Section</span>
+      <h2>Question (blank)</h2>
+      <div class="body" id="qText"></div>
+      <div class="hint">Click card to reveal answer</div>
+    </div>
+    <div class="face back">
+      <span class="tag">Answer</span>
+      <h2>Filled</h2>
+      <div class="body" id="aText"></div>
+      <div class="hint">Mark how you did, then Next</div>
+    </div>
+  </div>
+</div>
+
+<div class="actions">
+  <button type="button" id="flipBtn">Flip</button>
+  <button type="button" id="again" class="bad">Missed</button>
+  <button type="button" id="got" class="good">Got it</button>
+  <button type="button" id="next" class="primary">Next</button>
+</div>
+<div class="score" id="score"></div>
+
+<details class="list" open>
+  <summary>Full card list (119)</summary>
+  <div id="fullList"></div>
+</details>
+
+<footer>
+  Local study aid only. Prefer Quizlet set when upload succeeds:
+  <a href="https://quizlet.com/1213331829/t45-limits-flash-cards">quizlet.com/1213331829</a>
+  · Files: <code>/workspace/t45-limits/anki-quizlet.tsv</code>
+</footer>
+</div>
+<script>
+const ALL = [{"section": "Engine Limitations", "q": "MRT Max N₂ RPM (%)", "a": "104"}, {"section": "Engine Limitations", "q": "MRT Max EGT (°C)", "a": "610"}, {"section": "Engine Limitations", "q": "MRT Time Limit", "a": "30 Min/Flight Hour"}, {"section": "Engine Limitations", "q": "Transient/Acceleration Max N₂ RPM (%)", "a": "106"}, {"section": "Engine Limitations", "q": "Transient/Acceleration Max EGT (°C)", "a": "645"}, {"section": "Engine Limitations", "q": "Transient/Acceleration Time Limit", "a": "Less than 20 seconds"}, {"section": "Engine Limitations", "q": "Maximum Continuous Max N₂ RPM (%)", "a": "100"}, {"section": "Engine Limitations", "q": "Maximum Continuous Max EGT (°C)", "a": "550"}, {"section": "Engine Limitations", "q": "Idle Max N₂ RPM (%)", "a": "56.5 ± 2 (Note 1, 4)"}, {"section": "Engine Limitations", "q": "Idle Max EGT (°C)", "a": "450"}, {"section": "Engine Limitations", "q": "Ground Start Max EGT (°C)", "a": "550"}, {"section": "Engine Limitations", "q": "Airstart Max EGT (°C)", "a": "600"}, {"section": "Engine Limitations", "q": "Military Rated Thrust (MRT): Max N₂ RPM (%) _________ ; Max EGT(°C) _________ ; Time Limit _______ Min/Flight Hour", "a": "Military Rated Thrust (MRT): Max N₂ RPM 104%; Max EGT 610°C; Time Limit 30 Min/Flight Hour"}, {"section": "Engine Limitations", "q": "Transient/Acceleration (Note 5): Max N₂ RPM (%) _________ ; Max EGT(°C) _________ ; Less than ______ seconds", "a": "Transient/Acceleration (Note 5): Max N₂ RPM 106%; Max EGT 645°C; Less than 20 seconds"}, {"section": "Engine Limitations", "q": "Maximum Continuous: Max N₂ RPM (%) _________ ; Max EGT(°C) _________", "a": "Maximum Continuous: Max N₂ RPM 100%; Max EGT 550°C"}, {"section": "Engine Limitations", "q": "Idle: Max N₂ RPM ______ ± _____ (Note 1, 4) ; Max EGT(°C) _________", "a": "Idle: Max N₂ RPM 56.5 ± 2 (Note 1, 4); Max EGT 450°C"}, {"section": "Engine Limitations", "q": "Ground Start Max EGT(°C) _________ (Note 2)", "a": "Ground Start Max EGT 550°C (Note 2)"}, {"section": "Engine Limitations", "q": "Airstart Max EGT(°C) _________ (Note 3)", "a": "Airstart Max EGT 600°C (Note 3)"}, {"section": "Engine Limitation Notes", "q": "1. Bleed valve ______________. Nominal RPM will vary depending on engine loading, air bleed, ambient conditions, and altitude. With airflow knob in the OFF position, idle RPM will operate approximately ______% higher than normal.", "a": "1. Bleed valve closed. Nominal RPM will vary depending on engine loading, air bleed, ambient conditions, and altitude. With airflow knob in the OFF position, idle RPM will operate approximately 2% higher than normal."}, {"section": "Engine Limitation Notes", "q": "2. Maximum overshoot of _______ °C for _______ seconds.", "a": "2. Maximum overshoot of 20 °C for 10 seconds."}, {"section": "Engine Limitation Notes", "q": "3. Maximum overshoot of _______ °C for _______ seconds (NOTE: The EGT/RPM warning light will operate at _______ ± _______ °C).", "a": "3. Maximum overshoot of 50 °C for 10 seconds (NOTE: The EGT/RPM warning light will operate at 650 ± 8 °C)."}, {"section": "Engine Limitation Notes", "q": "4. Maximum shift in engine idle RPM between the Poststart and Engine Shutdown checks, corrected for standard day, is ______%. Idle RPM will normally increase approximately ______% for every _________ foot increase in altitude and ______% for every _______ °C in ambient temperature.", "a": "4. Maximum shift in engine idle RPM between the Poststart and Engine Shutdown checks, corrected for standard day, is 2%. Idle RPM will normally increase approximately 1% for every 1,500 foot increase in altitude and 1% for every 10 °C in ambient temperature."}, {"section": "Engine Limitation Notes", "q": "5. Transient/acceleration limits apply to any acceleration whether from idle to MRT or any increment in between. EGT may rise to _______ °C during or immediately following the acceleration, but must decrease to _______ °C or less within _______ seconds after the engine reaches its maximum RPM.", "a": "5. Transient/acceleration limits apply to any acceleration whether from idle to MRT or any increment in between. EGT may rise to 645 °C during or immediately following the acceleration, but must decrease to 610 °C or less within 20 seconds after the engine reaches its maximum RPM."}, {"section": "Solo Flying", "q": "Solo flying shall be conducted only from the ____________________ cockpit.", "a": "Solo flying shall be conducted only from the forward cockpit."}, {"section": "Altitude Limits", "q": "Maximum altitude is ______________ feet MSL.", "a": "Maximum altitude is 41,000 feet MSL."}, {"section": "Icing", "q": "1. _____________ ___________ in icing conditions shall be avoided.", "a": "1. Prolonged flight in icing conditions shall be avoided."}, {"section": "Icing", "q": "2. When _________ ___________ is visible, ____________ __________ or ________ _____ ________ _________ is not authorized.", "a": "2. When airframe icing is visible, intentional stalls or use of full flaps is not authorized."}, {"section": "Engine Handling Limitations", "q": "1a. Throttle shall be at idle for: Abrupt ( _____ seconds or less from _________ to full back stick) pulls to ________ back stick.", "a": "1a. Throttle shall be at idle for: Abrupt (0.5 seconds or less from neutral to full back stick) pulls to full back stick."}, {"section": "Engine Handling Limitations", "q": "1b. Throttle shall be at idle for: Abrupt __________ ___________ ___________ inputs at ____________ _________ stick.", "a": "1b. Throttle shall be at idle for: Abrupt full lateral stick inputs at full back stick."}, {"section": "Engine Handling Limitations", "q": "1c. Throttle shall be at idle for: Airspeeds less than _______ KIAS at altitudes above _____________ feet MSL.", "a": "1c. Throttle shall be at idle for: Airspeeds less than 85 KIAS at altitudes above 15,000 feet MSL."}, {"section": "Engine Handling Limitations", "q": "2. For airpseeds ____ to ____ KIAS at altitudes above _______ feet MSL; ______ throttle movements.", "a": "2. For airspeeds 85 to 150 KIAS at altitudes above 35,000 feet MSL; slow throttle movements."}, {"section": "Engine Handling Limitations", "q": "3. Except in an emergency, engine shall be stabilized at ________ for at least ______ seconds prior to shutdown.", "a": "3. Except in an emergency, engine shall be stabilized at idle for at least 30 seconds prior to shutdown."}, {"section": "Engine Handling Limitations", "q": "4. Sustained engine operation at less than _______% N₂ above ___________ feet MSL may result in sub-idle condition leading to engine flameout.", "a": "4. Sustained engine operation at less than 70% N₂ above 30,000 feet MSL may result in sub-idle condition leading to engine flameout."}, {"section": "Manual Fuel Control Limitations", "q": "1. _______________ ____________ is prohibited with ________________ fuel control.", "a": "1. Ground start is prohibited with manual fuel control."}, {"section": "Manual Fuel Control Limitations", "q": "2a. With _________________ fuel control selected: N₂ ≤ _________% at altitudes greater than _____________ feet MSL.", "a": "2a. With manual fuel control selected: N₂ ≤ 90% at altitudes greater than 20,000 feet MSL."}, {"section": "Manual Fuel Control Limitations", "q": "2b. With _________________ fuel control selected: N₂ ≤ _________% at altitudes less than or equal to _____________ feet MSL.", "a": "2b. With manual fuel control selected: N₂ ≤ 95% at altitudes less than or equal to 20,000 feet MSL."}, {"section": "Starting Limitations", "q": "1. Engine start is prohibited with the throttle _____________ the ground idle detent.", "a": "1. Engine start is prohibited with the throttle above the ground idle detent."}, {"section": "Starting Limitations", "q": "2. Minimum N₂ RPM required for engine start is _______%.", "a": "2. Minimum N₂ RPM required for engine start is 15%."}, {"section": "Starting Limitations", "q": "3. Engine light-off during a normal start must occur within _______ seconds after moving the throttle to _________.", "a": "3. Engine light-off during a normal start must occur within 15 seconds after moving the throttle to idle."}, {"section": "Starting Limitations", "q": "4. For starting, minimum voltage for each battery is ________ volts.", "a": "4. For starting, minimum voltage for each battery is 24 volts."}, {"section": "Starting Limitations", "q": "5. No more than _________ successive engine start attempts may be performed. Following the _________ start attempt, a _______ minute cool down period must be observed before attempting another engine start.", "a": "5. No more than three successive engine start attempts may be performed. Following the third start attempt, a 30 minute cool down period must be observed before attempting another engine start."}, {"section": "GTS Notes", "q": "1. GTS starts not reliable at altitudes above ___________ feet MSL", "a": "1. GTS starts not reliable at altitudes above 15,000 feet MSL"}, {"section": "GTS Notes", "q": "2. The GTS _______-_______________ delay between consecutive starts does not apply in emergency situations", "a": "2. The GTS 3-minute delay between consecutive starts does not apply in emergency situations"}, {"section": "GTS Limitations", "q": "1. GTS start with ________________ _______________ is prohibited.", "a": "1. GTS start with external power is prohibited."}, {"section": "GTS Limitations", "q": "2. Minimum interval between each GTS start attempt is _____-_______________. After ________ consecutive start attempts, a minimum interval of ______-______________ is required before any further start attempts.", "a": "2. Minimum interval between each GTS start attempt is 3 minutes. After three consecutive start attempts, a minimum interval of 30 minutes is required before any further start attempts."}, {"section": "GTS Limitations", "q": "3. Additional GTS start attempts after an unsuccessful GTS start attempt are prohibited until the GTS ____________ ____________ and _______________ _______________ are inspected and any residual fuel is removed, and the __________ ____________ are inspected for discoloration and warpage.", "a": "3. Additional GTS start attempts after an unsuccessful GTS start attempt are prohibited until the GTS exhaust duct and compressor section are inspected and any residual fuel is removed, and the RAT doors are inspected for discoloration and warpage."}, {"section": "Roll Limitations", "q": "1a. For all configurations/store loadings: Do not use ___________ lateral inputs at less than ____ units AOA", "a": "1a. For all configurations/store loadings: Do not use large lateral inputs at less than 8 units AOA"}, {"section": "Roll Limitations", "q": "2a. Cruise configuration, airspeeds _______ to ________ KIAS:", "a": "2a. Cruise configuration, airspeeds 0 to 260 KIAS:"}, {"section": "Roll Limitations", "q": "Cruise 0–260 KIAS: From -_____ g to +_____ g — Maximum bank angle change is ________°", "a": "Cruise 0–260 KIAS: From -1 g to +1.25 g — Maximum bank angle change is 360°"}, {"section": "Roll Limitations", "q": "Cruise 0–260 KIAS: From +_____ g to +_____ g — Maximum bank angle change is _______°, or _______° limited to _______ lateral stick and _______ rudder pedal inputs.", "a": "Cruise 0–260 KIAS: From +1.25 g to +4 g — Maximum bank angle change is 180°, or 360° limited to half lateral stick and half rudder pedal inputs."}, {"section": "Roll Limitations", "q": "Cruise 0–260 KIAS: From +_____ g to g limit — Maximum bank angle change is ________°", "a": "Cruise 0–260 KIAS: From +4 g to g limit — Maximum bank angle change is 180°"}, {"section": "Roll Limitations", "q": "2b. Cruise configuration, airspeeds greater than _______ KIAS to _______ Mach:", "a": "2b. Cruise configuration, airspeeds greater than 260 KIAS to 0.8 Mach:"}, {"section": "Roll Limitations", "q": "Cruise >260 KIAS to 0.8 Mach: From -_____ g to +_____ g — Maximum bank angle change is ________°", "a": "Cruise >260 KIAS to 0.8 Mach: From -1 g to +1.25 g — Maximum bank angle change is 360°"}, {"section": "Roll Limitations", "q": "Cruise >260 KIAS to 0.8 Mach: From +_____ g to +_____ g — Maximum bank angle change is _______°, or _______° limited to _______ lateral stick and _______ rudder pedal inputs.", "a": "Cruise >260 KIAS to 0.8 Mach: From +1.25 g to +4 g — Maximum bank angle change is 180°, or 360° limited to half lateral stick and half rudder pedal inputs."}, {"section": "Roll Limitations", "q": "Cruise >260 KIAS to 0.8 Mach: From +____ g to g limit — Maximum bank angle change is ________°", "a": "Cruise >260 KIAS to 0.8 Mach: From +4 g to g limit — Maximum bank angle change is 180°"}, {"section": "Roll Limitations", "q": "2c. Cruise configuration, airspeeds greater than ____ Mach to airspeed limit:", "a": "2c. Cruise configuration, airspeeds greater than 0.8 Mach to airspeed limit:"}, {"section": "Roll Limitations", "q": "Cruise >0.8 Mach to airspeed limit: From +_____ g to +_____ g — Maximum bank angle change is ________°", "a": "Cruise >0.8 Mach to airspeed limit: From +0.75 g to +1.25 g — Maximum bank angle change is 360°"}, {"section": "Roll Limitations", "q": "Cruise >0.8 Mach to airspeed limit: From +_____ g to g limit — Maximum bank angle change is ________°", "a": "Cruise >0.8 Mach to airspeed limit: From +1.25 g to g limit — Maximum bank angle change is 180°"}, {"section": "Roll Limitations", "q": "3. Gear and/or flaps/slats _________: Maximum bank angle is _______°", "a": "3. Gear and/or flaps/slats down: Maximum bank angle is 90°"}, {"section": "Takeoff/Landing Limitations", "q": "1a. Maximum 90° crosswind — Single Aircraft (dry runway) _______ knots", "a": "1a. Maximum 90° crosswind — Single Aircraft (dry runway) 20 knots"}, {"section": "Takeoff/Landing Limitations", "q": "1b. Maximum 90° crosswind — Single Aircraft (wet runway) _______ knots", "a": "1b. Maximum 90° crosswind — Single Aircraft (wet runway) 15 knots"}, {"section": "Takeoff/Landing Limitations", "q": "1c. Maximum 90° crosswind — Section Takeoff _______ knots", "a": "1c. Maximum 90° crosswind — Section Takeoff 10 knots"}, {"section": "Takeoff/Landing Limitations", "q": "1d. Maximum 90° crosswind — Banner Tow _______ knots", "a": "1d. Maximum 90° crosswind — Banner Tow 10 knots"}, {"section": "Takeoff/Landing Limitations", "q": "1e. Maximum 90° crosswind — NWS Off/Failed _______ knots", "a": "1e. Maximum 90° crosswind — NWS Off/Failed 15 knots"}, {"section": "Takeoff/Landing Limitations", "q": "2. ________ __________ nosewheel steering shall be used for ________ __________ taxi operations only (less than ________ knots groundspeed).", "a": "2. High gain nosewheel steering shall be used for low speed taxi operations only (less than 10 knots groundspeed)."}, {"section": "Takeoff/Landing Limitations", "q": "3a. FCLP landings authorized: __________ loading and __________ flaps", "a": "3a. FCLP landings authorized: Clean loading and full flaps"}, {"section": "Takeoff/Landing Limitations", "q": "3b. FCLP landings authorized: Pylons ___________ or pylons ____________ PMBRs/BRU-38A, and __________ flaps.", "a": "3b. FCLP landings authorized: Pylons alone or pylons empty PMBRs/BRU-38A, and full flaps."}, {"section": "Takeoff/Landing Limitations", "q": "4. For landings in a configuration other than those described above, sink rate shall not exceed _______ fpm.", "a": "4. For landings in a configuration other than those described above, sink rate shall not exceed 600 fpm."}, {"section": "Clean Operating Envelope", "q": "Max airspeed: _____ KIAS Max Mach: _____ M (Above _______MSL)", "a": "Max airspeed: 550 KIAS Max Mach: 1.04 M (Above 14,000 MSL)"}, {"section": "Angle of Attack Limitations", "q": "1. MAX AOA for the emergency configuration of flaps half or full with slats up (flaps extended by the EMER FLAPS switch in the DOWN position) is AOA for _______________/__________________ tone.", "a": "1. MAX AOA for the emergency configuration of flaps half or full with slats up (flaps extended by the EMER FLAPS switch in the DOWN position) is AOA for pedal shaker/stall warning tone."}, {"section": "Sideslip Limitations", "q": "To prevent damage to nose gear doors and NLG strut door, minimize sideslip with landing gear in transition or extended position above _________ knots.", "a": "To prevent damage to nose gear doors and NLG strut door, minimize sideslip with landing gear in transition or extended position above 150 knots."}, {"section": "Center of Gravity Limitations", "q": "1a. Forward cg limit: ________% MAC for gross weights up to __________ pounds.", "a": "1a. Forward cg limit: 14% MAC for gross weights up to 12,000 pounds."}, {"section": "Center of Gravity Limitations", "q": "1b. Forward cg limit: ________% MAC above a gross weight of __________ pounds.", "a": "1b. Forward cg limit: 15.5% MAC above a gross weight of 12,760 pounds."}, {"section": "Center of Gravity Limitations", "q": "2a(1). Aft cg limit Gear Up: ________% MAC for greater than 0.80 Mach", "a": "2a(1). Aft cg limit Gear Up: 21% MAC for greater than 0.80 Mach"}, {"section": "Center of Gravity Limitations", "q": "2a(2). Aft cg limit Gear Up: ________% MAC for less than or equal to 0.80 Mach", "a": "2a(2). Aft cg limit Gear Up: 23% MAC for less than or equal to 0.80 Mach"}, {"section": "Center of Gravity Limitations", "q": "2b(1). Aft cg limit Gear Down: ________% MAC with gear extended", "a": "2b(1). Aft cg limit Gear Down: 25% MAC with gear extended"}, {"section": "Weight Limitations", "q": "1. Field Takeoff ___________ pounds", "a": "1. Field Takeoff 14,500 pounds"}, {"section": "Weight Limitations", "q": "2. Catapult ___________ pounds", "a": "2. Catapult 14,200 pounds"}, {"section": "Weight Limitations", "q": "3. Field Landing ___________ pounds", "a": "3. Field Landing 13,360 pounds"}, {"section": "Weight Limitations", "q": "4. FCLP ___________ pounds", "a": "4. FCLP 13,360 pounds"}, {"section": "Weight Limitations", "q": "5. Carrier Landing ___________ pounds", "a": "5. Carrier Landing 13,360 pounds"}, {"section": "Airspeed Limitations", "q": "Landing Gear Transition/extended ≤ _______", "a": "Landing Gear Transition/extended ≤ 200 KIAS"}, {"section": "Airspeed Limitations", "q": "Flaps/Slats Transition/extended ≤ _______", "a": "Flaps/Slats Transition/extended ≤ 200 KIAS"}, {"section": "Airspeed Limitations", "q": "Arresting Hook Transition/extended ≤ _______", "a": "Arresting Hook Transition/extended ≤ 450 KIAS"}, {"section": "Airspeed Limitations", "q": "Stationary and towing with canopy full open — Prevailing wind speed ≤ ______ knots", "a": "Stationary and towing with canopy full open — Prevailing wind speed ≤ 32 knots"}, {"section": "Airspeed Limitations", "q": "Locking canopy in intermediate position — Permitted only for _____________ and ______________. _______________/_______________ not permitted.", "a": "Locking canopy in intermediate position — Permitted only for ingress and egress. Towing/taxiing not permitted."}, {"section": "Airspeed Limitations", "q": "Taxi with canopy full open — Prevailing wind speed ≤ _______ knots", "a": "Taxi with canopy full open — Prevailing wind speed ≤ 20 knots"}, {"section": "Airspeed Limitations", "q": "Tires On deck ≤ _______ knots groundspeed", "a": "Tires On deck ≤ 176 knots groundspeed"}, {"section": "Airspeed Limitations", "q": "Nosewheel Steering On deck ≤ _______ knots groundspeed", "a": "Nosewheel Steering On deck ≤ 176 knots groundspeed"}, {"section": "Airspeed Limitations", "q": "Fuel System Hot refueling — Fuel level ≤ __________ pounds if ________________ unsuccessful", "a": "Fuel System Hot refueling — Fuel level ≤ 2,800 pounds if PRECHECK unsuccessful"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 1.", "a": "1. Intentional spins, or tailslides"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 2.", "a": "2. Rolling cross-control maneuvers of more than 60° bank angle change"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 3. (and authorized departure exceptions a–c)", "a": "3. Intentional departures except for: a. Erect rolling departure entered with full aft stick/full lateral stick; b. Erect rudder-induced departure entered with full aft stick/full rudder; c. Nose high departures (70 and 110 degrees)"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 3a.", "a": "3a. Erect rolling departure entered with full aft stick/full lateral stick (authorized exception)"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 3b.", "a": "3b. Erect rudder-induced departure entered with full aft stick/full rudder (authorized exception)"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 3c.", "a": "3c. Nose high departures (70 and 110 degrees) (authorized exception)"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 4.", "a": "4. Sustained zero or negative g flight for more than 30 seconds"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 5.", "a": "5. Less than 30 seconds between negative g or zero g maneuvers"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 6. Rolls at less than: (a–c)", "a": "6. Rolls at less than: a. Negative 1.0g at less than 260 KIAS; b. Negative 0.2g at or greater than 260 KIAS, but less than 0.80 Mach; c. Approximately positive 1.0g at or greater than 0.80 Mach"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 6a.", "a": "6a. Rolls at less than negative 1.0g at less than 260 KIAS"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 6b.", "a": "6b. Rolls at less than negative 0.2g at or greater than 260 KIAS, but less than 0.80 Mach"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 6c.", "a": "6c. Rolls at less than approximately positive 1.0g at or greater than 0.80 Mach"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 7.", "a": "7. Lateral/directional inputs below 3 units AOA"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 8.", "a": "8. Intentional departures with greater than 1,000 foot-pounds asymmetry"}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 9.", "a": "9. Operations with EMER FLAPS selected, when normal HYD 1 power is available, is restricted to 30 seconds with engine rpm less than or equal to 90%. Except in actual emergency, use of EMER FLAPS is restricted to FCF profiles."}, {"section": "Prohibited Maneuvers", "q": "Prohibited Maneuver 10.", "a": "10. Intentional accelerated stalls with landing gear extended while carrying stores."}, {"section": "Fuel Limitations", "q": "1. _______(___-_____), Jet ____, and ____++ _______(____-______) have a fuel freeze point of -______ °C (-______ °F). To avoid fuel freezing, do not allow indicated TAT in flight to dwell at or below freeze point of fuel type in use plus _____ °C (______°F).", "a": "1. A++(F-24), Jet A, and A++ 100 (F-27) have a fuel freeze point of -40 °C (-40 °F). To avoid fuel freezing, do not allow indicated TAT in flight to dwell at or below freeze point of fuel type in use plus 3 °C (5.4 °F)."}, {"section": "Fuel Limitations", "q": "2. Operation of the T-45 aircraft is restricted to ambient temperatures above ______ °C (+______ °F) when using fuel which does not contain fuel system icing inhibitor (FSII).", "a": "2. Operation of the T-45 aircraft is restricted to ambient temperatures above 0 °C (+32 °F) when using fuel which does not contain fuel system icing inhibitor (FSII)."}, {"section": "Acceleration Limitations", "q": "1. Normal acceleration limits during landing gear transition or extended and/or with flaps half or full are _______ to +_______ g symmetrical and +_______ to +_______ g unsymmetrical", "a": "1. Normal acceleration limits during landing gear transition or extended and/or with flaps half or full are 0.0 to +2.0 g symmetrical and +1.0 to +1.5 g unsymmetrical"}, {"section": "Acceleration Limitations", "q": "Figure 6 Symmetric Limits (less than __________ lbs) / Unsymmetric Limits (less than __________ lbs)", "a": "Figure 6 Symmetric Limits (less than 13,233 lbs) / Unsymmetric Limits (less than 13,233 lbs)"}, {"section": "Acceleration Limitations", "q": "Symmetric Max above 5,000 MSL + ________ g", "a": "Symmetric Max above 5,000 MSL +7.33 g"}, {"section": "Acceleration Limitations", "q": "Symmetric Max below 5,000 MSL + ________ g", "a": "Symmetric Max below 5,000 MSL +6.5 g"}, {"section": "Acceleration Limitations", "q": "Symmetric Min ≥ 0.80 Mach - ________ g", "a": "Symmetric Min ≥ 0.80 Mach -1.0 g"}, {"section": "Acceleration Limitations", "q": "Symmetric Min < 0.80 Mach - ________ g", "a": "Symmetric Min < 0.80 Mach -3.0 g"}, {"section": "Acceleration Limitations", "q": "Unsymmetric Max above 5,000 MSL + ________ g", "a": "Unsymmetric Max above 5,000 MSL +5.86 g"}, {"section": "Acceleration Limitations", "q": "Unsymmetric Max below 5,000 MSL + ________ g", "a": "Unsymmetric Max below 5,000 MSL +5.0 g"}, {"section": "Acceleration Limitations", "q": "Unsymmetric Min ≥ 0.80 Mach + ________ g", "a": "Unsymmetric Min ≥ 0.80 Mach +1.0 g"}, {"section": "Acceleration Limitations", "q": "Unsymmetric Min ≥ 260 knots and < 0.80 Mach - ________ g", "a": "Unsymmetric Min ≥ 260 knots and < 0.80 Mach -0.2 g"}, {"section": "Acceleration Limitations", "q": "Unsymmetric Min <260 knots - ________ g", "a": "Unsymmetric Min <260 knots -1.0 g"}];
+let deck = [...ALL];
+let idx = 0;
+let got = 0, missed = 0;
+const seen = new Set();
+
+const sectionSel = document.getElementById('section');
+const sections = [...new Set(ALL.map(c => c.section))];
+sections.forEach(s => {
+  const o = document.createElement('option');
+  o.value = s; o.textContent = s;
+  sectionSel.appendChild(o);
+});
+
+function filtered() {
+  const s = sectionSel.value;
+  return s ? ALL.filter(c => c.section === s) : [...ALL];
+}
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+function render() {
+  if (!deck.length) {
+    document.getElementById('qText').textContent = 'No cards in this section.';
+    document.getElementById('aText').textContent = '';
+    return;
+  }
+  if (idx >= deck.length) idx = 0;
+  const c = deck[idx];
+  document.getElementById('secTag').textContent = c.section;
+  document.getElementById('qText').textContent = c.q;
+  document.getElementById('aText').textContent = c.a;
+  document.getElementById('flip').classList.remove('flipped');
+  document.getElementById('progress').textContent = (idx + 1) + ' / ' + deck.length;
+  document.getElementById('bar').style.width = ((idx + 1) / deck.length * 100) + '%';
+  document.getElementById('score').textContent = 'Got it: ' + got + ' · Missed: ' + missed + ' · Unique seen: ' + seen.size;
+}
+function rebuildList() {
+  const box = document.getElementById('fullList');
+  box.innerHTML = '';
+  filtered().forEach((c, i) => {
+    const d = document.createElement('details');
+    d.innerHTML = '<summary>' + (i+1) + '. [' + c.section + '] ' + c.q.replace(/</g,'&lt;') + '</summary><div class="ans">' + c.a.replace(/</g,'&lt;') + '</div>';
+    box.appendChild(d);
+  });
+}
+function resetDeck(doShuffle) {
+  deck = filtered();
+  if (doShuffle) shuffle(deck);
+  idx = 0; render(); rebuildList();
+}
+document.getElementById('flipInner').onclick = () => document.getElementById('flip').classList.toggle('flipped');
+document.getElementById('flipBtn').onclick = () => document.getElementById('flip').classList.toggle('flipped');
+document.getElementById('next').onclick = () => { seen.add(idx); idx = (idx + 1) % deck.length; render(); };
+document.getElementById('got').onclick = () => { got++; seen.add(idx); idx = (idx + 1) % deck.length; render(); };
+document.getElementById('again').onclick = () => { missed++; seen.add(idx); idx = (idx + 1) % deck.length; render(); };
+document.getElementById('shuffle').onclick = () => resetDeck(true);
+document.getElementById('reset').onclick = () => { got=0; missed=0; seen.clear(); resetDeck(false); };
+sectionSel.onchange = () => { got=0; missed=0; seen.clear(); resetDeck(false); };
+resetDeck(false);
+</script>
+</body>
+</html>
