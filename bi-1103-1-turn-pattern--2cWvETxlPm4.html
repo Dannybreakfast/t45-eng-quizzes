@@ -128,7 +128,7 @@ button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
 <body>
 <div class="wrap">
   <header class="quiz-head">
-    <div class="crumb"><a href="index.html">T-45 Local Quizzes</a> · Basic Instruments</div>
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-bi.html">BI</a> · Basic Instruments</div>
     <h1>BI 1103 (1) Turn Pattern</h1>
     <div class="meta">8 multiple-choice questions · offline · tap an answer</div>
   </header>
@@ -157,12 +157,12 @@ button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
     <p id="final-msg"></p>
     <div class="actions" style="justify-content:center">
       <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
-      <a class="btn btn-ghost" href="index.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to Index</a>
+      <a class="btn btn-ghost" href="section-bi.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to BI</a>
     </div>
     <div class="review" id="review"></div>
   </div>
 
-  <div class="footer-nav"><a href="index.html">← All quizzes</a></div>
+  <div class="footer-nav"><a href="section-bi.html">← BI</a> · <a href="index.html">Home</a></div>
 </div>
 <script>
 const QUESTIONS = [{"q": "For a 20° heading change use about:", "opts": ["30° bank", "20° bank", "45° bank", "60° bank"], "ans": 1, "expl": "Bank equals heading change if \u003c30°."}, {"q": "Turn pattern is flown:", "opts": ["With long straight legs", "Continuously with reversals, no S&L legs", "Only at 150 KT", "Only dirty"], "ans": 1, "expl": "Return to original flow heading after each pair."}, {"q": "Bank for a 10° heading change?", "opts": ["**110°** angle of bank (bank = ΔHDG when \u003c30°).", "**5°** angle of bank (bank = ΔHDG when \u003c30°).", "**20°** angle of bank (bank = ΔHDG when \u003c30°).", "**10°** angle of bank (bank = ΔHDG when \u003c30°)."], "ans": 3, "expl": "**10°** angle of bank (bank = ΔHDG when \u003c30°)."}, {"q": "Bank for heading changes ≥30° (normal)?", "opts": ["No more than **30°** AOB (unless maneuver specifies more).", "Yes — fully available with no limitations.", "Yes — after selecting GAIN ORIDE.", "Yes — available in the aft cockpit only."], "ans": 0, "expl": "No more than **30°** AOB (unless maneuver specifies more)."}, {"q": "Turn pattern sequence (AOB / HDG change)?", "opts": ["**40°/60°**, **45°/90°**, **60°/120°** pairs with reversals; continuous.", "**15°/60°**, **45°/90°**, **60°/120°** pairs with reversals; continuous.", "**60°/60°**, **45°/90°**, **60°/120°** pairs with reversals; continuous.", "**30°/60°**, **45°/90°**, **60°/120°** pairs with reversals; continuous."], "ans": 3, "expl": "**30°/60°**, **45°/90°**, **60°/120°** pairs with reversals; continuous."}, {"q": "Approx power/attitude level 250 vs 45° AOB?", "opts": ["Level ~**1400 pph / +3°**; 45° ~**1500 pph / +4°** (~1.5G).", "Level ~**2800 pph / +3°**; 45° ~**1500 pph / +4°** (~1.5G).", "Level ~**700 pph / +3°**; 45° ~**1500 pph / +4°** (~1.5G).", "Level ~**1410 pph / +3°**; 45° ~**1500 pph / +4°** (~1.5G)."], "ans": 0, "expl": "Level ~**1400 pph / +3°**; 45° ~**1500 pph / +4°** (~1.5G)."}, {"q": "When Bank rule: \u003c30° HDG change, what happens?", "opts": ["No more than **30°** AOB (unless maneuver specifies more).", "bank equals heading change; ≥30° → ≤30° bank for normal turns (pattern uses 30/45/60).", "**30°/60°**, **45°/90°**, **60°/120°** pairs with reversals; continuous.", "Level ~**1400 pph / +3°**; 45° ~**1500 pph / +4°** (~1.5G)."], "ans": 1, "expl": "bank equals heading change; ≥30° → ≤30° bank for normal turns (pattern uses 30/45/60)."}, {"q": "When Turn pattern continuous: pairs of 30° AOB for 60° HDG, 45° AOB for 90° HDG, 60° AOB for 120° HDG with reversals, what happens?", "opts": ["20° bank", "Continuously with reversals, no S&L legs", "**10°** angle of bank (bank = ΔHDG when \u003c30°).", "end on original flow heading."], "ans": 3, "expl": "end on original flow heading."}];
