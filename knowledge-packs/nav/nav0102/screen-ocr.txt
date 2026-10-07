@@ -1,0 +1,810 @@
+===== frame_001.png =====
+EI Course - Google Chrome = 0 x
+@ Notsecure —Attps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+oe
+
+===== frame_002.png =====
+@ Notsecure Attps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+a
+
+===== frame_003.png =====
+E] Course - Google Chrome - o x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Introduction to INAV and Voice Procedures
+E ee y ya tae : = ae
+MEE
+
+===== frame_004.png =====
+I Course - Google Chrome = 0 x
+@ Not secure _fattps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef1 1-9751-0...
+Responsibilities of ATC Facilities
++ Ground Control
+= Taxi instructions to/from the duty
+= Obtains/relays IFR clearances if clearance delivery is not available
+= Provides weather information
++ Clearance delivery
+= Has no control function
+= Used solely for the delivery of IFR clearances
+[s
+; Responsibilities of ATC Faciities 11__jj ____
+
+===== frame_005.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure _fattps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Ground Control
+« Taxi instructions to/from the duty
+= Obtains/relays IFR clearances if clearance delivery is not available
+= Provides weather information
++ Clearance delivery
+= Has no control function
+= Used solely for the delivery of IFR clearances
+Responsibilities of ATC Facilities 1.1 fp Cis
+
+===== frame_006.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
+* Tower
+= Controls runway traffic
+« Issues takeoff clearance
+= Controls airborne traffic in control area
+= Provides airport advisory information to arriving flight in absence of ATIS.
+= Issues landing clearance
+Responsibilities of ATC Facilities 1.2) T_T
+
+===== frame_007.png =====
+EI Course - Google Chrome - o x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Departure Control
+
+= Responsible for ensuring separation between departures
+
+= Sequences and separates IFR and participating VFR traffic
+« Provides radar service, including assistance for VFR traffic
+
+INAV and Voice Proc__Page 3of 19 _|jij Responsibilities of ATC Facilities 1.3)
+
+===== frame_008.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure _fattps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Air Route Traffic Control Center (ARTCC)
+= Central authority for issuing IFR clearances
+= Issues route assignment
+« Provides traffic separation
+= Issues NOTAMS
+= Provides current weather information as required
+INAV and Voice Proc_Page 4of19_| || Responsibilities of ATC Facilities 14 J) TTTTTTTCCCCC_C(id
+
+===== frame_009.png =====
+EI Course - Google Chrome - o x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Approach Control
+
+= Controls all IFR aircraft from ARTCC control to tower control
+
+= Provides radar service for IFR traffic separation and sequencing, and also assists VFR traffic
+
+= Provides arrival information to incoming traffic on initial contact
+
+INAV and Voice Proc_Page 50f19_| || Responsibilities of ATC Facilities 15 J) TTTTTTTCC__C(id
+
+===== frame_010.png =====
+EI Course - Google Chrome - o x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Approach Control
+
+= Controls all IFR aircraft from ARTCC control to tower control
+
+= Provides radar service for IFR traffic separation and sequencing, and also assists VFR traffic
+
+= Provides arrival information to incoming traffic on initial contact
+
+INAV and Voice Proc_Page 50f19_| || Responsibilities of ATC Facilities 15) TTTTTTTTTC_C(id
+
+===== frame_011.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Flight Service Station (FSS)
+
+: Primary purpose is to provide services to civilian aircraft but may be utilized by military.
+
+= Common frequencies are 122.2 and 255.4.
+
+= Receives and processes IFR/VFR flight plans
+
+= Relays communications between ARTCC and aircraft when communication difficulties arise
+
+« Assists lost aircraft
+
+* Solicits PIREPs
+
+INAV and Voice Proc_Page 6 of 9_| || Responsibilities of ATC Facilities 16) TTTTTTCTCC_C(id
+
+===== frame_012.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Clearances
+
++ Normal Elements
+« Aircraft identification
+= Clearance limit
+= Departure instructions or SID
+= Route of flight
+= Altitude assignment
+= Departure frequency
+- IFF code
+= Any holding instructions
+= Other information as required
+
+INAV and Voice Proc__Page 7 of 19 _|jj Clearances 4.1 TT
+
+===== frame_013.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Clearances
++ Clearance readback
+
+* Training command
+° Read back all clearances verbatim.
+
+= Real world
+° Must read back all runway assignment and hold short instructions
+e When clearance deviates from originally filed, pilot must read back to indicate acceptance.
+e Not required to read back clearances (except for items above) that remain the same as originally filed
+° If clearance is unacceptable, pilot has the option to refuse, and a new clearance will be issued.
+° All readbacks should be preceded by aircraft identification/call sign.
+
+INAV and Voice Proc__Page 8of19_|ujClearances1.2 TC TETTTTTTTTTTTTTTT__C(i*di
+
+===== frame_014.png =====
+1 Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Mandatory Voice Reports
++ FIH, Section B (Position Reports)
+
+= Handout
+= Holding
+
+° Always report entering or leaving with one exception:
+
+= Military terminal, radar contact, instrument training
+
+= Level at new altitude
+
+° Need not report when level at new altitude unless in RVSM airspace (FL290-FL410)
+
+INAV and Voice Proc__Page 90of19_|j4) Mandatory Voice Reports
+
+===== frame_015.png =====
+EI Course - Google Chrome - o x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Squawk IFF code 7600 under all weather conditions.
++ Attempt radio contact on other/previous frequencies.
+= Guard frequencies are 243.0 and 121.5.
++ ATC will attempt to communicate on Guard and any available frequencies of NAVAIDS.
+— amines
+* |
+
+===== frame_016.png =====
+EI Course - Google Chrome - o x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Primary objective
+= To preclude extended IFR operation in the air traffic control system in VMC
+= To land as soon as practicable
+INAV and Voice Proc__Page 11.of 19 _|jjj Lost Communications1.2
+
+===== frame_017.png =====
+E Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ VMC conditions
+* Maintain VMC conditions and land as soon as practicable.
+° Does not mean:
+* Land minutes short of destination.
+= Land at an unsuitable airfield.
+= Land at an unauthorized airfield.
+= Observe VFR cruising altitudes, if possible.
+° East is odd, west is even plus 500.
+= Observe control tower for light signals.
+° Acknowledge by:
+= Rocking wings during daylight
+= Flash aircraft lights during night time.
+
+===== frame_018.png =====
+1 Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ IMC conditions
+
+= Continue flight - AVEFAME
+
+= Determine:
+° Correct route to fly
+° Correct altitude to fly for each route segment
+° Correct time to leave a clearance |imit that either is or is not a fix from which an approach begins
+
+INAV and Voice Proc__Page 13 of 19 | Lost Communications14 SF TTTTTTTCCCCCi*s
+
+===== frame_019.png =====
+EI Course - Google Chrome - o x
+://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Route (ranking by priority)
+
+« A- By route assigned in last clearance received
+
+= \-If being radar vectored, by the direct route from the point of radio failure to the fix or airway specified in clearance
+
+= E-In the absence of an assigned route, by the route ATC has advised may be expected in a further clearance
+
+« F-Inthe absence of an assigned or expected route, by the route filed in the flight plan
+| LAPP PCCP reece eis, |
+' y
+} WARNING |
+a When on an IFR flight plan and cleared to an intermediate point which is not on your |
+' filed route and short of your destination, you should not accept the clearance without “
+_ first obtaining your expected further routing. ty
+' uy
+ITITITITITITILILTAILIAT LITTLE
+
+ee = = J
+© if j
++ |
+
+===== frame_020.png =====
+EX Course - Google Chrome = 0 x
+@ Not secure _ https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Altitude
+« At the highest of the following altitudes for the route segment being flown
+e A- The altitude assigned in the last ATC clearance received
+e M-The minimum altitude for IFR operations
+= MEA, MOCA, ESA, MSA, OROCA
+e E- The altitude ATC has advised may be expected in a further clearance
+INAV and Voice Proc__Page 15 of 19_|jj| Lost Communications 16 ETTTTCCCCCis
+
+===== frame_021.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure _fttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Leave clearance limit.
+
+= Fix from which an approach begins
+
+e Commence descent and approach as close as possible to the EFC if one has been received, or if one has not been
+received, as close as possible to the ETA (T/O + ETE).
+
+= Fix from which an approach does not begin
+
+° Leave at the EFC if one has been received, or if one has not been received, upon arrival over the clearance limit.
+INAV and Voice Proc__Page 16 of 19_}iaj Lost Communications 1.7 TTTTTTTTTTT_C(id
+
+===== frame_022.png =====
+1 Course - Google Chrome = 0 x
+@ Not secure _ttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
++ Approach magazine
+
+“T heard the engines wind down,
+
+the ground came rushing up, and at the
+
+last moment, I leveled the nose to land
+
+on all three gear.”
+
+i i F825 ab ee
+
+===== frame_023.png =====
+EI Course - Google Chrome - o x
+95://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+e.~- or iit
+-. <k ew, Oper A > |
+3 fgg = S - En FG me » 3
+er yee = s Poe et ;
+= zoe we - 4 AS
++ = te a ‘ nes ~ =
+ee as, oo Fe om io A
+ee Sh = / “
+ae ee “
+a eee a —
+2 Oy a
+
+===== frame_024.png =====
+EI Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+
++ Set transponder to 7700.
+
++ Transmit as many as possible of the following elements:
+= MAY, MAY, MAYDAY (Distress)
+= PAN-PAN, PAN-PAN, PAN-PAN (Urgency)
+= Name of station addressed
+= Aircraft identification and type
+= Nature of distress or urgency
+= Weather
+= Pilot's intentions
+= Present position and heading or if lost, last known position, time, heading since
+
+that position
+= Altitude
+= Fuel remaining
+= Number of people on board
+= Any other useful information
+INAV and Voice Proc__Page 19 of 19_|j44 In-Flight Emer Comm Procedures 1.3) Cid;
+
+===== frame_025.png =====
+E Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+
++ Set transponder to 7700.
+
++ Transmit as many as possible of the following elements:
+= MAY, MAY, MAYDAY (Distress)
+= PAN-PAN, PAN-PAN, PAN-PAN (Urgency)
+= Name of station addressed
+= Aircraft identification and type
+= Nature of distress or urgency
+= Weather
+= Pilot's intentions
+« Present position and heading or if lost, last known position, time, heading since
+
+that position
+
+= Altitude
+= Fuel remaining
+= Number of people on board
+= Any other useful information
+
+===== frame_026.png =====
+E Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+
++ Set transponder to 7700.
+
++ Transmit as many as possible of the following elements:
+= MAY, MAY, MAYDAY (Distress)
+= PAN-PAN, PAN-PAN, PAN-PAN (Urgency)
+= Name of station addressed
+= Aircraft identification and type
+= Nature of distress or urgency
+= Weather
+= Pilot's intentions
+« Present position and heading or if lost, last known position, time, heading since
+
+that position
+
+= Altitude
+= Fuel remaining
+= Number of people on board
+= Any other useful information
+
+===== frame_027.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Introduction to INAV and Voice Procedures
+| te s) —— ’ e se
+|
+
+===== frame_028.png =====
+1 Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Introduction to INAV and Voice Procedures
+| es $ ; — , e =
+oY se
+
+===== keyframe_001.png =====
+1 Course - Google Chrome = Oo x
+@ Notsecure ttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+po
+
+===== keyframe_002.png =====
+@ Notsecure Attps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+oe
+
+===== keyframe_003.png =====
+@ Notsecure ttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef1 1-9751-0...
+a
+
+===== keyframe_004.png =====
+EI Course - Google Chrome = 0 x
+@ Not secure _ttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Ground Control
+= Taxi instructions to/from the duty
+= Obtains/relays IFR clearances if clearance delivery is not available
+= Provides weather information
+. Clearance delivery
+= Has no control function
+= Used solely for the delivery of IFR clearances
+i Responsibilities of ATC Faciities 11 J)
+
+===== keyframe_005.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _ttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Ground Control
+= Taxi instructions to/from the duty
+= Obtains/relays IFR clearances if clearance delivery is not available
+= Provides weather information
++ Clearance delivery
+= Has no control function
+= Used solely for the delivery of IFR clearances
+Responsibilities of ATC Facilities 11) TT_Cid
+
+===== keyframe_006.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _fattps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Ground Control
+« Taxi instructions to/from the duty
+= Obtains/relays IFR clearances if clearance delivery is not available
+= Provides weather information
++ Clearance delivery
+= Has no control function
+= Used solely for the delivery of IFR clearances
+Responsibilities of ATC Faciities 11 J)
+
+===== keyframe_007.png =====
+1] Course - Google Chrome - oO x
+@ Not secure —_https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Departure Control
+
+= Responsible for ensuring separation between departures
+
+= Sequences and separates IFR and participating VFR traffic
+« Provides radar service, including assistance for VFR traffic
+
+Responsibilities of ATC Faciities 13 Jj
+
+===== keyframe_008.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _fattps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Air Route Traffic Control Center (ARTCC)
+= Central authority for issuing IFR clearances
+= Issues route assignment
+« Provides traffic separation
+= Issues NOTAMS
+= Provides current weather information as required
+Responsibilities of ATC Faciities 14 J)
+
+===== keyframe_009.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _fattps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Air Route Traffic Control Center (ARTCC)
+= Central authority for issuing IFR clearances
+= Issues route assignment
+« Provides traffic separation
+= Issues NOTAMS
+= Provides current weather information as required
+Responsibilities of ATC Faciities 14 J)
+
+===== keyframe_010.png =====
+1] Course - Google Chrome - oO x
+@ Not secure —_https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Approach Control
+
+= Controls all IFR aircraft from ARTCC control to tower control
+
+= Provides radar service for IFR traffic separation and sequencing, and also assists VFR traffic
+
+= Provides arrival information to incoming traffic on initial contact
+
+Responsibilities of ATC Facilities 1.5 J) TTTCCCCCCC(id
+
+===== keyframe_011.png =====
+1] Course - Google Chrome - oO x
+@ Not secure —_https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Approach Control
+
+= Controls all IFR aircraft from ARTCC control to tower control
+
+= Provides radar service for IFR traffic separation and sequencing, and also assists VFR traffic
+
+= Provides arrival information to incoming traffic on initial contact
+
+Responsibilities of ATC Facilities 1.5 J) TTTCCCCCCC(id
+
+===== keyframe_012.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Responsibilities of ATC Facilities
++ Flight Service Station (FSS)
+
+: Primary purpose is to provide services to civilian aircraft but may be utilized by military.
+
+= Common frequencies are 122.2 and 255.4.
+
+= Receives and processes IFR/VFR flight plans
+
+* Relays communications between ARTCC and aircraft when communication difficulties arise
+
+« Assists lost aircraft
+
+* Solicits PIREPs
+
+===== keyframe_013.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _ttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Clearances
++ Normal Elements
+« Aircraft identification
+= Clearance limit
+= Departure instructions or SID
+= Route of flight
+= Altitude assignment
+= Departure frequency
++ IFF code
+= Any holding instructions
+= Other information as required
+INAV and Voice Proc__Page7of19_|)| Clearances.
+
+===== keyframe_014.png =====
+EX Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Clearances
++ Clearance readback
+
++ Training command
+e Read back all clearances verbatim.
+
+= Real world
+° Must read back all runway assignment and hold short instructions
+e When clearance deviates from originally filed, pilot must read back to indicate acceptance.
+° Not required to read back clearances (except for items above) that remain the same as originally filed
+° If clearance is unacceptable, pilot has the option to refuse, and a new clearance will be issued.
+° All readbacks should be preceded by aircraft identification/call sign.
+
+INAV and Voice Proc__Page8of19__|jClearances1.22 JC
+
+===== keyframe_015.png =====
+1] Course - Google Chrome - oO x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Squawk IFF code 7600 under all weather conditions.
++ Attempt radio contact on other/previous frequencies.
+= Guard frequencies are 243.0 and 121.5.
++ ATC will attempt to communicate on Guard and any available frequencies of NAVAIDS.
+—_— amines
+* |
+
+===== keyframe_016.png =====
+1] Course - Google Chrome - oO x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Squawk IFF code 7600 under all weather conditions.
++ Attempt radio contact on other/previous frequencies.
+= Guard frequencies are 243.0 and 121.5.
++ ATC will attempt to communicate on Guard and any available frequencies of NAVAIDS.
+—_— amines
+* |
+
+===== keyframe_017.png =====
+1] Course - Google Chrome - oO x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Primary objective
+= To preclude extended IFR operation in the air traffic control system in VMC
+= To land as soon as practicable
+INAV and Voice Proc__Page 11 of 19 || Lost Communications 1.2
+
+===== keyframe_018.png =====
+EX Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ VMC conditions
+= Maintain VMC conditions and land as soon as practicable.
+e Does not mean:
+* Land minutes short of destination.
+= Land at an unsuitable airfield.
+= Land at an unauthorized airfield.
+= Observe VFR cruising altitudes, if possible.
+° East is odd, west is even plus 500.
+= Observe control tower for light signals.
+° Acknowledge by:
+= Rocking wings during daylight
+= Flash aircraft lights during night time.
+
+===== keyframe_019.png =====
+1] Course - Google Chrome - oO x
+‘//tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Route (ranking by priority)
+
+« A- By route assigned in last clearance received
+
+= \-If being radar vectored, by the direct route from the point of radio failure to the fix or airway specified in clearance
+
+= E-In the absence of an assigned route, by the route ATC has advised may be expected in a further clearance
+
+« F-Inthe absence of an assigned or expected route, by the route filed in the flight plan
+| LPP PCC PCCP Eee eerie cess, |
+' y
+} WARNING M4
+a When on an IFR flight plan and cleared to an intermediate point which is not on your |
+' filed route and short of your destination, you should not accept the clearance without 4
+h first obtaining your expected further routing. ty
+'
+ITITITITITITIAIATLILITIIT LITTLE
+
+ee = = J
+s if )
+* |
+
+===== keyframe_020.png =====
+EI Course - Google Chrome = 0 x
+@ Not secure _ https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Altitude
+« At the highest of the following altitudes for the route segment being flown
+e A- The altitude assigned in the last ATC clearance received
+° M-The minimum altitude for IFR operations
+= MEA, MOCA, ESA, MSA, OROCA
+e E- The altitude ATC has advised may be expected in a further clearance
+
+===== keyframe_021.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _fattps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Lost Communications
++ Leave clearance limit.
+
+= Fix from which an approach begins
+
+e Commence descent and approach as close as possible to the EFC if one has been received, or if one has not been
+received, as close as possible to the ETA (T/O + ETE).
+
+= Fix from which an approach does not begin
+
+° Leave at the EFC if one has been received, or if one has not been received, upon arrival over the clearance limit.
+INAV and Voice Proc__Page 16 of 19_}§ij Lost Communications 1.7 ETTTTTTTTTTTTT_C(idi
+
+===== keyframe_022.png =====
+EI Course - Google Chrome = 0 x
+@ Not secure —ttps://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0
+In-Flight Emergency Communication Procedures
++ Approach magazine
+“T heard the engines wind down,
+the ground came rushing up, and at the
+last moment, I leveled the nose to land
+on all three gear.”
+Fd Oo OO Oe EN
+Cet gad Pena Me piss Ty Ae pes aaa pr“ )
+MO i ot F825 “ab ae
+
+===== keyframe_023.png =====
+Course - Google Chrome - o x
+95://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+e.~- or iit
+-. <k ew, Oper A > |
+3 fgg = S - En FG me y 3
+er yee = s Poe et ;
+= zoe we - 4 AS
++ = te a ‘ nes ~ =
+ee as, oo Fe om io A
+ee Sh = / “
+ae ee “
+a eee a —
+a4 a
+INAV and Voice Proc Page 18 0f 19 i In-Flight Emer Comm Procedures12 J
+
+===== keyframe_024.png =====
+EX Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+
++ Set transponder to 7700.
+
++ Transmit as many as possible of the following elements:
+= MAY, MAY, MAYDAY (Distress)
+= PAN-PAN, PAN-PAN, PAN-PAN (Urgency)
+= Name of station addressed
+= Aircraft identification and type
+= Nature of distress or urgency
+= Weather
+= Pilot's intentions
+= Present position and heading or if lost, last known position, time, heading since
+
+that position
+= Altitude
+= Fuel remaining
+= Number of people on board
+= Any other useful information
+INAV and Voice Proc__Page 19 of 19_|))) In-Flight Emer Comm Procedures 1.3 J)
+
+===== keyframe_025.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+
++ Set transponder to 7700.
+
++ Transmit as many as possible of the following elements:
+= MAY, MAY, MAYDAY (Distress)
+= PAN-PAN, PAN-PAN, PAN-PAN (Urgency)
+= Name of station addressed
+= Aircraft identification and type
+= Nature of distress or urgency
+= Weather
+= Pilot's intentions
+= Present position and heading or if lost, last known position, time, heading since
+
+that position
+
+= Altitude
+= Fuel remaining
+= Number of people on board
+= Any other useful information
+
+===== keyframe_026.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+
++ Set transponder to 7700.
+
++ Transmit as many as possible of the following elements:
+= MAY, MAY, MAYDAY (Distress)
+= PAN-PAN, PAN-PAN, PAN-PAN (Urgency)
+= Name of station addressed
+= Aircraft identification and type
+= Nature of distress or urgency
+= Weather
+= Pilot's intentions
+= Present position and heading or if lost, last known position, time, heading since
+
+that position
+
+= Altitude
+= Fuel remaining
+= Number of people on board
+= Any other useful information
+
+===== keyframe_027.png =====
+E] Course - Google Chrome = 0 x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+In-Flight Emergency Communication Procedures
+
++ Set transponder to 7700.
+
++ Transmit as many as possible of the following elements:
+= MAY, MAY, MAYDAY (Distress)
+= PAN-PAN, PAN-PAN, PAN-PAN (Urgency)
+= Name of station addressed
+= Aircraft identification and type
+= Nature of distress or urgency
+= Weather
+= Pilot's intentions
+= Present position and heading or if lost, last known position, time, heading since
+
+that position
+
+= Altitude
+= Fuel remaining
+= Number of people on board
+= Any other useful information
+
+===== keyframe_028.png =====
+EX Course - Google Chrome = Oo x
+@ Not secure _https://tsharp.navsea.cloud.navy.mil/Sharp.RusticiEngine/defaultui/player/apiwrapper.html?scoUrl=%2FCourses%2Fb32eee08-3d18-ef11-9751-0...
+Introduction to INAV and Voice Procedures
+Sas $ ; — > =
+oY a
+

@@ -1,0 +1,18 @@
+{
+  "id": "nav0103",
+  "title": "NAV0103 Departure and Terminal Procedures",
+  "display_title": "NAV0103 Departure and Terminal Procedures",
+  "url": null,
+  "source": "tsharp.navsea screen recording (source.mp4)",
+  "course_title": "Departure and Terminal Procedures",
+  "asr_ok": false,
+  "ocr_ok": true,
+  "words": null,
+  "caption_note": "Silent screen recording (~148s); content from tesseract OCR of 148 frames cleaned into screen-content.md with selective chart re-OCR (LEMIG ONE, KNQI mins, FLIP MON, DD-1801). Not ASR. No watchvideo-slides.md at expand time.",
+  "slides": null,
+  "frames": 148,
+  "duration_s": 148,
+  "flashcards": 83,
+  "quiz_questions": 40,
+  "expanded": "2026-10-06"
+}

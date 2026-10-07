@@ -1,0 +1,14 @@
+Where can you get official PDF approach plates and IFR charts (high and low)?	FAA.gov; printed NGA High Approach Playbook East also used; SkyVector/ForeFlight ultimately pull from these sources.
+What does the Trouble T on an approach plate header indicate?	Takeoff issues / complications out of that airport (often lighting-related notes).
+What does a dot above an ALS code (e.g. A5) mean?	Sequence flashers / strobe lights associated with that approach lighting system.
+MSA vs Emergency Safe Altitude — radius and clearance?	MSA typically based on a ~25 NM circle about the defining navaid (quadrants). ESA out to 100 NM: 1000 ft obstacle clearance in flat terrain, 2000 ft in designated mountainous terrain.
+CNAF 3710 single-pilot RVR floor vs a plate showing 18 RVR (Atlantic City ILS example)?	3710 requires no lower than ~24 RVR (½ mile); 18 RVR on the civil plate is not enough for single-pilot rules.
+If MALSR is OTS on an ILS that was designed for 1800 RVR, what correction is typical?	Increase RVR to 4000 (~¾ mile) per inoperative-components table / plate note (verify plate-specific notes).
+What is a displaced threshold usable for, and not usable for?	Usable for takeoff roll and landing rollout; not a legal touchdown point (pavement not hardened for landings).
+Are T-45s authorized for land-and-hold-short (LAHSO) operations?	No — T-45s are not really authorized for LAHSO.
+If a low approach plate omits Emergency Safe Altitude, what chart altitude can substitute conceptually?	OROCA (off-route obstruction clearance altitude) — same 1000/2000 ft clearance idea.
+How is pilot-controlled lighting depicted on plates?	Lighting symbology as a black circle with white lettering; click frequency to raise/lower intensity.
+At the outer marker on an ILS, centered glide slope should show what?	The published glide-slope altitude at that fix (e.g. 1433 MSL at Tuscaloosa example). Mismatch → consider localizer-only and time from FAF.
+Approx VSI for a 3° glide path at 120 kt ground speed (descent gradient table)?	About 637 feet per minute.
+For PAR minima under single-pilot 3710 rules, what adjustment is emphasized?	Add 100 ft to height-above-touchdown (and correspondingly to DA) so HAT is at least ~200 ft.
+Frequency order typically listed on the plate header?	ATIS, Approach Control, Tower, Ground, Clearance Delivery (plus ASR/PAR note if applicable).

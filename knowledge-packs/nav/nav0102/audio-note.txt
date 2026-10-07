@@ -1,0 +1,4 @@
+Audio extraction: ffmpeg extracted PCM WAV from source.mp4 (AAC stereo track present).
+Analysis: duration=27.712s, sample_rate=16000, channels=2, RMS≈0.00, peak=0.
+Result: track is effectively silent (no usable speech/audio content).
+No transcript produced.

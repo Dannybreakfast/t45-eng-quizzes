@@ -1,0 +1,14 @@
+{
+  "id": "nav0102",
+  "title": "NAV0102 Introduction to INAV and Voice Procedures",
+  "display_title": "NAV0102 Introduction to INAV and Voice Procedures",
+  "url": null,
+  "source": "tsharp.navsea screen recording (source.mp4)",
+  "course_title": "Introduction to INAV and Voice Procedures",
+  "asr_ok": false,
+  "ocr_ok": true,
+  "words": null,
+  "caption_note": "Silent screen recording (~28s); content from watchVideo slide transcription + tesseract OCR of frames (19 slides). Not ASR.",
+  "slides": 19,
+  "duration_s": 28
+}

@@ -1,0 +1,1765 @@
+[
+  {
+    "id": 1760198791286786,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 0,
+    "creatorId": 116946290,
+    "timestamp": 1678656379,
+    "lastModified": 1678656379,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Cleared for published DP on IFR flight plan. After takeoff \"climb and maintain FL350...\"",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Q2xlYXJlZCBmb3IgcHVibGlzaGVkIERQIG9uIElGUiBmbGlnaHQgcGxhbi4gQWZ0ZXIgdGFrZW9mZiAiY2xpbWIgYW5kIG1haW50YWluIEZMMzUwLi4uIg&s=ZGViZjNmNWE",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Q2xlYXJlZCBmb3IgcHVibGlzaGVkIERQIG9uIElGUiBmbGlnaHQgcGxhbi4gQWZ0ZXIgdGFrZW9mZiAiY2xpbWIgYW5kIG1haW50YWluIEZMMzUwLi4uIg&s=ZGViZjNmNWE&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Climb immediately to FL350 and proceed via direct flight to the DP transition point",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Q2xpbWIgaW1tZWRpYXRlbHkgdG8gRkwzNTAgYW5kIHByb2NlZWQgdmlhIGRpcmVjdCBmbGlnaHQgdG8gdGhlIERQIHRyYW5zaXRpb24gcG9pbnQ&s=MTlhNDdlMTc",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Q2xpbWIgaW1tZWRpYXRlbHkgdG8gRkwzNTAgYW5kIHByb2NlZWQgdmlhIGRpcmVjdCBmbGlnaHQgdG8gdGhlIERQIHRyYW5zaXRpb24gcG9pbnQ&s=MTlhNDdlMTc&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760198869966849,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 1,
+    "creatorId": 116946290,
+    "timestamp": 1678656454,
+    "lastModified": 1678656454,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "On a flight from NAS Meridian to Montgomery Regional, prior to commencing a HI ILS approach, tune and ID NAVAIDS. Which TACAN should be tuned and IDed",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=T24gYSBmbGlnaHQgZnJvbSBOQVMgTWVyaWRpYW4gdG8gTW9udGdvbWVyeSBSZWdpb25hbCwgcHJpb3IgdG8gY29tbWVuY2luZyBhIEhJIElMUyBhcHByb2FjaCwgdHVuZSBhbmQgSUQgTkFWQUlEUy4gV2hpY2ggVEFDQU4gc2hvdWxkIGJlIHR1bmVkIGFuZCBJRGVk&s=ZDIxMzMwOGE",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=T24gYSBmbGlnaHQgZnJvbSBOQVMgTWVyaWRpYW4gdG8gTW9udGdvbWVyeSBSZWdpb25hbCwgcHJpb3IgdG8gY29tbWVuY2luZyBhIEhJIElMUyBhcHByb2FjaCwgdHVuZSBhbmQgSUQgTkFWQUlEUy4gV2hpY2ggVEFDQU4gc2hvdWxkIGJlIHR1bmVkIGFuZCBJRGVk&s=ZDIxMzMwOGE&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Channel 97 (MXF)",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Q2hhbm5lbCA5NyAoTVhGKQ&s=M2I4ZDZjODc",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Q2hhbm5lbCA5NyAoTVhGKQ&s=M2I4ZDZjODc&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199136251908,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 2,
+    "creatorId": 116946290,
+    "timestamp": 1678656708,
+    "lastModified": 1678656708,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "When flight planning, an airport designated \"official business only\"",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBmbGlnaHQgcGxhbm5pbmcsIGFuIGFpcnBvcnQgZGVzaWduYXRlZCAib2ZmaWNpYWwgYnVzaW5lc3Mgb25seSI&s=YTRjMzQ0MjI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBmbGlnaHQgcGxhbm5pbmcsIGFuIGFpcnBvcnQgZGVzaWduYXRlZCAib2ZmaWNpYWwgYnVzaW5lc3Mgb25seSI&s=YTRjMzQ0MjI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Be designated as an alternate on an IFR flight plan",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QmUgZGVzaWduYXRlZCBhcyBhbiBhbHRlcm5hdGUgb24gYW4gSUZSIGZsaWdodCBwbGFu&s=Zjg3MTA0NjA",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QmUgZGVzaWduYXRlZCBhcyBhbiBhbHRlcm5hdGUgb24gYW4gSUZSIGZsaWdodCBwbGFu&s=Zjg3MTA0NjA&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199214940162,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 3,
+    "creatorId": 116946290,
+    "timestamp": 1678656783,
+    "lastModified": 1678656783,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "For all flights in a jet, 3710 requires fuel from takeoff to landing plus a reserve of:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Rm9yIGFsbCBmbGlnaHRzIGluIGEgamV0LCAzNzEwIHJlcXVpcmVzIGZ1ZWwgZnJvbSB0YWtlb2ZmIHRvIGxhbmRpbmcgcGx1cyBhIHJlc2VydmUgb2Y6&s=ZjVkMmVhZTU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Rm9yIGFsbCBmbGlnaHRzIGluIGEgamV0LCAzNzEwIHJlcXVpcmVzIGZ1ZWwgZnJvbSB0YWtlb2ZmIHRvIGxhbmRpbmcgcGx1cyBhIHJlc2VydmUgb2Y6&s=ZjVkMmVhZTU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "10%, but not less than that required for 20 minutes flight at max endurance at 10,000 MSL",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTAlLCBidXQgbm90IGxlc3MgdGhhbiB0aGF0IHJlcXVpcmVkIGZvciAyMCBtaW51dGVzIGZsaWdodCBhdCBtYXggZW5kdXJhbmNlIGF0IDEwLDAwMCBNU0w&s=ODNiNDIzOWM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTAlLCBidXQgbm90IGxlc3MgdGhhbiB0aGF0IHJlcXVpcmVkIGZvciAyMCBtaW51dGVzIGZsaWdodCBhdCBtYXggZW5kdXJhbmNlIGF0IDEwLDAwMCBNU0w&s=ODNiNDIzOWM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199401607195,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 4,
+    "creatorId": 116946290,
+    "timestamp": 1678656961,
+    "lastModified": 1678656961,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Which of the following are true concerning HI-TACAN RWY 19L approach chart to NAS Meridian?",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hpY2ggb2YgdGhlIGZvbGxvd2luZyBhcmUgdHJ1ZSBjb25jZXJuaW5nIEhJLVRBQ0FOIFJXWSAxOUwgYXBwcm9hY2ggY2hhcnQgdG8gTkFTIE1lcmlkaWFuPw&s=MTE4YmZhMmU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hpY2ggb2YgdGhlIGZvbGxvd2luZyBhcmUgdHJ1ZSBjb25jZXJuaW5nIEhJLVRBQ0FOIFJXWSAxOUwgYXBwcm9hY2ggY2hhcnQgdG8gTkFTIE1lcmlkaWFuPw&s=MTE4YmZhMmU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "You must maintain 3000 ft between the 328 and 358 radials",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IG11c3QgbWFpbnRhaW4gMzAwMCBmdCBiZXR3ZWVuIHRoZSAzMjggYW5kIDM1OCByYWRpYWxz&s=ZDRhMzY0NTk",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IG11c3QgbWFpbnRhaW4gMzAwMCBmdCBiZXR3ZWVuIHRoZSAzMjggYW5kIDM1OCByYWRpYWxz&s=ZDRhMzY0NTk&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199429910528,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 5,
+    "creatorId": 116946290,
+    "timestamp": 1678656988,
+    "lastModified": 1678656988,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "With all NAVAIDs and facilities operating, takeoff mins for a standard instrument pilot departing runway 9 at NAS Jax would be",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2l0aCBhbGwgTkFWQUlEcyBhbmQgZmFjaWxpdGllcyBvcGVyYXRpbmcsIHRha2VvZmYgbWlucyBmb3IgYSBzdGFuZGFyZCBpbnN0cnVtZW50IHBpbG90IGRlcGFydGluZyBydW53YXkgOSBhdCBOQVMgSmF4IHdvdWxkIGJl&s=Y2MxZTUyY2M",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2l0aCBhbGwgTkFWQUlEcyBhbmQgZmFjaWxpdGllcyBvcGVyYXRpbmcsIHRha2VvZmYgbWlucyBmb3IgYSBzdGFuZGFyZCBpbnN0cnVtZW50IHBpbG90IGRlcGFydGluZyBydW53YXkgOSBhdCBOQVMgSmF4IHdvdWxkIGJl&s=Y2MxZTUyY2M&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "200-1/2",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MjAwLTEvMg&s=YTcwZWI0YmY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MjAwLTEvMg&s=YTcwZWI0YmY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199448731650,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 6,
+    "creatorId": 116946290,
+    "timestamp": 1678657006,
+    "lastModified": 1678657006,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "When on an IFR flight plan and cleared to an intermediate point not in a filed route, short of filed destination, should not accept the clearance without first obtaining",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBvbiBhbiBJRlIgZmxpZ2h0IHBsYW4gYW5kIGNsZWFyZWQgdG8gYW4gaW50ZXJtZWRpYXRlIHBvaW50IG5vdCBpbiBhIGZpbGVkIHJvdXRlLCBzaG9ydCBvZiBmaWxlZCBkZXN0aW5hdGlvbiwgc2hvdWxkIG5vdCBhY2NlcHQgdGhlIGNsZWFyYW5jZSB3aXRob3V0IGZpcnN0IG9idGFpbmluZw&s=YmE2MzE5ZWQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBvbiBhbiBJRlIgZmxpZ2h0IHBsYW4gYW5kIGNsZWFyZWQgdG8gYW4gaW50ZXJtZWRpYXRlIHBvaW50IG5vdCBpbiBhIGZpbGVkIHJvdXRlLCBzaG9ydCBvZiBmaWxlZCBkZXN0aW5hdGlvbiwgc2hvdWxkIG5vdCBhY2NlcHQgdGhlIGNsZWFyYW5jZSB3aXRob3V0IGZpcnN0IG9idGFpbmluZw&s=YmE2MzE5ZWQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Expect further routing",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RXhwZWN0IGZ1cnRoZXIgcm91dGluZw&s=ZTUwOTUwM2Q",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RXhwZWN0IGZ1cnRoZXIgcm91dGluZw&s=ZTUwOTUwM2Q&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199483338752,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 7,
+    "creatorId": 116946290,
+    "timestamp": 1678657039,
+    "lastModified": 1678657039,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "On a missed approach at NAS Meridian you decide to go to your alternate, Maxwell AFB. Cat C mins for an ILS RWY 15 circle to land RWY 33 approach will be:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=T24gYSBtaXNzZWQgYXBwcm9hY2ggYXQgTkFTIE1lcmlkaWFuIHlvdSBkZWNpZGUgdG8gZ28gdG8geW91ciBhbHRlcm5hdGUsIE1heHdlbGwgQUZCLiBDYXQgQyBtaW5zIGZvciBhbiBJTFMgUldZIDE1IGNpcmNsZSB0byBsYW5kIFJXWSAzMyBhcHByb2FjaCB3aWxsIGJlOg&s=ZDFiYjMyNmQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=T24gYSBtaXNzZWQgYXBwcm9hY2ggYXQgTkFTIE1lcmlkaWFuIHlvdSBkZWNpZGUgdG8gZ28gdG8geW91ciBhbHRlcm5hdGUsIE1heHdlbGwgQUZCLiBDYXQgQyBtaW5zIGZvciBhbiBJTFMgUldZIDE1IGNpcmNsZSB0byBsYW5kIFJXWSAzMyBhcHByb2FjaCB3aWxsIGJlOg&s=ZDFiYjMyNmQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "500-1/2",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAwLTEvMg&s=ODM5ZWU1MTI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAwLTEvMg&s=ODM5ZWU1MTI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199520030720,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 8,
+    "creatorId": 116946290,
+    "timestamp": 1678657074,
+    "lastModified": 1678657074,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "You are in the GCA box pattern, within 25 nm of the field in IMC, when comms are lost. From here, intercept a published instrument approach maintaining ____ until established on a segment of the approach",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGFyZSBpbiB0aGUgR0NBIGJveCBwYXR0ZXJuLCB3aXRoaW4gMjUgbm0gb2YgdGhlIGZpZWxkIGluIElNQywgd2hlbiBjb21tcyBhcmUgbG9zdC4gRnJvbSBoZXJlLCBpbnRlcmNlcHQgYSBwdWJsaXNoZWQgaW5zdHJ1bWVudCBhcHByb2FjaCBtYWludGFpbmluZyBfX19fIHVudGlsIGVzdGFibGlzaGVkIG9uIGEgc2VnbWVudCBvZiB0aGUgYXBwcm9hY2g&s=ZDQ3YzY1MzM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGFyZSBpbiB0aGUgR0NBIGJveCBwYXR0ZXJuLCB3aXRoaW4gMjUgbm0gb2YgdGhlIGZpZWxkIGluIElNQywgd2hlbiBjb21tcyBhcmUgbG9zdC4gRnJvbSBoZXJlLCBpbnRlcmNlcHQgYSBwdWJsaXNoZWQgaW5zdHJ1bWVudCBhcHByb2FjaCBtYWludGFpbmluZyBfX19fIHVudGlsIGVzdGFibGlzaGVkIG9uIGEgc2VnbWVudCBvZiB0aGUgYXBwcm9hY2g&s=ZDQ3YzY1MzM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "The highest of your last assigned or published MSA",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIGhpZ2hlc3Qgb2YgeW91ciBsYXN0IGFzc2lnbmVkIG9yIHB1Ymxpc2hlZCBNU0E&s=MWEwMmU3YjQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIGhpZ2hlc3Qgb2YgeW91ciBsYXN0IGFzc2lnbmVkIG9yIHB1Ymxpc2hlZCBNU0E&s=MWEwMmU3YjQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199533694976,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 9,
+    "creatorId": 116946290,
+    "timestamp": 1678657086,
+    "lastModified": 1678657086,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Your destination is forecasting 800-1/2 . Published approach procedures (NW winds) at alternate, Columbus AFB, lowest weather conditions for filing would be ____. ILS and ALS inop.",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91ciBkZXN0aW5hdGlvbiBpcyBmb3JlY2FzdGluZyA4MDAtMS8yIC4gUHVibGlzaGVkIGFwcHJvYWNoIHByb2NlZHVyZXMgKE5XIHdpbmRzKSBhdCBhbHRlcm5hdGUsIENvbHVtYnVzIEFGQiwgbG93ZXN0IHdlYXRoZXIgY29uZGl0aW9ucyBmb3IgZmlsaW5nIHdvdWxkIGJlIF9fX18uIElMUyBhbmQgQUxTIGlub3Au&s=ZmViOTllNzI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91ciBkZXN0aW5hdGlvbiBpcyBmb3JlY2FzdGluZyA4MDAtMS8yIC4gUHVibGlzaGVkIGFwcHJvYWNoIHByb2NlZHVyZXMgKE5XIHdpbmRzKSBhdCBhbHRlcm5hdGUsIENvbHVtYnVzIEFGQiwgbG93ZXN0IHdlYXRoZXIgY29uZGl0aW9ucyBmb3IgZmlsaW5nIHdvdWxkIGJlIF9fX18uIElMUyBhbmQgQUxTIGlub3Au&s=ZmViOTllNzI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "700-2",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NzAwLTI&s=MWRlYmVlN2U",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NzAwLTI&s=MWRlYmVlN2U&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199547293699,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 10,
+    "creatorId": 116946290,
+    "timestamp": 1678657100,
+    "lastModified": 1678657100,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "To be cleared for a visual approach, must report to approach control that you have field or interval in sight and weather must be reported as",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VG8gYmUgY2xlYXJlZCBmb3IgYSB2aXN1YWwgYXBwcm9hY2gsIG11c3QgcmVwb3J0IHRvIGFwcHJvYWNoIGNvbnRyb2wgdGhhdCB5b3UgaGF2ZSBmaWVsZCBvciBpbnRlcnZhbCBpbiBzaWdodCBhbmQgd2VhdGhlciBtdXN0IGJlIHJlcG9ydGVkIGFz&s=ZDExOTc4MmU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VG8gYmUgY2xlYXJlZCBmb3IgYSB2aXN1YWwgYXBwcm9hY2gsIG11c3QgcmVwb3J0IHRvIGFwcHJvYWNoIGNvbnRyb2wgdGhhdCB5b3UgaGF2ZSBmaWVsZCBvciBpbnRlcnZhbCBpbiBzaWdodCBhbmQgd2VhdGhlciBtdXN0IGJlIHJlcG9ydGVkIGFz&s=ZDExOTc4MmU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "1000-3 or greater",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTAwMC0zIG9yIGdyZWF0ZXI&s=MWU0NTlmZWU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTAwMC0zIG9yIGdyZWF0ZXI&s=MWU0NTlmZWU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199565131777,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 11,
+    "creatorId": 116946290,
+    "timestamp": 1678657117,
+    "lastModified": 1678657117,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Inadvertent IMC and lose sight of the runway while circle to land",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SW5hZHZlcnRlbnQgSU1DIGFuZCBsb3NlIHNpZ2h0IG9mIHRoZSBydW53YXkgd2hpbGUgY2lyY2xlIHRvIGxhbmQ&s=NWFjZTI1MTQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SW5hZHZlcnRlbnQgSU1DIGFuZCBsb3NlIHNpZ2h0IG9mIHRoZSBydW53YXkgd2hpbGUgY2lyY2xlIHRvIGxhbmQ&s=NWFjZTI1MTQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Execute missed approach for the original approach procedure",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RXhlY3V0ZSBtaXNzZWQgYXBwcm9hY2ggZm9yIHRoZSBvcmlnaW5hbCBhcHByb2FjaCBwcm9jZWR1cmU&s=OGZkNTEwY2E",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RXhlY3V0ZSBtaXNzZWQgYXBwcm9hY2ggZm9yIHRoZSBvcmlnaW5hbCBhcHByb2FjaCBwcm9jZWR1cmU&s=OGZkNTEwY2E&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199587188743,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 12,
+    "creatorId": 116946290,
+    "timestamp": 1678657138,
+    "lastModified": 1678657138,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Minimum forecast weather needed to plan for NAS Meridian (RWY 01L) as your destination? Maxwell AFB is alternate and forecasting 900-3. NAS Meridian NOTAMS: GCA O/S ALL, ALS O/S 01L.",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=TWluaW11bSBmb3JlY2FzdCB3ZWF0aGVyIG5lZWRlZCB0byBwbGFuIGZvciBOQVMgTWVyaWRpYW4gKFJXWSAwMUwpIGFzIHlvdXIgZGVzdGluYXRpb24.IE1heHdlbGwgQUZCIGlzIGFsdGVybmF0ZSBhbmQgZm9yZWNhc3RpbmcgOTAwLTMuIE5BUyBNZXJpZGlhbiBOT1RBTVM6IEdDQSBPL1MgQUxMLCBBTFMgTy9TIDAxTC4&s=YTJjYmNiN2Y",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=TWluaW11bSBmb3JlY2FzdCB3ZWF0aGVyIG5lZWRlZCB0byBwbGFuIGZvciBOQVMgTWVyaWRpYW4gKFJXWSAwMUwpIGFzIHlvdXIgZGVzdGluYXRpb24.IE1heHdlbGwgQUZCIGlzIGFsdGVybmF0ZSBhbmQgZm9yZWNhc3RpbmcgOTAwLTMuIE5BUyBNZXJpZGlhbiBOT1RBTVM6IEdDQSBPL1MgQUxMLCBBTFMgTy9TIDAxTC4&s=YTJjYmNiN2Y&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "500-1-\u00bd",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAwLTEtwr0&s=NTk3Mjg0OTc",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAwLTEtwr0&s=NTk3Mjg0OTc&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199690944515,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 13,
+    "creatorId": 116946290,
+    "timestamp": 1678657237,
+    "lastModified": 1678657237,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "A LOC transmitter has a range of ___ nm within 10* of centerline and ____ nm within 35* of centerline.",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QSBMT0MgdHJhbnNtaXR0ZXIgaGFzIGEgcmFuZ2Ugb2YgX19fIG5tIHdpdGhpbiAxMCogb2YgY2VudGVybGluZSBhbmQgX19fXyBubSB3aXRoaW4gMzUqIG9mIGNlbnRlcmxpbmUu&s=M2NlZmFjYTU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QSBMT0MgdHJhbnNtaXR0ZXIgaGFzIGEgcmFuZ2Ugb2YgX19fIG5tIHdpdGhpbiAxMCogb2YgY2VudGVybGluZSBhbmQgX19fXyBubSB3aXRoaW4gMzUqIG9mIGNlbnRlcmxpbmUu&s=M2NlZmFjYTU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "18, 10",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTgsIDEw&s=MjJmZWJlZWU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTgsIDEw&s=MjJmZWJlZWU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199798996992,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 14,
+    "creatorId": 116946290,
+    "timestamp": 1678657340,
+    "lastModified": 1678657340,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Reading back an ATC clearance implies acceptance of the clearance unless ___",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UmVhZGluZyBiYWNrIGFuIEFUQyBjbGVhcmFuY2UgaW1wbGllcyBhY2NlcHRhbmNlIG9mIHRoZSBjbGVhcmFuY2UgdW5sZXNzIF9fXw&s=MTBjYmM4NTI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UmVhZGluZyBiYWNrIGFuIEFUQyBjbGVhcmFuY2UgaW1wbGllcyBhY2NlcHRhbmNlIG9mIHRoZSBjbGVhcmFuY2UgdW5sZXNzIF9fXw&s=MTBjYmM4NTI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "You first state refusal and reasons",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGZpcnN0IHN0YXRlIHJlZnVzYWwgYW5kIHJlYXNvbnM&s=NDI5MTYyYWI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGZpcnN0IHN0YXRlIHJlZnVzYWwgYW5kIHJlYXNvbnM&s=NDI5MTYyYWI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199817834501,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 15,
+    "creatorId": 116946290,
+    "timestamp": 1678657358,
+    "lastModified": 1678657358,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Executing the ILS RWY 15 approach into Maxwell AFB, you should be at ___ AGL when crossing the runway threshold.",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RXhlY3V0aW5nIHRoZSBJTFMgUldZIDE1IGFwcHJvYWNoIGludG8gTWF4d2VsbCBBRkIsIHlvdSBzaG91bGQgYmUgYXQgX19fIEFHTCB3aGVuIGNyb3NzaW5nIHRoZSBydW53YXkgdGhyZXNob2xkLg&s=MDY4MDFiNmI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RXhlY3V0aW5nIHRoZSBJTFMgUldZIDE1IGFwcHJvYWNoIGludG8gTWF4d2VsbCBBRkIsIHlvdSBzaG91bGQgYmUgYXQgX19fIEFHTCB3aGVuIGNyb3NzaW5nIHRoZSBydW53YXkgdGhyZXNob2xkLg&s=MDY4MDFiNmI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "50 feet",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAgZmVldA&s=MGViZTUyYjY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAgZmVldA&s=MGViZTUyYjY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199845093384,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 16,
+    "creatorId": 116946290,
+    "timestamp": 1678657384,
+    "lastModified": 1678657384,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "When not in radar contact, the following additional reports should be made to ATC or FSS facilities without a specific ATC request (when not in radar contact):",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBub3QgaW4gcmFkYXIgY29udGFjdCwgdGhlIGZvbGxvd2luZyBhZGRpdGlvbmFsIHJlcG9ydHMgc2hvdWxkIGJlIG1hZGUgdG8gQVRDIG9yIEZTUyBmYWNpbGl0aWVzIHdpdGhvdXQgYSBzcGVjaWZpYyBBVEMgcmVxdWVzdCAod2hlbiBub3QgaW4gcmFkYXIgY29udGFjdCk6&s=MDFlMzExZDA",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBub3QgaW4gcmFkYXIgY29udGFjdCwgdGhlIGZvbGxvd2luZyBhZGRpdGlvbmFsIHJlcG9ydHMgc2hvdWxkIGJlIG1hZGUgdG8gQVRDIG9yIEZTUyBmYWNpbGl0aWVzIHdpdGhvdXQgYSBzcGVjaWZpYyBBVEMgcmVxdWVzdCAod2hlbiBub3QgaW4gcmFkYXIgY29udGFjdCk6&s=MDFlMzExZDA&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "All of the above",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QWxsIG9mIHRoZSBhYm92ZQ&s=NDVlYTNhN2E",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QWxsIG9mIHRoZSBhYm92ZQ&s=NDVlYTNhN2E&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199867166720,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 17,
+    "creatorId": 116946290,
+    "timestamp": 1678657405,
+    "lastModified": 1678657405,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "ID the true statement concerning DPs and/or STARs:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SUQgdGhlIHRydWUgc3RhdGVtZW50IGNvbmNlcm5pbmcgRFBzIGFuZC9vciBTVEFSczo&s=ZjdjMzU3YzQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SUQgdGhlIHRydWUgc3RhdGVtZW50IGNvbmNlcm5pbmcgRFBzIGFuZC9vciBTVEFSczo&s=ZjdjMzU3YzQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "DPs are designed to provide transition from the airfield to the appropriate enroute structure, and their use on the DD-175 is encouraged but not mandatory",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RFBzIGFyZSBkZXNpZ25lZCB0byBwcm92aWRlIHRyYW5zaXRpb24gZnJvbSB0aGUgYWlyZmllbGQgdG8gdGhlIGFwcHJvcHJpYXRlIGVucm91dGUgc3RydWN0dXJlLCBhbmQgdGhlaXIgdXNlIG9uIHRoZSBERC0xNzUgaXMgZW5jb3VyYWdlZCBidXQgbm90IG1hbmRhdG9yeQ&s=Y2Y1NGU4ZWY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RFBzIGFyZSBkZXNpZ25lZCB0byBwcm92aWRlIHRyYW5zaXRpb24gZnJvbSB0aGUgYWlyZmllbGQgdG8gdGhlIGFwcHJvcHJpYXRlIGVucm91dGUgc3RydWN0dXJlLCBhbmQgdGhlaXIgdXNlIG9uIHRoZSBERC0xNzUgaXMgZW5jb3VyYWdlZCBidXQgbm90IG1hbmRhdG9yeQ&s=Y2Y1NGU4ZWY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199892299777,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 18,
+    "creatorId": 116946290,
+    "timestamp": 1678657429,
+    "lastModified": 1678657429,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Yor MDA for the Maxwell AFB TACAN RWY 15 approach (with ALS) is published as",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW9yIE1EQSBmb3IgdGhlIE1heHdlbGwgQUZCIFRBQ0FOIFJXWSAxNSBhcHByb2FjaCAod2l0aCBBTFMpIGlzIHB1Ymxpc2hlZCBhcw&s=NWU0YzBlNGM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW9yIE1EQSBmb3IgdGhlIE1heHdlbGwgQUZCIFRBQ0FOIFJXWSAxNSBhcHByb2FjaCAod2l0aCBBTFMpIGlzIHB1Ymxpc2hlZCBhcw&s=NWU0YzBlNGM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "500 ft MSL",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAwIGZ0IE1TTA&s=MTQzMWQ3ODQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTAwIGZ0IE1TTA&s=MTQzMWQ3ODQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199912214529,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 19,
+    "creatorId": 116946290,
+    "timestamp": 1678657448,
+    "lastModified": 1678657448,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Takeoff is allowed if the current weather at the departure airport is at least ___ and meets or exceeds the published precision mins for the runway in use",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGFrZW9mZiBpcyBhbGxvd2VkIGlmIHRoZSBjdXJyZW50IHdlYXRoZXIgYXQgdGhlIGRlcGFydHVyZSBhaXJwb3J0IGlzIGF0IGxlYXN0IF9fXyBhbmQgbWVldHMgb3IgZXhjZWVkcyB0aGUgcHVibGlzaGVkIHByZWNpc2lvbiBtaW5zIGZvciB0aGUgcnVud2F5IGluIHVzZQ&s=ZWU4ZGRiZTM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGFrZW9mZiBpcyBhbGxvd2VkIGlmIHRoZSBjdXJyZW50IHdlYXRoZXIgYXQgdGhlIGRlcGFydHVyZSBhaXJwb3J0IGlzIGF0IGxlYXN0IF9fXyBhbmQgbWVldHMgb3IgZXhjZWVkcyB0aGUgcHVibGlzaGVkIHByZWNpc2lvbiBtaW5zIGZvciB0aGUgcnVud2F5IGluIHVzZQ&s=ZWU4ZGRiZTM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "200-1/2",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MjAwLTEvMg&s=YTcwZWI0YmY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MjAwLTEvMg&s=YTcwZWI0YmY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199924785156,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 20,
+    "creatorId": 116946290,
+    "timestamp": 1678657460,
+    "lastModified": 1678657460,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "While on the Maxwell AFB TACAN RWY 15 approach, when would you execute a missed approach if you did not have the runway in sight?",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hpbGUgb24gdGhlIE1heHdlbGwgQUZCIFRBQ0FOIFJXWSAxNSBhcHByb2FjaCwgd2hlbiB3b3VsZCB5b3UgZXhlY3V0ZSBhIG1pc3NlZCBhcHByb2FjaCBpZiB5b3UgZGlkIG5vdCBoYXZlIHRoZSBydW53YXkgaW4gc2lnaHQ.&s=ODYyNjM0M2Y",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hpbGUgb24gdGhlIE1heHdlbGwgQUZCIFRBQ0FOIFJXWSAxNSBhcHByb2FjaCwgd2hlbiB3b3VsZCB5b3UgZXhlY3V0ZSBhIG1pc3NlZCBhcHByb2FjaCBpZiB5b3UgZGlkIG5vdCBoYXZlIHRoZSBydW53YXkgaW4gc2lnaHQ.&s=ODYyNjM0M2Y&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "At 1.5 DME from the TACAN",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QXQgMS41IERNRSBmcm9tIHRoZSBUQUNBTg&s=OTIxNTcxZWI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QXQgMS41IERNRSBmcm9tIHRoZSBUQUNBTg&s=OTIxNTcxZWI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199944736772,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 21,
+    "creatorId": 116946290,
+    "timestamp": 1678657479,
+    "lastModified": 1678657479,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Flying on J2 between Crestview and Seminole you would change your TACAN to Ch 122 when you are at the CEW 088/___",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Rmx5aW5nIG9uIEoyIGJldHdlZW4gQ3Jlc3R2aWV3IGFuZCBTZW1pbm9sZSB5b3Ugd291bGQgY2hhbmdlIHlvdXIgVEFDQU4gdG8gQ2ggMTIyIHdoZW4geW91IGFyZSBhdCB0aGUgQ0VXIDA4OC9fX18&s=NWQ1MGVmMDE",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Rmx5aW5nIG9uIEoyIGJldHdlZW4gQ3Jlc3R2aWV3IGFuZCBTZW1pbm9sZSB5b3Ugd291bGQgY2hhbmdlIHlvdXIgVEFDQU4gdG8gQ2ggMTIyIHdoZW4geW91IGFyZSBhdCB0aGUgQ0VXIDA4OC9fX18&s=NWQ1MGVmMDE&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "80 DME",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=ODAgRE1F&s=ZDMxMzljMGU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=ODAgRE1F&s=ZDMxMzljMGU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199960481792,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 22,
+    "creatorId": 116946290,
+    "timestamp": 1678657494,
+    "lastModified": 1678657494,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Select the choice that best describes the service volume characteristics of an (L) VOR navigational system. Range ______",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=U2VsZWN0IHRoZSBjaG9pY2UgdGhhdCBiZXN0IGRlc2NyaWJlcyB0aGUgc2VydmljZSB2b2x1bWUgY2hhcmFjdGVyaXN0aWNzIG9mIGFuIChMKSBWT1IgbmF2aWdhdGlvbmFsIHN5c3RlbS4gUmFuZ2UgX19fX19f&s=MmZhOTg4Mzc",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=U2VsZWN0IHRoZSBjaG9pY2UgdGhhdCBiZXN0IGRlc2NyaWJlcyB0aGUgc2VydmljZSB2b2x1bWUgY2hhcmFjdGVyaXN0aWNzIG9mIGFuIChMKSBWT1IgbmF2aWdhdGlvbmFsIHN5c3RlbS4gUmFuZ2UgX19fX19f&s=MmZhOTg4Mzc&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Up to and including 18000 ft AGL out to 40 nm",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VXAgdG8gYW5kIGluY2x1ZGluZyAxODAwMCBmdCBBR0wgb3V0IHRvIDQwIG5t&s=NjM5ZGJmMzk",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VXAgdG8gYW5kIGluY2x1ZGluZyAxODAwMCBmdCBBR0wgb3V0IHRvIDQwIG5t&s=NjM5ZGJmMzk&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199980396545,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 23,
+    "creatorId": 116946290,
+    "timestamp": 1678657513,
+    "lastModified": 1678657513,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "At Maxwell AFB, the PAPI system availability will be:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QXQgTWF4d2VsbCBBRkIsIHRoZSBQQVBJIHN5c3RlbSBhdmFpbGFiaWxpdHkgd2lsbCBiZTo&s=NzEyMmRlMDg",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=QXQgTWF4d2VsbCBBRkIsIHRoZSBQQVBJIHN5c3RlbSBhdmFpbGFiaWxpdHkgd2lsbCBiZTo&s=NzEyMmRlMDg&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Denoted in the IFR Supp by a \"50\" under lighting",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RGVub3RlZCBpbiB0aGUgSUZSIFN1cHAgYnkgYSAiNTAiIHVuZGVyIGxpZ2h0aW5n&s=ZmUxZmJlOTg",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RGVub3RlZCBpbiB0aGUgSUZSIFN1cHAgYnkgYSAiNTAiIHVuZGVyIGxpZ2h0aW5n&s=ZmUxZmJlOTg&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760199997173763,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 24,
+    "creatorId": 116946290,
+    "timestamp": 1678657529,
+    "lastModified": 1678657529,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "The star next to the ATIS found in the upper left corner of the TACAN approaches to Maxwell AFB denotes that:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIHN0YXIgbmV4dCB0byB0aGUgQVRJUyBmb3VuZCBpbiB0aGUgdXBwZXIgbGVmdCBjb3JuZXIgb2YgdGhlIFRBQ0FOIGFwcHJvYWNoZXMgdG8gTWF4d2VsbCBBRkIgZGVub3RlcyB0aGF0Og&s=Zjk2MjdiYmI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIHN0YXIgbmV4dCB0byB0aGUgQVRJUyBmb3VuZCBpbiB0aGUgdXBwZXIgbGVmdCBjb3JuZXIgb2YgdGhlIFRBQ0FOIGFwcHJvYWNoZXMgdG8gTWF4d2VsbCBBRkIgZGVub3RlcyB0aGF0Og&s=Zjk2MjdiYmI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "The ATIS operates on a noncontinuous basis",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIEFUSVMgb3BlcmF0ZXMgb24gYSBub25jb250aW51b3VzIGJhc2lz&s=NTk5ZDBlODc",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIEFUSVMgb3BlcmF0ZXMgb24gYSBub25jb250aW51b3VzIGJhc2lz&s=NTk5ZDBlODc&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200011837441,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 25,
+    "creatorId": 116946290,
+    "timestamp": 1678657543,
+    "lastModified": 1678657543,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Of the following situations, the one which does not require a voice report (NOT RVSM) is:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=T2YgdGhlIGZvbGxvd2luZyBzaXR1YXRpb25zLCB0aGUgb25lIHdoaWNoIGRvZXMgbm90IHJlcXVpcmUgYSB2b2ljZSByZXBvcnQgKE5PVCBSVlNNKSBpczo&s=OTMxZTQxZjU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=T2YgdGhlIGZvbGxvd2luZyBzaXR1YXRpb25zLCB0aGUgb25lIHdoaWNoIGRvZXMgbm90IHJlcXVpcmUgYSB2b2ljZSByZXBvcnQgKE5PVCBSVlNNKSBpczo&s=OTMxZTQxZjU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Reaching a newly assigned altitude",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UmVhY2hpbmcgYSBuZXdseSBhc3NpZ25lZCBhbHRpdHVkZQ&s=NDcxYzA2Y2U",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UmVhY2hpbmcgYSBuZXdseSBhc3NpZ25lZCBhbHRpdHVkZQ&s=NDcxYzA2Y2U&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200028598279,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 26,
+    "creatorId": 116946290,
+    "timestamp": 1678657559,
+    "lastModified": 1678657559,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "You request a PAR approach to RWY 19L at NAS Meridian. Your DA in a single piloted aircraft for an approach to that runway would be:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IHJlcXVlc3QgYSBQQVIgYXBwcm9hY2ggdG8gUldZIDE5TCBhdCBOQVMgTWVyaWRpYW4uIFlvdXIgREEgaW4gYSBzaW5nbGUgcGlsb3RlZCBhaXJjcmFmdCBmb3IgYW4gYXBwcm9hY2ggdG8gdGhhdCBydW53YXkgd291bGQgYmU6&s=NWYwNTA5NjM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IHJlcXVlc3QgYSBQQVIgYXBwcm9hY2ggdG8gUldZIDE5TCBhdCBOQVMgTWVyaWRpYW4uIFlvdXIgREEgaW4gYSBzaW5nbGUgcGlsb3RlZCBhaXJjcmFmdCBmb3IgYW4gYXBwcm9hY2ggdG8gdGhhdCBydW53YXkgd291bGQgYmU6&s=NWYwNTA5NjM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "517 ft MSL",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTE3IGZ0IE1TTA&s=NTdhZTRjMTk",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NTE3IGZ0IE1TTA&s=NTdhZTRjMTk&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200064274432,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 27,
+    "creatorId": 116946290,
+    "timestamp": 1678657593,
+    "lastModified": 1678657593,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "The theory and operating characteristics of a GPS system are:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIHRoZW9yeSBhbmQgb3BlcmF0aW5nIGNoYXJhY3RlcmlzdGljcyBvZiBhIEdQUyBzeXN0ZW0gYXJlOg&s=NTZmNjViZWU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIHRoZW9yeSBhbmQgb3BlcmF0aW5nIGNoYXJhY3RlcmlzdGljcyBvZiBhIEdQUyBzeXN0ZW0gYXJlOg&s=NTZmNjViZWU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "GPS uses passive receivers and triangulation computations from signals received from at least 4 satellites to determine lat, long, and vertical position",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=R1BTIHVzZXMgcGFzc2l2ZSByZWNlaXZlcnMgYW5kIHRyaWFuZ3VsYXRpb24gY29tcHV0YXRpb25zIGZyb20gc2lnbmFscyByZWNlaXZlZCBmcm9tIGF0IGxlYXN0IDQgc2F0ZWxsaXRlcyB0byBkZXRlcm1pbmUgbGF0LCBsb25nLCBhbmQgdmVydGljYWwgcG9zaXRpb24&s=NDI4YWViNWM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=R1BTIHVzZXMgcGFzc2l2ZSByZWNlaXZlcnMgYW5kIHRyaWFuZ3VsYXRpb24gY29tcHV0YXRpb25zIGZyb20gc2lnbmFscyByZWNlaXZlZCBmcm9tIGF0IGxlYXN0IDQgc2F0ZWxsaXRlcyB0byBkZXRlcm1pbmUgbGF0LCBsb25nLCBhbmQgdmVydGljYWwgcG9zaXRpb24&s=NDI4YWViNWM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200074760196,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 28,
+    "creatorId": 116946290,
+    "timestamp": 1678657603,
+    "lastModified": 1678657603,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Enroute to NAS Meridian, you listen to ATIS, which gives airport info, but no weather info. You know that Meridian is ____",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RW5yb3V0ZSB0byBOQVMgTWVyaWRpYW4sIHlvdSBsaXN0ZW4gdG8gQVRJUywgd2hpY2ggZ2l2ZXMgYWlycG9ydCBpbmZvLCBidXQgbm8gd2VhdGhlciBpbmZvLiBZb3Uga25vdyB0aGF0IE1lcmlkaWFuIGlzIF9fX18&s=N2ZhZjdiODI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RW5yb3V0ZSB0byBOQVMgTWVyaWRpYW4sIHlvdSBsaXN0ZW4gdG8gQVRJUywgd2hpY2ggZ2l2ZXMgYWlycG9ydCBpbmZvLCBidXQgbm8gd2VhdGhlciBpbmZvLiBZb3Uga25vdyB0aGF0IE1lcmlkaWFuIGlzIF9fX18&s=N2ZhZjdiODI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "VFR, with a ceiling of at least 6000 ft and better than 5 miles visibility",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VkZSLCB3aXRoIGEgY2VpbGluZyBvZiBhdCBsZWFzdCA2MDAwIGZ0IGFuZCBiZXR0ZXIgdGhhbiA1IG1pbGVzIHZpc2liaWxpdHk&s=YWQ2ZjZiZWY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VkZSLCB3aXRoIGEgY2VpbGluZyBvZiBhdCBsZWFzdCA2MDAwIGZ0IGFuZCBiZXR0ZXIgdGhhbiA1IG1pbGVzIHZpc2liaWxpdHk&s=YWQ2ZjZiZWY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200120918018,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 29,
+    "creatorId": 116946290,
+    "timestamp": 1678657647,
+    "lastModified": 1678657647,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Planning for a flight from NAS Jax to Birmingham, for filing purposes, based on the info above, what is the lowest weather mins required at Columbus?",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UGxhbm5pbmcgZm9yIGEgZmxpZ2h0IGZyb20gTkFTIEpheCB0byBCaXJtaW5naGFtLCBmb3IgZmlsaW5nIHB1cnBvc2VzLCBiYXNlZCBvbiB0aGUgaW5mbyBhYm92ZSwgd2hhdCBpcyB0aGUgbG93ZXN0IHdlYXRoZXIgbWlucyByZXF1aXJlZCBhdCBDb2x1bWJ1cz8&s=NjkwNDRiYmU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UGxhbm5pbmcgZm9yIGEgZmxpZ2h0IGZyb20gTkFTIEpheCB0byBCaXJtaW5naGFtLCBmb3IgZmlsaW5nIHB1cnBvc2VzLCBiYXNlZCBvbiB0aGUgaW5mbyBhYm92ZSwgd2hhdCBpcyB0aGUgbG93ZXN0IHdlYXRoZXIgbWlucyByZXF1aXJlZCBhdCBDb2x1bWJ1cz8&s=NjkwNDRiYmU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "400-1",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NDAwLTE&s=YzY1NzhlNGQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=NDAwLTE&s=YzY1NzhlNGQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200375738373,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 30,
+    "creatorId": 116946290,
+    "timestamp": 1678657890,
+    "lastModified": 1678657890,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "When planning for a direct flight between two high NAVAIDs in the jet route structure, do not exceed the normal anticipated interference free reception range of each NAVAID which is ___",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBwbGFubmluZyBmb3IgYSBkaXJlY3QgZmxpZ2h0IGJldHdlZW4gdHdvIGhpZ2ggTkFWQUlEcyBpbiB0aGUgamV0IHJvdXRlIHN0cnVjdHVyZSwgZG8gbm90IGV4Y2VlZCB0aGUgbm9ybWFsIGFudGljaXBhdGVkIGludGVyZmVyZW5jZSBmcmVlIHJlY2VwdGlvbiByYW5nZSBvZiBlYWNoIE5BVkFJRCB3aGljaCBpcyBfX18&s=ZjY3ZmZmNGI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hlbiBwbGFubmluZyBmb3IgYSBkaXJlY3QgZmxpZ2h0IGJldHdlZW4gdHdvIGhpZ2ggTkFWQUlEcyBpbiB0aGUgamV0IHJvdXRlIHN0cnVjdHVyZSwgZG8gbm90IGV4Y2VlZCB0aGUgbm9ybWFsIGFudGljaXBhdGVkIGludGVyZmVyZW5jZSBmcmVlIHJlY2VwdGlvbiByYW5nZSBvZiBlYWNoIE5BVkFJRCB3aGljaCBpcyBfX18&s=ZjY3ZmZmNGI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "130 NM",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTMwIE5N&s=ZDk1Yjg5ZDY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTMwIE5N&s=ZDk1Yjg5ZDY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200451235842,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 31,
+    "creatorId": 116946290,
+    "timestamp": 1678657962,
+    "lastModified": 1678657962,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Planning on a flight from NAS Jax to BAM",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UGxhbm5pbmcgb24gYSBmbGlnaHQgZnJvbSBOQVMgSmF4IHRvIEJBTQ&s=NTI5ODUxNjc",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UGxhbm5pbmcgb24gYSBmbGlnaHQgZnJvbSBOQVMgSmF4IHRvIEJBTQ&s=NTI5ODUxNjc&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "ETA 1500Z and alt of Columbus AFB",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RVRBIDE1MDBaIGFuZCBhbHQgb2YgQ29sdW1idXMgQUZC&s=MzI0NjQ0MGI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RVRBIDE1MDBaIGFuZCBhbHQgb2YgQ29sdW1idXMgQUZC&s=MzI0NjQ0MGI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200451235843,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 32,
+    "creatorId": 116946290,
+    "timestamp": 1678657962,
+    "lastModified": 1678657962,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Your filed destination is NMM with arrived weather best to be 300-1. The alternate field has PAR and TCN . The approach minimum weather at the alternate would be",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91ciBmaWxlZCBkZXN0aW5hdGlvbiBpcyBOTU0gd2l0aCBhcnJpdmVkIHdlYXRoZXIgYmVzdCB0byBiZSAzMDAtMS4gVGhlIGFsdGVybmF0ZSBmaWVsZCBoYXMgUEFSIGFuZCBUQ04gLiBUaGUgYXBwcm9hY2ggbWluaW11bSB3ZWF0aGVyIGF0IHRoZSBhbHRlcm5hdGUgd291bGQgYmU&s=ZDNiNWM1YmM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91ciBmaWxlZCBkZXN0aW5hdGlvbiBpcyBOTU0gd2l0aCBhcnJpdmVkIHdlYXRoZXIgYmVzdCB0byBiZSAzMDAtMS4gVGhlIGFsdGVybmF0ZSBmaWVsZCBoYXMgUEFSIGFuZCBUQ04gLiBUaGUgYXBwcm9hY2ggbWluaW11bSB3ZWF0aGVyIGF0IHRoZSBhbHRlcm5hdGUgd291bGQgYmU&s=ZDNiNWM1YmM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "TCN plus 300-1",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VENOIHBsdXMgMzAwLTE&s=Y2QyZmYxYmY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VENOIHBsdXMgMzAwLTE&s=Y2QyZmYxYmY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200472137728,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 33,
+    "creatorId": 116946290,
+    "timestamp": 1678657982,
+    "lastModified": 1678657982,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "If you experience lost comms enroute in IMC, you should maintain:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SWYgeW91IGV4cGVyaWVuY2UgbG9zdCBjb21tcyBlbnJvdXRlIGluIElNQywgeW91IHNob3VsZCBtYWludGFpbjo&s=ODkyYjRkNDM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SWYgeW91IGV4cGVyaWVuY2UgbG9zdCBjb21tcyBlbnJvdXRlIGluIElNQywgeW91IHNob3VsZCBtYWludGFpbjo&s=ODkyYjRkNDM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "The last assigned altitude but no lower than the MEA for each route segment",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIGxhc3QgYXNzaWduZWQgYWx0aXR1ZGUgYnV0IG5vIGxvd2VyIHRoYW4gdGhlIE1FQSBmb3IgZWFjaCByb3V0ZSBzZWdtZW50&s=YWU2YjhlMzE",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=VGhlIGxhc3QgYXNzaWduZWQgYWx0aXR1ZGUgYnV0IG5vIGxvd2VyIHRoYW4gdGhlIE1FQSBmb3IgZWFjaCByb3V0ZSBzZWdtZW50&s=YWU2YjhlMzE&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200491040770,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 34,
+    "creatorId": 116946290,
+    "timestamp": 1678658000,
+    "lastModified": 1678658000,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "You are halfway to filed destination on extended IFR flight plan at FL290. Radio fails, in VMC and destination has marginal weather. If you determine you can maintain VMC in flight",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGFyZSBoYWxmd2F5IHRvIGZpbGVkIGRlc3RpbmF0aW9uIG9uIGV4dGVuZGVkIElGUiBmbGlnaHQgcGxhbiBhdCBGTDI5MC4gUmFkaW8gZmFpbHMsIGluIFZNQyBhbmQgZGVzdGluYXRpb24gaGFzIG1hcmdpbmFsIHdlYXRoZXIuIElmIHlvdSBkZXRlcm1pbmUgeW91IGNhbiBtYWludGFpbiBWTUMgaW4gZmxpZ2h0&s=YTY4YjM3NmI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGFyZSBoYWxmd2F5IHRvIGZpbGVkIGRlc3RpbmF0aW9uIG9uIGV4dGVuZGVkIElGUiBmbGlnaHQgcGxhbiBhdCBGTDI5MC4gUmFkaW8gZmFpbHMsIGluIFZNQyBhbmQgZGVzdGluYXRpb24gaGFzIG1hcmdpbmFsIHdlYXRoZXIuIElmIHlvdSBkZXRlcm1pbmUgeW91IGNhbiBtYWludGFpbiBWTUMgaW4gZmxpZ2h0&s=YTY4YjM3NmI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Squawk 7600, maintain VMC, and something traffic pattern and land at a suitable airport",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=U3F1YXdrIDc2MDAsIG1haW50YWluIFZNQywgYW5kIHNvbWV0aGluZyB0cmFmZmljIHBhdHRlcm4gYW5kIGxhbmQgYXQgYSBzdWl0YWJsZSBhaXJwb3J0&s=ZTI4NTc5MjY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=U3F1YXdrIDc2MDAsIG1haW50YWluIFZNQywgYW5kIHNvbWV0aGluZyB0cmFmZmljIHBhdHRlcm4gYW5kIGxhbmQgYXQgYSBzdWl0YWJsZSBhaXJwb3J0&s=ZTI4NTc5MjY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200505716741,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 35,
+    "creatorId": 116946290,
+    "timestamp": 1678658014,
+    "lastModified": 1678658014,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Which publication would provide information on preferred IFR routing?",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hpY2ggcHVibGljYXRpb24gd291bGQgcHJvdmlkZSBpbmZvcm1hdGlvbiBvbiBwcmVmZXJyZWQgSUZSIHJvdXRpbmc.&s=NjM4MDEzYjM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=V2hpY2ggcHVibGljYXRpb24gd291bGQgcHJvdmlkZSBpbmZvcm1hdGlvbiBvbiBwcmVmZXJyZWQgSUZSIHJvdXRpbmc.&s=NjM4MDEzYjM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "FLIP AP/1",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RkxJUCBBUC8x&s=MTRjNWUyNmM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=RkxJUCBBUC8x&s=MTRjNWUyNmM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200558137345,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 36,
+    "creatorId": 116946290,
+    "timestamp": 1678658064,
+    "lastModified": 1678658064,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "You are cleared to the PIGMY IAF @ NMM with EFC 1610Z. Presently at or above 14000 ft, enroute you experience radio failure so as to depart PIGMY at 1610Z or after descend and commence approach.",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGFyZSBjbGVhcmVkIHRvIHRoZSBQSUdNWSBJQUYgQCBOTU0gd2l0aCBFRkMgMTYxMFouIFByZXNlbnRseSBhdCBvciBhYm92ZSAxNDAwMCBmdCwgZW5yb3V0ZSB5b3UgZXhwZXJpZW5jZSByYWRpbyBmYWlsdXJlIHNvIGFzIHRvIGRlcGFydCBQSUdNWSBhdCAxNjEwWiBvciBhZnRlciBkZXNjZW5kIGFuZCBjb21tZW5jZSBhcHByb2FjaC4&s=Y2IwY2VlNTM",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=WW91IGFyZSBjbGVhcmVkIHRvIHRoZSBQSUdNWSBJQUYgQCBOTU0gd2l0aCBFRkMgMTYxMFouIFByZXNlbnRseSBhdCBvciBhYm92ZSAxNDAwMCBmdCwgZW5yb3V0ZSB5b3UgZXhwZXJpZW5jZSByYWRpbyBmYWlsdXJlIHNvIGFzIHRvIGRlcGFydCBQSUdNWSBhdCAxNjEwWiBvciBhZnRlciBkZXNjZW5kIGFuZCBjb21tZW5jZSBhcHByb2FjaC4&s=Y2IwY2VlNTM&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Idk thats all that was written",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SWRrIHRoYXRzIGFsbCB0aGF0IHdhcyB3cml0dGVu&s=YTQ1ZGM5MTU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SWRrIHRoYXRzIGFsbCB0aGF0IHdhcyB3cml0dGVu&s=YTQ1ZGM5MTU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200575946754,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 37,
+    "creatorId": 116946290,
+    "timestamp": 1678658081,
+    "lastModified": 1678658081,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "30 miles SE of MGM at FL350 you are directed to change frequency but are unable on assigned frequency. Attempt to contact center on",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MzAgbWlsZXMgU0Ugb2YgTUdNIGF0IEZMMzUwIHlvdSBhcmUgZGlyZWN0ZWQgdG8gY2hhbmdlIGZyZXF1ZW5jeSBidXQgYXJlIHVuYWJsZSBvbiBhc3NpZ25lZCBmcmVxdWVuY3kuIEF0dGVtcHQgdG8gY29udGFjdCBjZW50ZXIgb24&s=MTlkYTg2YTA",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MzAgbWlsZXMgU0Ugb2YgTUdNIGF0IEZMMzUwIHlvdSBhcmUgZGlyZWN0ZWQgdG8gY2hhbmdlIGZyZXF1ZW5jeSBidXQgYXJlIHVuYWJsZSBvbiBhc3NpZ25lZCBmcmVxdWVuY3kuIEF0dGVtcHQgdG8gY29udGFjdCBjZW50ZXIgb24&s=MTlkYTg2YTA&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "319.1 CATC alt subdivided",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MzE5LjEgQ0FUQyBhbHQgc3ViZGl2aWRlZA&s=ZWY1Mzg1OTQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MzE5LjEgQ0FUQyBhbHQgc3ViZGl2aWRlZA&s=ZWY1Mzg1OTQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200602230785,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 38,
+    "creatorId": 116946290,
+    "timestamp": 1678658106,
+    "lastModified": 1678658106,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "For a cancelled DP to be reinstated ATC must:",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Rm9yIGEgY2FuY2VsbGVkIERQIHRvIGJlIHJlaW5zdGF0ZWQgQVRDIG11c3Q6&s=MDQxYjUzNjY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=Rm9yIGEgY2FuY2VsbGVkIERQIHRvIGJlIHJlaW5zdGF0ZWQgQVRDIG11c3Q6&s=MDQxYjUzNjY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Indicate the portion of the DP routing that still applies and reinstated altitude restrictions",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SW5kaWNhdGUgdGhlIHBvcnRpb24gb2YgdGhlIERQIHJvdXRpbmcgdGhhdCBzdGlsbCBhcHBsaWVzIGFuZCByZWluc3RhdGVkIGFsdGl0dWRlIHJlc3RyaWN0aW9ucw&s=YmMyODYzNjI",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SW5kaWNhdGUgdGhlIHBvcnRpb24gb2YgdGhlIERQIHJvdXRpbmcgdGhhdCBzdGlsbCBhcHBsaWVzIGFuZCByZWluc3RhdGVkIGFsdGl0dWRlIHJlc3RyaWN0aW9ucw&s=YmMyODYzNjI&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200624214016,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 39,
+    "creatorId": 116946290,
+    "timestamp": 1678658127,
+    "lastModified": 1678658127,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "PAR pickup question lost comm.",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UEFSIHBpY2t1cCBxdWVzdGlvbiBsb3N0IGNvbW0u&s=MjI5NTI0ODg",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UEFSIHBpY2t1cCBxdWVzdGlvbiBsb3N0IGNvbW0u&s=MjI5NTI0ODg&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "Pass through highest initiated penetration altitude of the IAFs at the airport.",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UGFzcyB0aHJvdWdoIGhpZ2hlc3QgaW5pdGlhdGVkIHBlbmV0cmF0aW9uIGFsdGl0dWRlIG9mIHRoZSBJQUZzIGF0IHRoZSBhaXJwb3J0Lg&s=OGVjZTJjNTQ",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=UGFzcyB0aHJvdWdoIGhpZ2hlc3QgaW5pdGlhdGVkIHBlbmV0cmF0aW9uIGFsdGl0dWRlIG9mIHRoZSBJQUZzIGF0IHRoZSBhaXJwb3J0Lg&s=OGVjZTJjNTQ&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  },
+  {
+    "id": 1760200638906372,
+    "studiableContainerType": 1,
+    "studiableContainerId": 782780920,
+    "type": 2,
+    "rank": 40,
+    "creatorId": 116946290,
+    "timestamp": 1678658141,
+    "lastModified": 1678658141,
+    "isDeleted": false,
+    "cardSides": [
+      {
+        "sideId": 0,
+        "label": "word",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "High altitude NAVAID",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SGlnaCBhbHRpdHVkZSBOQVZBSUQ&s=MjU0ODY5NTU",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=SGlnaCBhbHRpdHVkZSBOQVZBSUQ&s=MjU0ODY5NTU&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      },
+      {
+        "sideId": 1,
+        "label": "definition",
+        "media": [
+          {
+            "type": 1,
+            "plainText": "130 NM",
+            "languageCode": "en",
+            "ttsUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTMwIE5N&s=ZDk1Yjg5ZDY",
+            "ttsSlowUrl": "https://quizlet.com/v1/tts/en.mp3?v=2&b=MTMwIE5N&s=ZDk1Yjg5ZDY&speed=70",
+            "richText": null
+          }
+        ],
+        "distractors": []
+      }
+    ]
+  }
+]
