@@ -1,0 +1,54 @@
+# Page 37 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+. .
+T-45 Engineering/Systems Gouge
+Engine Systems (NATOPS 2.1)
+5527 lbs. Thrust rating of engine
+112.4 +/- 1% N1 rpm above which the EGT/RPM warning light illuminates
+a 104% Maximum N2 rpm at MRT
+2 104% | Maximum N2 rpm for transient accelerations
+~ 100% | «Maximum continuous N2 rpm
+d 95% N2 rpni not to be exceeded in manual fuel control in order to prevent N1
+overspeed below 20,000 ft.
+90% N2 rpm not to be exceeded in manual fuel control in order to prevent N1
+| overspeed above 20,000 ft.
+» 72% approach idle, minimum rpm gear down and no weight on wheels
+al 61 +/-4% % rpm at which bleed valve closes during initial engine acceleration
+55 +/- 2% idle rpm range on standard dayCarrse. ruse, yave cu ES )
+52% idle rpm which should be obtained within 30 sec after selecting IDLE
+45% rpm at which ignition is turned off
+45% rpm at which GTS automatically shuts down
+= 45% approximate rpm apuch bleed valve opens during initial engine shutdown
+a 45% rpm at which and GTS advisory lights are extinguished
+20% rpm above which ATS start valve is inhibited from opening =, ye. Me CEAR SWESS on ATS CORel
+pid 15% minimum N2 rpm required for engine start
+3% approximate increase in idle rpm after compressor bleed valve closes
+™ 2% maximum shift in idle rpm between poststart and engine shutdown checks
+nd 1% increase allowed idle rpm for each 1,500' altitude
+4 650 +/- 8°C EGT above which the EGT/RPM warning light illuminates
+645°C maximum EGT for transient accelerations -» tise vestecre To <€ 20 SEC
+| C_<aa. maximum EGT at MRT € min [Ke )
+7 550°C maximum EGT during ground start (Wo MoeTWAW 590 FoR 10 s€e)
+| 600°C maximum EGT during air start (we mocetian REO fon to SEC )
+cd 450°C maximum EGT at idle
+300°C firewire temperature required for FIRE warning light to illuminate
+“ 150°C firewire temperature required for TAILPIPE HOT warning light to illuminate
+50°C - approximate decrease in EGT after compressor bleed valve closes
+2 50°C maximum overshoot above 600°C during airstart (10 sec max)
+A 20°C ; maximum overshoot above 550°C during ground start (10 sec max)
+ed 30min /4. Flight hye maximum time limit at MRT
+30min. minimum interval after three GTS start attempts
+a 3min. minimum interval between each GTS start attempt
+60sec. Time bleed valve remains open after GTS assisted airstart using manual fuel
+45sec. Maximum time ignition system can remain on TREN GTS Wt. tet Bb Tere
+45sec. Time that firewire must remain below 300°C for FIRE warning light to go out
+30sec. Time allowed for GTS to reach GTS idle before automatic shutdown Because it Oss too HOT
+» 30sec. Time ignition system remains on after GTS button release during airstart
+2 jf 28sec. Maximum allowable time for GTS advisory light to illuminate while in flight *O% AvzsTA2rs
+20sec. Maximum time for EGT to remain above 600°C during transient accelerations Cs o°' 5
+2 20sec. Maximum allowable time for GTS advisory light to illuminate at sea level _
+Z 15sec. Maximum allowable time for ROFASION advisory light to illuminate READY LIGHT
+I5sec. Maximum allowable time engine light-off after moving throttle to idle
+10sec. Maximum time for EGT to remain normal limit during ground start/airstart (fon 20° ovEnsjact )
+Hl 35psi pressure below which the LP PRESS caution light illuminates
+10psi oil pressure differential below which the OIL PRESS caution light illuminates

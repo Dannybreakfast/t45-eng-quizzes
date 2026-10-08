@@ -1,0 +1,70 @@
+# Page 12 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+- 50°
+
+The following additional reports should be made to ATC or FSS facilities without a specific ATC request
+(when not in “radar contact:)
+
+- All of the above
+
+ID the true statement concerning DPs and/or STARs
+
+- DPs are designed to provide transition from the airfield to the appropriate enroute structure, and their use
+on the DD-175 is encouraged but is not mandatory.
+
+Your MDA for Maxwell AFB TACAN RWY 15 aprch (with ALS) is published as___
+
+- 500 MSL
+
+Takeoff is allowed if the current weather at the departure airport is at least___ and meets or exceeds the
+published precision mins for the runway in use
+
+- 200 %
+
+While on the Maxwell AFB TACAN RWY 15 aprch, when would you execute a MA if you did not have
+runway in sight?
+
+- At 1.5 DME from the TACAN
+
+Flying on J2 btw Crestview and Seminole you would change your TACAN to CH 122 when you are at the
+CEW 088/
+
+- 80 DME
+
+Select the choice that best describes the service volume characteristics of an (L) VOR navigational system.
+Range
+
+- up to and including 18000 AGL out to 40 NM ©
+
+At Maxwell AFB, the PAPI system availability will be
+
+- denoted in the IFR Sup by a “50” under lighting
+
+The star next to the ATIS found in the upper left corner of the TACAN aprchs to Maxwell AFB denotes
+that:
+
+~ the ATIS operates on a noncontinuous basis
+
+Of the following situations, the one which does not require a voice report (NOT RVSM) is:
+
+- reaching a newly assigned altitude
+
+You request a PAR aprch to RWY 191 at NAS Meridian. Your DA in a single-piloted aircraft for an aprch
+to that runway would be:
+
+- 517 MSL
+
+The theory and operating characteristics of a GPS system are
+
+~ GPS uses passive receivers and triangulation computations from signals received from at least 4 satellites
+to determine lat, long, and vertical position
+
+Enroute to NAS Meridian, you listen to Meridian ATIS, which gives airport info, but no wx info. You
+know that Meridian is _
+
+- VFR, with a ceiling of at least 6000’ and 5 miles vis or better
+
+Planning for a flight from NAS Jax to Birmingham...for filing purposes , based on the above info, what is
+the lowest weather mins required at Columbus?
+
+- 4001

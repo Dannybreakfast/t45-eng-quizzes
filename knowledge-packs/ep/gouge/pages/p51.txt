@@ -1,0 +1,100 @@
+# Page 51 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+7 RESET - resets system
+
+> 44. What is the function of the SBI system?
+
+Provides stab trim inputs to reduce pitch changes during SB ext.
+
+ri 45. What is the function of the IPRSOV?
+
+Cooling air inducted through heat exchangers when gear extended —
+_ 46. What happens when the ADR button is depressed? — —
+ADR retains flight incident for -5 and +5 seconds.
+
+> 47. What is tested when the light test switch is put to Test ‘postion?
+
+ad Tests all lights minus AOA Indexers and tests Fire Detection Sys.
+> 48. List the Warning lights on the CWS panel.
+
+4 OIL PRESS, CABIN ALT, EGT/RPM, FIRE, GENERATOR, GTS FIRE, HYD
+
+2 FAIL, OXYGEN
+
+49. When you switch the light test switch to LAMP, how will the fuel
+quantity system be tested?
+
+d Tt won't. (Trick question: FUEL Lt is a Caution Lt, not Warning)
+50. What is the max EGT for airstart (excluding overshoot)?
+
+51. ‘The Engine Switch controls power to the .
+
+scu (Starter Control Unit)
+
+52. &/F With a complete electrical failure, Landing Gear and Flaps may
+be extended manually.
+
+False. Only the gear may be extended manually.
+
+» 53, What is the affect on the Tailhook with a HYD 1 failure?
+) _ May be lowered, but not raised.
+
+54, T/F A single AC Inverter failure will result in AC INV Caution LT.
+oo True.
+
+> 55. What Trim functions are on Generator Bus?
+
+Aileron Trim, Rudder Trim, STBY Stab’ Trin, Trim Indicators
+56. How is generator voltage regulated?
+| Voltage regulator: 28.2 - 29.2 volts ;
+
+2 ; 57, List 4 generator protection systems. -
+
+> Voltage reguleter,
+
+Overvoltage protection unit (turns gen off at 30.2 volts)
+
+ad Undervoltage protection unit (deenergizes Non-essen Ac if <25 v)
+a A => 300 Amp fuse «
+
+«4 58. If Overvoltage or Gen Fail, what happens?
+
+4 Gen Bus ~- Off
+
+» Non-essential AC Buses - Off
+
+| Generator Warning Light ,
+
+a Master Caution
+
+» FPRESS — On (after 30 sec)
+
+CAUG - On (CWS tone also)
+
+= RT MED - Out
+
+; ‘LY MED - Reverts to ADI. Out after 2 minutes unless switch ORIDE
+> 59, If Undervoltage, whet happens?
+
+Generator Warning Light , Ale aw esd dees
+
+4 By J Master Caution vols tend OY
+
+Tibia, 60. Will low generator output drain batteries?
+
+¥ No. Power diodes protect current from being drawn from Essen Bus
+ad . . 61. What powers-the- 28. VDC Essen Service Bus? - :
+
+a _ 24 VDC Batts and Gen ° eee
+62. How much time is available on Battery power alone?
+
+7 27 minutes on two good batts ‘
+
+as 12 minutes on one good batt
+
+63. Ground Service Bus runs off of what?
+
+#1 Battery
+
+- TWewaeton ct GEN teght wid wouderveltage Or gaevve | t4§e
+, OKNGEN Light ~ Ogos still wirks jyvst Yelow Foe, ory gen

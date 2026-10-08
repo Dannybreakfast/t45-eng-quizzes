@@ -1,0 +1,288 @@
+[
+ {
+  "q": "Engine fails to light off with in 15 sec from putting throttle to idle",
+  "opts": [
+   "Land as soon as practical and do not exceed 90% above 20K MSL, 95% below 20K MSL, do not exceed 600 deg EGT",
+   "Wet Start",
+   "Emergency Shutdown",
+   "Electrically controlled, mechanically extended, and hydraulically retracted"
+  ],
+  "ans": 1,
+  "expl": "Quizlet set 783093107, card #1 (verbatim)."
+ },
+ {
+  "q": "Audible bang, Increase EGT, RPM lowers",
+  "opts": [
+   "Aircraft would be steered by differential braking",
+   "Engine Stall",
+   "Eject",
+   "Avoid negative G maneuvers"
+  ],
+  "ans": 1,
+  "expl": "Quizlet set 783093107, card #2 (verbatim)."
+ },
+ {
+  "q": "During descent passing 7000 MSL, ACCEL Caution light",
+  "opts": [
+   "Expect slower engine acceleration during an approach",
+   "False",
+   "EJECT (not prepare for controlled ejection)",
+   "Monitor HYD 1 Pressure"
+  ],
+  "ans": 0,
+  "expl": "Quizlet set 783093107, card #3 (verbatim)."
+ },
+ {
+  "q": "HYD 2 pressure failure",
+  "opts": [
+   "Throttle full, check 24 AOA, if settle continues Eject",
+   "False (yeah we had no f'ng idea either)",
+   "Avoid abrupt throttle movements and set min for flight",
+   "RAT will maintain HYD 2 pressure at 2500-3000"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #4 (verbatim)."
+ },
+ {
+  "q": "Taxi clear of active, NWS malfunction",
+  "opts": [
+   "Neutral/IDLE",
+   "Engine Stall",
+   "FIRE light illums",
+   "Aircraft would be steered by differential braking"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #5 (verbatim). NOTE: IC 21/43 LOSS OF DIRECTIONAL CONTROL: if NWS failure suspected – Paddle switch – press."
+ },
+ {
+  "q": "If aborting with a blown tire, set ANTI-SKID switch ON",
+  "opts": [
+   "False",
+   "Momentarily press NWS button.",
+   "Reset HYD 2 (correct but not the first thing to do, Instructar took note & future test may be changed)",
+   "Ditch straight ahead"
+  ],
+  "ans": 0,
+  "expl": "Quizlet set 783093107, card #6 (verbatim)."
+ },
+ {
+  "q": "ECA 2 Caution light",
+  "opts": [
+   "Electrically controlled, mechanically extended, and hydraulically retracted",
+   "Throttle idle (min safe flight)",
+   "Land as soon as practical and do not exceed 90% above 20K MSL, 95% below 20K MSL, do not exceed 600 deg EGT",
+   "Wet Start"
+  ],
+  "ans": 2,
+  "expl": "Quizlet set 783093107, card #7 (verbatim)."
+ },
+ {
+  "q": "Just flamed out, airspeed is 150 and at 1000' you should",
+  "opts": [
+   "Engine Stall",
+   "Eject",
+   "Expect slower engine acceleration during an approach",
+   "Neutral/IDLE"
+  ],
+  "ans": 1,
+  "expl": "Quizlet set 783093107, card #8 (verbatim)."
+ },
+ {
+  "q": "Abort procedures",
+  "opts": [
+   "FIRE light illums",
+   "IDLE, BOARDS retract, BRAKES, HOOK (1000 ft. prior)",
+   "Momentarily press NWS button.",
+   "Reduce A/S below 300 KIAS/.6 MACH"
+  ],
+  "ans": 1,
+  "expl": "Quizlet set 783093107, card #9 (verbatim). NOTE: Older gouge — differs. IC 21/43 ABORT: 1. Throttle – idle 2. Speed brakes – EXTEND 3. Brakes – apply 4. Hook – down (if required) 5. Brakes – release prior to crossing the arresting gear."
+ },
+ {
+  "q": "LP PUMP light in flight",
+  "opts": [
+   "(A,E,B,D,F, if different use PCLI) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)\nFuel Shutoff - PULL, 4) BATT switches - OFF, 5) Emergency Egress",
+   "Eject",
+   "Avoid abrupt throttle movements and set min for flight",
+   "Avoid negative G maneuvers"
+  ],
+  "ans": 2,
+  "expl": "Quizlet set 783093107, card #10 (verbatim)."
+ },
+ {
+  "q": "What requires an immediate shutdown on deck w/out 2ndary indications",
+  "opts": [
+   "FIRE light illums",
+   "Electrically controlled, mechanically extended, and hydraulically retracted",
+   "Avoid negative G maneuvers",
+   "EJECT (not prepare for controlled ejection)"
+  ],
+  "ans": 0,
+  "expl": "Quizlet set 783093107, card #11 (verbatim)."
+ },
+ {
+  "q": "When flying @ 15K, TP HOT light",
+  "opts": [
+   "Throttle full, check 24 AOA, if settle continues Eject",
+   "Electrically controlled, mechanically extended, and hydraulically retracted",
+   "Reduce A/S below 300 KIAS/.6 MACH",
+   "Throttle idle (min safe flight)"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #12 (verbatim). NOTE: IC 21/43 TP HOT – IN-FLIGHT: 1. Throttle – minimum for safe flight."
+ },
+ {
+  "q": "On cat stroke, aircraft settles",
+  "opts": [
+   "Engine Stall",
+   "IDLE, BOARDS retract, BRAKES, HOOK (1000 ft. prior)",
+   "(A,E,B,D,F, if different use PCLI) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)\nFuel Shutoff - PULL, 4) BATT switches - OFF, 5) Emergency Egress",
+   "Throttle full, check 24 AOA, if settle continues Eject"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #13 (verbatim). NOTE: IC 21/43 EMERGENCY CATAPULT FLYAWAY: 1. Throttle – MRT 2. Maintain 24 units AOA; if engine failed or unable to stop settle: 3. Eject."
+ },
+ {
+  "q": "Launch bar system is",
+  "opts": [
+   "Momentarily press NWS button.",
+   "Expect slower engine acceleration during an approach",
+   "Electrically controlled, mechanically extended, and hydraulically retracted",
+   "Throttle full, check 24 AOA, if settle continues Eject"
+  ],
+  "ans": 2,
+  "expl": "Quizlet set 783093107, card #14 (verbatim). NOTE: Other gouge pages (p.3, p.54 #140, hw p.60) say the opposite: hydraulically (HYD 1) extended, mechanically (spring) retracted."
+ },
+ {
+  "q": "Engine failure on cat stroke and unable to eject",
+  "opts": [
+   "Avoid negative G maneuvers",
+   "False (yeah we had no f'ng idea either)",
+   "RAT will maintain HYD 2 pressure at 2500-3000",
+   "Ditch straight ahead"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #15 (verbatim)."
+ },
+ {
+  "q": "For HYD 1 or HYD 2 Failure 1st consideration",
+  "opts": [
+   "Engine Stall",
+   "False (yeah we had no f'ng idea either)",
+   "Reduce A/S below 300 KIAS/.6 MACH",
+   "Throttle full, check 24 AOA, if settle continues Eject"
+  ],
+  "ans": 2,
+  "expl": "Quizlet set 783093107, card #16 (verbatim)."
+ },
+ {
+  "q": "After F PRESS light illuminates and checking engine switch on you should",
+  "opts": [
+   "EJECT (not prepare for controlled ejection)",
+   "Land as soon as practical and do not exceed 90% above 20K MSL, 95% below 20K MSL, do not exceed 600 deg EGT",
+   "Avoid negative G maneuvers",
+   "RAT will maintain HYD 2 pressure at 2500-3000"
+  ],
+  "ans": 2,
+  "expl": "Quizlet set 783093107, card #17 (verbatim)."
+ },
+ {
+  "q": "While cruising 23K you get FIRE light, with secondaries",
+  "opts": [
+   "(A,E,B,D,F, if different use PCLI) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)\nFuel Shutoff - PULL, 4) BATT switches - OFF, 5) Emergency Egress",
+   "EJECT (not prepare for controlled ejection)",
+   "Wet Start",
+   "Throttle full, check 24 AOA, if settle continues Eject"
+  ],
+  "ans": 1,
+  "expl": "Quizlet set 783093107, card #18 (verbatim). NOTE: IC 21/43 FIRE WARNING LIGHT in-flight: if fire confirmed or flight control lost – Eject."
+ },
+ {
+  "q": "NWS AUG system provides yaw rate feedback in high gain nose wheel steering",
+  "opts": [
+   "Avoid abrupt throttle movements and set min for flight",
+   "Eject",
+   "Electrically controlled, mechanically extended, and hydraulically retracted",
+   "False (yeah we had no f'ng idea either)"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #19 (verbatim)."
+ },
+ {
+  "q": "3-4 questions that deal with procedures for COMP Stall and EGT RPM Light. Know the first 3 steps in that procedure and that's 3-4 free questions.",
+  "opts": [
+   "False (yeah we had no f'ng idea either)",
+   "Avoid negative G maneuvers",
+   "(no definition on this Quizlet card)",
+   "False"
+  ],
+  "ans": 2,
+  "expl": "Quizlet set 783093107, card #20 (verbatim). This card has no definition on Quizlet; the correct option is a placeholder. NOTE: Card has no definition on Quizlet. IC 21/43 COMPRESSOR STALL OR EGT/RPM WARNING LIGHT: 1. Throttle – idle 2. EGT/RPM – check; if EGT > 450°C for > 6 s at idle: 3. Execute engine failure procedure; if normal: 4. Throttle – slowly advance to minimum for safe flight 5. Minimize throttle movements."
+ },
+ {
+  "q": "If you get a HYD 2 failure",
+  "opts": [
+   "FIRE light illums",
+   "Momentarily press NWS button.",
+   "Land as soon as practical and do not exceed 90% above 20K MSL, 95% below 20K MSL, do not exceed 600 deg EGT",
+   "Monitor HYD 1 Pressure"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #21 (verbatim)."
+ },
+ {
+  "q": "Executing the Engine Fire Emergency Shutdown on the Ground state the procedures verbatim",
+  "opts": [
+   "Throttle idle (min safe flight)",
+   "(A,E,B,D,F, if different use PCLI) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)\nFuel Shutoff - PULL, 4) BATT switches - OFF, 5) Emergency Egress",
+   "Momentarily press NWS button.",
+   "Reduce A/S below 300 KIAS/.6 MACH"
+  ],
+  "ans": 1,
+  "expl": "Quizlet set 783093107, card #22 (verbatim). NOTE: Older gouge — differs. IC 21/43 EMERGENCY SHUTDOWN/EGRESS: 1. Throttle – Off 2. Engine switch – Off 3. Fuel Shutoff Handle – Pull 4. Ejection Seats – Safe 5. Batt switches – Off."
+ },
+ {
+  "q": "During ACM you get a HYD caution light, RAT caution light and then the HYD light extinguishes you should:",
+  "opts": [
+   "Reset HYD 2 (correct but not the first thing to do, Instructar took note & future test may be changed)",
+   "Emergency Shutdown",
+   "Throttle full, check 24 AOA, if settle continues Eject",
+   "Ditch straight ahead"
+  ],
+  "ans": 0,
+  "expl": "Quizlet set 783093107, card #23 (verbatim)."
+ },
+ {
+  "q": "First step in the EGT/RPM warning light:",
+  "opts": [
+   "Momentarily press NWS button.",
+   "False (yeah we had no f'ng idea either)",
+   "Emergency Shutdown",
+   "Neutral/IDLE"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #24 (verbatim). NOTE: Older gouge — differs (no 'neutral' step now). IC 21/43: 1. Throttle – idle 2. EGT/RPM – check."
+ },
+ {
+  "q": "If NWS AUG goes on during taxi, you should:",
+  "opts": [
+   "(A,E,B,D,F, if different use PCLI) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)\nFuel Shutoff - PULL, 4) BATT switches - OFF, 5) Emergency Egress",
+   "Momentarily press NWS button.",
+   "Aircraft would be steered by differential braking",
+   "Ditch straight ahead"
+  ],
+  "ans": 1,
+  "expl": "Quizlet set 783093107, card #25 (verbatim)."
+ },
+ {
+  "q": "GTS Fire on deck:",
+  "opts": [
+   "Throttle full, check 24 AOA, if settle continues Eject",
+   "Avoid abrupt throttle movements and set min for flight",
+   "Wet Start",
+   "Emergency Shutdown"
+  ],
+  "ans": 3,
+  "expl": "Quizlet set 783093107, card #26 (verbatim). NOTE: IC 21/43 GTS FIRE WARNING LIGHT – GROUND: Execute emergency shutdown/egress; IN-FLIGHT: Engine switch – off."
+ }
+]

@@ -1,0 +1,35 @@
+# Page 77 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+Ao, RADALLT is operative below 5,000 feet.
+
+K “, 33. Knew Immediate Airstart Procedures
+
+. a. Throttle — Off
+
+2 Simultaneously perform steps 2 and 3
+E: b. GTS — Press and Hold
+
+ce. Throttle — Idle
+
+« \ 34. Know Tailpipe Hot on deck caution light procedures |
+
+EWG “Surfs Throttle — Off
+
+ORF b. Fuel Shutoff Handle — Pull
+
+c. Battery Switches — Off |
+d. Egress
+
+a 35. Know Engine Fire on deck procedures
+
+nd . Throttle — Off
+
+> . Fuel Shutoff Handle — Pull
+
+. c. Battery Switches — Off
+
+d. Egress
+
+S36. The first step of the Clear Engine Procedure is Throttle Off.
+
+5

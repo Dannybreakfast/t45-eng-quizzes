@@ -1,0 +1,42 @@
+# Page 24 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+4 a . 4 . 7
+
+a Disadvantage of Swept wing — Stall at High AOA and decrease Coefficient of Lift f 34 : ;
+
+“LD Max = Mex Endurance, Max Climb Angie, Power Of Glide _
+
+‘- Thrust is Neutral on Longitudinal Stability - a
+
+oO Area Rule not part of T-45 Desier P 4 os ;
+
+Rudder Shock Stabilization Strips—Reduce “Rudder Buzz” oo
+
+- Vortex Generators . . ’
+
+mc Prevents wing downwash fom interfering with stabilator
+
+Slow Airspeed performance increases- lowers stall speed
+
+" Lxvithout Boundary Layer Separation Aids - Swept wing stalls tip first .
+
+; _ e Rudder Blowout — Requires >250 Ibs of pressure to counter.
+
+” Abse! selerated stalls with no external stores ~ 20° Pitch Up is second indicator of impending sist]
+
+. _-_ Thnust affected by- RPM, ALT, end TEMP
+
+6 sleor gunkwre Qa - Ware gireet
+
+> AC moves forwerd of CG et stall - Uncontrollabis pitch wp = Siw or unin Ss vo
+
+5 OPPS “L got uy IEA,
+
+L }CHitical Mach Number~ Free stream Mach # at which 2 local Mach # of 1.0 is attstned at any point oa she
+body under considezation - .8 for the T4S ;
+
+Ry ~ . .
+
+: _ rG Limit Question - @8G0008 Ose CHART WW Feb
+
+Crosswind - Pushes Nose Away fom Wind

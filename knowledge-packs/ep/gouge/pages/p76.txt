@@ -1,0 +1,39 @@
+# Page 76 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+‘ff;
+b| Biown Tire on T/O or Landing
+a. Rudder — As required to counter the swerve
+b. Anti-skid Switch — Off prior to braking
+. y for a single blown tire on landing = Flare the landing with % flaps.
+_ ,_\23. Gear Handle Light will illuminate any time the gear is in transit or any time
+_Athe gear is not in the commanded position (or the gear doors are not up when
+the gear is up and locked).
+yp’ 24. Barometric Altimeter Failure = Check Pitot Heat, Use RADALT if less than
+5000’, Use Cabin Altimeter if unpressurized.
+2 25. Failure of the 28VDC Generator Bus = Loss of all trim except Primary Stab
+Trim.
+Pq N26. Windmill Airstart = <25K, Min 13% N2 RPM, Recommended minimum of
+250 KIAS.
+N“27. Fora Multiple MFD Failure — Display Power Switch to Reset.
+Y” 28, For a SLATS caution light always maintain below 200 KIAS and land as
+a soon as PRACTICAL (i.e. for a missed approach).
+* y 29. Anti-Skid Failure = Brakes Release, Anti-Skid Off, Attempt Braking.
+CO. Know GTS Fire on deck procedures
+a a. Engine switch — Off .
+> b. Throttle — Off
+c. Fuel Shutoff Handle — Pull
+id d. Battery Switches — Off
+2 _ e. Egress
+‘c 31. Know Engine Fire in Flight procedures
+pe a, a. Throttle — Idle (min for safe flight)
+| — b. Secondary Indications — Check
+> » If secondary indications exist —
+c. Emergency Oxygen Actuator — Pull
+d. Throttle — Off
+a e. Fuel Shutoff Handle — Pull
+If secondary indications persist —
+. If fire is extinguished —
+g. Prepare for controlled ejection
+| If unable to eject -
+> h. Prepare for Flameout Approach
+a

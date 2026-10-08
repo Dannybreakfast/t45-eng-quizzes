@@ -1,0 +1,63 @@
+# Page 52 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+> |
+64. What happens if lose one inverter?
+ACINV caution light and lose non-essential AC busses
+o 65. Wheat happens if lose two inverters?
+ACINV caution light and lose all AC pér
+66. How is AC power reset for input faults? Output faults?
+_d Input faults is auto-reset.
+Output faults requires manual reset (cycle) (8x ( wit node) Re rere
+a 67. With one Inverter failed, what means of navigation do I have? -
+TACAN azimuth.
+68. With two Inverters failed, what means of navigation do I have?
+PAR approaches only.
+69. What are the vital services lost when non-essential AC busses lost?
+VOR/ILS/MB and RADALT
+ad 70, TACAN DME is off of what bus?
+28 VDC Essential
+71. What is the biggest draw of electrical power?
+cal Pitot Heat
+72. What should I expect if I see a Master Caution light, tone, loss of .
+= RI MFD and HUD?
+Generator Failure
+73. What controls engine from start to finish? _
+< Start Control Unit (SCU)
+74. If either cockpit is in Manual Fuel, engine is operating in . ‘
+2, Manual Fuel
+75. If finger lift is raised airborne with throttle at approach idle
+stop, further reduction will cause what?
+Shutting the engine down.
+76. If finger lift is raised airborne with throttle above approach idle
+stop, further reduction will cause what? ,
+bs Throttle will stop at 72% (Approach Idle)
+; , _. 77, What is the minimum RPM for Engine Start?
+15%
+5 78. What is the minimum RPM for Air Start? ;
+13% ;
+79, When does the OIL PRESS light go out. on start?
+4 . ton light indi late at A 27
+80. What does the SLAT Caution light indicate? ~ 9
+a Slat are not in commanded position or are unsymmetric Sluh se coed Arle Slots
+81. What is the airspeed limitation on the Flaps and Landing Gear?
+9 200 kts _
+a 82. What constitutes the ARI system? (f, (3-23)
+> Yaw dampener and trim tab system
+a @3. What drives the Rudder Centering system?
+| = 84, If I get a CAUG caution light, what do I lose?
+pa ARI (217 kts, Flaps half or full), SBI, Rudder Trim, Yaw
+> Dampening (<217kts)
+85. CAUG light with a Generator Failure, I lose what?
+ARI, SBI, Yaw Dampening, Rudder Trim (ALL FOUR)
+od 86. CAUG Bit can only be conducted when?
+=) a +. @B0kts; WoW;-Flaps up------- scree ce
+Z Ger. In SBI wilh front SBI,rudder trim still work?
+> Yes
+88. What navigation do you have with a DEU failure? .
+a None. Only option is the PAR
+> 89. GINA supplies what flight information?
+Velocity Vector, Gyro, Heading, VVI, gasihe
+Ss
+od Pi BUAUL ceetiw Lita > On IF SET AND Hy Rov 10°, RPM.
+» GEN Failore - owl 4 wake lab e is gama gtolals tre
+2

@@ -1,0 +1,51 @@
+# Page 85 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+af
+
+vA
+
+if
+
+a if . “Navy 14123, Meridian App, go chead with your request,”
+
+” “heridian App, Navy 14123, req. a HI-TCN key field to a PAR at McCain,” °° $0 00> oA ;
+> Xsit to LAF, do the descent/pen checklist and put TWR freq in back radio. |
+
+» @ 35DME . .
+
+> P ~ Idle, bds out
+
+: A-10°N/D
+
+° i OMA my A lJ _ “Meridian App, Navy 2A125, out of one six thousand on penetration for HI-TCN B app at Key,”
+
+~ “Navy IA123, Meridien App, cleared for the FI-TCN app at Key Field. Map instructions are..”
+
+> “Meridian App, Navy LAI 23, cleared for the HI-TCN app at Rey, (repeat MAP instrtuctions),”"
+
+if yon have not negotiated for a follow on app at McCain be sure to do so at the end of the above xanission.
+
+Ld 1000” prior to IvV/o, bds in .
+
+> @ 5300’ MSL (or 5000’AG) :
+
+2 P — adj, if needed, bds in :
+
+ai A — adj. pitch to cut descent rate in %
+
+> Use 1% of ground speed to figure lead point to turn onto arc. .
+
+id Follow the rest of the approach to turn onto final radial of 320° using 1% of ground speed times the #of .
+> radials/nm for the arc distance, _
+
+> Once you are on the final radial slow to 200 KIAS and call for the gear.
+
+Do the landing checks and slow to on-speed,
+
+@ the FAF: Time (start the Clock), turn (N/R), time (N/R), transition (BDS out pwr back a little for the
+
+df descent and say “bds ont, landing checklists complete”, twist (N/R), talk (“Béeridian App, Navy 14123,
+
+> Fly to MDA and then execute a MA and the MAP.
+
+> :

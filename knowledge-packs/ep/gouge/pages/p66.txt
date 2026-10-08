@@ -1,0 +1,50 @@
+# Page 66 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+18. Don’t worry about PA procedures
+
+19. Cabin Alt. Light: descend below 25K
+
+20. Engine failure below 1500 AGL and 180 KIAS: EJECT
+
+- 21. Fire on t/o: ifable: abort, if unable and fire is confirmed: EJECT
+
+. 22. A/C settling off cat: check throttle full fwd, maintain 24 units AOA, if settle not
+
+stopped: EJECT
+
+23. Blown tire on t/o: rudder_as req’d to counter swerve, ANTI-SKID_off prior to
+
+Hd braking ADRK 0S. € 25,0997 OF Pancticar)
+
+an”) BOLE ON BRN se - LER
+
+se a TE Gahee fo CAE RS Seem
+
+24. Know smoke/fumes procedure \ @ Alix veovce
+
+< ® Waar aturacs { SEEM BE AL EMS . :
+soa D) seme Qverrd QD mos pew Iwan ASQ Poe tue
+y 25, Dual blown tire landing: (pretend yow'ic Sa ‘Aittaive weente Muy FLARE The SS Po
+landing . |
+
+26. OBOGS ) failure: if it won’t reset, leave OBOGS_ OFF. Use the green apple-you.
+> don*t want bad 02 from OBOGS contaminating good emergency O2.
+
+; 27. Fire in flight questions |
+? 28. Generator failure
+
+29. GTS fire in flight
+
+> 30. Hook light means hook not down with handle down
+
+31. Question about gear not being down. Answer: warning light in the handle .
+
+32, Know the 4 things you lose with C AUG caution light: yaw damper, SBI, ARI,
+
+| rudder trim. . OO
+
+33. Question about ECA fail: know that it’s 90% above 20K and 95% below 20K. |
+
+34, CABIN ALT light: OBOGS_on, mask tight, AOA_reduce, airflow _off
+
+® enteatwan FAI ee : .

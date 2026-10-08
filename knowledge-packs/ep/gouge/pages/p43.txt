@@ -1,0 +1,72 @@
+# Page 43 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+.
+
+pedal position, 2. If there is an internal system failure (including HYD 1 failure), 3. When the system has
+been paddled off.
+
+T/F No landing gear will retract until the nose gear is centered (TRUE)
+
+The paddle switch 1. Disengages NWS, 2. Deactivates control augmentation causing the NOSE WHL STR
+
+| and CONTR AUG caution lights to illuminate when the aircraft is on the ground
+
+a T/F the NSEA4KE-SER advisory light is iluminted anytime the NWS system is energized
+
+oO (FALSE, only shows on high gain)
+
+WHEEL BRAKES/ANTI-SKID System (NATOPS 2.11)
+
+ed 2200psi pressure reserved by wheel brake/emergency flap accumulator if HYD 1 loses pressure
+
+> 180 +/-20psi minimum pressure to illuminate BRAKE PRESSURE indicators lights
+
+A 150psi pressure at which BRAKE PRESSURE lights are extinguished
+
+a 30 knots minimum required wheel speed for anti-skid to operate while accelerating
+
+» 10-13 knots minimum wheel speed for anti-skid to operate while decelerating
+
+10 number of full brake applications provided by brake/emergency flap accumulator
+
+Ld 324°F temperature at which fusible plugs in main gear wheels are designed to release tire press.
+P| When landing gear is retracted, landing gear door open pressure is applied to the cylinder.
+
+a Which in turn applies force to the parking brake lever to actuate the brake control valve (DE-SPIN)
+
+4 Conditions for anti-skid to operate 1. Landing gear down, 2. Weight on wheels, and 3. Speed above 30 knots while
+| accelerating or 10-13 knots deceleration
+
+a T/F the anti-skid system releases brake pressure if brake pedals are depressed while airborne
+
+4 to prevent touchdown with locked brakes. (TRUE)
+. the ANTI-SKID caution light is illuminated if 1. System malfunction is detected, 2. Prolonged full pressure
+
+> dump lasting greater then 2 seconds, 3. No wheel spin detected 3 seconds after weight on wheels (reverts to
+4 normal braking)
+
+» TF engaging the parking brake with anti-skid energized will eventually deplete brake
+
+accumulator pressure (TRUE)
+
+5 T/F selecting anti-skid in either cockpit will energize the anti-skid system
+
+pel (FALSE, both cockpits must have it selected)
+
+The PARKING BRAKE caution light is illuminated if the throttle is advanced beyond intermediate
+
+bed position (60-70%) and the parking brake is engaged.
+
+Conditions for ANTI-SKID advisory light illumination 1. Anti-skid switches in both cockpits must be ON,
+
+4 LAUNCH BAR System (NATOPS 2.12)
+
+10 sec. Time allowed for launch bar to retract following launch before warning tone sounds
+
+The green L BAR indicator light is illuminated when launch bar is extended with the switch set to EXTEND
+
+2 The red L BAR indicator light is illuminated when 1. Launch bar is not retracted, 2. No weight on wheels,
+
+a 3. gear down and not locked
+
+4 TF with a launch bar retraction failure, raising the gear is not possible. (FALSE)

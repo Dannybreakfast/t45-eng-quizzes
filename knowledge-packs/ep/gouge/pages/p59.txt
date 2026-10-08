@@ -1,0 +1,51 @@
+# Page 59 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+KAGLE EP GOUGE
+
+EP 06X
+
+2 1. Ifyour HYD 1 and 2 fail but the RAT is working fine, but the aircraft is
+“uncontrollable”, then EJECT.
+
+2, Engine Stall = Throttle Idle, Controls Neutralize, EGT/RPM Monitor. _
+
+3. Ready Light = N1 @ 100 RPM in correct direction with ignitors energized. -
+
+? 4. Ifyou are flying form and prove that you can no longer fly form together
+
+> (YOU HIT EACH OTHER), then have someone else check you out (besides
+
+the guy that you just hit).
+
+? 5. Power setting for OIL PRESS light = min for safe flight. , Magnus WUE Mines
+6. Engine Failure off Cat = EJECT (if unable then ditch straight ahead). |
+7. TP HOT caution light on deck is same as FIRE light on deck (Same
+
+y procedures to deal with bot).
+
+8. Configuration for ditching = gear up flaps down full. . |
+>, 9. For blown tire... turn anti-skid off. |
+
+: 10. If you lose nosewheel steering, use differential braking to*control aircraft. |
+4 11. If you get an overspeed during start, use Clear Engine procedure (Throttle
+
+? Off is the first step... not Throttle Idle). .
+
+_ 12. There are two GTS Fire questions with the same answer... Engine Switch
+
+Ld Off is the first step.
+
+3 13. Which of these indicate you might have an engine fire on Startup? Fire light,
+
+a Increased FF, Rapidly increasing EGT? ALL OF THE ABOVE.
+
+? 14, With a HYD 1 Failure, which of these can you do for landing? Emergency
+
+extend the gear, Emergency extend the flaps, Take an arrested landing?
+
+_ 15, With a HYD 2 failure, you monitor the HYD 1 PRESSURE GAUGE not the
+accumulator pressure.
+
+16. Compressor Stall first step is Throttle Idle — min for safe flight.
+
+4

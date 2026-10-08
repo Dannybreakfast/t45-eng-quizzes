@@ -1,0 +1,34 @@
+# Page 73 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.73]).
+# NOTE: page 73 is scanned sideways; OCR run on image rotated 90°
+
+“7 is we een: SOc er TST OTT TIPE evd? mesasloakh} es oan
+al. rora Landme with a SINULE BLO WON LURE adda no eyailaple siresing ger:
+od ° —
+“ Fag is Tut! — atc i
+os Performa ilared landing, FLArd 72 | |
+=:
+aay OT 1: 2 774 TT eRUTTAT TORS a. een int ~ _. _ .
+29 For a Landing with DUAL BLOWN TIRES, and no available arresting gear:
+Pa ~ - tom!
+_ . 4 — _ . . 49 ws . ; = a ~ 7’ . .* .
+33 SHORT FIELD ARRESTMENT - if directional conirol : in question:
+aa ~~ + % ~- 2 ~ . x ~ a
+s Touch down 500° prior toe geai
+TE directional control iS in question:
+TF directional control ld in quesucnm:
+T nh, A : ~~ 50° 40 : ae
+o Ouch GOWN at GI aU’ DTIOF tO eal
+\
+hy . ” .
+San ii — —— 7 foe ge g < 60414
+bu ' oD eq\e oie CAI - , Pre lite iv tou to} al G S YOury
+c
+PS et AK au ofA A b
+é
+Fe nok St s¢e “3 7
+=
+ry Bs Ae s | ae Le “ao . Pa 4 ee -
+35 Wn wk iets Leer -_ he amy) a id i, feel A fe sf ; mo Lt i 2S Sr Glas 7
+ie ; i j 7
+* , 7 a é “ a } j

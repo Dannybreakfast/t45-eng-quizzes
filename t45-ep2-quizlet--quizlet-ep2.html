@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>T45 EP2 (Quizlet) — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-ep.html">EP</a> · Emergency Procedures</div>
+    <h1>T45 EP2 (Quizlet)</h1>
+    <div class="meta">36 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 36</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Emergency Procedures</div>
+    <h2 style="margin:0.2rem 0">T45 EP2 (Quizlet)</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-ep.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to EP</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-ep.html">← EP</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "Descend below _______ feet cabin aft. with an OBOGS Failure", "opts": ["Reset number 1 and 2 inverters", "Blinking screen, invalid display, blank screen, stuck push button", "10,000", "Hook down, land 50 ft prior"], "ans": 2, "expl": "Quizlet set 783149178, card #1 (verbatim)."}, {"q": "If below 1500 AGL and below 180 knots", "opts": ["Altitude descend below 25K, AIR FLOW knob off", "Eject", "Airspeed below 200 knots", "Blinking screen, invalid display, blank screen, stuck push button"], "ans": 1, "expl": "Quizlet set 783149178, card #2 (verbatim)."}, {"q": "Electrical fire immediate action", "opts": ["Confirm engine operation, reset Gen switch", "GEN switch off", "Idle, instruments check, secondary-eject", "Reset number 1 and 2 inverters"], "ans": 1, "expl": "Quizlet set 783149178, card #3 (verbatim)."}, {"q": "(2 questions) If put you get a SLATS caution light", "opts": ["Release brakes, anti-skid off, brakes as required", "Rudder (counter swerve) and go around if able", "Maintain a/s less than 200 KIAS", "GEN switch off"], "ans": 2, "expl": "Quizlet set 783149178, card #4 (verbatim)."}, {"q": "Smoke and fumes in cockpit", "opts": ["Hook down, land 50 ft prior", "Return flaps to previous position", "Confirm engine operation, reset Gen switch", "Altitude descend below 25K, AIR FLOW knob off"], "ans": 3, "expl": "Quizlet set 783149178, card #5 (verbatim). NOTE: Older gouge — differs. IC 21/43 SMOKE OR FUMES: 1. Mask – on/tight 2. Initiate controlled descent to below 18,000 feet MSL 3. Air Flow Knob – Off; if unable to clear/see: Airspeed – reduce, warn occupant/secure items, Seat – lower, MDC Firing Handle – pull."}, {"q": "With directional control in question, short fleld arrestment:", "opts": ["Rudder (counter swerve), Anti-skid off", "Below 25K, 13%, N2 min 250 kts", "Hook down, land 50 ft prior", "Emergency engine shutdown"], "ans": 2, "expl": "Quizlet set 783149178, card #6 (verbatim)."}, {"q": "Uncommanded roll or yaw when transitioning flaps/stats", "opts": ["Primary stabilator trim", "Maintain a/s less than 200 KIAS", "Emergency engine shutdown", "Return flaps to previous position"], "ans": 3, "expl": "Quizlet set 783149178, card #7 (verbatim)."}, {"q": "OXYGEN warning light, system won't reset", "opts": ["Throttle check full forward, 24 AOA", "Airspeed below 200 knots", "OBOGS/ANTI-G switch off", "Eject"], "ans": 2, "expl": "Quizlet set 783149178, card #8 (verbatim). NOTE: Older gouge — differs. IC 21/43 OXYGEN WARNING LIGHT (in-flight): 1. Throttle – Set minimum 80% rpm 2. Execute Adverse Physiological Symptoms (as required)."}, {"q": "Blown tire after touchdown", "opts": ["Pull Emerg. Oxygen actuator, throttle off, GTS button, idle", "Rudder (counter swerve) and go around if able", "Descend below 25K MSL", "Hook is not fully extended"], "ans": 1, "expl": "Quizlet set 783149178, card #9 (verbatim). NOTE: IC 21/43 LOSS OF DIRECTIONAL CONTROL: go-around if flyaway airspeed available; otherwise abort; blown tire: brakes release, anti-skid off, brakes apply gradually."}, {"q": "GINA failure", "opts": ["flared, half flap", "Eject", "Hook down, land 50 ft prior", "All the above"], "ans": 3, "expl": "Quizlet set 783149178, card #10 (verbatim)."}, {"q": "Abnormal MFD", "opts": ["Blinking screen, invalid display, blank screen, stuck push button", "No flap approach and make an arrested landing", "Pull Emerg. Oxygen actuator, throttle off, GTS button, idle", "Below 25K, 13%, N2 min 250 kts"], "ans": 0, "expl": "Quizlet set 783149178, card #11 (verbatim)."}, {"q": "With barometric altitude failure", "opts": ["Altitude descend below 25K, AIR FLOW knob off", "Use radar alt if below 5K AGL, use cabin altimeter if unpressurized, and check PITOT Heat is on", "Rudder (counter swerve) and go around if able", "Standby VSI"], "ans": 1, "expl": "Quizlet set 783149178, card #12 (verbatim)."}, {"q": "Engine failure catapult", "opts": ["Brakes release, anti skid- off, attempt braking, hook down 1000 feet prior", "Eject", "Hook is not fully extended", "Reset number 1 and 2 inverters"], "ans": 1, "expl": "Quizlet set 783149178, card #13 (verbatim)."}, {"q": "Immediate Airstart", "opts": ["10,000", "Hook down, land 50 ft prior", "Pull Emerg. Oxygen actuator, throttle off, GTS button, idle", "Primary stabilator trim"], "ans": 2, "expl": "Quizlet set 783149178, card #14 (verbatim). NOTE: IC 21/43 AIRSTART: 1. Emergency oxygen green ring(s) – pull 2. Throttle – off; simultaneously 3. GTS Start Button – Press 4. Throttle – Idle; if no relight within 30 s / EGT exceeds limits: 5. Throttle – off (30 s drain); repeat *3/*4 if above 13% RPM and 250 KIAS."}, {"q": "C AUG light on you will lose:", "opts": ["Reset number 1 and 2 inverters", "ARI, SBI, yaw dampner, and rudder trim", "OBOGS/ANTI-G switch off", "Eject"], "ans": 1, "expl": "Quizlet set 783149178, card #15 (verbatim)."}, {"q": "GTS fire", "opts": ["Airspeed below 200 knots", "Idle, extend, brakes as req, hook 1000 ft prior", "Emergency engine shutdown", "10,000"], "ans": 2, "expl": "Quizlet set 783149178, card #16 (verbatim). NOTE: IC 21/43 GTS FIRE WARNING LIGHT – GROUND: Execute emergency shutdown/egress; IN-FLIGHT: Engine switch – off."}, {"q": "Cabin pressurization failure", "opts": ["Hook down, land 50 ft prior", "Descend below 25K MSL", "Release brakes, anti-skid off, brakes as required", "Eject"], "ans": 1, "expl": "Quizlet set 783149178, card #17 (verbatim). NOTE: Gouge item (CABIN ALT/pressurization). Don't confuse with IC 21/43 RAPID DECOMPRESSION: green ring(s) pull, OBOGS flow selector(s) off, descend below 10,000 ft cabin altitude."}, {"q": "Compressor stall", "opts": ["flared, half flap", "Primary stabilator trim", "Rudder (counter swerve), Anti-skid off", "IDLE, Neutralize, monitor"], "ans": 3, "expl": "Quizlet set 783149178, card #18 (verbatim). NOTE: Older gouge — differs. IC 21/43: 1. Throttle – idle 2. EGT/RPM – check (no 'neutralize' step)."}, {"q": "Blown tire on T/O roll and abort", "opts": ["Pull Emerg. Oxygen actuator, throttle off, GTS button, idle", "Rudder (counter swerve), Anti-skid off", "All the above", "flared, half flap"], "ans": 1, "expl": "Quizlet set 783149178, card #19 (verbatim). NOTE: IC 21/43 ABORT + LOSS OF DIRECTIONAL CONTROL (blown tire): Brakes – release, Anti-skid switch – off, Brakes – apply gradually."}, {"q": "Blown tire, no arresting gear", "opts": ["GEN switch off", "flared, half flap", "Below 25K, 13%, N2 min 250 kts", "Use radar alt if below 5K AGL, use cabin altimeter if unpressurized, and check PITOT Heat is on"], "ans": 1, "expl": "Quizlet set 783149178, card #20 (verbatim)."}, {"q": "CANOPY light in flight", "opts": ["Use radar alt if below 5K AGL, use cabin altimeter if unpressurized, and check PITOT Heat is on", "Below 25K, 13%, N2 min 250 kts", "Divert to shore, min. descent rate landing with arresting wires removed", "Airspeed below 200 knots"], "ans": 3, "expl": "Quizlet set 783149178, card #21 (verbatim)."}, {"q": "Multiple MFDs f°d up", "opts": ["Return flaps to previous position", "Momentarily set Display Power switch to RESET", "Reset number 1 and 2 inverters", "Idle, instruments check, secondary-eject"], "ans": 1, "expl": "Quizlet set 783149178, card #22 (verbatim)."}, {"q": "Total Electrical failure can't restore power", "opts": ["Confirm engine operation, reset Gen switch", "Rudder (counter swerve) and go around if able", "Descend below 25K MSL", "No flap approach and make an arrested landing"], "ans": 3, "expl": "Quizlet set 783149178, card #23 (verbatim). NOTE: IC 21/43 TOTAL ELECTRICAL FAILURE memory item: 1. Emergency oxygen green ring(s) – pull."}, {"q": "Windmill airstart parameters", "opts": ["Pull Emerg. Oxygen actuator, throttle off, GTS button, idle", "Standby VSI", "Below 25K, 13%, N2 min 250 kts", "Idle, extend, brakes as req, hook 1000 ft prior"], "ans": 2, "expl": "Quizlet set 783149178, card #24 (verbatim). NOTE: IC 21/43 AIRSTART: repeat steps *3/*4 if above 13% RPM and 250 KIAS."}, {"q": "Abort takeoff", "opts": ["Release brakes, anti-skid off, brakes as required", "Idle, extend, brakes as req, hook 1000 ft prior", "Reset number 1 and 2 inverters", "No flap approach and make an arrested landing"], "ans": 1, "expl": "Quizlet set 783149178, card #25 (verbatim). NOTE: IC 21/43 ABORT adds step 5: Brakes – release prior to crossing the arresting gear."}, {"q": "Electrical failure", "opts": ["Idle, instruments check, secondary-eject", "No load shedding (eliminates 3 out 4 answers)", "Brakes release, anti skid- off, attempt braking, hook down 1000 feet prior", "Throttle check full forward, 24 AOA"], "ans": 1, "expl": "Quizlet set 783149178, card #26 (verbatim)."}, {"q": "Pitot static failure question", "opts": ["Return flaps to previous position", "Throttle check full forward, 24 AOA", "Standby VSI", "OBOGS/ANTI-G switch off"], "ans": 2, "expl": "Quizlet set 783149178, card #27 (verbatim)."}, {"q": "Settling off catapult", "opts": ["Divert to shore, min. descent rate landing with arresting wires removed", "Confirm engine operation, reset Gen switch", "Throttle check full forward, 24 AOA", "No flap approach and make an arrested landing"], "ans": 2, "expl": "Quizlet set 783149178, card #28 (verbatim). NOTE: IC 21/43 EMERGENCY CATAPULT FLYAWAY: 1. Throttle – MRT 2. Maintain 24 units AOA 3. Eject if engine failed or unable to stop settle."}, {"q": "Launch bar warning light after cat launch", "opts": ["Descend below 25K MSL", "Eject", "Emergency engine shutdown", "Divert to shore, min. descent rate landing with arresting wires removed"], "ans": 3, "expl": "Quizlet set 783149178, card #29 (verbatim)."}, {"q": "Gen failure", "opts": ["No flap approach and make an arrested landing", "Confirm engine operation, reset Gen switch", "flared, half flap", "Emergency engine shutdown"], "ans": 1, "expl": "Quizlet set 783149178, card #30 (verbatim)."}, {"q": "Wheel brake failure go around not possible", "opts": ["Airspeed below 200 knots", "flared, half flap", "Brakes release, anti skid- off, attempt braking, hook down 1000 feet prior", "Altitude descend below 25K, AIR FLOW knob off"], "ans": 2, "expl": "Quizlet set 783149178, card #31 (verbatim). NOTE: Older gouge — differs. IC 21/43 BRAKE FAILURE – ASHORE/SKID: go around if flyaway airspeed available; otherwise 2. Throttle – idle 3. Brakes – release 4. Anti-skid switch – off 5. Brakes – apply gradually; if still unavailable 6. Hook – down 7. Parking brake handle – pull."}, {"q": "AC INV light", "opts": ["Airspeed below 200 knots", "Momentarily set Display Power switch to RESET", "Reset number 1 and 2 inverters", "Pull Emerg. Oxygen actuator, throttle off, GTS button, idle"], "ans": 2, "expl": "Quizlet set 783149178, card #32 (verbatim)."}, {"q": "Hook light still illum after hook should be down", "opts": ["Hook is not fully extended", "Hook down, land 50 ft prior", "Rudder (counter swerve), Anti-skid off", "flared, half flap"], "ans": 0, "expl": "Quizlet set 783149178, card #33 (verbatim)."}, {"q": "Anti-skid failure", "opts": ["Idle, extend, brakes as req, hook 1000 ft prior", "Release brakes, anti-skid off, brakes as required", "Divert to shore, min. descent rate landing with arresting wires removed", "No load shedding (eliminates 3 out 4 answers)"], "ans": 1, "expl": "Quizlet set 783149178, card #34 (verbatim). NOTE: IC 21/43 BRAKE FAILURE – ASHORE/SKID: Throttle – idle, Brakes – release, Anti-skid switch – off, Brakes – apply gradually."}, {"q": "28 VDC gen bus failure will not remove", "opts": ["Primary stabilator trim", "Emergency engine shutdown", "Eject", "Hook down, land 50 ft prior"], "ans": 0, "expl": "Quizlet set 783149178, card #35 (verbatim)."}, {"q": "Fire light in flight", "opts": ["All the above", "Brakes release, anti skid- off, attempt braking, hook down 1000 feet prior", "Idle, instruments check, secondary-eject", "10,000"], "ans": 2, "expl": "Quizlet set 783149178, card #36 (verbatim). NOTE: Older gouge — differs. IC 21/43 FIRE WARNING LIGHT in-flight: 1. Throttle – minimum for safe flight 2. Check for secondary indications; eject if fire confirmed or flight control lost; else land as soon as possible."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

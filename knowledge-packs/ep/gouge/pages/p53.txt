@@ -1,0 +1,62 @@
+# Page 53 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+ae :
+> 90. Pitot Static provides what flight information?
+> Airspeed, Barometric Altitude
+oe Si. What page is initiated on power up?
+Menu a
+> 92. How do ZT knew when alignment is completed?
+ba Velocity Vector appears in HUD
+v 93. What are the two types of Bit Displays? eran Hing.
+> WoW and woftw _—
+2 94. What does OPGO mean.
+> ; Only one channel of MUX Bus is Tx properly
+95. What must be done to display GS/LOC needles?
+Box ILS on the H.S.I. (must be in CDI not Planometric)
+96. What are the CDI deflections? tom JO - vadale WOR O> bewnvg [ne S
+4 miles for CL on WYPT/WOS Gear Up
+.3 miles for CL on WYPT/WOS Gear Down
+cd 2.5 degrees for LOC (bimeis of ILS Useally 2.5)
+97, IFF has antennas. Which antenna signal is selected? in Ow wide
+Two. Strongest.
+pl 98, Which IFF Mode transmits altitude encoding?
+Mode 3C
+> 99. What is the normal distribution of ECS airflow?
+60% for ventilation and 40% to Defog
+> 100. When and what does IPROV do?
+| With gear down, improves ECS efficiency .
+101. Ram Air opens with what? .
+> Wow
+102. What does AV HOT mean? (on“f
+ECS cool temp exceeds 67 deg C. Must cool before takeoff
+; 103. What is the airflow distribution in Detog? ;
+. 40% Ventillation and 60% Defog
+» 104. What does Max Defog do?
+4 Increases Airflow at same distribution ration (60/40)
+105. What does CABIN ALT Light mean?
+% Cd
+> in Altitude exceeded 24,500 +/-500 or Overpress/Overheat of
+ld Air Unit (CAU) of 500 degree on compressor outlet or Z50—
+cS 106. What does OXYGEN light mean? 3
+a f OXYGEN switch off,202 concentration below 95%, exceeds 250
+degrees at temp switch.
+107. If MDC fails, will seat still breach canopy?
+od Yes, canopy penetrators will fracture canopy glass.
+> 108. Where do the inputs for ejection modes come from?
+4 Ejection sensor on seat
+A "409. What does CANOPY light mean?
+Canopy latch is not in the latched and locked positicn.
+110. When do you get the CANOPY light and MASTER CAUTION light?
+4 With the canopy unsafe and the power set to above 95%
+111. Electrical boost pumps are located where? What function do they
+d provide?
+) nn comm aor Located: in. the negative.G.compartment..of..the.collector_tank.» 02.
+a Provide fuel pressure for negative G flight.
+4 112. LP and HP pumps are powered by what?
+] External Drive Gear Box
+4 113. If FIRE light comes on and goes out, what should be done?
+4 Check light switch for continiuity
+> 114. In event of HYD failure, will ANTI-SKID or NWS lights illuminate?
+od CARIN ALT WAN LIGHT - Perea
+AN HOT baba “7GPTC emet ont GROYNC
+]

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<script src="auth.js"></script>
 <title>ENG0116 Egress System Malfunctions — T-45 Quiz</title>
+<script src="auth.js"></script>
 <style>
 :root {
   --bg: #0f1419;
@@ -80,6 +80,7 @@ header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
   background: #31465f; display: grid; place-items: center;
   font-weight: 700; font-size: 0.85rem;
 }
+.opt span + span, #q-text { white-space: pre-line; }
 .opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
 .opt.correct .letter { background: var(--good); color: #062; }
 .opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
@@ -230,7 +231,7 @@ function choose(i, btn) {
 
 function next() {
   if (!answered) return;
-  if (idx >= QUESTIONS.length - 1) {
+  if (idx >= queue.length - 1) {
     showResults();
     return;
   }

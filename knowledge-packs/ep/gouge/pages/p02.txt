@@ -1,0 +1,25 @@
+# Page 2 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+28) T-45 upright spin NOT characterized by — recovery AOA increasing past 5 units
+
+29) High speeds and low speeds characteristics improved by- vortex generators
+
+30) Spiral divergence in clean configuration is possible- (False, need asymmetric load)
+
+31) Flap extension plane will- balloon, settle, stability reduction
+
+32) Pulling out of a dive decelerating .95 -.85 T-45 will pitch up- (True)
+
+33) Max abort speed- commence stop on remaining runway without using over run or arresting gear.
+34) Mach number- ratio of TAS/SOS
+
+35) Two pilots shift CG forward and more stable
+
+36) Heavy wing- % lateral stick
+
+37) Optimum AOA- 17 units |
+
+38) CG location and stability effected by — Consumption of fuel/ raising lowering landing gear
+39) Disadvantage swept wing- stalls high AOA with Coefficient of lift reduced
+
+40) Inverted spin- 0 AOA, neg G., turn needle in direction of spin

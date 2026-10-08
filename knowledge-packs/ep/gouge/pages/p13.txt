@@ -1,0 +1,34 @@
+# Page 13 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+When planning for a direct flight btw two high alt NAVA!Ds in the jet route structure, do no exceed the
+normal anticipated interference free reception range of each NAVAID, whichis ___
+
+- 130 NM
+
+Planning for a flight from NAS Jax to BAM ETA 1500Z and alt of Columbus AFB
+
+Your filed destination is NMM with arrived weather best to be 300-1. The alt field has PAR and TCN.
+The approach min weather required at the alt would be TCN min plus 300-1
+
+If you experience radio failure enroute in IMC, you should maintain. ...the last assigned alt but no lower
+than the min enroute alt for each route segment.
+
+You are halfway enroute filed destination on extended IFR flight at FL 290. Radio fails, in VMC and dest
+has marginal weather. If you determine you can maintain VMC in fit...squawk 7600 maintain VMC and
+something traffic pattern and land at a suitable airport.
+
+Which publication would provide information on preferred IFR routing... FLIP AP/1
+
+You are cleared to the PIGMY IAF @ NMM with EFC 1610Z. Presently at or above 14K. enroute you
+experience radio failure so as to depart PIGMY at 1610Z or after descend and commence approach.
+
+30 miles SE of MGM at FL350 you are directed to change freq. unable on assigned freq attempt to contact
+center on...319.1 CATC center alt subdivided.
+
+For a canceled DP to be reinstated ATC must...indicate the portion of the DP routing that still applies and
+reinstated altitude restrictions.
+
+You have been cleared via DP. After takeoff, control advises climb and maintain FL350...
+
+PAR pickup question last comm. Pass through highest initiaded penetration alt of the LAFs at airfield.
+High alt NAVAID 130

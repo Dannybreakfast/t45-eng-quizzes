@@ -1,0 +1,56 @@
+# Page 42 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+»
+
+The SLATS caution light is illuminated if 1. Slats not in selected position, 2. Split slats, ~
+3. Slats selected above 217 knots 4. Stats extuded then accelerate pests 217
+SPEED BRAKE System (NATOPS 2.8) bos
+380 knots speed at which speed brakes blow back begins a
+340 knots speed above which speed brakes may not fully extend |
+60° full speed brake deflection pe
+LANDING GEAR System (NATOPS 2.9) q
+200 knots maximum gear extension/retraction speed ‘al
+15 sec approximate landing gear extension time S
+10 sec approximate landing gear retraction time |
+2.2-2.5" inain landing gear oleo limits le
+3.25" approximate nose gear oleo exposed (NATOPS) ke
+7/8-1 7/8" approximate main landing gear oleo exposed (NATOPS) q
+The main landing gear are type units. (Trailing arm suspension) L
+The caution light is illuminated whenever the landing gear doors are not up and locked (DOOR) <
+T/F the light in the gear handle will illuminate in the DOWN position if the gear is down and b
+locked, and the gear doors are not up and locked. “
+
+(FALSE, gear door status doesn't matter when the handle is down) '
+
+T/F The light in the gear handle will illuminate in the UP position if the gear is down and 4
+locked, and the gear doors are ot up and locked. a
+
+(TRUE, gear door status does matter when the handle is in the up Position) €
+
+Conditions for WHEELS warning light illumination 1. LDG gear handle is not set to DOWN position, d
+2. N2 rpm below 95% and either, - ,
+
+3a. altitude is less than 7200' msl with airspeed below 170 knots, OR [
+
+3b. SLATS/FLAPS lever not in up position. a
+
+TF when lowering the gear with the EMER GEAR handle, all of the gear doors remain open |
+(FALSE, 28 VDC services bus powers the emergency nose landing gear door actuator |
+
+bringing the nose gear doors to a near closed position.) 4
+
+b
+
+NOSE WHEEL STEERING System (NATOPS 2.10) ¢
+65° maximuin nose wheel deflection with high gain J
+20° maximum nose wheel deflection with LAUNCH BAR in EXTEND and G
+NWS button depressed L
+
+12° maximum nose wheel deflection with low gain u
+10 knots maximum taxi speed with high gain NWS [
+Nose wheel steering is powered off the bus and the HYD 1 system (28VDC Essential Services) (|
+TF On landing, the NWS system is engaged with weight on wheels from just one main gear b
+and nose wheel, and will remain engaged with weight on only one main gear (TRUE) -
+
+T/F In order to use NWS with LAUNCH BAR in Extend, the NWS button must be depressed uy
+The NOSE WHEEL STR caution light is illuminated if 1. Nose wheel moves away from commanded [

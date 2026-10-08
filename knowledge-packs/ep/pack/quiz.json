@@ -1,0 +1,1421 @@
+[
+ {
+  "q": "Per the current IC 21/43 EMERGENCY SHUTDOWN/EGRESS procedure, what is step 1?",
+  "opts": [
+   "Throttle – Off",
+   "Fuel Shutoff Handle – Pull",
+   "Engine switch – Off",
+   "Batt switches – Off"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43: 1. Throttle – Off 2. Engine switch – Off 3. Fuel Shutoff Handle – Pull 4. Ejection Seats – Safe 5. Batt switches – Off."
+ },
+ {
+  "q": "Per IC 21/43 EMERGENCY SHUTDOWN/EGRESS, what is step 4?",
+  "opts": [
+   "Ejection Seats – Safe",
+   "Batt switches – Off",
+   "Engine switch – Off (both cockpits)",
+   "Emergency Egress"
+  ],
+  "ans": 0,
+  "expl": "Current step 4 is Ejection Seats – Safe, then 5. Batt switches – Off. Older gouge (p.6 / Quizlet EP1 #22) lists 'Throttle OFF, Engine Switch OFF, Fuel Shutoff PULL, BATT OFF, Emergency Egress' with NO seats step — older gouge, differs."
+ },
+ {
+  "q": "Which sequence matches the current IC 21/43 EMERGENCY SHUTDOWN/EGRESS?",
+  "opts": [
+   "Throttle Idle → Engine switch Off → Batt switches Off → Fuel Shutoff Handle Pull → Egress",
+   "Engine switch Off → Throttle Off → Fuel Shutoff Handle Pull → Battery switches Off → Egress",
+   "Throttle Off → Fuel Shutoff Handle Pull → Battery switches Off → Egress",
+   "Throttle Off → Engine switch Off → Fuel Shutoff Handle Pull → Ejection Seats Safe → Batt switches Off"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43 order. Older gouge EP 11X (p.77) on-deck fire/TP HOT: Throttle Off, Fuel Shutoff Pull, Battery Off, Egress (no engine switch, no seats) — older gouge, differs."
+ },
+ {
+  "q": "FIRE warning light on the ground (with or without secondary indications). Per IC 21/43 you:",
+  "opts": [
+   "Engine switch – Off only, then taxi clear",
+   "Execute emergency shutdown / egress",
+   "Transmit to tower, then shut down",
+   "Throttle – minimum for safe flight and check secondaries"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43 FIRE WARNING LIGHT – GROUND: 1. Execute emergency shutdown/egress. Gouge p.5 #11: FIRE light requires immediate shutdown on deck without secondary indications; p.60 #25: no comms in procedure."
+ },
+ {
+  "q": "TP HOT caution light on the deck. Per IC 21/43:",
+  "opts": [
+   "Execute emergency shutdown / egress",
+   "Throttle – minimum for safe flight",
+   "Engine switch – Off only",
+   "Throttle – idle and monitor EGT"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 TP HOT CAUTION LIGHT – GROUND: execute emergency shutdown/egress. Gouge p.59 #7 / p.64 #13: same procedure as FIRE light on deck."
+ },
+ {
+  "q": "TP HOT caution light in flight (e.g., cruising at 15K). Per IC 21/43:",
+  "opts": [
+   "Throttle – minimum for safe flight",
+   "Eject",
+   "Throttle – MRT and climb",
+   "Execute emergency shutdown / egress"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 TP HOT – IN-FLIGHT: 1. Throttle – minimum for safe flight. Gouge p.5 #12 / Quizlet EP1 #12: 'Throttle idle (min safe flight)'."
+ },
+ {
+  "q": "The TP HOT light is a ___ light; the FIRE light is a ___ light.",
+  "opts": [
+   "Both are warning (red) lights",
+   "Advisory (green); warning (red)",
+   "Warning (red); caution (yellow)",
+   "Caution (yellow); warning (red)"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.60 #26: TP HOT is a CAUTION light (yellow), not a WARNING light (red) — RTFQ."
+ },
+ {
+  "q": "TP HOT caution light firewire threshold vs. FIRE warning light threshold:",
+  "opts": [
+   "250°C for both",
+   "150°C for TP HOT; 300°C for FIRE",
+   "300°C for TP HOT; 150°C for FIRE",
+   "150°C for TP HOT; 450°C for FIRE"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.37 / p.54 #123–125: FIRE and GTS FIRE = 300°C outside the container; TP HOT = 150°C."
+ },
+ {
+  "q": "GTS FIRE warning light IN FLIGHT. Per IC 21/43, step 1 is:",
+  "opts": [
+   "Fuel Shutoff Handle – Pull",
+   "Engine switch – Off",
+   "Eject",
+   "Throttle – Off"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43 GTS FIRE WARNING LIGHT – IN-FLIGHT: 1. Engine switch – off. Gouge agrees (p.59 #12, p.65: 'Engine switch – Off' first)."
+ },
+ {
+  "q": "GTS FIRE warning light ON THE GROUND. Per IC 21/43:",
+  "opts": [
+   "Execute emergency shutdown / egress",
+   "Press the GTS button to clear the fire",
+   "Throttle – idle and wait 45 seconds",
+   "Engine switch – Off, then continue taxi"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 GTS FIRE – GROUND: execute emergency shutdown/egress. Older gouge EP 11X p.76 #30 lists 'Engine switch – Off, Throttle – Off, Fuel Shutoff – Pull, Battery – Off, Egress' (engine switch first, no seats) — older gouge, differs."
+ },
+ {
+  "q": "Per the gouge (6X corrections), the GTS FIRE warning light illuminates because:",
+  "opts": [
+   "There is an overtemperature condition in the GTS compartment",
+   "There is a fire in the GTS burner can",
+   "GTS oil pressure is low",
+   "The GTS has overspeed"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.62 (E): overtemperature in the GTS compartment (not a fire in the burner can). p.54 #124: temp outside GTS container exceeds 300°C."
+ },
+ {
+  "q": "If the FIRE light comes on and then goes out, the gouge says this means:",
+  "opts": [
+   "The fire is confirmed — eject",
+   "Firewire temperature dropped below 300°C (fire out) — or burn-through",
+   "The TP HOT sensor has taken over",
+   "The light bulb failed"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.3: 'if the fire light comes on then turns off = temp below 300 or burn through.' p.37: firewire must remain below 300°C for 45 sec for the light to go out. p.53 #113: check light/continuity."
+ },
+ {
+  "q": "Per IC 21/43, the first step of CLEAR ENGINE PROCEDURE / ABNORMAL START / TP FIRE ON SHUTDOWN is:",
+  "opts": [
+   "Throttle – idle",
+   "Engine switch – off",
+   "Throttle – off",
+   "GTS button – press"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43: 1. Throttle – off. Gouge p.77 #36 and p.59 #11 (overspeed on start: Throttle Off, not Throttle Idle)."
+ },
+ {
+  "q": "Engine fails to light off within 15 seconds after moving the throttle to IDLE. This is a:",
+  "opts": [
+   "Hot start",
+   "Wet start",
+   "Compressor stall",
+   "Hung start"
+  ],
+  "ans": 1,
+  "expl": "Quizlet EP1 #1 / gouge p.5 #1, p.62 (G); p.56 #168: wet start = FF rises normally but no EGT/RPM within 15 s of idle."
+ },
+ {
+  "q": "RPM stagnates around 45% while EGT continues to rise during start. This is a:",
+  "opts": [
+   "Normal start — wait 30 s",
+   "Hot start",
+   "Hung start",
+   "Wet start"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.4 / p.56 #168: hung start = RPM stuck ~45%, EGT rising."
+ },
+ {
+  "q": "Hot start (gouge definition):",
+  "opts": [
+   "RPM stagnates at 45%",
+   "No light-off within 15 seconds",
+   "FF and RPM normal, but EGT rapidly to 550°C or to 570°C for more than 10 seconds",
+   "EGT exceeds 450°C at idle for 6 seconds in flight"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.56 #168. Ground start limit 550°C (570°C max for 10 s), p.37/p.56."
+ },
+ {
+  "q": "Overspeed during engine start — first step:",
+  "opts": [
+   "Engine switch – start",
+   "GTS button – press and hold",
+   "Throttle – off (clear engine procedure)",
+   "Throttle – idle"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.59 #11, p.65 'OVERSPEED START – THROTTLE OFF'; matches IC 21/43 Clear Engine step 1."
+ },
+ {
+  "q": "Per IC 21/43 ENGINE FAILURE: if below ___ AGL and below ___ KIAS, eject.",
+  "opts": [
+   "2,500 feet AGL and 200 KIAS",
+   "1,500 feet AGL and 250 KIAS",
+   "1,000 feet AGL and 150 KIAS",
+   "1,500 feet AGL and 180 KIAS"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43: If below 1,500 feet AGL and airspeed below 180 KIAS: 1. Eject. Otherwise: 2. Execute airstart. Gouge p.4, p.7 #2, p.60 #18, p.74 #10."
+ },
+ {
+  "q": "You just flamed out at 1,000 ft AGL and 150 KIAS. You should:",
+  "opts": [
+   "Execute an immediate airstart",
+   "Eject",
+   "Zoom climb then airstart",
+   "Execute a windmill airstart"
+  ],
+  "ans": 1,
+  "expl": "Below 1,500 ft AGL AND below 180 KIAS → Eject (IC 21/43 ENGINE FAILURE; Quizlet EP1 #8)."
+ },
+ {
+  "q": "Per IC 21/43 AIRSTART, step 1 is:",
+  "opts": [
+   "Emergency oxygen green ring(s) – pull",
+   "Throttle – idle",
+   "GTS Start Button – press",
+   "Throttle – off"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 AIRSTART: 1. Emergency oxygen green ring(s) – pull 2. Throttle – off, then simultaneously 3. GTS Start Button – Press and 4. Throttle – Idle. Older gouge EP 11X p.77 #33 starts with 'Throttle – Off' (no O2 step) — older gouge, differs. Quizlet EP2 #14 does include 'Pull Emerg. Oxygen actuator' first."
+ },
+ {
+  "q": "Per IC 21/43 AIRSTART, which two steps are performed simultaneously?",
+  "opts": [
+   "Throttle – Off and Emergency oxygen green ring – pull",
+   "GTS Start Button – Press and Engine switch – Off",
+   "GTS Start Button – Press and Throttle – Idle",
+   "Engine switch – Start and Throttle – MRT"
+  ],
+  "ans": 2,
+  "expl": "Steps *3 and *4: GTS Start Button – Press / Throttle – Idle. (Older gouge says 'GTS – Press and Hold'.)"
+ },
+ {
+  "q": "Per IC 21/43 AIRSTART, the airstart is considered unsuccessful if:",
+  "opts": [
+   "No relight within 30 seconds after moving throttle to idle, or stabilized EGT exceeds limits",
+   "RPM fails to reach 45% within 45 seconds",
+   "EGT exceeds 450°C at any time",
+   "No relight within 15 seconds after pressing GTS"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43: If unsuccessful (no relight within 30 seconds after moving throttle to idle or stabilized EGT exceeds limits): 5. Throttle – off (allow 30 seconds to drain if practical)."
+ },
+ {
+  "q": "Per IC 21/43 AIRSTART, you may repeat steps *3 and *4 if above:",
+  "opts": [
+   "20% RPM and 200 KIAS",
+   "13% RPM and 180 KIAS",
+   "13% RPM and 250 KIAS",
+   "45% RPM and 250 KIAS"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43: If above 13% RPM and 250 KIAS, repeat steps *3 and *4. Gouge windmill airstart: <25K, 13% N2 min, 250 KIAS (p.7 #24, p.67, p.76 #26)."
+ },
+ {
+  "q": "Windmill airstart envelope per the gouge:",
+  "opts": [
+   "Any altitude, any airspeed",
+   "Below 35,000 ft MSL, 45% N2, 180 KIAS",
+   "Below 15,000 ft MSL, less than 20% RPM",
+   "Below 25,000 ft MSL, minimum 13% N2, recommended 250 KIAS or greater"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.58, p.67, p.73 #35, p.76 #26; Quizlet EP2 #24."
+ },
+ {
+  "q": "Assisted (GTS) airstart envelope per the gouge handwritten notes:",
+  "opts": [
+   "No altitude restriction",
+   "Above 20,000 ft with more than 45% RPM",
+   "Below 25,000 ft MSL with at least 13% N2",
+   "Below 15,000 ft MSL with less than 20% RPM (GTS light on)"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.58: ASSISTED – <15,000' MSL, <20% RPM – GTS LT ON. Immediate airstart: any altitude."
+ },
+ {
+  "q": "Which airstart has no altitude restriction (per the gouge)?",
+  "opts": [
+   "Manual fuel airstart",
+   "Windmill airstart",
+   "Assisted airstart",
+   "Immediate airstart"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.60 #29, p.58: IMMEDIATE – ANY ALT."
+ },
+ {
+  "q": "Engine fire in flight (fire confirmed). Do you attempt an airstart?",
+  "opts": [
+   "Yes — immediate airstart",
+   "Yes — after 30 seconds",
+   "No — airstart is not performed for a fire",
+   "Yes — windmill airstart only"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.61 'No airstart – FIRE in FLT'; p.65 'FIRE WARNING LIGHT – DO NOT DO AIRSTART'."
+ },
+ {
+  "q": "Compressor stall vs. flameout: for a compressor stall do you pull emergency O2 and perform an airstart?",
+  "opts": [
+   "Only above 25,000 ft",
+   "Yes — pull O2 then airstart",
+   "No — throttle idle first; airstart/emergency O2 are flameout actions",
+   "Yes — airstart only"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.65: STALL – first step Throttle – Idle; do you perform airstart – NO; pull emerg O2 – NO. FLAMEOUT – you do those first."
+ },
+ {
+  "q": "Audible bang/pops, EGT increasing, RPM decreasing indicate:",
+  "opts": [
+   "Flameout",
+   "Hung start",
+   "Engine seizure",
+   "Compressor (engine) stall"
+  ],
+  "ans": 3,
+  "expl": "Quizlet EP1 #2; gouge p.3, p.60 #17, p.61 (FF same)."
+ },
+ {
+  "q": "Per IC 21/43 COMPRESSOR STALL OR EGT/RPM WARNING LIGHT, step 1 is:",
+  "opts": [
+   "Throttle – idle",
+   "EGT/RPM – check",
+   "Throttle – off",
+   "Controls – neutralize"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43: 1. Throttle – idle 2. EGT/RPM – check."
+ },
+ {
+  "q": "Per IC 21/43 COMPRESSOR STALL OR EGT/RPM WARNING LIGHT, step 2 is:",
+  "opts": [
+   "Emergency oxygen green ring(s) – pull",
+   "Throttle – off",
+   "EGT/RPM – check",
+   "Controls – neutralize"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43 step 2: EGT/RPM – check. Older gouge (p.59 #2, p.64 #7, Quizlet EP2 #18) 'Throttle Idle, Controls Neutralize, EGT/RPM Monitor' — older gouge, differs (no 'controls neutralize' step in the current list)."
+ },
+ {
+  "q": "Per IC 21/43, after a compressor stall, if EGT is greater than 450°C for more than 6 seconds at idle you:",
+  "opts": [
+   "Execute engine failure procedure",
+   "Throttle – slowly advance to minimum for safe flight",
+   "Select manual fuel",
+   "Continue — this is normal"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 step 3. Gouge p.54 #120: locked in stall = EGT over 450 for 6 seconds after selecting idle."
+ },
+ {
+  "q": "Per IC 21/43, after a compressor stall, if EGT responds normally you:",
+  "opts": [
+   "Throttle – MRT and climb",
+   "Throttle – off and airstart",
+   "Throttle – slowly advance to minimum for safe flight; minimize throttle movements",
+   "Keep throttle at idle and land immediately"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43 steps 4–5."
+ },
+ {
+  "q": "The EGT/RPM warning light illuminates at:",
+  "opts": [
+   "EGT 610°C or N2 95%",
+   "EGT 650 ± 8°C or N1 112.4 ± 1%",
+   "EGT 450°C or N1 100%",
+   "EGT 600°C or N2 104%"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.3, p.37, p.54 #121."
+ },
+ {
+  "q": "Per IC 21/43 ABORT, step 2 is:",
+  "opts": [
+   "Hook – down",
+   "Anti-skid switch – off",
+   "Speed brakes – retract",
+   "Speed brakes – extend"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43 ABORT: 1. Throttle – idle 2. Speed brakes – extend 3. Brakes – apply 4. Hook – down (if required) 5. Brakes – release prior to crossing the arresting gear. Older gouge p.5 #9 / Quizlet EP1 #9 'BOARDS retract' — older gouge, differs (Quizlet EP2 #25 says 'extend')."
+ },
+ {
+  "q": "Per IC 21/43 ABORT, the final step is:",
+  "opts": [
+   "Throttle – off",
+   "Parking brake – pull",
+   "Hook – down 1,000 ft prior to the gear",
+   "Brakes – release prior to crossing the arresting gear"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43 step 5. The gouge abort items stop at 'hook (1000 ft prior)'."
+ },
+ {
+  "q": "During an aborted takeoff with NO blown tire, the anti-skid switch should be:",
+  "opts": [
+   "Turned OFF before braking",
+   "Turned OFF after stopping",
+   "Left ON (do not turn anti-skid off)",
+   "Cycled OFF then ON"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.62 (C): for an aborted T/O (assuming no blown tire) DO NOT TURN ANTISKID OFF."
+ },
+ {
+  "q": "Per IC 21/43 FIRE WARNING LIGHT on TAKEOFF, if fire is confirmed and you are unable to abort:",
+  "opts": [
+   "Eject",
+   "Continue the takeoff and land as soon as possible",
+   "Throttle – minimum for safe flight",
+   "Execute emergency shutdown on the runway"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43: If decision is made to stop: 1. Abort. If fire is confirmed and unable to abort: 2. Eject. Gouge p.60 #19, p.66 #21, p.74 #11."
+ },
+ {
+  "q": "Per the gouge, the first indication of a fire on takeoff is:",
+  "opts": [
+   "Rising EGT",
+   "The FIRE light",
+   "Increased fuel flow",
+   "Smoke in the cockpit"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.3 and p.47 (TRUE)."
+ },
+ {
+  "q": "Maximum abort speed is defined as the speed from which you can:",
+  "opts": [
+   "Stop using the arresting gear",
+   "Stop within 1,000 ft",
+   "Rotate and clear a 50 ft obstacle",
+   "Commence a stop on the remaining runway without using the overrun or arresting gear"
+  ],
+  "ans": 3,
+  "expl": "Aero gouge p.2 #33. (Aero notes: 'Max abort 125 – not 129'.)"
+ },
+ {
+  "q": "Per IC 21/43 EMERGENCY CATAPULT FLYAWAY, steps 1 and 2 are:",
+  "opts": [
+   "Gear – up; maintain 28 units AOA",
+   "Throttle – MRT; maintain 24 units AOA",
+   "Throttle – MRT; maintain 17 units AOA",
+   "Throttle – idle; maintain 17 units AOA"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43: 1. Throttle – MRT 2. Maintain 24 units AOA; if engine failed or unable to stop settle: 3. Eject. Gouge: 'throttle check full forward, 24 AOA'."
+ },
+ {
+  "q": "Engine failure during the catapult stroke. Per IC 21/43:",
+  "opts": [
+   "Throttle – MRT and maintain 24 units AOA",
+   "Ditch straight ahead",
+   "Immediate airstart",
+   "Eject"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43 EMERGENCY CATAPULT FLYAWAY: if engine failed or unable to stop settle – Eject. Gouge adds: if unable to eject, ditch straight ahead (p.5 #15, p.59 #6)."
+ },
+ {
+  "q": "Per the gouge, ditching configuration is:",
+  "opts": [
+   "Gear up, flaps up",
+   "Gear up, flaps full down",
+   "Gear down, flaps half",
+   "Gear down, flaps up"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.59 #8, p.65, p.61."
+ },
+ {
+  "q": "Launch bar warning light after a cat launch (per the gouge):",
+  "opts": [
+   "Eject",
+   "Make an arrested landing aboard ship",
+   "Divert to a field and make a flared/minimum-descent-rate landing with the short-field arresting gear removed",
+   "Raise the gear to retract the launch bar"
+  ],
+  "ans": 2,
+  "expl": "Quizlet EP2 #29; gouge p.75 #20. p.72: L-BAR extended → land past arrest gear."
+ },
+ {
+  "q": "Launch bar actuation per the gouge systems notes:",
+  "opts": [
+   "Extended (lowered) by HYD 1, retracted (raised) by a mechanical spring; electrically controlled",
+   "Extended pneumatically, retracted by HYD 1",
+   "Extended mechanically, retracted hydraulically",
+   "Extended and retracted by HYD 2"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.3, p.54 #140 and hw correction p.60: electrically controlled, hydraulically extended, mechanically retracted. NOTE: Quizlet EP1 #14 / gouge p.5 #14 says 'mechanically extended, hydraulically retracted' — conflicts with the other gouge pages."
+ },
+ {
+  "q": "Per IC 21/43 FIRE WARNING LIGHT IN-FLIGHT, step 1 is:",
+  "opts": [
+   "Throttle – minimum for safe flight",
+   "Emergency oxygen green ring(s) – pull",
+   "Throttle – off",
+   "Eject"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 IN-FLIGHT: 1. Throttle – minimum for safe flight 2. Check for secondary indications of fire. Gouge p.60 #22 'first step is Throttle idle (min for safe flight)'."
+ },
+ {
+  "q": "Per IC 21/43 FIRE WARNING LIGHT IN-FLIGHT, after checking for secondary indications, if fire is confirmed or flight control is lost:",
+  "opts": [
+   "Eject",
+   "Prepare for a flameout approach",
+   "Throttle – off and Fuel Shutoff Handle – pull",
+   "Land as soon as practical"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 step 3. Older gouge EP 11X p.76 #31 adds O2 pull, Throttle Off, Fuel Shutoff Pull, then eject / prepare for controlled ejection / flameout approach — older gouge, differs."
+ },
+ {
+  "q": "Per IC 21/43 FIRE WARNING LIGHT IN-FLIGHT, if fire is NOT confirmed and control effectiveness remains:",
+  "opts": [
+   "Throttle – off and prepare for flameout approach",
+   "Eject",
+   "Land as soon as possible",
+   "Prepare for controlled ejection"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43 step 4. The older gouge has no 'land as soon as possible' branch."
+ },
+ {
+  "q": "Secondary indications of an engine fire (per the gouge):",
+  "opts": [
+   "Generator warning light",
+   "Hydraulic pressure fluctuation",
+   "Decreasing EGT and RPM",
+   "Rising EGT, increased fuel flow (plus the FIRE light) — all of the above"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.65: SECONDARY INDICATIONS OF FIRE: EGT ↑, FUEL FLOW ↑, FIRE LIGHT; p.59 #13 (startup: all of the above); p.47."
+ },
+ {
+  "q": "Cruising at 23K you get a FIRE light with secondary indications. Answer per the gouge/Quizlet (consistent with IC 21/43 'fire confirmed'):",
+  "opts": [
+   "Prepare for controlled ejection",
+   "Immediate airstart",
+   "Land as soon as possible",
+   "EJECT (not prepare for controlled ejection)"
+  ],
+  "ans": 3,
+  "expl": "Quizlet EP1 #18 / gouge p.5 #18; IC 21/43: if fire confirmed – Eject."
+ },
+ {
+  "q": "Per IC 21/43 ELECTRICAL FIRE, the immediate action is:",
+  "opts": [
+   "Emergency oxygen green ring(s) – pull",
+   "Batt switches – off",
+   "Gen switch – off",
+   "Throttle – off"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43 ELECTRICAL FIRE: 1. Gen switch – off. Quizlet EP2 #3 matches."
+ },
+ {
+  "q": "Per IC 21/43 TOTAL ELECTRICAL FAILURE, the memory item is:",
+  "opts": [
+   "Gen switch – reset",
+   "Emergency oxygen green ring(s) – pull",
+   "Landing gear – emergency extend",
+   "Shed unnecessary electrical load"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43: 1. Emergency oxygen green ring(s) – pull. Gouge EP 11X p.68/p.74 starts the same, then VMC, land as soon as practical, reset gen/batts, emergency gear, no-flap/no-slat arrested landing."
+ },
+ {
+  "q": "Total electrical failure: load shedding is:",
+  "opts": [
+   "Not a factor / not necessary",
+   "Required only above 25,000 ft",
+   "Required immediately",
+   "Required after 12 minutes"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.71 #28, p.74 #2, p.7 #26 / Quizlet EP2 #26: no load shedding (eliminates 3 of 4 answers)."
+ },
+ {
+  "q": "Total electrical failure landing plan (gouge EP 11X):",
+  "opts": [
+   "Long-field arrestment with NWS",
+   "Full-flap approach using emergency flaps",
+   "No-flap/no-slat approach and arrested landing (short-field trap recommended — no NWS)",
+   "Half-flap flared landing with NWS"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.68 #2, p.74 #2; p.3: no emergency flaps with total electrical failure; p.51 #52: only the gear can be extended manually."
+ },
+ {
+  "q": "With a complete electrical failure, what can still be extended manually?",
+  "opts": [
+   "Speed brakes and hook only",
+   "Landing gear only (not the flaps)",
+   "Landing gear and flaps",
+   "Flaps only"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.51 #52 (False — only the gear)."
+ },
+ {
+  "q": "First step for a GENERATOR warning light (gouge EP 11X):",
+  "opts": [
+   "Confirm engine operation",
+   "Display power – ORIDE",
+   "GEN switch – off",
+   "Batt switches – off"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.71 #16, p.75 #15a, Quizlet EP2 #30."
+ },
+ {
+  "q": "Generator failure indications:",
+  "opts": [
+   "Master caution, tone, GEN warning light, loss of right MFD and HUD",
+   "AC INV light only",
+   "Loss of all trim including primary stab trim",
+   "Loss of TACAN and both MFDs"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.3, p.52 #72. TACAN remains (p.4)."
+ },
+ {
+  "q": "To keep the left MFD powered during a generator failure:",
+  "opts": [
+   "GEN switch – reset and hold",
+   "Batt switches – off",
+   "Display power – reset",
+   "DISPLAY POWER switch – ORIDE"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.4, p.70/p.75 #15i; p.51 #58: LT MFD reverts to ADI, out after 2 minutes unless ORIDE."
+ },
+ {
+  "q": "With a generator failure (28 VDC generator bus lost), which trim remains?",
+  "opts": [
+   "Aileron and rudder trim",
+   "Standby stabilator trim only",
+   "Primary stabilator trim only",
+   "No trim at all"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.8 #35, p.76 #25, p.52 hw; p.55 #162: lose ail/rud/stby stab trim, trim indicators, HUD, RT MFD."
+ },
+ {
+  "q": "Battery endurance after generator failure:",
+  "opts": [
+   "12 minutes on two batteries",
+   "45 minutes on two batteries",
+   "9 minutes on one battery",
+   "27 minutes on two good batteries (12 minutes on one)"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.51 #62."
+ },
+ {
+  "q": "Overvoltage unit takes the generator offline at:",
+  "opts": [
+   "25 VDC",
+   "32.5 VDC",
+   "28.2 VDC",
+   "30.2 VDC"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.3, p.47 #14, p.51 #57; undervoltage unit deenergizes non-essential buses below 25 VDC."
+ },
+ {
+  "q": "Single AC inverter failure results in:",
+  "opts": [
+   "AC INV caution light, tone, and loss of non-essential AC (VOR/ILS/MB/RADALT)",
+   "Loss of TACAN",
+   "GEN warning light",
+   "Loss of all AC power"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.3, p.31 #20, p.52 #64, #69; with one inverter failed you still have TACAN azimuth (p.52 #67)."
+ },
+ {
+  "q": "With both inverters failed, what navigation is left?",
+  "opts": [
+   "VOR/ILS",
+   "GPS waypoint steering",
+   "TACAN azimuth",
+   "PAR approaches only"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.52 #68; p.69: DUAL FAIL → TCN azimuth lost."
+ },
+ {
+  "q": "AC INV caution light (per gouge/Quizlet EP2 #32):",
+  "opts": [
+   "Land as soon as possible",
+   "Reset number 1 and 2 inverters",
+   "GEN switch – off",
+   "Display power – reset"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.8 #32."
+ },
+ {
+  "q": "Approach idle function with total electrical failure:",
+  "opts": [
+   "Is disabled below 7,200 ft",
+   "Is lost",
+   "Engages (normally held open magnetically)",
+   "Requires manual fuel"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.55 #163 (True)."
+ },
+ {
+  "q": "CAUG (control augmentation) caution light in flight — you lose:",
+  "opts": [
+   "Primary stab trim and ailerons",
+   "NWS and anti-skid",
+   "ARI and speed brakes",
+   "ARI, SBI, yaw damper, and rudder trim"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.4, p.66 #32, p.71 #19, p.75 #18; Quizlet EP2 #15."
+ },
+ {
+  "q": "The CONTR AUG caution light illuminates when:",
+  "opts": [
+   "Airspeed exceeds 217 KIAS",
+   "The system is degraded, a BIT test is in progress, or the paddle switch has been depressed",
+   "Flaps are lowered",
+   "HYD 1 drops below 1500 psi"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.41; p.61 hw 'CAUG Illum – FAILURE, BIT TEST, PADDLE OFF'."
+ },
+ {
+  "q": "CAUG BIT requirements:",
+  "opts": [
+   "Engine off, external power",
+   "Airborne, below 217 KIAS, flaps half",
+   "Weight on wheels, less than 80 knots, flaps/slats up",
+   "Any time with gear down"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.41, p.52 #86, p.71 #24."
+ },
+ {
+  "q": "Trim-failure exam question answer (gouge):",
+  "opts": [
+   "Stab position indicator pegged",
+   "ADI indicates 2 degrees nose up",
+   "ADI indicates 5 degrees nose down",
+   "Rudder trim indicator centered"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.64 #3, p.68 #3. Related: a 2° pitch change during speed brake extension/retraction is normal with the SBI (p.67, p.71 #27)."
+ },
+ {
+  "q": "Speed brakes: may not fully extend above ___; blowback occurs above ___.",
+  "opts": [
+   "250 KIAS; 300 KIAS",
+   "300 KIAS; 340 KIAS",
+   "340 KIAS; 380 KIAS",
+   "380 KIAS; 420 KIAS"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.71 #21–22, p.67, p.33/p.42."
+ },
+ {
+  "q": "SLATS caution light coming into the break:",
+  "opts": [
+   "Accelerate above 217 KIAS",
+   "Return flaps to previous setting and continue",
+   "Slow to and maintain below 200 KIAS; land as soon as practical",
+   "Eject if uncommanded roll"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.64 #5, p.71 #30, p.74 #4, p.76 #28; Quizlet EP2 #4."
+ },
+ {
+  "q": "SLATS caution light illuminates when:",
+  "opts": [
+   "Slats not in selected position, split slats, or slats selected/extended above 217 knots",
+   "Slats extended below 200 knots",
+   "Flaps at half",
+   "HYD 2 failure"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.42, p.49 #38, p.71 #29."
+ },
+ {
+  "q": "Per IC 21/43 ASYMMETRIC FLAPS/SLATS (uncommanded roll/yaw during flap/slat transition):",
+  "opts": [
+   "FLAPS/SLATS lever – full down",
+   "Rudder – full opposite",
+   "Emergency flap handle – pull",
+   "FLAPS/SLATS lever – Return to previous setting"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43. Gouge p.7 #7 / Quizlet EP2 #7: return flaps to previous position. p.4: rapid roll during flap/slat transition = split flap/slat."
+ },
+ {
+  "q": "Why may the flap position light not show a split flap?",
+  "opts": [
+   "It is disabled with weight on wheels",
+   "It only shows full flaps",
+   "It is connected to the left flap only",
+   "It is powered by the non-essential AC bus"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.35."
+ },
+ {
+  "q": "HYD 1 or HYD 2 failure — first consideration (gouge):",
+  "opts": [
+   "Lower the gear immediately",
+   "Eject",
+   "Climb above 25,000 ft",
+   "Reduce airspeed below 300 KIAS / 0.6 Mach"
+  ],
+  "ans": 3,
+  "expl": "Quizlet EP1 #16 / gouge p.5 #16."
+ },
+ {
+  "q": "With a HYD 2 failure you should monitor:",
+  "opts": [
+   "HYD 1 pressure gauge (not the accumulator)",
+   "Brake accumulator pressure",
+   "Fuel flow",
+   "HYD 2 pressure only"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.59 #15, p.65; Quizlet EP1 #21."
+ },
+ {
+  "q": "With a HYD 2 pressure failure, the RAT maintains HYD 2 pressure at:",
+  "opts": [
+   "1,500–1,800 psi",
+   "2,500–3,000 psi",
+   "1,100 ± 50 psi",
+   "3,000–3,600 psi"
+  ],
+  "ans": 1,
+  "expl": "Quizlet EP1 #4; gouge p.5 #4, p.62 (A), p.57."
+ },
+ {
+  "q": "The RAT deploys when HYD 2 falls below ___ psi; HYD 2 reset requires ___ psi.",
+  "opts": [
+   "600 psi; 1,500 psi",
+   "2,200 psi; 3,000 psi",
+   "1,500 psi; 1,800 psi",
+   "1,660 psi; 2,000 psi"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.48, p.49 #27/#30, p.57. HYD 2 caution light on at 1,660 ± 110, out at 2,000 psi."
+ },
+ {
+  "q": "HYD 1 failure — what is still available for landing?",
+  "opts": [
+   "Emergency gear extension, emergency flaps, and an arrested landing (all of the above)",
+   "Normal gear and NWS",
+   "Speed brakes and hook retract",
+   "Normal flaps/slats"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.59 #14, p.65."
+ },
+ {
+  "q": "HYD 1 below 1,500 psi — general services lost include:",
+  "opts": [
+   "Emergency gear and emergency flaps",
+   "RAT and HYD 2",
+   "Flight controls",
+   "Normal gear, normal flaps/slats, normal brakes, NWS, L-bar extension, speed brakes, hook retract"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.49 #37 (priority valve isolates flight controls at 1,500 psi, p.40/p.57)."
+ },
+ {
+  "q": "Effect of a HYD 1 failure on the tailhook:",
+  "opts": [
+   "It cannot be lowered",
+   "It lowers only with RAT pressure",
+   "It operates normally",
+   "It can be lowered (gravity/snubber) but not raised"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.51 #53, p.54 #138, p.3."
+ },
+ {
+  "q": "HYD 1 and HYD 2 failed, RAT working, but the aircraft is 'uncontrollable':",
+  "opts": [
+   "Eject",
+   "Lower the gear with the emergency handle",
+   "Reset HYD 2",
+   "Reduce airspeed below 300 KIAS and land"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.59 #1, p.64 #6 — key word 'uncontrollable'."
+ },
+ {
+  "q": "The wheel brake/emergency flap accumulator provides:",
+  "opts": [
+   "Unlimited braking",
+   "10 brake applications and emergency flap extension (no slats); flaps cut off at 2,200 psi",
+   "NWS and brakes",
+   "Flap and slat extension plus 5 brake applications"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.49 #31–32, p.57, p.41 (≤2,200 psi emergency flap lever has no effect)."
+ },
+ {
+  "q": "Per IC 21/43 BRAKE FAILURE – ASHORE/SKID, if flyaway airspeed is NOT available, step 2 is:",
+  "opts": [
+   "Throttle – idle",
+   "Anti-skid switch – off",
+   "Throttle – off",
+   "Hook – down"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43: 1. Go around (if flyaway airspeed available). Otherwise: 2. Throttle – idle 3. Brakes – release 4. Anti-skid switch – off 5. Brakes – apply gradually 6. Hook – down 7. Parking brake handle – pull. Older gouge EP 11X p.68 #5 omits throttle idle and adds 'Throttle – OFF (if departing rwy)' — older gouge, differs."
+ },
+ {
+  "q": "Per IC 21/43 BRAKE FAILURE – ASHORE/SKID, if brakes are still unavailable after applying gradually:",
+  "opts": [
+   "Nosewheel steering – disengage",
+   "Throttle – off; egress",
+   "Hook – down (if required); Parking brake handle – pull (if required)",
+   "Anti-skid – on; brakes – pump"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43 steps 6–7. The older gouge has no parking-brake step."
+ },
+ {
+  "q": "Per IC 21/43 BRAKE FAILURE – AFLOAT:",
+  "opts": [
+   "Throttle – off; egress",
+   "Go around; hook down",
+   "Throttle – idle; Parking brake handle – pull; Hook – down; Transmit",
+   "Anti-skid – off; brakes – apply gradually"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43. Not covered by the gouge (only a topic title on p.69)."
+ },
+ {
+  "q": "Per IC 21/43 LOSS OF DIRECTIONAL CONTROL, if NWS failure is suspected:",
+  "opts": [
+   "NWS button – press and hold",
+   "Paddle switch – press",
+   "Use differential braking only",
+   "Anti-skid switch – off"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43 step 6. The gouge only says 'use differential braking' (p.5 #5, p.59 #10) — older gouge, differs."
+ },
+ {
+  "q": "Per IC 21/43 LOSS OF DIRECTIONAL CONTROL, if a blown tire is suspected (no flyaway airspeed):",
+  "opts": [
+   "Throttle – MRT and go around",
+   "Brakes – release; Anti-skid switch – off; Brakes – apply gradually",
+   "Brakes – apply hard; anti-skid on",
+   "Paddle switch – press"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43 steps 3–5. Gouge: rudder as required to counter swerve, anti-skid off prior to braking (p.60 #21, p.66 #23, p.76 #21)."
+ },
+ {
+  "q": "If aborting with a blown tire, set the ANTI-SKID switch ON — true or false?",
+  "opts": [
+   "True only below 80 knots",
+   "True only on the carrier",
+   "False — anti-skid OFF",
+   "True"
+  ],
+  "ans": 2,
+  "expl": "Quizlet EP1 #6; IC 21/43 blown tire: anti-skid switch – off."
+ },
+ {
+  "q": "Blown tire on takeoff, continuing the takeoff (gouge EP 11X):",
+  "opts": [
+   "Turn anti-skid on",
+   "Raise the gear immediately",
+   "Rudder as required; do NOT reposition gear and flaps; monitor engine instruments; execute landing with blown tire procedure",
+   "Lower full flaps"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.70 #11."
+ },
+ {
+  "q": "Landing with a single blown tire and no arresting gear (gouge):",
+  "opts": [
+   "Controlled ejection",
+   "No-flap landing",
+   "Gear-up landing",
+   "Flared landing with flaps ½"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.73 #31, p.76 #22; Quizlet EP2 #20."
+ },
+ {
+  "q": "Landing with dual blown tires and no arresting gear available (gouge):",
+  "opts": [
+   "Normal landing with anti-skid on",
+   "Consider a gear-up landing or controlled ejection",
+   "Flared landing with flaps ½",
+   "Long-field arrestment"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.73 #32, p.67."
+ },
+ {
+  "q": "Short-field arrestment touchdown point when directional control is IN question:",
+  "opts": [
+   "1,000 ft prior to the gear",
+   "At or 50 ft prior to the gear",
+   "500 ft prior to the gear",
+   "Past the gear"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.73 #33, p.74 #3, p.7 #6; normal short-field arrestment: 500 ft prior."
+ },
+ {
+  "q": "Long-field arrestment (gouge 'for test only'):",
+  "opts": [
+   "Hook down 1,000 ft prior; maintain directional control; release brakes as you cross the cable",
+   "Hook down 500 ft prior; brake hard",
+   "Touch down 50 ft prior to the gear",
+   "Hook up; go around"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.71 #26."
+ },
+ {
+  "q": "NWS AUG goes on during taxi. You should:",
+  "opts": [
+   "Press and hold the paddle switch",
+   "Turn anti-skid off",
+   "Shut down the engine",
+   "Momentarily press the NWS button"
+  ],
+  "ans": 3,
+  "expl": "Quizlet EP1 #25 / gouge p.6 #25."
+ },
+ {
+  "q": "Emergency (EMERG) gear extension effect on nosewheel steering:",
+  "opts": [
+   "NWS works in high gain only",
+   "No effect",
+   "NWS available after 30 seconds",
+   "NWS is disabled (no NWS)"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.3, p.69."
+ },
+ {
+  "q": "Anti-skid OFF situations (gouge '5 times'):",
+  "opts": [
+   "Never — leave anti-skid on",
+   "After HYD 1 failure, before setting the parking brake after shutdown, carrier landings, SKID caution light, blown tire",
+   "Every landing, every takeoff, taxi, formation, IMC",
+   "Only with a blown tire"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.3, p.35, p.54 #139."
+ },
+ {
+  "q": "HOOK warning light meaning:",
+  "opts": [
+   "Hook nitrogen preload is low",
+   "Hook position does not agree with the handle",
+   "Airspeed above 200 KIAS with hook down",
+   "Hook is down and locked"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.71 #17 (hw correction), p.44; Quizlet EP2 #33."
+ },
+ {
+  "q": "Light in the landing gear handle:",
+  "opts": [
+   "Gear down and locked",
+   "Gear in transit or not in the commanded position",
+   "Gear doors closed",
+   "WOW switch failure only"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.71 #18/#25, p.75 #17, p.76 #23."
+ },
+ {
+  "q": "Per IC 21/43 SMOKE OR FUMES IN COCKPIT, step 1 is:",
+  "opts": [
+   "Altitude – descend below 25,000 ft",
+   "Air Flow Knob – Off",
+   "Mask – on/tight",
+   "Emergency oxygen green ring(s) – pull"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43: 1. Mask – on/tight 2. Initiate controlled descent to below 18,000 feet MSL 3. Air Flow Knob – Off. Older gouge (p.70 #12, p.75 #13) has no mask step — older gouge, differs."
+ },
+ {
+  "q": "Per IC 21/43 SMOKE OR FUMES, initiate a controlled descent to below:",
+  "opts": [
+   "10,000 feet cabin altitude",
+   "25,000 feet MSL",
+   "15,000 feet MSL",
+   "18,000 feet MSL"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43 step 2. Older gouge / Quizlet EP2 #5: 'descend below 25K' — older gouge, differs."
+ },
+ {
+  "q": "Per IC 21/43 SMOKE OR FUMES, if unable to clear smoke or unable to see, the steps are:",
+  "opts": [
+   "Air Flow Knob – max defog",
+   "Eject",
+   "Airspeed – reduce; warn other occupant/secure loose items; Seat – lower; MDC Firing Handle – pull",
+   "Canopy – jettison via emergency handle only"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43 steps 4–7. Older gouge adds 'Visor – Down' and 'Land as soon as possible'."
+ },
+ {
+  "q": "Per IC 21/43 RAPID DECOMPRESSION:",
+  "opts": [
+   "Descend below 25,000 ft MSL",
+   "OBOGS – on and mask tight; reduce AOA",
+   "Air Flow Knob – off then on",
+   "Emergency oxygen green ring(s) – pull; OBOGS flow selector(s) – off; descend below 10,000 feet cabin altitude"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43 (same three steps as ADVERSE PHYSIOLOGICAL SYMPTOMS)."
+ },
+ {
+  "q": "Per IC 21/43 ADVERSE PHYSIOLOGICAL SYMPTOMS, the procedure applies if above:",
+  "opts": [
+   "25,000 feet MSL",
+   "5,000 feet cabin altitude",
+   "10,000 feet cabin altitude",
+   "18,000 feet MSL"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43: If above 10,000 feet cabin altitude: 1. green ring(s) pull 2. OBOGS flow selector(s) off 3. descend below 10,000 ft cabin altitude. Gouge/Quizlet EP2 #1: descend below 10,000 ft cabin alt with an OBOGS failure."
+ },
+ {
+  "q": "Per IC 21/43 OXYGEN WARNING LIGHT (in flight), step 1 is:",
+  "opts": [
+   "Descend below 25,000 ft",
+   "Throttle – Set minimum 80% rpm",
+   "Throttle – idle",
+   "OBOGS/ANTI-G switch – off"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43: 1. Throttle – set minimum 80% rpm 2. Execute Adverse Physiological Symptoms (as required). Older gouge/Quizlet EP2 #8: 'OBOGS/ANTI-G switch off', descend below 10,000 cabin alt — older gouge, differs."
+ },
+ {
+  "q": "OXYGEN warning light causes (gouge systems notes):",
+  "opts": [
+   "O2 concentration below 95%, overheat above 250°F, or OXYGEN switch off",
+   "Bleed air below 150°F",
+   "Emergency O2 bottle below 1,800 psi",
+   "Cabin altitude above 24,500 ft"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.53 #106, p.44, p.51 hw (OBOGS still works just below 95%)."
+ },
+ {
+  "q": "CABIN ALT warning light procedure per the gouge (not on the IC 21/43 immediate-action list):",
+  "opts": [
+   "OBOGS – on and mask tight; reduce AOA; Air Flow knob – off then on; if light remains on, descend below 25,000 ft MSL; land as soon as practical",
+   "Mask – on/tight; descend below 18,000 ft MSL",
+   "Emergency O2 green ring – pull; descend below 10,000 ft cabin altitude",
+   "Gen switch – off"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.68 #1, p.74 #1, p.64 #1. Not one of the 22 IC 21/43 items — don't confuse 25,000 ft with the 10,000 ft cabin altitude of RAPID DECOMPRESSION."
+ },
+ {
+  "q": "CABIN ALT warning light illuminates at a cabin altitude above:",
+  "opts": [
+   "35,000 ft",
+   "24,500 ± 500 ft",
+   "18,000 ft",
+   "10,000 ft"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.44, p.53 #105."
+ },
+ {
+  "q": "Canopy loss (gouge):",
+  "opts": [
+   "Accelerate to 300 KIAS",
+   "Climb to 25,000 ft",
+   "Descend to 10,000 ft or minimum safe altitude and less than 200 KIAS",
+   "Eject"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.64 #15, p.68 #6, p.74 #8."
+ },
+ {
+  "q": "CANOPY caution light in flight (gouge/Quizlet EP2 #21):",
+  "opts": [
+   "Airspeed below 200 knots",
+   "Jettison the canopy",
+   "Eject",
+   "Descend below 25,000 ft"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.7 #21. CANOPY light + tone with canopy unlocked and power above 95% (p.4, p.53)."
+ },
+ {
+  "q": "Per IC 21/43 OIL PRESS WARNING LIGHT, step 1 is:",
+  "opts": [
+   "Throttle – minimum for safe flight",
+   "Throttle – idle",
+   "Throttle – off",
+   "Throttle – Set and maintain 78 to 87% rpm"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43: 1. Throttle – set and maintain 78 to 87% rpm 2. Minimize throttle movements. Older gouge: 'min for safe flight' (p.59 #5) or 'idle' (p.64 #10) — older gouge, differs."
+ },
+ {
+  "q": "ECA 2 caution light limits (gouge/Quizlet EP1 #7):",
+  "opts": [
+   "Throttle idle and airstart",
+   "Do not exceed 104% and 645°C",
+   "Do not exceed 90% above 20K MSL, 95% below 20K MSL, 600°C EGT; land as soon as practical",
+   "Do not exceed 85% at any altitude"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.5 #7, p.60 #24, p.65, p.66 #33."
+ },
+ {
+  "q": "ACCEL caution light during descent passing 7,000 ft MSL:",
+  "opts": [
+   "Steam ingestion valve closed — no effect",
+   "Land immediately",
+   "Expect slower engine acceleration during the approach",
+   "Engine flameout is imminent — airstart"
+  ],
+  "ans": 2,
+  "expl": "Quizlet EP1 #3; gouge p.5 #3. p.54 #115: steam ingestion valve stuck open or initial shot-of-fuel solenoid not in commanded position."
+ },
+ {
+  "q": "LP PUMP caution light in flight:",
+  "opts": [
+   "Fuel Shutoff Handle – pull",
+   "Throttle – MRT",
+   "Avoid abrupt throttle movements and set minimum for flight",
+   "Engine switch – off"
+  ],
+  "ans": 2,
+  "expl": "Quizlet EP1 #10; gouge p.5 #10. Illuminates below 35 psi (p.37, p.61)."
+ },
+ {
+  "q": "After the F PRESS light illuminates and you check the engine switch on, you should:",
+  "opts": [
+   "Throttle – idle",
+   "Descend below 10,000 ft",
+   "Avoid negative G maneuvers",
+   "Eject"
+  ],
+  "ans": 2,
+  "expl": "Quizlet EP1 #17; gouge p.5 #17. F PRESS also illuminates 30 s after a GEN failure (boost pumps stop) (p.39, p.61)."
+ },
+ {
+  "q": "MFD failure indications (gouge):",
+  "opts": [
+   "Amber border around the display",
+   "Loss of HUD only",
+   "Blank or blinking screen, stuck pushbutton, wrong/invalid info",
+   "GEN warning light"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.68 #4, p.74 #6, p.30; Quizlet EP2 #11."
+ },
+ {
+  "q": "Multiple MFD failures — corrective action:",
+  "opts": [
+   "Turn off each MFD",
+   "Display Power switch – momentarily to RESET",
+   "Pull the DEU circuit breaker",
+   "GEN switch – reset"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.76 #27, p.47 #10 (single MFD: turn it off); Quizlet EP2 #22."
+ },
+ {
+  "q": "DEU failure leaves you with which approach?",
+  "opts": [
+   "TACAN",
+   "GPS",
+   "ILS",
+   "PAR (or visual) only"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.52 #88, p.55 #146, p.30, p.4."
+ },
+ {
+  "q": "Pitot-static failure question — the instrument that still works:",
+  "opts": [
+   "Barometric altimeter",
+   "Airspeed indicator",
+   "Standby VSI",
+   "Mach indicator"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.8 #27, p.64 #16; Quizlet EP2 #27. Complete pitot-static failure: lose mach/airspeed and barometric altitude, NOT vertical velocity (p.14)."
+ },
+ {
+  "q": "Barometric altimeter failure (gouge):",
+  "opts": [
+   "Use GPS altitude from GINA",
+   "Use the standby VSI only",
+   "Eject",
+   "Check pitot heat; use RADALT below 5,000 ft AGL; use cabin altimeter if unpressurized"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.7 #12, p.76 #24; Quizlet EP2 #12."
+ },
+ {
+  "q": "Per IC 21/43 DEPARTURE/SPIN PROCEDURE, steps 1–3 are:",
+  "opts": [
+   "Throttle – MRT; speed brakes – extend; stick – full aft",
+   "Controls – neutralize/forcibly center rudder pedals; Speed brakes – retract; Throttle – idle",
+   "Eject; throttle – off; controls – neutral",
+   "Rudder – full with turn needle; stick – forward; throttle – idle"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43 steps 1–4 (4. check altitude, AOA, airspeed, and turn needle)."
+ },
+ {
+  "q": "Upright spin recovery per IC 21/43 (AOA above 28 units):",
+  "opts": [
+   "Rudder – full opposite turn needle; lateral stick – full opposite turn needle",
+   "Stick – full forward; rudder – neutral",
+   "Rudder – with turn needle; lateral stick – opposite",
+   "Rudder – full opposite turn needle; lateral stick – full WITH turn needle; longitudinal stick – neutralize"
+  ],
+  "ans": 3,
+  "expl": "IC 21/43 steps 8–10. Gouge p.25: Aileron full WITH turn needle for upright spins; p.20 #45: aileron positions reversed upright vs inverted."
+ },
+ {
+  "q": "Inverted spin recovery per IC 21/43 (AOA pegged at 0 units):",
+  "opts": [
+   "Lateral stick – neutral; rudder – neutral",
+   "Rudder – full opposite turn needle; lateral stick – full opposite turn needle; longitudinal stick – neutralize",
+   "Rudder – full opposite turn needle; lateral stick – full with turn needle",
+   "Rudder – with turn needle; lateral stick – with turn needle"
+  ],
+  "ans": 1,
+  "expl": "IC 21/43 steps 5–7. Gouge p.25: Aileron full OPPOSITE turn needle for inverted spins."
+ },
+ {
+  "q": "Inverted spin characteristics (gouge):",
+  "opts": [
+   "Turn needle opposite the spin",
+   "0 units indicated AOA, negative G, turn needle in direction of spin",
+   "AOA increasing past 28 units",
+   "30 units AOA, positive G"
+  ],
+  "ans": 1,
+  "expl": "Gouge p.2 #40, p.20 #44, p.25."
+ },
+ {
+  "q": "Per IC 21/43, if out of control passing through ___ AGL: Eject.",
+  "opts": [
+   "10,000 feet",
+   "15,000 feet",
+   "5,000 feet",
+   "1,500 feet"
+  ],
+  "ans": 0,
+  "expl": "IC 21/43 DEPARTURE/SPIN step 13."
+ },
+ {
+  "q": "Per IC 21/43 DEPARTURE/SPIN, neutralize lateral stick when recovery is indicated or airspeed increases through:",
+  "opts": [
+   "120 KIAS",
+   "250 KIAS",
+   "160 KIAS",
+   "200 KIAS"
+  ],
+  "ans": 2,
+  "expl": "IC 21/43 step 11; then 12. Rudder pedals – smoothly center."
+ },
+ {
+  "q": "Midair with your wingman — per the gouge, the right answer is:",
+  "opts": [
+   "Join up on the other aircraft to inspect",
+   "Eject immediately",
+   "Have someone else (not the aircraft you hit) give you a visual inspection; don't have the wingman join up",
+   "Continue the mission"
+  ],
+  "ans": 2,
+  "expl": "Gouge p.59 #4, p.64 #9, p.65."
+ },
+ {
+  "q": "In ejection situations the gouge says to:",
+  "opts": [
+   "Jettison the canopy first",
+   "Descend to 1,500 ft AGL",
+   "Slow below 150 KIAS first",
+   "Trade airspeed for altitude"
+  ],
+  "ans": 3,
+  "expl": "Gouge p.60 #27, p.65."
+ },
+ {
+  "q": "Engine EGT limits (gouge): max at idle / ground start / airstart:",
+  "opts": [
+   "450°C / 550°C (570°C for 10 s) / 600°C (650°C for 10 s)",
+   "550°C / 600°C / 645°C",
+   "400°C / 500°C / 550°C",
+   "450°C / 610°C / 650°C"
+  ],
+  "ans": 0,
+  "expl": "Gouge p.37, p.56. MRT 610°C (30 min/hr); transient 645°C (<20 s)."
+ }
+]

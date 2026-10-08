@@ -1,0 +1,26 @@
+# Page 27 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+, Significant Mach Numbers _
+| % Maximum level flight speed | "Whose NOW 85
+% Maximum speed reached | se M 1.04
+% Critical Mach Number (ii,,.) -- —- M08
+i * Force Divergent Mach Number (M,,)  ~-W0.85
+* Slight Buffet mh .. Passes M 0.9
+° _ Longitudinal Control . |
+4¥ & Slight nose down pitch (Tuck Under} M 0.8
+* Predictable longitudinal contro! to MO.54 .
+* Stick forces more sensitive Mi 0.84
+5 * Band of reduced stability . Mi 0.87
+> * Pitch oscillations M 0.95+ |
+i * Stability increeses Mi 1.0+
+e Lateral Controi oe
+| * Crisp lateral control _ to M 0.9
+‘= Roll response unpredictable, Loaded rolls .. --: >
+aan So above M 0.8 |
+| © Nearstallrollrates — “e260? / s8Gond .
+* Heavy wing | ME0.92 to M 0.95
+.. % Roll rate Degrades to 27°/sec. wi full stick 0.95
++y & 2stick deflection maintain wings fevel Mi 0.92 -M 0.95
+2 = Wing heaviness disappears/Aiferon- — M0.95.
+| « Roll cate - " 420°TsecM 4.04 °°
+f

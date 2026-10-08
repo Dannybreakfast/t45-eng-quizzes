@@ -1,0 +1,57 @@
+# Page 60 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+17. Compressor Stall (or engine stall) is characterized by “pops and bangs” and |
+
+an increase in EGT and decrease in RPM. a é'
+18. Engine failure below 1500’ AGL and 180 KIAS = EJECT (always). . e
+
+19. Fire on takeoff = Abort, if unable and the fire is confirmed then EJECT. . 4
+
+20. Aircraft Settling off Cat = Throttle at full, maintain 24 units AOA, if settle e
+
+not stopped then EJECT. id
+
+oo
+
+hQoek : 21. Blown Tire on Takeoff = Rudder as req to counter swerve and anti-skid off . b
+prior to braking. -
+
+Wee e Toe a
+22. Fire light in flight = first step is Throttle idle (min for safe flight). a
+
+@
+
+23. Abort procedures (you have to order them from a list). (i
+
+24. ECA 2 caution light means Throttle <90% above 20k and <95% below 20k. q
+
+|
+
+25. Fire light on ground (new procedures... get out of airplane and don’t >
+
+worry. about telling anyone over the radio... no comms in procedure). 3
+
+* 26. TP HOT is a CAUTION LIGHT (yellow) and not a WARNING LIGHT |
+
+(red)... don’t get drawn off by any ar:swers where they give you a FIRE light a
+
+and a TP HOT light and ask which warning light causes you to egress! -
+27. Always trade airspeed for altitude in EJECT situations. — ;
+
+28. Abort for red lights on takeoff when less than refusal speed. 7
+
+29. Know Airstart altitudes for Immediate, Assisted, and Windmill (Immediate i
+
+has no altitude restrictions). q
+
+30. OIL PRESS light goes out at approximately 18% on start. 7
+
+31. Increase altitude for better radio reception (really... it’s on there). ;
+
+32. Structural damage to the airframe may require you to blow the canopy. qq
+
+i We GE CanmtsEO JV WUdneuucart EXT, Mec RETR SED “
+
+h
+
+»

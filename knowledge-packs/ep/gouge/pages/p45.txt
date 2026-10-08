@@ -1,0 +1,41 @@
+# Page 45 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+5000' MSL altitude at which pressurization begins EXY Ayano
+2G number of G's at which anti-g suit inflation begins \ ~~ 4 30 OO
+6G number of G's at which anti-g suit reaches maximum inflation za
+1800-2500 psi acceptable pressure range for emergency oxygen bottle comand ee
+6.5 psi maximum pressure of anti-g suit inflation 7O86 4 3006
+4.8 psi cabin pressure required to open safety relief valve . me inane?
+4 psi maximum cabin pressure allowed by discharge valves CABIN AS 10000
+-0.5 psi pressure below which safety and inward relief valve opens SWE 0.
+4-20 min approximate duration that emergency oxygen supply provides in minutes
+three situations that will cause OBOGS automatic shutoff 1. A system malfunction 2. Low oxygen
+= concentration and altitude over 9500' and, 3. Bleed air temp above 250°f or 4. Whenever the
+OBOGS/ANTI-G switch is off
+TIF Once started, the emergency oxygen supply cannot be shutoff and restarted (FALSE)
+FLIGHT INSTRUMENTS (NATOPS 2.20)
+2 5s degrees of deviation indicated by increments on the CDI for VOR and TACAN
+11/4° degrees of deviation indicated by increments on the CDI for ILS (sve lly J
+» 9 min 2 1/4' standby gyro provides valid attitude data for minimum of __ after power loss
+399.9 nm maximum range that can be displayed on H.S.I. range indicator
+30 number of preset channels available
+000 H.S.I. course required for VOR/ILS self test
+180 H.S.1. course required for TACAN self test
+d 315 +/- 2.5° heading No. 1 points to during VOR/ILS self test
+180 +/-2.5° heading No. 2 points to during TACAN self test
+108.10-111.95 MHz (odd) ILS frequency range
+a 108.0-117.95 MHz VOR frequency Range
+be -173.975 MHz VHF frequency Range
+Static inputs are provided to 1. Mach/airspeed indicators, 2. Barometric altimeters, 3. VSI's 4. OBOGS, 5. SADS
+TF The Mach indicator is corrected of temperature and pressure (TRUE)
+T/F the forward and rear mach/airspeed indicators contains an airspeed switches set for
+» 170 and 217 knots respectively to signal appropriate cautions and warnings (TRUE)
+the SAHRS system provides only heading information to the H.S.I.
+the SAHRS system provides only roll information to the yaw damper control (YDC)
+The SAHRS system provides attitude information to the 1. ADI, 2. HUD, and 3. ADR
+TF The ILS needles come into view on the ADI whenever a valid ILS frequency is tuned
+(FALSE, ILS must be selected on NAV/COMM control transfer panel)
+T/F The turn indicator on the ADI will be available in the event of a GEN failure{FALSE)
+T/F the number 1 green needle corresponds to VOR and number 2 white needle to TACAN
+TIF When T/R&G is selected on the COMM radio, both 121.5 and 243.0 MHz are monitored
+4 (FALSE, only the GUARD freq in the selected band)

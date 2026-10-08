@@ -1,0 +1,81 @@
+# Page 34 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+0.4 sec back-front seat delay
+
+100-245 [bs New seat
+
+136-212 Ibs old seat
+
+600 KIAS and 60K. Max seat limits ( wt b rss)
+
+3-4” MDC handle travel
+
+ENGINE SYSTEMS
+
+Rolls Royce F405-RR-401 Turbofan
+5,527lbs Thrust
+
+2 Low Pressure Compressor (N1) - 2 Stage
+
+N1 0-120% :
+
+High Pressure Compressor (N2) - 5 stage
+
+a N2 0-115% .
+
+2 sets of Thermocouples on N1 Turbine
+4 100% N2 — 15,512 RPMs
+
+Ignition engaged until 45% RPM or 45sec
+
+GTS light w/in 20sec on ground
+
+GTS light w/in 28sec in flight
+
+Ready light w/in 15sec oe : ’
+
+> Realy oer RPM 52+/-2% Ofek ects. ice due te +) Sones & To lL. cede \
+
+) Bleed Valve open w/in 60sec of GTS start |
+
+: Bleed Valve closes @ 61+/-4% RPM
+
+Increasing N2 RPM 3% and Decreasing EGT 50deg C
+
+: steam tageshin Bega Valve opens w/WOW, N2<70%, and Launch bar extended
+
+N2 Accessory Gear Box: .
+Be \ 2 Hydraulic pumps
+
+2. 28v DC Generator
+
+_ § LP Fuel Pump
+
+; § 1 Oil Pressure Pump
+
+mA , ¢ 3 Oil Scavenge Pumps
+
++N2 Tach Generator
+
+N2>90% above 20K : EE
+x Ignition deenergizes @ 45% RPM
+
+| Génerator reset Ssec |
+
+> Idle stop retracts 2sec w/ WOW and Anti-skid off (corter preg oses)
+
+* EGT RPM | ORF
+
+aq Idle | 350-450 deg C 55% +/- 2% | 300~400
+7 +1% per LSK pph
+
+es TIO x. | 98-100% | 4800 pph
+
+| MRT (| 6§0deg Cfor 30me/br | 104% —«|-« 6410 ppb
+
+> | Continuous | 550 deg C | 100% | x
+
+a OF SYSTEM
+
+MIL-L-23699€ or MIL-L-7808G oil
+4 25.2 pints total oil

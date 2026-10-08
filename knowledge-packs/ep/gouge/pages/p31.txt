@@ -1,0 +1,43 @@
+# Page 31 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+. . a . *
+Engineerins questions _ oe
+~ 1) GPS has how many Channels? 5 _ _ -_ ME
+2) Major components of the GINA are: GPS and inertial Nav assembly —ang_ D & =
+GPS, INS & Accelerometer Sei (both are corrett. Came from 2 diff: ?s)
+3) DEU controls the MirBus, _.. Rag GV. |
+*) Ring laser gyro has few moving Parts and is unaffected by g forces. It is affected by earth-rate
+- precession, — oo, a es
+Seem test bas no effect oy fuel quantity indicator. “FUEL” ligt? is yellow caution, not red .
+Warning light, | -
+6) Rudder shakers at 21.5 units. 1S ; :
+> 7) MED has 3 controls, 20 push buttons and they are on the MED bezel, |
+= 8) Which intrument(s) display rad alt readout? ADT and ED eg
+9) What ould you use if your ADI (2) display failed? STBY AT (other MED should default to ADT
+> anyway) oo . ¥
+10) Which instrument would verify VSI display readout Tailure? STBY AL, STBY airspeed, a
+= CN) If off flag displays on the AOA indicator (front cp) you can still usé the ADA indexer, NO -
+' 12) What indication is not a failed AOA front Cp indicator? Missing AQA read Sut MFD/EHUD
+” displays (comes directly Som AOA Tansmitter) ; a ;
+» 13) INDICATIONS: Master Alert, caution tone, SDT eastiertigit 20,7 On volimeter, F{V
+3 ' What has malfuntioned? Undervoltage Sensing unit, .
+: 14) Dual inverter failure, YOu will lose?— all AC services, co
+a 15) Engine: With normal engine instrument indications (pm, EGT, FF) ch t/o roll what other
+
+indication of loss of thrust could-you have besides failure to reach line spesd?
+> —~—ACCEL caution light Muminates os ;
+16) TorF: humination of the ACCEL caution light indicates the initial shot solenoid or the ;
+bd steam ingestion Bleed valve is not in the commanded position 7 _
+17) Ifthe fre light illuminates but then Soes out, What secondary indications, Other than. =,
+DQ Neat det ole <r ici SOA in
+5 18,in'a steep dive, the ECA senses 20 RPM increase and will send a signal to the FCU to .
+19. If you'have an ECA failure (full trim).what changes would the engine instruments indicate?
+4 —decrease in EGT, RPM, andFF Master alert SSE Bae 1 Az cnupon Baht -
+Electrical Stestions . .
+_? 20. What is lost with a single inverter failure? (p2- 15) AC INV caution. tONG; SEA cht com cinn .
+_) 3FEand you lose NON-Essentia| AC services. ;
+1. With GEN functioning norinally, which light(s) on CWS panel would illum ifthe undervoltage .
+=Nsing unit Biled? NONE. * ; - ;
+od 2. What is the min voltage of a fully charged batt? 24V | . . shtah.
+“L : for rmery Tem corlf w }
+wi}l rer

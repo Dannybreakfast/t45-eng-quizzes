@@ -1,0 +1,33 @@
+# Page 70 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+i, Question about PITOT STATIC FAILURE: answer — STBY VSI
++. BLOWN TIRE ON T/O:
+If aborting . : _—
+rN o Rudder —as required to counter swerve
+8 ANTI-SEID switch — OFF PRIOR TO BRAKING
+Ifteking om
+© Rudder —as required to counter swerve
+e Gear and Flaps — DO NOT REPOSITION
+© Eng. Instruments - MONITOR
+o Execute Landing w/ Blown Tire procedure
+12, SMOKE OR FUMES FROM COCKPIT :
+» Altitude — Descend Below 25,000" Gi practical} Vox wwe Fe eee
+AIR FLOW knob ~ OFF
+if unable to clear smoke or unable io see —
+« Warn other cockpit occupant / secure loose items
+e Seat-LOWER .
+: e Visor—-DOWN
+e Land es soon as'POSSIBLED
+ed 13. For a DUAL BLOWN TIRE LANDING — FLARE the Landing (cor ea ge EEE can roils
+Lett me haf. ern)
+14, OBOGS FAILURE — if it won't reset, leave OBOGS — OFF. Use the green apple.
+you don’t want bad O2 trom O5 OGS contamination good emergency O2
+~" Confirm Engine Operation |
+» VOLTMETER — CHECK |
+If Generator resets and voliase is abnormel or generator does nol reset
+> e BATT switches - CHECK ON
+0 GEN switch —- OFF
+e Proceed io YMC
+3 ¢ Land es soon as PRACTICAL
+If MPD’s required
+; © DISPLAY POWER - ORIDE

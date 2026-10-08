@@ -1,0 +1,57 @@
+# Page 84 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+> £
+
+» A P) 1200-1400 pph (cruise @ 250ids) |
+
+> Pa A) adj. nose attd for Ivl fit
+
+> LvwVo check of airspeed, altd and clock
+
+» ICS “one five thousand, mark; two fifty, mark” ;
+
+3 | ICS “standby to mark the clock: three, two, one, mark,..., mark time is § secs"
+
+> : FLOW FOR DEPARTURE
+
+> Use 1% of g/s (displayed below ownship on HSI) to determine when to turn onto the arc (most arcs @
+
+> NMM are LODME).
+
+Gouge — turn nit 7.5DME outbd onto a 1ODME arc, you are probably late and will overshoot (hint: tell the
+instructor you will need > 30° AOB to make it)
+
+> Gouge - Tum off a 1ODME arc at 13 radials prior.
+
+a Pine Hill Dept - LRs for 161° rad are either 148° or 174°
+
+4 Dancy Dept — LRs for 007° are either 354° or 020°
+
+L, “Navy 14123, Memphis Cntr, cleared into Pine Hill West or Area 4, monitor btn II or bin & There are
+Ld “Kemphis Cntr, Nevy 14123, cleared Pine Hill West or Area 4, switching.”
+
+: “99, Pine Hill West or Area 4, 123 checking in from the North.”
+
+> Gouge ~ 17.5k° xsit altd for Area 4.
+
+_ fie. (¢! ||. BLOW FOR RECOVERY/APPROACHES
+
+> Bl stage — instructor will give a vector and altd and ask you to check out of the working area.
+> “99, Pine Hill West, 123 checking out for a Key Field recovery.”
+
+> Switch to bin 9, ATL Cntr. |
+
+2 “Ati cutr, Navy 14123, checking out of Pine Hill West ‘for a Eey Field recovery,”
+
+“Navy 14123, Atl Cntr, cleared for the Eey Field recovery,”
+
+Depending on distance and traffic...
+
+> “Navy 14123, Atl Cntr, contact Meridian App, local btn 15.”
+
+> “Atl Cntr, Navy 14123, switching ben 15.”
+? Gouge - If ATIS has not been checked, GET IT NOW prior to switching up App Cntl. (Hint: use back
+
+> radio to get ATIS) (also, Key Field ATIS freq is found on the airport diagram in the high app plates)
+
+> “Meridian App, Navy 14123, level___, request.”

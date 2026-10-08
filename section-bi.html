@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/>
 <meta name='viewport' content='width=device-width, initial-scale=1'/>
-<script src="auth.js"></script>
 <title>BI — T-45 Quizzes</title>
+<script src="auth.js"></script>
 <style>
 :root {
   --bg:#0f1419; --panel:#1a2332; --panel2:#243044; --text:#e7eef7; --muted:#9bb0c7;
@@ -66,6 +66,29 @@ footer { margin-top:2rem; color:var(--muted); font-size:.85rem; }
 .back-home { margin-bottom: 1rem; }
 .back-home a { color: var(--accent); text-decoration: none; }
 .back-home a:hover { text-decoration: underline; }
+
+a.study-guide-banner {
+  display:flex; flex-direction:column; gap:0.25rem;
+  margin: 0 0 1.25rem;
+  background: linear-gradient(135deg, #1e3a5f, #1a2a40);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  color: var(--text); text-decoration:none;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.2);
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+a.study-guide-banner:hover {
+  border-color: #7ec4f8;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.4);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+a.study-guide-banner .sg-title {
+  font-size: 1.25rem; font-weight: 800; color: #d8ebff; letter-spacing: 0.02em;
+}
+a.study-guide-banner .sg-sub { color: var(--muted); font-size: 0.92rem; }
+a.study-guide-banner .sg-cta { color: var(--accent); font-weight: 700; font-size: 0.95rem; margin-top: 0.15rem; }
 </style></head><body><div class='wrap'>
 <header>
 <div class='crumb'><a href='index.html'>Home</a> · BI</div>

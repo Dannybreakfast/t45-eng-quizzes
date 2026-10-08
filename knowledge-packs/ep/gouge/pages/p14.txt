@@ -1,0 +1,28 @@
+# Page 14 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+All hail the glory that is Timms BI test
+PPH during $1 climb: 1500
+Config on PAR downwind: 200 kts, clean
+Obtain field altimeter setting during penetration checklist
+Aural ID (morse code) during penetration check determines reliable navigation
+information and: verify the correct station is tuned
+HI TACAN/VOR DME approach uses 4000 to 6000 FPM rate of descent, and no more
+then 30* AOB
+Intercept an arc from a radial, 1% of ground speed .
+FAC for a surveillance approach must give you: missed approach instructions, position,
+location of MAP. NOT time check
+Barometric altitude info comes from: A,E,H
+Complete pitot static system failure, you lose mach and airspeed indications, barometric
+altitude. NOT vertical velocity
+PAR approach, you are given precise glideslope, range, and heading information (True)
+§3 pattern is the S1 pattern with % SRT and reversal at beginning of 2™ descent.
+Loop commenced at 380 kias, and 96% rpm
+Missed approach is required: all of the above
+VHF navigation system failure with VOR or ILS steering selected:
+VOR/LS indications removed
+Using 30-degree method, intercept for an inbound course of 300*: 220*
+15* heading change requires 15* AOB max
+700 PPH for S3 descent
+T45C INS failure: Both of the above
+During ASR, arrive at MDA before the MAP
+Nose-low UA partial panel, use stby airspeed and stby attitude indicator

@@ -1,0 +1,40 @@
+# Page 35 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+® > @ @ ©
+
+~ -C AUG provides yaw damping, ARI, SBI, and rudder tim
+
+-Yaw damping and turn coordination up to 217 KTS
+
+-Yaw damping commands sent through ARI CAvEnoN , Rupee pntecouneet )
+
+-Engine start switch to ON in both cockpits energizes start control unit
+
+-GTS start button energizes engine igniters for duration of press w/ weight on wheels and
+duration of press +30 sec w/ weight off wheels (although this doesn’t make sense to me because
+you don’t hold the GTS button down while you introduce fuel on a normal ground start, but see
+p. 26-4)
+
+-From the Engine Start Procedures (Ch 26) know the functions of each button/switch (beginning
+S page 26-3)
+
+-Tail hook is Aydraulically raised with HYD 1 pressure
+
+-Indications of split slat condition will be uncommanded roll and illuminated SLAT caution light
+-Flap position light may not show split flap condition because light is connected to left flap only
+-SKID caution light illuminates when: failure condition has been detected by anti-skid control
+
+c box . NO a a a a
+-SKID advisory light illuminates when anti skid selected and landing gear are down and locked
+-Paddle switch deselects both NWS and CONRT AUG on thé Ground. When abomeit
+deselects CONTR AUG at all times and NWS_as long asthe gearisdown ~
+
+-NWS caution light indicates malfimction within and subsequent shutdown of NWS system or
+
+L NWS disconnected with paddle switch
+
+> -Five times to secure anti-skid switch: after HYD 1 failure (loss of general services hydraulics),
+> after engine shutdown before setting parking brake, carrier landings, anti skid caution light
+illuminated, blown tire
+
+|

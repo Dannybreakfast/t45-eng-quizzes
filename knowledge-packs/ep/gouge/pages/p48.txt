@@ -1,0 +1,35 @@
+# Page 48 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.48]).
+
+: be
+
+Ke. D 1 =
+3000 PST - NORM Zoos fso7 BoM pra
+co
+
+|
+
+i1G6C# ile - CAMor Lent a
+{GS O00 sf ~ LAT ExTeEnn |
+
+a
+
+| 1
+
+; le
+
+b
+
+. i |
+
+e
+
+u
+
+fC
+
+|
+
+b
+
+a

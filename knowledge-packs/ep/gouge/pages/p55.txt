@@ -1,0 +1,57 @@
+# Page 55 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+:
+> 142. Paddle switch with gear down does what? Loclesd ) ae Cooks)
+Switches off the NWS and the CAUG ae be thr Lilecbe, SY bebact
+o 143. To reset MWS end CAUG, you must do what? = Gr wee le A 15%
+> NWS: depress the NWS button ; =] 3) p's ot ep
+a + K CAUG: nomentary select to CAUG reset O sigle Co apeannrt Chica flue. welt
+144. With NWS on, what will activate the NWS? ater ey, ‘ ‘
+a WoW rttcoder erreur fate
+Ld Pe Re 145, BRAKE PRESS light comes on when?
+] LBAR not retracted, PBRAKE not set, over 95%. Etc. (know all)
+> 146. If DEU fails, what navigation aids do I lose? What are my options?
+al Everything. PAR or Visual
+147. DEU Controls the MUX BUS (that’s the best answer)
+148. DEU exchanges words with _ 1 , and __—svia MuxBus. |
+Digital. ADR, MDL, GINA
+149. How do the hard wired interfaces communicate?
+Analog, video, discrete
+150. What page is initiated on power-up?
+Menu page
+451. Display system derives flight data from GINA and Pitot Static
+inputs. Which are from each? ;
+GINA: pitch, roll, heading, vertical velocity, positiod 5)
+cd Pitot: altitude, indicated airspeed
+152. What MED inputs are duplicated on the DEP?
+f 153. T/F GINA is operational upon loss of generator.
+: ; True
+» 154, Auto Initiation of IBIT is accomplished in what order?
+DEU, GINA, ADR, MDL, RALT
+; 155. What are the two BIT Display pages? .
+WoW and Worf
+> 156. TACAN uses bearing while VOR uses .
+4 Magnetic. Relative
+Ld DY 157. IFF Mode Test illuminates GO/NOGO light or ANTENNA lights?
+2 GO/NOGO Lights
+158. IFF DEGRD on the BIT page indicates what?
+? | IEF - Off, or a
+> Q, IFF -— STBY, or
+4 3, IFF - BIT failure
+] 159. What IFF mode transmits altitude?
+Mode 3C
+iad 160. The VCR records what?
+HUD, MED, Tones, CWS, ICS,
+“fK 161. T/F Undervoltage protection ALWAYS trips Non-essen AC Busy
+7 ‘True Fy week camel EEC, Sale
+162. With GEN FAIL, will ALL flight controls and sub-systems work?
+| Yes. Only lose ail/rud/stby stab trim, trim indicators, HUD, RT
+» 163. Z/F Approach Idle function engages with total electrical failure.
+True. Normally held open magnetically.
+4 164. Whet AOA will Stall Werning Indications occur?
+a 165. How do I know when alignment is complete?
+> Velocity Vector appears in HUD
+3 * 166. T/F Advisory Windows appear on MFDs and HUD?
+7 False. Only appear on MFDs
+] 167. Engine Bleed Valve closes at __% RPM.
+a 61 +/-4

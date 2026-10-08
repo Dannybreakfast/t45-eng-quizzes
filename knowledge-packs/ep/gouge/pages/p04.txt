@@ -1,0 +1,35 @@
+# Page 4 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+2
+-Flameout below 1500 AGL AND 180 kias = eject
+-GINA made up of gps and ins
+-HOT START INDICATIONS (there are 2 answers so RTFQ)
+-how many BIT displays are there? 2..Weight on Wheels and Weight off wheels
+-Alignment of gina complete when waterline replaces by velocity vector
+-Mode C = altitude reporting for transponder
+~extending the flaps requires 28vdce power
+~yaw dampener trims rudder via ARI
+-IFF DGRD in bit page: fail, standby, off
+-If CAUG light illuminates in flight, lose ARI, SBI, rudder trim, yaw dampener
+-WILL have tacan with generator failure
+-IFF is only CNI device with 2 antennas
+-From Mr Carrier himself: “To enhance the efficiency of the ECS heat exchangers,
+inducers powered by bleed air by the IPRSOV which is commanded open by: Gear down
+and ECS selected to any position other than off”
+-Ram air in cockpit contriled by a Weight on wheeles switch ECS air flow knob
+-rudder shakers and tone and best indications of an impending stall
+-DEU failure limits you toa GCA
+-Oxygen contractor filters litrogen and other contaminants
+-hung start indications (rpm stuck at 45 and egt rising)
+-rapid roll during flap/slat transition = split flap/slap
+-ILS needles displayed when ILS selected on HIS
+-Dislay system gets date from gina and pitot static system ~
+-full deflection of CDI in tacan, VOR, wpt steering (all the above I think)
+-OPGO on bit page = single channel
+-engine switch on in both cockpits energizes starter control unit
+-raising the finger lift will: allow throttle to go below appr idle, go past fight idle to off,
+prevent inadvertent pull to off in a rapid retraction
+-display switch to ORIDE to keep L MFD on during a gen failure
+~electronic sequencer determines ejection mode
+-CANOPY light whenever canopy unlocked....get a tone of unlocked and go past 95%
+Tpm. .

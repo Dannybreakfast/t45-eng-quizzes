@@ -1,0 +1,40 @@
+# Page 20 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+; ;
+
+40. G limit question- GACY |
+
+_ 4]. Crosswind does what to Nose- nose away from Xewind ° —
+- 42, Stall at % flaps- 21.5 units warning at
+
+43. Rudder opposite turn needle for both upright and inverted spins .
+_ 44, inverted spins characterized by- 0 AOA, neg G’s, Turn needle direction of Spin
+
+45, Ajieroa positions reversed for spin recovery (upright + Inverted) upright into
+
+5 turn needle, Inv away from needle
+
+46, T-45 tums away from crosswind pg48 ; cs
+
+Warn Buffet Stall |
+
+Clean 21.5/ LOTAS 25/1-2 26/0 ;
+
+5 Approach dirty 21.5/10LAS 28/1 29-30/0 '
+3 Moving forward or CG question, If CG moves forward what happens, answer Says
+TS
+
+Pe +30 INC 180 12,000 im ;
+
++45 stdy 100-110 15,000 ibm
+
+INVERTED Spin |
+
+2 | GO 50-120 15-20,006°
+
+4 100-160  15-20,000° . | |
+-25 146-200 11,000" -
+
+|
+
+2

@@ -1,0 +1,23 @@
+# Page 8 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+27. Pitot static failure question- standby VSI
+
+28. Settling off catapult- throttle check full forward, 24 AOA
+
+29. Launch bar warning light after cat launch- divert to shore, min. descent rate landing with
+arresting wires removed
+
+30. Gen failure- confirm engine operation, reset Gen switch
+
+31. Wheel brake failure go around not possible- brakes release, anti skid- off, attempt braking,
+hook down 1000 feet prior
+
+32. AC INV light- reset number 1 and 2 inverters
+
+33. Hook light still illum after hook should be down- hook is not fully extended
+
+34. Anti-skid failure- release brakes, anti-skid off, brakes as required
+
+35. 28 VDC gen bus failure will not remove- primary stabilator trim
+
+36. Fire light in flight- Idle, instruments check, secondary-eject

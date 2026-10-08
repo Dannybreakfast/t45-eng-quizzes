@@ -1,0 +1,43 @@
+# Page 41 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+|
+Flight Controls and Trim System (NATOPS 2.6)
+~ 20 +/-0.5° maximum rudder surface deflection .
++6.6° to -15° maximum travel of stabilator leading edge due to stick movement
++3° to -8° maximum travel of stabilator leading edge due to trim movement alone
+a +/- 15.5° maximum aileron deflection with gear down
+-d +/+ 12.5° maximum aileron deflection with gear up
+> +/- 9° maximum aileron trim deflection with gear down
++/-6° maximum aileron trim deflection with gear up
+a 2°/sec approximate trim rate
+120 sec maximum time required for CONTROL AUG BIT test
+T/F the artificial feel for the stabilator is provided by the spring cartridge
+(FALSE, a spring cartridge and inertial weight)
+° T/F because the standby stabilator trim is powered by the 28 VDC gen bus, in the event of a ~
+2 generator failure, activating the standby trim system will have no effect on the main
+4 stabilator trim (FALSE, raising the guard cover over the standby trim switch disengages
+a the main trim motor regardless of the 28 VDC generator bus status)
+T/F the stabilator position indicator shows stabilator trim position only with zero force on the
+stick (TRUE)
+T/F rudder trim is available only with control augmentation system activated (TRUE)
+The control augmentation system performs four functions 1. Yaw dampening, 2. Turn coordination,
+o 3. SBI interconnect, and 4. Rudder trim.
+; T/F yaw dampening and turn coordination are not available above 217 knots (TRUE)
+AR\ . . . . .
+T/F tum-ceerdination is available in any flap configuration (FALSE, only with 1/2 or full)
+2 TIF the SBI operates without any movement of the control stick (TRUE)
+The CONTR AUG BIT requires 1. Weight on wheels, 2. Less than 80 knots airspeed,
+3. FLAPS/SLATS up .
+Conditions for CONTR AUG caution light illuminates when 1. CONTR AUG system degraded,
+2. BIT test in progress, 3. Paddle switch has been depressed
+od FLAP/SLAT System (NATOPS 2.7) a
+>. 217 Maximum airspeed for Slats BRUNE ane SAE Core
+200 Maximum airspeed for flap extension Pacsfsins + $2.0 G- '
+ed 50° approximate full flap deflection in degrees Het, oe 4h Sg Casrmetare >
+4 25° approximate 1/2 flap deflection in degrees
+a TIF assuming sufficient pressure is available, use of emergency flap extension will drive flaps
+> to full down regardless of flap lever (TRUE)
+a T/F if the brake pressure valve indicates 2200psi or less, activating the emergency flap lever
+| will have no effect (TRUE)
+a TIF if HYD 1 fails while slats are fully extended, air flow pressure will drive them to the
+- retract position as hydraulic pressure bleeds down (FALSE) .

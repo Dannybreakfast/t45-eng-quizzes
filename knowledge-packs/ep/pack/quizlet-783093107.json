@@ -1,0 +1,106 @@
+[
+ {
+  "term": "Engine fails to light off with in 15 sec from putting throttle to idle",
+  "definition": "Wet Start"
+ },
+ {
+  "term": "Audible bang, Increase EGT, RPM lowers",
+  "definition": "Engine Stall"
+ },
+ {
+  "term": "During descent passing 7000 MSL, ACCEL Caution light",
+  "definition": "Expect slower engine acceleration during an approach"
+ },
+ {
+  "term": "HYD 2 pressure failure",
+  "definition": "RAT will maintain HYD 2 pressure at 2500-3000"
+ },
+ {
+  "term": "Taxi clear of active, NWS malfunction",
+  "definition": "Aircraft would be steered by differential braking"
+ },
+ {
+  "term": "If aborting with a blown tire, set ANTI-SKID switch ON",
+  "definition": "False"
+ },
+ {
+  "term": "ECA 2 Caution light",
+  "definition": "Land as soon as practical and do not exceed 90% above 20K MSL, 95% below 20K MSL, do not exceed 600 deg EGT"
+ },
+ {
+  "term": "Just flamed out, airspeed is 150 and at 1000' you should",
+  "definition": "Eject"
+ },
+ {
+  "term": "Abort procedures",
+  "definition": "IDLE, BOARDS retract, BRAKES, HOOK (1000 ft. prior)"
+ },
+ {
+  "term": "LP PUMP light in flight",
+  "definition": "Avoid abrupt throttle movements and set min for flight"
+ },
+ {
+  "term": "What requires an immediate shutdown on deck w/out 2ndary indications",
+  "definition": "FIRE light illums"
+ },
+ {
+  "term": "When flying @ 15K, TP HOT light",
+  "definition": "Throttle idle (min safe flight)"
+ },
+ {
+  "term": "On cat stroke, aircraft settles",
+  "definition": "Throttle full, check 24 AOA, if settle continues Eject"
+ },
+ {
+  "term": "Launch bar system is",
+  "definition": "Electrically controlled, mechanically extended, and hydraulically retracted"
+ },
+ {
+  "term": "Engine failure on cat stroke and unable to eject",
+  "definition": "Ditch straight ahead"
+ },
+ {
+  "term": "For HYD 1 or HYD 2 Failure 1st consideration",
+  "definition": "Reduce A/S below 300 KIAS/.6 MACH"
+ },
+ {
+  "term": "After F PRESS light illuminates and checking engine switch on you should",
+  "definition": "Avoid negative G maneuvers"
+ },
+ {
+  "term": "While cruising 23K you get FIRE light, with secondaries",
+  "definition": "EJECT (not prepare for controlled ejection)"
+ },
+ {
+  "term": "NWS AUG system provides yaw rate feedback in high gain nose wheel steering",
+  "definition": "False (yeah we had no f'ng idea either)"
+ },
+ {
+  "term": "3-4 questions that deal with procedures for COMP Stall and EGT RPM Light. Know the first 3 steps in that procedure and that's 3-4 free questions.",
+  "definition": ""
+ },
+ {
+  "term": "If you get a HYD 2 failure",
+  "definition": "Monitor HYD 1 Pressure"
+ },
+ {
+  "term": "Executing the Engine Fire Emergency Shutdown on the Ground state the procedures verbatim",
+  "definition": "(A,E,B,D,F, if different use PCLI) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)\nFuel Shutoff - PULL, 4) BATT switches - OFF, 5) Emergency Egress"
+ },
+ {
+  "term": "During ACM you get a HYD caution light, RAT caution light and then the HYD light extinguishes you should:",
+  "definition": "Reset HYD 2 (correct but not the first thing to do, Instructar took note & future test may be changed)"
+ },
+ {
+  "term": "First step in the EGT/RPM warning light:",
+  "definition": "Neutral/IDLE"
+ },
+ {
+  "term": "If NWS AUG goes on during taxi, you should:",
+  "definition": "Momentarily press NWS button."
+ },
+ {
+  "term": "GTS Fire on deck:",
+  "definition": "Emergency Shutdown"
+ }
+]

@@ -1,0 +1,60 @@
+# Page 74 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+EP 11X
+
+w 1. Know Cabin Altitude Warning Light procedures _.
+
+a. OBOGS — on and mask tight
+
+b. Reduce AOA (if req)
+
+ec. AIR FLOW KNOB - off then on
+
+- If Warning Light remains on —
+
+ed d. Altitude — Descend Below 25,000’ MSL
+
+a , e. Land as soon as practical
+
+we Know Total Electrical Procedures -NO LOAD SHEDDING NECESSARY!
+2 No (you can eliminate three of the four answers because they include load
+
+id ' shedding)
+
+] a. Emergency Oxygen Actuator — Pull
+
+b. Proceed to VMC as soon as possible
+
+c. Land as soon as practical
+
+a d. Attempt to reset Generator/Check Batteries on
+
+e. Landing gear — Emergency Extend
+
+s f. Plan a NO FLAP/NO SLAT approach and arrested landing, if
+available. Recommend a short field trap due to no NWS
+
+3 vi 3. If Directional Control is ever an issue, then take a short field arrestment and
+: land 50’ prior to the gear with your hook down.
+
+L VJ “4, Ifyou are coming into the break and you get a slats light, slow to and
+
+2 maintain below 200 KIAS.
+
+J 5. Engine Stall (or compressor stall ) first step is Throttle — Idle.
+
+td N 6. MED Failures = Blinking Screen, Stuck Button, Black Screen, Wrong Info.
+e is “7, : Wheel Brake Failure on Touchdown = GO AROUND! If unable, then feet
+he off brakes, anti-skid off, attempt braking.
+
+IN 8. Canopy Loss = Descend to 10k or min safe altitude and Less than 200 KIAS.
+¢’ 9. Question about Pitot Static Failure = Check STBY VSI.
+
+a - A. Any Engine Failure below 1500’ AGL and 180 KIAS = EJECT.
+
+4 ,oh AL. Engine Fire on Takeoff = if able, ABORT, if unable and fire confirmed
+
+_ \A2. Aircraft Settling Off Cat = check throttle full forward, maintain 24 units
+2 AOA, if settle not stopped EJECT.
+
+© WHEELS twiePtCH EB CAFE ARE TE ee GEO Hoe

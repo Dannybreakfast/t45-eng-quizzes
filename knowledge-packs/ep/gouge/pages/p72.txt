@@ -1,0 +1,11 @@
+# Page 72 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.72]).
+
+/
+¢
+x
+u
+»
+|
+xo
+U

@@ -1,0 +1,46 @@
+# Page 57 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+HYD 1 Numbers:
+
+—*? 3000 psi at 9.6 gpm—EDP Oy |
+
+= —~7 71100 +/. 50 psi- FC Accum Nitrogen Pregg
+
+> “ 1500 psi — Priority Valve — No Genera] Services
+
+> Vp 1660 Pe 1 PHOKity valve redirects to Gene Services
+
+a —-"& 2200 psi~ No Flap/ Just Brakes
+
+5 1660 +1480 — HYD 1 Light
+
+- 725 +/-50— HYD 1 Light Out
+
+| "> 3000 psi at 6 som — EDP Ow -EPA- & ce, |
+
+"1500 27 SOPSt~ FC Accum Nitrogen Pree mn ™ EWS CS
+
+- 1500 Psi-RAT Deploys. Deployed byEPA 4 oO. _
+
+- 1800 pal” HYD 2 Reset-Allowed by Be Pre CAGE
+
+2th pat ena ED 2 Li } ASSEMBLY
+
+«2500-3000 psi — Normal RAT Output a
+
+“700 psi~RAT Retract (? Airloads}
+
+742% 4 ~ Bypass Effactive
+
+> 145% T- Bypess Accepts Reset BD BQer Seay >
+
+Brake/ Flap Accum allows “or Flap Emecg Extend 10 Brake applications _ 7
+HYD Fail Warming — HYD 1 < 600 4 50, HYD 2 < 1660 +. 110, Emerg Sys< 6004.59
+
+} —f |
+
+5 ey eet 7
+: SOS! og |
+rs ee oS : Bema,
+| Cage nel EH RT © | 8 Cece | H
+Figure §: T-45¢ HYDRAULIC SYSTEM BLOCK DIAGRAM .

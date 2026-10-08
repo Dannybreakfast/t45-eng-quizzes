@@ -1,0 +1,881 @@
+{
+ "source": "/workspace/t45-nav-packs/gouge/drive-source.pdf",
+ "total_pages": 86,
+ "method": "All pages are scanned images (pdftotext yields no text). OCR: tesseract 5.5 psm 6 at 300 dpi; handwriting transcribed visually. Per-page text in pages/pNN.txt, combined in all-pages.txt.",
+ "ep_pages": [
+  {
+   "page": 1,
+   "topics": [
+    "spin recovery",
+    "emergency flap configuration",
+    "stall warning"
+   ],
+   "summary": "Aero Timms gouge Q&A: spin recovery aileron/rudder items (#8, #10, #12, #17), emergency-flap approach/stall speeds (#13), artificial stall warning (#6)."
+  },
+  {
+   "page": 2,
+   "topics": [
+    "spin recovery",
+    "max abort speed"
+   ],
+   "summary": "Aero Timms gouge: upright/inverted spin characteristics (#28, #40), max abort speed definition (#33)."
+  },
+  {
+   "page": 3,
+   "topics": [
+    "engine stall",
+    "fire indications",
+    "electrical failures",
+    "hydraulic",
+    "anti-skid",
+    "ECA",
+    "NWS"
+   ],
+   "summary": "Engineering Timms gouge: comp stall, fire light logic, inverter/generator failure effects, no emergency flaps or NWS on emergency/electrical failures, accumulator preloads, 5 times to turn anti-skid off, F PRESS, ECA failure."
+  },
+  {
+   "page": 4,
+   "topics": [
+    "flameout/eject criteria",
+    "hot/hung start",
+    "CAUG",
+    "generator failure",
+    "DEU failure",
+    "split flap/slat",
+    "canopy light",
+    "ejection"
+   ],
+   "summary": "Engineering Timms gouge p2: flameout below 1500 AGL/180 KIAS eject, hot/hung start indications, CAUG losses, DEU failure → GCA, ORIDE on gen failure, split flaps, canopy light, ejection sequencer."
+  },
+  {
+   "page": 5,
+   "topics": [
+    "EP Test 1",
+    "wet start",
+    "engine stall",
+    "HYD failure",
+    "NWS",
+    "blown tire",
+    "ECA 2",
+    "abort",
+    "LP PUMP",
+    "fire",
+    "TP HOT",
+    "cat settle",
+    "launch bar",
+    "ditching",
+    "F PRESS",
+    "emergency shutdown"
+   ],
+   "summary": "Timms Gouge EP Test 1, items 1-22: core EP exam answers."
+  },
+  {
+   "page": 6,
+   "topics": [
+    "emergency shutdown/egress",
+    "HYD 2 reset",
+    "EGT/RPM light",
+    "NWS AUG",
+    "GTS fire"
+   ],
+   "summary": "EP Test 1 cont.: Engine Fire Emergency Shutdown verbatim steps; items 23-26."
+  },
+  {
+   "page": 7,
+   "topics": [
+    "EP Test 2",
+    "OBOGS",
+    "eject criteria",
+    "electrical fire",
+    "SLATS",
+    "smoke/fumes",
+    "short field arrestment",
+    "asymmetric flaps",
+    "OXYGEN light",
+    "blown tire",
+    "GINA/MFD/baro failures",
+    "engine failure on cat",
+    "immediate airstart",
+    "CAUG",
+    "GTS fire",
+    "cabin pressurization",
+    "compressor stall",
+    "canopy light",
+    "total electrical",
+    "windmill airstart",
+    "abort"
+   ],
+   "summary": "EP Test 2 items 1-26."
+  },
+  {
+   "page": 8,
+   "topics": [
+    "pitot static failure",
+    "cat settle",
+    "launch bar",
+    "generator failure",
+    "wheel brake failure",
+    "AC INV",
+    "hook light",
+    "anti-skid failure",
+    "28VDC bus",
+    "fire light in flight"
+   ],
+   "summary": "EP Test 2 items 27-36."
+  },
+  {
+   "page": 14,
+   "topics": [
+    "pitot-static failure",
+    "VHF nav failure",
+    "INS failure",
+    "partial panel"
+   ],
+   "summary": "BI gouge: instrument-failure items (pitot-static, VOR/ILS, INS, nose-low partial panel). Rest is BI/nav, not EP."
+  },
+  {
+   "page": 15,
+   "topics": [
+    "ADI failure",
+    "partial panel",
+    "AOA failure",
+    "GINA failure"
+   ],
+   "summary": "BI gouge cont.: ADI failure in IFR, nose-high partial panel, AOA failure, total GINA failure indications."
+  },
+  {
+   "page": 16,
+   "topics": [
+    "spin",
+    "max abort"
+   ],
+   "summary": "Aero gouge copy: -60 inverted spin airspeed, 45° upright spin ROD, 'Max abort 125 (not 129)'. Duplicate content."
+  },
+  {
+   "page": 17,
+   "topics": [
+    "spin recovery"
+   ],
+   "summary": "Aero gouge copy: spin recovery upright/inverted, rudder opposite. Duplicate content."
+  },
+  {
+   "page": 18,
+   "topics": [
+    "spin",
+    "max abort"
+   ],
+   "summary": "Aero gouge copy: 45° upright spin ROD, 'Max abort 125 (not 129)'. Duplicate content."
+  },
+  {
+   "page": 20,
+   "topics": [
+    "spin recovery",
+    "spin modes"
+   ],
+   "summary": "Aero gouge: items 43-45 spin recovery (rudder opposite turn needle; aileron into needle upright, away inverted); upright/inverted spin parameter table."
+  },
+  {
+   "page": 21,
+   "topics": [
+    "spin"
+   ],
+   "summary": "Aero gouge copy: spin ROD/airspeed items. Duplicate content."
+  },
+  {
+   "page": 22,
+   "topics": [
+    "spin recovery (OCF)"
+   ],
+   "summary": "Aero gouge copy: #32 OCF rudder/lateral input. Duplicate content."
+  },
+  {
+   "page": 23,
+   "topics": [
+    "spin recovery"
+   ],
+   "summary": "Aero gouge copy of p.20 items 43-45. Duplicate content."
+  },
+  {
+   "page": 25,
+   "topics": [
+    "inverted spin modes",
+    "spin recovery",
+    "max abort"
+   ],
+   "summary": "Aero gouge: inverted spin modes summary table, rudder/aileron recovery rules, 'Max Abort 125 – not 129'."
+  },
+  {
+   "page": 26,
+   "topics": [
+    "spin modes"
+   ],
+   "summary": "Aero gouge copy of spin-mode table (turn needle). Duplicate content."
+  },
+  {
+   "page": 28,
+   "topics": [
+    "spin"
+   ],
+   "summary": "Aero gouge copy: 45° spin ROD. Duplicate content."
+  },
+  {
+   "page": 30,
+   "topics": [
+    "MFD failure",
+    "DEU failure"
+   ],
+   "summary": "CNI gouge: two EP-adjacent lines (MFD failure indications; DEU failure → PAR). Rest is CNI, not EP."
+  },
+  {
+   "page": 31,
+   "topics": [
+    "ADI/VSI/AOA failure",
+    "undervoltage",
+    "inverter failure",
+    "ACCEL light",
+    "fire light secondaries",
+    "ECA failure",
+    "trim with gen fail"
+   ],
+   "summary": "Engineering questions 9-20 + electrical 1-2: instrument failures, inverter losses, ACCEL, ECA failure verifications."
+  },
+  {
+   "page": 32,
+   "topics": [
+    "IFF failure",
+    "canopy light",
+    "NWS caution"
+   ],
+   "summary": "Handwritten systems notes: IFF failure (ATC loss of altitude), canopy light, NWS caution. Mostly illegible."
+  },
+  {
+   "page": 33,
+   "topics": [
+    "HYD caution/fail thresholds",
+    "hand pump",
+    "brake accumulator"
+   ],
+   "summary": "Systems numbers: HYD 1 caution 1660±110, HYD 2 reset 45%, 10 brake applications, HYD FAIL if RAT <600±100 (rest is flight control/flap/gear limits)."
+  },
+  {
+   "page": 34,
+   "topics": [
+    "ejection seat limits",
+    "start/ignition timing",
+    "generator reset",
+    "engine limits table"
+   ],
+   "summary": "Seat limits (600 KIAS/60K, weight), start timing, generator reset 5 s, engine limit table."
+  },
+  {
+   "page": 35,
+   "topics": [
+    "split slat/flap",
+    "SKID/NWS caution",
+    "paddle switch",
+    "anti-skid off cases"
+   ],
+   "summary": "Systems notes: split-slat/split-flap indications, SKID & NWS caution lights, paddle switch, five times to secure anti-skid."
+  },
+  {
+   "page": 36,
+   "topics": [
+    "abnormal starts",
+    "start timeline"
+   ],
+   "summary": "Handwritten start sequence timeline and 'define difference between abnormal starts'."
+  },
+  {
+   "page": 37,
+   "topics": [
+    "engine limits",
+    "EGT/RPM light",
+    "fire/TP HOT thresholds",
+    "airstart timing",
+    "LP PRESS/OIL PRESS"
+   ],
+   "summary": "Engine Systems gouge: rpm/EGT limits, warning-light thresholds, airstart/start timing."
+  },
+  {
+   "page": 38,
+   "topics": [
+    "airstart minimums",
+    "manual fuel control",
+    "ACCEL light"
+   ],
+   "summary": "Handwritten 1500'/180 KIAS airstart note; 24V start; ACCEL caution conditions; manual fuel (airstarts require throttle modulation)."
+  },
+  {
+   "page": 39,
+   "topics": [
+    "airborne ignition",
+    "FUEL LOW",
+    "boost pumps after gen fail",
+    "FUEL PRESS",
+    "fuel shutoff"
+   ],
+   "summary": "Fuel system: airstart ignition logic, FUEL LOW 350 lbs, boost pumps 30 s after gen failure, FUEL PRESS conditions, fuel shutoff disables GTS ignition."
+  },
+  {
+   "page": 40,
+   "topics": [
+    "hydraulic failure thresholds",
+    "RAT",
+    "HYD FAIL warning"
+   ],
+   "summary": "Hydraulic systems numbers: RAT deploy/retract, caution light thresholds, accumulator, HYD FAIL warning requirements."
+  },
+  {
+   "page": 41,
+   "topics": [
+    "standby trim with gen failure",
+    "CAUG caution/BIT",
+    "emergency flap extension"
+   ],
+   "summary": "Flight controls: standby trim/gen failure, CONTR AUG caution conditions & BIT, emergency flap T/F items."
+  },
+  {
+   "page": 42,
+   "topics": [
+    "SLATS caution",
+    "WHEELS warning",
+    "EMER GEAR",
+    "NOSE WHEEL STR caution"
+   ],
+   "summary": "Slat/speed brake/gear/NWS: SLATS caution, speed brake blowback, WHEELS warning conditions, emergency gear doors."
+  },
+  {
+   "page": 43,
+   "topics": [
+    "NWS caution",
+    "anti-skid caution",
+    "PARKING BRAKE caution",
+    "L BAR light",
+    "launch bar failure"
+   ],
+   "summary": "NWS/brakes/anti-skid/launch bar caution and warning conditions."
+  },
+  {
+   "page": 44,
+   "topics": [
+    "HOOK light",
+    "CANOPY light",
+    "ejection seat",
+    "electrical loss & ECS",
+    "CABIN ALT",
+    "OXYGEN light"
+   ],
+   "summary": "Hook, canopy, ejection seat, ECS, OBOGS: warning light conditions and limits."
+  },
+  {
+   "page": 45,
+   "topics": [
+    "emergency oxygen",
+    "OBOGS shutoff",
+    "standby gyro",
+    "gen failure turn indicator"
+   ],
+   "summary": "Emergency O2 bottle limits/duration, OBOGS auto-shutoff, standby gyro after power loss."
+  },
+  {
+   "page": 47,
+   "topics": [
+    "MFD failure/reset",
+    "battery time",
+    "over/undervoltage",
+    "ECA failure",
+    "FUEL caution",
+    "fire on takeoff",
+    "fire secondaries"
+   ],
+   "summary": "Engineering gouge Q1-23 + handwritten fire notes."
+  },
+  {
+   "page": 48,
+   "topics": [
+    "hydraulic failure numbers"
+   ],
+   "summary": "Handwritten 'HYD FAILURES' pressure chart (HYD 2 caution, RAT extend/power/reset)."
+  },
+  {
+   "page": 49,
+   "topics": [
+    "steam ingestion valve",
+    "HYD caution/RAT",
+    "WHEELS warning",
+    "general services lost",
+    "SLATS caution",
+    "anti-skid",
+    "inverter"
+   ],
+   "summary": "Engineering gouge Q24-43 + handwritten notes."
+  },
+  {
+   "page": 51,
+   "topics": [
+    "warning lights",
+    "electrical failure",
+    "HYD 1 tailhook",
+    "inverter",
+    "overvoltage/gen fail",
+    "battery time",
+    "OXYGEN light"
+   ],
+   "summary": "Engineering gouge Q44-63: CWS warning light list, complete electrical failure, gen fail/overvoltage effects."
+  },
+  {
+   "page": 52,
+   "topics": [
+    "inverter failures",
+    "generator failure",
+    "finger lift",
+    "airstart minimum",
+    "CAUG",
+    "DEU failure",
+    "parking brake light"
+   ],
+   "summary": "Engineering gouge Q64-89."
+  },
+  {
+   "page": 53,
+   "topics": [
+    "CABIN ALT light",
+    "OXYGEN light",
+    "MDC/canopy",
+    "ejection modes",
+    "CANOPY light",
+    "fire light",
+    "AV HOT"
+   ],
+   "summary": "Engineering gouge Q90-114 (EP-relevant: 102, 105-110, 113-114)."
+  },
+  {
+   "page": 54,
+   "topics": [
+    "ACCEL light",
+    "flameout restart minimums",
+    "engine seizure",
+    "locked-in stall",
+    "EGT/RPM/FIRE/GTS FIRE/TP HOT meanings",
+    "HYD/RAT",
+    "hook with HYD 1 fail",
+    "anti-skid off"
+   ],
+   "summary": "Engineering gouge Q114-141."
+  },
+  {
+   "page": 55,
+   "topics": [
+    "NWS/CAUG reset",
+    "BRAKE PRESS light",
+    "DEU failure",
+    "GINA on gen loss",
+    "undervoltage",
+    "gen fail losses",
+    "approach idle with total electrical failure"
+   ],
+   "summary": "Engineering gouge Q142-167 (EP-relevant subset)."
+  },
+  {
+   "page": 56,
+   "topics": [
+    "hot/hung/wet starts",
+    "GEN light",
+    "OIL PRESS light",
+    "READY light",
+    "start/idle/engine limits"
+   ],
+   "summary": "Engineering gouge Q168-180."
+  },
+  {
+   "page": 57,
+   "topics": [
+    "hydraulic numbers",
+    "HYD FAIL warning",
+    "RAT"
+   ],
+   "summary": "'HYDs' HYD 1/HYD 2 pressure numbers, accumulator, HYD Fail warning, EPA; hydraulic block diagram."
+  },
+  {
+   "page": 58,
+   "topics": [
+    "ground emergencies",
+    "airstart envelopes"
+   ],
+   "summary": "Handwritten: ground TP HOT/FIRE/GTS FIRE → emergency shutdown; Immediate/Windmill/Assisted airstart limits."
+  },
+  {
+   "page": 59,
+   "topics": [
+    "EP 06X (Eagle)",
+    "HYD uncontrollable eject",
+    "engine stall",
+    "midair",
+    "oil press",
+    "engine failure off cat",
+    "TP HOT",
+    "ditching",
+    "blown tire",
+    "NWS loss",
+    "overspeed start",
+    "GTS fire",
+    "fire on startup",
+    "HYD 1/HYD 2 failure"
+   ],
+   "summary": "EAGLE EP GOUGE – EP 06X items 1-16."
+  },
+  {
+   "page": 60,
+   "topics": [
+    "EP 06X (Eagle)",
+    "compressor stall",
+    "eject criteria",
+    "fire on takeoff",
+    "cat settle",
+    "blown tire on T/O",
+    "fire light in flight",
+    "abort",
+    "ECA 2",
+    "fire on ground",
+    "TP HOT",
+    "ejection",
+    "airstarts",
+    "oil press",
+    "structural damage",
+    "launch bar"
+   ],
+   "summary": "EP 06X items 17-32 + handwritten abort & L-BAR notes."
+  },
+  {
+   "page": 61,
+   "topics": [
+    "CAUG",
+    "MFD failure",
+    "6X topics: oil press, ECA 2, fire, stalls, HYD 2, NWS, blown tire, ditching, F PRESS, LP pump"
+   ],
+   "summary": "Handwritten 6X topic notes."
+  },
+  {
+   "page": 62,
+   "topics": [
+    "6X corrections",
+    "RAT pressure",
+    "in-flight fire",
+    "abort anti-skid",
+    "blown tire",
+    "GTS fire",
+    "overspeed start",
+    "wet start"
+   ],
+   "summary": "Handwritten '6X Corrections – Ellington' items A-H."
+  },
+  {
+   "page": 63,
+   "topics": [
+    "CAUG",
+    "MFD failure"
+   ],
+   "summary": "Handwritten: duplicate of the first three lines of p.61; rest blank."
+  },
+  {
+   "page": 64,
+   "topics": [
+    "PRESS E.P. gouge",
+    "cabin alt",
+    "total electrical",
+    "trim failure",
+    "directional control",
+    "slats",
+    "HYD uncontrollable",
+    "engine stall",
+    "midair",
+    "oil press",
+    "MFD fail",
+    "engine failure off cat",
+    "TP HOT",
+    "wheel brake failure",
+    "canopy loss",
+    "pitot static",
+    "launch bar"
+   ],
+   "summary": "'PRESS' E.P. gouge items 1-17 + handwritten cabin alt procedure."
+  },
+  {
+   "page": 65,
+   "topics": [
+    "EMEP-06X 'Jolly Rodgers'",
+    "boldface",
+    "ECA 2",
+    "fire warning",
+    "cat settle/engine failure",
+    "HYD 1/HYD 2",
+    "stall vs flameout",
+    "electrical failure",
+    "fire secondaries",
+    "GTS fire",
+    "overspeed start",
+    "NWS",
+    "ejection",
+    "midair",
+    "blown tire",
+    "ditching",
+    "immediate airstart"
+   ],
+   "summary": "Handwritten EMEP-06X exam gouge."
+  },
+  {
+   "page": 66,
+   "topics": [
+    "PRESS E.P. gouge",
+    "cabin alt",
+    "eject criteria",
+    "fire on T/O",
+    "cat settle",
+    "blown tire",
+    "smoke/fumes",
+    "dual blown tire",
+    "OBOGS failure",
+    "fire in flight",
+    "generator failure",
+    "GTS fire",
+    "hook light",
+    "gear light",
+    "CAUG",
+    "ECA"
+   ],
+   "summary": "'PRESS' gouge items 18-34 + handwritten smoke/fumes steps and 'MEMORIZE fire, GTS fire, generator failure'."
+  },
+  {
+   "page": 67,
+   "topics": [
+    "CAUG",
+    "cat settle",
+    "windmill airstart",
+    "generator failure",
+    "cabin alt",
+    "OBOGS",
+    "blown tires",
+    "electrical failure",
+    "short field arrestment",
+    "SBI pitch",
+    "load shedding",
+    "slats",
+    "speed brakes"
+   ],
+   "summary": "Handwritten EP list."
+  },
+  {
+   "page": 68,
+   "topics": [
+    "EP 11X",
+    "cabin alt warning",
+    "total electrical failure",
+    "trim failure",
+    "MFD failure",
+    "wheel brake failure",
+    "canopy loss",
+    "OBOGS contamination"
+   ],
+   "summary": "EP 11X (low-quality print) items 1-7 + handwritten notes."
+  },
+  {
+   "page": 69,
+   "topics": [
+    "inverter failure nav",
+    "AOA/airspeed",
+    "emergency gear disables NWS",
+    "landing emergency topic list"
+   ],
+   "summary": "Handwritten: inverter failure nav losses, AOA reference speeds, emergency gear handle → NWS, faint topic list (blown tires, brake failure ashore/afloat)."
+  },
+  {
+   "page": 70,
+   "topics": [
+    "EP 11X",
+    "pitot static",
+    "cabin alt",
+    "blown tire on T/O",
+    "smoke/fumes",
+    "dual blown tire",
+    "OBOGS failure",
+    "generator failure"
+   ],
+   "summary": "EP 11X items 9-15 (item 8 missing from scan)."
+  },
+  {
+   "page": 71,
+   "topics": [
+    "EP 11X",
+    "generator failure",
+    "hook light",
+    "gear light",
+    "CAUG",
+    "SBI",
+    "speed brakes",
+    "CAUG BIT",
+    "long field arrestment",
+    "load shedding",
+    "SLATS"
+   ],
+   "summary": "EP 11X items 15 (end)-30."
+  },
+  {
+   "page": 72,
+   "topics": [
+    "short field arrestment",
+    "NWS AUG failure",
+    "launch bar landing"
+   ],
+   "summary": "Handwritten: NWS AUG failure → touch down just before gear; L-BAR extended → land past gear."
+  },
+  {
+   "page": 73,
+   "topics": [
+    "blown tire landing",
+    "short field arrestment",
+    "cat settle",
+    "windmill airstart",
+    "multiple MFD failure"
+   ],
+   "summary": "EP 11X items 31-33 + handwritten 34-36 (page scanned sideways)."
+  },
+  {
+   "page": 74,
+   "topics": [
+    "EP 11X v2",
+    "cabin alt warning",
+    "total electrical",
+    "directional control",
+    "slats",
+    "engine stall",
+    "MFD failure",
+    "wheel brake failure",
+    "canopy loss",
+    "pitot static",
+    "eject criteria",
+    "fire on takeoff",
+    "cat settle",
+    "WHEELS warning"
+   ],
+   "summary": "EP 11X clean print items 1-12 + handwritten WHEELS warning note."
+  },
+  {
+   "page": 75,
+   "topics": [
+    "smoke/fumes",
+    "OBOGS failure",
+    "generator failure",
+    "hook light",
+    "gear light",
+    "CAUG",
+    "OBOGS contamination",
+    "launch bar"
+   ],
+   "summary": "EP 11X items 13-20."
+  },
+  {
+   "page": 76,
+   "topics": [
+    "blown tire",
+    "gear handle light",
+    "barometric altimeter failure",
+    "28VDC gen bus",
+    "windmill airstart",
+    "multiple MFD",
+    "SLATS",
+    "anti-skid failure",
+    "GTS fire on deck",
+    "engine fire in flight"
+   ],
+   "summary": "EP 11X items 21-31."
+  },
+  {
+   "page": 77,
+   "topics": [
+    "RADALT",
+    "immediate airstart",
+    "TP HOT on deck",
+    "engine fire on deck",
+    "clear engine"
+   ],
+   "summary": "EP 11X items 32-36."
+  },
+  {
+   "page": 83,
+   "topics": [
+    "abort decision (takeoff flow)"
+   ],
+   "summary": "Normal-procedures comm/flow script; single EP-adjacent line: '90kts (before or at the gear, otherwise abort)'."
+  },
+  {
+   "page": 86,
+   "topics": [
+    "VOR loss",
+    "GINA loss"
+   ],
+   "summary": "BI test gouge: items 14-15 (lose VOR / lose GINA); rest is BI/nav, partly garbled."
+  }
+ ],
+ "core_ep_pages": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77
+ ],
+ "not_ep_pages": {
+  "pages": [
+   9,
+   10,
+   11,
+   12,
+   13,
+   19,
+   24,
+   27,
+   29,
+   46,
+   50,
+   78,
+   79,
+   80,
+   81,
+   82,
+   84,
+   85
+  ],
+  "note": "Checked and judged not EP-related: 9-10 Metro/weather gouge (one microburst wave-off line quoted for reference only); 11-13 and 78-82 INAV/NAV gouge (includes NORDO/lost-comm procedures — treated as NAV, borderline, excluded); 19, 24, 27 aero gouge pages with no spin/abort/EP items; 29 'Engineering Review' cover (blank); 46 AOA/radar altimeter/systems notes with no failure content; 50 control augmentation/CNI notes; 84-85 comm/flow scripts. Pages 16-18, 21-23, 26, 28 are aero-gouge duplicates listed above only for their spin/max-abort lines; 14-15, 30, 83, 86 contain only a few EP-adjacent lines."
+ },
+ "unreadable_or_partial": {
+  "29": "blank cover",
+  "36": "start-sequence diagram partly illegible",
+  "61": "left edge cut by binding",
+  "63": "mostly blank",
+  "65": "right edge cut",
+  "69": "one faint pencil line illegible",
+  "70": "EP 11X item 8 missing from scan; p.71/72 top lines cut",
+  "73": "sideways; boxed 1-8 diagram unreadable",
+  "86": "partly garbled"
+ }
+}

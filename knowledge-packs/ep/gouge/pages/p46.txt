@@ -1,0 +1,40 @@
+# Page 46 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+ANGLE-OF-ATTACK System (NATOPS 2.21) 4
+
+25.5-28 units AOA Range for Stall o
+
+21.5 units AOA at which rudder shakers activate =
+
+>18 units AOA range for upper green chevron (V)(Slow) —
+
+17 1/2 -18 units AOA range for upper green chevron and amber donut (VO) (slightly slow) a
+
+17 units optimum AOA, on speed =
+
+16-16 1/2 units AOA range for lower red chevron and amber donut (AO slightly fast) . i
+
+< 16 units AOA range for lower red chevron (A)(fast) |
+14 units AOA for best angle of climb and max endurance (holding), ~195-210 knots . 4
+
+12 units AOA for best rate of climb and max range (Bingo)
+
+T/F the AOA indexer lights illuminate with weight off wheels and the gear handle down J
+(FALSE, need three gear down AND LOCKED) |
+
+T/F discrepancies are possible between rear cockpit AOA indicator and rear cockpit €
+indexer lights (TRUE) |
+
+RADAR ALTIMETER System (NATOPS 2.22) so
+5,000' AGL inaximum altitude displayed on radar altimeter ul
+100 +/- 10' altitude indicted during the BIT check q
+40° maximum pitch or bank angle for radar altimeter effectiveness ; b
+AN/APN-194 Radar altimeter designation (|
+T/F the low altitude warning system (LAWS) can be set in either cockpit, but the headset warning tone 4
+will only be triggered by the front cockpit radar altimeter. (TRUE) é
+
+¢
+
+oe b
+
+a

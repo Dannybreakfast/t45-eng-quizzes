@@ -1,0 +1,72 @@
+# Page 3 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+Engineering Timms Gouge
+
+-Know limits chart and what would be an overstemp, max egt on start including
+
+overshoot (RTFQ!)
+
+-Loud pops/bangs...rpm down EGT up = comp stall
+
+-The over voltage unit takes the generator offline at 30.2 volts
+
+-The biggest user of battery juice is the pitot heat
+
+-Igniters powered by 28vdc ess serv bus
+
+-something about thrust loss with the bleed valve stuck open
+
+-No NWS with emergency gear extension
+
+-Emergency brake/flap accumulator gauge shows nitrogen pressure
+
+-A slow loss of HYD 2 pressure will not lose general services
+
+-T handle separates engine from aircraft fuel system
+
+-ATS mechanically drives N2 compressor
+
+-52 +/- 2 idle rpm closed bleed valve
+
+-know engine fire indications (light, tone, etc)
+
+-L Bar is mechanically raised and hydraulically lowered
+
+-Skid advisory light = both stitches on and gear down
+
+-know what the hyd gauges in the cockpit should read in start (1=3000, 2=0, brake=3000)
+
+-single AC inverter failure = loss of ac non essential services, AC inv light, tone
+
+-first indication of a fire on takeoff Is the fire light (true)
+
+-if the fire light comes on then turns off = temp below 300 or burn through
+
+-EGT/RPM light = 650 +/-8 or 112.4 +/-1 NI RPM
+
+-Know what triggers a NWS caution light
+
+-N2 Accessory gearbox = oil pump, hyd EDP’s, LP Pump, DC Generator, etc
+
+-no emergency flaps with total electrical failure
+
+-the gts powers the ats on start
+
+-loss of both inverters = loss of AC services, light, tone (all the above I think)
+
+~Generator failure = loss of hud, right mfd, gen warn light, master caution
+
+-NO VERIFICATION of INTERNAL tailpipe overtemp
+
+~accumulator preload charges (Hyd flight control = 1100 +/-50, 1300 +/-50 for brake)
+
+-5 x to turn off anti skid switch (after hyd 1 loss, after shurdown prior to setting pk bk,
+boat, skid caution light, blown tire)
+
+-300 amp fuse between generator and gen bus
+
+-hook extended by gravity assisted by snubber
+
+-F Press light for boos pump failure
+
+-ECA failure dual lane full and no trim indicaitons

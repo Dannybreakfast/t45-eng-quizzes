@@ -1,0 +1,42 @@
+# Page 11 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+INAV Timms Gouge- If you can’t pass you’re going E2s
+Cleared for published DP on IFR flight plan. After takeoff “climb and maintain FL350...”
+- Climb immediately to FL350 and proceed via direct flight to the DP transition point.
+On a flight from NAS Meridian to Montgomery Regional, prior to commencing a HI ILS aprch, tune and
+ID NAVAIDS. Which TACAN should be tuned and Ded?
+- Channel 97 (MXF)
+When flight planning, an airport designated “Official Business only”
+- Be designated as an alternate on an IFR flight plan
+For all flights in a jet, 3710 requires fuel from takeoff to landing plus a reserve of:
+~ 10%, but not less than that required for 20 minutes flight at max endurance for 10,000 MSL
+Which of the following are true concerning HI-TACAN RWY 19L approach chart to NAS Meridian
+- You must maintain 3000’ between the 328 and 358 degree radials
+With all NAVAIDs and facilities operating, takeoff mins for a standard instrument rated pilot departing
+RWY 9 at NAS Jax would be
+- 200 %
+When on an IFR flight plan and cleared to an intermediate point not in a filed route, short of filed
+destination, should not accept the clearance without first obtaining
+~ an expected further routing
+On a MA at NAS Meridian you decide to go to your alternate, Maxwell AFB. CAT-C mins for an ILS
+RWY 15 circle to land RWY 33 approach will be
+-500 1%
+You are in GCA box pattern, within 25NM of the filed in IMC, when comms ate lost. From here, intercept
+a published instrument aprch maintaining __ until established on a segment of aprch.
+- the highest of your last assigned or published MSA
+Your destination is forecasting 800 1% Published aprch procedures (NW winds) at alternate, Columbus
+AFB, lowest forecast wx conditions for filing would be__. ILS and ALS inop
+- 700 2
+To be cleared for a visual aprch, must report to aprch control field or interval in sight and wx must be
+reported as
+-a minimum of 1000-3
+Inadvertant IMC and lose sight of the runway while circle to land, you should:
+- Execute the MA for the original aprch procedure
+Min forecast wx needed to plan for NAS Meridian (RWY 1L) as you destination? Maxwell AFB is
+alternate and forecasting 900/3. NAS Meridian NOTAMS: GCA O/S ALL, ALS O/S RWY IL
+- 500 1%
+A LOC transmitter has range of __NM within 10* of centerline and___NM within 35* centerline.
+- 18, 10
+Reading back an ATC clearance implies acceptance of the clearance, unless.
+- you state refusal and reasons
+Executing the ILS RWY15 aprch to Maxwell AFB, you should be at__ AGL when crossing rwy threshold

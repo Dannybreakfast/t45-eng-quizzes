@@ -1,0 +1,40 @@
+# Page 33 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+». | jb60 £ hogs . 7 oe
+Slss—sSssi pressure at which‘HYD 1 (prior to AFC244) PRESS caution light
+_ .. :illuminates . - -
+276+/-6cubic inches hydraulic Teservoir gauge on preflight .
+nd ~ 45% ~ N2 rpm required to use HYD 2 Reset button -
+" 42% N2 rpm below which HYD 2 bypass valve is energized open to reduce
+engine loads on start ‘ -
+1 O.genmes number of full brake applications provided by brake/ emergency flap
+‘accumulator : -
+2300psi - Max pressure provided by Hand-pump
+600 +/-100psi Press that HYD FAT. illuminates if RAT pressure drops below
+- . Blight Controls and Trim System | |
+| 20 +/-0.5° maximum rudder surface deflection . os ;
+2 +6.6° to -15° maximum travel of stabilator leading edge due to stick movement
+3 - 43° to-8° - maximum travel of stabilator leading edgé due to trim movement alone
+pb! +/- 15.5° “Taaximum ailéron deflection with gear down ,
+Re ° “+/-12.5°. . Maximum afleron deflection with gear up Se
+er a +/-.9° maximunt aileron tim deflection with gear down ae
+= +62 maximum aileron tim deflection with gear up *
+: 2°/sec approximate trim Tate ;
+) 120 sec maximum time required for CONTROL AUG BIT test: |
+) | 6 +/-1° max ruddertrim deflection “
+; FLAP/SLAT System ae oe
+217 Maximum airspeedifor Slats | |
+200 Maximum airspeed for flap extension
+"50° approximate fill flap deflection in degrees ot
+ae 25° approximate 1/2 flap deflection in degrees
+SPEED BRAKE System 7 a
+Pi "380 knots speed at which speed brakes blow back begins " ,
+a : . 340 knots spesd above which speed braices may not fully extend
+f 60° - full speed brake deflection
+_ LANDING GEAR System *
+a . 200 knots maximuna geatextension/retraction speed “
+15 sec approximate landing gear extension time
+a 10 sec approximate landing gear retraction time -
+> 2.2-2.5" ° main landing gear oleo limits (dry) .
+2 3.25" approximate nose gear oleo exposed (NATOPS) ;
+7/8-1 7/8" approx main landing gear oleo exposed (NATOPS) (wet)

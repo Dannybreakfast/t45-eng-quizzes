@@ -1,0 +1,45 @@
+# Page 30 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+1, CH LST SATOPS
+CNI GOUGE a
+DEU - Is the heart of the system
+1. Controls the Mux bus (Controls Nav displays too, but that's not the "Best" answer)
+2. Exchanges digital data words between itself and the ADR, GINA, and MDL via the Mux bus
+3. Also has hard-wired interfaces: Analog, Video, Discrete ~Ay
+4. Isa Mission computer and Display computer, Each display has format specific options ;
+5. On Power Up, Menu page is displayed ‘Cee. VAC ESS
+6. Power: 28VDC Ess, 28VDC Gen, 115 VAC N-Ess and 26VAC N-Ess Boy Lh * Poy oo.
+- 7. MED Failure indicated by: Blank or Blinking display, Stuck pushbutton
+8. MFD’s and HUD are lost with DEU failure, you will be limited to PAR approaches Cid Ceo)
+% 9. Display system derives flight data from GINA (pitch, roll, heading, vertical velocity) and pitot static instruments
+: (altitude and indicated airspeed) <p? <KA\C \ SX
+10. Front cockpit control of CNI will still allow rear cockpit to select any MFD display within the system.
+11. MEFD inputs duplicated on the DEP are LAW, CRS, HDG, Bingo
+GINA WSL Fase f FPenetieA’ ~D BaT id ESS ¢ WeM-ESS
+1. Receives 5 satellites, uses best 4 for GPS position
+2 2. Composed of GPS and INA (Antenna arguably, the Kalman filter is NOT a component)
+3. Alignment is complete when waterline symbol is replaced by velocity vector.
+4. GINA begins realignment with auto bit initiated. Alignment is complete approximately 3 minutes after auto bit
+is initiated. (yes but) ,
+HUD
+2 1. Is an Electro-Optical device which displays flight and weapons delivery information
+1, Power Up, Initiated, Continuous and Manual (Manual BITS are not “system” BITS) Rodis ve {
+{2 Auto Initiation of IBIT in the following order: DEU, GINA, ADR, MDL, RALT  TAC/ A, IIE senna
+«3. Test says “Display” BIT but means all BIT checks
+> 4 There are two BIT display pages: weight on-whec’s and weight-off-wheels
+4 5. A single channel failure of the MUX bus will result in OPGO bit Status
+TACAN / ILS / VOR .
+ed K 1. Know the difference between magnetic bearing and relative bearing
+2. Planimetric TACAN steering will disable ILS/VOR selection (the VOR/ILS legend will not be displayed.
+| 3. ILS localizer and GS needles will be displayed on the ADI and HUD when ILS is boxed on the HSI.
+4. Full needles deflection in CDI indicates: 10 or more radial deviation in TACAN, 10 or more bearing line
+i deviation in VOR, 4 NM or more deviation from CL in WYPT or WOS steering (gear up), .3 NM or more
+3 (gear down), or the limits of the localizer (usually 2.5 degrees) in ILS
+|
+* 1. Mode test illuminates GO or NO GO lights, not ANTENNA light
+a 2. The IFF is the only CNI system with two antennas
+> - 3. IFF DGRD on the BIT page indicates IFF power off or in STBY or an IFF BIT failure
+2 4. Altitude squawk is Mode C
+? Chie Box Tis IN PUR RMETAIT
+4 VCR AAS 2. MAE As
+4 1. The VCR records HUD or MFD display, ICS, radio comms and CWS tones. . |

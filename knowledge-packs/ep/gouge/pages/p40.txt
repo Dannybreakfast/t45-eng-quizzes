@@ -1,0 +1,53 @@
+# Page 40 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+Cc
+
+Light test. (TRUE) -
+
+TIF the FUEL LOW caution light is triggered by a float switch in the negative G compartment, and is le
+not linked to the fuel quantity indicator. (TRUE, NATOPS 2.2.2.5) bs
+
+Fuel tanks are vented to atmosphere through a valve anda valve/orifice. =
+(pressure relief, bleed). pe
+
+T/F Pressure refueling requires electrical power on the aircraft. (TRUE) -
+-
+
+Hydraulic Systems (NATOPS 2.5) 4
+3600 psi pressure relief valve opens in power supply package (PSP) le
+3000 psi norinal hydraulic pressure 4
+2500-3000 psi normal RAT operating range 2
+2200 psi pressure reserved by wheel brake/emergency flap accumulator if HYD 1 loses pressure «€
+2000 psi pressure at which HYD 2 PRESS caution light extinguishes a
+1800 psi pressure required to close hyd 2 bypass valve and retract RAT if deployed g
+1660 +/- 110psi_ pressure at which HYD 2 PRESS caution light illuminates €|
+1500 +/- 100psi_ pressure at which RAT deploys b
+1600 psi pressure at which priority valve in PSP reopens to provide power for general services ‘a
+1500 psi pressure at which proirity valve in PSP closes to isolate flight controls from q
+general services b
+
+1300 psior> —_ required nitrogen preload pressure for wheel brake/emergency flap accumulator a
+200 22+ psi pressure at which HYD 1 PRESS caution light extinguishes q
+700 psi pressure at RAT retracts as HYD 2 pressure is lost (aerodynamic load permitting) b
+(660 CIE -660-+-58psi pressure at which HYD 1 PRESS caution light illuminates |
+45% N2 rpm required to use HYD 2 Reset button a
+42% N2 rpm below which HYD 2 bypass valve is energized open to reduce engine >
+loads on start c
+
+10x number of full brake applications provided by brake/emergency flap accumulator a
+(beet "UY .
+
+three requirments for HYD FAIL waming light 1.HYD 1 pressure below €90-17=SUpsi- |
+2. HYD 2 press below 1660 +/- 110psi, and 3. Emergency system pressure less than 600 +/- 50psi :
+
+Eight hydraulic devices in general services category 1. Flaps, 2. Slats, 3. Speed brakes, 4. Landing gear, 4
+5. nose wheel steering, 6. Arresting hook, 7. Launch bar, 8. Wheel brakes P
+
+S
+
+ensure adequate base pressure to resist pump cavitation under all flight conditions |
+(nitrogen pressurized resevoirs) '¢
+the power supply package consists of : : . a
+(check valves, pressure relief valve, priority valve) ¢
+
+. q

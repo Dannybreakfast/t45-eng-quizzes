@@ -1,0 +1,26 @@
+# Page 15 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+Intercept radial from an are scenario: Four
+How long will it take a % SRT turn to turn 210*? 140 seconds
+ADI fails in IFR conditions- establish a reference on the stby attitude indicator
+140 kias SRT will be- 3* per second
+Leveling off from penetration descent:
+1000’ above level off altitude decrease pitch by 2 and retract speed brakes, then
+use normal lead point
+Nose-high UA partial panel- stby attitude and AOA indicator
+Each dot on the CDI with TACAN boxed is: 5* deviation
+BI nose high UA recovery begins with: MRT, speed brakes in, stick pressure to obtain 5-
+10 units AOA
+If AOA indications fail: use airspeed indicator
+VOR penetration, begin level off at 10% of vertical velocity
+Dirty stall, maintain 23-24 units AOA
+Will lose 6000’ performing Split S
+Transition from climb to descent in $1 3 seconds or 100 feet prior
+Total GINA failure indications: blanking of attitude and heading info on ADI, HSI, and
+HUD
+Turn pattern, 30* AOB for 60* heading change
+Nose-low UA, speed brakes extended if: airspeed is approaching or exceeds 300 kias
+Three steering options are: WYPT, TCN, and VOR
+45 degree intercept question: 135* ;
+Ground speed calculation: 330 kts
+During final approach on PAR, must communicate every 5 seconds

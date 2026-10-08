@@ -1,0 +1,59 @@
+# Page 83 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+3 “heCain Tur, Navy 14123, #1 at the hold skort, ready for takeoff."
+
+> “Navy LA123, McCain Twr, winds are 340 at 10kts cleared for takeoff, switch departure.”
+
+> “123, cleared for takeoff r/v @1, switching.”
+4 ICS “Groove is clear, Vo checks are complete” ©! eh pn Ke .
+
+a 1, align with r/w, pump and hold brakes — [657 pa /fo
+
+] ICS “Brakes hold, MRT checks.”
+
+ICS “Ne overspeed, No overtemp, No Warnings, No Cautions, Good volts, (wipeout entls) Good
+hyds, timeis___, ready to roll.”
+
+Release brakes, start t/o roll with fwd stick. tech - make only 2° corrections for hdg cntl.
+
+> When a/s is > 50kts off the ADI...
+
+> ICS “ars is alive, 90kts (before or at the gear, otherwise abort), good jet going flying, 120 rotate”
+
+> N/U 10°, do not exceed 17 units |
+
+@ 100° AGL (or 400° MSL @ NMM)
+
+a ICS fim IP “clear”
+
+> @ 300’ AGL ( or 600" MSL @NMM) & > 140kis
+
+> ; ICS “flaps”
+
+ae ICS fin IP “clear”
+ICS “clean before 200kts, handle checked (gear handle)” Goins Cold
+
+3 “Sheridan Departure, Navy 14123, passing thousand _ hundred for_ thousand.”
+
+Only time to use hundreds of feet when talking to ATC.
+
+; Accel and when approaching 240-245kts, N/U another 7° for ~ total of 17° N/U to maintain a 250kts climb
+] out.
+Maintain 250 kts below 10k'.
+
+BI stage — Maintain 250kts in the climb even above 10k’
+RI stage - Above 10k’, N/D 3°, accel to & maintain 300kts until intercepting 0.72IMN (at ~25k’)
+
+> Remember if your initial lvV/o is > 10k' do the 10k’/15min. checks, obviously over ICS to IP
+
+Bd L. Fit & Eng. Instruments check
+
+> 2. Cabin Press check |
+
+> 3. Fuel State ___ Tbs
+
+Zz 4. LAW check, set for 5909’
+
+] 5. Location/Navaid setup check
+
+id Begin lvi/o at the lead pt, 10% of VVI/VSI prior to lvi/o altd, by simult.: .

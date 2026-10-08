@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="auth.js"></script>
+<title>EP Study Guide — T-45 Quizzes</title>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 3.5rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.4rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.guide {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.35rem 2rem;
+}
+.guide .doc-title { display: none; }
+.guide h2 {
+  margin: 1.75rem 0 0.65rem;
+  font-size: 1.2rem;
+  color: #d8ebff;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+}
+.guide h2:first-of-type { margin-top: 0.5rem; }
+.guide h3 {
+  margin: 1.15rem 0 0.45rem;
+  font-size: 1.02rem;
+  color: #c5daf0;
+}
+.guide p { margin: 0.55rem 0; }
+.guide ul, .guide ol { margin: 0.4rem 0 0.7rem; padding-left: 1.35rem; }
+.guide li { margin: 0.28rem 0; }
+.guide hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.25rem 0;
+}
+.guide strong { color: #fff; font-weight: 650; }
+.guide code {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.08rem 0.35rem;
+  font-size: 0.9em;
+  color: #b8d9f8;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 0.75rem 0 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: var(--panel2);
+}
+th, td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+th {
+  background: #1e2d44;
+  color: #cfe6fa;
+  font-weight: 650;
+  white-space: nowrap;
+}
+tr:last-child td { border-bottom: none; }
+.toc {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem 1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+.toc h2 {
+  margin: 0 0 0.45rem !important;
+  font-size: 1rem !important;
+  border: none !important;
+  padding: 0 !important;
+  color: var(--accent) !important;
+}
+.toc ol { margin: 0; padding-left: 1.2rem; }
+.toc li { margin: 0.2rem 0; font-size: 0.92rem; }
+.callout {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  background: rgba(61,156,240,.1);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  color: #cfe6fa;
+  font-size: 0.95rem;
+}
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+.cta-row {
+  display: flex; flex-wrap: wrap; gap: 0.55rem; margin: 0.85rem 0 0;
+}
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #041018 !important;
+  font-weight: 700;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  font-size: 0.92rem;
+}
+.cta:hover { background: var(--accent2); color: #fff !important; }
+.cta.ghost {
+  background: transparent;
+  color: var(--muted) !important;
+  border: 1px solid var(--border);
+}
+.cta.ghost:hover { color: var(--text) !important; border-color: var(--muted); }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .guide { padding: 1rem 0.9rem 1.5rem; }
+  th, td { padding: 0.45rem 0.5rem; font-size: 0.85rem; }
+}
+
+.ic { margin: 0.6rem 0 0.9rem; border: 1px solid #2ecc71; border-radius: 10px; background: rgba(46,204,113,.08); overflow: hidden; }
+.ic-label { background: rgba(46,204,113,.18); color: #b9f5cf; font-weight: 700; font-size: 0.85rem; padding: 0.4rem 0.75rem; letter-spacing: .02em; }
+.ic pre { margin: 0; padding: 0.7rem 0.85rem; white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92rem; color: #e9fff1; line-height: 1.5; }
+.callout.old { background: rgba(240,180,41,.09); border-left-color: var(--warn); color: #f6e3b4; }
+.callout.warn { background: rgba(231,76,60,.09); border-left-color: #e74c3c; color: #f7d4cf; }
+.tag.old { display: inline-block; background: var(--warn); color: #241a00; font-weight: 800; font-size: 0.72rem; padding: 0.1rem 0.45rem; border-radius: 5px; letter-spacing: .03em; margin-right: .3rem; }
+.guide table td:nth-child(2) { color: #d9fbe6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-ep.html">EP</a> · Study Guide</div>
+    <h1>EP Study Guide</h1>
+    <div class="meta">T-45C Emergency Procedures · IC 21/43 (Nov 2023) immediate actions first · gouge notes · Quizlet EP1/EP2 · discrepancy table</div>
+    <div class="cta-row">
+      <a class="cta ghost" href="section-ep.html">← EP quizzes</a>
+      <a class="cta ghost" href="knowledge-packs/ep/pack/ep-study-guide.md">Markdown</a>
+      <a class="cta ghost" href="knowledge-packs/ep/index.html">Knowledge pack</a>
+    </div>
+  </header>
+  <article class="guide">
+<h1 id="ep-study-guide-t-45c-emergency-procedures">EP Study Guide — T-45C Emergency Procedures</h1>
+<p>How to use this guide: every EP below starts with the <strong>current IC 21/43 (Nov 2023) immediate-action wording</strong>. That is the answer to memorize. After it come the gouge notes (source page tags such as p.65) and the Quizlet facts (EP1 = set 783093107, EP2 = set 783149178).</p>
+<div class="callout warn">
+<p><strong>Source age.</strong> The student gouge PDF dates from about 2007 (old 06X/11X EP exams), and both Quizlet sets copy that gouge. Where they disagree with IC 21/43, this guide marks them <span class="tag old">OLDER GOUGE — DIFFERS</span>. <strong>Memorize the IC 21/43 wording.</strong> For anything outside the 22 immediate-action items, defer to your current NATOPS/PCL.</p>
+</div>
+<div class="toc">
+<h2 id="contents">Contents</h2>
+<ol>
+<li><a href="#discrepancy-table">Discrepancy table (gouge vs IC 21/43)</a></li>
+<li><a href="#ground">Ground: shutdown/egress, FIRE/GTS FIRE/TP HOT on deck</a></li>
+<li><a href="#starts">Starts: Clear Engine / abnormal starts</a></li>
+<li><a href="#takeoff">Takeoff: Abort, fire on takeoff</a></li>
+<li><a href="#catapult">Catapult / carrier</a></li>
+<li><a href="#engine-failure">Engine failure and airstart</a></li>
+<li><a href="#stall">Compressor stall / EGT-RPM light</a></li>
+<li><a href="#fire">Fire in flight, TP HOT in flight, GTS FIRE in flight</a></li>
+<li><a href="#engine-cautions">Oil press, ECA 2, ACCEL, LP PUMP, F PRESS</a></li>
+<li><a href="#electrical">Electrical: electrical fire, total electrical failure, generator, inverters</a></li>
+<li><a href="#ecs">Oxygen and ECS: physiological, decompression, OXYGEN light, CABIN ALT, smoke/fumes, canopy</a></li>
+<li><a href="#hydraulics">Hydraulics</a></li>
+<li><a href="#flight-controls">Flight controls: asymmetric flaps/slats, SLATS, CAUG, trim, speed brakes</a></li>
+<li><a href="#landing">Brakes, directional control, blown tires, arrestments, NWS, hook, gear</a></li>
+<li><a href="#spin">Departure / spin</a></li>
+<li><a href="#avionics">Avionics and instrument failures</a></li>
+<li><a href="#key-numbers">Key numbers</a></li>
+<li><a href="#misc">Miscellaneous exam gouge</a></li>
+</ol>
+</div>
+<h2 id="discrepancy-table">1. Discrepancy table: gouge vs IC 21/43 (memorize the IC column)</h2>
+
+<table>
+<thead>
+<tr>
+<th>EP</th>
+<th>IC 21/43 (current: memorize)</th>
+<th>Older gouge / Quizlet (differs)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emergency shutdown/egress</td>
+<td>Throttle – Off · Engine switch – Off · Fuel Shutoff Handle – Pull · <strong>Ejection Seats – Safe</strong> · Batt switches – Off</td>
+<td>p.6 / EP1 #22: Throttle OFF, Engine Switch OFF, Fuel Shutoff PULL, BATT OFF, Emergency Egress (no seats step). p.77 on-deck fire/TP HOT: Throttle Off, Fuel Shutoff Pull, Battery Off, Egress (no engine switch)</td>
+</tr>
+<tr>
+<td>Airstart</td>
+<td><strong>Emergency oxygen green ring(s) – pull</strong> · Throttle – off · <em>GTS Start Button – Press + </em>Throttle – Idle · no relight in 30 s → Throttle – off; repeat if above 13% / 250 KIAS</td>
+<td>p.77 Immediate Airstart: Throttle Off, GTS – Press <strong>and Hold</strong>, Throttle Idle (no O2 step, no "if unsuccessful" branch). EP2 #14 does pull the O2 first</td>
+</tr>
+<tr>
+<td>Compressor stall / EGT-RPM</td>
+<td>Throttle – idle · <strong>EGT/RPM – check</strong> · &gt;450°C for &gt;6 s at idle → engine failure procedure · else slowly advance to min for safe flight · minimize throttle movements</td>
+<td>"Throttle Idle, <strong>Controls Neutralize</strong>, EGT/RPM Monitor" (p.59, p.64, EP2 #18); "Neutral/IDLE" (EP1 #24)</td>
+</tr>
+<tr>
+<td>Abort</td>
+<td>Throttle – idle · Speed brakes – <strong>extend</strong> · Brakes – apply · Hook – down (if req) · <strong>Brakes – release prior to crossing the arresting gear</strong></td>
+<td>p.5 / EP1 #9: "IDLE, BOARDS <strong>retract</strong>, BRAKES, HOOK (1000 ft. prior)". EP2 #25 says "extend" but has no brake-release step</td>
+</tr>
+<tr>
+<td>Emergency catapult flyaway</td>
+<td>Throttle – <strong>MRT</strong> · Maintain 24 units AOA · Eject if engine failed / unable to stop settle</td>
+<td>"Throttle full / check full forward, 24 AOA" (wording only); adds "unable to eject → ditch straight ahead"</td>
+</tr>
+<tr>
+<td>Brake failure ashore/skid</td>
+<td>Go around (if flyaway airspeed) · <strong>Throttle – idle</strong> · Brakes – release · Anti-skid – off · Brakes – apply gradually · Hook – down · <strong>Parking brake handle – pull</strong></td>
+<td>p.68 / EP2 #31: brakes release, anti-skid off, attempt braking, hook down 1,000 ft prior, <strong>Throttle – OFF (if departing rwy)</strong>. No throttle idle and no parking brake</td>
+</tr>
+<tr>
+<td>Brake failure afloat</td>
+<td>Throttle – idle · Parking brake handle – pull · Hook – down · Transmit</td>
+<td>Not in gouge</td>
+</tr>
+<tr>
+<td>Loss of directional control</td>
+<td>Go-around / abort · blown tire: brakes release, anti-skid off, apply gradually · <strong>NWS failure: Paddle switch – press</strong></td>
+<td>"Use differential braking" only (p.5, p.59, EP1 #5)</td>
+</tr>
+<tr>
+<td>Smoke or fumes</td>
+<td><strong>Mask – on/tight</strong> · Controlled descent below <strong>18,000 ft MSL</strong> · Air Flow Knob – Off · then airspeed reduce, warn/secure, seat lower, MDC pull</td>
+<td>"Descend below <strong>25,000'</strong>, Air Flow off … <strong>Visor – Down</strong>, <strong>Land as soon as possible</strong>" (no mask step) (p.70, p.75, EP2 #5)</td>
+</tr>
+<tr>
+<td>Fire warning light in flight</td>
+<td>Throttle – min for safe flight · Check secondaries · Eject if fire confirmed or flight control lost · <strong>else land as soon as possible</strong></td>
+<td>p.76: Throttle idle, secondaries check, <strong>O2 pull, Throttle Off, Fuel Shutoff Pull</strong>, eject / prepare for controlled ejection / flameout approach. EP2 #36 "Idle, instruments check, secondary-eject"</td>
+</tr>
+<tr>
+<td>GTS fire warning light</td>
+<td>Ground: <strong>execute emergency shutdown/egress</strong> · In-flight: Engine switch – off</td>
+<td>p.76 on deck: <strong>Engine switch first</strong>, then Throttle Off, Fuel Shutoff, Battery Off, Egress (no seats)</td>
+</tr>
+<tr>
+<td>Oil press warning light</td>
+<td>Throttle – set and maintain <strong>78 to 87% rpm</strong> · Minimize throttle movements</td>
+<td>"min for safe flight" (p.59) / "<strong>idle</strong>" (p.64)</td>
+</tr>
+<tr>
+<td>Oxygen warning light</td>
+<td>Throttle – set <strong>minimum 80% rpm</strong> · Execute Adverse Physiological Symptoms (as req)</td>
+<td>"set OBOGS/ANTI-G switch off" (EP2 #8); "descend below 10,000 cabin alt or MSA" (p.68, p.75)</td>
+</tr>
+<tr>
+<td>Rapid decompression / physiological</td>
+<td>Green ring(s) – pull · OBOGS flow selector(s) – off · Descend below 10,000 ft cabin altitude</td>
+<td>No such procedure. The gouge has a CABIN ALT warning procedure (OBOGS on/mask tight … descend below <strong>25,000 ft</strong>), which is not on the IC list</td>
+</tr>
+<tr>
+<td>Total electrical failure</td>
+<td>Emergency oxygen green ring(s) – pull</td>
+<td>Same first step, then VMC, land as soon as practical, reset gen/batts, emergency gear, no-flap/no-slat arrested landing (follow-on, not memory items)</td>
+</tr>
+<tr>
+<td>TP HOT</td>
+<td>Ground: emergency shutdown/egress · In-flight: Throttle – minimum for safe flight</td>
+<td>On-deck steps as in shutdown row (no engine switch, no seats). In-flight matches</td>
+</tr>
+<tr>
+<td>Consistent</td>
+<td>Clear engine (Throttle – off) · Engine failure (&lt;1,500 AGL &amp; &lt;180 KIAS eject) · Electrical fire (Gen switch – off) · Asymmetric flaps/slats (return to previous setting) · Spin rudder/aileron rules</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ground">2. Ground: Emergency Shutdown/Egress, FIRE / GTS FIRE / TP HOT on deck</h2>
+
+<h3 id="emergency-shutdown-egress">Emergency Shutdown / Egress</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — EMERGENCY SHUTDOWN/EGRESS — MEMORIZE</div><pre>1. Throttle - Off
+2. Engine switch - Off
+3. Fuel Shutoff Handle – Pull
+4. Ejection Seats – Safe
+5. Batt switches - Off</pre></div>
+
+<p><strong>Gouge notes</strong>
+- Use it for a FIRE light, GTS FIRE, or TP HOT on deck. All three = execute emergency shutdown (p.58 handwritten, p.59 #7, p.64 #13).
+- "What requires an immediate shutdown on deck w/out 2ndary indications — FIRE light illums" (p.5 #11, EP1 #11).
+- FIRE light on the ground: "get out of airplane and don't worry about telling anyone over the radio… no comms in procedure" (p.60 #25).
+- TP HOT is a <strong>caution</strong> (yellow), not a warning (red). Don't get drawn in by "which warning light causes you to egress" (p.60 #26).
+- Engine fire indications on startup: FIRE light, increased FF, rapidly increasing EGT → <strong>all of the above</strong> (p.59 #13).</p>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> p.6 / EP1 #22: "(A,E,B,D,F, if different use PCL!) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3) Fuel Shutoff – PULL, 4) BATT switches – OFF, 5) Emergency Egress". It has <strong>no Ejection Seats – Safe</strong> step. The p.77 EP 11X on-deck fire / TP HOT version reads "a. Throttle – Off b. Fuel Shutoff Handle – Pull c. Battery Switches – Off d. Egress", with no engine switch except a handwritten "ENG Switch OFF".</p>
+</div>
+<h3 id="gts-fire-warning-light">GTS Fire Warning Light</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — GTS FIRE WARNING LIGHT — MEMORIZE</div><pre>GROUND
+1. Execute emergency shutdown / egress
+IN-FLIGHT
+1. Engine switch - off</pre></div>
+
+<ul>
+<li>The GTS FIRE light means an <strong>overtemperature in the GTS compartment</strong> (&gt;300°C outside the GTS container), not a fire in the burner can (p.62 E, p.54 #124).</li>
+<li>In-flight: "Engine Switch Off is the first step" (p.59 #12, p.65).</li>
+</ul>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> p.76 #30 GTS Fire on deck: "a. Engine switch – Off b. Throttle – Off c. Fuel Shutoff Handle – Pull d. Battery Switches – Off e. Egress". Current ground answer: <strong>execute emergency shutdown/egress</strong> (Throttle first, and includes Ejection Seats – Safe).</p>
+</div>
+<h3 id="tp-hot-caution-light">TP Hot Caution Light</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — TP HOT CAUTION LIGHT — MEMORIZE</div><pre>GROUND
+1. Execute emergency shutdown / egress
+IN-FLIGHT
+1. Throttle – minimum for safe flight</pre></div>
+
+<ul>
+<li>TP HOT = temperature outside the tail cone, inside the fuselage, above <strong>150°C</strong> (p.54 #125, p.37). There is no verification of an internal tailpipe overtemp (p.3).</li>
+<li>"When flying @ 15K, TP HOT light – Throttle idle (min safe flight)" (p.5 #12, EP1 #12). Consistent with the current wording.</li>
+</ul>
+<h2 id="starts">3. Starts: Clear Engine / Abnormal Start</h2>
+
+<h3 id="clear-engine-procedure-abnormal-start-tp-fire-on-shutdown">Clear Engine Procedure / Abnormal Start / TP Fire on Shutdown</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — CLEAR ENGINE PROCEDURE/ABNORMAL START/TP FIRE ON SHUTDOWN — MEMORIZE</div><pre>1. Throttle - off</pre></div>
+
+<ul>
+<li>Overspeed on start → Clear Engine: <strong>Throttle Off</strong> is the first step, not Throttle Idle (p.59 #11, p.65).</li>
+<li><strong>Wet start:</strong> no light-off within <strong>15 s</strong> of throttle idle (p.5 #1, p.62 G, EP1 #1).</li>
+<li><strong>Hung start:</strong> RPM stagnates around <strong>45%</strong> while EGT keeps rising (p.4, p.56).</li>
+<li><strong>Hot start:</strong> FF/RPM normal but EGT rapidly to <strong>550</strong> or to <strong>570 for &gt;10 s</strong> (p.56 #168).</li>
+<li>Start limits: FF 300–400 · EGT 550 (570 for 10 s) · RPM 52 ± 2 within 30 s of idle (p.56). GTS light within 20 s, READY light within 15 s, light-off within 15 s (p.36, p.37).</li>
+</ul>
+<h2 id="takeoff">4. Takeoff: Abort, fire on takeoff</h2>
+
+<h3 id="abort">Abort</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — ABORT — MEMORIZE</div><pre>1. Throttle - idle
+2. Speed brakes - extend
+3. Brakes - apply
+4. Hook – down (if required)
+5. Brakes – release prior to crossing the arresting gear</pre></div>
+
+<ul>
+<li>For an aborted T/O with no blown tire: <strong>do not</strong> turn anti-skid off (p.62 C). With a blown tire: anti-skid <strong>off</strong> (EP1 #6 "set ANTI-SKID ON – False").</li>
+<li>Abort for red lights on takeoff when below refusal speed (p.60 #28). Max abort speed = can commence a stop on the remaining runway without using the overrun or arresting gear (p.2 #33).</li>
+</ul>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> p.5 #9 / EP1 #9: "IDLE, BOARDS <strong>retract</strong>, BRAKES, HOOK (1000 ft. prior)". Current: Speed brakes – <strong>extend</strong>, and finish with <strong>Brakes – release prior to crossing the arresting gear</strong>. EP2 #25 ("Idle, extend, brakes as req, hook 1000 ft prior") gets extend right.</p>
+</div>
+<h3 id="fire-warning-light-takeoff">Fire Warning Light: Takeoff</h3>
+<p>See the full IC 21/43 FIRE WARNING LIGHT procedure in §8. On takeoff: decided to stop → <strong>Abort</strong>; fire confirmed and unable to abort → <strong>Eject</strong>.
+- The first indication of a fire on takeoff is the FIRE light (TRUE) (p.3, p.47).
+- Gouge: "Fire on takeoff = Abort, if unable and the fire is confirmed then EJECT" (p.60 #19, p.66 #21, p.74 #11).</p>
+<h2 id="catapult">5. Catapult / carrier</h2>
+
+<h3 id="emergency-catapult-flyaway">Emergency Catapult Flyaway</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — EMERGENCY CATAPULT FLYAWAY — MEMORIZE</div><pre>1. Throttle - MRT
+2. Maintain 24 units AOA
+If engine failed, or unable to stop settle:
+3. Eject</pre></div>
+
+<ul>
+<li>Gouge wording: "Throttle full, check 24 AOA, if settle continues Eject" (p.5 #13, EP1 #13); "throttle check full forward, 24 AOA" (EP2 #28). <strong>Memorize "Throttle – MRT."</strong></li>
+<li>Engine failure on the cat stroke: <strong>Eject</strong>. If unable to eject: <strong>ditch straight ahead</strong> (p.5 #15, EP1 #15, EP2 #13).</li>
+<li>Ditching configuration: <strong>gear up, flaps full down</strong> (p.59 #8, p.65).</li>
+<li><strong>Launch bar warning light after cat launch:</strong> divert to shore and make a minimum-descent-rate (flared) landing with the arresting wires removed (EP2 #29, p.75 #20). With the L-BAR extended, land past the arresting gear (p.72).</li>
+<li>Launch bar actuation: electrically controlled, <strong>hydraulically (HYD 1) extended, mechanical spring retracted</strong> (p.3, p.54 #140, handwritten correction p.60). <em>EP1 #14 / p.5 #14 says the reverse ("mechanically extended, hydraulically retracted"), so the gouge contradicts itself.</em></li>
+</ul>
+<h2 id="engine-failure">6. Engine failure and airstart</h2>
+
+<h3 id="engine-failure">Engine Failure</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — ENGINE FAILURE — MEMORIZE</div><pre>If below 1,500 feet AGL and airspeed below 180KIAS:
+1. Eject
+Otherwise:
+2. Execute airstart</pre></div>
+
+<ul>
+<li>"Just flamed out, airspeed is 150 and at 1000' you should – Eject" (EP1 #8). "Have enough time for Airstart need 1500' AGL and 180 KIAS" (p.38).</li>
+<li>Immediate airstart on any engine failure, except below 1,500 ft / 180 KIAS (p.65).</li>
+<li>Engine seizure: RPM rapidly decays to zero (p.54 #119).</li>
+</ul>
+<h3 id="airstart">Airstart</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — AIRSTART — MEMORIZE</div><pre>1. Emergency oxygen green ring(s) - pull
+2. Throttle - off
+Simultaneously perform steps *3. and *4.
+3. GTS Start Button – Press
+4. Throttle - Idle
+If unsuccessful (no relight within 30 seconds after moving throttle to idle or stabilized EGT exceeds limits):
+5. Throttle – off (allow 30 seconds to drain if practical)
+If above 13% RPM and 250 KIAS, repeat steps *3 and *4.
+Otherwise, proceed to step 6.</pre></div>
+
+<p><strong>Gouge airstart envelopes</strong> (p.58, p.67, p.73, p.76):</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Envelope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Immediate</td>
+<td>Any altitude</td>
+</tr>
+<tr>
+<td>Windmill</td>
+<td>Below <strong>25,000 ft MSL</strong>, <strong>13% N2 minimum</strong>, <strong>250 KIAS</strong> or greater</td>
+</tr>
+<tr>
+<td>Assisted (GTS)</td>
+<td>Below <strong>15,000 ft MSL</strong>, <strong>&lt; 20% RPM</strong>, GTS light on</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Airstart EGT limit 600°C (650°C max for 10 s overshoot). Ignition stays on 30 s after GTS release. GTS light within 28 s in flight (p.37, p.39).</li>
+<li><strong>Stall vs flameout:</strong> for a stall you do <strong>not</strong> perform an airstart and do <strong>not</strong> pull emergency O2. For a flameout you do those first (p.65).</li>
+<li><strong>No airstart for a fire in flight</strong> (p.61, p.65).</li>
+</ul>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> p.77 #33 "Immediate Airstart: a. Throttle – Off / Simultaneously perform steps 2 and 3 / b. GTS – Press and Hold / c. Throttle – Idle". It has no emergency-oxygen step, says "Press and Hold", and has no "if unsuccessful" branch. EP2 #14 ("Pull Emerg. Oxygen actuator, throttle off, GTS button, idle") is closer to the current procedure.</p>
+</div>
+<h2 id="stall">7. Compressor stall / EGT-RPM warning light</h2>
+
+<h3 id="compressor-stall-or-egtrpm-warning-light">Compressor Stall or EGT/RPM Warning Light</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — COMPRESSOR STALL OR EGT/RPM WARNING LIGHT — MEMORIZE</div><pre>1. Throttle - idle
+2. EGT/RPM - check
+If EGT is greater than 450°C for more than 6 seconds at idle:
+3. Execute engine failure procedure
+If EGT responds normally:
+4. Throttle – slowly advance to minimum for safe flight
+5. Minimize throttle movements</pre></div>
+
+<ul>
+<li>Indications: audible bang/pops, <strong>EGT ↑, RPM ↓</strong> (FF same) (EP1 #2, p.3, p.60 #17, p.61).</li>
+<li>EGT/RPM light: <strong>EGT &gt; 650 ± 8°C or N1 &gt; 112.4 ± 1%</strong> (p.3, p.37, p.54 #121).</li>
+<li>Locked in stall: <strong>EGT over 450°C for 6 seconds after selecting idle</strong> (p.54 #120). Matches IC step 3.</li>
+<li>"3-4 questions … COMP Stall and EGT RPM Light. Know the first 3 steps… 3-4 free questions" (p.5 #20, EP1 #20).</li>
+</ul>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> "Engine Stall = Throttle Idle, <strong>Controls Neutralize</strong>, EGT/RPM Monitor" (p.59 #2, p.64 #7); "Compressor stall – IDLE, Neutralize, monitor" (EP2 #18); "First step in the EGT/RPM warning light: Neutral/IDLE" (EP1 #24). The current procedure has <strong>no "controls neutralize" step</strong>: 1. Throttle – idle 2. EGT/RPM – check.</p>
+</div>
+<h2 id="fire">8. Fire in flight</h2>
+
+<h3 id="fire-warning-light">Fire Warning Light</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — FIRE WARNING LIGHT — MEMORIZE</div><pre>GROUND
+1. Execute emergency shutdown / egress
+TAKEOFF
+If decision is made to stop:
+1. Abort
+If fire is confirmed and unable to abort:
+2. Eject
+IN-FLIGHT
+1. Throttle – minimum for safe flight
+2. Check for secondary indications of fire
+If fire confirmed or flight control lost:
+3. Eject
+If fire not confirmed and control effectiveness remains:
+4. Land as soon as possible</pre></div>
+
+<ul>
+<li><strong>Secondary indications of fire:</strong> EGT ↑, fuel flow ↑, FIRE light. "All of the above" (p.65, p.47, p.59 #13).</li>
+<li>FIRE light = firewire &gt; <strong>300°C</strong> outside the engine container. It goes out once the firewire stays below 300°C for <strong>45 s</strong> (p.37, p.54). If the light comes on then goes out: temp below 300 or burn-through (p.3); check light continuity (p.53 #113).</li>
+<li>"While cruising 23K you get FIRE light, with 2ndaries – EJECT (not prepare for controlled ejection)" (p.5 #18, EP1 #18).</li>
+<li><strong>Do not airstart</strong> with a fire (p.61, p.65).</li>
+</ul>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> p.76 #31 Engine Fire in Flight: "a. Throttle – Idle (min for safe flight) b. Secondary Indications – Check / If secondary indications exist – c. Emergency Oxygen Actuator – Pull d. Throttle – Off e. Fuel Shutoff Handle – Pull / If secondary indications persist – f. EJECT / If fire is extinguished – g. Prepare for controlled ejection / If unable to eject – h. Prepare for Flameout Approach". EP2 #36: "Idle, instruments check, secondary-eject". Current: <strong>min for safe flight → check secondaries → eject if confirmed or flight control lost → otherwise land as soon as possible.</strong></p>
+</div>
+<h2 id="engine-cautions">9. Oil press, ECA 2, ACCEL, LP PUMP, F PRESS</h2>
+
+<h3 id="oil-press-warning-light">Oil Press Warning Light</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — OIL PRESS WARNING LIGHT — MEMORIZE</div><pre>1. Throttle – Set and maintain 78 to 87% rpm.
+2. Minimize throttle movements.</pre></div>
+
+<ul>
+<li>The OIL PRESS light goes out at about <strong>18%</strong> (18–20%) on start (p.56 #170, p.60 #30). Caution threshold: oil pressure differential below <strong>10 psi</strong> (p.37).</li>
+</ul>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> "Power setting for OIL PRESS light = min for safe flight" with handwritten "MINIMIZE THROTTLE MVMTS" (p.59 #5); "Power setting for oil press light: idle." (p.64 #10). Current: <strong>78 to 87% rpm</strong>, minimize throttle movements.</p>
+</div>
+<h3 id="other-engine-cautions-gouge-not-ic-2143-immediate-actions">Other engine cautions (gouge; not IC 21/43 immediate actions)</h3>
+<ul>
+<li><strong>ECA 2 caution:</strong> land as soon as practical; do not exceed <strong>90% above 20K MSL</strong>, <strong>95% below 20K MSL</strong>, <strong>600°C EGT</strong> (EP1 #7, p.65). One ECA lane lost → ECA <strong>advisory</strong> light (p.47). ECA failure with full trim: RPM/EGT/FF decrease. With no trim: they increase (p.47).</li>
+<li><strong>ACCEL caution</strong> descending through 7,000 MSL: expect slower engine acceleration on the approach (EP1 #3). Cause: steam ingestion bleed valve not in the commanded position (~10% thrust loss if stuck open) or initial shot-of-fuel solenoid failure (p.54 #115, p.38).</li>
+<li><strong>LP PUMP</strong> light in flight: avoid abrupt throttle movements, set minimum for flight (EP1 #10). Illuminates below <strong>35 psi</strong> (p.37).</li>
+<li><strong>F PRESS</strong> light, after checking the engine switch on: <strong>avoid negative-G maneuvers</strong> (EP1 #17). F PRESS also comes on 30 s after a GEN failure (boost pumps shed) (p.39, p.61).</li>
+<li><strong>FUEL LOW</strong> ≈ <strong>350 lbs</strong> (p.39, p.47).</li>
+</ul>
+<h2 id="electrical">10. Electrical</h2>
+
+<h3 id="electrical-fire">Electrical Fire</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — ELECTRICAL FIRE — MEMORIZE</div><pre>1. Gen switch - off</pre></div>
+
+<ul>
+<li>EP2 #3: "Electrical fire immediate action – GEN switch off". Consistent.</li>
+</ul>
+<h3 id="total-electrical-failure">Total Electrical Failure</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — TOTAL ELECTRICAL FAILURE — MEMORIZE</div><pre>1. Emergency oxygen green ring(s) - pull</pre></div>
+
+<p><strong>Gouge follow-on steps (EP 11X, p.68/p.74; not memory items):</strong> Emergency Oxygen Actuator – Pull · Proceed to VMC as soon as possible · Land as soon as practical · Attempt to reset generator / check batteries on · Landing gear – emergency extend · Plan a <strong>no-flap/no-slat</strong> approach and arrested landing, if available. A short-field trap is recommended because there is <strong>no NWS</strong>.
+- <strong>No load shedding</strong> ("you can eliminate three of the four answers because they include load shedding") (p.74, p.71 #28, EP2 #26).
+- No emergency flaps with total electrical failure (p.3). Only the <strong>gear</strong> can be extended manually (p.51 #52). Approach idle engages (p.55 #163). AC/pressurization stay on (PRSOV fails open) (p.44).</p>
+<h3 id="generator-failure-gouge-not-an-ic-2143-immediate-action">Generator failure (gouge; not an IC 21/43 immediate action)</h3>
+<ol>
+<li>Confirm engine operation · 2. GEN switch – reset · 3. Voltmeter – check · If it won't reset or voltage is abnormal: Battery switches – check on · Generator switch – off · Unnecessary electrical equipment – secure · Proceed to VMC · Land as soon as practical · If MFDs are required: Display Power – <strong>ORIDE</strong> (Norm when no longer needed) · If it resets with normal voltage: continue (p.70, p.75 #15).</li>
+<li><strong>First thing: confirm engine operation</strong> (p.71 #16, EP2 #30). Reset momentarily; don't hold it in reset (p.67).</li>
+<li>Indications: master caution, tone, GEN warning light, <strong>loss of right MFD and HUD</strong> (p.3, p.52 #72). The left MFD reverts to ADI and goes out after 2 min unless ORIDE (p.51 #58). F PRESS comes on after 30 s and CAUG comes on (p.51).</li>
+<li>Kept: <strong>TACAN</strong>, GINA, <strong>primary stab trim</strong> only. Lost: aileron, rudder, and standby stab trim, trim indicators, HUD, right MFD (p.4, p.55, p.8 #35, p.76 #25). Batteries: <strong>27 min</strong> (two) / <strong>12 min</strong> (one) (p.51 #62).</li>
+<li>Overvoltage trips the generator at <strong>30.2 VDC</strong>. Undervoltage deenergizes non-essential buses below <strong>25 VDC</strong> (p.47, p.51).</li>
+</ol>
+<h3 id="ac-inverters">AC inverters</h3>
+<ul>
+<li><strong>One inverter:</strong> AC INV caution + tone; lose non-essential AC (<strong>VOR/ILS/MB/RADALT</strong>); keep <strong>TACAN azimuth</strong> (p.52 #64, #67, #69).</li>
+<li><strong>Two inverters:</strong> all AC lost; <strong>PAR approaches only</strong> (p.52 #65, #68).</li>
+<li>AC INV light: reset No. 1 and No. 2 inverters (EP2 #32).</li>
+</ul>
+<h2 id="ecs">11. Oxygen and ECS</h2>
+
+<h3 id="adverse-physiological-symptoms">Adverse Physiological Symptoms</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — ADVERSE PHYSIOLOGICAL SYMPTOMS — MEMORIZE</div><pre>If above 10,000 feet cabin altitude:
+1. Emergency oxygen green ring(s) - pull
+2. OBOGS flow selector(s) – off
+3. Descend below 10,000 feet cabin altitude.</pre></div>
+
+<h3 id="rapid-decompression">Rapid Decompression</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — RAPID DECOMPRESSION — MEMORIZE</div><pre>1. Emergency oxygen green ring(s) - pull
+2. OBOGS flow selector(s) – off
+3. Descend below 10,000 feet cabin altitude.</pre></div>
+
+<h3 id="oxygen-warning-light">Oxygen Warning Light</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — OXYGEN WARNING LIGHT — MEMORIZE</div><pre>IN-FLIGHT
+1. Throttle - Set minimum 80% rpm.
+2. Execute Adverse Physiological Symptoms (as required).</pre></div>
+
+<ul>
+<li>OXYGEN light causes: O2 concentration <strong>&lt; 95%</strong>, overheat <strong>&gt; 250°F</strong>, or OXYGEN switch off. OBOGS still works just below 95% (p.53 #106, p.51, p.44).</li>
+<li>If OBOGS won't reset: leave OBOGS <strong>off</strong> and use the green apple, so bad OBOGS O2 doesn't contaminate the emergency O2 (p.66 #26, p.70 #14, p.75 #14).</li>
+<li>Emergency O2 bottle: <strong>1800–2500 psi</strong>, lasts <strong>4–20 min</strong>, and can be shut off and restarted (p.45).</li>
+<li>Descend below <strong>10,000 ft cabin altitude</strong> with an OBOGS failure (EP2 #1, p.7 #1). This matches the IC 21/43 physiological / decompression altitude.</li>
+</ul>
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> "OXYGEN warning light, system won't reset – set OBOGS/ANTI-G switch off" (p.7 #8, EP2 #8); "OBOGS Contamination (OXYGEN Warning Light): descend to less than 10,000 CABIN ALT or Minimum Safe Altitude" (p.68 #7, p.75 #19). Current: <strong>Throttle – set minimum 80% rpm</strong>, then execute Adverse Physiological Symptoms as required (green ring(s) – pull, OBOGS <strong>flow selector(s)</strong> – off, descend below 10,000 ft cabin altitude).</p>
+</div>
+<h3 id="cabin-alt-warning-light-gouge-not-on-the-ic-2143-list">CABIN ALT warning light (gouge; not on the IC 21/43 list)</h3>
+<p>EP 11X (p.68 #1, p.74 #1, p.64 #1): a. OBOGS – on and mask tight · b. Reduce AOA (if req) · c. AIR FLOW KNOB – off then on · If the warning light remains on: d. Altitude – descend below <strong>25,000 ft MSL</strong> · e. Land as soon as practical.
+- Why 25K and not 10K: "CABIN PRESSURE OR A/C FAILURE DOESN'T MEAN YOU LOSE O2" (p.68, p.70 #10). EP2 #17: "Cabin pressurization failure – descend below 25K MSL".
+- The light comes on at a cabin altitude above <strong>24,500 ± 500 ft</strong>, or for a CAU compressor overpressure/overheat (p.44, p.53 #105).
+- <strong>Don't mix this up</strong> with IC 21/43 RAPID DECOMPRESSION (descend below <strong>10,000 ft cabin altitude</strong>).</p>
+<h3 id="smoke-or-fumes-in-cockpit">Smoke or Fumes in Cockpit</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — SMOKE OR FUMES IN COCKPIT — MEMORIZE</div><pre>1. Mask – on/tight
+2. Initiate controlled descent to below 18,000 feet MSL
+3. Air Flow Knob – Off (below 18,000 feet MSL if possible)
+If unable to clear smoke or unable to see:
+4. Airspeed – reduce (as practical)
+5. Warn other cockpit occupant / secure loose items
+6. Seat - lower
+7. MDC Firing Handle - pull</pre></div>
+
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> p.70 #12 / p.75 #13 / EP2 #5: "a. Altitude – Descend below 25,000' (if practical) b. Air Flow Know – Off / If unable to clear smoke or unable to see – c. Airspeed – Reduce d. Warn other cockpit / Secure loose items e. Seat – Lower f. <strong>Visor – Down</strong> g. MDC Firing Handle – Pull h. <strong>Land as soon as possible</strong>". Current: <strong>Mask – on/tight</strong> first, descend below <strong>18,000 ft MSL</strong>, no visor or land step in the immediate actions.</p>
+</div>
+<h3 id="canopy">Canopy</h3>
+<ul>
+<li><strong>Canopy loss:</strong> descend to <strong>10,000 ft</strong> or minimum safe altitude and slow below <strong>200 KIAS</strong> (p.64 #15, p.68 #6, p.74 #8).</li>
+<li><strong>CANOPY light in flight:</strong> airspeed below <strong>200 kts</strong> (EP2 #21). CANOPY light + tone when the canopy is not latched and locked and power is above <strong>95%</strong> (p.4, p.53).</li>
+<li>If the MDC fails, the seat canopy penetrators still fracture the canopy (p.53 #107). Structural damage may require you to blow the canopy (p.60 #32).</li>
+</ul>
+<h2 id="hydraulics">12. Hydraulics (gouge; not IC 21/43 immediate actions)</h2>
+
+<ul>
+<li><strong>HYD 1 or HYD 2 failure: first consideration is to reduce airspeed below 300 KIAS / 0.6 Mach</strong> (EP1 #16).</li>
+<li><strong>HYD 2 failure:</strong> monitor the <strong>HYD 1 pressure gauge</strong>, not the accumulator (EP1 #21, p.59 #15, p.65). The RAT maintains HYD 2 at <strong>2500–3000 psi</strong> (EP1 #4, p.62 A).</li>
+<li><strong>HYD 1 failure:</strong> emergency gear, emergency flaps, and an arrested landing are all available ("all of the above"). General services are lost (p.59 #14, p.65). The hook can be lowered but not raised (p.51 #53, p.54 #138).</li>
+<li><strong>Both HYD 1 and HYD 2 failed with the RAT working but the aircraft "uncontrollable" → EJECT</strong> (p.59 #1, p.64 #6).</li>
+<li>During ACM, HYD caution + RAT caution, then the HYD light goes out → <strong>Reset HYD 2</strong> (correct, though not the first thing to do) (p.6 #23, EP1 #23).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Meaning (gouge p.33, p.40, p.48, p.49, p.54, p.57)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3000 psi</td>
+<td>Normal, both systems</td>
+</tr>
+<tr>
+<td>1660 ± 110 psi</td>
+<td>HYD 1 / HYD 2 PRESS caution light on</td>
+</tr>
+<tr>
+<td>2000 psi</td>
+<td>HYD 2 caution light off</td>
+</tr>
+<tr>
+<td>1500 psi</td>
+<td>RAT deploys (HYD 2); HYD 1 priority valve isolates flight controls (general services lost)</td>
+</tr>
+<tr>
+<td>1600 psi</td>
+<td>Priority valve reopens to general services</td>
+</tr>
+<tr>
+<td>1800 psi</td>
+<td>HYD 2 reset / RAT retract allowed</td>
+</tr>
+<tr>
+<td>2500–3000 psi</td>
+<td>Normal RAT output</td>
+</tr>
+<tr>
+<td>700 psi</td>
+<td>RAT retracts as HYD 2 is lost (airloads permitting)</td>
+</tr>
+<tr>
+<td>2200 psi</td>
+<td>Brake/emergency flap accumulator isolates the flaps (brakes only)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Brake applications from the accumulator (plus emergency flap extension, no slats)</td>
+</tr>
+<tr>
+<td>1100 ± 50 / 1300 ± 50 psi</td>
+<td>Flight-control accumulator / brake-flap accumulator nitrogen preload</td>
+</tr>
+<tr>
+<td>HYD FAIL warning</td>
+<td>HYD 1 &lt; 600 ± 50 <strong>and</strong> HYD 2 &lt; 1660 ± 110 <strong>and</strong> emergency system &lt; 600 ± 50</td>
+</tr>
+<tr>
+<td>45% / 42% N2</td>
+<td>HYD 2 RESET usable above 45%; bypass valve open below 42%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>General services lost below 1500 psi HYD 1: normal gear, normal flaps/slats, normal brakes, NWS, L-bar extension, speed brakes, hook retract (p.49 #37).</li>
+</ul>
+<h2 id="flight-controls">13. Flight controls</h2>
+
+<h3 id="asymmetric-flapsslats">Asymmetric Flaps/Slats</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — ASYMMETRIC FLAPS/SLATS — MEMORIZE</div><pre>1. FLAPS/SLATS lever – Return to previous setting</pre></div>
+
+<ul>
+<li>"Uncommanded roll or yaw when transitioning flaps/slats – return flaps to previous position" (EP2 #7). A rapid roll during flap/slat transition = split flap/slat (p.4).</li>
+<li>Split slat: uncommanded roll + SLAT caution light. The flap position light may not show a split flap because it is wired to the <strong>left flap only</strong> (p.35).</li>
+</ul>
+<h3 id="slats-caution-light-gouge">SLATS caution light (gouge)</h3>
+<ul>
+<li>Coming into the break with a SLATS light: <strong>slow to and maintain below 200 KIAS</strong> and land as soon as practical (EP2 #4, p.64 #5, p.71 #30, p.76 #28).</li>
+<li>Comes on when the slats are not in the selected position, slats are split, or slats are selected or extended above <strong>217 kts</strong> (p.42, p.49 #38, p.71 #29).</li>
+</ul>
+<h3 id="caug-caution-light-gouge">CAUG caution light (gouge)</h3>
+<ul>
+<li>You lose <strong>ARI, SBI, yaw damper, and rudder trim</strong>, all four (EP2 #15, p.66 #32, p.71 #19, p.75 #18).</li>
+<li>It comes on for a system failure, a <strong>BIT</strong> in progress, or the <strong>paddle switch</strong> being depressed (p.41, p.61). CAUG BIT needs <strong>WOW, &lt; 80 kts, flaps/slats up</strong> (p.41, p.52 #86).</li>
+<li>Trim-failure question → "ADI indicates <strong>2° nose up</strong>" (p.64 #3, p.68 #3). A 2° ADI pitch change during speed brake extension/retraction is normal with the SBI (p.67, p.71 #27). The SBI does not change stick position (p.71 #20).</li>
+<li>Speed brakes may not fully extend above <strong>340 KIAS</strong>. Blowback starts above <strong>380 KIAS</strong> (p.71, p.67).</li>
+</ul>
+<h2 id="landing">14. Brakes, directional control, blown tires, arrestments</h2>
+
+<h3 id="brake-failure-ashore-skid">Brake Failure – Ashore / Skid</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — BRAKE FAILURE – ASHORE / SKID — MEMORIZE</div><pre>If flyaway airspeed available:
+1. Go around
+If flyaway airspeed not available, or during taxi:
+2. Throttle - idle
+3. Brakes - release
+4. Anti-skid switch - off
+5. Brakes – apply gradually
+If brakes still unavailable:
+6. Hook – down (if required)
+7. Parking brake handle – pull (if required)</pre></div>
+
+<div class="callout old">
+<p><span class="tag old">OLDER GOUGE — DIFFERS</span> p.68 #5 Wheel Brake Failure on Touchdown: "Go around, if able / If go around not feasible – Wheel brakes – release / ANTI-SKID – OFF / Attempt braking / Hook – DOWN (1,000' prior to gear) / Throttle – OFF (if departing Rwy) / If airborne – ANTI-SKID – OFF / Attempt a short field arrestment". EP2 #31 is similar. Current: <strong>Throttle – idle</strong> is the first step after go-around, brakes are applied <strong>gradually</strong>, and it ends with <strong>Parking brake handle – pull</strong> (if required).</p>
+</div>
+<h3 id="brake-failure-afloat">Brake Failure – Afloat</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — BRAKE FAILURE – AFLOAT — MEMORIZE</div><pre>1. Throttle - idle
+2. Parking brake handle - pull
+3. Hook – down
+4. Transmit</pre></div>
+
+<ul>
+<li>Not covered by the gouge (a topic title only, p.69).</li>
+</ul>
+<h3 id="loss-of-directional-control">Loss of Directional Control</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — LOSS OF DIRECTIONAL CONTROL — MEMORIZE</div><pre>If flyaway airspeed available:
+1. Go-around
+If flyaway airspeed not available:
+2. Abort
+If blown tire suspected:
+3. Brakes - release
+4. Anti-skid switch - off
+5. Brakes – apply gradually
+If NWS failure suspected:
+6. Paddle switch - press</pre></div>
+
+<ul>
+<li>Gouge: a NWS malfunction is steered with <strong>differential braking</strong> (EP1 #5, p.59 #10). <em>IC 21/43 adds: if NWS failure is suspected, </em><em>Paddle switch – press</em><em>.</em></li>
+<li>NWS AUG on during taxi: momentarily press the NWS button (EP1 #25). EMERG gear extension disables NWS (p.3, p.69).</li>
+</ul>
+<h3 id="blown-tires-gouge">Blown tires (gouge)</h3>
+<ul>
+<li><strong>On T/O (aborting):</strong> rudder as required to counter the swerve; <strong>ANTI-SKID – OFF prior to braking</strong> (p.70 #11, p.76 #21, EP2 #19). <strong>Continuing the takeoff:</strong> do NOT reposition gear and flaps, monitor engine instruments, then execute the landing-with-blown-tire procedure (p.70).</li>
+<li><strong>After touchdown:</strong> rudder (counter swerve), go around if able (EP2 #9).</li>
+<li><strong>Single blown tire, no arresting gear:</strong> flared landing, <strong>flaps ½</strong> (p.73 #31, p.76 #22, EP2 #20).</li>
+<li><strong>Dual blown tires, no arresting gear:</strong> consider a <strong>gear-up landing or controlled ejection</strong> (p.73 #32, p.67).</li>
+</ul>
+<h3 id="arrestments-gouge">Arrestments (gouge)</h3>
+<ul>
+<li><strong>Short field:</strong> touch down <strong>500 ft</strong> prior to the gear. If directional control is in question: <strong>at or 50 ft prior</strong> (p.73 #33, p.74 #3, EP2 #6). NWS AUG failure: touch down just before (50 ft) the gear (p.72).</li>
+<li><strong>Long field (for test):</strong> hook down <strong>1,000 ft</strong> prior, maintain directional control, release brakes as you cross the cable (p.71 #26).</li>
+</ul>
+<h3 id="anti-skid-hook-gear-lights-gouge">Anti-skid, hook, gear lights (gouge)</h3>
+<ul>
+<li>Anti-skid failure: release brakes, anti-skid off, brakes as required (EP2 #34, p.76 #29).</li>
+<li><strong>Anti-skid OFF, 5 cases:</strong> after HYD 1 failure, before setting the parking brake after shutdown, carrier landings, SKID caution light, blown tire (p.3, p.35). With one switch off, the system is off (p.49).</li>
+<li><strong>HOOK light:</strong> hook position doesn't agree with the handle ("not fully extended") (p.71 #17, EP2 #33).</li>
+<li><strong>Gear handle light:</strong> gear in transit or not in the commanded position (p.71, p.75, p.76).</li>
+<li><strong>WHEELS warning light:</strong> gear handle not DOWN, N2 &lt; 95%, and either &lt; 7,200 ft MSL with &lt; 170 kts, or FLAPS/SLATS not up (p.42).</li>
+</ul>
+<h2 id="spin">15. Departure / spin</h2>
+
+<h3 id="departurespin-procedure">Departure/Spin Procedure</h3>
+<div class="ic"><div class="ic-label">IC 21/43 (Nov 2023) — DEPARTURE/SPIN PROCEDURE — MEMORIZE</div><pre>1. Controls – neutralize / forcibly center rudder pedals
+2. Speed Brakes - retract
+3. Throttle - idle
+4. Check altitude, AOA, Airspeed, and turn needle
+If spin confirmed:
+INVERTED (AOA pegged at 0 units):
+5. Rudder pedal – full opposite turn needle
+6. Lateral stick – full opposite turn needle
+7. Longitudinal stick - neutralize
+UPRIGHT (AOA above 28 units):
+8. Rudder pedal – full opposite turn needle
+9. Lateral stick – full with turn needle
+10. Longitudinal stick - neutralize
+If recovery indicated or airspeed increasing through 160 KIAS:
+11. Lateral stick - neutralize
+When recovery indicated:
+12. Rudder pedals – smoothly center
+If out of control passing through 10,000 feet AGL:
+13. Eject</pre></div>
+
+<ul>
+<li>Gouge aero items, all consistent with the current procedure: rudder <strong>full opposite turn needle</strong> for both upright and inverted. Aileron <strong>with</strong> the turn needle when upright, <strong>opposite</strong> when inverted. "Aileron positions reversed for spin recovery" (p.20 #43–45, p.25, p.1 #8/#12).</li>
+<li><strong>Inverted spin:</strong> 0 units indicated AOA, negative G, turn needle in the direction of the spin (p.2 #40, p.20 #44). True AOA −60/−40/−25 with airspeeds 50–120 / 100–160 / 140–200 and descent rates 15–20,000 / 15–20,000 / 11,000 fpm (p.25).</li>
+<li><strong>Upright spin</strong> at 45° AOA: about 15,000 fpm descent (p.1 #17). An upright spin is NOT characterized by recovery AOA increasing past 5 units (p.2 #28).</li>
+</ul>
+<h2 id="avionics">16. Avionics and instrument failures (gouge)</h2>
+
+<ul>
+<li><strong>MFD failure:</strong> blank or blinking screen, stuck pushbutton, wrong/invalid info (EP2 #11, p.74 #6). One MFD: turn it off. Multiple MFDs: <strong>Display Power switch momentarily to RESET</strong> (EP2 #22, p.47 #10, p.76 #27).</li>
+<li><strong>DEU failure:</strong> MFDs and HUD lost, <strong>PAR (or visual) only</strong> (p.30, p.52 #88, p.55 #146).</li>
+<li><strong>GINA failure:</strong> "all the above" (EP2 #10). Total GINA failure blanks attitude and heading on the ADI, HSI, and HUD (p.15).</li>
+<li><strong>Pitot-static failure:</strong> use the <strong>standby VSI</strong>. You lose mach/airspeed and baro altitude, NOT vertical velocity (EP2 #27, p.14).</li>
+<li><strong>Barometric altimeter failure:</strong> RADALT below 5,000 ft AGL, cabin altimeter if unpressurized, check pitot heat (EP2 #12, p.76 #24).</li>
+<li><strong>ADI failure:</strong> standby attitude indicator. <strong>AOA failure:</strong> use airspeed (p.15, p.31).</li>
+<li><strong>IFF failure:</strong> ATC reports loss of altitude info (p.32).</li>
+</ul>
+<h2 id="key-numbers">17. Key numbers</h2>
+
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eject (engine failure)</td>
+<td>Below 1,500 ft AGL <strong>and</strong> below 180 KIAS</td>
+<td>IC 21/43</td>
+</tr>
+<tr>
+<td>Airstart repeat</td>
+<td>Above 13% RPM and 250 KIAS; relight within 30 s</td>
+<td>IC 21/43</td>
+</tr>
+<tr>
+<td>Locked-in stall</td>
+<td>EGT &gt; 450°C for &gt; 6 s at idle</td>
+<td>IC 21/43, p.54</td>
+</tr>
+<tr>
+<td>Catapult settle</td>
+<td>24 units AOA, Throttle – MRT</td>
+<td>IC 21/43</td>
+</tr>
+<tr>
+<td>Smoke/fumes descent</td>
+<td>Below 18,000 ft MSL</td>
+<td>IC 21/43 (gouge 25K, outdated)</td>
+</tr>
+<tr>
+<td>Physiological / decompression</td>
+<td>Below 10,000 ft cabin altitude</td>
+<td>IC 21/43</td>
+</tr>
+<tr>
+<td>OIL PRESS light</td>
+<td>78–87% rpm</td>
+<td>IC 21/43</td>
+</tr>
+<tr>
+<td>OXYGEN light</td>
+<td>Minimum 80% rpm</td>
+<td>IC 21/43</td>
+</tr>
+<tr>
+<td>Spin</td>
+<td>Upright AOA &gt; 28 units; inverted AOA 0; neutralize lateral stick at 160 KIAS; eject out of control through 10,000 ft AGL</td>
+<td>IC 21/43</td>
+</tr>
+<tr>
+<td>EGT/RPM light</td>
+<td>650 ± 8°C / N1 112.4 ± 1%</td>
+<td>p.37</td>
+</tr>
+<tr>
+<td>EGT limits</td>
+<td>Idle 450 · ground start 550 (570/10 s) · airstart 600 (650/10 s) · continuous 550 · MRT 610 (30 min/hr) · transient 645 (&lt; 20 s)</td>
+<td>p.37, p.56</td>
+</tr>
+<tr>
+<td>FIRE / GTS FIRE / TP HOT</td>
+<td>300°C / 300°C / 150°C; FIRE light out after 45 s below 300°C</td>
+<td>p.37, p.54</td>
+</tr>
+<tr>
+<td>ECA 2 limits</td>
+<td>90% above 20K, 95% below 20K, 600°C</td>
+<td>p.5, p.37</td>
+</tr>
+<tr>
+<td>CABIN ALT light</td>
+<td>24,500 ± 500 ft cabin</td>
+<td>p.44</td>
+</tr>
+<tr>
+<td>Speed brakes</td>
+<td>May not fully extend &gt; 340 KIAS; blowback &gt; 380 KIAS</td>
+<td>p.71</td>
+</tr>
+<tr>
+<td>SLATS / flaps limits</td>
+<td>Slats 217 kts; flaps/gear 200 kts; SLATS light → &lt; 200 KIAS</td>
+<td>p.33, p.42</td>
+</tr>
+<tr>
+<td>Batteries</td>
+<td>27 min (two) / 12 min (one)</td>
+<td>p.51</td>
+</tr>
+<tr>
+<td>Over/undervoltage</td>
+<td>30.2 VDC / 25 VDC</td>
+<td>p.47</td>
+</tr>
+<tr>
+<td>Emergency O2</td>
+<td>1800–2500 psi, 4–20 min</td>
+<td>p.45</td>
+</tr>
+<tr>
+<td>Fuel</td>
+<td>FUEL LOW ≈ 350 lbs; boost pumps 30 s after GEN failure; LP PRESS &lt; 35 psi</td>
+<td>p.37, p.39</td>
+</tr>
+<tr>
+<td>Ejection seat (gouge)</td>
+<td>600 KIAS / 60K max; 0.4 s interseat; Mode 5 drogue release 18,000 ft MSL</td>
+<td>p.34, p.44</td>
+</tr>
+</tbody>
+</table>
+<h2 id="misc">18. Miscellaneous exam gouge</h2>
+
+<ul>
+<li><strong>Midair:</strong> have someone else check you out (not the guy you just hit). Don't have the wingman join up (p.59 #4, p.64 #9, p.65).</li>
+<li>In ejection situations, <strong>trade airspeed for altitude</strong> (p.60 #27). If flight controls are uncontrollable → eject (p.65).</li>
+<li>Increase altitude for better radio reception ("really… it's on there") (p.60 #31).</li>
+<li>"Don't worry about PA procedures" (p.64 #18). "MEMORIZE ① FIRE ② GTS FIRE ③ GENERATOR FAILURE" (p.66). "KNOW THE BOLD FACE" (p.65).</li>
+</ul>
+<hr/>
+<p><em>Compiled from the IC 21/43 (Nov 2023) immediate-action list, the T-45C student gouge EP extract (pages 1–86, OCR plus manual transcription), and Quizlet sets 783093107 / 783149178. For training use. The IC 21/43 wording governs; always defer to current NATOPS/PCL.</em></p>
+  </article>
+  <div class="footer-nav"><a href="section-ep.html">← EP</a> · <a href="index.html">Home</a></div>
+</div>
+</body>
+</html>

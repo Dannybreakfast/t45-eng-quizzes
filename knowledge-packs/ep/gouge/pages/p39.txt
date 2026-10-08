@@ -1,0 +1,80 @@
+# Page 39 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+C at all engine speeds except 60 sec on airstart, and 5. N2 must remain below 95/90% below/above
+20,000' MSL
+
+With weight on wheels, ignition is provided when 1. GTS button pressed and released, 2. ENGINE switch
+d set to START, and 3. ROFAFIONs on.
+
+ne When airborne, ignition is provided when 1. GTS button is pressed and for 30 sec after release, 2, ENGINE ;
+Switch set to START, and 3. ROEATION is ON.
+
+» ZeEnor
+
+The ignition switch has two positions 1. ISOLATE- de-energizes engine and GTS ignition system,
+
+2. NORMAL
+Fuel System (NATOPS 2. 2) any FE 64 LO PR}
+
+> 443 gal total fuel capacity in gallons
+
+id 427 gal total usable fuel capacity in gallons
+
+> 223 gal Capacity of wing tank in gallons
+
+= 220 gal capacity of fuselage tank in gallons
+
+11 gal amount of unusable or trapped fuel in gallons
+
+» 3012 Ibs. Total fuel capacity in pounds (JP-5)
+
+a - 2904 Ibs. Total usable fuel capacity in pounds (JP-5)
+
+400 Ibs. Capacity of collector tank in pounds.
+a 350 Ibs. Approximate fuel quantity remaining with FUEL LOW caution light illuminated
+
+al 73 Ibs. Approximate amount of trapped fuel in pounds
+
+7 300-400 gph idle fuel flow in gallons per hour
+
+2 180 gpm maximum refueling rate in gallons per minute
+
+. 24 gpm defueling rate at 11 psi suction
+
+30 sec. Capacity of Negative G compartment
+
+2 30 sec. Time period I seconds fuel boost pumps continue to operate after GEN failure to
+
+. conserve battery power
+
+2 10 sec. Delay in illuminating FUEL LOW caution light to avoid nuisance flickering
+
+~ 50 psi maximum refueling pressure
+
+7? 9.5 psi pressure at which dual datum relief valve opens to relieve an over pressure condition
+
+» 6 psi pressure of engine bleed air supplied for fuel tank pressurization (Above ambient press.)
+od 4.0 psi pressure at which dual datum relief valve opens when REFUEL switch set or arresting
+hook is down
+
+Ay w& 3 psi yb? - low air pressure sense switch causes FUEL PRESS caution light illuminates (a/c 163647 and up)
+a’ 2 psi fuel tank air pressure below which the FUEL PRESS caution light illuminates
+
+= Boost pumps automatically turn on 1. During GTS operation, 2. When N2 > 42%, GEN is on, and ENGINE
+switch is on.
+
+2 Two fuel boost pumps are installed in the . (Negative G compartment)
+
+The FUEL PRESS caution light illuminates when 1. There is insufficient differential pressure across a
+
+2 boost pump (such as an inoperative pump), or 2. The fuel tank air pressure regulator
+
+drops below 3 psi.
+
+TIF Opening the fuel shutoff valve disables GST ignition in addition to securing fuel (TRUE)
+
+4 The fuel flow transmitter is powered by bus and measures fuel flow prior to the
+
+pump. (28V Essential Services, LP Fuel Pump)
+
+TF The FUEL advisory light and the INLET FUEL caution light are inoperative except during the

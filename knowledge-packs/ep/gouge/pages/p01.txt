@@ -1,0 +1,33 @@
+# Page 1 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+AERO
+Tims gouge- if you can’t pass DOR from life right now
+1) Thrust available varies with RPM, ALT, and Temp
+2) T-45 —tracks away from the crosswind
+3) Max G below 5,000- +6.5 — (-3.0)
+4) SBI causes a nose up pitch across all A/S- False
+5) Rudder shock stabilization strips- reduce rudder buzz
+6) Artificial stall warning ...- occurs at 21.5 AOA |
+7) T-45 does not incorporate- Area Rule
+8) Spin recovery upright and inverted differ with — aileron position
+9) Landing at a high elevation field- Same IAS but longer landing roll due to inc. TAS
+10) -60 AOA A/S- (50-120 kts)
+11) % lateral stick~ .92 - 95 Mach
+12) Rudder full opposite- recovery both erect and inverted spins
+13) Compared to normal approach, the T-45 Emergency Flap configuration has same approach A/S and faster
+stall A/S...
+14) Approach Configuration stall buffet- 1 kt above stall
+15) T/O distance (PA- 2,000 ft; Temp- 90 degrees F; 13,000 lbs weight; wind 10 kt headwind; half flap) —
+2700 ft (don’t need 50 ft obstacle clearance)
+16) Stall AOA clean configuration- 26 AOA
+17) 45 degree AOA ROD spin- 15,000 fpm
+18) First shock wave .85- is the Force divergent Mach number
+19) (1100 pds of fuel; 150 nm; 10,500 pds weight; calm wind) — (300, 220, 80, 500)
+| 20) Rudder shakers- shake both pedals in both cockpits
+21) Dutch roll- A/S below 220 KIAS (Tims considers that slow flight)
+22) Transonic Flight (.8}+ Mach Critical
+23) Swept wing- stall wing tip first and have poor lateral stability
+24) Approach configuration stall- 29-30 AOA
+25) Tuck under- caused by aft movement of AC
+26) T-45 high slip will cause rudder blowout and 250 Ibs force...
+27) External stores- decrease stall 1 AOA lower in cruise and approach configurations

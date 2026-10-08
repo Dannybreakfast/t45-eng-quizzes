@@ -1,0 +1,4119 @@
+==================== PAGE 1 ====================
+
+AERO
+Tims gouge- if you can’t pass DOR from life right now
+1) Thrust available varies with RPM, ALT, and Temp
+2) T-45 —tracks away from the crosswind
+3) Max G below 5,000- +6.5 — (-3.0)
+4) SBI causes a nose up pitch across all A/S- False
+5) Rudder shock stabilization strips- reduce rudder buzz
+6) Artificial stall warning ...- occurs at 21.5 AOA |
+7) T-45 does not incorporate- Area Rule
+8) Spin recovery upright and inverted differ with — aileron position
+9) Landing at a high elevation field- Same IAS but longer landing roll due to inc. TAS
+10) -60 AOA A/S- (50-120 kts)
+11) % lateral stick~ .92 - 95 Mach
+12) Rudder full opposite- recovery both erect and inverted spins
+13) Compared to normal approach, the T-45 Emergency Flap configuration has same approach A/S and faster
+stall A/S...
+14) Approach Configuration stall buffet- 1 kt above stall
+15) T/O distance (PA- 2,000 ft; Temp- 90 degrees F; 13,000 lbs weight; wind 10 kt headwind; half flap) —
+2700 ft (don’t need 50 ft obstacle clearance)
+16) Stall AOA clean configuration- 26 AOA
+17) 45 degree AOA ROD spin- 15,000 fpm
+18) First shock wave .85- is the Force divergent Mach number
+19) (1100 pds of fuel; 150 nm; 10,500 pds weight; calm wind) — (300, 220, 80, 500)
+| 20) Rudder shakers- shake both pedals in both cockpits
+21) Dutch roll- A/S below 220 KIAS (Tims considers that slow flight)
+22) Transonic Flight (.8}+ Mach Critical
+23) Swept wing- stall wing tip first and have poor lateral stability
+24) Approach configuration stall- 29-30 AOA
+25) Tuck under- caused by aft movement of AC
+26) T-45 high slip will cause rudder blowout and 250 Ibs force...
+27) External stores- decrease stall 1 AOA lower in cruise and approach configurations
+
+==================== PAGE 2 ====================
+
+28) T-45 upright spin NOT characterized by — recovery AOA increasing past 5 units
+
+29) High speeds and low speeds characteristics improved by- vortex generators
+
+30) Spiral divergence in clean configuration is possible- (False, need asymmetric load)
+
+31) Flap extension plane will- balloon, settle, stability reduction
+
+32) Pulling out of a dive decelerating .95 -.85 T-45 will pitch up- (True)
+
+33) Max abort speed- commence stop on remaining runway without using over run or arresting gear.
+34) Mach number- ratio of TAS/SOS
+
+35) Two pilots shift CG forward and more stable
+
+36) Heavy wing- % lateral stick
+
+37) Optimum AOA- 17 units |
+
+38) CG location and stability effected by — Consumption of fuel/ raising lowering landing gear
+39) Disadvantage swept wing- stalls high AOA with Coefficient of lift reduced
+
+40) Inverted spin- 0 AOA, neg G., turn needle in direction of spin
+
+==================== PAGE 3 ====================
+
+Engineering Timms Gouge
+
+-Know limits chart and what would be an overstemp, max egt on start including
+
+overshoot (RTFQ!)
+
+-Loud pops/bangs...rpm down EGT up = comp stall
+
+-The over voltage unit takes the generator offline at 30.2 volts
+
+-The biggest user of battery juice is the pitot heat
+
+-Igniters powered by 28vdc ess serv bus
+
+-something about thrust loss with the bleed valve stuck open
+
+-No NWS with emergency gear extension
+
+-Emergency brake/flap accumulator gauge shows nitrogen pressure
+
+-A slow loss of HYD 2 pressure will not lose general services
+
+-T handle separates engine from aircraft fuel system
+
+-ATS mechanically drives N2 compressor
+
+-52 +/- 2 idle rpm closed bleed valve
+
+-know engine fire indications (light, tone, etc)
+
+-L Bar is mechanically raised and hydraulically lowered
+
+-Skid advisory light = both stitches on and gear down
+
+-know what the hyd gauges in the cockpit should read in start (1=3000, 2=0, brake=3000)
+
+-single AC inverter failure = loss of ac non essential services, AC inv light, tone
+
+-first indication of a fire on takeoff Is the fire light (true)
+
+-if the fire light comes on then turns off = temp below 300 or burn through
+
+-EGT/RPM light = 650 +/-8 or 112.4 +/-1 NI RPM
+
+-Know what triggers a NWS caution light
+
+-N2 Accessory gearbox = oil pump, hyd EDP’s, LP Pump, DC Generator, etc
+
+-no emergency flaps with total electrical failure
+
+-the gts powers the ats on start
+
+-loss of both inverters = loss of AC services, light, tone (all the above I think)
+
+~Generator failure = loss of hud, right mfd, gen warn light, master caution
+
+-NO VERIFICATION of INTERNAL tailpipe overtemp
+
+~accumulator preload charges (Hyd flight control = 1100 +/-50, 1300 +/-50 for brake)
+
+-5 x to turn off anti skid switch (after hyd 1 loss, after shurdown prior to setting pk bk,
+boat, skid caution light, blown tire)
+
+-300 amp fuse between generator and gen bus
+
+-hook extended by gravity assisted by snubber
+
+-F Press light for boos pump failure
+
+-ECA failure dual lane full and no trim indicaitons
+
+==================== PAGE 4 ====================
+
+2
+-Flameout below 1500 AGL AND 180 kias = eject
+-GINA made up of gps and ins
+-HOT START INDICATIONS (there are 2 answers so RTFQ)
+-how many BIT displays are there? 2..Weight on Wheels and Weight off wheels
+-Alignment of gina complete when waterline replaces by velocity vector
+-Mode C = altitude reporting for transponder
+~extending the flaps requires 28vdce power
+~yaw dampener trims rudder via ARI
+-IFF DGRD in bit page: fail, standby, off
+-If CAUG light illuminates in flight, lose ARI, SBI, rudder trim, yaw dampener
+-WILL have tacan with generator failure
+-IFF is only CNI device with 2 antennas
+-From Mr Carrier himself: “To enhance the efficiency of the ECS heat exchangers,
+inducers powered by bleed air by the IPRSOV which is commanded open by: Gear down
+and ECS selected to any position other than off”
+-Ram air in cockpit contriled by a Weight on wheeles switch ECS air flow knob
+-rudder shakers and tone and best indications of an impending stall
+-DEU failure limits you toa GCA
+-Oxygen contractor filters litrogen and other contaminants
+-hung start indications (rpm stuck at 45 and egt rising)
+-rapid roll during flap/slat transition = split flap/slap
+-ILS needles displayed when ILS selected on HIS
+-Dislay system gets date from gina and pitot static system ~
+-full deflection of CDI in tacan, VOR, wpt steering (all the above I think)
+-OPGO on bit page = single channel
+-engine switch on in both cockpits energizes starter control unit
+-raising the finger lift will: allow throttle to go below appr idle, go past fight idle to off,
+prevent inadvertent pull to off in a rapid retraction
+-display switch to ORIDE to keep L MFD on during a gen failure
+~electronic sequencer determines ejection mode
+-CANOPY light whenever canopy unlocked....get a tone of unlocked and go past 95%
+Tpm. .
+
+==================== PAGE 5 ====================
+
+Timms Gouge EP Test 1, old gouge still holds as well
+
+1. Engine fails to light off with in 15 sec from putting throttle to idle — Wet start
+
+2. Audible bang, Increase EGT, RPM lowers = Engine Stall
+
+3. During descent passing 7000 MSL, ACCEL Caution light — expect slower engine acceleration
+during an approach
+
+4. HYD 2 pressure failure, RAT will maintain HYD 2 pressure at 2500-3000
+
+5. Taxi clear of active, NWS malfunction- aircraft would be steered by differential braking
+
+6. If aborting with a blown tire, set ANTI-SKID switch ON — (False)
+
+7. ECA 2 Caution light- land as soon as practical and do not exceed 90% above 20K MSL, 95%
+below 20K MSL, do not exceed 600 deg EGT
+
+8. Just flamed out, airspeed is 150 and at 1000’ you should — Eject
+
+9. Abort procedures- IDLE, BOARDS retract, BRAKES, HOOK (1000 ft. prior)
+
+10. LP PUMP light in flight- avoid abrupt throttle movements and set min for flight
+
+11. What requires an immediate shutdown on deck w/out 2ndary indications- FIRE light illums
+
+12. When flying @ 15K, TP HOT light- Throttle idle (min safe flight)
+
+13. On cat stroke, aircraft settles- Throttle full, check 24 AOA, if settle continues Eject
+
+14. Launch bar system is — electrically controlled, mechanically extended, and hydraulically
+retracted
+
+15. Engine failure on cat stroke and unable to eject- ditch straight ahead
+
+16. For HYD 1 or HYD 2 Failure 1* consideration- Reduce A/S below 300 KIAS/.6 MACH
+
+17. After F PRESS light illuminates and checking engine switch on you should- avoid negative G
+maneuvers
+
+18. While cruising 23K you get FIRE light, with 2ndaries- EJECT (not prepare for controlled
+ejection)
+
+19. NWS AUG system provides yaw rate feedback in high gain nose wheel steering — false (yeah
+we had no f’ng idea either)
+
+20. 3-41 questions that deal with procedures for COMP Stall and EGT RPM Light. Know the first
+3 steps in that procedure and that’s 3-4 free questions.
+
+21. If you get a HYD 2 failure, monitor HYD 1 Presssure
+
+22. Executing the Engine Fire Emergency Shutdown on the Ground, state the procedures
+verbatim
+
+==================== PAGE 6 ====================
+
+(A,E,B,D,F, if different use PCL!) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)
+
+Fuel Shutoff - PULL, 4) BATT switches — OFF, 5) Emergency Egress
+
+23. During ACM you get a HYD caution light, RAT caution light and then the HYD light
+extinguishes you should: Reset HYD 2 (correct but not the first thing to do, Instructor took
+note & future test may be changed)
+
+24. First step in the EGT/RPM warning light: Neutral/IDLE
+
+25. If NWS AUG goes on during taxi, you should: Momentarily press NWS button.
+
+26. GTS Fire on deck: Emergency Shutdown
+
+==================== PAGE 7 ====================
+
+EP Test 2
+
+1. Descend below 10,000 feet cabin alt. with an OBOGS Failure
+
+2. Eject if below 1500 AGL and below 180 knots
+
+3. Electrical fire immediate action- GEN switch off
+
+4. (2 questions) If put you get a SLATS caution light- maintain a/s less than 200 KIAS
+
+5. Smoke and fumes in cockpit- Altitude descend below 25K, AIR FLOW knob off
+
+6. With directional control in question, short field arrestment: hook down, land 50 ft prior
+
+7. Uncommanded roll or yaw when transitioning flaps/stats- return flaps to previous position
+
+- 8, OXYGEN warning light, system won’t reset set OBOGS/ANTI-G switch off
+
+9. Blown tire after touchdown- Rudder (counter swerve) and Go around if able
+
+10, GINA failure- all the above
+
+11. Abnormal MFD- blinking screen, invalid display, blank screen, stuck push button
+
+12. With barometric altitude failure- Use radar alt if below 5K AGL, use cabin altimeter if
+unpressurized, and check PITOT Heat is on
+
+13. Engine failure catapult- Eject
+
+14. Immediate Airstart- Pull Emerg. Oxygen actuator, throttle off, GTS button, idle
+
+15. C AUG light on lose- ARI, SBI, yaw dampner, and rudder trim
+
+16. GTS fire- Emergency engine shutdown
+
+17. Cabin pressurization failure- descend below 25K MSL
+
+18. Compressor stall- IDLE, Neutralize, monitor .
+
+19. Blown tire on T/O roll and abort- rudder (counter swerve), Anti-skid off
+
+20. Blown tire, no arresting gear- flared, half flap —
+
+21. CANOPY light in flight- Airspeed below 200 knots
+
+22. Multiple MFDs f'd up- momentarily set Display Power switch to RESET
+
+23. Total Electrical failure can’t restore power- No flap approach and make an arrested landing
+
+24. Windmill airstart parameters- below 25K, 13%, min 250 kts
+
+25. Abort takeoff- Idle, extend, brakes as req, hook 1000 ft prior
+
+26. Electrical failure- no load shedding (eliminates 3 out 4 answers)
+
+==================== PAGE 8 ====================
+
+27. Pitot static failure question- standby VSI
+
+28. Settling off catapult- throttle check full forward, 24 AOA
+
+29. Launch bar warning light after cat launch- divert to shore, min. descent rate landing with
+arresting wires removed
+
+30. Gen failure- confirm engine operation, reset Gen switch
+
+31. Wheel brake failure go around not possible- brakes release, anti skid- off, attempt braking,
+hook down 1000 feet prior
+
+32. AC INV light- reset number 1 and 2 inverters
+
+33. Hook light still illum after hook should be down- hook is not fully extended
+
+34. Anti-skid failure- release brakes, anti-skid off, brakes as required
+
+35. 28 VDC gen bus failure will not remove- primary stabilator trim
+
+36. Fire light in flight- Idle, instruments check, secondary-eject
+
+==================== PAGE 9 ====================
+
+: a an Cer DO
+; ' Metro Gouge. mA oN" , re oO .
+| . 1) southern: Oregon is lear _ Ne, ao ;
+2) Cold font is blewing from the-nerthwest ee : oo Looe ;
+3)The stronger side/more turbulent side of the jet-streanris the northem side a
+4) The jet-stream.dips south in the winter, is highierin altitude, and stronger/faster(check W Soe
+5 this for accuracy) . oe . - - oe wn
+“~~ 5) Turbulence is experienced most when(Mike has the contols) 9) oe \ &
+6)wing tip-vortices begin on takeofi/rotation for largeraireraft
+7) A low-pressure gradient is steongest/lowest pressure is where the isogonic lines are - wo \,
+oy osest.together...location-B in the figure is the best answer. 7 re LP QOY 7M
+>< 4 8) ATS information is obtained from the UHE/VEF radio..ntt the'VOR voice | - oe we
+9)It is not. always-against OPNAV-3716 to po into a SIGMET. ‘However the Area2ine Ne -
+that particular. question is the best answer. Read the whole question-if need be, but area 2 eo X
+(southem texas I think) is the best answer mo me mo, ra
+10)1014:2 ahillibars(or something like that is one of the answers, everything else is se
+; attractive, but it’s the only one,.that makes sense) . oS , p— mS
+1]) when @light-planning, use actual: weather where you are, actual and forecasted enroute,
+and and forecasted: at your-destination ” a Ce
+12) Know how to réad a METAR. A METAR is a reportofwhatis, - a
+' 13) Know how to read a FAR and know that something BECOMING and a TEMPO can. -
+both be at the same time and should both be referred to for weather minimums ° SO,
+14) 206--%4-are-mins for a single piloted aircraft(departing but also generally)
+~~ “Se=<t 15) Look at the forecast for THE and figure out the Jowest aiins: 500-3 (it’s plain as day, eT
+- but I looked at the stupid question for like 5 minutes before T figured out what it was So
+asking, poorly worded) .
+c 16) An ATRMET js the same‘asa SIGMET but it is published for-less serious reasons. -
+ve 7) A DD~1754 must be filéd for all IFR flights in IMC conditions... IFR is the. (a9 One
+t/a - eee
+j 4 not all flights ; a : : ;
+-—> 18) In one question they ask, the weather bref is good watil? The answer is next to the .
+‘ void box at the bottom of the WX brief, it has a void-time-of 1630, a rebrieftime of 1710 |
+and a new expiration nextto that (27502730) that's the right answer. Look at the
+> extension time. . - a
+19)When should aPIRER be-made? Albofthe:above
+20) If canght in a microburst, add. fall power and:wave offfabort( basically do what nate- 7
+>< does on 75% of his landing attempts) , U
+21)The T=45 is:considered.a single. piloted-aircraft! Disregard the fact that we have two
+radios
+é 22) In one question about forécasted turbulence, its modeiate to-sevete #3(like Ted’s
+gambling addiction)
+23)Severe Turbulence.over Maine is from the surfaie 2042, 000 ;
+' 24)The freezing-level if North eastern Oregon is 10,000’ MSL @aterpolate) Low Level 38 ,
+Significant weather Prognostic chart
+25) Weather over Noitheast: Light Snow and tops of 14000
+26) When planning a cross‘country from Florida to Mississippi(or something like that)
+the wind ts a leficrosswind at 65 kts = - :
+
+==================== PAGE 10 ====================
+
+27) Geilings are always in AGL . :
+~~ ~ 28)2 winds.alo®& questions. Know howto read them when above 100,knois;
+ye 29) Know what a stationary front looks like —_ .
+30) On a weather depiction-chart there will be 4 question. about'whether an.area is VER,:
+MVER, or IFR.. Its VFR:despite the34-claud cover symbal,
+31) Bo not. go.through a Thunderstemm. Divert (unless you were one of 1600 to get into ;
+notre dame) ,
+.  32)If you do end up going through a thunderstomn, set-dttitude and ride aout. Bons
+\ chase needles - ' ;
+\ 33)Thunderstorms threaten aircraft with: lightning: Ieing, hail .
+\ 34) A warm front has stratiform:¢londs and rain. on-either. side.(may as wellknow what
+Ww V the different fronts do, but the question on the test is a-warm front) .
+\ 35) One question is reading. aIMEZAR and asks which:answer-is right.. the answers the
+\ |\__ visibilityisincreasingat the Station(they put the METARs from latest to earliest to
+yo confuse you so it looks like vis. goes down but look at the times. .it(visibility) really
+Ni increases)
+N 36) One question says you are ‘going through-CA and.Oxezon: West eftheGuscades:on-as :
+. " flight....they ask you what the conditions:will be. The aiiswwer‘is-botl: the conditions
+* ‘tefore and after-1700z. make sure you Jook it over to doublecheck ‘
+37)Know about structural icing- decreases-lift because it: changes the shape:of the airfoit a
+38)On a radar-summary: chart they ask abdiit whats going on in Maine and into the ;
+Atlantic. ....the answer is snow-observed and echo-tops'at: 14-000° MST, .
+J 39)one question asks-about San Francisco (SFO) the answer -is that the weak high .
+oh \ pressure:system.-will be.formed.in coastal-sections by 02002%(something close to that)
+\y' Ns x" 40) They ask about a forecast for’ Fexas and-Oklahoiiia...answer is something to the effect
+A AN < ~ of occasional. severe turbulence bélaw.6:000° .
+ANS 41) One asks about filing a weather brief, answer is 2 % hours .prior-to take off and 3
+min afier,its.void a
+292.9 LEQ S812 279
+Rawls
+Nos aa A 8h anh aN ;
+GAar., ar CC. wa Avs
+
+==================== PAGE 11 ====================
+
+INAV Timms Gouge- If you can’t pass you’re going E2s
+Cleared for published DP on IFR flight plan. After takeoff “climb and maintain FL350...”
+- Climb immediately to FL350 and proceed via direct flight to the DP transition point.
+On a flight from NAS Meridian to Montgomery Regional, prior to commencing a HI ILS aprch, tune and
+ID NAVAIDS. Which TACAN should be tuned and Ded?
+- Channel 97 (MXF)
+When flight planning, an airport designated “Official Business only”
+- Be designated as an alternate on an IFR flight plan
+For all flights in a jet, 3710 requires fuel from takeoff to landing plus a reserve of:
+~ 10%, but not less than that required for 20 minutes flight at max endurance for 10,000 MSL
+Which of the following are true concerning HI-TACAN RWY 19L approach chart to NAS Meridian
+- You must maintain 3000’ between the 328 and 358 degree radials
+With all NAVAIDs and facilities operating, takeoff mins for a standard instrument rated pilot departing
+RWY 9 at NAS Jax would be
+- 200 %
+When on an IFR flight plan and cleared to an intermediate point not in a filed route, short of filed
+destination, should not accept the clearance without first obtaining
+~ an expected further routing
+On a MA at NAS Meridian you decide to go to your alternate, Maxwell AFB. CAT-C mins for an ILS
+RWY 15 circle to land RWY 33 approach will be
+-500 1%
+You are in GCA box pattern, within 25NM of the filed in IMC, when comms ate lost. From here, intercept
+a published instrument aprch maintaining __ until established on a segment of aprch.
+- the highest of your last assigned or published MSA
+Your destination is forecasting 800 1% Published aprch procedures (NW winds) at alternate, Columbus
+AFB, lowest forecast wx conditions for filing would be__. ILS and ALS inop
+- 700 2
+To be cleared for a visual aprch, must report to aprch control field or interval in sight and wx must be
+reported as
+-a minimum of 1000-3
+Inadvertant IMC and lose sight of the runway while circle to land, you should:
+- Execute the MA for the original aprch procedure
+Min forecast wx needed to plan for NAS Meridian (RWY 1L) as you destination? Maxwell AFB is
+alternate and forecasting 900/3. NAS Meridian NOTAMS: GCA O/S ALL, ALS O/S RWY IL
+- 500 1%
+A LOC transmitter has range of __NM within 10* of centerline and___NM within 35* centerline.
+- 18, 10
+Reading back an ATC clearance implies acceptance of the clearance, unless.
+- you state refusal and reasons
+Executing the ILS RWY15 aprch to Maxwell AFB, you should be at__ AGL when crossing rwy threshold
+
+==================== PAGE 12 ====================
+
+- 50°
+
+The following additional reports should be made to ATC or FSS facilities without a specific ATC request
+(when not in “radar contact:)
+
+- All of the above
+
+ID the true statement concerning DPs and/or STARs
+
+- DPs are designed to provide transition from the airfield to the appropriate enroute structure, and their use
+on the DD-175 is encouraged but is not mandatory.
+
+Your MDA for Maxwell AFB TACAN RWY 15 aprch (with ALS) is published as___
+
+- 500 MSL
+
+Takeoff is allowed if the current weather at the departure airport is at least___ and meets or exceeds the
+published precision mins for the runway in use
+
+- 200 %
+
+While on the Maxwell AFB TACAN RWY 15 aprch, when would you execute a MA if you did not have
+runway in sight?
+
+- At 1.5 DME from the TACAN
+
+Flying on J2 btw Crestview and Seminole you would change your TACAN to CH 122 when you are at the
+CEW 088/
+
+- 80 DME
+
+Select the choice that best describes the service volume characteristics of an (L) VOR navigational system.
+Range
+
+- up to and including 18000 AGL out to 40 NM ©
+
+At Maxwell AFB, the PAPI system availability will be
+
+- denoted in the IFR Sup by a “50” under lighting
+
+The star next to the ATIS found in the upper left corner of the TACAN aprchs to Maxwell AFB denotes
+that:
+
+~ the ATIS operates on a noncontinuous basis
+
+Of the following situations, the one which does not require a voice report (NOT RVSM) is:
+
+- reaching a newly assigned altitude
+
+You request a PAR aprch to RWY 191 at NAS Meridian. Your DA in a single-piloted aircraft for an aprch
+to that runway would be:
+
+- 517 MSL
+
+The theory and operating characteristics of a GPS system are
+
+~ GPS uses passive receivers and triangulation computations from signals received from at least 4 satellites
+to determine lat, long, and vertical position
+
+Enroute to NAS Meridian, you listen to Meridian ATIS, which gives airport info, but no wx info. You
+know that Meridian is _
+
+- VFR, with a ceiling of at least 6000’ and 5 miles vis or better
+
+Planning for a flight from NAS Jax to Birmingham...for filing purposes , based on the above info, what is
+the lowest weather mins required at Columbus?
+
+- 4001
+
+==================== PAGE 13 ====================
+
+When planning for a direct flight btw two high alt NAVA!Ds in the jet route structure, do no exceed the
+normal anticipated interference free reception range of each NAVAID, whichis ___
+
+- 130 NM
+
+Planning for a flight from NAS Jax to BAM ETA 1500Z and alt of Columbus AFB
+
+Your filed destination is NMM with arrived weather best to be 300-1. The alt field has PAR and TCN.
+The approach min weather required at the alt would be TCN min plus 300-1
+
+If you experience radio failure enroute in IMC, you should maintain. ...the last assigned alt but no lower
+than the min enroute alt for each route segment.
+
+You are halfway enroute filed destination on extended IFR flight at FL 290. Radio fails, in VMC and dest
+has marginal weather. If you determine you can maintain VMC in fit...squawk 7600 maintain VMC and
+something traffic pattern and land at a suitable airport.
+
+Which publication would provide information on preferred IFR routing... FLIP AP/1
+
+You are cleared to the PIGMY IAF @ NMM with EFC 1610Z. Presently at or above 14K. enroute you
+experience radio failure so as to depart PIGMY at 1610Z or after descend and commence approach.
+
+30 miles SE of MGM at FL350 you are directed to change freq. unable on assigned freq attempt to contact
+center on...319.1 CATC center alt subdivided.
+
+For a canceled DP to be reinstated ATC must...indicate the portion of the DP routing that still applies and
+reinstated altitude restrictions.
+
+You have been cleared via DP. After takeoff, control advises climb and maintain FL350...
+
+PAR pickup question last comm. Pass through highest initiaded penetration alt of the LAFs at airfield.
+High alt NAVAID 130
+
+==================== PAGE 14 ====================
+
+All hail the glory that is Timms BI test
+PPH during $1 climb: 1500
+Config on PAR downwind: 200 kts, clean
+Obtain field altimeter setting during penetration checklist
+Aural ID (morse code) during penetration check determines reliable navigation
+information and: verify the correct station is tuned
+HI TACAN/VOR DME approach uses 4000 to 6000 FPM rate of descent, and no more
+then 30* AOB
+Intercept an arc from a radial, 1% of ground speed .
+FAC for a surveillance approach must give you: missed approach instructions, position,
+location of MAP. NOT time check
+Barometric altitude info comes from: A,E,H
+Complete pitot static system failure, you lose mach and airspeed indications, barometric
+altitude. NOT vertical velocity
+PAR approach, you are given precise glideslope, range, and heading information (True)
+§3 pattern is the S1 pattern with % SRT and reversal at beginning of 2™ descent.
+Loop commenced at 380 kias, and 96% rpm
+Missed approach is required: all of the above
+VHF navigation system failure with VOR or ILS steering selected:
+VOR/LS indications removed
+Using 30-degree method, intercept for an inbound course of 300*: 220*
+15* heading change requires 15* AOB max
+700 PPH for S3 descent
+T45C INS failure: Both of the above
+During ASR, arrive at MDA before the MAP
+Nose-low UA partial panel, use stby airspeed and stby attitude indicator
+
+==================== PAGE 15 ====================
+
+Intercept radial from an are scenario: Four
+How long will it take a % SRT turn to turn 210*? 140 seconds
+ADI fails in IFR conditions- establish a reference on the stby attitude indicator
+140 kias SRT will be- 3* per second
+Leveling off from penetration descent:
+1000’ above level off altitude decrease pitch by 2 and retract speed brakes, then
+use normal lead point
+Nose-high UA partial panel- stby attitude and AOA indicator
+Each dot on the CDI with TACAN boxed is: 5* deviation
+BI nose high UA recovery begins with: MRT, speed brakes in, stick pressure to obtain 5-
+10 units AOA
+If AOA indications fail: use airspeed indicator
+VOR penetration, begin level off at 10% of vertical velocity
+Dirty stall, maintain 23-24 units AOA
+Will lose 6000’ performing Split S
+Transition from climb to descent in $1 3 seconds or 100 feet prior
+Total GINA failure indications: blanking of attitude and heading info on ADI, HSI, and
+HUD
+Turn pattern, 30* AOB for 60* heading change
+Nose-low UA, speed brakes extended if: airspeed is approaching or exceeds 300 kias
+Three steering options are: WYPT, TCN, and VOR
+45 degree intercept question: 135* ;
+Ground speed calculation: 330 kts
+During final approach on PAR, must communicate every 5 seconds
+
+==================== PAGE 16 ====================
+
+‘DA SHIZNIT ; ; oo, /
+
+AERO GOUGE ( SAN O s) This 15 the +487 -- now <xactiy vhes<,
+
+29-30 Units Approach stall occurs at what AOA?
+
+| |
+
+26 Units Clean stall occurs at what AOA?
+
+17 Units Optimum AOA NO FLAP(Any flap)?
+
+Mach .92-.95 Some wing heaviness may be experienced, up to 3/4 lateral
+stick may be required to maintain wings level flight.
+
+3,450' - T/O w/full flap DRY Runway
+
+cocky +S
+
+161 CAS BINGO
+
+15,000 45 upright spin ROD is ?
+
+Airspeed 50-120 AS for -60 inverted spin’ |
+
+& kn Cight L ape
+
+2 per ea aebncight <iceton TrCurve sWPt 2 [weight acieifren
+> “a
+
+“ TEMP, ALT,RPM Thrust is effected by ... Got AS)
+
+7 Sweep and Low thickness-to-chord ratio Improve transonic flight (not leading edge radius)
+
+5 Longer roll out on landing Density Alt increases, LAS stays constant, TAS increases
+Forward increasing stability = ‘Two pilots move CG...
+
+Deorease stability, Increase reaneuuerilarlity/ CG aft limits
+
+1 AOA all configs ; External stores decrease AOA by ....
+
+Strong Directional, Weak Lateral Spiral Divergence | . :
+
+: Mach Tuck under — ° "Aerodynamic center moves aft, nose pitches down, .8
+
+Y 125 (aot 129) 2. Max Abort 7
+
+4 vLOW =a __’ +E density ALT is high, PA is high so density of air is...
+—Fuetbunrdeesnermere CS _— Bipperfasclage/Gentertiret any — Wheel shi Fh ©.
+Force Divergence Mach number The Mach number where the coefficient-of-drag and total drag increase
+a i r .
+
+5 4 ny oe es y rapidly due to wave drag . | |
+
+2 we @ High AOA stall decrease C _ Disadvantage of swept wing
+
+2 % (Gerapenext of lift) . .
+| ° Cock&icitn } .
+
+TAS/SOS Mach=
+
+> Max. Endurance, Max. Climb Angle(Vx) The Airspeed/AOA for , »& found at L/D
+
+==================== PAGE 17 ====================
+
+max, ace es
+
+. “ Ww “ eo .
+o- & Max. Power off glide RANGE pot oe
+
+Neutral Trust is on longitudinal stability
+
+Area Rule NOT a T-45 Design
+
++Reduce “Rudder Buzz” . Rudder shock stabilization strips
+
+“Vortex Generators Improve aerodynamic stability, performance and /or flight
+control effectiveness. Force wing downwash further below the
+stab, eliminating pitchup tendencies. Also improve slow speed
+flight by redirecting wing airflow and reenergizing the boundary
+layer.
+
+J Stall Strips Cause the root to stall at lower AOA by inducing premature
+boundary layer separation at high AOA The wing tip is more
+prone to stall because of lower camber and shorter chord Jength
+ad at the tip. Boundary layer is also lower at the tip, aggravated by
+. spanwise flow and leading edge vortexing.
+ >250 Ibs of pressure Force req’d to overcome Rudder blow out
+
+Know spin recovery for upright and inverted
+
+4 ‘Nose pitch up 20 degrees Accelerated stall w/no extemal stores, second indication of
+
+2 Uncontrollable pitch up AC moves in front of CG at stall. CG in front of AC = More
+bs stability less control. CG close to AC = less stability more
+
+> a oo ” control.
+
+JQ. _ Airmass flow in slugs per second
+
+\
+
+2 ‘ Critical Mach Number s *S The free-stream Mach number at which a local Mach number
+| Ly, Ry \ of 1.0 is attained at any point on the body under consideration
+SY fy > | |
+
+Dutch Roll Sug ON _Lew Alspoet Weak directional, Strong lateral
+
+Nose away from X-wind Cross wind does what to nose of T-45
+
+> \ 21.5 units Stall warning at % flaps
+
+Upright and Inverted spins Rudder opposite for what type of spins?
+
+0 AOA, Neg. G's, rum necdie™ inverted spi 1s characterized by?
+direction of spin
+
+q Moving forward of CG question; If CG moves forward what happens , answer says maneuvering and then stability.
+
+1 0.8 Critical mach #, slight nose down pitch
+
+==================== PAGE 18 ====================
+
+>
+
+AERO GOUGE
+
+1. Approach Stall AOA? 29-30 / oki As -
+
+2, Clean stall AOA? 26 /O4%/A!
+
+3, Optimum AOA NO FLAP? 17 | |
+
+4. % Stick w/heavy wing Mach .92-.95
+
+s (4450) w/full Flap dry RNWY- |
+ee :
+
+6. Rudder shakers both c/p both pedals
+
+7. Bingo 161 CAS |
+
+-g, 45° upright spin (5,000 ROD _/ oy
+
+¢ —— ec, -~ 2
+
+5 9, Airspeed 50-120 (-60 inverted sin) —> Oo e
+
+3 10. Treurve Down/left w/weight reduction .
+11. Thrust effected by Temp, ALT, RPM Netetisepeed RAT
+
+be 12, Sweep and Thickness to cord Ratio Improve transonic flight (not leading edge
+radius)
+
+| 13. Density ALT increases LAS stays constant TAS increases: longer Rollout on /#Z .
+2 landing 7 OO )
+
+14. Two pilots CG moves for increasing stability
+
+3 15. CG forward limits increasé stability .
+
+16. CG Aft limits decreased stability
+
+17. External stores decreases stall by 1 AOA all configurations '
+
+3 18. Spiral divergence- Strong Directional, weak lateral. or* LUCE
+
+A 19. Mach tuck under- Aerodynamic center moves Aft, nose pitches down
+
+20. Max abort 125 (not 129) : |
+
+==================== PAGE 19 ====================
+
+; S= Force Divergent Mach Number- Know what it means-(P 15) 665 9 7HE “ACH Ur
+iB “EC, ANtp Tl PR bE To WAVE DeAG
+' 23. Disadvantage of swept wing- High AOA stall decrease C (component of Tt)
+
+24, Mach=TAS/SOS’° . : | So
+oo 25. L/D max> max endurance, power off glide, climb angle
+
+26. Thrust is Nuetralon longitudinal stability .
+27. Area Rule Not a T-45 Design ,
+
+28. Rudder shock stabilization strips- Reduce “rudder buzz”
+
+29. Vortex Generators- 1) Prevents wing dowawash from interfering with stabilator
+
+2.) slow A/S performance increases, lowers stall speed
+
+3.) maintam boundary layer pg 23, 31
+
+> 30. Without boundary layer seperation bullshit a swept wing stalls tip frst Pg 29 stall
+
+| 31 Rudder blowout >250 lbs of pressure
+
+, 32. OCF Rudder, Lateral input control opposite for INV and Upright. upright Aifleron
+
+same, Inv cross control
+
+33. Good luck on the other 7 yee
+2D 4 34. Accelerated stall w/no external siores- pitch up 20!’sscond indicator of
+
+¥ impending stall p¢e33—
+
+| 4 35; Thrust effected by RPM, ALT, TEMP |
+
+We } 36. AC moves Front of CG at stall- Uncontrollable pifch up
+
+f an 37. Q: is mass Air flow in slugs/ Sec .
+
+4 "38, Critical Mach # Definition- Free stream mach # @ which a local mach # of 1.0 is |
+2 attained at any point on the body under consideration, .8 for the T-45
+
+ty Gah. 39. Dutch Roll- lowsirspsed, strong lateral, weak directionel a |
+
+==================== PAGE 20 ====================
+
+; ;
+
+40. G limit question- GACY |
+
+_ 4]. Crosswind does what to Nose- nose away from Xewind ° —
+- 42, Stall at % flaps- 21.5 units warning at
+
+43. Rudder opposite turn needle for both upright and inverted spins .
+_ 44, inverted spins characterized by- 0 AOA, neg G’s, Turn needle direction of Spin
+
+45, Ajieroa positions reversed for spin recovery (upright + Inverted) upright into
+
+5 turn needle, Inv away from needle
+
+46, T-45 tums away from crosswind pg48 ; cs
+
+Warn Buffet Stall |
+
+Clean 21.5/ LOTAS 25/1-2 26/0 ;
+
+5 Approach dirty 21.5/10LAS 28/1 29-30/0 '
+3 Moving forward or CG question, If CG moves forward what happens, answer Says
+TS
+
+Pe +30 INC 180 12,000 im ;
+
++45 stdy 100-110 15,000 ibm
+
+INVERTED Spin |
+
+2 | GO 50-120 15-20,006°
+
+4 100-160  15-20,000° . | |
+-25 146-200 11,000" -
+
+|
+
+2
+
+==================== PAGE 21 ====================
+
+.
+
+AEROGOUGE _
+
+- 1. Approach Stall AOA? 29-30 UNITS
+
+. 2. Clean stall AOA? 26 Uastts a i? %O )
+
+' “% Optimum AOA NO FLAP? 17 warts /6/ CLES Arse,
+
+. 4% Stick wheavy wing Mach 92-95 Les Mee See
+(5.03,450° vo wifill Flap dry RNWY | | . —
+. 6. Rudder shakers both c/p both pedals , /aiT (ATES SY Fees t C&T
+CEBingo 161 CAS |
+
+_8.-45 upright spin 15,000 ROD _ . |
+
+. —S-—Airspeed 50-120 -60 inverted spin
+
+2 — Ay Trust efisated by Terms, ALT BPM NetAmmeed
+) 12. Sweep and Thickness to cord Ratio Improve transonic flight (not kading edge
+
+i3. Density ALT increases LAS siays constant TAS increases: longer Rollout on
+
+14, Two pilots CG moves forward increasing stability HS
+
+? 15. CG forward limits increese stability :
+
+17. External stores decreases stall by 1 AOA all configurations
+
+18, Spiral divergence- Strong Directionsl, week Isterl: . | :
+oa 10. Mach tuck under. Bore SYUSGS ContCT Wu ves Afi, nose pitches dowh
+
+6 )
+
+2 DewSity~ AcTIMDE 1S a 16 THes PA ts AGH $0
+
+==================== PAGE 22 ====================
+
+(21. Upper fuselage/center (fuel tanks) fuel burn do not move CG " of worse) aR.
+~ 22. Force Divergent Mach Number- Know what it means-(P 15) : wy
+
+fp and Cok PD FR O85 fap di9V dus #7 pe re oes
+
+23. Disadvantage of swept wing- High AOA stall decrease C, (component of me
+
+' —  @f 24. Mach= TAS/SOS
+
+25. L/D max> max endurance, power off glide, climb angle ado cote
+
+26. Thrust is Nuetral on longitudinal stability
+
+97. Area Rule Not a T-45 Design |
+
+n8, Rudder shock stabilization sttips- Reduce “rudder buzz” (|
+
+pe ieFrerm stb ,perjer, Yap & coud 2 Ech VERS »
+
+29. Vortex Generators- 1) Prevents wing downwash from interfering with stabilator 22 ferrin
+2.) slow A/S_performance increases, lowers stall speed* sdoacwedy, Co Fe trabsoute
+> | 3), maintain boundary layer pg 23, 31 oy , ABR YS eg oe
+30. Without boundary layer seperation bullshit a swept wing stalls tip first Pg 29 stall oe ki
+. 31. Rudder blowout >250 Ibs of pressure ? Op vod Se
+3 32. OCF Rudder, Lateral input control, opposite for INV and Upright. upright Aileron
+
+same, inv cross control. Uprignt  o¢e Tider Sune afteren
+
+2 PUTOCCAALD OTE
+
+3 34. Accelerated stall w/no external stores- pitch up 20 Second indicator of Cocks)
+
+impending stall _pg 33 ard 10// te atthey Side.
+35. Thrust effected by RPM, ALT, TEMP<}\ RAT
+
+2 ibe if la VP 36. AC moves Front of CG at stall- Uncontrollable pitch up Pp. us
+
+( 37. Q: is mass Air flow in slugs/ Sec
+
+38. Critical Mach # Definition- Free stream mach #@ which a local mach # of 1.0 is
+
+attained at any point on the body under consideration, .8 for the T-45
+
+> 39. Dutch Roll- low airspeed, strong lateral, weak directional
+
+==================== PAGE 23 ====================
+
+_ oxhe* V\
+
+- Oe r x ae
+
+40, G limit question-(wameey / <° mst
+41. Crosswind does what to Nose- nose away from X-wind |
+
+_ 42, Stall at % flaps- 21.5 units warning a fPaat pum
+
+. 43. Rudder opposite turn needle for both upright and inverted spins .
+
+44, inverted spins characterized KO AOA } eg G'S;yTun needle direction of Spin
+
+45, Aileron positions reversed for spin recovery (upright + Inverted) upright into
+
+- turn needle, Inv away from needle
+
+_ 46, +T-45 turns away from crosswind pg48 a —_,
+Warn Buffet f Stall ‘ i a er a cae
+Clean 21.5/101AS 4 25/1-2. “ — 26/0 NR
+: Approach dirty 21.5/101AS 28/1 - —-29-30/0
+
+3 Moving forward of CG question, IfCG moves forward what happens, answer says
+
+3 maneuvering and then stability = _— =
+
+s Wore . So. Ald 2¢/t aq -38
+3 Upright spin a _ (20> |
+> A/S Descent kon cr 4Z0 — / © [ETE
+an 430° INC180 | — 12,000 fm % it _— foo-O
+
+445° stdy 100-110 —— 15,000m 20 fetF ad
+
+| sy BeOS
+5 -60 © 50-120. 15-20,0007 {pon teen
+
+> -45 100-160 15-20,000” _ 1p OR?
+
+4 -25 140-200 11,000° oo.
+
+e( U> a va — 4% fe
+
+fi . af fg; L80-%
+
+| /SPEO
+
+7 -60 ~ a tg 7 tO
+
+==================== PAGE 24 ====================
+
+4 a . 4 . 7
+
+a Disadvantage of Swept wing — Stall at High AOA and decrease Coefficient of Lift f 34 : ;
+
+“LD Max = Mex Endurance, Max Climb Angie, Power Of Glide _
+
+‘- Thrust is Neutral on Longitudinal Stability - a
+
+oO Area Rule not part of T-45 Desier P 4 os ;
+
+Rudder Shock Stabilization Strips—Reduce “Rudder Buzz” oo
+
+- Vortex Generators . . ’
+
+mc Prevents wing downwash fom interfering with stabilator
+
+Slow Airspeed performance increases- lowers stall speed
+
+" Lxvithout Boundary Layer Separation Aids - Swept wing stalls tip first .
+
+; _ e Rudder Blowout — Requires >250 Ibs of pressure to counter.
+
+” Abse! selerated stalls with no external stores ~ 20° Pitch Up is second indicator of impending sist]
+
+. _-_ Thnust affected by- RPM, ALT, end TEMP
+
+6 sleor gunkwre Qa - Ware gireet
+
+> AC moves forwerd of CG et stall - Uncontrollabis pitch wp = Siw or unin Ss vo
+
+5 OPPS “L got uy IEA,
+
+L }CHitical Mach Number~ Free stream Mach # at which 2 local Mach # of 1.0 is attstned at any point oa she
+body under considezation - .8 for the T4S ;
+
+Ry ~ . .
+
+: _ rG Limit Question - @8G0008 Ose CHART WW Feb
+
+Crosswind - Pushes Nose Away fom Wind
+
+==================== PAGE 25 ====================
+
+'
+r . } . aA. Ss ? 1
+~ WWERTED SPH MODES GiueAGRY
+| | TRUE AGA: - 69 degrees +40 degrees 25 degrees I
+~ _iniested 404 19 oO o |
+Airspeed tag ; 100-150 —_ [440200
+| Alumeter —— rapidly | Decreasing rapidly | Decreasing repialy
+~ VSI — 8,000 fpm descent "6,000 fpmdescant ~ TS ban ton et
+- pam fe a rem | 6,000 fp déscent
+Descent rate 15,000-20,000 fpn —F45,000-20,000 ip 0p — ~
+ee 50 dees doin | So dagrest doom —~ | SFG TSen~ |
+ao . ot ne Some It rene so! é i] ~
+~~: a i gs . 1 Tto-t4ge I 4b-tags Ae-tage
+Veiies Bull Opposite Turn Needle for both wpright and inverted spins
+| “Asteron Foll with Turn Needle for Upsight Spin |
+Akvteron Full Oppesite Turn Nesdle for Inverted Shins
+May need “% Lateral Stick to maintain wings jével during heevy wing between M (92.95 ;
+> At M 95 Roll Rate 27° with Full Stick
+- Above M 95 Heavy Wing sos wey / Cd eC ¢
+Radios shakes syn ses both pee i bth cone ey a a =
+2 OS one oe Auk Yon
+: - ‘Ta Curve ~ Down/Left with weight reimtion —_ a —
+-eeeroo eo ite I
+a Ts is affected by Temp, Alt, end RPM-not Ainpesd p>\ 2 hg
+p \e-V- Sweep and Thickness to Cord Ratio Improve Transonic Flight — Not leading edee racine - be] Z 7
+q ? Density ALT increases — [AS Sizys Constant, TAS increases = Longer rollout on landing Is } 35
+Two Pilots — moves CG forward increasing stebility a
+d v6G ~ Forward increases Stability — A® decreases stability —
+4 Upper Fuselage and Center Fuel Tenks-do not movs CG during foel burn
+Abiral Divergence — Strong Directional, Weak Lateral
+Mach Tuck Under— Aerp Center moves Af — Pitches Noss Down
+> . Max Abort 125 —not 129 —
+a . .. Force Divergent Mach Number: = P It ,
+> Approximately 5% critical Mach~ rapid rise in drag coeigient Git. tn the feo of ihe normal
+Ds Wack= TASISOS | a
+
+==================== PAGE 26 ====================
+
+? ‘ , , ‘ . . . _ + .
+aan  &pptoach Stall 404 -_ : . |
+OO 29:30 units . , 7
+7” Clean Stall 404 ee | |
+~ 26 units a |
+
+; . " ¥ Opticiuin AOA No Flap ae
+
+Detrease Stall AOA. by 1 mnt for 2 confi emations ; ;
+| y ted ate STALL Rucesr | rare .
+
+’ . a Binite Fo roAS SB Unke /T2RS | ches sere .
+
+> AS/we | 75 fez | Ze ,
+. . MS lenke Fetes. SE Ueres + ates 29 29Unes comes
+
+418 fie LB fi -| 24-38
+TF .
+2 "FRB agg UPRIGHT SAIN DDE Gece Aap '——— |
+: ee PRUE AOR +30 degrees 5 de ;
+= SS Se
+
+. . Altimeter Oecrezsing rapidity Decreasing raphy .
+
+d . x . [> 8.000 pm dessee ® $000 fpm desteng
+
+Tum neste | Indiresoq of the spin | in direction Of the spin
+
+| — Deszentrste [ 12,000 form _{ 35,000 fam
+
+4 . ys , | Postive |. Bost tive —
+
+4 : vi [* + 6:000 torn descent | "> 6.080 fpin descent
+pa . Tum Needle a i 1 hein di Spin I Ful in Girection of spin
+
+es - | positive | negative 4
+
+d Recovery ADA deer 2D units increzsin 5 uni.
+
+==================== PAGE 27 ====================
+
+, Significant Mach Numbers _
+| % Maximum level flight speed | "Whose NOW 85
+% Maximum speed reached | se M 1.04
+% Critical Mach Number (ii,,.) -- —- M08
+i * Force Divergent Mach Number (M,,)  ~-W0.85
+* Slight Buffet mh .. Passes M 0.9
+° _ Longitudinal Control . |
+4¥ & Slight nose down pitch (Tuck Under} M 0.8
+* Predictable longitudinal contro! to MO.54 .
+* Stick forces more sensitive Mi 0.84
+5 * Band of reduced stability . Mi 0.87
+> * Pitch oscillations M 0.95+ |
+i * Stability increeses Mi 1.0+
+e Lateral Controi oe
+| * Crisp lateral control _ to M 0.9
+‘= Roll response unpredictable, Loaded rolls .. --: >
+aan So above M 0.8 |
+| © Nearstallrollrates — “e260? / s8Gond .
+* Heavy wing | ME0.92 to M 0.95
+.. % Roll rate Degrades to 27°/sec. wi full stick 0.95
++y & 2stick deflection maintain wings fevel Mi 0.92 -M 0.95
+2 = Wing heaviness disappears/Aiferon- — M0.95.
+| « Roll cate - " 420°TsecM 4.04 °°
+f
+
+==================== PAGE 28 ====================
+
+2 Oo Approseh s7au. AXA* 29-30 ; Zens”
+
+a lew STALL Aoat 260 _ . 7 ;
+, ; . optimum As& No CLarf I7 |
+
+- Bfy STick Wf HEAVY WIN |
+
+: ~Bys6° lo. wf Full FLAP DRY Rut : .
+; 5 BINgs lel ICAS | |
+
+@ 4s" SPIN [S,0e2 ROD . .
+
+, . - AiRsPeeb So ~IZa —£0° Inv sp in). . °
+
+- se “ Tp Cerve Bows | LEFT w) WielsHT REDULRTONY
+
+a : FRIST, €FRECTEO BY Teme, ALY REA NT AlRsReD
+
+; 5 SweeA st THickness To corel RATIO EMPRAME TRANSONIC FF) te am
+>. Cnet LéAamg, dee RAdiis) | | I SS :
+; F  bewsity AL P  ZAs stays Canstawr “FAS T + lowaen follour LA
+: Ty Pleats GG Toves Fogwand T STARLITY :
+
+. 3: CG FORWARK Limizs DeCREAEEN AA NEUUERARILEFY ;
+)- ; ; oxel AGT Limits “pecke Ase STABLE?
+
+a EXTewaAlL Smoxes vy, STALL BY | AOA ALL Cow's LRATIONS
+
+| rt SRIZAL Divergewce . STeeG DIRECTIWAL WEAR LATEZAL
+
+| “-e i = gett Tie -~ ARR dy nernvics Centem ees APT 7 "
+
+‘s MAx ABCRT [2 CNet 124 | . 0
+
+4 UFeaR PUselAce (Lewd inne bo NOT msve G6
+: FORCE’: DIVERGENT MA AumbeR ~ KNOW WHAT ZT Meddy
+
+5 | . DISAbvANAtE = at SWEPT levee = EH AoA TTALE oY Ce
+
+. TAS .
+4 + MACH 2 “See :
+
+“ LLB mae” oe MAX EAtveAWce, AOWeR CFE GLIBE, Cleme Amele
+a A, TRY se PS Necta{ en  Loneserar STABILITY
+
+i a  AgeA RULE het A ot-¥S Design ;
+
+==================== PAGE 29 ====================
+
+E me) WEE Zan Ce Rea wo e
+c
+|
+
+| h
+
+A a Ny) 4
+XO YA. J
+
+OW : b
+
+|
+
+==================== PAGE 30 ====================
+
+1, CH LST SATOPS
+CNI GOUGE a
+DEU - Is the heart of the system
+1. Controls the Mux bus (Controls Nav displays too, but that's not the "Best" answer)
+2. Exchanges digital data words between itself and the ADR, GINA, and MDL via the Mux bus
+3. Also has hard-wired interfaces: Analog, Video, Discrete ~Ay
+4. Isa Mission computer and Display computer, Each display has format specific options ;
+5. On Power Up, Menu page is displayed ‘Cee. VAC ESS
+6. Power: 28VDC Ess, 28VDC Gen, 115 VAC N-Ess and 26VAC N-Ess Boy Lh * Poy oo.
+- 7. MED Failure indicated by: Blank or Blinking display, Stuck pushbutton
+8. MFD’s and HUD are lost with DEU failure, you will be limited to PAR approaches Cid Ceo)
+% 9. Display system derives flight data from GINA (pitch, roll, heading, vertical velocity) and pitot static instruments
+: (altitude and indicated airspeed) <p? <KA\C \ SX
+10. Front cockpit control of CNI will still allow rear cockpit to select any MFD display within the system.
+11. MEFD inputs duplicated on the DEP are LAW, CRS, HDG, Bingo
+GINA WSL Fase f FPenetieA’ ~D BaT id ESS ¢ WeM-ESS
+1. Receives 5 satellites, uses best 4 for GPS position
+2 2. Composed of GPS and INA (Antenna arguably, the Kalman filter is NOT a component)
+3. Alignment is complete when waterline symbol is replaced by velocity vector.
+4. GINA begins realignment with auto bit initiated. Alignment is complete approximately 3 minutes after auto bit
+is initiated. (yes but) ,
+HUD
+2 1. Is an Electro-Optical device which displays flight and weapons delivery information
+1, Power Up, Initiated, Continuous and Manual (Manual BITS are not “system” BITS) Rodis ve {
+{2 Auto Initiation of IBIT in the following order: DEU, GINA, ADR, MDL, RALT  TAC/ A, IIE senna
+«3. Test says “Display” BIT but means all BIT checks
+> 4 There are two BIT display pages: weight on-whec’s and weight-off-wheels
+4 5. A single channel failure of the MUX bus will result in OPGO bit Status
+TACAN / ILS / VOR .
+ed K 1. Know the difference between magnetic bearing and relative bearing
+2. Planimetric TACAN steering will disable ILS/VOR selection (the VOR/ILS legend will not be displayed.
+| 3. ILS localizer and GS needles will be displayed on the ADI and HUD when ILS is boxed on the HSI.
+4. Full needles deflection in CDI indicates: 10 or more radial deviation in TACAN, 10 or more bearing line
+i deviation in VOR, 4 NM or more deviation from CL in WYPT or WOS steering (gear up), .3 NM or more
+3 (gear down), or the limits of the localizer (usually 2.5 degrees) in ILS
+|
+* 1. Mode test illuminates GO or NO GO lights, not ANTENNA light
+a 2. The IFF is the only CNI system with two antennas
+> - 3. IFF DGRD on the BIT page indicates IFF power off or in STBY or an IFF BIT failure
+2 4. Altitude squawk is Mode C
+? Chie Box Tis IN PUR RMETAIT
+4 VCR AAS 2. MAE As
+4 1. The VCR records HUD or MFD display, ICS, radio comms and CWS tones. . |
+
+==================== PAGE 31 ====================
+
+. . a . *
+Engineerins questions _ oe
+~ 1) GPS has how many Channels? 5 _ _ -_ ME
+2) Major components of the GINA are: GPS and inertial Nav assembly —ang_ D & =
+GPS, INS & Accelerometer Sei (both are corrett. Came from 2 diff: ?s)
+3) DEU controls the MirBus, _.. Rag GV. |
+*) Ring laser gyro has few moving Parts and is unaffected by g forces. It is affected by earth-rate
+- precession, — oo, a es
+Seem test bas no effect oy fuel quantity indicator. “FUEL” ligt? is yellow caution, not red .
+Warning light, | -
+6) Rudder shakers at 21.5 units. 1S ; :
+> 7) MED has 3 controls, 20 push buttons and they are on the MED bezel, |
+= 8) Which intrument(s) display rad alt readout? ADT and ED eg
+9) What ould you use if your ADI (2) display failed? STBY AT (other MED should default to ADT
+> anyway) oo . ¥
+10) Which instrument would verify VSI display readout Tailure? STBY AL, STBY airspeed, a
+= CN) If off flag displays on the AOA indicator (front cp) you can still usé the ADA indexer, NO -
+' 12) What indication is not a failed AOA front Cp indicator? Missing AQA read Sut MFD/EHUD
+” displays (comes directly Som AOA Tansmitter) ; a ;
+» 13) INDICATIONS: Master Alert, caution tone, SDT eastiertigit 20,7 On volimeter, F{V
+3 ' What has malfuntioned? Undervoltage Sensing unit, .
+: 14) Dual inverter failure, YOu will lose?— all AC services, co
+a 15) Engine: With normal engine instrument indications (pm, EGT, FF) ch t/o roll what other
+
+indication of loss of thrust could-you have besides failure to reach line spesd?
+> —~—ACCEL caution light Muminates os ;
+16) TorF: humination of the ACCEL caution light indicates the initial shot solenoid or the ;
+bd steam ingestion Bleed valve is not in the commanded position 7 _
+17) Ifthe fre light illuminates but then Soes out, What secondary indications, Other than. =,
+DQ Neat det ole <r ici SOA in
+5 18,in'a steep dive, the ECA senses 20 RPM increase and will send a signal to the FCU to .
+19. If you'have an ECA failure (full trim).what changes would the engine instruments indicate?
+4 —decrease in EGT, RPM, andFF Master alert SSE Bae 1 Az cnupon Baht -
+Electrical Stestions . .
+_? 20. What is lost with a single inverter failure? (p2- 15) AC INV caution. tONG; SEA cht com cinn .
+_) 3FEand you lose NON-Essentia| AC services. ;
+1. With GEN functioning norinally, which light(s) on CWS panel would illum ifthe undervoltage .
+=Nsing unit Biled? NONE. * ; - ;
+od 2. What is the min voltage of a fully charged batt? 24V | . . shtah.
+“L : for rmery Tem corlf w }
+wi}l rer
+
+==================== PAGE 32 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.32]).
+
+st hace wk rece lew at : ! ‘ 0») 7 ‘ “
+
+. Aro “5 Atscrets one ea) EX ew f Ly VT dC assent. hee
+> oe Com be wAiSs un & asp le, compe c " . WS ACessaheg 7%
+GING, — Schemes aes ik 4 Be pay oa
+
+_ wud — z\celvo ep trek Asaly £ light burp celivery inte ‘ 7 a
+
+BIT = pt “Pr ta fs ated, TenhauasS Aute ini hehe > peu eer abe MDL RALT
+
+- Way = 63 chunnels/ink aves’ slokd yee pe”
+
+a : wes sledA a ;
+
+ane 3 ir acco |
+
+>) To open ay as f* 7s —’"
+
+: ‘ . . ‘ ‘ . - . : :
+
+> meO'st ert. pecered by 2ZTVOC GEw Bus | SF aE ESSLES | an LS VAL p6R
+eo) | or PAGE comes up orn pew ue . Ee - ‘
+
+4 Ny jt is The mene ease . eo
+
+a . . . - . wh eee . . , ~ . oo sp o
+D)© na sea will be oh it ary Swach 73 a FP IAMS AME” Te
+
+uo . . . . . . . 2? - —
+
+3 wih pal foncho~ net occured Jf ATC reports bss of alt. inte [FP Fatlure
+
+4 st , ‘ 4 ‘ t
+when doer dh. Co Hepa Legh Mlamvraste | |
+
+omg tere copy bot locked | -
+Conpleid A ligt, edvercns power # rail fad Yor Grete check -
+
+Dcmester alert + TK Bree tight + cestlem tee '
+SRE Phd Be aR ae er
+Selict high = gi" wi S ge meatier fight, coutton re Souma 5 pws Fl esunn~
+Waemminetes ; The hed S Su Stn hel led. 4 . bdh Com . -
+
+; om where = 5S Llane om ompsewheel pes. otsnd yet rented fF DSrTEe
+4 “Teton mcngurts bebveen wo (Pop exch rey le, (other omnStrlr § wroney Bfe
+
+> h 4 Jatue wo "
+
+a the Lew Relate Beering 2] needle , ere -
+
+==================== PAGE 33 ====================
+
+». | jb60 £ hogs . 7 oe
+Slss—sSssi pressure at which‘HYD 1 (prior to AFC244) PRESS caution light
+_ .. :illuminates . - -
+276+/-6cubic inches hydraulic Teservoir gauge on preflight .
+nd ~ 45% ~ N2 rpm required to use HYD 2 Reset button -
+" 42% N2 rpm below which HYD 2 bypass valve is energized open to reduce
+engine loads on start ‘ -
+1 O.genmes number of full brake applications provided by brake/ emergency flap
+‘accumulator : -
+2300psi - Max pressure provided by Hand-pump
+600 +/-100psi Press that HYD FAT. illuminates if RAT pressure drops below
+- . Blight Controls and Trim System | |
+| 20 +/-0.5° maximum rudder surface deflection . os ;
+2 +6.6° to -15° maximum travel of stabilator leading edge due to stick movement
+3 - 43° to-8° - maximum travel of stabilator leading edgé due to trim movement alone
+pb! +/- 15.5° “Taaximum ailéron deflection with gear down ,
+Re ° “+/-12.5°. . Maximum afleron deflection with gear up Se
+er a +/-.9° maximunt aileron tim deflection with gear down ae
+= +62 maximum aileron tim deflection with gear up *
+: 2°/sec approximate trim Tate ;
+) 120 sec maximum time required for CONTROL AUG BIT test: |
+) | 6 +/-1° max ruddertrim deflection “
+; FLAP/SLAT System ae oe
+217 Maximum airspeedifor Slats | |
+200 Maximum airspeed for flap extension
+"50° approximate fill flap deflection in degrees ot
+ae 25° approximate 1/2 flap deflection in degrees
+SPEED BRAKE System 7 a
+Pi "380 knots speed at which speed brakes blow back begins " ,
+a : . 340 knots spesd above which speed braices may not fully extend
+f 60° - full speed brake deflection
+_ LANDING GEAR System *
+a . 200 knots maximuna geatextension/retraction speed “
+15 sec approximate landing gear extension time
+a 10 sec approximate landing gear retraction time -
+> 2.2-2.5" ° main landing gear oleo limits (dry) .
+2 3.25" approximate nose gear oleo exposed (NATOPS) ;
+7/8-1 7/8" approx main landing gear oleo exposed (NATOPS) (wet)
+
+==================== PAGE 34 ====================
+
+0.4 sec back-front seat delay
+
+100-245 [bs New seat
+
+136-212 Ibs old seat
+
+600 KIAS and 60K. Max seat limits ( wt b rss)
+
+3-4” MDC handle travel
+
+ENGINE SYSTEMS
+
+Rolls Royce F405-RR-401 Turbofan
+5,527lbs Thrust
+
+2 Low Pressure Compressor (N1) - 2 Stage
+
+N1 0-120% :
+
+High Pressure Compressor (N2) - 5 stage
+
+a N2 0-115% .
+
+2 sets of Thermocouples on N1 Turbine
+4 100% N2 — 15,512 RPMs
+
+Ignition engaged until 45% RPM or 45sec
+
+GTS light w/in 20sec on ground
+
+GTS light w/in 28sec in flight
+
+Ready light w/in 15sec oe : ’
+
+> Realy oer RPM 52+/-2% Ofek ects. ice due te +) Sones & To lL. cede \
+
+) Bleed Valve open w/in 60sec of GTS start |
+
+: Bleed Valve closes @ 61+/-4% RPM
+
+Increasing N2 RPM 3% and Decreasing EGT 50deg C
+
+: steam tageshin Bega Valve opens w/WOW, N2<70%, and Launch bar extended
+
+N2 Accessory Gear Box: .
+Be \ 2 Hydraulic pumps
+
+2. 28v DC Generator
+
+_ § LP Fuel Pump
+
+; § 1 Oil Pressure Pump
+
+mA , ¢ 3 Oil Scavenge Pumps
+
++N2 Tach Generator
+
+N2>90% above 20K : EE
+x Ignition deenergizes @ 45% RPM
+
+| Génerator reset Ssec |
+
+> Idle stop retracts 2sec w/ WOW and Anti-skid off (corter preg oses)
+
+* EGT RPM | ORF
+
+aq Idle | 350-450 deg C 55% +/- 2% | 300~400
+7 +1% per LSK pph
+
+es TIO x. | 98-100% | 4800 pph
+
+| MRT (| 6§0deg Cfor 30me/br | 104% —«|-« 6410 ppb
+
+> | Continuous | 550 deg C | 100% | x
+
+a OF SYSTEM
+
+MIL-L-23699€ or MIL-L-7808G oil
+4 25.2 pints total oil
+
+==================== PAGE 35 ====================
+
+® > @ @ ©
+
+~ -C AUG provides yaw damping, ARI, SBI, and rudder tim
+
+-Yaw damping and turn coordination up to 217 KTS
+
+-Yaw damping commands sent through ARI CAvEnoN , Rupee pntecouneet )
+
+-Engine start switch to ON in both cockpits energizes start control unit
+
+-GTS start button energizes engine igniters for duration of press w/ weight on wheels and
+duration of press +30 sec w/ weight off wheels (although this doesn’t make sense to me because
+you don’t hold the GTS button down while you introduce fuel on a normal ground start, but see
+p. 26-4)
+
+-From the Engine Start Procedures (Ch 26) know the functions of each button/switch (beginning
+S page 26-3)
+
+-Tail hook is Aydraulically raised with HYD 1 pressure
+
+-Indications of split slat condition will be uncommanded roll and illuminated SLAT caution light
+-Flap position light may not show split flap condition because light is connected to left flap only
+-SKID caution light illuminates when: failure condition has been detected by anti-skid control
+
+c box . NO a a a a
+-SKID advisory light illuminates when anti skid selected and landing gear are down and locked
+-Paddle switch deselects both NWS and CONRT AUG on thé Ground. When abomeit
+deselects CONTR AUG at all times and NWS_as long asthe gearisdown ~
+
+-NWS caution light indicates malfimction within and subsequent shutdown of NWS system or
+
+L NWS disconnected with paddle switch
+
+> -Five times to secure anti-skid switch: after HYD 1 failure (loss of general services hydraulics),
+> after engine shutdown before setting parking brake, carrier landings, anti skid caution light
+illuminated, blown tire
+
+|
+
+==================== PAGE 36 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.36]).
+
+tC a
+ohh, Sb We Gate ow 3 Oo _ , : -
+{ RAD t = a oe i L oe a
+
+Taste Tou > iS SEC gag LST ove q
+
+pecans VIPER EME BETWEE AR Nok |
+ee ee ce NOG
+
+te ee a uy“ ST, ra ; Tenner aaa q
+
+a
+
+an comet es eee ey oe rs cons in seonrenrenn coins ; i _ eg og w ‘ g
+
+ZAO scien _ 2
+
+Pores GTS pre “4 Lune oF 2 Tet -
+
+y 4 q
+
+yaniv et . pe
+
+| y
+
+==================== PAGE 37 ====================
+
+. .
+T-45 Engineering/Systems Gouge
+Engine Systems (NATOPS 2.1)
+5527 lbs. Thrust rating of engine
+112.4 +/- 1% N1 rpm above which the EGT/RPM warning light illuminates
+a 104% Maximum N2 rpm at MRT
+2 104% | Maximum N2 rpm for transient accelerations
+~ 100% | «Maximum continuous N2 rpm
+d 95% N2 rpni not to be exceeded in manual fuel control in order to prevent N1
+overspeed below 20,000 ft.
+90% N2 rpm not to be exceeded in manual fuel control in order to prevent N1
+| overspeed above 20,000 ft.
+» 72% approach idle, minimum rpm gear down and no weight on wheels
+al 61 +/-4% % rpm at which bleed valve closes during initial engine acceleration
+55 +/- 2% idle rpm range on standard dayCarrse. ruse, yave cu ES )
+52% idle rpm which should be obtained within 30 sec after selecting IDLE
+45% rpm at which ignition is turned off
+45% rpm at which GTS automatically shuts down
+= 45% approximate rpm apuch bleed valve opens during initial engine shutdown
+a 45% rpm at which and GTS advisory lights are extinguished
+20% rpm above which ATS start valve is inhibited from opening =, ye. Me CEAR SWESS on ATS CORel
+pid 15% minimum N2 rpm required for engine start
+3% approximate increase in idle rpm after compressor bleed valve closes
+™ 2% maximum shift in idle rpm between poststart and engine shutdown checks
+nd 1% increase allowed idle rpm for each 1,500' altitude
+4 650 +/- 8°C EGT above which the EGT/RPM warning light illuminates
+645°C maximum EGT for transient accelerations -» tise vestecre To <€ 20 SEC
+| C_<aa. maximum EGT at MRT € min [Ke )
+7 550°C maximum EGT during ground start (Wo MoeTWAW 590 FoR 10 s€e)
+| 600°C maximum EGT during air start (we mocetian REO fon to SEC )
+cd 450°C maximum EGT at idle
+300°C firewire temperature required for FIRE warning light to illuminate
+“ 150°C firewire temperature required for TAILPIPE HOT warning light to illuminate
+50°C - approximate decrease in EGT after compressor bleed valve closes
+2 50°C maximum overshoot above 600°C during airstart (10 sec max)
+A 20°C ; maximum overshoot above 550°C during ground start (10 sec max)
+ed 30min /4. Flight hye maximum time limit at MRT
+30min. minimum interval after three GTS start attempts
+a 3min. minimum interval between each GTS start attempt
+60sec. Time bleed valve remains open after GTS assisted airstart using manual fuel
+45sec. Maximum time ignition system can remain on TREN GTS Wt. tet Bb Tere
+45sec. Time that firewire must remain below 300°C for FIRE warning light to go out
+30sec. Time allowed for GTS to reach GTS idle before automatic shutdown Because it Oss too HOT
+» 30sec. Time ignition system remains on after GTS button release during airstart
+2 jf 28sec. Maximum allowable time for GTS advisory light to illuminate while in flight *O% AvzsTA2rs
+20sec. Maximum time for EGT to remain above 600°C during transient accelerations Cs o°' 5
+2 20sec. Maximum allowable time for GTS advisory light to illuminate at sea level _
+Z 15sec. Maximum allowable time for ROFASION advisory light to illuminate READY LIGHT
+I5sec. Maximum allowable time engine light-off after moving throttle to idle
+10sec. Maximum time for EGT to remain normal limit during ground start/airstart (fon 20° ovEnsjact )
+Hl 35psi pressure below which the LP PRESS caution light illuminates
+10psi oil pressure differential below which the OIL PRESS caution light illuminates
+
+==================== PAGE 38 ====================
+
+Pase erough Annee Ge parsfet peed Soc! ace ad 140 iccAS, b
+
+after 10 sec. Delay. <)
+
+75gph additional fuel allowed for acceleration by shot of fuel solenoid below 7200'msl |
+25.2 capacity of engine oil tank and systems in US pints __ e
+9.6 unusable or trapped oil in engine oil system in US Pints bs
+0.8 maximum consumption rate of engine oil in pints per hour a
+12-joule power rating of two dc ignition plugs _
+__-____ knots airspeed range for in-flight GTS start attempts be
+Ye 24V minimum voltage for engine start a
+*MSL maximum altitude for in-flight GTS start attempts a
+
+. 9500 +/-300' MSL shot of fuel solenoid closes as aircraft climbs through this altitude os
+7700 +/-' 500 MSL shot of fuel solenoid opens as aircraft descends through this altitude b
+F405-RR-401 Model number of Rolls Royce engine _
+15,512 N2 rpm at 100% axa Y
+100 the RO-FAFION-advisory light illuminates when NI rpm reaches tins in the é
+correct direction. Ignition begins too. be
+
+18 Number of fuel nozzles in engine a
+5 number of high pressure (N2) compressor stages a
+2 number of low pressure (N1) compressor stages
+Bypass air from the N1 compressor 1. Cools the engine, 2. Provides increased thrust, 3. Provides noise 4
+Reduction S
+
+TIF Under manual fuel control the compressor bleed valve remains closed at all engine speeds except q
+5" stage compressor bleed air supplies 1. Environmental system, 2. OBOGS, 3. G-suit, 4. Fuel tank C
+pressurization
+
+Steam ingestion bleed valve provides increased bleed air flow when 1. Weight on wheels, 2. 70% N2, and €
+3, LAUNCH BAR not retracted qd
+
+the ACCEL caution light illuminates when 1. Steam ingestion bleed valve not in commanded position (2sec ¢
+delay), 2. shot of fuel solenoid failure |
+
+the engine accessory gearbox drives 1. Hydraulic pumps, 2. DC generator, 3. LP fuel pump, 4. HP fuel e
+pump, 5. Engine oil pumps, and 6. N2 tach-generator (|
+
+in the FCU dampens throttle valve response during rapid throttle movements. |
+
+(Acceleration Switch) ¢
+maintains constant pressure drop across throttle valve compensating for airspeed and altitude q
+
+changes. (Servo Pressure control). ¢
+
+The in the FCU trims basic fuel flow in response to ECA (Solenoid (Fuel Trim)) |
+é |
+
+The automatically prevents overspeed/overtemp conditions by monitoring N1 and two (.
+thermocouples behind the N1 turbine. (Engine Control Amplifier) ° |
+
+The meters a fuel supply to the fuel spray nozzles during the start cycle. a
+(Sub Idle Fuel Control Unit) |
+
+T/F The ECA contains two identical lanes, and after engine start, the lane with the lowest fuel flow A
+setting takes priority. (TRUE) '¢
+
+Engine operation in manual fuel control is similar to normal except 2. Airstarts require throttle modulation, v
+2. Idle rpm up to 5% lower, 3. Slower engine acceleration without dashpot, 4. Bleed valve closed ¢
+
+e
+
+==================== PAGE 39 ====================
+
+C at all engine speeds except 60 sec on airstart, and 5. N2 must remain below 95/90% below/above
+20,000' MSL
+
+With weight on wheels, ignition is provided when 1. GTS button pressed and released, 2. ENGINE switch
+d set to START, and 3. ROFAFIONs on.
+
+ne When airborne, ignition is provided when 1. GTS button is pressed and for 30 sec after release, 2, ENGINE ;
+Switch set to START, and 3. ROEATION is ON.
+
+» ZeEnor
+
+The ignition switch has two positions 1. ISOLATE- de-energizes engine and GTS ignition system,
+
+2. NORMAL
+Fuel System (NATOPS 2. 2) any FE 64 LO PR}
+
+> 443 gal total fuel capacity in gallons
+
+id 427 gal total usable fuel capacity in gallons
+
+> 223 gal Capacity of wing tank in gallons
+
+= 220 gal capacity of fuselage tank in gallons
+
+11 gal amount of unusable or trapped fuel in gallons
+
+» 3012 Ibs. Total fuel capacity in pounds (JP-5)
+
+a - 2904 Ibs. Total usable fuel capacity in pounds (JP-5)
+
+400 Ibs. Capacity of collector tank in pounds.
+a 350 Ibs. Approximate fuel quantity remaining with FUEL LOW caution light illuminated
+
+al 73 Ibs. Approximate amount of trapped fuel in pounds
+
+7 300-400 gph idle fuel flow in gallons per hour
+
+2 180 gpm maximum refueling rate in gallons per minute
+
+. 24 gpm defueling rate at 11 psi suction
+
+30 sec. Capacity of Negative G compartment
+
+2 30 sec. Time period I seconds fuel boost pumps continue to operate after GEN failure to
+
+. conserve battery power
+
+2 10 sec. Delay in illuminating FUEL LOW caution light to avoid nuisance flickering
+
+~ 50 psi maximum refueling pressure
+
+7? 9.5 psi pressure at which dual datum relief valve opens to relieve an over pressure condition
+
+» 6 psi pressure of engine bleed air supplied for fuel tank pressurization (Above ambient press.)
+od 4.0 psi pressure at which dual datum relief valve opens when REFUEL switch set or arresting
+hook is down
+
+Ay w& 3 psi yb? - low air pressure sense switch causes FUEL PRESS caution light illuminates (a/c 163647 and up)
+a’ 2 psi fuel tank air pressure below which the FUEL PRESS caution light illuminates
+
+= Boost pumps automatically turn on 1. During GTS operation, 2. When N2 > 42%, GEN is on, and ENGINE
+switch is on.
+
+2 Two fuel boost pumps are installed in the . (Negative G compartment)
+
+The FUEL PRESS caution light illuminates when 1. There is insufficient differential pressure across a
+
+2 boost pump (such as an inoperative pump), or 2. The fuel tank air pressure regulator
+
+drops below 3 psi.
+
+TIF Opening the fuel shutoff valve disables GST ignition in addition to securing fuel (TRUE)
+
+4 The fuel flow transmitter is powered by bus and measures fuel flow prior to the
+
+pump. (28V Essential Services, LP Fuel Pump)
+
+TF The FUEL advisory light and the INLET FUEL caution light are inoperative except during the
+
+==================== PAGE 40 ====================
+
+Cc
+
+Light test. (TRUE) -
+
+TIF the FUEL LOW caution light is triggered by a float switch in the negative G compartment, and is le
+not linked to the fuel quantity indicator. (TRUE, NATOPS 2.2.2.5) bs
+
+Fuel tanks are vented to atmosphere through a valve anda valve/orifice. =
+(pressure relief, bleed). pe
+
+T/F Pressure refueling requires electrical power on the aircraft. (TRUE) -
+-
+
+Hydraulic Systems (NATOPS 2.5) 4
+3600 psi pressure relief valve opens in power supply package (PSP) le
+3000 psi norinal hydraulic pressure 4
+2500-3000 psi normal RAT operating range 2
+2200 psi pressure reserved by wheel brake/emergency flap accumulator if HYD 1 loses pressure «€
+2000 psi pressure at which HYD 2 PRESS caution light extinguishes a
+1800 psi pressure required to close hyd 2 bypass valve and retract RAT if deployed g
+1660 +/- 110psi_ pressure at which HYD 2 PRESS caution light illuminates €|
+1500 +/- 100psi_ pressure at which RAT deploys b
+1600 psi pressure at which priority valve in PSP reopens to provide power for general services ‘a
+1500 psi pressure at which proirity valve in PSP closes to isolate flight controls from q
+general services b
+
+1300 psior> —_ required nitrogen preload pressure for wheel brake/emergency flap accumulator a
+200 22+ psi pressure at which HYD 1 PRESS caution light extinguishes q
+700 psi pressure at RAT retracts as HYD 2 pressure is lost (aerodynamic load permitting) b
+(660 CIE -660-+-58psi pressure at which HYD 1 PRESS caution light illuminates |
+45% N2 rpm required to use HYD 2 Reset button a
+42% N2 rpm below which HYD 2 bypass valve is energized open to reduce engine >
+loads on start c
+
+10x number of full brake applications provided by brake/emergency flap accumulator a
+(beet "UY .
+
+three requirments for HYD FAIL waming light 1.HYD 1 pressure below €90-17=SUpsi- |
+2. HYD 2 press below 1660 +/- 110psi, and 3. Emergency system pressure less than 600 +/- 50psi :
+
+Eight hydraulic devices in general services category 1. Flaps, 2. Slats, 3. Speed brakes, 4. Landing gear, 4
+5. nose wheel steering, 6. Arresting hook, 7. Launch bar, 8. Wheel brakes P
+
+S
+
+ensure adequate base pressure to resist pump cavitation under all flight conditions |
+(nitrogen pressurized resevoirs) '¢
+the power supply package consists of : : . a
+(check valves, pressure relief valve, priority valve) ¢
+
+. q
+
+==================== PAGE 41 ====================
+
+|
+Flight Controls and Trim System (NATOPS 2.6)
+~ 20 +/-0.5° maximum rudder surface deflection .
++6.6° to -15° maximum travel of stabilator leading edge due to stick movement
++3° to -8° maximum travel of stabilator leading edge due to trim movement alone
+a +/- 15.5° maximum aileron deflection with gear down
+-d +/+ 12.5° maximum aileron deflection with gear up
+> +/- 9° maximum aileron trim deflection with gear down
++/-6° maximum aileron trim deflection with gear up
+a 2°/sec approximate trim rate
+120 sec maximum time required for CONTROL AUG BIT test
+T/F the artificial feel for the stabilator is provided by the spring cartridge
+(FALSE, a spring cartridge and inertial weight)
+° T/F because the standby stabilator trim is powered by the 28 VDC gen bus, in the event of a ~
+2 generator failure, activating the standby trim system will have no effect on the main
+4 stabilator trim (FALSE, raising the guard cover over the standby trim switch disengages
+a the main trim motor regardless of the 28 VDC generator bus status)
+T/F the stabilator position indicator shows stabilator trim position only with zero force on the
+stick (TRUE)
+T/F rudder trim is available only with control augmentation system activated (TRUE)
+The control augmentation system performs four functions 1. Yaw dampening, 2. Turn coordination,
+o 3. SBI interconnect, and 4. Rudder trim.
+; T/F yaw dampening and turn coordination are not available above 217 knots (TRUE)
+AR\ . . . . .
+T/F tum-ceerdination is available in any flap configuration (FALSE, only with 1/2 or full)
+2 TIF the SBI operates without any movement of the control stick (TRUE)
+The CONTR AUG BIT requires 1. Weight on wheels, 2. Less than 80 knots airspeed,
+3. FLAPS/SLATS up .
+Conditions for CONTR AUG caution light illuminates when 1. CONTR AUG system degraded,
+2. BIT test in progress, 3. Paddle switch has been depressed
+od FLAP/SLAT System (NATOPS 2.7) a
+>. 217 Maximum airspeed for Slats BRUNE ane SAE Core
+200 Maximum airspeed for flap extension Pacsfsins + $2.0 G- '
+ed 50° approximate full flap deflection in degrees Het, oe 4h Sg Casrmetare >
+4 25° approximate 1/2 flap deflection in degrees
+a TIF assuming sufficient pressure is available, use of emergency flap extension will drive flaps
+> to full down regardless of flap lever (TRUE)
+a T/F if the brake pressure valve indicates 2200psi or less, activating the emergency flap lever
+| will have no effect (TRUE)
+a TIF if HYD 1 fails while slats are fully extended, air flow pressure will drive them to the
+- retract position as hydraulic pressure bleeds down (FALSE) .
+
+==================== PAGE 42 ====================
+
+»
+
+The SLATS caution light is illuminated if 1. Slats not in selected position, 2. Split slats, ~
+3. Slats selected above 217 knots 4. Stats extuded then accelerate pests 217
+SPEED BRAKE System (NATOPS 2.8) bos
+380 knots speed at which speed brakes blow back begins a
+340 knots speed above which speed brakes may not fully extend |
+60° full speed brake deflection pe
+LANDING GEAR System (NATOPS 2.9) q
+200 knots maximum gear extension/retraction speed ‘al
+15 sec approximate landing gear extension time S
+10 sec approximate landing gear retraction time |
+2.2-2.5" inain landing gear oleo limits le
+3.25" approximate nose gear oleo exposed (NATOPS) ke
+7/8-1 7/8" approximate main landing gear oleo exposed (NATOPS) q
+The main landing gear are type units. (Trailing arm suspension) L
+The caution light is illuminated whenever the landing gear doors are not up and locked (DOOR) <
+T/F the light in the gear handle will illuminate in the DOWN position if the gear is down and b
+locked, and the gear doors are not up and locked. “
+
+(FALSE, gear door status doesn't matter when the handle is down) '
+
+T/F The light in the gear handle will illuminate in the UP position if the gear is down and 4
+locked, and the gear doors are ot up and locked. a
+
+(TRUE, gear door status does matter when the handle is in the up Position) €
+
+Conditions for WHEELS warning light illumination 1. LDG gear handle is not set to DOWN position, d
+2. N2 rpm below 95% and either, - ,
+
+3a. altitude is less than 7200' msl with airspeed below 170 knots, OR [
+
+3b. SLATS/FLAPS lever not in up position. a
+
+TF when lowering the gear with the EMER GEAR handle, all of the gear doors remain open |
+(FALSE, 28 VDC services bus powers the emergency nose landing gear door actuator |
+
+bringing the nose gear doors to a near closed position.) 4
+
+b
+
+NOSE WHEEL STEERING System (NATOPS 2.10) ¢
+65° maximuin nose wheel deflection with high gain J
+20° maximum nose wheel deflection with LAUNCH BAR in EXTEND and G
+NWS button depressed L
+
+12° maximum nose wheel deflection with low gain u
+10 knots maximum taxi speed with high gain NWS [
+Nose wheel steering is powered off the bus and the HYD 1 system (28VDC Essential Services) (|
+TF On landing, the NWS system is engaged with weight on wheels from just one main gear b
+and nose wheel, and will remain engaged with weight on only one main gear (TRUE) -
+
+T/F In order to use NWS with LAUNCH BAR in Extend, the NWS button must be depressed uy
+The NOSE WHEEL STR caution light is illuminated if 1. Nose wheel moves away from commanded [
+
+==================== PAGE 43 ====================
+
+.
+
+pedal position, 2. If there is an internal system failure (including HYD 1 failure), 3. When the system has
+been paddled off.
+
+T/F No landing gear will retract until the nose gear is centered (TRUE)
+
+The paddle switch 1. Disengages NWS, 2. Deactivates control augmentation causing the NOSE WHL STR
+
+| and CONTR AUG caution lights to illuminate when the aircraft is on the ground
+
+a T/F the NSEA4KE-SER advisory light is iluminted anytime the NWS system is energized
+
+oO (FALSE, only shows on high gain)
+
+WHEEL BRAKES/ANTI-SKID System (NATOPS 2.11)
+
+ed 2200psi pressure reserved by wheel brake/emergency flap accumulator if HYD 1 loses pressure
+
+> 180 +/-20psi minimum pressure to illuminate BRAKE PRESSURE indicators lights
+
+A 150psi pressure at which BRAKE PRESSURE lights are extinguished
+
+a 30 knots minimum required wheel speed for anti-skid to operate while accelerating
+
+» 10-13 knots minimum wheel speed for anti-skid to operate while decelerating
+
+10 number of full brake applications provided by brake/emergency flap accumulator
+
+Ld 324°F temperature at which fusible plugs in main gear wheels are designed to release tire press.
+P| When landing gear is retracted, landing gear door open pressure is applied to the cylinder.
+
+a Which in turn applies force to the parking brake lever to actuate the brake control valve (DE-SPIN)
+
+4 Conditions for anti-skid to operate 1. Landing gear down, 2. Weight on wheels, and 3. Speed above 30 knots while
+| accelerating or 10-13 knots deceleration
+
+a T/F the anti-skid system releases brake pressure if brake pedals are depressed while airborne
+
+4 to prevent touchdown with locked brakes. (TRUE)
+. the ANTI-SKID caution light is illuminated if 1. System malfunction is detected, 2. Prolonged full pressure
+
+> dump lasting greater then 2 seconds, 3. No wheel spin detected 3 seconds after weight on wheels (reverts to
+4 normal braking)
+
+» TF engaging the parking brake with anti-skid energized will eventually deplete brake
+
+accumulator pressure (TRUE)
+
+5 T/F selecting anti-skid in either cockpit will energize the anti-skid system
+
+pel (FALSE, both cockpits must have it selected)
+
+The PARKING BRAKE caution light is illuminated if the throttle is advanced beyond intermediate
+
+bed position (60-70%) and the parking brake is engaged.
+
+Conditions for ANTI-SKID advisory light illumination 1. Anti-skid switches in both cockpits must be ON,
+
+4 LAUNCH BAR System (NATOPS 2.12)
+
+10 sec. Time allowed for launch bar to retract following launch before warning tone sounds
+
+The green L BAR indicator light is illuminated when launch bar is extended with the switch set to EXTEND
+
+2 The red L BAR indicator light is illuminated when 1. Launch bar is not retracted, 2. No weight on wheels,
+
+a 3. gear down and not locked
+
+4 TF with a launch bar retraction failure, raising the gear is not possible. (FALSE)
+
+==================== PAGE 44 ====================
+
+|
+
+T/F the weight on wheels switch inhibits launch bar switch from remaining in extend we
+position when airbomme (TRUE) a
+
+a
+
+ARRESTING HOOK System (NATOPS 2.13) be
+950psi +/-50 pressure of arresting hook nitrogen preload |
+300 knots airspeed above which HOOK warning light may illuminate due to airloads =
+6 sec approximate hook transit time up Lo
+1.5 sec approximate hook transit time down b
+the HOOK warning light is illuminated when HOOK handle does not correspond to hook position -
+T/F moving the HOOK handle to the down position hydraulically releases the up latch >
+assembly and switches a hydraulic selector valve to remove HYD 1 pressure we
+
+(FALSE, it mechanically moves both) a
+
+BOARDING System (NATOPS 2.14) €
+TIF both pull-out footsteps can be retracted from inside the cockpit (FALSE, front only) a
+CANOPY System (NATOPS 2.15) c
+95% rpm above which caution tone sounds with CANOPY caution light illuminated |
+45 knots maximum side winds allowed for canopy to remain open |
+4" free travel range of MDC firing handle b
+EJECTION SEAT System (NATOPS 2.16) q
+18,000' MSL altitude at which drogue bridles are released during Mode 5 ejection sequence b
+0.5 sec backup delay initiator between seats ia
+0.4 sec interseat sequencing system delay a
+30-60 Ibs. Force required to initiate ejection “
+60-70% rpm above which SEAT UNARMED caution light will illuminate eC |
+ENVIROMENTAL CONTROL System (NATOPS 2.18) <
+150°f (@7 °c) temperature at which AVIONIC HOT caution light illuminates with weight on wheels 7a
+5 sec time in seconds between each rotary valve movement in oxygen concentrator 6
+60/40 approximate airflow split between ventilation and defog with airflow knob in normal @
+Notes Going Retar- Kol éo a
+
+T/F in the event of complete electrical power loss, air conditioning and pressurization will ; er
+remain on (TRUE, the PRSOV IPRSOV valves deenergize to the open position) a
+
+|
+
+The ram air inlet and outlet valves are open when 1. Air flow know is in the off position 2.W-O-W ie
+TF the AVIONIC HOT caution light is only operative on the ground (TRUE) |
+Conditions that will cause CABIN ALT warning light to illuminate 1. Air conditioning failure causes i
+overpressure to the CAU compressor 2. The CAU compressor outlet temperature rises above 500°f, 3. The eo
+
+CAU turbine inlet temperature rises above 250°f cabin pressure failure only when cabin altitude is above _
+ON-BOARD OXYGEN GENERATING System (NATOPS 2.19) a
+5 sec time in seconds between each rotary valve movement in oxygen concentrator b
+250°f * temperature at which overheat temperature sensor illuminates OXYGEN Warning light C
+40000' MSL altitude above which full 4.0 psi cabin pressure is obtained A
+35000' MSL cabin altitude above which oxygen is supplied at full pressure ,
+35000' cabin altitude above which oxygen is supplied at increased pressure €
+24500 +/-500' _— cabin alt above which CABIN ALT warning light will illuminate yA DNEQREALH OVER PRESSURE OE OLD ART
+9500' MSL altitude above which a low oxygen concentration will cause OBOGS to shutdown Unt a
+
+==================== PAGE 45 ====================
+
+5000' MSL altitude at which pressurization begins EXY Ayano
+2G number of G's at which anti-g suit inflation begins \ ~~ 4 30 OO
+6G number of G's at which anti-g suit reaches maximum inflation za
+1800-2500 psi acceptable pressure range for emergency oxygen bottle comand ee
+6.5 psi maximum pressure of anti-g suit inflation 7O86 4 3006
+4.8 psi cabin pressure required to open safety relief valve . me inane?
+4 psi maximum cabin pressure allowed by discharge valves CABIN AS 10000
+-0.5 psi pressure below which safety and inward relief valve opens SWE 0.
+4-20 min approximate duration that emergency oxygen supply provides in minutes
+three situations that will cause OBOGS automatic shutoff 1. A system malfunction 2. Low oxygen
+= concentration and altitude over 9500' and, 3. Bleed air temp above 250°f or 4. Whenever the
+OBOGS/ANTI-G switch is off
+TIF Once started, the emergency oxygen supply cannot be shutoff and restarted (FALSE)
+FLIGHT INSTRUMENTS (NATOPS 2.20)
+2 5s degrees of deviation indicated by increments on the CDI for VOR and TACAN
+11/4° degrees of deviation indicated by increments on the CDI for ILS (sve lly J
+» 9 min 2 1/4' standby gyro provides valid attitude data for minimum of __ after power loss
+399.9 nm maximum range that can be displayed on H.S.I. range indicator
+30 number of preset channels available
+000 H.S.I. course required for VOR/ILS self test
+180 H.S.1. course required for TACAN self test
+d 315 +/- 2.5° heading No. 1 points to during VOR/ILS self test
+180 +/-2.5° heading No. 2 points to during TACAN self test
+108.10-111.95 MHz (odd) ILS frequency range
+a 108.0-117.95 MHz VOR frequency Range
+be -173.975 MHz VHF frequency Range
+Static inputs are provided to 1. Mach/airspeed indicators, 2. Barometric altimeters, 3. VSI's 4. OBOGS, 5. SADS
+TF The Mach indicator is corrected of temperature and pressure (TRUE)
+T/F the forward and rear mach/airspeed indicators contains an airspeed switches set for
+» 170 and 217 knots respectively to signal appropriate cautions and warnings (TRUE)
+the SAHRS system provides only heading information to the H.S.I.
+the SAHRS system provides only roll information to the yaw damper control (YDC)
+The SAHRS system provides attitude information to the 1. ADI, 2. HUD, and 3. ADR
+TF The ILS needles come into view on the ADI whenever a valid ILS frequency is tuned
+(FALSE, ILS must be selected on NAV/COMM control transfer panel)
+T/F The turn indicator on the ADI will be available in the event of a GEN failure{FALSE)
+T/F the number 1 green needle corresponds to VOR and number 2 white needle to TACAN
+TIF When T/R&G is selected on the COMM radio, both 121.5 and 243.0 MHz are monitored
+4 (FALSE, only the GUARD freq in the selected band)
+
+==================== PAGE 46 ====================
+
+ANGLE-OF-ATTACK System (NATOPS 2.21) 4
+
+25.5-28 units AOA Range for Stall o
+
+21.5 units AOA at which rudder shakers activate =
+
+>18 units AOA range for upper green chevron (V)(Slow) —
+
+17 1/2 -18 units AOA range for upper green chevron and amber donut (VO) (slightly slow) a
+
+17 units optimum AOA, on speed =
+
+16-16 1/2 units AOA range for lower red chevron and amber donut (AO slightly fast) . i
+
+< 16 units AOA range for lower red chevron (A)(fast) |
+14 units AOA for best angle of climb and max endurance (holding), ~195-210 knots . 4
+
+12 units AOA for best rate of climb and max range (Bingo)
+
+T/F the AOA indexer lights illuminate with weight off wheels and the gear handle down J
+(FALSE, need three gear down AND LOCKED) |
+
+T/F discrepancies are possible between rear cockpit AOA indicator and rear cockpit €
+indexer lights (TRUE) |
+
+RADAR ALTIMETER System (NATOPS 2.22) so
+5,000' AGL inaximum altitude displayed on radar altimeter ul
+100 +/- 10' altitude indicted during the BIT check q
+40° maximum pitch or bank angle for radar altimeter effectiveness ; b
+AN/APN-194 Radar altimeter designation (|
+T/F the low altitude warning system (LAWS) can be set in either cockpit, but the headset warning tone 4
+will only be triggered by the front cockpit radar altimeter. (TRUE) é
+
+¢
+
+oe b
+
+a
+
+==================== PAGE 47 ====================
+
+f-45C ENGINEBRING GOUGE
+
+» 1. What two capabilities does the Display Blectrenics Unit possess?
+
+> Mission Computer and Display Computer
+
+5 zg. T/F The Art MEDs operate through the forverd MFDe. ,
+
+a False. They operate independently.
+
+> 3. In what order does the Auto BIT Operate?
+
+DEU, GINA, ADR, MDL, RADALT ;
+
+_d 4. What is the function of the MIL-STD-1553B Multiplex Data Bus?
+
+> DEU interface to ADR, MDL, and GINA
+
+E.| 5, In that format does information travel through the MUX Bus?
+
+- Digital
+
+» 6. How many push-button options are on each MFD?
+
+P| 20 .
+
+7. Name the major components of the Display Systen. ;
+DEU, HUD, 2 DEPs, 4 MFDs
+
+2 8. Name the four types of GINA BITs. ~¥
+
+| Power up, Initiated, Continuous, Manual
+
+P 9, What type data do the Hard-Wired interfaces transmit between the
+
+od DEU and their components?
+
+> ; Analog, video, discrete ,
+
+10. What is the solution to one MED experiencing a display problem?
+
+a Multiple MFDs with the same problem? .
+
+> Turn off the MED
+
+Display Power switch momentarily to reset {cycles power to DEV) .
+
+| 11. Name the major components of the GINA
+
+a GPS and’ INA
+
+12. T/F For the H.S.I. to fully work, you need essential and non-
+
+7 essential power. :
+
+a True, you need both to run. the. VOR/ILS
+
+> 13. With a generator failure, batteries will give minutes of power.
+14. Overvoltage unit takes generator offline if output exceeds .
+
+30.2 VDC
+
+>, 15. Undervoltage unit deenergizes non-essential buses when output drops
+
+— 25 voc .
+
+a - 16..What are the indications of an overvoltage condition? Undervoltage?
+
+d .OVERVOLT: GEN Warning LT, , CAUG
+
+7 Caution LT, RMFD disabled, FPRES Caution LT (>30 sec), HUD fail.
+
+2 fy + UNDERVOLT: GEN WARNING, 35+ Satiowechmes ast) |
+ag 17. How many essential buses ere there? Non-essential? :
+
+> Three (2 AC, 1 DC) for both. _ : ,;
+
+a 18. What is the GBS Idle RPM? ES
+
+4 "86% ors *
+
+a 19. T/F Losing one of the ECA lanes will illuminate the ECA Caution LT.
+
+4 False. Losing one lane will illuminate the ECA advisory light.
+
+a 20. Describe the verifications of an ECA failure (Full. Trim).
+
+RPM decreases, EGT decreases, FF decreases
+
+4 21. Describe the verifications cf an ECA failure (NO Trim).
+
+> at ne pME enSsessee | ROT ANGREESOS - FRMMCESARSS TN
+
+Ps 22. At what quantity of fuel does the FUEL Caution LT illuminate?
+
+s 3501bs
+
+7 23. T/F The FUEL Caution light and the Fuel Gauge receive info from the
+
+Z same float switch. , 7
+
+False. The FUEL Caution LT has its own float switch. -
+l eve
+\ — |,
+: Oo ~~. Fue \ight is Geel Wdica tion of FIRE dog \ ]
+a \ - Nhat are Secondary iWWdicahous & £ Lyre? All af aloove
+>
+
+==================== PAGE 48 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.48]).
+
+: be
+
+Ke. D 1 =
+3000 PST - NORM Zoos fso7 BoM pra
+co
+
+|
+
+i1G6C# ile - CAMor Lent a
+{GS O00 sf ~ LAT ExTeEnn |
+
+a
+
+| 1
+
+; le
+
+b
+
+. i |
+
+e
+
+u
+
+fC
+
+|
+
+b
+
+a
+
+==================== PAGE 49 ====================
+
+24, What are the verifications of 2 steam ingestion valve failucé? 9°
+OPEN - RPM lower, EGT higher, decreased thrust and acceleration
+Hf CLOSED - Engine surge/ stall due to, steam ingestion ‘teat. shot) . .
+25. On engine start, when does the GIS shut down? ~ : a a
+N2 = 458%
+sad 26. When does the HYD 2 Caution LT illuminate? When does it extinguish?
+HYD 2 EDP below 1660 +/-110 rt Ores Sane ee
+EA HYD 2 EDP above 2000 ; L : _
+ad 27. When does the RAT deploy? - may re oe
+HYD 2 EDP below 1500 aan ERR
+| 28. When does the HYD 1 Caution LT illuminate?
+> SYD 1 EDP below 1660 +/-110 (6éms¥a&0-before=neo~lnt) at @ Eas
+>) 29. What is first indication of HYD 1 slow pressure loss? (se HYD "D gince
+1500 psi, loss of general services (no light before AFC 244)
+30. When can the RAT be reset? How will you know it reset?
+1800 psi HYD 2 EDP pressure
+sd HYD 2 Caution LT will extinguish at 2000 psi HYD 2 EDP pressure
+she 31. T/F The Wheel brake/ Emergency Flap Accumulator allows for 10 wheel
+brake applications and Flap/Slat extension in the event of HYD 1
+) False. Allows for 10 wheel brake applications and Flap extension
+a only (no Slats) ;
+v 32. At what pressure will the Wheel Brake/Emergency Flap accumulator
+» shutoff access to the flaps?
+2200psi
+2 33. How and when is the HYD 2 bypass valve closed after engine start?
+HYD 2 RESET button once engine is above 45% N2
+: 34, When does the WHEELS Warning LT illuminate? ‘27 “% 5 &
+a) Altitude less than 7200/ MSL and airspeed less than 170kts ox;
+bp) FLAPS/SLATS lever not in up pesition a ,
+> 35. Where is the ANTI-SKID switch located? nn ain wee,
+9 Left console, both cockpits . — . .
+a 36. I/F If one ANTI-SKID switch is. off, the anti~skid system will not
+operate. | | ve ’ rape pi ME
+» , True: ty | ASB a an Yar’ o f y w Moy Mey ,
+ef 37. Name the general services lost when HYD fT drops bélow 1500 ‘psi. - *
+a “Normal gfe ° ayuppect Brakes So She ‘-
+4 -Normal Brakes | oo “Hook Retract a
+4 38. When does ‘SLATS Caution LT illutinate? .
+Slats not in selected position
+* / {Split Slats ro, po ms
+peor slats iektended’and: airspeed increases, above 217 kts : aaa :
+7 Slats selected above 217 kts (slats won! t extend) “ot
+39, What is the function of the paddle switch on the stick? ° ,
+Disengages NWS and Control Augmentation
+> 40. When does the SKID Caution LT illuminate?
+» Failure condition detected by anti-skid.control box. oo.
+41, When does the skip Advisory LP.illuminate?f.., >). pov apes oe
+> Ss __ :ANTI-SKID. selected and. gear: down: and locked. fe
+A 42. How do you disengage the CAUG system? Reengage?
+ed Paddle Switch on stick! O77. MOL ee
+al 43, What are the three positions on the CRUG switch and functions?
+a ALL - Dutch Roll, ARI, SBI, Rudder Trim
+| SBI — Rudder Trim, SBI
+> » Kailuve of bleed E valve 4c close wirtl cavse less of furs) at mie’,
+> PAntis¥id suitckes 7 ONE OFF hen xe system ofl
+> . Loos ol ome nvecter will Veg ht AE IDV cavitm Light ond = loss ct AC ne-ess.
+2
+
+==================== PAGE 50 ====================
+
+ays: SQL 5 Robe totem c
+vey: -SQ P+ WB Hom | ’
+“BRE Cdelew Kwame) | .
+
+r
+
+aq
+
+D (Va my Get) 69)
+
+(4) Steed bake slabileke, DrtereoneeKS8D b
+
+Enitia wu 4 £0 hts 4
+
+6 tS Ok Spon, | :
+
+SOLE ion = ® spced ben ‘
+SQL RW Tm = © speeds ple. Shak Drbeoment C
+SKEET: mommby bln -£ SAT ;
+
+x Regate system ‘
+
+==================== PAGE 51 ====================
+
+7 RESET - resets system
+
+> 44. What is the function of the SBI system?
+
+Provides stab trim inputs to reduce pitch changes during SB ext.
+
+ri 45. What is the function of the IPRSOV?
+
+Cooling air inducted through heat exchangers when gear extended —
+_ 46. What happens when the ADR button is depressed? — —
+ADR retains flight incident for -5 and +5 seconds.
+
+> 47. What is tested when the light test switch is put to Test ‘postion?
+
+ad Tests all lights minus AOA Indexers and tests Fire Detection Sys.
+> 48. List the Warning lights on the CWS panel.
+
+4 OIL PRESS, CABIN ALT, EGT/RPM, FIRE, GENERATOR, GTS FIRE, HYD
+
+2 FAIL, OXYGEN
+
+49. When you switch the light test switch to LAMP, how will the fuel
+quantity system be tested?
+
+d Tt won't. (Trick question: FUEL Lt is a Caution Lt, not Warning)
+50. What is the max EGT for airstart (excluding overshoot)?
+
+51. ‘The Engine Switch controls power to the .
+
+scu (Starter Control Unit)
+
+52. &/F With a complete electrical failure, Landing Gear and Flaps may
+be extended manually.
+
+False. Only the gear may be extended manually.
+
+» 53, What is the affect on the Tailhook with a HYD 1 failure?
+) _ May be lowered, but not raised.
+
+54, T/F A single AC Inverter failure will result in AC INV Caution LT.
+oo True.
+
+> 55. What Trim functions are on Generator Bus?
+
+Aileron Trim, Rudder Trim, STBY Stab’ Trin, Trim Indicators
+56. How is generator voltage regulated?
+| Voltage regulator: 28.2 - 29.2 volts ;
+
+2 ; 57, List 4 generator protection systems. -
+
+> Voltage reguleter,
+
+Overvoltage protection unit (turns gen off at 30.2 volts)
+
+ad Undervoltage protection unit (deenergizes Non-essen Ac if <25 v)
+a A => 300 Amp fuse «
+
+«4 58. If Overvoltage or Gen Fail, what happens?
+
+4 Gen Bus ~- Off
+
+» Non-essential AC Buses - Off
+
+| Generator Warning Light ,
+
+a Master Caution
+
+» FPRESS — On (after 30 sec)
+
+CAUG - On (CWS tone also)
+
+= RT MED - Out
+
+; ‘LY MED - Reverts to ADI. Out after 2 minutes unless switch ORIDE
+> 59, If Undervoltage, whet happens?
+
+Generator Warning Light , Ale aw esd dees
+
+4 By J Master Caution vols tend OY
+
+Tibia, 60. Will low generator output drain batteries?
+
+¥ No. Power diodes protect current from being drawn from Essen Bus
+ad . . 61. What powers-the- 28. VDC Essen Service Bus? - :
+
+a _ 24 VDC Batts and Gen ° eee
+62. How much time is available on Battery power alone?
+
+7 27 minutes on two good batts ‘
+
+as 12 minutes on one good batt
+
+63. Ground Service Bus runs off of what?
+
+#1 Battery
+
+- TWewaeton ct GEN teght wid wouderveltage Or gaevve | t4§e
+, OKNGEN Light ~ Ogos still wirks jyvst Yelow Foe, ory gen
+
+==================== PAGE 52 ====================
+
+> |
+64. What happens if lose one inverter?
+ACINV caution light and lose non-essential AC busses
+o 65. Wheat happens if lose two inverters?
+ACINV caution light and lose all AC pér
+66. How is AC power reset for input faults? Output faults?
+_d Input faults is auto-reset.
+Output faults requires manual reset (cycle) (8x ( wit node) Re rere
+a 67. With one Inverter failed, what means of navigation do I have? -
+TACAN azimuth.
+68. With two Inverters failed, what means of navigation do I have?
+PAR approaches only.
+69. What are the vital services lost when non-essential AC busses lost?
+VOR/ILS/MB and RADALT
+ad 70, TACAN DME is off of what bus?
+28 VDC Essential
+71. What is the biggest draw of electrical power?
+cal Pitot Heat
+72. What should I expect if I see a Master Caution light, tone, loss of .
+= RI MFD and HUD?
+Generator Failure
+73. What controls engine from start to finish? _
+< Start Control Unit (SCU)
+74. If either cockpit is in Manual Fuel, engine is operating in . ‘
+2, Manual Fuel
+75. If finger lift is raised airborne with throttle at approach idle
+stop, further reduction will cause what?
+Shutting the engine down.
+76. If finger lift is raised airborne with throttle above approach idle
+stop, further reduction will cause what? ,
+bs Throttle will stop at 72% (Approach Idle)
+; , _. 77, What is the minimum RPM for Engine Start?
+15%
+5 78. What is the minimum RPM for Air Start? ;
+13% ;
+79, When does the OIL PRESS light go out. on start?
+4 . ton light indi late at A 27
+80. What does the SLAT Caution light indicate? ~ 9
+a Slat are not in commanded position or are unsymmetric Sluh se coed Arle Slots
+81. What is the airspeed limitation on the Flaps and Landing Gear?
+9 200 kts _
+a 82. What constitutes the ARI system? (f, (3-23)
+> Yaw dampener and trim tab system
+a @3. What drives the Rudder Centering system?
+| = 84, If I get a CAUG caution light, what do I lose?
+pa ARI (217 kts, Flaps half or full), SBI, Rudder Trim, Yaw
+> Dampening (<217kts)
+85. CAUG light with a Generator Failure, I lose what?
+ARI, SBI, Yaw Dampening, Rudder Trim (ALL FOUR)
+od 86. CAUG Bit can only be conducted when?
+=) a +. @B0kts; WoW;-Flaps up------- scree ce
+Z Ger. In SBI wilh front SBI,rudder trim still work?
+> Yes
+88. What navigation do you have with a DEU failure? .
+a None. Only option is the PAR
+> 89. GINA supplies what flight information?
+Velocity Vector, Gyro, Heading, VVI, gasihe
+Ss
+od Pi BUAUL ceetiw Lita > On IF SET AND Hy Rov 10°, RPM.
+» GEN Failore - owl 4 wake lab e is gama gtolals tre
+2
+
+==================== PAGE 53 ====================
+
+ae :
+> 90. Pitot Static provides what flight information?
+> Airspeed, Barometric Altitude
+oe Si. What page is initiated on power up?
+Menu a
+> 92. How do ZT knew when alignment is completed?
+ba Velocity Vector appears in HUD
+v 93. What are the two types of Bit Displays? eran Hing.
+> WoW and woftw _—
+2 94. What does OPGO mean.
+> ; Only one channel of MUX Bus is Tx properly
+95. What must be done to display GS/LOC needles?
+Box ILS on the H.S.I. (must be in CDI not Planometric)
+96. What are the CDI deflections? tom JO - vadale WOR O> bewnvg [ne S
+4 miles for CL on WYPT/WOS Gear Up
+.3 miles for CL on WYPT/WOS Gear Down
+cd 2.5 degrees for LOC (bimeis of ILS Useally 2.5)
+97, IFF has antennas. Which antenna signal is selected? in Ow wide
+Two. Strongest.
+pl 98, Which IFF Mode transmits altitude encoding?
+Mode 3C
+> 99. What is the normal distribution of ECS airflow?
+60% for ventilation and 40% to Defog
+> 100. When and what does IPROV do?
+| With gear down, improves ECS efficiency .
+101. Ram Air opens with what? .
+> Wow
+102. What does AV HOT mean? (on“f
+ECS cool temp exceeds 67 deg C. Must cool before takeoff
+; 103. What is the airflow distribution in Detog? ;
+. 40% Ventillation and 60% Defog
+» 104. What does Max Defog do?
+4 Increases Airflow at same distribution ration (60/40)
+105. What does CABIN ALT Light mean?
+% Cd
+> in Altitude exceeded 24,500 +/-500 or Overpress/Overheat of
+ld Air Unit (CAU) of 500 degree on compressor outlet or Z50—
+cS 106. What does OXYGEN light mean? 3
+a f OXYGEN switch off,202 concentration below 95%, exceeds 250
+degrees at temp switch.
+107. If MDC fails, will seat still breach canopy?
+od Yes, canopy penetrators will fracture canopy glass.
+> 108. Where do the inputs for ejection modes come from?
+4 Ejection sensor on seat
+A "409. What does CANOPY light mean?
+Canopy latch is not in the latched and locked positicn.
+110. When do you get the CANOPY light and MASTER CAUTION light?
+4 With the canopy unsafe and the power set to above 95%
+111. Electrical boost pumps are located where? What function do they
+d provide?
+) nn comm aor Located: in. the negative.G.compartment..of..the.collector_tank.» 02.
+a Provide fuel pressure for negative G flight.
+4 112. LP and HP pumps are powered by what?
+] External Drive Gear Box
+4 113. If FIRE light comes on and goes out, what should be done?
+4 Check light switch for continiuity
+> 114. In event of HYD failure, will ANTI-SKID or NWS lights illuminate?
+od CARIN ALT WAN LIGHT - Perea
+AN HOT baba “7GPTC emet ont GROYNC
+]
+
+==================== PAGE 54 ====================
+
+4 |
+No. They will only illuminate with electrical system malf.
+115. ACCEL light means what?
+Steam Ingestion Valve stuck open (10% loss of thrust), or
+@ Initial Shot of Fuel Solenoid is not in commanded position :
+116. What is the feneticon cf the Sub-Idle Fuel Control Unit (SIFCU)? .
+a Deliver proper pressure and pattern to nozzles.
+117. External Gear Box drives what? .
+2 2 Fuel Pumps (LP/HP), 2 HYD EDPs, 4 OIL Pumps (3 scavenge) (rw
+~ 118. What is the min airspeed / altitude to initiate restart after
+flameout? ’ : ;
+1500’ / 180 kts
+cd 119. What is the prime indicator of engine seizure?
+) RPM rapidly decays to zero.
+ES 120. How do you determine that the engine is locked in stall?
+| EGT over 450 for 6 seconds after selecting idle
+121. What does EGT/RPM light mean?
+EGT > 650 +/-8 or RPM 112.4 +/-1.0 (Nl RPM)
+122. How do you shutoff fuel to Engine and GTS?
+Fuel Shutoff T handle
+123. What does FIRE LIGHT mean? .
+t Temp outside engine container exceeds 300 deg C .
+124, What does GTS FIRE mean?
+ed Temp outside GTS container exceeds 300 deg C
+125. What does TP Hot Caution Light mean? :
+Temp outside tail cone inside fuselage can exceeds 150 deg C ;
+ed 126. What does HYD 1 supply hydraulic power to?
+General Services and Flight Controls
+127. What does HYD 2 supply hydraulic power to?
+- Flight Controls
+128. What is the indication of an operabie RAT?
+z HYD 2 fluctuating between 2500-3000 .
+_ 129. If HYD Z and RAT fail, what effect on total HYD systen?
+. None. HYD 1 still operating everything normally.
+130. If HYD 2 is leaking, will RAT do the job.
+) No.
+131. HYD 1 light on below . Resets at .
+1660 +/-110. 2000.
+> 132. What pressure is required to reset HYD 2?
+; 1800 psi . .
+3 133. What is the Nitrogen preload of the Emer Brake/Flap sys?
+1300 +/-50
+134, If Brake Accum drops below 2200 psi, what happens?
+; Emergency Flap accuation is removed to isoloat Emer Brake
+- 135. Brake Accumulator gauge is reading what?
+cd Nitrogen pressure
+2 136. Flight control accumulators have precharge of what?
+A 1100 +/-50 psi nitrogen
+of 137. When is ANTI-SKID activated and deactivated? py. =
+> Accelerating above 30 knots and decelerating below 10-13 kts
+4 138. With HYD 1 failure, does hook work?
+a : aoe -o—Yest Pneumatic-and- snubber--to-put-and..lock=«down...(Can!traise)_. 4... ..
+> Q 139. ANTI-SKID off, carrier janding, ,and HYD 1 fail: ro
+4 ’ Blow tire, parked , sh “light Ow (cette) (6)
+4 140. LBAR is raised and lowered how?
+a Lowered by HYD 1. Raised by mechanical spring.
+441. If the FC has control of the CNI systems
+a anewer:/ _..the RC can select any MED display within the system
+a
+
+==================== PAGE 55 ====================
+
+:
+> 142. Paddle switch with gear down does what? Loclesd ) ae Cooks)
+Switches off the NWS and the CAUG ae be thr Lilecbe, SY bebact
+o 143. To reset MWS end CAUG, you must do what? = Gr wee le A 15%
+> NWS: depress the NWS button ; =] 3) p's ot ep
+a + K CAUG: nomentary select to CAUG reset O sigle Co apeannrt Chica flue. welt
+144. With NWS on, what will activate the NWS? ater ey, ‘ ‘
+a WoW rttcoder erreur fate
+Ld Pe Re 145, BRAKE PRESS light comes on when?
+] LBAR not retracted, PBRAKE not set, over 95%. Etc. (know all)
+> 146. If DEU fails, what navigation aids do I lose? What are my options?
+al Everything. PAR or Visual
+147. DEU Controls the MUX BUS (that’s the best answer)
+148. DEU exchanges words with _ 1 , and __—svia MuxBus. |
+Digital. ADR, MDL, GINA
+149. How do the hard wired interfaces communicate?
+Analog, video, discrete
+150. What page is initiated on power-up?
+Menu page
+451. Display system derives flight data from GINA and Pitot Static
+inputs. Which are from each? ;
+GINA: pitch, roll, heading, vertical velocity, positiod 5)
+cd Pitot: altitude, indicated airspeed
+152. What MED inputs are duplicated on the DEP?
+f 153. T/F GINA is operational upon loss of generator.
+: ; True
+» 154, Auto Initiation of IBIT is accomplished in what order?
+DEU, GINA, ADR, MDL, RALT
+; 155. What are the two BIT Display pages? .
+WoW and Worf
+> 156. TACAN uses bearing while VOR uses .
+4 Magnetic. Relative
+Ld DY 157. IFF Mode Test illuminates GO/NOGO light or ANTENNA lights?
+2 GO/NOGO Lights
+158. IFF DEGRD on the BIT page indicates what?
+? | IEF - Off, or a
+> Q, IFF -— STBY, or
+4 3, IFF - BIT failure
+] 159. What IFF mode transmits altitude?
+Mode 3C
+iad 160. The VCR records what?
+HUD, MED, Tones, CWS, ICS,
+“fK 161. T/F Undervoltage protection ALWAYS trips Non-essen AC Busy
+7 ‘True Fy week camel EEC, Sale
+162. With GEN FAIL, will ALL flight controls and sub-systems work?
+| Yes. Only lose ail/rud/stby stab trim, trim indicators, HUD, RT
+» 163. Z/F Approach Idle function engages with total electrical failure.
+True. Normally held open magnetically.
+4 164. Whet AOA will Stall Werning Indications occur?
+a 165. How do I know when alignment is complete?
+> Velocity Vector appears in HUD
+3 * 166. T/F Advisory Windows appear on MFDs and HUD?
+7 False. Only appear on MFDs
+] 167. Engine Bleed Valve closes at __% RPM.
+a 61 +/-4
+
+==================== PAGE 56 ====================
+
+168. Describe Hot, Hung, Wet starts. ~ 7
+Hot: FF and RPM to normal Idle indications, but ECT rapidly to
+~ 556 oz to 570 fcr more than 10 seconds
+Hung: RPM stagnates IVO 45% but EG? continues to rise ;
+Wet: PR rises normslly, but ne BET/PPM within 18 seconds s* idles
+3k 169. GEN Warning light extinguishes on start at___, comes on at on
+shutdown.
+A5% 42% .
+a x 170. OIL PRESS light goes off at on engine start.
+> 18% (18-20)
+%K 171. Selecting ANTI-SKID off and CARRIER mode does what?
+Provides 2 second delay for Approach Idle upon WoW
+172. GTS light must appear within ___seconds of initiating GPS start.
+173. Must have READY light within _.. seconds of selecting start.
+15
+» 174. What does READY light mean? ayt\
+» GTS at full speed, N1 at 100¢ in right direction, DOW. ow
+ES 175, Start Limits: : a
+Ld FF: 300-400
+EGT: 550 (570 for 10 sec) |
+RPM: 52 +/-2 (within 30 seconds of idle
+4 176. Idle limits:
+FF: 300-400 ;
+a“ EGT: 450
+RPM: 55 +/-2 (1% for every 1500’) .
+] 177. Engine Limits:’ ;
+a FF: 6410 max
+EGT: 610 max @ MRT
+: 550 continuous
+a 645 transient (20 seconds)
+| 600 airborne start (650 overshoot 10 seconds)
+ao */,RPM: 104 max (less than 30 minutes per flight hour) Pr
+Ad 104 transient (20 seconds max)
+100 max continuous ;
+ia . 55 +/-2 idle
+ie 178. GINA uses GPS/INS with what software?
+Kalman filter (software -NOT System)
+? 179. Initial Shot of Fuel Solenoid is actuated when? Off when? a
+on ‘ Descending through 7700 +/-500' MSL
+Ascending through 9500 +/-300' MSL
+> 180. When is RAM air activated?
+4 With WoW.
+
+==================== PAGE 57 ====================
+
+HYD 1 Numbers:
+
+—*? 3000 psi at 9.6 gpm—EDP Oy |
+
+= —~7 71100 +/. 50 psi- FC Accum Nitrogen Pregg
+
+> “ 1500 psi — Priority Valve — No Genera] Services
+
+> Vp 1660 Pe 1 PHOKity valve redirects to Gene Services
+
+a —-"& 2200 psi~ No Flap/ Just Brakes
+
+5 1660 +1480 — HYD 1 Light
+
+- 725 +/-50— HYD 1 Light Out
+
+| "> 3000 psi at 6 som — EDP Ow -EPA- & ce, |
+
+"1500 27 SOPSt~ FC Accum Nitrogen Pree mn ™ EWS CS
+
+- 1500 Psi-RAT Deploys. Deployed byEPA 4 oO. _
+
+- 1800 pal” HYD 2 Reset-Allowed by Be Pre CAGE
+
+2th pat ena ED 2 Li } ASSEMBLY
+
+«2500-3000 psi — Normal RAT Output a
+
+“700 psi~RAT Retract (? Airloads}
+
+742% 4 ~ Bypass Effactive
+
+> 145% T- Bypess Accepts Reset BD BQer Seay >
+
+Brake/ Flap Accum allows “or Flap Emecg Extend 10 Brake applications _ 7
+HYD Fail Warming — HYD 1 < 600 4 50, HYD 2 < 1660 +. 110, Emerg Sys< 6004.59
+
+} —f |
+
+5 ey eet 7
+: SOS! og |
+rs ee oS : Bema,
+| Cage nel EH RT © | 8 Cece | H
+Figure §: T-45¢ HYDRAULIC SYSTEM BLOCK DIAGRAM .
+
+==================== PAGE 58 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.58]).
+
+co
+
+TRY pee het 7 EXE. EM SAU y) 3
+
+Geavwe Pine ~ Exec. Emery SKutoow cS
+ETS % EXEC EMER ShUbow re Cif Ene Suvea oFF , SEO Tr As eaile 7
+Shwe 7 AMT ALT aw R
+wing mic ~ 25000 base 7 0 Mr -
+1 - < / Vs eors uo om |
+
+ASB T8p < 15, goo’ SL, 20 CPM »
+ws
+
+==================== PAGE 59 ====================
+
+KAGLE EP GOUGE
+
+EP 06X
+
+2 1. Ifyour HYD 1 and 2 fail but the RAT is working fine, but the aircraft is
+“uncontrollable”, then EJECT.
+
+2, Engine Stall = Throttle Idle, Controls Neutralize, EGT/RPM Monitor. _
+
+3. Ready Light = N1 @ 100 RPM in correct direction with ignitors energized. -
+
+? 4. Ifyou are flying form and prove that you can no longer fly form together
+
+> (YOU HIT EACH OTHER), then have someone else check you out (besides
+
+the guy that you just hit).
+
+? 5. Power setting for OIL PRESS light = min for safe flight. , Magnus WUE Mines
+6. Engine Failure off Cat = EJECT (if unable then ditch straight ahead). |
+7. TP HOT caution light on deck is same as FIRE light on deck (Same
+
+y procedures to deal with bot).
+
+8. Configuration for ditching = gear up flaps down full. . |
+>, 9. For blown tire... turn anti-skid off. |
+
+: 10. If you lose nosewheel steering, use differential braking to*control aircraft. |
+4 11. If you get an overspeed during start, use Clear Engine procedure (Throttle
+
+? Off is the first step... not Throttle Idle). .
+
+_ 12. There are two GTS Fire questions with the same answer... Engine Switch
+
+Ld Off is the first step.
+
+3 13. Which of these indicate you might have an engine fire on Startup? Fire light,
+
+a Increased FF, Rapidly increasing EGT? ALL OF THE ABOVE.
+
+? 14, With a HYD 1 Failure, which of these can you do for landing? Emergency
+
+extend the gear, Emergency extend the flaps, Take an arrested landing?
+
+_ 15, With a HYD 2 failure, you monitor the HYD 1 PRESSURE GAUGE not the
+accumulator pressure.
+
+16. Compressor Stall first step is Throttle Idle — min for safe flight.
+
+4
+
+==================== PAGE 60 ====================
+
+17. Compressor Stall (or engine stall) is characterized by “pops and bangs” and |
+
+an increase in EGT and decrease in RPM. a é'
+18. Engine failure below 1500’ AGL and 180 KIAS = EJECT (always). . e
+
+19. Fire on takeoff = Abort, if unable and the fire is confirmed then EJECT. . 4
+
+20. Aircraft Settling off Cat = Throttle at full, maintain 24 units AOA, if settle e
+
+not stopped then EJECT. id
+
+oo
+
+hQoek : 21. Blown Tire on Takeoff = Rudder as req to counter swerve and anti-skid off . b
+prior to braking. -
+
+Wee e Toe a
+22. Fire light in flight = first step is Throttle idle (min for safe flight). a
+
+@
+
+23. Abort procedures (you have to order them from a list). (i
+
+24. ECA 2 caution light means Throttle <90% above 20k and <95% below 20k. q
+
+|
+
+25. Fire light on ground (new procedures... get out of airplane and don’t >
+
+worry. about telling anyone over the radio... no comms in procedure). 3
+
+* 26. TP HOT is a CAUTION LIGHT (yellow) and not a WARNING LIGHT |
+
+(red)... don’t get drawn off by any ar:swers where they give you a FIRE light a
+
+and a TP HOT light and ask which warning light causes you to egress! -
+27. Always trade airspeed for altitude in EJECT situations. — ;
+
+28. Abort for red lights on takeoff when less than refusal speed. 7
+
+29. Know Airstart altitudes for Immediate, Assisted, and Windmill (Immediate i
+
+has no altitude restrictions). q
+
+30. OIL PRESS light goes out at approximately 18% on start. 7
+
+31. Increase altitude for better radio reception (really... it’s on there). ;
+
+32. Structural damage to the airframe may require you to blow the canopy. qq
+
+i We GE CanmtsEO JV WUdneuucart EXT, Mec RETR SED “
+
+h
+
+»
+
+==================== PAGE 61 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.61]).
+
+i. CG Ze Li« 77 - fA LeezE BIT TESm Paty. exer
+
+m7" Sr PAE AFF
+
+“48 Lew iT ‘
+
+VC, GEEZ é, STC PCS Yu reee
+
+> OT ae
+
+IE g Ye DL dicr/ Deol ae)
+
+MPILUTOnd ZuT 4 gk : ae : -
+
+o a : SPle — et {7 Tee ws, a .
+
+4 ip 7 - "Y fFoSsr rexd Le olf 5
+ss
+|
+
+a
+
+> orl Press - min
+
+lignt
+
+GA 25 40/45
+
+fs airsheyh - FARE GA ELT we
+Eng re Stall .
+, : Com 9 Stealt  - eE GT b GPM FE sen
+
+Qecom cley ie 5 ck Tks
+
+Dilan tye | brakes - feos, AWS
+
+Ploeg Tie - Ant: Seia of F L
+
+» WiteM of £f/t
+
+SH Gs - / ;
+
+is Yess Ceud<vr Wakt idummates 36 se C atder CEs
+5 On gempe (b OD Pe
+
+==================== PAGE 62 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.62]).
+
+_ i GORKECT / OMS =
+
+jG lth» ID 2 pre Balers RAT cl pada
+BRO B000 psi _
+ee
+2 bith am conPiarmect inctlisht fre. afler setting flvattle to axe _
+— (5) eae felling the fel ste thee ooeo OQ Moe
+1 /( Ln Sclarderay indlicatiins...yov should: Rete fe A Cosntoes enenads
+1 @ AS AN Abo@TED Tb" Do mor Toe) ANTISKID OFF _
+aS <eememaceeee ee |
+—-+? PE? BLOW NIRE , Gee Keiko 2 PEKING You sto De
+pe ! ovechempeceture conditren ron inthe GTS campoctomentCnot_b/e a
+FY, = there. 1 [rar overspeed dna Ng on sta he fry _
+—il Qn she ti he engine _does not _lisht ott IS seconds | _
+GY. the dlediny Thoth Ine he pd $ uspect Go wes |
+
+==================== PAGE 63 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.63]).
+
+CAG Toium FAILugé bt v TES; PALE OFF 4q
+BLAN ic , BLA“CTVG peTecke fUsyvurme.) — vw Neen... ]
+tA em as Paes WF |
+
+LAII ITO OL Fu 774) €CR L displ D. f 7 fowe 7 ve fe Kor all Sys q
+
+| |
+
+==================== PAGE 64 ====================
+
+.
+
+\e Ti
+
+| “PRESS”
+
+«BP. GOUGE
+
+Two 40 question tests: this gouge is what we could remember in no particular order.
+
+y D GRowe oe MASS GER ® AS + C&cew? Sein
+1. Know cabin alt. warning light procedures. Oveomce gov ° PS doe" MSE
+Oras wen - att pe OF
+
+v . . men hts of fen mns or oT .
+
+9. Total electrical failure procedures (you don’t have to do foad shedding because it’s a
+
+total failure.
+
+3. Trim failure question: answer ADI indicates 2 deg. nose up. .
+
+4, Directional control in question: arrestment-.is 50 ft. prior to the gear.
+
+5. Coming in for the break and you get slats light, slow to and maintain below 200 KIAS.
+
+_ 67 Soniething about w hyd fail with RAT extended but the aircraft-is uncontrollable-The—-——-—- ___
+key word is “uncontrollable.” EJECT! ... youbet.
+
+; 7, Engine stall: throttle _ idle, controls_neutral, EGT/RPM_monitor |
+
+8, READY light = N1 100 RPM in correct direction and ignitors energized
+
+9, When you have a midair with your wingman, the answer is. have someone else give .
+
+you a visual inspection, not the guy you just bumped into.
+
+. 10. Power setting for oil press light: idle. ,
+
+11. MED FAIL: blinking screen, stuck push button, 2-
+
+12. Engine failure off cat: EJECT. If unable to eject off cat: ditch straight ahead
+
+2B. TP HOT lights on deck: get out! Same exact procedures as fire on deck.
+
+14, Wheel brake failure on touchdown: go around! If unable to go around: feetoff
+
+a brakes, ANTI SKID_ off, reattempt braking .
+
+15. Canopy loss: descend to 10K or min. safe alt. .
+
+16. Question about pitot static failure: answer stby vsi .
+
+17. Question about launch bar landing: true | .
+
+.
+
+==================== PAGE 65 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.65]).
+
+ot, BIWEP ~O6X" Exam, -Goveg .. SOY RODGERS © & SO h
+4¢. KNOW “THE BoLd. FACE SS on le
+
+XK ECAR CAvTION LicHT — QD do ver exceed ‘FOU, T. 20,0007 of . a
+
+; ; — ‘Be Not eCxceep Gov. YY Ze, oso , Do-Nnor exet
+
+: ‘600°C Let . a ee |
+
+. a b
+$6 FLRE wARwinNG LitHT ~ Bo Nor vs AIRSTART ,. ARE PARE For erect |
+ME Sérvezve OFF CATAPLLT —. MAINTAIN Z4 vsrrs AeA * _ -
+‘CATA PULT @eircu Ot .
+Me. HYd Zz FAILURE — Hy 1 PREegsOné — Monitor, - (Nor Accum LATOR’) q
+
+; Ba ; oo |
+a *¥ STALL. ~ FuRsr step OM TReTTLE - TaLeE CBANEs , €6T T , RPM): 3
+—-_ELAMsovr = Fiest S16P- D Teorrte sone 4
+STALLS - DO You PéRPoRM AlesmeT — no . =
+
+_ : -¥ € O firet q
+
+Do Yo Pvle Emenee OZ ~No Oo €
+~ FLAMEeot — YOvy dF THose Exesr s .
+
+aC Hyst FAiLURE -~ MAMA BEAR, Emenesuey FLAPS, ARRextED LANDING (|
+c, WHat Bo You HAVE AVALLABLE, You DanT HAVE Gewepar service
+oo ANSWER + ALL tue Above Co 4
+ELECTRICAL FAILURE — KNow WHAT “ALSo Nor AVAILABLE \* FRARS [Emerg “ot
+
+KK S€cowdARY FNOMKATIons of FIRE: Lez p , Fveu Plow 7, Fike Liew C
+- oo . . |
+
+Ske Grs FIRe€ PERst STEP: TROLS (D ENGING Switeld ~ OFF . C
+. @tRotwe ~ off b
+
+; a. oo, “
+
+WE. OvERSPEED. START —~ TRaTILE OFF »
+BS NO NWS. ~ USE DIFFERWTIAL. BRAKING : ae 4
+SE EEctTION — Convert AIRSpeed +o ALTLTUNE, ZTE FLAEEHT CowrTRe_s vom ch
+, ABLE &.
+
+Ye Bont Have Wane man Tonep ~ AFTER MIDAIR . | Evec.
+w% Blown Tiree — Anz -sSkID CFE Con T/o or LANDING ) , t
+ye bIvehHWe — GEAR TY FLAPS . 4
+SK EM Me bale AIRSTART ~ ON ANY ENGaalE eAipe! Covronh % 100 < gob
+
+==================== PAGE 66 ====================
+
+18. Don’t worry about PA procedures
+
+19. Cabin Alt. Light: descend below 25K
+
+20. Engine failure below 1500 AGL and 180 KIAS: EJECT
+
+- 21. Fire on t/o: ifable: abort, if unable and fire is confirmed: EJECT
+
+. 22. A/C settling off cat: check throttle full fwd, maintain 24 units AOA, if settle not
+
+stopped: EJECT
+
+23. Blown tire on t/o: rudder_as req’d to counter swerve, ANTI-SKID_off prior to
+
+Hd braking ADRK 0S. € 25,0997 OF Pancticar)
+
+an”) BOLE ON BRN se - LER
+
+se a TE Gahee fo CAE RS Seem
+
+24. Know smoke/fumes procedure \ @ Alix veovce
+
+< ® Waar aturacs { SEEM BE AL EMS . :
+soa D) seme Qverrd QD mos pew Iwan ASQ Poe tue
+y 25, Dual blown tire landing: (pretend yow'ic Sa ‘Aittaive weente Muy FLARE The SS Po
+landing . |
+
+26. OBOGS ) failure: if it won’t reset, leave OBOGS_ OFF. Use the green apple-you.
+> don*t want bad 02 from OBOGS contaminating good emergency O2.
+
+; 27. Fire in flight questions |
+? 28. Generator failure
+
+29. GTS fire in flight
+
+> 30. Hook light means hook not down with handle down
+
+31. Question about gear not being down. Answer: warning light in the handle .
+
+32, Know the 4 things you lose with C AUG caution light: yaw damper, SBI, ARI,
+
+| rudder trim. . OO
+
+33. Question about ECA fail: know that it’s 90% above 20K and 95% below 20K. |
+
+34, CABIN ALT light: OBOGS_on, mask tight, AOA_reduce, airflow _off
+
+® enteatwan FAI ee : .
+
+==================== PAGE 67 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.67]).
+
+CADE Cauten Light Lose ° Se
+es ere) — ARI, SBI, va AUS, Rudder Hein ie
+
+i Hle OFF CAT ~ 24 Unzts Aod | ; - AWE
+* < WY 2SK | RY, tn RPM, +20 kids : rn
+
+* EN FAILURE — vy Cusine Rvnning , Beat hall Reset fn Reset: on S
+
+. Memantea erly -° =
+
+He CARN AL CPressiniondion fulae , [Cesmnaer cant
+
+. O21] fan wrlnee ) 0 Descencl, Below iw o f baad
+
+. . — 28,000 | Coes sty 4
+
+; *K CRO6S ~> Desconel below 16,067 ase a . MASK Ti eter 4
+Yo BloweTeRe ~ NO Arne . f
+
+: STING un ..
+
+Sthgle foe: | sar ; RYUNGVT CRT, FIAREH LAIDING, & EI <
+
+EO DVAL Blow TIMES— Cen b oo am a
+euow ’ P OF Bjeek Se Aire shu beac UA b
+
+S< Na ELE : ‘ lo UG
+. _ C¥RICAL FAILURE VERB TU | | =
+Se ARREST FER ee on (BA ; os b
+ss 2° AD : ~ LOO = Pepe appge an ns.
+PZTCH Duane 3 : . f
+
+| | OT 4c retaehon of. Bidnws Vormar / SRE oh
+* LoAb SHepowe _ NO EAerae a
+wr od W2TH TOR  <ley vr esean. Arties if pe
+
+x Kew Shar Light pacttrans Allie | €
+LEARN ALL CAuriIn Lignr Epe Ucn Beran Chak . . y
+om EP ev Po THe CAvtio LieiTs VCR rim Youd A waccacs. | q
+rac Brow CAL CADW Cleo SF BESO 4, net . a e
+SHES FIAD P Lote FIED  ALREmENTS a, ee b
+
+. |
+
+. - 3. ; \
+
+. 4 A: a
+
+%
+
+==================== PAGE 68 ====================
+
+peiLs
+
+¢ OBOGS - on and mask TIGHT 9 Posies Vege ees?
+e Reduce AOA (if required)
+
+| e ATR FLOW Knob - OFF, then ON |
+If Warming Light remains on —
+
+0 Altitude - DESCEND BELOW 25,000’ MSL
+
+co Land as soon es PRACTICAL
+
+I>. TOTAL ELECT, FAILURE procedures:
+
+0 Emergency oxygen actuator —PLLL
+
+e Proceed to VMC as soon as POSSIBLE
+
+« TLand as soonas PRACTICAL |
+
+e Atiempt to reset generator / check Batt Switches ON
+
+4 e Landing Gear - EMER. EXTEND
+
+© PlanaNO FLAP/SLAT approach and arrested landing, if available.
+
+Ed Recommend a short deld arrestment due to no NWS
+
+3. Trim Failurz question — answer will say ADI indicates 2 deg. Nose up
+
+9 a emia
+
+6 blank screen
+
+? 6 blinking screen .
+4 e stuck bution ,
+s xuultiple anomahes
+
+5, WHEEL BRAKE FAILURE ON TOUCHDOWN:
+
+> « Go around, ifable
+
+If go around not feasible-
+
+sc ANTI-SEID — OFF
+
+¢ Hook~ DOWN (1,000 prior to gear)
+
+e Throtile-OFF Cit det, a~y)
+
+If airborne -
+
+« Attempt a short Deld arresiment
+
+6, CANOPY LOSS: descend ta 10,000 .
+7, OBOGS Conteminetion (OXYGEN Warming Light): descend to less than 10,000
+? CABEN ALT or Minimum Safe Altitude
+
+A a
+
+==================== PAGE 69 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.69]).
+
+qo Faw > Yon, TES MG Fiona (Gere \ 4
+
+|
+
+q
+
+a
+
+L/ mare = [HY Card (SO. KIAS (Aproy) »
+CQauwe = 2 MD 2.% 60 Iuans (APO) a
+Tyee (FS I MOL Sy VIL SOR QUE 5
+
+a
+
+PRroed ws Voges praglaey ( ci Uy re Gi ;
+% Bye, Byte gh Poo ey! a
+wey Myo . vis re an a
+‘
+
+-
+
+==================== PAGE 70 ====================
+
+i, Question about PITOT STATIC FAILURE: answer — STBY VSI
++. BLOWN TIRE ON T/O:
+If aborting . : _—
+rN o Rudder —as required to counter swerve
+8 ANTI-SEID switch — OFF PRIOR TO BRAKING
+Ifteking om
+© Rudder —as required to counter swerve
+e Gear and Flaps — DO NOT REPOSITION
+© Eng. Instruments - MONITOR
+o Execute Landing w/ Blown Tire procedure
+12, SMOKE OR FUMES FROM COCKPIT :
+» Altitude — Descend Below 25,000" Gi practical} Vox wwe Fe eee
+AIR FLOW knob ~ OFF
+if unable to clear smoke or unable io see —
+« Warn other cockpit occupant / secure loose items
+e Seat-LOWER .
+: e Visor—-DOWN
+e Land es soon as'POSSIBLED
+ed 13. For a DUAL BLOWN TIRE LANDING — FLARE the Landing (cor ea ge EEE can roils
+Lett me haf. ern)
+14, OBOGS FAILURE — if it won't reset, leave OBOGS — OFF. Use the green apple.
+you don’t want bad O2 trom O5 OGS contamination good emergency O2
+~" Confirm Engine Operation |
+» VOLTMETER — CHECK |
+If Generator resets and voliase is abnormel or generator does nol reset
+> e BATT switches - CHECK ON
+0 GEN switch —- OFF
+e Proceed io YMC
+3 ¢ Land es soon as PRACTICAL
+If MPD’s required
+; © DISPLAY POWER - ORIDE
+
+==================== PAGE 71 ====================
+
+e Continue Normal Operzuons
+
+16. What is the first thing vou do when rou get a GENERATOR Werning Light?
+
+e Confirm Engine Oneration
+
+17. HOOK light means that the hook ip NOT demnath Hardie DOW
+
+: Oozs not ay (Te. w/ hedfe
+
+18. For the question about the gear not being down, the answer is: Warnings Light in
+the handle
+
+19, What have vou lost when you get a C AUG Caution Light?
+
+6 Yaw Damper
+
+e@ SBI ™® sap ceemecsitiow
+
+e Rudder Trim (pte <ouras) |
+20; SBI does hot bhange stick position
+
+21, Speed Brakes may not filly extend ABOVE 340 KIAS
+
+7 22, Speed Brake Blowback will oseur ABOVE 380 RIAS
+
+23. The slower vou go, ihe more control you have
+
+a4. C AUG BIT — for it io work, the FLAPS must be UP, and less than 80 Enots,'Vov «
+Gear is noi in the commanded position
+
+“ag ~ a5 TT ’ "7 ra « . ‘
+
+4 36,ALONG FIELD ARRESTMENT procedure (for test onl)
+
+2 e Hook—DOWN (1,000° prior)
+
+6 Maintain Directional control
+
+« Release brakes as you cross the cable
+
+27. AQ degree pitch during extension or retraction of the boards is normal with the
+
+T re a : ‘ =. tt Saad _ —_, IT —_ TIT, 3
+28, Load Shedding is not a factor wih TOTAL ELECTRICAL F ATURE #7
+29. SLAT Light — A Caution light thar will illuminate SLATS not in proper _
+> 30, Coming in for che break and you get the SLATS lichi, slow to and maintein hslow
+.
+
+a
+
+==================== PAGE 72 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.72]).
+
+/
+¢
+x
+u
+»
+|
+xo
+U
+
+==================== PAGE 73 ====================
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.73]).
+# NOTE: page 73 is scanned sideways; OCR run on image rotated 90°
+
+“7 is we een: SOc er TST OTT TIPE evd? mesasloakh} es oan
+al. rora Landme with a SINULE BLO WON LURE adda no eyailaple siresing ger:
+od ° —
+“ Fag is Tut! — atc i
+os Performa ilared landing, FLArd 72 | |
+=:
+aay OT 1: 2 774 TT eRUTTAT TORS a. een int ~ _. _ .
+29 For a Landing with DUAL BLOWN TIRES, and no available arresting gear:
+Pa ~ - tom!
+_ . 4 — _ . . 49 ws . ; = a ~ 7’ . .* .
+33 SHORT FIELD ARRESTMENT - if directional conirol : in question:
+aa ~~ + % ~- 2 ~ . x ~ a
+s Touch down 500° prior toe geai
+TE directional control iS in question:
+TF directional control ld in quesucnm:
+T nh, A : ~~ 50° 40 : ae
+o Ouch GOWN at GI aU’ DTIOF tO eal
+\
+hy . ” .
+San ii — —— 7 foe ge g < 60414
+bu ' oD eq\e oie CAI - , Pre lite iv tou to} al G S YOury
+c
+PS et AK au ofA A b
+é
+Fe nok St s¢e “3 7
+=
+ry Bs Ae s | ae Le “ao . Pa 4 ee -
+35 Wn wk iets Leer -_ he amy) a id i, feel A fe sf ; mo Lt i 2S Sr Glas 7
+ie ; i j 7
+* , 7 a é “ a } j
+
+==================== PAGE 74 ====================
+
+EP 11X
+
+w 1. Know Cabin Altitude Warning Light procedures _.
+
+a. OBOGS — on and mask tight
+
+b. Reduce AOA (if req)
+
+ec. AIR FLOW KNOB - off then on
+
+- If Warning Light remains on —
+
+ed d. Altitude — Descend Below 25,000’ MSL
+
+a , e. Land as soon as practical
+
+we Know Total Electrical Procedures -NO LOAD SHEDDING NECESSARY!
+2 No (you can eliminate three of the four answers because they include load
+
+id ' shedding)
+
+] a. Emergency Oxygen Actuator — Pull
+
+b. Proceed to VMC as soon as possible
+
+c. Land as soon as practical
+
+a d. Attempt to reset Generator/Check Batteries on
+
+e. Landing gear — Emergency Extend
+
+s f. Plan a NO FLAP/NO SLAT approach and arrested landing, if
+available. Recommend a short field trap due to no NWS
+
+3 vi 3. If Directional Control is ever an issue, then take a short field arrestment and
+: land 50’ prior to the gear with your hook down.
+
+L VJ “4, Ifyou are coming into the break and you get a slats light, slow to and
+
+2 maintain below 200 KIAS.
+
+J 5. Engine Stall (or compressor stall ) first step is Throttle — Idle.
+
+td N 6. MED Failures = Blinking Screen, Stuck Button, Black Screen, Wrong Info.
+e is “7, : Wheel Brake Failure on Touchdown = GO AROUND! If unable, then feet
+he off brakes, anti-skid off, attempt braking.
+
+IN 8. Canopy Loss = Descend to 10k or min safe altitude and Less than 200 KIAS.
+¢’ 9. Question about Pitot Static Failure = Check STBY VSI.
+
+a - A. Any Engine Failure below 1500’ AGL and 180 KIAS = EJECT.
+
+4 ,oh AL. Engine Fire on Takeoff = if able, ABORT, if unable and fire confirmed
+
+_ \A2. Aircraft Settling Off Cat = check throttle full forward, maintain 24 units
+2 AOA, if settle not stopped EJECT.
+
+© WHEELS twiePtCH EB CAFE ARE TE ee GEO Hoe
+
+==================== PAGE 75 ====================
+
+13. Know Smoke/Fumes Elimination Procedure
+
+ad a. Altitude —Descend below 25,000’ (if practical)
+
+b. Air Flow Know — Off |
+
+4 If unable to clear smoke or unable to see —
+
+c. Airspeed — Reduce
+
+d. Warn other cockpit / Secure loose items
+
+> e. Seat — Lower
+
+2 f. Visor —Down
+
+g. MDC Firing Handle - Pull
+
+f2 h. Land as soon as possible
+
+7. Jaocs Failure — If it won’t reset, leave OROGS OFF.
+
+- 1 15, Know Generator Failure procedures
+
+a yw gad a. Confirm engine operation
+we b. GEN switch — Reset
+
+c. Voltmeter — Check
+
+If generator resets and voltage is abnormal or generator does not reset
+d. Battery Switches — Check On
+
+| e. Generator Switch — Off
+
+) f. Unnecessary electrical equipment — Secure
+
+= g. Proceed to VMC
+
+h. Land as soon as practical
+
+of If MFD’s are required —
+
+7 i. Display Power Switch -ORIDE |
+> j. Display Power Switch — Norm when MFD’s no longer needed
+
+a If Generator resets and voltage is normal —
+
+k. Continue normal operations
+
+J Ge. Hook Warning Light means hook is not down with handle down.
+
+be ~ 17. If the landing gear handle is down and you only have two gear down and
+locked then you will get a light in the gear handle.
+
+2 "48. Know the 4 things you will lose with a C AUG caution light —
+
+a. Yaw Dampener
+
+b. SBI
+
+4 d. Rudder Trim
+
+| v
+
+y 19, OBOGS contamination (Oxygen Warning Light) = Descent to below 16,060
+> CABIN altitude or Minimum Safe Altitude.
+
+v
+
+M 20. If you get 2 Launch Bar warning light at the boat, you want to divert to a
+field and make a fiared landing after they strip the short field arresting gear.
+
+==================== PAGE 76 ====================
+
+‘ff;
+b| Biown Tire on T/O or Landing
+a. Rudder — As required to counter the swerve
+b. Anti-skid Switch — Off prior to braking
+. y for a single blown tire on landing = Flare the landing with % flaps.
+_ ,_\23. Gear Handle Light will illuminate any time the gear is in transit or any time
+_Athe gear is not in the commanded position (or the gear doors are not up when
+the gear is up and locked).
+yp’ 24. Barometric Altimeter Failure = Check Pitot Heat, Use RADALT if less than
+5000’, Use Cabin Altimeter if unpressurized.
+2 25. Failure of the 28VDC Generator Bus = Loss of all trim except Primary Stab
+Trim.
+Pq N26. Windmill Airstart = <25K, Min 13% N2 RPM, Recommended minimum of
+250 KIAS.
+N“27. Fora Multiple MFD Failure — Display Power Switch to Reset.
+Y” 28, For a SLATS caution light always maintain below 200 KIAS and land as
+a soon as PRACTICAL (i.e. for a missed approach).
+* y 29. Anti-Skid Failure = Brakes Release, Anti-Skid Off, Attempt Braking.
+CO. Know GTS Fire on deck procedures
+a a. Engine switch — Off .
+> b. Throttle — Off
+c. Fuel Shutoff Handle — Pull
+id d. Battery Switches — Off
+2 _ e. Egress
+‘c 31. Know Engine Fire in Flight procedures
+pe a, a. Throttle — Idle (min for safe flight)
+| — b. Secondary Indications — Check
+> » If secondary indications exist —
+c. Emergency Oxygen Actuator — Pull
+d. Throttle — Off
+a e. Fuel Shutoff Handle — Pull
+If secondary indications persist —
+. If fire is extinguished —
+g. Prepare for controlled ejection
+| If unable to eject -
+> h. Prepare for Flameout Approach
+a
+
+==================== PAGE 77 ====================
+
+Ao, RADALLT is operative below 5,000 feet.
+
+K “, 33. Knew Immediate Airstart Procedures
+
+. a. Throttle — Off
+
+2 Simultaneously perform steps 2 and 3
+E: b. GTS — Press and Hold
+
+ce. Throttle — Idle
+
+« \ 34. Know Tailpipe Hot on deck caution light procedures |
+
+EWG “Surfs Throttle — Off
+
+ORF b. Fuel Shutoff Handle — Pull
+
+c. Battery Switches — Off |
+d. Egress
+
+a 35. Know Engine Fire on deck procedures
+
+nd . Throttle — Off
+
+> . Fuel Shutoff Handle — Pull
+
+. c. Battery Switches — Off
+
+d. Egress
+
+S36. The first step of the Clear Engine Procedure is Throttle Off.
+
+5
+
+==================== PAGE 78 ====================
+
+- ; ; INAV GOUGE
+
+| . sau") Blight Tested
+
+= / + 71. Question about being cleared to FL 350 while on a SID: co, a
+2 /  @& Climb to FL 350/and remain on SID routing ,
+
+, (-72. Question about mins for visual epproach with runway or preceding sircraft in si ght:
+
+. 3. Takeoff mins when a precision approach is available for the duty runway: ‘
+
+| _£ 2 200% (PAR mins can be used for this, remember published mins but a0 lower a
+than. 200%) - | a
+
+Det YF, Filing SID’s on DD-175 ; -
+a. Encouraged but not required Lot a
+
+nd > ifin the GCA pattem w/in 25 om of field and you go NORDO: ,
+
+> 2. Climb toftuaintain the higher of the last assigned or min safe as depicted on |
+
+2 a-.6. 35 nm SE-of Montgomery and you go NORDO when switching to new ARTCC:
+
+— , a. Attempt to contact center on 319-1 Aflanta center inIFR sup): .
+
+a | a. Maintain 30008 SS a |
+pose’? 8, What does (*) next to an ATIS freq mean: ce : oo ,
+=... .  @ That ATTS operates Non-contimously no m, a
+
+2 2 9.. What do you do if you g0 NORDO while enroute- _ me ; “
+Ly a.“ Maintain last assigned alt for the current route segment and tlien the MBA if
+
+“10. When has an approach officially started Ques tim Soys. PAR. see es
+
+_ a Atthe initial penetration altinde atthe IAF 0 RAE
+
+md 7 11, Weléared for the approach are you cleared to land as well — Te at .
+4 oa NO 0 _ nr
+
+7 12, ‘The symbol for PAPT- Somatby aboot LED... oe 7
+BG (xFound'in FE) : “S ae ne |
+
+7 13: What do you do if you go TMC while circling to land: - _ -
+
+4 a. Execute a missed approach for the original mmyay, not the one you are circling
+
+, ; to ae CL |
+> . 7 14. Clearance read-back implies acceptance except when: : a ‘ ;
+a . You refizse and state reason why _ Po SO
+Zz Seen 7 15, Question about (L) VOR reception Tange: no .
+
+Qe 7 sees 18,000", 40nm (note the (L) in ‘front of VOR indicated a low VOR) Ons Cesenot
+7 16. What is the non-interference range for the TACAN: 7 ; .
+
+A i7. What TACAN is used for the ILS approach into Montgomery: of oo wk
+3 ‘7 al MXF. ch.97 (The TACAN is not Montgomery bat you need to fly the arc off of it (oe
+] . for the approach): , ee 8
+. 7 18. Isa voice report required When teaching a newly assigned altitude: _ i oe
+4 oe a OL | | 4 og
+z | 19. GPS (Both of the following are tme, the test has answers similar tothesebutoneis +) | Ms
+/ stated incorrectly as a distracter, read answers carefully to select the correct answer). Fy
+3 a Requires 3 satellites for LAT/LONG, and 4 satellnes fe LAT/LONG and ALT 7. *
+> : ‘b.6% GPS receivers (passive receivers) process satellite signal time-delay S as re Me ° ‘ :
+. measurerhents to determine satellite to aircraft Tange ‘ Wy Pes / = -&S * K
+? . Fifiy sk Mod srntey.— yd cles agth plies : as JQ fps Fs
+} Mesto Voss Bice oy Pagelof2 yx, So nS i Fae ie,
+? . ns ee Wail 4 TIN LG, ney
+2
+
+==================== PAGE 79 ====================
+
+os - A-word of advice — This exam is a real pain in the ass because the INAV MILs and CATs
+assume that we remember everything from RI sround school ia primary. In other words,
+they don’t prepare you very well for the type of questions you will sse. This gouge is
+"good, but be very familiar with all your pubs and how to lool things up in them.
+lave, Tee STDs — envouraged brit not reqitred on DD-175 .
+
+| eS hat tskeott en a precision approach te fis
+
+=, [| * (= Know what takeoff mins are when a precision approach'is available Sar the duty |
+" maway 260% ott tub lech MAS) iaarencie tera _
+| «HDed (UC so fin GCA pattern w/in 25 nm of field and you go NORDO ~ climb to Mintmnm
+
+_ read ipahe - Safe Alftade depicted om approach plats 1
+| RUBIA port Sot | : -
+BO? bead =~ 35 nm SB of Montgomery’ and you go NORDO. when switching to new ARTTC-
+— attempt fo contact Center on 319.4 a
+
+¥ BEW] va tienen ott te cutntinen nescae
+ud ~ ae? Know different types of radial intercepts ~ ® question defines one « en you
+APA COL have to identify the risht type of intercept from a list of all of them ;
+zd opine abate © _ —_ |
+aK Ts —-—s Growd Spsed caleulstion— Zofmiles x 68 if timed for 1 min =
+
+, wh i] £ t . ° x fi F44 bd .
+
+gee He Sit - Between 328 radial and 358 radial | pt NMMiremsisi st 3000 8
+
+Ree i 7 ean Hp eikriea, —> Opeititis or pest Atte reo}
+:  Bsoke sso “What does an asterisk (*) next to sn ATH freq mess? ; ;
+
+; aA af Lig 7 That partictiiar. ATIS freq operates non-continnésly ; ;
+. yee 778 What do you dof you 96 NORDO while enrowis? we Se
+2 . EPL aA) Nae 5 ’ Maintain assigned alt for the current ronts segmicnt and them MMA if
+
+? fUwiee, ty deagee Sow the symbol Sor PAPT lichis (can be found im the IER Supp Xx?) Ls o Clonee
+eee T4S {Cj tas mn proach officially started? - mo Pex
+
+PHe VA j JP — Aithe initial penetration altiinds at the TAR
+
+eee «Bes able to calculate arc-to-radial lead points end vice-vers2 Apne 2A
+PEE tec =? J cleared for the epproach are you cleared to land aswell? Ne
+
+Bhd or |. Cg atin Foun
+
+> ee. _« : ioy, -Prec wm meh
+
+° le a | [tee {oe-3
+
+: CO = ws 90 ; a .
+
+. aden Sener ut 5 a .
+
+; : 3oue-32 Nfd-
+
+==================== PAGE 80 ====================
+
+| | IN AV Gou GE . L 3 to Coens <= yd al
+
+. _ Flight Tested __ - . -
+peers. 20. What are the additional reports made to ATC without special request when not in ie
+radar contact: ; , oh
+‘a, When leaving the FAF inbound (non-precision), when leaving the outer marker |
+
+uo or fix inbound (precision) _ . ‘ a
+
+- b. Corrected estimate any time it becomes apparent an estimate as previously a
+
+| a submitted is in error in excess of 3 minutes ; .
+
+* c. When encountering weather conditions which have not been forecast, or - b
+
+) . hazardous conditions which have been forecast _ é |
+my . d Answer: All Of The Above an ; a 4
+coat 21.FSS Freq. Oo | é
+4 Ya. 255.4 mt | J
+22. Can OFFICIAL BUSINESS ONLY airfield still be used as an alternate |
+
+__ 23. What are the fuel reserve requirements for Jet Log/DD-175 ; ms
+= a. The greater of 10% of planned requirements or 20.min at\cndurance at 10/000" 3
+2 (they try to trick you with20%.....or 10 min) TO, . ¢
+
+; 24, Be able to calculate arc to radial lead points and vice versa:. Sa a
+a, / a. ° Arc to radial (60/arc nm K1%GS)_. a 3
+7 .’b.” Radial to arc (1% GS) a E a -
+zeae’ 25, For the Maxwell alternate question look at all the approaches for lowest non-precision ; d
+
+a mins (I think the glideslope is NOTAM’d out on this question) are Ul
+
+: a. TO0-1%e (4004 300-1) «Yor Hive To: Geet, AT cow Chee Oy
+' a. Ensure you read the questions carefully paying particular attention to any - "ot
+NOTAMs or other information that will change the approach minimums . fe
+
+_ «b, ‘Remember that ASR minimums are found at the front of the epproach plates . dq
+
+8 ‘ (There may have been a question where you had to look one up). 7 . 7
+
+- ¢ Onthe JET LOG: ensure you fill in all the spaces (including emergency. fields [1 e
+
+, _ | for every 3 of your route]) a re a
+
+: .. 4, Tab these airfields (you will be looking at one or more approaches at each) © 4
+ns 2 Meridian NAS (be carefull not to get confised with meridian/key field) _ +
+
+: iL Maxwell AFB . re a
+
+La "i. Jacksonville NAS, FL rr re 7 .
+ED Halting ot Cpu — alge Ielig fo camimue appl, of (ete?) uae ¢
+
+. : Lace haldia y al® e peer 3 _ — _ ; | b
+_ tte
+
+, NIMAT DZS p . aA a
+
+ms Av | {FOO rhe ragoli. + detraia . . . t
+
+' ‘ ESA > 1,000) man macht 7 EO Let gain. A
+
+: : . 0. Cae de Ne bose sean hee A ee ect £ Hran e le 0 (. 4) , b
+
+==================== PAGE 81 ====================
+
+TT weewans bU IDO .
+
+SSCCUTe Diisséd approach for the original runway, NOT the one pou wr
+g - are circling fo, . Laue
+_ | baci = OF RO we”
+: ="<e Clearance readback implies acceptance except when? wad ‘tega 62 £
+| You réfinse and cfota reason why . ve s pie = ‘ = a
+oo —== 6 Know VOR reception Emitations (alitinde/distence) _ & ae AS i!
+; . - 4086: 4255 way ta be £ - FQHEUG!
+we *, SE istie ponintecrencs range tora Tecan? 130mm \ BORN
+— 2 —=-® When checking into a tiew Center whet inf do yOu give? |
+=> ; _ *Ds petition, and altimds | nha en pees ad. oy,
+=e Naevaid used Sarthe Ls approach into Montgomery... IEF ch 97 Facam
+- | ___e Ts a voice réport required upon reaching & newly essionsd eitiinds? Wp .
+B Bw As Sf. the. dite fo the eet (
+0 S255. ead : 7 a,
+® tovet Mf Deodisgan 120% Ge- TACH#\ Maes out theese 30 4 ,
+ated Bi 0H ON so og
+> a EE la a
+a _ Pepeeial wet Bps -
+7 co : AD Matha ye,
+tetas" OPT Cathe Beat Ayan Boedou ( Dale perdu
+7 TT on
+
+==================== PAGE 82 ====================
+
+i Veve the dollowtee P “hes inbbed dar qv ick pekveace g
+| ‘ . - Mexwell Aer free BASE - He ; : _ - 7
+. . ; : ’ a
+(EVE JO’ Ab plowed cepremets o¢ 2D sone ot Lh ea
+
+; they AE 0 rie i tole yer wh LC
+
+| . BB le nk oF lO mtn dene
+Decision Hefa ht v5. MDA (sez. leading tnttina. ta App Pleke = on. oone) “
+
+SU? toe ILS we lat ax xinea Cribiae Shey ane min oh ote
+S Hit foe PAR de Ne ot RM a Men Ha fore) G
+
+—=— 115 we Roy AL -- Abrams tagitadton, ALS énop (yess fou have tides che iotast WAC
+
+- - {hoa Koes ie tvs the txmed Penta yet book Bx gslecics dag (
+a Jer | Log clin to 55D (70 ams, vt) aie sell cite big pot. TA ¥ ‘aegh
+7. gre 6fso7 © | _ b
+
+: Vie MX as Aleenete ae g
+
+7 — NMM 2 MF ts £92" | ee
+
+" va Veer ad \atareet = GELS > HP > #30" a J
+
+oy Dil fu’ L abs. haw chbouned - yothetl ow > HD a
+
+. Led he o Br pareefe a ; t
+
+==================== PAGE 83 ====================
+
+3 “heCain Tur, Navy 14123, #1 at the hold skort, ready for takeoff."
+
+> “Navy LA123, McCain Twr, winds are 340 at 10kts cleared for takeoff, switch departure.”
+
+> “123, cleared for takeoff r/v @1, switching.”
+4 ICS “Groove is clear, Vo checks are complete” ©! eh pn Ke .
+
+a 1, align with r/w, pump and hold brakes — [657 pa /fo
+
+] ICS “Brakes hold, MRT checks.”
+
+ICS “Ne overspeed, No overtemp, No Warnings, No Cautions, Good volts, (wipeout entls) Good
+hyds, timeis___, ready to roll.”
+
+Release brakes, start t/o roll with fwd stick. tech - make only 2° corrections for hdg cntl.
+
+> When a/s is > 50kts off the ADI...
+
+> ICS “ars is alive, 90kts (before or at the gear, otherwise abort), good jet going flying, 120 rotate”
+
+> N/U 10°, do not exceed 17 units |
+
+@ 100° AGL (or 400° MSL @ NMM)
+
+a ICS fim IP “clear”
+
+> @ 300’ AGL ( or 600" MSL @NMM) & > 140kis
+
+> ; ICS “flaps”
+
+ae ICS fin IP “clear”
+ICS “clean before 200kts, handle checked (gear handle)” Goins Cold
+
+3 “Sheridan Departure, Navy 14123, passing thousand _ hundred for_ thousand.”
+
+Only time to use hundreds of feet when talking to ATC.
+
+; Accel and when approaching 240-245kts, N/U another 7° for ~ total of 17° N/U to maintain a 250kts climb
+] out.
+Maintain 250 kts below 10k'.
+
+BI stage — Maintain 250kts in the climb even above 10k’
+RI stage - Above 10k’, N/D 3°, accel to & maintain 300kts until intercepting 0.72IMN (at ~25k’)
+
+> Remember if your initial lvV/o is > 10k' do the 10k’/15min. checks, obviously over ICS to IP
+
+Bd L. Fit & Eng. Instruments check
+
+> 2. Cabin Press check |
+
+> 3. Fuel State ___ Tbs
+
+Zz 4. LAW check, set for 5909’
+
+] 5. Location/Navaid setup check
+
+id Begin lvi/o at the lead pt, 10% of VVI/VSI prior to lvi/o altd, by simult.: .
+
+==================== PAGE 84 ====================
+
+> £
+
+» A P) 1200-1400 pph (cruise @ 250ids) |
+
+> Pa A) adj. nose attd for Ivl fit
+
+> LvwVo check of airspeed, altd and clock
+
+» ICS “one five thousand, mark; two fifty, mark” ;
+
+3 | ICS “standby to mark the clock: three, two, one, mark,..., mark time is § secs"
+
+> : FLOW FOR DEPARTURE
+
+> Use 1% of g/s (displayed below ownship on HSI) to determine when to turn onto the arc (most arcs @
+
+> NMM are LODME).
+
+Gouge — turn nit 7.5DME outbd onto a 1ODME arc, you are probably late and will overshoot (hint: tell the
+instructor you will need > 30° AOB to make it)
+
+> Gouge - Tum off a 1ODME arc at 13 radials prior.
+
+a Pine Hill Dept - LRs for 161° rad are either 148° or 174°
+
+4 Dancy Dept — LRs for 007° are either 354° or 020°
+
+L, “Navy 14123, Memphis Cntr, cleared into Pine Hill West or Area 4, monitor btn II or bin & There are
+Ld “Kemphis Cntr, Nevy 14123, cleared Pine Hill West or Area 4, switching.”
+
+: “99, Pine Hill West or Area 4, 123 checking in from the North.”
+
+> Gouge ~ 17.5k° xsit altd for Area 4.
+
+_ fie. (¢! ||. BLOW FOR RECOVERY/APPROACHES
+
+> Bl stage — instructor will give a vector and altd and ask you to check out of the working area.
+> “99, Pine Hill West, 123 checking out for a Key Field recovery.”
+
+> Switch to bin 9, ATL Cntr. |
+
+2 “Ati cutr, Navy 14123, checking out of Pine Hill West ‘for a Eey Field recovery,”
+
+“Navy 14123, Atl Cntr, cleared for the Eey Field recovery,”
+
+Depending on distance and traffic...
+
+> “Navy 14123, Atl Cntr, contact Meridian App, local btn 15.”
+
+> “Atl Cntr, Navy 14123, switching ben 15.”
+? Gouge - If ATIS has not been checked, GET IT NOW prior to switching up App Cntl. (Hint: use back
+
+> radio to get ATIS) (also, Key Field ATIS freq is found on the airport diagram in the high app plates)
+
+> “Meridian App, Navy 14123, level___, request.”
+
+==================== PAGE 85 ====================
+
+af
+
+vA
+
+if
+
+a if . “Navy 14123, Meridian App, go chead with your request,”
+
+” “heridian App, Navy 14123, req. a HI-TCN key field to a PAR at McCain,” °° $0 00> oA ;
+> Xsit to LAF, do the descent/pen checklist and put TWR freq in back radio. |
+
+» @ 35DME . .
+
+> P ~ Idle, bds out
+
+: A-10°N/D
+
+° i OMA my A lJ _ “Meridian App, Navy 2A125, out of one six thousand on penetration for HI-TCN B app at Key,”
+
+~ “Navy IA123, Meridien App, cleared for the FI-TCN app at Key Field. Map instructions are..”
+
+> “Meridian App, Navy LAI 23, cleared for the HI-TCN app at Rey, (repeat MAP instrtuctions),”"
+
+if yon have not negotiated for a follow on app at McCain be sure to do so at the end of the above xanission.
+
+Ld 1000” prior to IvV/o, bds in .
+
+> @ 5300’ MSL (or 5000’AG) :
+
+2 P — adj, if needed, bds in :
+
+ai A — adj. pitch to cut descent rate in %
+
+> Use 1% of ground speed to figure lead point to turn onto arc. .
+
+id Follow the rest of the approach to turn onto final radial of 320° using 1% of ground speed times the #of .
+> radials/nm for the arc distance, _
+
+> Once you are on the final radial slow to 200 KIAS and call for the gear.
+
+Do the landing checks and slow to on-speed,
+
+@ the FAF: Time (start the Clock), turn (N/R), time (N/R), transition (BDS out pwr back a little for the
+
+df descent and say “bds ont, landing checklists complete”, twist (N/R), talk (“Béeridian App, Navy 14123,
+
+> Fly to MDA and then execute a MA and the MAP.
+
+> :
+
+==================== PAGE 86 ====================
+
+w
+
+; MT Cri <r oe fesee 130" Sosve
+> ++ BETESTGOUGE . ce iN SRS
+1, SRI - 3° per second (30°/10 sec) ie yesen
+
+3 Airspeed does not matter...SRT at 140 les is still 3° per second
+
+> 2. 4 SRT ~1 1° per second (30°20 sec) BO dese Bim Jes
+>. | How long will it take to tum210°? 140 seconds s HOsec 55° Im 405
+3 2 a © 6OSe B=. min
+— 3, ange Of 30° or less mount of tam equals angle of bank
+
+you ne to make a tum of 15° of heading change. uss 15° AOB
+
+. umn pattern 2 30° for 60° headine change 2 * 45° Yor 90° heading chenge ; _
+
+— 5. S+1, 5-3 - descent 700 pph, climb 1500 poh | .
+
+» ; — 6 S-1, §-3 - 3 sec lead or 00 f whichéver comes first | Low Tatstunit Ht Caen
+2 } S an 8-3 reverse 4 SRT at beainnine of second descent ' Pevme r oF Bow
+: & Wiens 2 i” ;
+
+; . Coe Ween recovering fom e ditty stall maintain 23.24 unite ADA Oe BNE oo
+
+> . £0; Altttnds Ings whils perfbrmin g Split-S - 60008 ;
+
+> pe Begin loop at 380 kts.and approx, 96% RPM . .
+
+> 3B. Radiel intercepts: one 45° interoagt ex | eo
+
+> . The answers are 135 st 990 ee oe oO" intercept (35°-4Sint
+
+3 Q (can't remember which is for whist
+
+Ld 14, Loss VER? VOR/IES infications diene _ 80 * 30 ia
+
+> 15, Lose GINA? Lose waypoint. 4
+
+>. aa 4 het oo dpe eee een aad groundspeed (a9 GINA advisory
+
+id 16, Groundspeed Caloniats regemee 476, OMe , eT
+
+> 17, Ate to radial — 60/D ME x 1% of groundspesd grea. bm = XLS
+
+> At30 DME end 200 kis rai
+
+3 : £00 Kis yout lead will be 4 radials FibeG |
+
+? ~ 18, Rad ~ .
+
+> *: Radial to ero —1% eroundspeed_ (GS not TAS) : |
+
+> She [CES mo
+

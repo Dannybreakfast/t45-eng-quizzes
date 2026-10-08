@@ -1,0 +1,146 @@
+[
+ {
+  "term": "Descend below _______ feet cabin aft. with an OBOGS Failure",
+  "definition": "10,000"
+ },
+ {
+  "term": "If below 1500 AGL and below 180 knots",
+  "definition": "Eject"
+ },
+ {
+  "term": "Electrical fire immediate action",
+  "definition": "GEN switch off"
+ },
+ {
+  "term": "(2 questions) If put you get a SLATS caution light",
+  "definition": "Maintain a/s less than 200 KIAS"
+ },
+ {
+  "term": "Smoke and fumes in cockpit",
+  "definition": "Altitude descend below 25K, AIR FLOW knob off"
+ },
+ {
+  "term": "With directional control in question, short fleld arrestment:",
+  "definition": "Hook down, land 50 ft prior"
+ },
+ {
+  "term": "Uncommanded roll or yaw when transitioning flaps/stats",
+  "definition": "Return flaps to previous position"
+ },
+ {
+  "term": "OXYGEN warning light, system won't reset",
+  "definition": "OBOGS/ANTI-G switch off"
+ },
+ {
+  "term": "Blown tire after touchdown",
+  "definition": "Rudder (counter swerve) and go around if able"
+ },
+ {
+  "term": "GINA failure",
+  "definition": "All the above"
+ },
+ {
+  "term": "Abnormal MFD",
+  "definition": "Blinking screen, invalid display, blank screen, stuck push button"
+ },
+ {
+  "term": "With barometric altitude failure",
+  "definition": "Use radar alt if below 5K AGL, use cabin altimeter if unpressurized, and check PITOT Heat is on"
+ },
+ {
+  "term": "Engine failure catapult",
+  "definition": "Eject"
+ },
+ {
+  "term": "Immediate Airstart",
+  "definition": "Pull Emerg. Oxygen actuator, throttle off, GTS button, idle"
+ },
+ {
+  "term": "C AUG light on you will lose:",
+  "definition": "ARI, SBI, yaw dampner, and rudder trim"
+ },
+ {
+  "term": "GTS fire",
+  "definition": "Emergency engine shutdown"
+ },
+ {
+  "term": "Cabin pressurization failure",
+  "definition": "Descend below 25K MSL"
+ },
+ {
+  "term": "Compressor stall",
+  "definition": "IDLE, Neutralize, monitor"
+ },
+ {
+  "term": "Blown tire on T/O roll and abort",
+  "definition": "Rudder (counter swerve), Anti-skid off"
+ },
+ {
+  "term": "Blown tire, no arresting gear",
+  "definition": "flared, half flap"
+ },
+ {
+  "term": "CANOPY light in flight",
+  "definition": "Airspeed below 200 knots"
+ },
+ {
+  "term": "Multiple MFDs f°d up",
+  "definition": "Momentarily set Display Power switch to RESET"
+ },
+ {
+  "term": "Total Electrical failure can't restore power",
+  "definition": "No flap approach and make an arrested landing"
+ },
+ {
+  "term": "Windmill airstart parameters",
+  "definition": "Below 25K, 13%, N2 min 250 kts"
+ },
+ {
+  "term": "Abort takeoff",
+  "definition": "Idle, extend, brakes as req, hook 1000 ft prior"
+ },
+ {
+  "term": "Electrical failure",
+  "definition": "No load shedding (eliminates 3 out 4 answers)"
+ },
+ {
+  "term": "Pitot static failure question",
+  "definition": "Standby VSI"
+ },
+ {
+  "term": "Settling off catapult",
+  "definition": "Throttle check full forward, 24 AOA"
+ },
+ {
+  "term": "Launch bar warning light after cat launch",
+  "definition": "Divert to shore, min. descent rate landing with arresting wires removed"
+ },
+ {
+  "term": "Gen failure",
+  "definition": "Confirm engine operation, reset Gen switch"
+ },
+ {
+  "term": "Wheel brake failure go around not possible",
+  "definition": "Brakes release, anti skid- off, attempt braking, hook down 1000 feet prior"
+ },
+ {
+  "term": "AC INV light",
+  "definition": "Reset number 1 and 2 inverters"
+ },
+ {
+  "term": "Hook light still illum after hook should be down",
+  "definition": "Hook is not fully extended"
+ },
+ {
+  "term": "Anti-skid failure",
+  "definition": "Release brakes, anti-skid off, brakes as required"
+ },
+ {
+  "term": "28 VDC gen bus failure will not remove",
+  "definition": "Primary stabilator trim"
+ },
+ {
+  "term": "Fire light in flight",
+  "definition": "Idle, instruments check, secondary-eject"
+ }
+]

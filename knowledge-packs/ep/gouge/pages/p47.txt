@@ -1,0 +1,109 @@
+# Page 47 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+f-45C ENGINEBRING GOUGE
+
+» 1. What two capabilities does the Display Blectrenics Unit possess?
+
+> Mission Computer and Display Computer
+
+5 zg. T/F The Art MEDs operate through the forverd MFDe. ,
+
+a False. They operate independently.
+
+> 3. In what order does the Auto BIT Operate?
+
+DEU, GINA, ADR, MDL, RADALT ;
+
+_d 4. What is the function of the MIL-STD-1553B Multiplex Data Bus?
+
+> DEU interface to ADR, MDL, and GINA
+
+E.| 5, In that format does information travel through the MUX Bus?
+
+- Digital
+
+» 6. How many push-button options are on each MFD?
+
+P| 20 .
+
+7. Name the major components of the Display Systen. ;
+DEU, HUD, 2 DEPs, 4 MFDs
+
+2 8. Name the four types of GINA BITs. ~¥
+
+| Power up, Initiated, Continuous, Manual
+
+P 9, What type data do the Hard-Wired interfaces transmit between the
+
+od DEU and their components?
+
+> ; Analog, video, discrete ,
+
+10. What is the solution to one MED experiencing a display problem?
+
+a Multiple MFDs with the same problem? .
+
+> Turn off the MED
+
+Display Power switch momentarily to reset {cycles power to DEV) .
+
+| 11. Name the major components of the GINA
+
+a GPS and’ INA
+
+12. T/F For the H.S.I. to fully work, you need essential and non-
+
+7 essential power. :
+
+a True, you need both to run. the. VOR/ILS
+
+> 13. With a generator failure, batteries will give minutes of power.
+14. Overvoltage unit takes generator offline if output exceeds .
+
+30.2 VDC
+
+>, 15. Undervoltage unit deenergizes non-essential buses when output drops
+
+— 25 voc .
+
+a - 16..What are the indications of an overvoltage condition? Undervoltage?
+
+d .OVERVOLT: GEN Warning LT, , CAUG
+
+7 Caution LT, RMFD disabled, FPRES Caution LT (>30 sec), HUD fail.
+
+2 fy + UNDERVOLT: GEN WARNING, 35+ Satiowechmes ast) |
+ag 17. How many essential buses ere there? Non-essential? :
+
+> Three (2 AC, 1 DC) for both. _ : ,;
+
+a 18. What is the GBS Idle RPM? ES
+
+4 "86% ors *
+
+a 19. T/F Losing one of the ECA lanes will illuminate the ECA Caution LT.
+
+4 False. Losing one lane will illuminate the ECA advisory light.
+
+a 20. Describe the verifications of an ECA failure (Full. Trim).
+
+RPM decreases, EGT decreases, FF decreases
+
+4 21. Describe the verifications cf an ECA failure (NO Trim).
+
+> at ne pME enSsessee | ROT ANGREESOS - FRMMCESARSS TN
+
+Ps 22. At what quantity of fuel does the FUEL Caution LT illuminate?
+
+s 3501bs
+
+7 23. T/F The FUEL Caution light and the Fuel Gauge receive info from the
+
+Z same float switch. , 7
+
+False. The FUEL Caution LT has its own float switch. -
+l eve
+\ — |,
+: Oo ~~. Fue \ight is Geel Wdica tion of FIRE dog \ ]
+a \ - Nhat are Secondary iWWdicahous & £ Lyre? All af aloove
+>

@@ -1,0 +1,73 @@
+# Page 75 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+13. Know Smoke/Fumes Elimination Procedure
+
+ad a. Altitude —Descend below 25,000’ (if practical)
+
+b. Air Flow Know — Off |
+
+4 If unable to clear smoke or unable to see —
+
+c. Airspeed — Reduce
+
+d. Warn other cockpit / Secure loose items
+
+> e. Seat — Lower
+
+2 f. Visor —Down
+
+g. MDC Firing Handle - Pull
+
+f2 h. Land as soon as possible
+
+7. Jaocs Failure — If it won’t reset, leave OROGS OFF.
+
+- 1 15, Know Generator Failure procedures
+
+a yw gad a. Confirm engine operation
+we b. GEN switch — Reset
+
+c. Voltmeter — Check
+
+If generator resets and voltage is abnormal or generator does not reset
+d. Battery Switches — Check On
+
+| e. Generator Switch — Off
+
+) f. Unnecessary electrical equipment — Secure
+
+= g. Proceed to VMC
+
+h. Land as soon as practical
+
+of If MFD’s are required —
+
+7 i. Display Power Switch -ORIDE |
+> j. Display Power Switch — Norm when MFD’s no longer needed
+
+a If Generator resets and voltage is normal —
+
+k. Continue normal operations
+
+J Ge. Hook Warning Light means hook is not down with handle down.
+
+be ~ 17. If the landing gear handle is down and you only have two gear down and
+locked then you will get a light in the gear handle.
+
+2 "48. Know the 4 things you will lose with a C AUG caution light —
+
+a. Yaw Dampener
+
+b. SBI
+
+4 d. Rudder Trim
+
+| v
+
+y 19, OBOGS contamination (Oxygen Warning Light) = Descent to below 16,060
+> CABIN altitude or Minimum Safe Altitude.
+
+v
+
+M 20. If you get 2 Launch Bar warning light at the boat, you want to divert to a
+field and make a fiared landing after they strip the short field arresting gear.

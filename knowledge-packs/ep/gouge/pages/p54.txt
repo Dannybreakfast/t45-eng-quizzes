@@ -1,0 +1,61 @@
+# Page 54 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+4 |
+No. They will only illuminate with electrical system malf.
+115. ACCEL light means what?
+Steam Ingestion Valve stuck open (10% loss of thrust), or
+@ Initial Shot of Fuel Solenoid is not in commanded position :
+116. What is the feneticon cf the Sub-Idle Fuel Control Unit (SIFCU)? .
+a Deliver proper pressure and pattern to nozzles.
+117. External Gear Box drives what? .
+2 2 Fuel Pumps (LP/HP), 2 HYD EDPs, 4 OIL Pumps (3 scavenge) (rw
+~ 118. What is the min airspeed / altitude to initiate restart after
+flameout? ’ : ;
+1500’ / 180 kts
+cd 119. What is the prime indicator of engine seizure?
+) RPM rapidly decays to zero.
+ES 120. How do you determine that the engine is locked in stall?
+| EGT over 450 for 6 seconds after selecting idle
+121. What does EGT/RPM light mean?
+EGT > 650 +/-8 or RPM 112.4 +/-1.0 (Nl RPM)
+122. How do you shutoff fuel to Engine and GTS?
+Fuel Shutoff T handle
+123. What does FIRE LIGHT mean? .
+t Temp outside engine container exceeds 300 deg C .
+124, What does GTS FIRE mean?
+ed Temp outside GTS container exceeds 300 deg C
+125. What does TP Hot Caution Light mean? :
+Temp outside tail cone inside fuselage can exceeds 150 deg C ;
+ed 126. What does HYD 1 supply hydraulic power to?
+General Services and Flight Controls
+127. What does HYD 2 supply hydraulic power to?
+- Flight Controls
+128. What is the indication of an operabie RAT?
+z HYD 2 fluctuating between 2500-3000 .
+_ 129. If HYD Z and RAT fail, what effect on total HYD systen?
+. None. HYD 1 still operating everything normally.
+130. If HYD 2 is leaking, will RAT do the job.
+) No.
+131. HYD 1 light on below . Resets at .
+1660 +/-110. 2000.
+> 132. What pressure is required to reset HYD 2?
+; 1800 psi . .
+3 133. What is the Nitrogen preload of the Emer Brake/Flap sys?
+1300 +/-50
+134, If Brake Accum drops below 2200 psi, what happens?
+; Emergency Flap accuation is removed to isoloat Emer Brake
+- 135. Brake Accumulator gauge is reading what?
+cd Nitrogen pressure
+2 136. Flight control accumulators have precharge of what?
+A 1100 +/-50 psi nitrogen
+of 137. When is ANTI-SKID activated and deactivated? py. =
+> Accelerating above 30 knots and decelerating below 10-13 kts
+4 138. With HYD 1 failure, does hook work?
+a : aoe -o—Yest Pneumatic-and- snubber--to-put-and..lock=«down...(Can!traise)_. 4... ..
+> Q 139. ANTI-SKID off, carrier janding, ,and HYD 1 fail: ro
+4 ’ Blow tire, parked , sh “light Ow (cette) (6)
+4 140. LBAR is raised and lowered how?
+a Lowered by HYD 1. Raised by mechanical spring.
+441. If the FC has control of the CNI systems
+a anewer:/ _..the RC can select any MED display within the system
+a

@@ -1,0 +1,64 @@
+# Page 38 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+Pase erough Annee Ge parsfet peed Soc! ace ad 140 iccAS, b
+
+after 10 sec. Delay. <)
+
+75gph additional fuel allowed for acceleration by shot of fuel solenoid below 7200'msl |
+25.2 capacity of engine oil tank and systems in US pints __ e
+9.6 unusable or trapped oil in engine oil system in US Pints bs
+0.8 maximum consumption rate of engine oil in pints per hour a
+12-joule power rating of two dc ignition plugs _
+__-____ knots airspeed range for in-flight GTS start attempts be
+Ye 24V minimum voltage for engine start a
+*MSL maximum altitude for in-flight GTS start attempts a
+
+. 9500 +/-300' MSL shot of fuel solenoid closes as aircraft climbs through this altitude os
+7700 +/-' 500 MSL shot of fuel solenoid opens as aircraft descends through this altitude b
+F405-RR-401 Model number of Rolls Royce engine _
+15,512 N2 rpm at 100% axa Y
+100 the RO-FAFION-advisory light illuminates when NI rpm reaches tins in the é
+correct direction. Ignition begins too. be
+
+18 Number of fuel nozzles in engine a
+5 number of high pressure (N2) compressor stages a
+2 number of low pressure (N1) compressor stages
+Bypass air from the N1 compressor 1. Cools the engine, 2. Provides increased thrust, 3. Provides noise 4
+Reduction S
+
+TIF Under manual fuel control the compressor bleed valve remains closed at all engine speeds except q
+5" stage compressor bleed air supplies 1. Environmental system, 2. OBOGS, 3. G-suit, 4. Fuel tank C
+pressurization
+
+Steam ingestion bleed valve provides increased bleed air flow when 1. Weight on wheels, 2. 70% N2, and €
+3, LAUNCH BAR not retracted qd
+
+the ACCEL caution light illuminates when 1. Steam ingestion bleed valve not in commanded position (2sec ¢
+delay), 2. shot of fuel solenoid failure |
+
+the engine accessory gearbox drives 1. Hydraulic pumps, 2. DC generator, 3. LP fuel pump, 4. HP fuel e
+pump, 5. Engine oil pumps, and 6. N2 tach-generator (|
+
+in the FCU dampens throttle valve response during rapid throttle movements. |
+
+(Acceleration Switch) ¢
+maintains constant pressure drop across throttle valve compensating for airspeed and altitude q
+
+changes. (Servo Pressure control). ¢
+
+The in the FCU trims basic fuel flow in response to ECA (Solenoid (Fuel Trim)) |
+é |
+
+The automatically prevents overspeed/overtemp conditions by monitoring N1 and two (.
+thermocouples behind the N1 turbine. (Engine Control Amplifier) ° |
+
+The meters a fuel supply to the fuel spray nozzles during the start cycle. a
+(Sub Idle Fuel Control Unit) |
+
+T/F The ECA contains two identical lanes, and after engine start, the lane with the lowest fuel flow A
+setting takes priority. (TRUE) '¢
+
+Engine operation in manual fuel control is similar to normal except 2. Airstarts require throttle modulation, v
+2. Idle rpm up to 5% lower, 3. Slower engine acceleration without dashpot, 4. Bleed valve closed ¢
+
+e

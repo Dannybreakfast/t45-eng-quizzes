@@ -1,0 +1,50 @@
+# Page 65 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.65]).
+
+ot, BIWEP ~O6X" Exam, -Goveg .. SOY RODGERS © & SO h
+4¢. KNOW “THE BoLd. FACE SS on le
+
+XK ECAR CAvTION LicHT — QD do ver exceed ‘FOU, T. 20,0007 of . a
+
+; ; — ‘Be Not eCxceep Gov. YY Ze, oso , Do-Nnor exet
+
+: ‘600°C Let . a ee |
+
+. a b
+$6 FLRE wARwinNG LitHT ~ Bo Nor vs AIRSTART ,. ARE PARE For erect |
+ME Sérvezve OFF CATAPLLT —. MAINTAIN Z4 vsrrs AeA * _ -
+‘CATA PULT @eircu Ot .
+Me. HYd Zz FAILURE — Hy 1 PREegsOné — Monitor, - (Nor Accum LATOR’) q
+
+; Ba ; oo |
+a *¥ STALL. ~ FuRsr step OM TReTTLE - TaLeE CBANEs , €6T T , RPM): 3
+—-_ELAMsovr = Fiest S16P- D Teorrte sone 4
+STALLS - DO You PéRPoRM AlesmeT — no . =
+
+_ : -¥ € O firet q
+
+Do Yo Pvle Emenee OZ ~No Oo €
+~ FLAMEeot — YOvy dF THose Exesr s .
+
+aC Hyst FAiLURE -~ MAMA BEAR, Emenesuey FLAPS, ARRextED LANDING (|
+c, WHat Bo You HAVE AVALLABLE, You DanT HAVE Gewepar service
+oo ANSWER + ALL tue Above Co 4
+ELECTRICAL FAILURE — KNow WHAT “ALSo Nor AVAILABLE \* FRARS [Emerg “ot
+
+KK S€cowdARY FNOMKATIons of FIRE: Lez p , Fveu Plow 7, Fike Liew C
+- oo . . |
+
+Ske Grs FIRe€ PERst STEP: TROLS (D ENGING Switeld ~ OFF . C
+. @tRotwe ~ off b
+
+; a. oo, “
+
+WE. OvERSPEED. START —~ TRaTILE OFF »
+BS NO NWS. ~ USE DIFFERWTIAL. BRAKING : ae 4
+SE EEctTION — Convert AIRSpeed +o ALTLTUNE, ZTE FLAEEHT CowrTRe_s vom ch
+, ABLE &.
+
+Ye Bont Have Wane man Tonep ~ AFTER MIDAIR . | Evec.
+w% Blown Tiree — Anz -sSkID CFE Con T/o or LANDING ) , t
+ye bIvehHWe — GEAR TY FLAPS . 4
+SK EM Me bale AIRSTART ~ ON ANY ENGaalE eAipe! Covronh % 100 < gob

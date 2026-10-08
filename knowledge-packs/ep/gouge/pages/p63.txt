@@ -1,0 +1,10 @@
+# Page 63 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+# NOTE: page is mostly HANDWRITTEN, so the OCR below is largely garbage. A manual transcription of the EP content is in ../ep-extract.md (search [p.63]).
+
+CAG Toium FAILugé bt v TES; PALE OFF 4q
+BLAN ic , BLA“CTVG peTecke fUsyvurme.) — vw Neen... ]
+tA em as Paes WF |
+
+LAII ITO OL Fu 774) €CR L displ D. f 7 fowe 7 ve fe Kor all Sys q
+
+| |

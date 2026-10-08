@@ -1,0 +1,57 @@
+# Page 17 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+max, ace es
+
+. “ Ww “ eo .
+o- & Max. Power off glide RANGE pot oe
+
+Neutral Trust is on longitudinal stability
+
+Area Rule NOT a T-45 Design
+
++Reduce “Rudder Buzz” . Rudder shock stabilization strips
+
+“Vortex Generators Improve aerodynamic stability, performance and /or flight
+control effectiveness. Force wing downwash further below the
+stab, eliminating pitchup tendencies. Also improve slow speed
+flight by redirecting wing airflow and reenergizing the boundary
+layer.
+
+J Stall Strips Cause the root to stall at lower AOA by inducing premature
+boundary layer separation at high AOA The wing tip is more
+prone to stall because of lower camber and shorter chord Jength
+ad at the tip. Boundary layer is also lower at the tip, aggravated by
+. spanwise flow and leading edge vortexing.
+ >250 Ibs of pressure Force req’d to overcome Rudder blow out
+
+Know spin recovery for upright and inverted
+
+4 ‘Nose pitch up 20 degrees Accelerated stall w/no extemal stores, second indication of
+
+2 Uncontrollable pitch up AC moves in front of CG at stall. CG in front of AC = More
+bs stability less control. CG close to AC = less stability more
+
+> a oo ” control.
+
+JQ. _ Airmass flow in slugs per second
+
+\
+
+2 ‘ Critical Mach Number s *S The free-stream Mach number at which a local Mach number
+| Ly, Ry \ of 1.0 is attained at any point on the body under consideration
+SY fy > | |
+
+Dutch Roll Sug ON _Lew Alspoet Weak directional, Strong lateral
+
+Nose away from X-wind Cross wind does what to nose of T-45
+
+> \ 21.5 units Stall warning at % flaps
+
+Upright and Inverted spins Rudder opposite for what type of spins?
+
+0 AOA, Neg. G's, rum necdie™ inverted spi 1s characterized by?
+direction of spin
+
+q Moving forward of CG question; If CG moves forward what happens , answer says maneuvering and then stability.
+
+1 0.8 Critical mach #, slight nose down pitch

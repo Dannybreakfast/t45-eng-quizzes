@@ -1,0 +1,49 @@
+# Page 18 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+>
+
+AERO GOUGE
+
+1. Approach Stall AOA? 29-30 / oki As -
+
+2, Clean stall AOA? 26 /O4%/A!
+
+3, Optimum AOA NO FLAP? 17 | |
+
+4. % Stick w/heavy wing Mach .92-.95
+
+s (4450) w/full Flap dry RNWY- |
+ee :
+
+6. Rudder shakers both c/p both pedals
+
+7. Bingo 161 CAS |
+
+-g, 45° upright spin (5,000 ROD _/ oy
+
+¢ —— ec, -~ 2
+
+5 9, Airspeed 50-120 (-60 inverted sin) —> Oo e
+
+3 10. Treurve Down/left w/weight reduction .
+11. Thrust effected by Temp, ALT, RPM Netetisepeed RAT
+
+be 12, Sweep and Thickness to cord Ratio Improve transonic flight (not leading edge
+radius)
+
+| 13. Density ALT increases LAS stays constant TAS increases: longer Rollout on /#Z .
+2 landing 7 OO )
+
+14. Two pilots CG moves for increasing stability
+
+3 15. CG forward limits increasé stability .
+
+16. CG Aft limits decreased stability
+
+17. External stores decreases stall by 1 AOA all configurations '
+
+3 18. Spiral divergence- Strong Directional, weak lateral. or* LUCE
+
+A 19. Mach tuck under- Aerodynamic center moves Aft, nose pitches down
+
+20. Max abort 125 (not 129) : |

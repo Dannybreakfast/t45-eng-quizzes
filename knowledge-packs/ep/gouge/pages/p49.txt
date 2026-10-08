@@ -1,0 +1,59 @@
+# Page 49 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+24, What are the verifications of 2 steam ingestion valve failucé? 9°
+OPEN - RPM lower, EGT higher, decreased thrust and acceleration
+Hf CLOSED - Engine surge/ stall due to, steam ingestion ‘teat. shot) . .
+25. On engine start, when does the GIS shut down? ~ : a a
+N2 = 458%
+sad 26. When does the HYD 2 Caution LT illuminate? When does it extinguish?
+HYD 2 EDP below 1660 +/-110 rt Ores Sane ee
+EA HYD 2 EDP above 2000 ; L : _
+ad 27. When does the RAT deploy? - may re oe
+HYD 2 EDP below 1500 aan ERR
+| 28. When does the HYD 1 Caution LT illuminate?
+> SYD 1 EDP below 1660 +/-110 (6éms¥a&0-before=neo~lnt) at @ Eas
+>) 29. What is first indication of HYD 1 slow pressure loss? (se HYD "D gince
+1500 psi, loss of general services (no light before AFC 244)
+30. When can the RAT be reset? How will you know it reset?
+1800 psi HYD 2 EDP pressure
+sd HYD 2 Caution LT will extinguish at 2000 psi HYD 2 EDP pressure
+she 31. T/F The Wheel brake/ Emergency Flap Accumulator allows for 10 wheel
+brake applications and Flap/Slat extension in the event of HYD 1
+) False. Allows for 10 wheel brake applications and Flap extension
+a only (no Slats) ;
+v 32. At what pressure will the Wheel Brake/Emergency Flap accumulator
+» shutoff access to the flaps?
+2200psi
+2 33. How and when is the HYD 2 bypass valve closed after engine start?
+HYD 2 RESET button once engine is above 45% N2
+: 34, When does the WHEELS Warning LT illuminate? ‘27 “% 5 &
+a) Altitude less than 7200/ MSL and airspeed less than 170kts ox;
+bp) FLAPS/SLATS lever not in up pesition a ,
+> 35. Where is the ANTI-SKID switch located? nn ain wee,
+9 Left console, both cockpits . — . .
+a 36. I/F If one ANTI-SKID switch is. off, the anti~skid system will not
+operate. | | ve ’ rape pi ME
+» , True: ty | ASB a an Yar’ o f y w Moy Mey ,
+ef 37. Name the general services lost when HYD fT drops bélow 1500 ‘psi. - *
+a “Normal gfe ° ayuppect Brakes So She ‘-
+4 -Normal Brakes | oo “Hook Retract a
+4 38. When does ‘SLATS Caution LT illutinate? .
+Slats not in selected position
+* / {Split Slats ro, po ms
+peor slats iektended’and: airspeed increases, above 217 kts : aaa :
+7 Slats selected above 217 kts (slats won! t extend) “ot
+39, What is the function of the paddle switch on the stick? ° ,
+Disengages NWS and Control Augmentation
+> 40. When does the SKID Caution LT illuminate?
+» Failure condition detected by anti-skid.control box. oo.
+41, When does the skip Advisory LP.illuminate?f.., >). pov apes oe
+> Ss __ :ANTI-SKID. selected and. gear: down: and locked. fe
+A 42. How do you disengage the CAUG system? Reengage?
+ed Paddle Switch on stick! O77. MOL ee
+al 43, What are the three positions on the CRUG switch and functions?
+a ALL - Dutch Roll, ARI, SBI, Rudder Trim
+| SBI — Rudder Trim, SBI
+> » Kailuve of bleed E valve 4c close wirtl cavse less of furs) at mie’,
+> PAntis¥id suitckes 7 ONE OFF hen xe system ofl
+> . Loos ol ome nvecter will Veg ht AE IDV cavitm Light ond = loss ct AC ne-ess.
+2

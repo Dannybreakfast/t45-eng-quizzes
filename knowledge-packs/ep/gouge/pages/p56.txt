@@ -1,0 +1,44 @@
+# Page 56 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+168. Describe Hot, Hung, Wet starts. ~ 7
+Hot: FF and RPM to normal Idle indications, but ECT rapidly to
+~ 556 oz to 570 fcr more than 10 seconds
+Hung: RPM stagnates IVO 45% but EG? continues to rise ;
+Wet: PR rises normslly, but ne BET/PPM within 18 seconds s* idles
+3k 169. GEN Warning light extinguishes on start at___, comes on at on
+shutdown.
+A5% 42% .
+a x 170. OIL PRESS light goes off at on engine start.
+> 18% (18-20)
+%K 171. Selecting ANTI-SKID off and CARRIER mode does what?
+Provides 2 second delay for Approach Idle upon WoW
+172. GTS light must appear within ___seconds of initiating GPS start.
+173. Must have READY light within _.. seconds of selecting start.
+15
+» 174. What does READY light mean? ayt\
+» GTS at full speed, N1 at 100¢ in right direction, DOW. ow
+ES 175, Start Limits: : a
+Ld FF: 300-400
+EGT: 550 (570 for 10 sec) |
+RPM: 52 +/-2 (within 30 seconds of idle
+4 176. Idle limits:
+FF: 300-400 ;
+a“ EGT: 450
+RPM: 55 +/-2 (1% for every 1500’) .
+] 177. Engine Limits:’ ;
+a FF: 6410 max
+EGT: 610 max @ MRT
+: 550 continuous
+a 645 transient (20 seconds)
+| 600 airborne start (650 overshoot 10 seconds)
+ao */,RPM: 104 max (less than 30 minutes per flight hour) Pr
+Ad 104 transient (20 seconds max)
+100 max continuous ;
+ia . 55 +/-2 idle
+ie 178. GINA uses GPS/INS with what software?
+Kalman filter (software -NOT System)
+? 179. Initial Shot of Fuel Solenoid is actuated when? Off when? a
+on ‘ Descending through 7700 +/-500' MSL
+Ascending through 9500 +/-300' MSL
+> 180. When is RAM air activated?
+4 With WoW.

@@ -1,0 +1,15 @@
+# Page 6 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+(A,E,B,D,F, if different use PCL!) 1) Throttle OFF, 2) Engine Switch-OFF (both Cockpits), 3)
+
+Fuel Shutoff - PULL, 4) BATT switches — OFF, 5) Emergency Egress
+
+23. During ACM you get a HYD caution light, RAT caution light and then the HYD light
+extinguishes you should: Reset HYD 2 (correct but not the first thing to do, Instructor took
+note & future test may be changed)
+
+24. First step in the EGT/RPM warning light: Neutral/IDLE
+
+25. If NWS AUG goes on during taxi, you should: Momentarily press NWS button.
+
+26. GTS Fire on deck: Emergency Shutdown

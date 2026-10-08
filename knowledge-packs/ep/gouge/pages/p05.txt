@@ -1,0 +1,55 @@
+# Page 5 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+Timms Gouge EP Test 1, old gouge still holds as well
+
+1. Engine fails to light off with in 15 sec from putting throttle to idle — Wet start
+
+2. Audible bang, Increase EGT, RPM lowers = Engine Stall
+
+3. During descent passing 7000 MSL, ACCEL Caution light — expect slower engine acceleration
+during an approach
+
+4. HYD 2 pressure failure, RAT will maintain HYD 2 pressure at 2500-3000
+
+5. Taxi clear of active, NWS malfunction- aircraft would be steered by differential braking
+
+6. If aborting with a blown tire, set ANTI-SKID switch ON — (False)
+
+7. ECA 2 Caution light- land as soon as practical and do not exceed 90% above 20K MSL, 95%
+below 20K MSL, do not exceed 600 deg EGT
+
+8. Just flamed out, airspeed is 150 and at 1000’ you should — Eject
+
+9. Abort procedures- IDLE, BOARDS retract, BRAKES, HOOK (1000 ft. prior)
+
+10. LP PUMP light in flight- avoid abrupt throttle movements and set min for flight
+
+11. What requires an immediate shutdown on deck w/out 2ndary indications- FIRE light illums
+
+12. When flying @ 15K, TP HOT light- Throttle idle (min safe flight)
+
+13. On cat stroke, aircraft settles- Throttle full, check 24 AOA, if settle continues Eject
+
+14. Launch bar system is — electrically controlled, mechanically extended, and hydraulically
+retracted
+
+15. Engine failure on cat stroke and unable to eject- ditch straight ahead
+
+16. For HYD 1 or HYD 2 Failure 1* consideration- Reduce A/S below 300 KIAS/.6 MACH
+
+17. After F PRESS light illuminates and checking engine switch on you should- avoid negative G
+maneuvers
+
+18. While cruising 23K you get FIRE light, with 2ndaries- EJECT (not prepare for controlled
+ejection)
+
+19. NWS AUG system provides yaw rate feedback in high gain nose wheel steering — false (yeah
+we had no f’ng idea either)
+
+20. 3-41 questions that deal with procedures for COMP Stall and EGT RPM Light. Know the first
+3 steps in that procedure and that’s 3-4 free questions.
+
+21. If you get a HYD 2 failure, monitor HYD 1 Presssure
+
+22. Executing the Engine Fire Emergency Shutdown on the Ground, state the procedures
+verbatim

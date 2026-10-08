@@ -1,0 +1,43 @@
+# Page 19 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+; S= Force Divergent Mach Number- Know what it means-(P 15) 665 9 7HE “ACH Ur
+iB “EC, ANtp Tl PR bE To WAVE DeAG
+' 23. Disadvantage of swept wing- High AOA stall decrease C (component of Tt)
+
+24, Mach=TAS/SOS’° . : | So
+oo 25. L/D max> max endurance, power off glide, climb angle
+
+26. Thrust is Nuetralon longitudinal stability .
+27. Area Rule Not a T-45 Design ,
+
+28. Rudder shock stabilization strips- Reduce “rudder buzz”
+
+29. Vortex Generators- 1) Prevents wing dowawash from interfering with stabilator
+
+2.) slow A/S performance increases, lowers stall speed
+
+3.) maintam boundary layer pg 23, 31
+
+> 30. Without boundary layer seperation bullshit a swept wing stalls tip frst Pg 29 stall
+
+| 31 Rudder blowout >250 lbs of pressure
+
+, 32. OCF Rudder, Lateral input control opposite for INV and Upright. upright Aifleron
+
+same, Inv cross control
+
+33. Good luck on the other 7 yee
+2D 4 34. Accelerated stall w/no external siores- pitch up 20!’sscond indicator of
+
+¥ impending stall p¢e33—
+
+| 4 35; Thrust effected by RPM, ALT, TEMP |
+
+We } 36. AC moves Front of CG at stall- Uncontrollable pifch up
+
+f an 37. Q: is mass Air flow in slugs/ Sec .
+
+4 "38, Critical Mach # Definition- Free stream mach # @ which a local mach # of 1.0 is |
+2 attained at any point on the body under consideration, .8 for the T-45
+
+ty Gah. 39. Dutch Roll- lowsirspsed, strong lateral, weak directionel a |

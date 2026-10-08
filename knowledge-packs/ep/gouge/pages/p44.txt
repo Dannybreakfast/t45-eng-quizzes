@@ -1,0 +1,57 @@
+# Page 44 — source: tesseract 5.5 --psm 6 on 300dpi render (pdftotext returned no text: page is a scanned image)
+
+|
+
+T/F the weight on wheels switch inhibits launch bar switch from remaining in extend we
+position when airbomme (TRUE) a
+
+a
+
+ARRESTING HOOK System (NATOPS 2.13) be
+950psi +/-50 pressure of arresting hook nitrogen preload |
+300 knots airspeed above which HOOK warning light may illuminate due to airloads =
+6 sec approximate hook transit time up Lo
+1.5 sec approximate hook transit time down b
+the HOOK warning light is illuminated when HOOK handle does not correspond to hook position -
+T/F moving the HOOK handle to the down position hydraulically releases the up latch >
+assembly and switches a hydraulic selector valve to remove HYD 1 pressure we
+
+(FALSE, it mechanically moves both) a
+
+BOARDING System (NATOPS 2.14) €
+TIF both pull-out footsteps can be retracted from inside the cockpit (FALSE, front only) a
+CANOPY System (NATOPS 2.15) c
+95% rpm above which caution tone sounds with CANOPY caution light illuminated |
+45 knots maximum side winds allowed for canopy to remain open |
+4" free travel range of MDC firing handle b
+EJECTION SEAT System (NATOPS 2.16) q
+18,000' MSL altitude at which drogue bridles are released during Mode 5 ejection sequence b
+0.5 sec backup delay initiator between seats ia
+0.4 sec interseat sequencing system delay a
+30-60 Ibs. Force required to initiate ejection “
+60-70% rpm above which SEAT UNARMED caution light will illuminate eC |
+ENVIROMENTAL CONTROL System (NATOPS 2.18) <
+150°f (@7 °c) temperature at which AVIONIC HOT caution light illuminates with weight on wheels 7a
+5 sec time in seconds between each rotary valve movement in oxygen concentrator 6
+60/40 approximate airflow split between ventilation and defog with airflow knob in normal @
+Notes Going Retar- Kol éo a
+
+T/F in the event of complete electrical power loss, air conditioning and pressurization will ; er
+remain on (TRUE, the PRSOV IPRSOV valves deenergize to the open position) a
+
+|
+
+The ram air inlet and outlet valves are open when 1. Air flow know is in the off position 2.W-O-W ie
+TF the AVIONIC HOT caution light is only operative on the ground (TRUE) |
+Conditions that will cause CABIN ALT warning light to illuminate 1. Air conditioning failure causes i
+overpressure to the CAU compressor 2. The CAU compressor outlet temperature rises above 500°f, 3. The eo
+
+CAU turbine inlet temperature rises above 250°f cabin pressure failure only when cabin altitude is above _
+ON-BOARD OXYGEN GENERATING System (NATOPS 2.19) a
+5 sec time in seconds between each rotary valve movement in oxygen concentrator b
+250°f * temperature at which overheat temperature sensor illuminates OXYGEN Warning light C
+40000' MSL altitude above which full 4.0 psi cabin pressure is obtained A
+35000' MSL cabin altitude above which oxygen is supplied at full pressure ,
+35000' cabin altitude above which oxygen is supplied at increased pressure €
+24500 +/-500' _— cabin alt above which CABIN ALT warning light will illuminate yA DNEQREALH OVER PRESSURE OE OLD ART
+9500' MSL altitude above which a low oxygen concentration will cause OBOGS to shutdown Unt a
