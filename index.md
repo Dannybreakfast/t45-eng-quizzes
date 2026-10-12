@@ -2,7 +2,7 @@
 
 Offline multiple-choice practice. Missed questions are requeued until mastered.
 
-**90 quizzes · 1717 total questions**
+**90 quizzes · 2091 total questions**
 
 ## [ENG](section-eng.html) — Systems / Engineering
 
@@ -107,25 +107,25 @@ Offline multiple-choice practice. Missed questions are requeued until mastered.
 
 ## [BI](section-bi.html) — Basic Instruments
 
-- [BI 1101 (1) BI Lecture Intro](bi-1101-1-bi-lecture-intro--E4z9uTpBZ-A.html) — 10 Q
-- [BI 1101 (2) Ground Operations](bi-1101-2-ground-operations--tPQXdnCy11g.html) — 13 Q
-- [BI 1101 (3) Departure and Course Rules](bi-1101-3-departure-and-course-rules--maf9ld_HJ0g.html) — 17 Q
-- [BI 1102 BI Flight Procedures Intro](bi-1102-bi-flight-procedures-intro--Eu2_8D-cf6s.html) — 9 Q
-- [BI 1103 (1) Turn Pattern](bi-1103-1-turn-pattern--2cWvETxlPm4.html) — 8 Q
-- [BI 1103 (2) Standard Rate Turn (SRT)](bi-1103-2-standard-rate-turn-srt--PRN3FZf0_Zw.html) — 7 Q
-- [BI 1103 (3) Half SRT](bi-1103-3-half-srt--eRxodBvCbPQ.html) — 7 Q
-- [BI 1104 (1) Constant Airspeed and Rate (Climbs and Descents)](bi-1104-1-constant-airspeed-and-rate-climbs-and-descents--j0vYyez95kQ.html) — 5 Q
-- [BI 1104 (2) LSCs (Half SRT)](bi-1104-2-lscs-half-srt--0hR37SYvyEA.html) — 6 Q
-- [BI 1104 (3) Slow Flight Maneuver](bi-1104-3-slow-flight-maneuver--heLQ61vTuIU.html) — 9 Q
-- [BI 1105 (1) S-1 Pattern](bi-1105-1-s-1-pattern--hSkFAdF_b1s.html) — 6 Q
-- [BI 1105 (2) S-3 Pattern](bi-1105-2-s-3-pattern--63StuGJBwMk.html) — 4 Q
-- [BI 1106 (1) Stalls](bi-1106-1-stalls--kqWefnfLqGc.html) — 5 Q
-- [BI 1106 (2) Unusual Attitudes](bi-1106-2-unusual-attitudes--D3_vXeH_CzQ.html) — 4 Q
-- [BI 1106 (3) Wingover](bi-1106-3-wingover--q6AT62jmP44.html) — 4 Q
-- [BI 1106 (4) Barrel Roll](bi-1106-4-barrel-roll--0LfcEq8e1CI.html) — 3 Q
-- [BI 1107 (1) Recovery from the MOA](bi-1107-1-recovery-from-the-moa--mC8SrWqQOPc.html) — 8 Q
-- [BI 1107 (2) Recovery from the MOA](bi-1107-2-recovery-from-the-moa--0M7x9FnP8Pk.html) — 9 Q
-- [BI 1108 Malfunctions and Conclusion](bi-1108-malfunctions-and-conclusion--yjj5B6d__R8.html) — 7 Q
+- [BI 1101 (1) BI Lecture Intro](bi-1101-1-bi-lecture-intro--E4z9uTpBZ-A.html) — 19 Q
+- [BI 1101 (2) Ground Operations](bi-1101-2-ground-operations--tPQXdnCy11g.html) — 38 Q
+- [BI 1101 (3) Departure and Course Rules](bi-1101-3-departure-and-course-rules--maf9ld_HJ0g.html) — 56 Q
+- [BI 1102 BI Flight Procedures Intro](bi-1102-bi-flight-procedures-intro--Eu2_8D-cf6s.html) — 17 Q
+- [BI 1103 (1) Turn Pattern](bi-1103-1-turn-pattern--2cWvETxlPm4.html) — 25 Q
+- [BI 1103 (2) Standard Rate Turn (SRT)](bi-1103-2-standard-rate-turn-srt--PRN3FZf0_Zw.html) — 27 Q
+- [BI 1103 (3) Half SRT](bi-1103-3-half-srt--eRxodBvCbPQ.html) — 24 Q
+- [BI 1104 (1) Constant Airspeed and Rate (Climbs and Descents)](bi-1104-1-constant-airspeed-and-rate-climbs-and-descents--j0vYyez95kQ.html) — 21 Q
+- [BI 1104 (2) LSCs (Half SRT)](bi-1104-2-lscs-half-srt--0hR37SYvyEA.html) — 23 Q
+- [BI 1104 (3) Slow Flight Maneuver](bi-1104-3-slow-flight-maneuver--heLQ61vTuIU.html) — 37 Q
+- [BI 1105 (1) S-1 Pattern](bi-1105-1-s-1-pattern--hSkFAdF_b1s.html) — 23 Q
+- [BI 1105 (2) S-3 Pattern](bi-1105-2-s-3-pattern--63StuGJBwMk.html) — 23 Q
+- [BI 1106 (1) Stalls](bi-1106-1-stalls--kqWefnfLqGc.html) — 22 Q
+- [BI 1106 (2) Unusual Attitudes](bi-1106-2-unusual-attitudes--D3_vXeH_CzQ.html) — 15 Q
+- [BI 1106 (3) Wingover](bi-1106-3-wingover--q6AT62jmP44.html) — 13 Q
+- [BI 1106 (4) Barrel Roll](bi-1106-4-barrel-roll--0LfcEq8e1CI.html) — 14 Q
+- [BI 1107 (1) Recovery from the MOA](bi-1107-1-recovery-from-the-moa--mC8SrWqQOPc.html) — 51 Q
+- [BI 1107 (2) Recovery from the MOA](bi-1107-2-recovery-from-the-moa--0M7x9FnP8Pk.html) — 41 Q
+- [BI 1108 Malfunctions and Conclusion](bi-1108-malfunctions-and-conclusion--yjj5B6d__R8.html) — 26 Q
 
 ## [CO](section-co.html) — Cockpit Orientation
 
