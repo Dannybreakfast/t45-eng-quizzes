@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Checklist 2. Post-Start, Clearance &amp; Plane Captain — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Checklist 2. Post-Start, Clearance &amp; Plane Captain</h1>
+    <div class="meta">34 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 34</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Checklist 2. Post-Start, Clearance &amp; Plane Captain</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "Post-Start step 1: signal for 70% check:", "opts": ["thumbs up", "shake left fist", "sideways 2/peace sign", "two fingers with left hand"], "ans": 2, "expl": "Doc (Checklist walkthrough): 1. Give 70% check signal to lineman (sideways 2/peace sign)"}, {"q": "While throttling to 70%, set RMFD and LMFD to:", "opts": ["RMFD: Data-Aircraft; LMFD: Menu-BIT", "RMFD: Data-GPS; LMFD: Menu-BIT", "RMFD: HSI; LMFD: ADI", "RMFD: Menu-BIT-Maintenance; LMFD: Data-Aircraft"], "ans": 3, "expl": "Doc (Checklist walkthrough): 1. RMFD: Menu-BIT-Maintenance 2. LMFD: Data-Aircraft"}, {"q": "At 70%:", "opts": ["Fuel Control Switch - Hold in test first", "Hyd2-Reset", "Throttle - Idle", "Contr Aug - Reset"], "ans": 1, "expl": "Doc (Checklist walkthrough): 3. When RPM gets to 70%: Hyd2-Reset. Look for hyd2 pressure to go to 3000 psi and hyd caution light to go out"}, {"q": "After Hyd2 reset, HYD 2 pressure should go to:", "opts": ["3300 psi", "1250 psi", "2700 psi", "3000 psi"], "ans": 3, "expl": "Doc (Checklist walkthrough): Look for hyd2 pressure to go to 3000 psi and hyd caution light to go out"}, {"q": "Fuel Control Switch - Hold in test: max RPM drop:", "opts": ["6%", "2%", "10%", "7%"], "ans": 0, "expl": "Doc (Checklist walkthrough): Check RPM (max drop of 6%). ... Make sure M Fuel light comes on while holding in test."}, {"q": "Back at idle after the 70% check, verify:", "opts": ["N2 56.5+/-2% and EGT drops 50 deg C", "N2 70% and EGT below 450", "N2 52+/-2% and EGT drops 20 deg C", "N2 56.5+/-5% and EGT rises 50 deg C"], "ans": 0, "expl": "Doc (Checklist walkthrough): 5. Throttle - Idle. Check N2 56.5+/-2% and EGT drops 50 deg C (this means the bleed valve closed on the run up to 70%)"}, {"q": "The 50 deg C EGT drop at idle means:", "opts": ["the GTS shut down", "the bleed valve closed on the run up to 70%", "manual fuel is engaged", "the bleed valve opened on the run up to 70%"], "ans": 1, "expl": "Doc (Checklist walkthrough): (this means the bleed valve closed on the run up to 70%)"}, {"q": "MFD check call:", "opts": ["“Mask on, Flow on”", "“No Exceedances, No Overflows”", "“Good tone, Good BIT”", "“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”"], "ans": 3, "expl": "Doc (Checklist walkthrough): “No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”"}, {"q": "Quals should be decrementing down to:", "opts": ["00.59", "00.00", "01.59", "3.00"], "ans": 0, "expl": "Doc (Checklist walkthrough): Quals should be decrementing down to 00.59. C AUG BIT will not work in sim until the quals are below 3.00."}, {"q": "C AUG BIT: indication the BIT is running:", "opts": ["NWS caution extinguishes", "rudder trim needle jumps from the 6 o’clock position to 12 o’clock and C Aug Caution Illuminates", "rudder trim needle jumps from 12 to 6", "C Aug caution goes out"], "ans": 1, "expl": "Doc (Checklist walkthrough): look at rudder trim needle and make sure it jumps from the 6 o’clock position to 12 o’clock and C Aug Caution Illuminates. That means the BIT is running now for 2 minutes"}, {"q": "C AUG BIT runs for:", "opts": ["30 seconds", "2 minutes", "1 minute", "15 seconds"], "ans": 1, "expl": "Doc (Checklist walkthrough): That means the BIT is running now for 2 minutes (BIT is done when C Aug caution extinguishes)."}, {"q": "OBOGS Electronic BIT: oxygen light should go away within:", "opts": ["2 seconds", "15 seconds", "30 seconds", "6 seconds"], "ans": 1, "expl": "Doc (Checklist walkthrough): press button on back left wall for 1 to 2 seconds. Oxygen warning light comes on, punch master alert out, oxygen light should go away within 15 seconds."}, {"q": "Sheet: OBOGS BIT:", "opts": ["HOLD 15s (OXY out in 2s)", "HOLD 2s (OXY out in 15s)", "HOLD 5s (OXY out in 30s)", "PRESS (OXY out in 6s)"], "ans": 1, "expl": "Sheet (T-45 Checklists): 9. OBOGS BIT - HOLD 2s (OXY out in 15s)"}, {"q": "Pitch trim set for takeoff:", "opts": ["10 deg nose up", "2-3 deg nose up", "5 deg nose up", "0 deg"], "ans": 1, "expl": "Doc (Checklist walkthrough): 4. Pitch trim - Set for T/O (2-3 deg nose up), most instructors like 2 deg nose up in the jet."}, {"q": "OBOGS on call:", "opts": ["“Good tone, Good BIT”", "“OBOGS on, good flow”", "“Mask on, Flow on”", "“Flow on, mask on”"], "ans": 2, "expl": "Doc (Checklist walkthrough): Put visor down. “Mask on, Flow on”"}, {"q": "Clearance call (Ch 29 Pri):", "opts": ["“Kingsville Clearance, Blazer 201, taxi with alpha”", "“Kingsville Ground, Blazer 201, ready to copy”", "“Kingsville Clearance, Blazer 201, request IFR to RICTO”", "“Kingsville Clearance, Blazer 201, Premont 2 on request ready to copy”"], "ans": 3, "expl": "Doc (Checklist walkthrough): 14. Ch 29 Pri: “Kingsville Clearance, Blazer 201, Premont 2 on request ready to copy”"}, {"q": "Clearance channel:", "opts": ["CH-29", "CH-1", "CH-30", "CH-2"], "ans": 0, "expl": "Kingsville Comm Script PDF: CLEARANCE CALL (CH-29)"}, {"q": "Comm Script clearance: departure and transition:", "opts": ["KINGS 1 Departure WADE transition", "KINGS 3 Departure RICTO transition, Premont 2 coded route", "Premont 3 Departure RICTO transition", "KINGS 3 Departure RIVERA transition"], "ans": 1, "expl": "Doc (Checklist walkthrough): cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route"}, {"q": "Comm Script clearance altitudes:", "opts": ["climb and maintain 7 thousand expect 230 in 10", "climb and maintain 10 thousand expect 230 in 10", "climb and maintain 7 thousand expect 250 in 10", "climb and maintain 5 thousand expect 230 in 5"], "ans": 0, "expl": "Kingsville Comm Script PDF: on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4."}, {"q": "Clearance: departure frequency given:", "opts": ["Departure button 13", "Departure Local button 4", "Departure Local button 12", "Tower button 3"], "ans": 1, "expl": "Kingsville Comm Script PDF: SQUAWK 513X, Departure Local button 4."}, {"q": "After your correct readback, Clearance says:", "opts": ["“cleared as filed”", "“readback correct, contact ground”", "“BLAZR/HAWK 2XX read back correct, frequency change approved.”", "“have a good flight”"], "ans": 2, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX read back correct, frequency change approved. / BLAZR/HAWK 2XX Switching"}, {"q": "RALT BIT call:", "opts": ["“LAW set”", "“Good BIT, Good tone”", "“Lights and Tones”", "“Good tone, Good BIT”"], "ans": 3, "expl": "Doc (Checklist walkthrough): Box RADALT to test the LAW. You should hear an aural tone. “Good tone, Good BIT”."}, {"q": "RMFD HSI for departure:", "opts": ["40 scale, box WPT", "80 scale, box TCN", "20 scale, box TCN", "10 scale, box SEQ"], "ans": 2, "expl": "Doc (Checklist walkthrough): Go to 20 scale for departure and box TCN (WPT on future flights)."}, {"q": "Plane Captain checks are initiated when:", "opts": ["canopy closed", "C AUG caution extinguishes", "70% check complete", "clearance received"], "ans": 1, "expl": "Doc (Checklist walkthrough): Plane Captain Checklist: Initiate when C AUG caution extinguishes"}, {"q": "PC checks step 1 call / response:", "opts": ["“Wipeout” R/C: “Clear”", "“Throttle off, GTS” R/C: “Clear”", "“Canopy” R/C: “Rail Clear”", "“Watch your knees” R/C: “Clear”"], "ans": 3, "expl": "Doc (Checklist walkthrough): 1. “Watch your knees” R/C: “Clear” 2. Signal lineman for Plane Captain checks with a thumbs up"}, {"q": "PC signal for wipeout looks like:", "opts": ["tapping the head", "stirring a bowl", "touching the nose", "pushing hands forward and alternating"], "ans": 1, "expl": "Doc (Checklist walkthrough): 3. PC Signals for Wipe Out (Looks like stirring a bowl)"}, {"q": "During rudder pedal check, the NWS Caution should be:", "opts": ["extinguished (NWS on)", "illuminated (meaning NWS is off)", "flashing", "not relevant"], "ans": 1, "expl": "Doc (Checklist walkthrough): Check that NWS Caution is illuminated (meaning NWS is off)."}, {"q": "Three down for PC:", "opts": ["Flaps-Full, Slats-Out, Speed Brake-Half", "Hook-Down, Flaps-Full, Speed Brake-Full", "Gear-Down, Flaps-Full, Hook-Down", "Hook-Down, Flaps-Half, Speed Brake-Out"], "ans": 1, "expl": "Doc (Checklist walkthrough): Press NWS button (NWS caution goes out). Hook-Down, Flaps-Full, Speed Brake-Full."}, {"q": "Hands-up settings: LAW / CRS / Bingo (doc):", "opts": ["LAW 500, CRS 130, Bingo 1.6", "LAW 5000, CRS 130, Bingo 1.8", "LAW 200, CRS 310, Bingo 1.2", "LAW 200, CRS 130, Bingo 1.8 (joker)"], "ans": 3, "expl": "Doc (Checklist walkthrough): Use this time to set LAW (200), CRS (130), HDG (Set as lead radial for SID) and Bingo (1.8 for joker as a heads up for a bingo of 1.6 for most BI and TR flights."}, {"q": "BINGO sequence to set before each goes off:", "opts": ["1.8, 1.6, .5", "1.8, 1.0, .5", "1.6, 1.2, .8", "2.0, 1.5, 1.0"], "ans": 0, "expl": "Doc (Checklist walkthrough): BINGO should also be set before it goes off (1.8, 1.6, .5)."}, {"q": "PC shows you how many tools?", "opts": ["3", "4", "2", "5"], "ans": 1, "expl": "Doc (Checklist walkthrough): 11. Plane Captain Shows 4 Tools - Give them a thumbs up"}, {"q": "Bringing everything up: hook light out within:", "opts": ["6 seconds", "10 seconds", "15 seconds", "3 seconds"], "ans": 0, "expl": "Doc (Checklist walkthrough): Hook-Up, Flaps-Half, Speed Brake-Retracted. ... (hook light out in 6 seconds, flap light at half, speed brake light out)"}, {"q": "Canopy close: signal and call/response:", "opts": ["Thumbs up; “Canopy” R/C: “Clear”", "Tap head; “Canopy coming down” R/C: “Clear”", "Tap the top of your head; “Canopy” R/C: “Rail Clear”", "Two fingers; “Rail Clear” R/C: “Canopy”"], "ans": 2, "expl": "Doc (Checklist walkthrough): Signal for closing canopy: Tap the top of your head. ... “Canopy” R/C: “Rail Clear”."}, {"q": "Sheet PC checks: step 3 HANDS UP sets:", "opts": ["LAW / CRS / VOR / IFF", "CRS / HDG / ALT / FUEL", "LAW / CRS / HDG / BNGO", "LAW / IFF / TCN / BNGO"], "ans": 2, "expl": "Sheet (T-45 Checklists): 3. HANDS UP  (LAW / CRS / HDG / BNGO)"}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

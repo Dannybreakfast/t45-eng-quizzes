@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Checklist 5. Departure, 10K Checks &amp; MOA (Enroute) — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Checklist 5. Departure, 10K Checks &amp; MOA (Enroute)</h1>
+    <div class="meta">33 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 33</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Checklist 5. Departure, 10K Checks &amp; MOA (Enroute)</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "Departure check-in (Ch 4 Pri):", "opts": ["“Kingsville Departure, Blazer 201 passing XXX Hundred/Thousand”", "“Kingsville Departure, Blazer 201 climbing to 10 thousand”", "“Kingsville Departure, Blazer 201 radar contact”", "“Kingsville Departure, Blazer 201 airborne”"], "ans": 0, "expl": "Doc (Checklist walkthrough): Ch 4 Pri: “Kingsville Departure, Blazer 201 passing XXX Hundred/Thousand”"}, {"q": "Departure response (doc):", "opts": ["“radar contact, turn left direct RICTO”", "“Blazer 201 Kingsville Departure radar contact, climb and maintain ten thousand, passing three thousand feet turn right proceed direct RICTO”", "“radar contact, maintain 7 thousand, direct WADE”", "“radar contact, climb and maintain 15 thousand”"], "ans": 1, "expl": "Doc (Checklist walkthrough): “Blazer 201 Kingsville Departure radar contact, climb and maintain ten thousand, passing three thousand feet turn right proceed direct RICTO”"}, {"q": "Your readback requesting the SID:", "opts": ["“Direct RICTO, Blazer 201”", "“Climb and maintain ten thousand, request the full SID for training, Blazer 201”", "“Request VMC Terminate, Blazer 201”", "“Request the Kings 3, Blazer 201”"], "ans": 1, "expl": "Doc (Checklist walkthrough): “Climb and maintain ten thousand, request the full SID for training, Blazer 201” / “Blazer 201, roger, you’re cleared on the SID”"}, {"q": "Departure approves the SID with:", "opts": ["“cleared as filed”", "“Blazer 201, roger, you’re cleared on the SID”", "“frequency change approved”", "“resume own navigation”"], "ans": 1, "expl": "Doc (Checklist walkthrough): “Blazer 201, roger, you’re cleared on the SID” “Blazer 201”"}, {"q": "Comm Script option to request the SID:", "opts": ["“BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.”", "“Request direct RICTO”", "“Request the full Kings 1”", "“Request the Premont 2”"], "ans": 0, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX Request to fly the Kings 3 Departure."}, {"q": "Platform call on the climb:", "opts": ["“Platform. LAW set 5,000”", "“Platform, resetting LAW to 2800 ft”", "“Platform, 10 thousand”", "“5,000, LAW set”"], "ans": 0, "expl": "Doc (Checklist walkthrough): Set Law to 5,000 passing through 5,000. ... “Platform. LAW set 5,000”"}, {"q": "Lead DME for the arc turn (13R) per doc:", "opts": ["5.5 DME", "2.5 DME", "4.5 DME (4.2 works better)", "7 DME"], "ans": 2, "expl": "Doc (Checklist walkthrough): About 2.5 nm prior to the 7 nm arc so at 4.5 DME start right turn for 13R) (I,ve found that 4.2 works better"}, {"q": "Arc distance on the SID:", "opts": ["5 nm", "10 nm", "12 nm", "7 nm"], "ans": 3, "expl": "Doc (Checklist walkthrough): (About 2.5 nm prior to the 7 nm arc"}, {"q": "Lead level off by:", "opts": ["10% of VSI always", "100 ft", "500 ft", "1,000 ft"], "ans": 3, "expl": "Doc (Checklist walkthrough): Lead level off by 1,000 ft."}, {"q": "10K’ Checks are repeated every:", "opts": ["15 minutes", "10 minutes", "5 minutes", "30 minutes"], "ans": 0, "expl": "Doc (Checklist walkthrough): You need to conduct checks every 15 minutes"}, {"q": "10K’ Checks order:", "opts": ["Hyds/Volts, Engine, Fuel, Cabin, LAW", "Fuel, LAW, Hyds, Cabin, Instruments", "Cabin Press, Fuel, LAW, Hyds, Engine", "Engine/Flight Instruments, Hyds/Volts, Cabin Press, Fuel State, LAW"], "ans": 3, "expl": "Doc (Checklist walkthrough): 1. Engine/Flight Instruments 2. Hyds/Volts 3. Cabin Press 4. Fuel State 5. LAW"}, {"q": "Cabin altitude at 10,000’ (NATOPS table):", "opts": ["7,650’+/-700", "8,000’+/-700", "5,000’+/-500", "10,300’+/-700"], "ans": 0, "expl": "Doc (Checklist walkthrough): 10,000’ - 7,650’+/-700 / 15,000’ - 10,300’+/-700 / 20,000’ - 12,600’+/-700 / 30,000’ - 16,900’+/-900"}, {"q": "Cabin altitude at 15,000’:", "opts": ["10,300’+/-700", "10,000’+/-900", "12,600’+/-700", "7,650’+/-700"], "ans": 0, "expl": "Doc (Checklist walkthrough): 15,000’ - 10,300’+/-700"}, {"q": "Cabin altitude at 20,000’:", "opts": ["12,500’+/-500", "16,900’+/-900", "12,600’+/-700", "10,300’+/-700"], "ans": 2, "expl": "Doc (Checklist walkthrough): 20,000’ - 12,600’+/-700"}, {"q": "Cabin altitude at 30,000’:", "opts": ["12,600’+/-900", "16,900’+/-900", "17,500’+/-900", "16,900’+/-700"], "ans": 1, "expl": "Doc (Checklist walkthrough): 30,000’ - 16,900’+/-900"}, {"q": "Cabin altitude estimate equation:", "opts": ["(Alt + 5k)/2", "Alt/2 + 2k", "(Alt + 10k)/2", "(Alt - 5k)/2"], "ans": 0, "expl": "Doc (Checklist walkthrough): Estimate for cabin altitude can be determined from the following equation. (Alt + 5k)/2."}, {"q": "LAW above 5,000’ should be set to:", "opts": ["5,000", "10,000", "200", "2,800"], "ans": 0, "expl": "Doc (Checklist walkthrough): 5. LAW - Check. Above 5,000’ it should be set to 5,000."}, {"q": "10K’ check report:", "opts": ["“Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”", "“Instruments good, fuel X.X, 10K checks complete”", "“Cabin X,XXX, Fuel X.X, Platform”", "“Hyds 3x3, good volts, LAW set, ready in front”"], "ans": 0, "expl": "Doc (Checklist walkthrough): “Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”"}, {"q": "VMC terminate call (Ch 4 Pri):", "opts": ["“Kingsville Departure, Blazer 201, request frequency change”", "“Kingsville Departure, Blazer 201, cancel IFR”", "“Kingsville Departure, Blazer 201, VMC Terminate”", "“Kingsville Departure, Blazer 201, terminate radar”"], "ans": 2, "expl": "Doc (Checklist walkthrough): Ch 4 Pri: “Kingsville Departure, Blazer 201, VMC Terminate”"}, {"q": "Departure’s response to VMC Terminate:", "opts": ["“roger, resume own navigation”", "“cancellation received, squawk VFR”", "“Blazer 201, Kingsville Departure, terminate, frequency change approved”", "“radar service terminated, contact approach”"], "ans": 2, "expl": "Doc (Checklist walkthrough): “Blazer 201, Kingsville Departure, terminate, frequency change approved” / “Frequency change approved, Blazer 201”"}, {"q": "MOA frequency: Ch 5 should read:", "opts": ["273.85", "237.85", "237.58", "327.85"], "ans": 1, "expl": "Doc (Checklist walkthrough): On Ch 5, it should read 237.85."}, {"q": "MOA check-in call (Ch 5 Pri):", "opts": ["“99, Blazer 201 entering the Alpha”", "“Kings 1A, Blazer 201 checking in”", "“99 in the Alpha check in”", "“All aircraft, 99 check in”"], "ans": 2, "expl": "Doc (Checklist walkthrough): Ch 5 Pri: “99 in the Alpha check in” / “99, BI single claims 1A-NE”"}, {"q": "Who responds to a 99 check-in?", "opts": ["Kingsville Approach", "the last flight to check in, with flight types (not callsigns) and where they are working", "the first flight in the area, with callsigns", "every flight in the area, with callsigns"], "ans": 1, "expl": "Doc (Checklist walkthrough): the last flight to check in will respond with the flight types (not callsigns) and where they are working."}, {"q": "Claim call format (doc):", "opts": ["“99, BI single claims 1A-NE”", "“BI flight claiming 1A-NE”", "“Blazer 201 claims 1A-NE”", "“99, Blazer 201 will take NE”"], "ans": 0, "expl": "Doc (Checklist walkthrough): “99, BI single claims 1A-NE”"}, {"q": "Comm Script claim format:", "opts": ["“2XX established”", "“BLAZR/HAWK 2XX will take (VFR/IFR working area).”", "“2XX entering the area”", "“2XX claims the high block”"], "ans": 1, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX will take (VFR/IFR working area)."}, {"q": "Enter/transit MOA at ___; exit at ___:", "opts": ["10,500’; 8,000’", "9,000’; 10,000’", "10,000’; 9,000’", "12,000’; 9,000’"], "ans": 2, "expl": "Doc (Checklist walkthrough): Enter/transit MOA at 10,000’. We exit/transit out at 9,000’."}, {"q": "Effective bottom of the blocks:", "opts": ["8,000’", "12,000’", "10,000’", "10,500’"], "ans": 3, "expl": "Doc (Checklist walkthrough): The bottom of the blocks is effectively 10,500’ as traffic is transiting between 8,000’ and 10,000’."}, {"q": "Kings 1A block altitudes Low / Mid / Hi:", "opts": ["Low: 8-17.9k; Mid: 180-230; Hi: 240-350", "Low: 8-15k; Mid: 150-230; Hi: 240-350", "Low: 8-17.9k; Mid: 180-220; Hi: 230-350", "Low: 10-17.9k; Mid: 180-250; Hi: 260-350"], "ans": 0, "expl": "Doc (Checklist walkthrough): Low: 8-17.9k Mid: 180-230 Hi: 240-350 (We don’t use high)"}, {"q": "When ATIS altimeter is below 29.92, top of mid block is:", "opts": ["22,000’", "23,000’", "24,000’", "21,000’"], "ans": 0, "expl": "Doc (Checklist walkthrough): When ATIS calls an altimeter setting below 29.92, top of mid block is 22,000’."}, {"q": "Time hack call / response:", "opts": ["“Standby for time hack” R/C: “Ready” “Three, Two, One, Hack, One, Two, Three”", "“Ready” R/C: “Standby for time hack”", "“Time hack in 3” R/C: “Clear”", "“Hack” R/C: “Hack”"], "ans": 0, "expl": "Doc (Checklist walkthrough): “Standby for time hack” R/C: “Ready” “Three, Two, One, Hack, One, Two, Three”"}, {"q": "Stall/Aerobatic Checklist:", "opts": ["Harness - Locked, Fuel, Area, LAW", "Area - Clear, Fuel, Map Case, Loose Items", "Loose Items - Secure, Map Case - Secure, Fuel - ___, Area - Clear", "Loose Items, Fuel, Altitude, Area"], "ans": 2, "expl": "Doc (Checklist walkthrough): 1. Loose Items - Secure 2. Map Case - Secure 3. Fuel - ___ (ex. 2.4) 4. Area - Clear"}, {"q": "Descent/Penetration Checks item 2:", "opts": ["Contr Aug - All", "LAW - Set", "Master Arm - Safe", "WX - Checked"], "ans": 2, "expl": "Doc (Checklist walkthrough): 1. Canopy Defog/Temp - As Required 2. Master Arm - Safe 3. Contr Aug - All 4. WX - Checked 5. Navaids - Tune/ID 6. STBY Att Indicator - Erect 7. STBY Altimeter - Set 8. LAW - Set 9. MFDS/HUD - NAV Mode 10. Fuel - Check"}, {"q": "Descent/Penetration Checks: last item:", "opts": ["Fuel - Check", "Navaids - Tune/ID", "LAW - Set", "MFDS/HUD - NAV Mode"], "ans": 0, "expl": "Doc (Checklist walkthrough): 9. MFDS/HUD - NAV Mode 10. Fuel - Check"}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

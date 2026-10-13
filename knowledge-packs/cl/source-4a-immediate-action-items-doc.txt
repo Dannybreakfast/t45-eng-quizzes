@@ -1,0 +1,129 @@
+﻿IMMEDIATE ACTION ITEMS AUG 23 
+CLEAR ENGINE PROCEDURE / ABNORMAL START /   TP FIRE ON SHUTDOWN 
+1. Throttle ­ OFF 
+EMERGENCY SHUTDOWN/EGRESS 
+1. Throttle – OFF 
+2. ENGINE switch – OFF 
+3. FUEL SHUTOFF handle – PULL 
+4. Ejection seats – SAFE 
+5. BATT switches ­ OFF 
+ENGINE FAILURE 
+If below 1,500 feet AGL and airspeed below 180 KIAS: 
+1. Eject 
+Otherwise: 
+2. Execute AIRSTART 
+AIRSTART 
+1. Emergency oxygen green ring(s) – PULL 2. Throttle – OFF 
+Simultaneously perform steps *3. and *4. 
+3. GTS start button – PRESS 
+4. Throttle – IDLE 
+If unsuccessful (no relight within 30 seconds after moving throttle to idle or stabilized EGT exceeds limits): 5. Throttle – OFF (allow 30 seconds to drain if practical) If above 13% RPM and 250 KIAS, repeat steps *3 and *4. Otherwise, proceed to step 6. 
+COMPRESSOR STALL OR EGT/RPM WARNING LIGHT 1. Throttle ­ IDLE 
+2. EGT/RPM ­ CHECK 
+If EGT is greater than 450°C for more than 6 seconds at idle: 
+3. Execute Engine Failure procedure 
+If EGT responds normally: 
+4. Throttle – Slowly advance to minimum for safe flight 5. Minimize throttle movements 
+ABORT 
+1. Throttle – IDLE 
+2. Speed brakes – EXTEND 
+3. Brakes – APPLY 
+4. Hook – DOWN (IF REQUIRED) 
+5. BRAKES – Release prior to crossing the arresting gear 
+EMERGENCY CATAPULT FLYAWAY 
+1. Throttle ­ MRT 
+2. Maintain 24 units AOA 
+If engine failed, or unable to stop settle: 
+3. Eject 
+BRAKE FAILURE – ASHORE / SKID CAUTION If flyaway airspeed available: 
+1. Go­around 
+If flyaway airspeed not available, or during taxi: 1. Throttle – IDLE 
+2. Brakes – RELEASE 
+3. Anti­skid switch – OFF 
+4. BRAKES – Apply Gradually 
+If brakes still unavailable: 
+5. Hook – DOWN (if required) 
+6. Parking brake handle – PULL (if required) 
+BRAKE FAILURE – AFLOAT 
+1. Throttle ­ IDLE 
+2. Parking brake handle ­ PULL 
+3. Hook – DOWN 
+4. Transmit 
+LOSS OF DIRECTIONAL CONTROL 
+If flyaway airspeed available: 
+1. Go­around 
+If flyaway airspeed not available: 
+2. Abort 
+If blown tire suspected: 
+3. BRAKES ­ RELEASE 
+4. Anti­skid switch ­ OFF 
+5. BRAKES – Apply Gradually 
+If NWS failure suspected: 
+6. Paddle switch ­ PRESS 
+ASYMMETRIC FLAPS/SLATS 
+1. FLAPS/SLATS lever – RETURN TO PREVIOUS SETTING 
+DEPARTURE/SPIN PROCEDURE 
+1. Controls – NEUTRALIZE / FORCIBLY 
+CENTER RUDDER PEDALS 
+2. Speed brakes – RETRACT 
+3. Throttle – IDLE 
+4. Check altitude, AOA, airspeed, and turn needle If spin confirmed: 
+INVERTED (AOA pegged at 0 units): 
+5. Rudder pedal – FULL OPPOSITE TURN NEEDLE 6. Lateral stick – FULL OPPOSITE TURN NEEDLE 7. Longitudinal stick ­ NEUTRALIZE 
+UPRIGHT (AOA above 28 units): 
+8. Rudder pedal – FULL OPPOSITE TURN NEEDLE 9. Lateral stick – FULL WITH TURN NEEDLE 10. Longitudinal stick ­ NEUTRALIZE 
+If recovery indicated or airspeed increasing through 160 KIAS: 
+11. Lateral stick ­ NEUTRALIZE 
+When recovery indicated: 
+12. Rudder pedals – SMOOTHLY CENTER 
+If out of control passing through 10,000 feet AGL 13. EJECT 
+TOTAL ELECTRICAL FAILURE 
+1. Emergency oxygen green ring(s) ­ PULL 
+ADVERSE PHYSIOLOGICAL SYMPTOMS 
+If above 10,000 feet cabin alttude: 
+1. Emergency oxygen green ring(s) ­ PULL 2. OBOGS FLOW selector(s) – OFF 
+3. Descend below 10,000 feet cabin 
+altitude 
+RAPID DECOMPRESSION 
+1. Emergency oxygen green ring(s) ­ PULL 2. OBOGS FLOW selector(s) – off 
+3. Descend below 10,000 feet cabin 
+altitude 
+ELECTRICAL FIRE 
+1. GEN switch ­ OFF 
+SMOKE OR FUMES IN COCKPIT 
+1. Mask – ON/TIGHT 
+2. Initiate controlled descent to below   
+18,000 feet MSL 
+3. AIR FLOW knob – OFF (below 18,000 feet MSL if possible) 
+If unable to clear smoke or unable to see: 4. Airspeed – REDUCE (As practical) 
+5. Warn other cockpit occupants / secure loose items 6. Seat – LOWER 
+7. MDC firing Handle ­ PULL 
+FIRE WARNING LIGHT 
+GROUND 
+1. Execute Emergency Shutdown / Egress TAKEOFF 
+If decision is made to stop: 
+1. Abort 
+If fire is confirmed and unable to abort: 
+2. Eject 
+IN-FLIGHT 
+1. Throttle – MINIMUM FOR SAFE FLIGHT 2. Check for secondary indications of fire 
+If fire confirmed or flight control lost: 
+3. Eject 
+If fire not confirmed and control effectiveness remains: 4. Land as soon as possible 
+GTS FIRE WARNING LIGHT 
+GROUND 
+1. Execute Emergency Shutdown / Egress 
+IN-FLIGHT 
+1. ENGINE switch ­ OFF 
+OIL PRESS WARNING LIGHT 
+1. Throttle – Immediately set minimum power required within the range 78 to 87% rpm 
+2. Avoid further power changes 
+OXYGEN WARNING LIGHT 
+IN-FLIGHT 
+1. Throttle ­ Set minimum 80% rpm 
+2. Execute Adverse Physiological Symptoms (as required) 
+TP HOT CAUTION LIGHT 
+GROUND 
+1. Execute Emergency Shutdown / Egress 
+IN-FLIGHT 
+1. Throttle – MINIMUM FOR SAFE FLIGHT

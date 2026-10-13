@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>CL — T-45 Quizzes</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg:#0f1419; --panel:#1a2332; --panel2:#243044; --text:#e7eef7; --muted:#9bb0c7;
+  --accent:#3d9cf0; --accent2:#2a7fd4; --border:#2e3d52; --radius:12px;
+  --font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family:var(--font); background:var(--bg); color:var(--text); line-height:1.45; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+header {
+  background: linear-gradient(135deg,#1a2a40,#152033);
+  border:1px solid var(--border); border-radius: var(--radius);
+  padding: 1.5rem 1.4rem; margin-bottom: 1.5rem;
+}
+h1 { margin:0 0 .4rem; font-size:1.6rem; }
+.sub { color:var(--muted); }
+.crumb { color:var(--muted); font-size:0.9rem; margin-bottom:0.45rem; }
+.crumb a { color:var(--accent); text-decoration:none; }
+.crumb a:hover { text-decoration:underline; }
+.stats { color:var(--muted); font-size:.95rem; margin-top:.5rem; }
+.section-grid {
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem; margin-top: 0.25rem;
+}
+a.section-btn {
+  display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+  gap:0.35rem; min-height: 7.5rem;
+  background: linear-gradient(160deg, #1e2d44, #162033);
+  border: 1px solid var(--border); border-radius: 14px;
+  padding: 1.25rem 1.3rem; color: var(--text); text-decoration:none;
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+a.section-btn:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(61,156,240,.25);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+a.section-btn .code {
+  font-size: 1.85rem; font-weight: 800; letter-spacing: 0.04em; color: #d8ebff;
+}
+a.section-btn .name { color: var(--muted); font-size: 0.95rem; }
+a.section-btn .count {
+  margin-top: 0.35rem; font-size: 0.9rem; color: var(--accent);
+  font-weight: 600;
+}
+.topic { margin-bottom: 1.75rem; }
+.topic h2 {
+  margin:0 0 .6rem; font-size:1.15rem; color:#c5daf0;
+  border-bottom:1px solid var(--border); padding-bottom:.35rem;
+}
+ul { list-style:none; padding:0; margin:0; }
+li { margin:0 0 .4rem; }
+li a {
+  display:flex; justify-content:space-between; gap:1rem; align-items:center;
+  background:var(--panel); border:1px solid var(--border); border-radius:10px;
+  padding:.7rem .9rem; color:var(--text); text-decoration:none;
+}
+li a:hover { border-color:var(--accent); }
+li .count { color:var(--muted); font-size:.85rem; white-space:nowrap; }
+footer { margin-top:2rem; color:var(--muted); font-size:.85rem; }
+.back-home { margin-bottom: 1rem; }
+.back-home a { color: var(--accent); text-decoration: none; }
+.back-home a:hover { text-decoration: underline; }
+
+a.study-guide-banner {
+  display:flex; flex-direction:column; gap:0.25rem;
+  margin: 0 0 1.25rem;
+  background: linear-gradient(135deg, #1e3a5f, #1a2a40);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  color: var(--text); text-decoration:none;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.2);
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+a.study-guide-banner:hover {
+  border-color: #7ec4f8;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.4);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+a.study-guide-banner .sg-title {
+  font-size: 1.25rem; font-weight: 800; color: #d8ebff; letter-spacing: 0.02em;
+}
+a.study-guide-banner .sg-sub { color: var(--muted); font-size: 0.92rem; }
+a.study-guide-banner .sg-cta { color: var(--accent); font-weight: 700; font-size: 0.95rem; margin-top: 0.15rem; }
+</style></head><body><div class='wrap'>
+<header>
+<div class='crumb'><a href='index.html'>Home</a> · CL</div>
+<h1>CL — Checklist / Comm Flow</h1>
+<div class='stats'>7 quizzes · 223 questions</div></header>
+<div class='back-home'><a href='index.html'>← All sections</a> · <a href='knowledge-packs/cl/index.html'>CL knowledge pack</a></div>
+<a class='study-guide-banner' href='cl-study-guide.html'><span class='sg-title'>Checklist / Comm Flow Study Guide</span><span class='sg-sub'>Prestart → start → taxi → takeoff → MOA → recovery → shutdown · verbatim checklist + Kingsville comm script calls</span><span class='sg-cta'>Open study guide →</span></a>
+<section class='topic'><ul>
+<li><a href='checklist-1-ground-prestart-engine-start--ground.html'><span>Checklist 1. Ground — Prestart &amp; Engine Start</span><span class='count'>33 Q</span></a></li>
+<li><a href='checklist-2-post-start-clearance-plane-captain--poststart.html'><span>Checklist 2. Post-Start, Clearance &amp; Plane Captain</span><span class='count'>34 Q</span></a></li>
+<li><a href='checklist-3-taxi-final-checker-marshall-takeoff-checklist--taxi.html'><span>Checklist 3. Taxi, Final Checker, Marshall &amp; Takeoff Checklist</span><span class='count'>25 Q</span></a></li>
+<li><a href='checklist-4-tower-hold-short-runup-takeoff--takeoff.html'><span>Checklist 4. Tower, Hold Short, Runup &amp; Takeoff</span><span class='count'>25 Q</span></a></li>
+<li><a href='checklist-5-departure-10k-checks-moa-enroute--enroute.html'><span>Checklist 5. Departure, 10K Checks &amp; MOA (Enroute)</span><span class='count'>33 Q</span></a></li>
+<li><a href='checklist-6-recovery-approach-arrival-tower-landing--recovery.html'><span>Checklist 6. Recovery — Approach, Arrival, Tower &amp; Landing</span><span class='count'>48 Q</span></a></li>
+<li><a href='checklist-7-after-landing-taxi-back-shutdown--shutdown.html'><span>Checklist 7. After Landing, Taxi Back &amp; Shutdown</span><span class='count'>25 Q</span></a></li>
+</ul></section>
+<footer><a href='index.html' style='color:var(--accent)'>← Home</a></footer></div></body></html>

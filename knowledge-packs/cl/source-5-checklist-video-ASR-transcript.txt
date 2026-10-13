@@ -1,0 +1,414 @@
+[00:00] All right, so I'm connecting the two cords right here.
+[00:03] Knee board, click, let's go with battery one on.
+[00:08] Give me a bolt, battery two off, give me a bolt.
+[00:11] Bring right here, put this radio on,
+[00:14] going to 30, listening to Aedes.
+[00:17] Strapping in, strapping in, strapping in, strapping in,
+[00:22] strapping in, other knee boards.
+[00:24] Two knee boards, Aedes is going on 30.
+[00:27] All right, Aedes is done, I switched to 29,
+[00:29] and turn that off.
+[00:31] Come over here, eye shapes check,
+[00:33] switch to set both, and fuel 3.0.
+[00:37] It'll say the same thing, I'll go with lights and tones.
+[00:40] Hold it up here, check this one.
+[00:42] So two hands, check everything.
+[00:45] It is your fault if you missed something in the flight
+[00:47] and it was a burnt bolt, and you do something wrong
+[00:50] because you missed this.
+[00:52] So every single thing, look over it twice, back,
+[00:55] flick it back, all my tones are going off.
+[00:57] One, two, three, four.
+[00:59] Make sure I hear all of it.
+[01:01] Other thing I need to do after that,
+[01:03] paddle's on, nose is steering,
+[01:05] now I'm looking at hides, that looks good too on ICS.
+[01:08] Throttle off GTS, throttle off wheel.
+[01:12] One, two, three, four.
+[01:16] I'm looking over here, five, six, seven, eight,
+[01:21] five, 10, 11, 12, 13.
+[01:26] There's GTS, I would've given one of those earlier.
+[01:29] I'd give one of these, engine switch start.
+[01:32] One, two, 15 seconds, four, five, six, seven, eight.
+[01:39] There's ready light, looking for 20%.
+[01:42] And then here comes throttle idle, introduce fuel.
+[01:44] Fuel flow comes up, AGT lights off within 15 seconds.
+[01:49] There, and now it's making a big rumble,
+[01:51] it's coming on up, making sure it doesn't rise too fast.
+[01:55] Looking for 45% for all my shit to come on.
+[01:59] It's leveling out at about 400.
+[02:02] All my shit's on, two hands.
+[02:04] HUD, OBOGS, NFTs, radios, IFF, check and nav.
+[02:11] I'm ready for 70% checks.
+[02:14] Rolling up, 70 year, menu, data, maintenance, data, aircraft.
+[02:20] Looking for 70 over here.
+[02:24] Just giving a quick glance to overflows and walls,
+[02:27] not quite clear yet.
+[02:30] There's 70, high T reset, fuel control, manual,
+[02:35] manual fuel over here.
+[02:38] Drop slightly, let it go, come back up.
+[02:43] That's good, throttle idle,
+[02:45] bring my hand way back here, press the button.
+[02:49] Needle, needle, oxygen light, click that out.
+[02:52] Oxygen light goes away, I strap on my mask,
+[02:55] turn my flow on.
+[02:58] Then at this point, no exeences, no overflows,
+[03:02] four sats, walls are counting down,
+[03:04] they're starting to move, mask on flow on.
+[03:07] Mask on flow in the back.
+[03:09] Got paddle switching, control log,
+[03:11] now I'm going reset to all.
+[03:16] This isn't there yet, your claws have to be low enough
+[03:20] to start your control log,
+[03:21] but it's all not there yet,
+[03:22] I got to there too quick, so I'll try it again.
+[03:25] Nope, all right, that didn't work, I'm on 29.
+[03:28] We go Kingsville clearance, Hawk 201,
+[03:31] three months, you want to press right and copy.
+[03:33] Try it again.
+[03:36] All right, Kingsville, Hawk 201,
+[03:39] you've got a Kingsville, Kingsville departure,
+[03:41] Rito transition, three months, you've got a route,
+[03:43] on departure, climb maintain 10,000,
+[03:45] it's by tire, 10 minutes after departure,
+[03:48] squat, whatever, whatever, whatever,
+[03:50] and button four, got my control log test going.
+[03:53] So that's two minutes, it's good.
+[03:56] HSI, high read back to clearance,
+[03:59] once I'm done with clearance, I'll go right to two.
+[04:03] Once in back, choose up front, strike, ground.
+[04:07] You can bring sequence out here, data, GPS,
+[04:10] load my waypoints into these points right here.
+[04:15] So I'll go through that a little bit,
+[04:18] I'll go menu, fit, and this takes a little while too,
+[04:20] rad out isn't there yet.
+[04:22] So I'm waiting for this to show up
+[04:24] to get that good tone.
+[04:26] So I'm kind of in limbo right now,
+[04:28] so I'm setting my trim, just make sure that's all right.
+[04:32] Testing all that, rudder left, right.
+[04:36] You'll know your control log is working,
+[04:37] if your rudder needle moves,
+[04:40] like it's at six o'clock, you know, six to one.
+[04:43] So that's good, it's working there.
+[04:45] Now I'm waiting on the rad out,
+[04:47] what else am I missing, what else am I missing,
+[04:49] what else am I missing?
+[04:51] That's about it, I can do this in the blank after two.
+[04:54] So I can't put my flaps to half,
+[04:57] if this is on, it'll ruin the Sea-Og bit.
+[05:00] So you'll have to do it again.
+[05:02] So don't do the plane captain check until this light is off,
+[05:06] or you're kind of screwing yourself.
+[05:07] So literally I'm waiting, I'm waiting for this,
+[05:10] there it is, good tone, good tone in the back.
+[05:14] I went out, sweet, thumbs up, I'm ready to go.
+[05:18] You'll wipe it out, do that with the left,
+[05:21] in, out, back, left, right, all the way around.
+[05:25] He'll do the same, bring left and right on the runners,
+[05:28] and then he's dropped the hook, flaps, speed brakes,
+[05:30] hook flap, speed brakes, those are the steering.
+[05:35] You gotta hold it until it says pull for the speed brake,
+[05:38] because they can go halfway out.
+[05:40] Hands up, since my hands are here,
+[05:43] I know I have to move down a little bit.
+[05:45] Laws 200, course 130, bingo 1600.
+[05:49] Now I get my uppers.
+[05:53] He's still walking around,
+[05:54] you'll get done before him or so.
+[05:57] I start over here and I sweep everything,
+[05:59] so I'm like, all right, Obar's energy and flows,
+[06:02] flow can be on, because I haven't taken my mask off yet.
+[06:04] I could have, forgot about it, not a big deal.
+[06:08] All this looks good, control logs and all.
+[06:10] My flaps are down, and I skid switches on.
+[06:12] My lights are working, speed brake's still out,
+[06:14] I'm up on two, I'm coming, you're on upright.
+[06:18] All this looks good, frequencies look good.
+[06:21] I can put in the squawk later on.
+[06:25] Battery's still look good, air flow is normal,
+[06:27] my lights are off, I look good, I'm sandy,
+[06:30] check myself, I'm not missing anything.
+[06:32] So he comes around, shows me four tools,
+[06:34] I give him a thumbs up, he's gonna tell me
+[06:37] to bring everything up, so I'll go hook flaps,
+[06:40] speed brakes in, and he's gonna show me his tools.
+[06:44] I'll give him a thumbs up, canopy on ICS,
+[06:47] push this one in, that back, bring it on down.
+[06:57] He's gonna start looking both ways,
+[06:59] he'll start walking that way, and I'll follow him.
+[07:02] So I'm gonna, I'm gonna go so sweet,
+[07:04] back out, template's off.
+[07:06] Gave K if you want, or not,
+[07:08] because I can talk to you like this,
+[07:09] if you want.
+[07:11] So you see like, he's gonna get,
+[07:12] make you do a brake check, so hit enough momentum
+[07:14] behind him where he can tap it,
+[07:16] but still keep rolling.
+[07:17] So you just want the front to kinda go down,
+[07:20] he's gonna go this way.
+[07:22] You can try and be a hero, use your left hand
+[07:24] to hold it high gain, and turn, and salute at the same time,
+[07:28] we don't have to be a hero,
+[07:29] you can just do it with your left hand.
+[07:32] So now we're moving, idle in the turns,
+[07:36] and now we're taxiing.
+[07:37] Seven knots ground speed in line,
+[07:39] 15 in the taxi way, and just taxiing blah, blah, blah,
+[07:48] and then the taxi in the road, same.
+[07:54] So at this point when you're in instruments,
+[07:56] right now you're just setting up your shit.
+[07:57] So like all your waypoints,
+[07:59] you wanna get all that locked down.
+[08:00] So like, you have them all written down,
+[08:02] you get all the coordinates and whatnot,
+[08:05] and you're figuring that out.
+[08:06] So we're getting everything ready to fly.
+[08:08] Something that I fucked up on,
+[08:09] my first flight was my radio volumes weren't
+[08:12] where I wanted them, so I spent the first half,
+[08:15] like the first bit climbing out,
+[08:17] fucking with that, and I flew right past the arch.
+[08:21] Right fucking past it.
+[08:22] So I ended up at like 80, and turned back in,
+[08:26] and fixed it, but like, that's the simple things
+[08:28] that I could've done right now and figured out.
+[08:31] So we're coming this way, these won't be here,
+[08:33] there'll be hangers over here,
+[08:36] and then you're gonna turn in like this,
+[08:38] in between two hangers, kind of like the middle lane.
+[08:42] Come this way, and then there's gonna be hangers
+[08:45] right here with a fly-dwell checker.
+[08:47] Turn in to one right here,
+[08:55] and then he'll be bringing you up,
+[08:56] and I'll stop you, parking brake, hands up.
+[09:01] So he's gonna walk around, here's another time
+[09:02] where I do the setting check, I look through everything,
+[09:05] make sure my temperature right here,
+[09:07] I do the taxi checklist in my head.
+[09:10] So I'm looking at standby, AOA, standby,
+[09:14] knots, altitude, BSI, attitude, all of my MFPs and whatnot,
+[09:21] which there is something wrong.
+[09:28] The altitude is fucked up, it says minus 40,
+[09:30] you're gonna have to barrel delta that out later,
+[09:33] we'll figure that out later.
+[09:34] We're moving through, radio looks good,
+[09:37] nav, back end looks good, that radio looks good,
+[09:40] I'm squawking, standby at the right place,
+[09:43] all my lights look good, I'm ready to go,
+[09:45] so all I have to say in the taxi checklist
+[09:48] is alt-10 or a two-niner-eight-two,
+[09:50] which is probably why I'm negative,
+[09:52] it's supposed to be a two-niner-eight-two.
+[09:55] Two-niner-niner-two, one-one-zero-point-nine on the nav,
+[09:59] one-two-five, I'm attacking,
+[10:00] squawking standby, one-two-zero-zero.
+[10:04] So I've got that in my head for the taxi checklist.
+[10:07] He comes around, lets me go, I go parking brake off,
+[10:10] we can be a hero again if you want,
+[10:12] left-hand per-nose wheel, steering,
+[10:17] salute him, shock him, and then,
+[10:21] we're moving out to Marshall.
+[10:22] When Marshall is these little lines right here,
+[10:25] and this is kinda where you get all your shit together
+[10:28] in the afternoon, which you won't for a while.
+[10:32] That's how it is.
+[10:42] What you have in your MFD is what they have
+[10:44] in their MFDs as well, right?
+[10:45] There's no repeat for math.
+[10:47] There is if they choose it.
+[10:49] A lot of the times, I flew with a guy
+[10:50] who didn't even know he could do that.
+[10:52] Oh really?
+[10:53] Yeah.
+[10:54] So, sometimes they'll be seeing where you are,
+[10:57] most times they are, but sometimes they don't.
+[10:59] So, they're going brakes, parking brake,
+[11:02] now we're getting our shit together.
+[11:04] Two things you gotta do here,
+[11:06] specifically, is call strike and ground,
+[11:09] the taxi from here.
+[11:10] You don't talk to ground to get out of the line,
+[11:13] you talk to them from here, so that's different.
+[11:16] Strike first, so you go on the ox,
+[11:20] strike zero one out of trucks.
+[11:22] Let's say zero one got you out.
+[11:24] Then if you're all ready to go,
+[11:26] you'll go up on one or pry,
+[11:31] case of a little ground,
+[11:32] hot two zero one, taxi, golf.
+[11:35] Which taxi?
+[11:36] Golf, channel two.
+[11:37] Oh.
+[11:38] Yep.
+[11:39] They'll tell you taxi, runway one three via Bravo Alpha,
+[11:45] to one three.
+[11:46] Read that back, we're good to go.
+[11:49] Bringing the power in and we're going that way.
+[12:13] Now we're taxiing.
+[12:16] Do you guys wanna see where you're probably gonna go a lot?
+[12:19] Or what do you guys wanna do?
+[12:21] Yeah, I'm not sure you're gonna go.
+[12:23] Do you wanna see the sin as well?
+[12:25] What do you guys wanna do?
+[12:27] We've been planning on with that.
+[12:29] Okay, cool.
+[12:29] It's a little short.
+[12:30] We're actually taking off when you say sin.
+[12:32] Okay, yeah.
+[12:34] Okay, so 15 knots, what'd you want?
+[12:40] Ground speed?
+[12:42] I'm gonna go a little faster.
+[12:43] What's that caution, it just got.
+[12:45] So if I go above 70% on the RPM,
+[12:49] and my seat isn't armed, it'll tell me.
+[13:01] No, I didn't on that one.
+[13:05] But typically, yeah.
+[14:06] When you get past the resting gear,
+[14:08] which I forgot to do.
+[14:11] You know what I'm saying?
+[14:12] You know, auto roll to channel three,
+[14:14] which is half.
+[14:15] Oh, my God.
+[14:17] And then here, you get a 45 degree cut or so.
+[14:24] So you're trying to face that little tower
+[14:27] or the little checker thing.
+[14:30] That's kinda where you want.
+[14:33] So until you're fam solo,
+[14:35] you have to do the takeoff checklist here.
+[14:38] Normally, like I can do it on the roll.
+[14:40] So do this checklist before you say anything,
+[14:44] like in your mind.
+[14:45] So control is all light out,
+[14:47] and skid switches on, light on,
+[14:48] flat sides half, indicate half,
+[14:50] and visually check to half, trim is zero zero,
+[14:52] three degrees, nose up, can be closed line nine R,
+[14:54] and harness eight points,
+[14:55] pins, roof, radar on the front,
+[14:57] or the back, under the front,
+[14:59] take up checks and blue.
+[15:00] So get in a habit of literally looking
+[15:04] at everything you're saying,
+[15:05] because they'll get you on the landing checklist.
+[15:08] If you don't look at the skid,
+[15:09] they can easily in the back seat
+[15:11] turn their AMS skid off,
+[15:12] and there'd be no light here.
+[15:14] And if you call skid light on, you'll fail.
+[15:17] So like, literally get in the habit of
+[15:19] gear through down lock,
+[15:20] flat sides half, indicate half,
+[15:22] hook is up, harness lock,
+[15:23] speed brake extended, and the skid switches on, light on.
+[15:26] I'm literally looking at all these things when I do it.
+[15:28] Just try and get in the habit of that.
+[15:31] Then we're on three, so King's Hill Tower,
+[15:33] on two zero one, takeoff.
+[15:36] On two zero one, clear to takeoff,
+[15:38] one three, right, switch to departure.
+[15:41] On two zero one, clear to takeoff,
+[15:42] on three right, switch to departure,
+[15:44] roll four, power up,
+[15:46] roof is clear,
+[15:48] TV heat, IFF, lights,
+[15:53] no ad bits, DCR is off, fuel control is normal.
+[15:58] Hold short, check it's complete.
+[16:01] That's all on your way out of here.
+[16:20] So you come to a stop,
+[16:23] good headings, no off flags, knees.
+[16:25] That's what you say.
+[16:26] So you're literally looking at them,
+[16:28] because they can fuck with that too.
+[16:30] They can turn off your HSI and freeze it.
+[16:33] So it's saying the wrong headings.
+[16:34] So literally look at these two,
+[16:36] in the hood if you have it.
+[16:37] Good headings, no off flags, all this shit,
+[16:42] like an off flag like that.
+[16:45] That's bad to take off with.
+[16:47] So good headings, no off flags, knees, let's say clear.
+[16:50] Put the throttle forward.
+[16:53] Now you're looking over here
+[16:53] to make sure you don't exceed anything.
+[16:55] Once it gets there, then you start talking.
+[16:57] Good EGT RPM fuel flow,
+[16:59] no warnings and precautions.
+[17:02] Begin your wipeout while you're doing the wipeout.
+[17:05] High it's three by three,
+[17:06] because if your highs are gonna be fucked up,
+[17:07] it's gonna be in the wipeout.
+[17:09] High three by three, good bolts.
+[17:11] Time is 45, ready to brake, loose.
+[17:15] Ready in the back, and then you just go.
+[17:18] So the next thing, we're looking at our airspeed now.
+[17:23] Airspeed alive, and then line speed's at 100,
+[17:28] usually at the gear.
+[17:30] So good line speed.
+[17:32] Now we're looking for 120.
+[17:35] And now we're rotating.
+[17:38] Nice and slow off the deck, don't go above on speed.
+[17:41] And then you're looking for 100 feet, gear flaps.
+[17:44] Clear.
+[17:46] You're up, flaps up.
+[17:47] Now we're holding, yeah, passing 100 feet,
+[17:49] I heard, is it 300?
+[17:51] There's something for instruments that you have to do
+[17:52] waiting till like 100 feet, pretty sure that's it.
+[17:55] Good gear flaps up, under 200, good handle.
+[17:59] Literally shake the handle.
+[18:00] Now I'm passing 200, I'm holding 12 degrees, nose up.
+[18:04] Now I'm talking to the radio.
+[18:05] Kings out of parts, you got 201, passing 900 for 7000.
+[18:09] Puck 201, continue on this, I maintain 10,000.
+[18:15] Read that back, now I'm reaching 250,
+[18:17] I pitch up to 16, right here.
+[18:22] 16 degrees, nose up, to hold 250 or so.
+[18:27] Still staying right there,
+[18:29] of course 225, because that's what we need to do later on.
+[18:33] Now I'm waiting for my DME to click down to 4.2,
+[18:37] for the synth at least.
+[18:39] Your airspeed is all controlled right here,
+[18:41] with the nose attitude.
+[18:45] So 253, there's 3.4, law 5000,
+[18:51] to wait on that, it's 4.2, I'm turning right.
+[18:55] So I'll pass through 5000.
+[18:57] So passing through 5000, you got to put the law to 5000.
+[19:02] Now we're turning, and we're getting on the arc.
+[19:06] So I'll pass it by seven,
+[19:08] because we're going to 10,000 feet now.
+[19:12] It's good, I got a little slow,
+[19:13] I'm gonna pitch down slightly,
+[19:16] trying to bring this over to the 90 degree benchmark
+[19:19] for my arc.
+[19:23] Also trying to get in the habit of saying like,
+[19:24] 2000 feet to go, so you don't forget,
+[19:27] because you will.
+[19:30] So 6.5, 1000 to go.
+[19:37] I'm gonna level it out a little bit,
+[19:39] to get there, 500 feet to go,
+[19:43] power's coming back, I'm pitching forward,
+[19:46] don't get too low,
+[19:48] level it off a little too early.
+[19:52] Getting fast now, real fast,
+[19:56] trying to get out to seven,
+[19:58] pitching it back in.
+[20:00] 100 feet low, keep going fast,
+[20:02] so I'll just switch that energy,
+[20:08] heading 208, I'm coming in a little bit more.
+[20:15] If this is above the 90 degree benchmark,
+[20:17] I'm going towards it, if it's below it,
+[20:19] I'm going away from it.
+[20:21] So I wanna get away from it,
+[20:24] because I'm 6.9, I wanna be at seven.
+[20:33] So we go, I'm gonna pitch in,
+[20:37] 10,000 feet, there's seven mile arc,
+[20:41] bring this to the 90 degree benchmark.
+[20:46] Right there, my heading bug for my lead radial,
+[20:49] I've already figured that out,
+[20:50] so I'm passing that now,
+[20:52] turn outbound for Richto on the 225,
+[21:03] see the eyes coming in, what's up?
+[21:23] Pretty much the outbound?
+[21:25] Yep, so I...

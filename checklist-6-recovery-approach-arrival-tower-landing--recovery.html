@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Checklist 6. Recovery — Approach, Arrival, Tower &amp; Landing — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Checklist 6. Recovery — Approach, Arrival, Tower &amp; Landing</h1>
+    <div class="meta">48 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 48</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Checklist 6. Recovery — Approach, Arrival, Tower &amp; Landing</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "MOA check-out call to RTB (doc):", "opts": ["“99, BI single checking out of 1A-NE, 10 thousand, RTB”", "“99, Blazer 201 out of the area”", "“Kingsville Approach, Blazer 201 RTB”", "“99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”"], "ans": 3, "expl": "Doc (Checklist walkthrough): Ch 5 Pri: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”"}, {"q": "MOA check-out for IFR recovery:", "opts": ["“... one seven thousand RICTO recovery”", "“99, BI single checking out of 1A-NE, one five thousand WADE (RIVERA) recovery”", "“... 9 thousand WADE recovery”", "“... one five thousand RTB Kingsville”"], "ans": 1, "expl": "Doc (Checklist walkthrough): “99, BI single checking out of 1A-NE, one five thousand WADE (RIVERA) recovery”"}, {"q": "Comm Script: IFR recovery check-out altitudes:", "opts": ["15 thousand RICTO", "17 (15) thousand WADE(RIVERA)", "9 thousand WADE", "15 (17) thousand WADE(RIVERA) recovery"], "ans": 3, "expl": "Kingsville Comm Script PDF: checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery."}, {"q": "Approach check-in channel:", "opts": ["Ch 12", "Ch 13", "Ch 14", "Ch 4"], "ans": 1, "expl": "Doc (Checklist walkthrough): Check in with approach on channel 13"}, {"q": "Technique when switching to Ch 13 Pri, set Aux to:", "opts": ["channel 1", "channel 5", "channel 30", "channel 3"], "ans": 1, "expl": "Doc (Checklist walkthrough): When you switch to channel 13 switch aux to channel 5 so that you can hear if there will be any conflictions"}, {"q": "Approach check-in (doc):", "opts": ["“Kingsville Approach, Blazer 201, RTB, IDENT”", "“Kingsville Approach, Blazer 201 request HI-TACAN”", "“Kingsville Approach, Blazer 201 checking in”", "“Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request”"], "ans": 3, "expl": "Doc (Checklist walkthrough): Ch 13 Pri: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request."}, {"q": "When do you hit IDENT?", "opts": ["at the IAF", "when Approach says radar contact", "after saying flash request", "before keying the mic"], "ans": 2, "expl": "Doc (Checklist walkthrough): Hit IDENT after saying flash request."}, {"q": "Approach response:", "opts": ["“radar contact, expect HI-TCN 13R”", "“radar contact, say altitude”", "“radar contact, proceed direct WADE”", "“Blazer 201, Kingsville Approach, Radar Contact, 8 miles west of Kleberg County 9 thousand 1 hundred, say request”"], "ans": 3, "expl": "Doc (Checklist walkthrough): “Blazer 201, Kingsville Approach, Radar Contact, 8 miles west of Kleberg County 9 thousand 1 hundred, say request”"}, {"q": "Call base when ___ out from recovery:", "opts": ["20 minutes", "10 minutes", "15 minutes", "5 minutes"], "ans": 1, "expl": "Doc (Checklist walkthrough): at some point 10 minutes out from recovery you want to call base"}, {"q": "IFR recovery request:", "opts": ["“Request vectors ILS 13R”", "“Request the HI-TACAN 13R, Blazer 201”", "“Request the Kings 3”", "“Request the low TACAN 13L”"], "ans": 1, "expl": "Doc (Checklist walkthrough): Ch 13 Pri: “Request the HI-TACAN 13R, Blazer 201”"}, {"q": "Approach’s IFR recovery instruction:", "opts": ["“Blazer 201, proceed direct WADE, climb and maintain one five thousand, Kingsville altimeter 29.92”", "“direct RIVERA, climb and maintain 17 thousand”", "“direct WADE, descend and maintain 9 thousand”", "“direct RICTO, maintain 10 thousand”"], "ans": 0, "expl": "Doc (Checklist walkthrough): Blazer 201, proceed direct WADE, climb and maintain one five thousand, Kingsville altimeter 29.92”"}, {"q": "Approach clearance and your readback:", "opts": ["“report commencing” → “Commencing, Blazer 201”", "“cleared HI-TCN 13R” → “Roger”", "“cleared HI-TCN 13R, contact tower” → “Switching”", "“Blazer 201, cleared HI-TCN 13R, report commencing” → “Cleared HI-TCN 13R, WILCO, Blazer 201”"], "ans": 3, "expl": "Doc (Checklist walkthrough): “Blazer 201, cleared HI-TCN 13R, report commencing” “Cleared HI-TCN 13R, WILCO, Blazer 201”"}, {"q": "WARP checks stand for:", "opts": ["Weather, Altimeter Setting, Runway in use, perform penetration checks", "Winds, Altitude, Radio, Pressure", "WILCO, Altimeter, Radial, Platform", "Weather, Approach, Runway, Penetration"], "ans": 0, "expl": "Doc (Checklist walkthrough): ensure you have completed the “WARP” checks (Weather, Altimeter Setting, Runway in use, perform penetration checks)."}, {"q": "Commencing call:", "opts": ["“Kingsville Arrival, Blazer 201 commencing”", "“Kingsville Approach, Blazer 201 commencing”", "“Kingsville Approach, Blazer 201 at WADE”", "“Blazer 201 leaving WADE”"], "ans": 1, "expl": "Doc (Checklist walkthrough): “Kingsville Approach, Blazer 201 commencing” / “Blazer 201, Roger switch Kingsville Arrival local channel 12”"}, {"q": "After “commencing,” Approach switches you to Kingsville Arrival on (doc / Comm Script IFR recovery):", "opts": ["14 / 12", "13 / 13", "local channel 12 (doc) / local channel 14 (Comm Script)", "3 / 3"], "ans": 2, "expl": "Doc (Checklist walkthrough): Doc: “Roger switch Kingsville Arrival local channel 12”. Comm Script IFR RECOVERY: “Roger switch Kingsville Arrival local channel 14.” (sources differ)"}, {"q": "Arrival’s missed approach instructions:", "opts": ["“fly heading 040, climb and maintain 4 thousand”", "“runway heading, climb and maintain 3 thousand”", "“turn right heading 180, maintain 2 thousand”", "“fly runway heading, climb and maintain 2 thousand feet”"], "ans": 3, "expl": "Doc (Checklist walkthrough): “Blazer 201, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet” / “Runway heading to 2 thousand, Blazer 201”"}, {"q": "Tower radio check on the approach:", "opts": ["“radio check” → “five by five”", "“Blazer 201, Kingsville Tower how do you hear?” → “Loud and clear, Blazer 201”", "“how copy?” → “Lima Charlie”", "“how do you hear?” → “Roger”"], "ans": 1, "expl": "Doc (Checklist walkthrough): “Blazer 201, Kingsville Tower how do you hear?” “Loud and clear, Blazer 201” “Blazer 201, Roger, report the final approach fix with the gear”"}, {"q": "Tower instruction after radio check:", "opts": ["“report platform”", "“report the initial”", "“report the final approach fix with the gear”", "“report three mile final”"], "ans": 2, "expl": "Doc (Checklist walkthrough): “Blazer 201, Roger, report the final approach fix with the gear” “Blazer 201 Wilco”"}, {"q": "Platform call on the penetration:", "opts": ["“Platform, LAW 200”", "“5,000, resetting LAW”", "“Platform, resetting LAW to 2800 ft”", "“Platform. LAW set 5,000”"], "ans": 2, "expl": "Doc (Checklist walkthrough): “Platform, resetting LAW to 2800 ft”"}, {"q": "Slow to 200 KIAS at:", "opts": ["at the FAF", "10 nm prior to the FAF", "3-5 nm prior to the FAF", "5-7 nm prior to the FAF"], "ans": 3, "expl": "Doc (Checklist walkthrough): At 5-7 nm prior to the FAF, slow to 200 KIAS."}, {"q": "Configure for landing:", "opts": ["at the FAF", "5-7 nm prior to FAF", "1 nm prior to FAF", "3-5 nm prior to FAF"], "ans": 3, "expl": "Doc (Checklist walkthrough): Configure the a/c for landing 3-5 nm prior to FAF"}, {"q": "Landing checks initiating call / response:", "opts": ["“Below 200 kts, gear and __ flaps” R/C: “Clear”", "“Below 200, gear down” R/C: “Roger”", "“140, gear, flaps” R/C: “Clear”", "“Gear, flaps” R/C: “Clear”"], "ans": 0, "expl": "Doc (Checklist walkthrough): Landing Checks: “Below 200 kts, gear and __ flaps” R/C: “Clear”"}, {"q": "Landing checks order:", "opts": ["Gear, Flaps/Slats, Hook, Harness, Speed Brakes, Anti-Skid, Fuel/On Speed", "Gear, Hook, Flaps, Speed Brakes, Harness, Anti-Skid", "Gear, Flaps, Speed Brakes, Hook, Anti-Skid, Harness", "Flaps, Gear, Speed Brakes, Hook, Harness, Fuel"], "ans": 0, "expl": "Doc (Checklist walkthrough): 1. Gear 2. Flaps/Slats 3. Hook 4. Harness 5. Speed Brakes 6. Anti-Skid 7. Check Fuel State."}, {"q": "Landing checks complete call:", "opts": ["“Gear down, flaps set, Landing Checks Complete”", "“Three down and locked, hook up, fuel X.X, on speed”", "“Gear three down and locked, flaps set ____, indicating____, hook___, harness____, speed brakes_____, anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”", "“Gear, flaps, hook, harness, speed brakes, Landing Checks Complete”"], "ans": 2, "expl": "Doc (Checklist walkthrough): 8. “Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”"}, {"q": "Full Flaps On Speed estimate:", "opts": ["130 + half fuel state", "150 + half fuel state", "110 + half fuel state", "110 + fuel state"], "ans": 2, "expl": "Doc (Checklist walkthrough): Full Flaps On Speed = 110 + half fuel state / Half Flaps On Speed = 130 + half fuel state / No Flaps On Speed = 150 + half fuel state"}, {"q": "Half Flaps On Speed estimate:", "opts": ["110 + half fuel state", "120 + half fuel state", "130 + half fuel state", "150 + half fuel state"], "ans": 2, "expl": "Doc (Checklist walkthrough): Half Flaps On Speed = 130 + half fuel state"}, {"q": "No Flaps On Speed estimate:", "opts": ["150 + half fuel state", "140 + half fuel state", "160 + half fuel state", "130 + half fuel state"], "ans": 0, "expl": "Doc (Checklist walkthrough): No Flaps On Speed = 150 + half fuel state"}, {"q": "On speed table: fuel 2.0 (12.5K), half flaps:", "opts": ["122", "161", "138", "141"], "ans": 3, "expl": "Doc (Checklist walkthrough): 12.5K 2.0: FULL 122, HALF 141, NO FLAP 161"}, {"q": "On speed table: fuel 1.0 (11.5K), full flaps:", "opts": ["117", "119", "135", "114"], "ans": 0, "expl": "Doc (Checklist walkthrough): 11.5K 1.0: FULL 117, HALF 135, NO FLAP 154"}, {"q": "Max descent rate inside the FAF:", "opts": ["800 fpm", "1000 fpm", "1500 fpm", "600 fpm"], "ans": 1, "expl": "Doc (Checklist walkthrough): (Max of 1000 fpm inside FAF)"}, {"q": "FAF call (Ch 14 Pri) in the doc:", "opts": ["“Blazer 201, final approach fix, landing checks complete”", "“Kingsville Tower, Blazer 201, FAF with gear”", "“Kingsville Tower, Blazer 201, gear down”", "“Kingsville Arrival, Blazer 201, FAF”"], "ans": 1, "expl": "Doc (Checklist walkthrough): Ch 14 Pri: “Kingsville Tower, Blazer 201, FAF with gear” / “Blazer 201, winds 130 at 15, cleared for the option 13R” / “Cleared for the option 13R, Blazer 201”"}, {"q": "Tower response to “FAF with gear”:", "opts": ["“report the numbers”", "“Blazer 201, winds 130 at 15, cleared for the option 13R”", "“cleared to land 13R”", "“cleared touch and go 13L”"], "ans": 1, "expl": "Doc (Checklist walkthrough): “Blazer 201, winds 130 at 15, cleared for the option 13R”"}, {"q": "Missed approach: flaps full→half minimum speed; flaps up minimum speed:", "opts": ["125 KIAS; 140 KIAS", "125 KIAS; 150 KIAS", "120 KIAS; 140 KIAS", "140 KIAS; 150 KIAS"], "ans": 0, "expl": "Doc (Checklist walkthrough): At 125 KIAS minimum flaps may be called for and raised from full to half. With 140 KIAS min the flaps may be called for and raise from full or half to up"}, {"q": "Courtesy call after a full stop from an instrument approach (Ch 3 Pri):", "opts": ["“Kingsville Tower, Blazer 201, on deck”", "“Kingsville Tower, Blazer 201, GCA rollout on the right”", "“Kingsville Tower, Blazer 201, full stop”", "“Kingsville Ground, Blazer 201, clear of the active”"], "ans": 1, "expl": "Doc (Checklist walkthrough): Ch 3 Pri: “Kingsville Tower, Blazer 201, GCA rollout on the right” (as in 13R) / “Blazer 201, right when able, contact Ground” / “Roger, Blazer 201”"}, {"q": "VFR option at approach check-in (Comm Script):", "opts": ["“Request VFR to the break”", "“Cancel IFR, direct initial”", "“Kingsville Approach, BLAZR/HAWK 2XX Cancel VFR to the Initial.”", "“Request the overhead”"], "ans": 2, "expl": "Kingsville Comm Script PDF: Kingsville Approach, BLAZR/HAWK 2XX Cancel VFR to the Initial. Or ... Vectors to the Initial. Or ... request HI-TCN 13R."}, {"q": "VFR to initial: Approach response:", "opts": ["“proceed direct WADE”", "“proceed to the initial for the 13’s, cancelation received, maintain this frequency for advisories, Kingsville altimeter 29.92.”", "“cancellation received, squawk VFR, contact tower”", "“cleared to the initial, contact tower”"], "ans": 1, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX proceed to the initial for the 13’s, cancelation received, maintain this frequency for advisories, Kingsville altimeter 29.92. / BLAZR/HAWK 2XX WILCO 29.92."}, {"q": "VFR to initial: Arrival button:", "opts": ["button 12", "button 14", "button 3", "button 13"], "ans": 0, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX switch Kingsville Arrival button 12. / BLAZR/HAWK 2XX switching 12."}, {"q": "Arrival check-in (VFR to initial, Comm Script):", "opts": ["“... checking in 9 thousand”", "“Kingsville Arrival, BLAZR/HAWK 2XX checking in 4 thousand 5 hundred.”", "“... with information bravo”", "“... 15 miles west for the initial”"], "ans": 1, "expl": "Kingsville Comm Script PDF: Kingsville Arrival, BLAZR/HAWK 2XX checking in 4 thousand 5 hundred."}, {"q": "Arrival hand-off to tower:", "opts": ["“no traffic between you and the initial squawk standby and contact tower.” → “squawking standby switching.”", "“squawk VFR, contact tower” → “switching”", "“contact tower button 3” → “WILCO”", "“radar service terminated” → “roger”"], "ans": 0, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX no traffic between you and the initial squawk standby and contact tower. / BLAZR/HAWK 2XX squawking standby switching."}, {"q": "IFR to initial vector (Comm Script):", "opts": ["“fly heading 040 descend and maintain 4 thousand, report Kingsville in sight, Kingsville altimeter 29.92.”", "“fly heading 040, descend and maintain 2 thousand”", "“fly heading 400, report field in sight”", "“fly heading 130, maintain 4 thousand 5 hundred”"], "ans": 0, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX fly heading 040 descend and maintain 4 thousand, report Kingsville in sight ... / 040 down to 4 thousand, vectors for the initial, WILCO, Kingsville altimeter 29.92."}, {"q": "Tower call for the break (Comm Script):", "opts": ["“... initial, full stop”", "“Kingsville Tower, BLAZR/HAWK 2XX 15 miles to the West for the initial.”", "“... 10 miles West, request break”", "“... 15 miles East for the initial”"], "ans": 1, "expl": "Kingsville Comm Script PDF: Kingsville Tower, BLAZR/HAWK 2XX 15 miles to the West for the initial. / report the initial for the 13’s / WILCO."}, {"q": "Initial → numbers sequence (Comm Script):", "opts": ["“numbers” → “initial” → “break”", "“Initial” → “break approved” → “numbers”", "“2XX Initial.” → “report the numbers.” → “2XX, numbers.” → “left break approved.”", "“Initial” → “report abeam” → “left break approved”"], "ans": 2, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX Initial. / report the numbers. / BLAZR/HAWK 2XX, numbers. / left break approved."}, {"q": "Abeam call:", "opts": ["“2XX abeam, request option”", "“BLAZR/HAWK 2XX abeam, gear, (option, touch and go, full stop).”", "“2XX abeam, landing checks complete”", "“2XX gear down, abeam, fuel state”"], "ans": 1, "expl": "Kingsville Comm Script PDF: ABEAM CALL BLAZR/HAWK 2XX abeam, gear, (option, touch and go, full stop). / winds 130 at 15 cleared option 13L."}, {"q": "Tower response to the abeam call:", "opts": ["“roger ball”", "“cleared option 13R”", "“cleared to land 13L”", "“winds 130 at 15 cleared option 13L.”"], "ans": 3, "expl": "Kingsville Comm Script PDF: BLAZR/HAWK 2XX, winds 130 at 15 cleared option 13L. / cleared option 13L."}, {"q": "Ball call:", "opts": ["“2XX ball, on speed”", "“Goshawk Ball, 2XX”", "“2XX Hawk Ball, fuel state”", "“2XX Goshawk Ball, fuel state.”"], "ans": 3, "expl": "Kingsville Comm Script PDF: BALL CALL 2XX Goshawk Ball, fuel state. (ICS no FCLP’s) Or CLARA **Without Ball** / Roger Ball"}, {"q": "Call when you do NOT have the ball:", "opts": ["Roger Ball", "CLARA", "No Joy", "Paddles contact"], "ans": 1, "expl": "Kingsville Comm Script PDF: Or CLARA  **Without Ball **"}, {"q": "Response to the ball call:", "opts": ["Clara", "Ball in sight", "Cleared option", "Roger Ball"], "ans": 3, "expl": "Kingsville Comm Script PDF: Roger Ball"}, {"q": "Interval call options (downwind, Comm Script):", "opts": ["“extend downwind” → “WILCO”", "“number two, follow traffic” → “roger”", "“right downwind approved” → “interval in sight”", "“your interval is abeam mid field, left downwind approved” / “left closed traffic is approved” / “maintain your interval” → “interval in sight”"], "ans": 3, "expl": "Kingsville Comm Script PDF: DOWNWIND CALLS ... your interval is abeam mid field, left downwind approved. Or left closed traffic is approved. or maintain your interval. / interval in sight or Roger."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

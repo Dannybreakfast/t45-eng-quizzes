@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Checklist 1. Ground — Prestart &amp; Engine Start — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Checklist 1. Ground — Prestart &amp; Engine Start</h1>
+    <div class="meta">33 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 33</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Checklist 1. Ground — Prestart &amp; Engine Start</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "Prior to getting in the cockpit, step 1 is:", "opts": ["Ejection Seat - Safe", "Parking Brake Handle - Set", "Standby Attitude Indicator - Caged", "Batt Switches - On"], "ans": 0, "expl": "Doc (Checklist walkthrough): 1. Ejection Seat - Safe 2. Standby Attitude Indicator - Pull out and lock in the caged position before getting in the jet."}, {"q": "Why is the Standby Attitude Indicator pulled out and locked caged before getting in the jet?", "opts": ["Required for the C AUG BIT", "It erects faster on GTS start", "This prevents wear to the device when power is applied.", "It prevents an OFF flag on taxi"], "ans": 2, "expl": "Doc (Checklist walkthrough): Standby Attitude Indicator - Pull out and lock in the caged position before getting in the jet. This prevents wear to the device when power is applied."}, {"q": "Pre Start step 1:", "opts": ["Batt Switches - On", "Remove ejection seat pin and MDC firing handle pin", "Plug in Comm/Oxygen hose and Anti-G on left side.", "Pri Radio - On, Channel 30 (ATIS)"], "ans": 2, "expl": "Doc (Checklist walkthrough): 1. Plug in Comm/Oxygen hose and Anti-G on left side. 2. Batt Switches - On"}, {"q": "Battery check: each battery should read:", "opts": ["27-29 volts", "22-24 volts", "24-29 volts", "24 volts max"], "ans": 2, "expl": "Doc (Checklist walkthrough): Check Each battery for 24-29 volts. Leave both on."}, {"q": "Correct battery check sequence:", "opts": ["batt 1 on, batt 1 off, batt 2 on, batt 1 on", "batt 2 on, batt 1 on, batt 2 off, batt 2 on", "batt 1 on, then batt 2 on, then batt 1 off to check batt 2, then batt 1 back on", "both on together, then batt 1 off"], "ans": 2, "expl": "Doc (Checklist walkthrough): Go batt 1 on, then turn batt 2 on and then batt 1 off to check batt 2, then batt 1 back on. This ensures there's no unnecessary interruptions of power."}, {"q": "Per the Sheet, the battery test minimum is:", "opts": ["27v min", "29v min", "22v min", "24v min"], "ans": 3, "expl": "Sheet (T-45 Checklists): 2. Batteries - Test (24v min)"}, {"q": "Pri Radio for ATIS (Pre Start step 3):", "opts": ["Channel 2 (Ground)", "Pri Radio - On, Channel 30 (ATIS)", "Channel 1 (Base)", "Channel 29 (Clearance)"], "ans": 1, "expl": "Doc (Checklist walkthrough): 3. Pri Radio - On, Channel 30 (ATIS). When done listening, switch to ch 29, turn off, put altimeter setting in"}, {"q": "When done listening to ATIS, you:", "opts": ["switch to ch 29, turn off, put altimeter setting in", "switch to ch 1 and call Base", "leave it on ch 30 and turn off", "switch to ch 2 and call Ground"], "ans": 0, "expl": "Doc (Checklist walkthrough): When done listening, switch to ch 29, turn off, put altimeter setting in"}, {"q": "Which pins are removed while listening to ATIS?", "opts": ["MDC pin and hook pin", "canopy pin and gear pins", "seat pin only", "ejection seat pin and MDC firing handle pin"], "ans": 3, "expl": "Doc (Checklist walkthrough): 4. Remove ejection seat pin and MDC firing handle pin while listening to ATIS and stow in little storage compartment on right side."}, {"q": "Interior Check: Contr Aug Switch position?", "opts": ["OFF", "SBI", "RESET", "ALL"], "ans": 1, "expl": "Doc (Checklist walkthrough): 7. Contr Aug Switch - SBI"}, {"q": "Interior Check: Fuel Shutoff Handle?", "opts": ["Pulled", "Down", "Stowed", "Up"], "ans": 3, "expl": "Doc (Checklist walkthrough): 4. Fuel Shutoff Handle - Up"}, {"q": "Interior Check: Exterior Lights setting?", "opts": ["Down, Down, Down, Middle, Middle, Middle, throttle pinky switch middle", "All Off, pinky switch forward", "Up, Up, Up, Middle, Middle, Middle", "Middle, Middle, Middle, Down, Down, Down"], "ans": 0, "expl": "Doc (Checklist walkthrough): 13. Exterior Lights - Down, Down, Down, Middle, Middle, Middle, throttle pinky switch middle"}, {"q": "Interior Check: first item?", "opts": ["Engine Switch - On", "Throttle - Off", "Ignition - Normal", "OBOGS Flow Selector - Off"], "ans": 3, "expl": "Doc (Checklist walkthrough): 1. OBOGS Flow Selector - Off 2. OBOGS/ANTI-G - Off 3. Ignition - Normal"}, {"q": "ICS check call (front):", "opts": ["“Throttle off, GTS”", "“Lights and Tones”", "“Loud and Clear, switches set, Norm, Both, Fuel __”", "“ICS check, switches set, Norm, Fuel __”"], "ans": 3, "expl": "Doc (Checklist walkthrough): “ICS check, switches set, Norm, Fuel __” R/C: “Loud and Clear, switches set, Norm, Both, Fuel __”"}, {"q": "Rear cockpit response to the ICS check:", "opts": ["“Loud and Clear, switches set, Norm, Both, Fuel __”", "“Clear”", "“ICS check, switches set, Norm, Fuel __”", "“Loud and clear, Fuel __”"], "ans": 0, "expl": "Doc (Checklist walkthrough): R/C: “Loud and Clear, switches set, Norm, Both, Fuel __”"}, {"q": "Warnings/Cautions/Advisories count before start:", "opts": ["442", "344", "414", "441"], "ans": 3, "expl": "Doc (Checklist walkthrough): 8. Warnings/Cautions/Advisories - 441 (Oxygen, Generator, Oil Press, Hyd Fail; Hyd, Canopy, LP Pump, F Pres, (NWS Aug Possible); Skid"}, {"q": "How many tones on “Lights and Tones”?", "opts": ["2 tones", "4 tones (Warnings, Cautions, Wheels, Weapons)", "5 tones", "3 tones"], "ans": 1, "expl": "Doc (Checklist walkthrough): Check all lights then flick back for 4 tones (Warnings, Cautions, Wheels, Weapons)"}, {"q": "Paddle Switch - Press before start causes:", "opts": ["Master caution clears", "C AUG caution comes on", "Skid light goes out", "NWS Caution comes on"], "ans": 3, "expl": "Doc (Checklist walkthrough): 10. Paddle Switch - Press (NWS Caution comes on)"}, {"q": "Pre-start Hyds reading:", "opts": ["0, 0, 2700 (min)", "0, 0, 1250 (min)", "3000, 3000, 2700", "1250, 0, 0"], "ans": 1, "expl": "Doc (Checklist walkthrough): 11. Hyds - 0, 0, 1250 (min)"}, {"q": "Engine start call to the rear cockpit:", "opts": ["“Throttle off, GTS”", "“Watch your knees”", "“Throttle off, Canopy”", "“Lights and Tones”"], "ans": 0, "expl": "Doc (Checklist walkthrough): 1. Verify throttle is off “Throttle off, GTS” R/C: “Clear”"}, {"q": "After “Throttle off, GTS”, you place the fuel shutoff handle:", "opts": ["down", "stowed", "pulled", "up"], "ans": 0, "expl": "Doc (Checklist walkthrough): After saying “throttle off, GTS”, place fuel shutoff handle down"}, {"q": "Signal to the lineman for GTS start:", "opts": ["Thumbs up", "Two fingers with left hand", "Sideways 2/peace sign", "Shake left fist at lineman"], "ans": 3, "expl": "Doc (Checklist walkthrough): 2. Signal Lineman for GTS Start (Shake left fist at lineman)"}, {"q": "GTS advisory light should come on within:", "opts": ["15 seconds", "10 seconds", "30 seconds", "20 seconds"], "ans": 3, "expl": "Doc (Checklist walkthrough): waiting for GTS Light (Should come on within 20 seconds)"}, {"q": "Signal to the lineman for engine start (after GTS advisory):", "opts": ["Two fingers with left hand", "Tap top of head", "Shake left fist", "Thumbs up"], "ans": 0, "expl": "Doc (Checklist walkthrough): 4. When you have GTS advisory: Signal lineman for start (Two fingers with left hand)"}, {"q": "After Engine Switch - Start, the ready light should come on within:", "opts": ["6 seconds", "30 seconds", "15 seconds", "20 seconds"], "ans": 2, "expl": "Doc (Checklist walkthrough): looking for ready light (Should be within 15 seconds). Ready light means that N1 is spinning in correct direction and has reached 100 RPM."}, {"q": "Throttle - Idle at what RPM?", "opts": ["25-30% RPM", "10-12% RPM", "17-20% RPM", "45% RPM"], "ans": 2, "expl": "Doc (Checklist walkthrough): 6. At 17-20% RPM: Throttle - Idle (Go forward just to the first click)"}, {"q": "After throttle to idle, light off should occur within:", "opts": ["30 seconds", "20 seconds", "6 seconds", "15 seconds"], "ans": 3, "expl": "Doc (Checklist walkthrough): looking for fuel flow to come up and EGT light off to occur within 15 seconds"}, {"q": "Everything comes on at what RPM (two hands)?", "opts": ["45%", "70%", "20%", "52%"], "ans": 0, "expl": "Doc (Checklist walkthrough): 7. Everything Comes on at 45% - Two Hands"}, {"q": "Post-start freqs: TACAN and NAV set to:", "opts": ["TACAN 125x, NAV 110.9 (ILS for 13R)", "TACAN 125x, NAV 109.9", "TACAN 13x, NAV 110.9", "TACAN 110x, NAV 125.9"], "ans": 0, "expl": "Doc (Checklist walkthrough): TACAN (Set freq - 125x), NAV (Set freq - 110.9 (ILS for 13R))"}, {"q": "Idle RPM should stabilize at approximately ___ within 30 seconds of selecting idle:", "opts": ["70%", "52%", "45%", "56.5%"], "ans": 1, "expl": "Doc (Checklist walkthrough): RPM Should stabilize at approximately 52% within 30 seconds of selecting idle."}, {"q": "Max EGT for ground start:", "opts": ["450 deg", "610 deg", "550 deg with a 20 deg overshoot allowed for 20 seconds", "420 deg with 20 deg overshoot"], "ans": 2, "expl": "Doc (Checklist walkthrough): Max EGT for ground start is 550 deg with a 20 deg overshoot allowed for 20 seconds. Max EGT at idle is 450 deg."}, {"q": "Max EGT at idle:", "opts": ["610 deg", "550 deg", "420 deg", "450 deg"], "ans": 3, "expl": "Doc (Checklist walkthrough): Max EGT at idle is 450 deg. EGT will normally not rise above 420 deg during ground start."}, {"q": "Sheet memory aid after light-off:", "opts": ["\"Two Hands, Five Switches\"", "\"Lights and Tones\"", "\"Plane Turns On, I Turn On\"", "\"Mask On, Flow On\""], "ans": 2, "expl": "Sheet (T-45 Checklists): \"Plane Turns On, I Turn On\" 7. OBOGS/Anti-G + HUD 8. Speed Brake + Uncage STBY 9. Pri + Aux Radio 10. LMFD + RMFD 11.VOR_TAC_IFF"}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

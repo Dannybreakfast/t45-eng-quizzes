@@ -1,0 +1,877 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="auth.js"></script><title>Checklist / Comm Flow Study Guide — T-45 Quizzes</title><style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 1.25rem 1rem 3.5rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.4rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.guide {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.35rem 2rem;
+}
+.guide .doc-title { display: none; }
+.guide h2 {
+  margin: 1.75rem 0 0.65rem;
+  font-size: 1.2rem;
+  color: #d8ebff;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+}
+.guide h2:first-of-type { margin-top: 0.5rem; }
+.guide h3 {
+  margin: 1.15rem 0 0.45rem;
+  font-size: 1.02rem;
+  color: #c5daf0;
+}
+.guide p { margin: 0.55rem 0; }
+.guide ul, .guide ol { margin: 0.4rem 0 0.7rem; padding-left: 1.35rem; }
+.guide li { margin: 0.28rem 0; }
+.guide hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.25rem 0;
+}
+.guide strong { color: #fff; font-weight: 650; }
+.guide code {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.08rem 0.35rem;
+  font-size: 0.9em;
+  color: #b8d9f8;
+}
+.table-wrap {
+  overflow-x: auto;
+  margin: 0.75rem 0 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: var(--panel2);
+}
+th, td {
+  text-align: left;
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+th {
+  background: #1e2d44;
+  color: #cfe6fa;
+  font-weight: 650;
+  white-space: nowrap;
+}
+tr:last-child td { border-bottom: none; }
+.toc {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1.1rem 1rem;
+  margin: 0.5rem 0 0.25rem;
+}
+.toc h2 {
+  margin: 0 0 0.45rem !important;
+  font-size: 1rem !important;
+  border: none !important;
+  padding: 0 !important;
+  color: var(--accent) !important;
+}
+.toc ol { margin: 0; padding-left: 1.2rem; }
+.toc li { margin: 0.2rem 0; font-size: 0.92rem; }
+.callout {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  background: rgba(61,156,240,.1);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  color: #cfe6fa;
+  font-size: 0.95rem;
+}
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+.cta-row {
+  display: flex; flex-wrap: wrap; gap: 0.55rem; margin: 0.85rem 0 0;
+}
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #041018 !important;
+  font-weight: 700;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  font-size: 0.92rem;
+}
+.cta:hover { background: var(--accent2); color: #fff !important; }
+.cta.ghost {
+  background: transparent;
+  color: var(--muted) !important;
+  border: 1px solid var(--border);
+}
+.cta.ghost:hover { color: var(--text) !important; border-color: var(--muted); }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .guide { padding: 1rem 0.9rem 1.5rem; }
+  th, td { padding: 0.45rem 0.5rem; font-size: 0.85rem; }
+}
+
+.ic { margin: 0.6rem 0 0.9rem; border: 1px solid #2ecc71; border-radius: 10px; background: rgba(46,204,113,.08); overflow: hidden; }
+.ic-label { background: rgba(46,204,113,.18); color: #b9f5cf; font-weight: 700; font-size: 0.85rem; padding: 0.4rem 0.75rem; letter-spacing: .02em; }
+.ic pre { margin: 0; padding: 0.7rem 0.85rem; white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92rem; color: #e9fff1; line-height: 1.5; }
+.callout.old { background: rgba(240,180,41,.09); border-left-color: var(--warn); color: #f6e3b4; }
+.callout.warn { background: rgba(231,76,60,.09); border-left-color: #e74c3c; color: #f7d4cf; }
+.tag.old { display: inline-block; background: var(--warn); color: #241a00; font-weight: 800; font-size: 0.72rem; padding: 0.1rem 0.45rem; border-radius: 5px; letter-spacing: .03em; margin-right: .3rem; }
+.guide table td:nth-child(2) { color: #d9fbe6; }
+
+p.call{color:#7fd1ff;font-weight:600} h3{margin:.9rem 0 .3rem;font-size:1rem}</style></head><body><div class="wrap">
+<header class="quiz-head"><div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Study Guide</div>
+<h1>Checklist / Comm Flow Study Guide</h1><p>In checklist / comm-call order, ground to shutdown. Source wording kept verbatim; radio calls and ICS call/response lines are highlighted. <a href="knowledge-packs/cl/index.html">Knowledge pack</a></p></header>
+<section class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem'><h2>Phases</h2><ol style='list-style:none;padding:0'><li><a href='#ground'>1. Ground — Prestart &amp; Engine Start</a> · <a href='checklist-1-ground-prestart-engine-start--ground.html'>quiz</a></li><li><a href='#poststart'>2. Post-Start, Clearance &amp; Plane Captain</a> · <a href='checklist-2-post-start-clearance-plane-captain--poststart.html'>quiz</a></li><li><a href='#taxi'>3. Taxi, Final Checker, Marshall &amp; Takeoff Checklist</a> · <a href='checklist-3-taxi-final-checker-marshall-takeoff-checklist--taxi.html'>quiz</a></li><li><a href='#takeoff'>4. Tower, Hold Short, Runup &amp; Takeoff</a> · <a href='checklist-4-tower-hold-short-runup-takeoff--takeoff.html'>quiz</a></li><li><a href='#enroute'>5. Departure, 10K Checks &amp; MOA (Enroute)</a> · <a href='checklist-5-departure-10k-checks-moa-enroute--enroute.html'>quiz</a></li><li><a href='#recovery'>6. Recovery — Approach, Arrival, Tower &amp; Landing</a> · <a href='checklist-6-recovery-approach-arrival-tower-landing--recovery.html'>quiz</a></li><li><a href='#shutdown'>7. After Landing, Taxi Back &amp; Shutdown</a> · <a href='checklist-7-after-landing-taxi-back-shutdown--shutdown.html'>quiz</a></li></ol></section>
+<section class='card' style='background:var(--panel);border:1px solid var(--warn);border-radius:12px;padding:1rem 1.2rem;margin-top:1rem'><h2>Source discrepancies to know</h2><ul>
+<li><b>Taxi speeds:</b> Doc: 10 kts GS in the line / 20 kts on taxiways. Video narration: "Seven knots ground speed in line, 15 in the taxi way". Quizzes use the Doc.</li>
+<li><b>Arrival channel after “commencing”:</b> Doc: “Kingsville Arrival local channel 12”. Comm Script IFR RECOVERY: “local channel 14” (VFR-to-initial uses button 12).</li>
+<li><b>Arrival check-in altitude:</b> Doc IFR: “one four thousand 500 hundred”; Comm Script VFR: “4 thousand 5 hundred”.</li>
+<li><b>Clearance altitude:</b> Comm Script: “climb and maintain 7 thousand expect 230 in 10”; Doc Departure: “climb and maintain ten thousand”.</li>
+<li><b>FAF call channel:</b> Doc labels it “Ch 14 Pri: Kingsville Tower…”; Comm Script makes the FAF call after Tower’s “how do you hear?”.</li>
+<li><b>Callsign/Base:</b> Doc uses “Blazer 201” and “Base”; Comm Script uses “BLAZR/HAWK 2XX” and “STRIKE”.</li>
+</ul></section>
+<section id='ground' class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0'><h2>1. Ground — Prestart &amp; Engine Start</h2><h3 style='color:var(--warn)'>Checklist walkthrough (Google Doc, verbatim)</h3><h3>Prior to Getting In Cockpit:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Ejection Seat - Safe</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Standby Attitude Indicator - Pull out and lock in the caged position before getting in the jet. This prevents wear to the device when power is applied.</p>
+<h3>Pre Start Checklist:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Plug in Comm/Oxygen hose and Anti-G on left side.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Batt Switches - On</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Check Each battery for 24-29 volts. Leave both on. Go batt 1 on, then turn batt 2 on and then batt 1 off to check batt 2, then batt 1 back on. This ensures there&#x27;s no unnecessary interruptions of power.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Pri Radio - On, Channel 30 (ATIS)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>When done listening, switch to ch 29, turn off, put altimeter setting in</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Remove ejection seat pin and MDC firing handle pin while listening to ATIS and stow in little storage compartment on right side.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Put on right kneeboard and write down necessary ATIS info (ATIS code, altimeter, runway in use, maybe winds)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Interior Check: (Do a sweep of the cockpit for these things when listening to ATIS)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. OBOGS Flow Selector - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. OBOGS/ANTI-G - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Ignition - Normal</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Fuel Shutoff Handle - Up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Engine Switch - On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Fuel Control Switch - Normal</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Contr Aug Switch - SBI</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Throttle - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. Flaps - Up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10. Anti-Skid Switch - On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>11.  Emergency Landing Gear Handle - Check Stowed</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>12.  Parking Brake Handle - Set</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>13.  Exterior Lights - Down, Down, Down, Middle, Middle, Middle, throttle pinky switch middle</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>14.  Gen Switch - On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>15.  Airflow Knob - Normal</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Everything else on right side should be off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Adjust rudder pedals and seat height when able. Rudder pedals as far back as you can and still get full throw, seat height adjusted to see both headings and AOB indications in HUD.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Check - Antiskid on (w light), flaps up (no lights), engine switch on, fuel control switch norm.</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>“ICS check, switches set, Norm, Fuel __”</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>R/C: “Loud and Clear, switches set, Norm, Both, Fuel __”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Warnings/Cautions/Advisories - 441 (Oxygen, Generator, Oil Press, Hyd Fail; Hyd, Canopy, LP Pump, F Pres, (NWS Aug Possible); Skid</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>9. “Lights and Tones”</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Hold lights with right hand, check AOA with left hand. Check all lights then flick back for 4 tones (Warnings, Cautions, Wheels, Weapons) (Don’t know if it’s in that order)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10. Paddle Switch - Press (NWS Caution comes on)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>11. Hyds - 0, 0, 1250 (min)</p>
+<h3>Engine Start:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Verify throttle is off</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>“Throttle off, GTS”</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>R/C: “Clear”</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>After saying “throttle off, GTS”, place fuel shutoff handle down</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Signal Lineman for GTS Start (Shake left fist at lineman)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. GTS Button - Press momentarily</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Start counting while looking at RPM Gauge and waiting for GTS Light (Should come on within 20 seconds). This is when I start to put on my lower garters. Usually I can get the right upper and right lower on before GTS advisory light comes on. Be very careful not to bump throttle and continue to pay attention to the start if you decide to do this.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. When you have GTS advisory: Signal lineman for start (Two fingers with left hand)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Engine Switch - Start</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Start counting while looking at RPM Gauge and looking for ready light (Should be within 15 seconds). Ready light means that N1 is spinning in correct direction and has reached 100 RPM. Sometimes I start to work on the left upper garter as I watch for this. Again be very careful not to bump the throttle. You can scan fuel flow to make sure it is still at 0. Once ready light is on within 15 seconds and rpm is getting close to 20% devote full attention to the start.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. At 17-20% RPM: Throttle - Idle (Go forward just to the first click)</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>Now looking for fuel flow to come up and EGT light off to occur within 15 seconds. Monitor the start and make sure EGT doesn’t rise too fast. Looking for 45% RPM for everything to come on. (GTS and Ready light will extinguish). Look for normal start “light show”. Oil press warning light should go off around 20% rpm (Look For It to go off). Oxygen light won’t be off until obogs switch is turned on. Generator light should go off around 45%.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Everything Comes on at 45% - Two Hands</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Turn on HUD, OBOGS/Anti-G, MFD’s, Radios (turn aux to ch 1 (base)) (Put pri in tr&amp;g and aux in t&amp;r), IFF, TACAN (Set freq - 125x), NAV (Set freq - 110.9 (ILS for 13R))</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Note EGT, RPM, and Voltage</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>RPM Should stabilize at approximately 52% within 30 seconds of selecting idle. Max EGT for ground start is 550 deg with a 20 deg overshoot allowed for 20 seconds. Max EGT at idle is 450 deg. EGT will normally not rise above 420 deg during ground start. Voltmeter should read 27-29 volts. Make a note of EGT so that you know what it was before you run up to 70% and pull it back to look and see if there was a 50 deg C drop from this value.</p><h3 style='color:var(--warn)'>T-45 Checklists sheet (verbatim)</h3><h3>PRESTART CHECKS</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Check: Seats safe, pins removed, Prk Brk pulled, all equipment off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Anti-Skid - ON; Engine Swtich - ON, FSH - DOWN</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Connections (Comm, oxygen, anti-g) - Connect</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Batteries - Test (24v min)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Pri Radio - ATIS</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Leg fittings - Connect</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Pri Radio: Switch to Ch29 + OFF</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. HYDS: 0, 0, 1250 (min)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Throttle - Verify OFF; &quot;ICS Check, switches set, Fuel _____&quot;</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. &quot;Lights and Tones&quot;</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. Paddle - Press (NWS)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10. Visor - DOWN</p>
+<h3>ENGINE START</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. &quot;Throttle OFF, GTS&quot;</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. GTS Start Button - Press (20s for GTS)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Engine switch - START (15s RDY)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>When START + N2 20%</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Throttle - IDLE (light off 15s)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Plane Turns On, I Turn On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. OBOGS/Anti-G + HUD | 9. Pri + Aux Radio | 11.VOR_TAC_IFF</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Speed Brake + Uncage STBY | 10. LMFD + RMFD</p></section><section id='poststart' class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0'><h2>2. Post-Start, Clearance &amp; Plane Captain</h2><h3 style='color:var(--warn)'>Checklist walkthrough (Google Doc, verbatim)</h3><h3>Post-Start Checklist:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Give 70% check signal to lineman (sideways 2/peace sign)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Throttle slowly to 70%, at the same time quickly do the following:</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. RMFD: Menu-BIT-Maintenance</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. LMFD: Data-Aircraft</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. When RPM gets to 70%: Hyd2-Reset</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Look for hyd2 pressure to go to 3000 psi and hyd caution light to go out</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Fuel Control Switch - Hold in test</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Check RPM (max drop of 6%). RPM may momentarily increase. Make sure M Fuel light comes on while holding in test. Now go back to norm and observe that RPM returns to 70% and M Fuel light goes out.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Throttle - Idle</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Check N2 56.5+/-2% and EGT drops 50 deg C (this means the bleed valve closed on the run up to 70%)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Check MFD’s for Exceedances/Overflows and Alignment</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>RMFD should show No exceedances (A/C EXCEEDANCE (blank)) and No overflows (ADR MEMORY OVERFLOW (blank)). LMFD should show 4 sats (GPS SAT 4) and Quals counting down. Quals should be decrementing down to 00.59. C AUG BIT will not work in sim until the quals are below 3.00. This is not an issue in the jet. Sometimes it take a second for quals to start counting down. If that is the case I will just say quals not counting down yet or something along those lines.</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Control Aug BIT</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Paddle Switch - Press</p>
+<p class='' style='margin:.15rem 0 .15rem 3.5999999999999996rem'>C Aug Caution illuminates (NWS Caution should still be on)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Contr Aug Switch - Reset (Release from reset and let the switch sit in SBI for a second then go to all. The C aug caution will be out after the reset and then the C Aug caution illuminates when you go to all and the BIT is started).</p>
+<p class='' style='margin:.15rem 0 .15rem 3.5999999999999996rem'>While doing this, look at rudder trim needle and make sure it jumps from the 6 o’clock position to 12 o’clock and C Aug Caution Illuminates. That means the BIT is running now for 2 minutes (BIT is done when C Aug caution extinguishes). You now have 2 minutes to finish the rest before plane captain checks. Once the BIT is done you need to move on to plane captain checks and do the rest later.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. OBOGS Electronic BIT (Just simulate in Sim don’t actually do it)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Bring hand way back left, press button on back left wall for 1 to 2 seconds. Oxygen warning light comes on, punch master alert out, oxygen light should go away within 15 seconds. (Don’t wait move on)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. Anti-G Test Button - Press</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10.  Trim Checks (Minus rudder trim because you cannot do that when C AUG BIT is running)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Pitch trim - go to full nose down trim. Then go to full nose up trim.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. STBY Stab trim/Aileron Trim - lift guard cover and make sure doing that stops your pitch trim adjustment. Close cover. Do this on the way to nose down trim and then again on the way to nose up trim. Then check the standby by moving the switch momentarily in both directions.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Aileron Trim - Check both directions, set neutral, you can do this at the same time as you are checking the standby pitch trim.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Pitch trim - Set for T/O (2-3 deg nose up), most instructors like 2 deg nose up in the jet.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>11. Oxygen Mask - On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>12.  OBOGS Flow Selector - On</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>Put visor down. “Mask on, Flow on” You need to have the mask on for about a minute. Usually when I start the PC checks and do the wipe out and all that once they direct me to raise my hands is when I’ll reach down and turn the flow off and then take the mask off for the rest of the time until we are getting close to the hold short.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>13.  ECS Air Flow Check</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Turn air flow knob off and verify no flow. Turn airflow knob back on and verify flow.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>14.  Ch 29 Pri: “Kingsville Clearance, Blazer 201, Premont 2 on request ready to copy”</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Write down clearance and read it back. Go to normal on IFF, press mode and turn mode 3 and c off and then go to home and punch in squawk code. Punch altitude clearance in command altitude on ADI. Once done with clearance go right to channel 2 (ground). You can also hold ELS MS at this time and check to make sure flight ID is set to the correct squadron. If not change it because this is what shows up on ADSB. There is a powerpoint on box that goes into more detail on these IFF functions.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>15.  LMFD: ADI (put altitude you are cleared to in C ALT)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>16.  RMFD: Menu-BIT</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>Check no degradations. Box RADALT to test the LAW. You should hear an aural tone. “Good tone, Good BIT”. Sometimes I just hit this on the taxi to final checks because RADALT hasn’t shown up yet on this screen but regardless don’t change the right MFD to anything other than the BIT page until you have done this test so that you remember to do it.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>17.  RMFD: HSI (Box sequence. In the sim sequence will already be boxed and your working areas will show up. In the jet you have to box sequence every time.). Go to 20 scale for departure and box TCN (WPT on future flights).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>18.  Once C Aug Caution extinguishes: Rudder Trim - check both directions, set neutral (C aug checks the rudder trim so you are really just checking the switch. A lot of people don’t really check this anymore.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>If C aug caution extinguishes before you have done all of this then stop what you are doing and move on to PC checks and do the rest in marshal.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Plane Captain Checklist: Initiate when C AUG caution extinguishes</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>1. “Watch your knees” R/C: “Clear”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Signal lineman for Plane Captain checks with a thumbs up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. PC Signals for Wipe Out (Looks like stirring a bowl)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Two hands on stick. Bring full left, full forward while holding full left, full right while holding full forward, to the center while holding full forward, straight back to full aft, full right while holding full aft, full left while holding full aft, to the center while holding full aft, and then all the way around in a circle CCW.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. PC Signals for Rudder Pedals (Pushing hands/arms forward and alternating)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Check that NWS Caution is illuminated (meaning NWS is off). Check for full deflection of rudder pedals/no binding.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. PC Signals for NWS and three down (touches nose and does a bunch of other random quick hand signals)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Press NWS button (NWS caution goes out). Hook-Down, Flaps-Full, Speed Brake-Full. Verify all positions with the appropriate indicator lights (Red hook light on (this is because the hook hits the ground and isn’t as far down as it would be in the air), flaps full light, speed brake full lights).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Hands-Up</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Hands must be above rail when PC does walk around. Use this time to set LAW (200), CRS (130), HDG (Set as lead radial for SID) and Bingo (1.8 for joker as a heads up for a bingo of 1.6 for most BI and TR flights. 1.6 is when you need to head out of area by to have fuel for approaches or pattern work). Start practicing good LAW and BINGO discipline. LAW should be set to the next thing before it goes off (except for 5000 foot platform you let that one go off) and BINGO should also be set before it goes off (1.8, 1.6, .5).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Connect Upper Fittings</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Do Flight Instrument Checks below if you have time, minus the comparison to the STBY heading since the canopy must be closed to see that</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. Program Waypoints (As required) (Can also do this during taxi when comfortable and also in final checks or marshal)(Disclaimer: Early on in the syllabus you might get yelled at if you try to do stuff during PC checks and final checks. The only things that are technically approved to do during PC checks when you are supposed to have your hands up is manipulation of the data entry panel (law, crs, bingo, etc) and attaching your upper garters. I do a lot more than this such as waypoints sometimes on the MFD and finishing up lower garters and lower koch fittings for strap in. If you decide to do this you just have to be very careful not to bump the stick or manipulate anything that would change a configuration on the jet.</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>RMFD: Data-GPS</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Set waypoint 1 to active duty waypoint, waypoint 2 to RICTO, waypoint 3 maybe to Waade if you anticipate needing it, etc.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10. Do a Sweep with Hands still up if PC is still walking around</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>OBOGS/Anti-G, Flows (if mask is off is flow selector off? - yes it should be), Looking at left panel: Contr Aug is in all, flaps are down, anti-skid is on, lights are working, speed brake is out, up on 2 on pri, right side switches look good, i’m strapped in. This is all just a sanity check if you have the time. See discussion above about potentially doing waypoints and finishing strap in during PC checks/taxi/final checkers so that you eventually can work up to the point that you don’t need to stop in marshal and can just roll through it (they do not expect you to be even close to this fast in TR’s so prioritize doing things correctly and safely. Please don’t rush and bump something you aren’t supposed to during PC checks or final checks or try to do too much during the taxi that you are distracted. The safest bet is to do nothing extra during PC checks/taxi/final checks especially earlier on. There will be a lot going on. This is also the expectation so no need to feel rushed). Also no need to do anything like the lower garters during the start early on like discussed above. You can taxi the jet out from the apes without being strapped in and you can finish all of this stuff in marshal. That is what marshal is for.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>11. Plane Captain Shows 4 Tools - Give them a thumbs up</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>PC shows you 4 tools so you can verify they have them all and there isn’t a FOD hazard. PC will tell you to bring everything up. Hook-Up, Flaps-Half, Speed Brake-Retracted. Verify all positions with the appropriate indicator lights (hook light out in 6 seconds, flap light at half, speed brake light out)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>12. PC Shows tools again - Give them a thumbs up</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>Signal for closing canopy: Tap the top of your head. Lineman will give same signal back to you. “Canopy” R/C: “Rail Clear”. Close canopy and lock it. Ensure canopy caution light extinguishes.</p><h3 style='color:var(--warn)'>Kingsville Comm Script (OCR, verbatim)</h3><h3>CLEARANCE CALL (CH-29)</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Local button 4.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2Xx is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>button 4.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX read back correct, frequency change approved.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX Switching</p><h3 style='color:var(--warn)'>T-45 Checklists sheet (verbatim)</h3><h3>POSTSTART</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>70% Check Signal</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Throttle - Slowly advance to 70% | (SIGNAL) THROTTLE RUNUP | 70%</p>
+<h3>2. RMFD - MENU &gt; BIT &gt; MAINT</h3>
+<h3>3. LMFD - DATA &gt; ACFT</h3>
+<h3>4. HYD 2 RESET - PRESS</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Manual Fuel - Check (&lt;6%)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Throttle - IDLE; &quot;No exceedances or overflows, 4 sats, quals ____&quot;</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Verify N2 56.5 +/- 2%, EGT -50C</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. C AUG - BIT  (Paddle, Reset &gt; ALL [must have 4 SATs + Quals decrementing])</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Trim Checks</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. OBOGS BIT - HOLD 2s (OXY out in 15s)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10. OBOGS Flow Sel - ON; &quot;MASK ON, FLOW ON&quot;</p>
+<h3>11. RALT BIT - TEST; &quot;GOOD TONE GOOD BIT&quot;</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>12. Enter Waypoints</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>13. Grab Clearance, switch ground</p>
+<h3>PLANE CAPTAIN CHECKS</h3>
+<h3>0. &quot;WATCH YOUR KNEES&quot; &quot;CLEAR&quot; (SIGNAL)</h3>
+<h3>1. WIPEOUT/RUDDERS</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. L: Flaps + Spd Brk         R: NWS + Hook</p>
+<h3>3. HANDS UP  (LAW / CRS / HDG / BNGO)</h3>
+<h3>4. UPPER FITTINGS</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. FLAPS 1/2 + BDS IN + Hook - UP</p>
+<h3>6. &quot;CANOPY&#x27; &quot;CLEAR&quot;</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Prk Brk - Release, Brake Check, Salute</p></section><section id='taxi' class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0'><h2>3. Taxi, Final Checker, Marshall &amp; Takeoff Checklist</h2><h3 style='color:var(--warn)'>Checklist walkthrough (Google Doc, verbatim)</h3><p class='' style='margin:.15rem 0 .15rem 0.0rem'>Taxi/Instrument Checklist: Conducted on the roll on the way to final checker</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Parking Brake - Release</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Follow lineman. Get enough momentum where you can tap brakes to check them but still keep rolling. You just want the front to kind of dip down.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Hold NWS button with left hand for hi gain to turn and salute lineman with your right hand.</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Note: Do not use more than 75% power in the line and idle power in turns. No more than 10 knots GS in the line and 20 knots GS on the taxiways.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Flight Instrument Checks (Probably already done during plane captain checks. All I need to do now on the roll is check that the HUD/MFD HDG and STBY HDG match and then say the bold words for taxi checks.)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. STBY A/S - Zero</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. STBY VSI - Zero +/- 100</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. STBY Needle/Ball - Match MFD, Check turn needle in turn</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. STBY Altimeter - FE +/- 75’</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. STBY Attitude - Erect (Pull out to cage and then push back in)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. STBY AOA Indicator - Check for no off flag</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. HUD/MFD HDG and STBY HDG - Match</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. HUD/MFD Altimeter - FE +/- 10’</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. GINA - HYBD Boxed</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>5. “Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Above is a picture showing the taxi flow. Final checker is the blue arrow pointed to the right and the first person in marshall is the green arrow pointed to the right above the hashed out area. The first four marhal lines past the end of the final checkers apes are the hashed out area. Do not stop to marshal here. Wait for the next set of four spots on the right and pick one of those. Taxi speeds are a maximum of 10 knots groundspeed in the line and 20 knots groundspeed outside of the line. Do not use hi-gain NWS above 10 knots.</p>
+<h3>Final Checker:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Set your parking brake. Do this anytime you are stopped anywhere other than the runway. While final checker is doing walk around have hands above rail. Do the takeoff checklist in your head now so that in marshall you can just say the words without having to check everything first (If you do the takeoff checklist in your head and notice that the pitch trim is not in the right spot do not reach down and fix it. Someone is walking around your jet. Fix it in marshal).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Checker comes around and lets you go.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Parking Brake - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Hold NWS button with left hand for hi gain to turn and salute lineman with your right hand. Heading to marshall.</p>
+<h3>Marshall Area:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Marshall area is further down to the left out of final checkers. The sim shows jets parked right in front of final checkers. You do not want to pull into these spots because your tailpipe will be pointed at the final checkers. Go down to the left away from final checkers like discussed above.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Use this area to finish up what you weren’t able to beforehand. This is also where you can set waypoints and stuff like that. Do takeoff checklist on the roll to the runway. Set up HSI for takeoff. TACAN boxed, Plan boxed, 20 for scale, put tacan offset in if you know you’ll need it for a point like Waade for example. Etc.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>SET UP IFF if you haven’t already. There is a pdf in box that shows how to set it up.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Takeoff Checklist: (done on way to runway) All these bold checklist steps are said out loud over ICS..</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Control Aug - All, light extinguished</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Anti-Skid Switch - On, Light On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Flaps/Slats - Set Half, Indicating Half, Slats Visually Down</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Trim - Zero, Zero, 2-3 deg Nose Up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Canopy - Closed, Locked, Light Out, Seal Inflated</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Harness:</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>“Attached 8 Points, Pins Removed, Ready to Arm in Front”</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>R/C: “Attached 8 Points, Pins Removed, Armed in Back”</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>“Armed in Front, Takeoff Checks Complete”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Contact Base (Ch1) on Aux and Ground (Ch 2) on Pri prior to leaving the Marshall Area: ATC or Base Responses in Blue</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 1 Aux: “Base, 01 Taxi” You just say the last two numbers</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“201 have a good flight”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 2 Pri: “Kingsville Ground, Blazer 201, taxi with alpha”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201 taxi to 13R via Bravo Alpha”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Taxi to 13R via Bravo Alpha, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1500 ft prior to hold short (Abeam the arresting gear), auto switch to tower on channel 3 on PRI.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Position yourself at the hold short on the far left of the taxiway with your nose pointed at the windsock, (for runway 13R), your nose will be pointed slightly toward the center of the taxiway (Maybe like a 45 deg cut or slightly less). This will offset you so that the exhaust from the tailpipe is not directed at any a/c that may pull up behind you. This also allows them to go around you on the right side of the taxiway should you be held up at the hold short for any reason. You only have to do this if you are told to hold short. Call tower for takeoff before even turning into the hold short area so that maybe you can just roll right from taxi out onto the runway. If you do have to hold short at a 45 deg angle, use the concrete crack closest to the edge of the taxiway to line your nosewheel up with and slowly move all the way up to the hold short and then use a full boot of hi-gain NWS and inside differential braking to stay close to the edge and get that 45 deg cut. Then set parking brake. You may feel the jet start to shake in the front. This is the nosewheel shaking back in forth because it is not straight. To fix this just release the parking brake and let off the brakes to allow the jet to roll a tiny bit forward and then hit the brakes and reset the parking brake and it will be gone.</p><h3 style='color:var(--warn)'>Kingsville Comm Script (OCR, verbatim)</h3><h3>CHECK OUT ON STRIKE (CH-1)</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>STRIKE, 2XX out of chocks.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2XX have a good flight.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>GROUND CALL (ch-2)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX taxi to 13R via Bravo Alpha.</p><h3 style='color:var(--warn)'>T-45 Checklists sheet (verbatim)</h3><h3>MARSHALL</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. VERIFY NAV SET UP - DEP (BLCH), MFDs (WYPTs, BOXES)</p></section><section id='takeoff' class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0'><h2>4. Tower, Hold Short, Runup &amp; Takeoff</h2><h3 style='color:var(--warn)'>Checklist walkthrough (Google Doc, verbatim)</h3><p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 3 Pri: “Kingsville Tower, Blazer 201, takeoff”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, wind 130 at 15, runway 13R cleared for takeoff, change to departure”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Cleared for takeoff runway 13R, switching, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Change to channel 4 on PRI.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Prior to crossing hold short clear runway and short final and state:</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Groove is Clear”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Upon receiving t/o clearance, begin hold short checks. These will be conducted on the roll while taking the runway. If you are not given a takeoff clearance, you can begin your hold short checks, but do not turn on pitot heat until you are cleared for takeoff.</p>
+<h3>Hold Short Checklist:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Fuel Control - Normal</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Pitot Heat - On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Strobes - On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Landing/Taxi Light - On</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. IFF - Norm</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. AV BITS - Checked</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>RMFD: Menu-BIT, verify there are no degradations. Set MFD back to HSI.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>7. “Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”</p>
+<p class='call' style='margin:.15rem 0 .15rem 1.2rem'>R/C: “Fuel Control Normal”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Runup: Once you are lined up on runway centerline, come to a complete stop and conduct the following</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>1. “Good headings, no off flags, watch your knees”</p>
+<p class='call' style='margin:.15rem 0 .15rem 1.2rem'>R/C: “Clear”</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify Standby heading, MFD and HUD headings are in agreement and match runway heading. STBY Instruments - Verify no off flags</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Brakes - Hold</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Throttle - MRT</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Done with purpose to ensure there will be no problems rapidly moving throttle to MRT in flight.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Flight Controls - Wipeout (Same wipeout as described above during PC checks)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Done with purpose to ensure your flight controls will operate appropriately. Verify hyds 3x3 during your wipeout.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. EGT, RPM, FF - Verify within limits</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>EGT at or below 610 deg C, RPM at or below 104%, Minimum RPM within 7 seconds is known before flight and is based on temperature (usually 97% in Texas and it is found on the IFG checklists), No specific number for FF but it should be high since you are at MRT.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Batt Voltage - Verify between 27-29 volts</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>7. “Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”</p>
+<p class='call' style='margin:.15rem 0 .15rem 1.2rem'>R/C: “Ready in Back”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Release brakes and begin takeoff.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Airspeed Alive”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>At 100 knots announce high speed. This signifies that if you need to abort it will be a high speed abort (high speed abort criteria in SOP). Shortly after, verify and announce line speed (you will calculate this for your kneeboard, it should generally occur at or before 1500’ down the runway and indicates that your a/c is accelerating properly). These two calls occur closely together so you can combine them if applicable. Do not always use arresting gear as the mark for good line speed. A better strategy is to approximate halfway between the boards for 1500’ or intentionally say to yourself whether the arresting gear is at 1500’ or not.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“High Speed, Good Line”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Rotate at 120 KIAS to a takeoff attitude of approximately 10 degrees nose high and let the a/c fly itself off the deck. Maintain this pitch attitude, being careful not to over-rotate past on-speed AOA. When safely airborne and above 140 KIAS, call to raise the gear and flaps.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“140, gear, flaps”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>R/C: “Clear”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>When cleared, raise gear and flaps. Small increase in pitch may be needed when flaps/slats come up. Verify gear and flaps are raised prior to 200 KIAS. Approximately 15 degrees nose high will keep you from overspeeding if needed. When gear is raised, verify the gear handle won’t budge by applying light force (less than 6 lbs) directly down (do not pull out). Once complete report</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Clean Below 200, Good Handle”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>R/C: “Good Handle”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Accelerate to climb speed at an attitude of 10 degrees. Five knots prior to desired climb speed, increase nose attitude to approximately 15-20 degrees to intercept and maintain climb speed. Climb at 250 KIAS. Once safely airborne with gear and flaps raised, contact departure on ch 4 pri.</p><h3 style='color:var(--warn)'>Kingsville Comm Script (OCR, verbatim)</h3><h3>TOWER CALL (CH-3)</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Tower, BLAZR/HAWK 2XxX take off.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX cleared for takeoff 13R, switching.</p></section><section id='enroute' class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0'><h2>5. Departure, 10K Checks &amp; MOA (Enroute)</h2><h3 style='color:var(--warn)'>Checklist walkthrough (Google Doc, verbatim)</h3><p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 4 Pri: “Kingsville Departure, Blazer 201 passing XXX Hundred/Thousand”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201 Kingsville Departure radar contact, climb and maintain ten thousand, passing three thousand feet turn right proceed direct RICTO”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Climb and maintain ten thousand, request the full SID for training, Blazer 201”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, roger, you’re cleared on the SID”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Scan standby turn and slip indicator (ball) and make any necessary adjustments on rudder trim to center the ball. Each jet is bent in a different way so you will need to scan this on climbout and adjust it to center the ball each flight and then you shouldn’t have to touch rudder trim again for the rest of the flight. You may also need a click or two of aileron trim after adjusting rudder trim. Once these two are set you should only need to work pitch trim for the rest of the flight.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Set Law to 5,000 passing through 5,000. Passing around 4000 or so I punch 5000 into the LAW and I just don’t press enter until above 5000. This way when passing 5000 all I have to do is press enter.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Platform. LAW set 5,000”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Fly the SID. Right at about 5,000’, you’re going to hit lead DME to turn onto the arc (About 2.5 nm prior to the 7 nm arc so at 4.5 DME start right turn for 13R) (I,ve found that 4.2 works better for leading the turn. This generally occurs right after platform).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Lead level off by 1,000 ft.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>At 10,000’ conduct 10k’ Checks/15 Min Report and verbalize. You need to conduct checks every 15 minutes but do it sooner than that until instructor tells you to stop.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10K’ Checks/15 Min Report:</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Engine/Flight Instruments - Check</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify no failed or malfunctioning equipment. STBY a/s, VSI, altimeter, needle/ball w/ ADI, STBY heading with HUD/ADI heading, HUD/MFD Altimeter with standby altimeter. Check FF, RPM, EGT within limits.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Hyds/Volts - Check</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Check for 3x3 and 27-29 volts.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Cabin Press - Check (Should be 7,650’+/-700 at 10k’)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Estimate for cabin altitude can be determined from the following equation. (Alt + 5k)/2. NATOPS table values are the following:</p>
+<p class='' style='margin:.15rem 0 .15rem 3.5999999999999996rem'>10,000’ - 7,650’+/-700</p>
+<p class='' style='margin:.15rem 0 .15rem 3.5999999999999996rem'>15,000’ - 10,300’+/-700</p>
+<p class='' style='margin:.15rem 0 .15rem 3.5999999999999996rem'>20,000’ - 12,600’+/-700</p>
+<p class='' style='margin:.15rem 0 .15rem 3.5999999999999996rem'>30,000’ - 16,900’+/-900</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Fuel State - Check</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. LAW - Check</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Above 5,000’ it should be set to 5,000. Below, it should be set as required.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Once all the above is verified:</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>“Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>At some point on the SID, terminate with departure when VMC on top.:</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 4 Pri: “Kingsville Departure, Blazer 201, VMC Terminate”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, Kingsville Departure, terminate, frequency change approved”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Frequency change approved, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>When you terminate, you are allowed to fly at 10,000 feet to whatever area you want to claim as long as you are staying within the boundaries of the kings 1A MOA. If you are going to K1A-NE, do not cut the corner of kings 2/spin block to get there.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Switch to ch 5 on pri radio (Kings1A Freq)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Note: There is a local agreement with ATC in which this does not cancel your IFR flight plan, but allows you to operate freely in the MOAs. Once you are done in the MOA, you can contact ATC and resume your IFR flight plan to conduct approaches.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Prior to entering MOA, make 99 call to see if anyone else is working it. If anyone is working in the area, the last flight to check in will respond with the flight types (not callsigns) and where they are working. For example “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.” You need to make a note of who is working and where because when someone else checks in you are responsible for reporting all flights and where they are working in the area. If no one is working in the area, there will be radio silence. Before claiming an area, ensure that the ch 5 preset is set to the correct frequency by momentarily switching pri radio to READ. On Ch 5, it should read 237.85. If this is not the frequency assigned to ch 5, you will have to manually enter the correct frequency and make the call again. If it is the correct frequency, you have confirmed no one is working in the area and can claim any area you’d like.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 5 Pri: “99 in the Alpha check in”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“99, BI single claims 1A-NE”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Enter/transit MOA at 10,000’. We exit/transit out at 9,000’. Begin a climb to working altitude when in your block. The bottom of the blocks is effectively 10,500’ as traffic is transiting between 8,000’ and 10,000’. Kings 1A consists of NW, NE, SW, SE, and Sarita. If you are working the NE for example and nobody is in Sarita, you can start your climb early. 12k is a good altitude to climb to for BI stuff. Also it is a good idea to make an established call on 5 pri when in your block.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kings 1A Altitudes: When you claim a block it is implied that you have both the low and mid for that area. This would give you workable altitudes of 10,500’-23,000’. When ATIS calls an altimeter setting below 29.92, top of mid block is 22,000’.</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Low: 8-17.9k</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Mid: 180-230</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Hi: 240-350 (We don’t use high)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>As you enter your area, compare your instruments to your IP’s so that they can note any deviations between the two to consider when watching your BAW. Nobody really does this it seems like but maybe just do it in the sim.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“One Zero Thousand, Mark; Two Fifty, Mark</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>On eight day clock in the aircraft have it ready to press to start the timer.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Standby for time hack”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>R/C: “Ready”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Three, Two, One, Hack, One, Two, Three”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Do not reset clock until you are done with high work.</p>
+<h3>Conduct High Work:</h3>
+<h3>Constant Airspeed Climb:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Throttle to MRT, simultaneously establish a noseup attitude of 8 to 10 degrees on ADI to maintain 250 KIAS. Use pitch to maintain a/s. When the a/c reaches a lead point of 1,000 ft to level off, reduce power and pitch simultaneously to arrive at level flight on altitude.</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>To initiate a climb from a cruise a/s lower than desired climb speed, advance power to MRT and trim nose down to maintain level flight. When the a/s approaches a 5 knot lead point, smoothly raise the nose to maintain a/s (250 KIAS less than 10,000’, 300 KIAS/.75 M above 10,000’).</p>
+<h3>Constant Airspeed Descent:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Reduce power to idle and reduce pitch to approx 2 degrees nose down to maintain 250 KIAS. Control a/s w/ pitch. Use a lead point of 1000 ft to level off.</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>If you are at an a/s of less than 250 KIAS, begin the descent by reducing nose to 2 deg nose low, and when a/s approaches a 5 knot lead reduce power to idle to hold 250 KIAS.</p>
+<h3>Constant Rate Climb:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Entry speed for this maneuver is 200 KIAS (approximately 1100 pph) at a specified altitude and heading. Initiate a 1,000 fpm climb by advancing power to appox 1500 pph and raising nose attitude to 7-8 deg nose up to maintain 200 KIAS. Control airspeed with pitch and rate of climb with power. Lead the level off with 10% of VSI and simultaneously lower nose to 5 degrees nose high while reducing power to 1100 pph.</p>
+<h3>Constant Rate Descent:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Hold 200 KIAS. Reduce power to 700 pph and lower nose to 3-4 deg nose up to maintain 200 KIAS. Hold 1000 fpm and lead level off by 10% of VSI. Simultaneously raise nose to 5 deg nose high while increasing power to 1100 pph.</p>
+<h3>Turn Pattern:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Start on a cardinal heading at 250 KIAS. Execute 2 30 deg AOB turns for 60 deg of heading change, 2 45 deg AOB turns for 90 deg of heading change, and 2 60 deg AOB turns for 120 deg of heading change. Lead roll outs by 10% of the AOB. 60 deg AOB will need a chunk more power. Remember to pull back power on the 60 deg AOB reversal and then put it back in to avoid getting fast.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>½ SRT Turns:</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>A ½ SRT is performed at 1.5 deg per second which results in a heading change of 30 degrees every 20 seconds. 10% of indicated a/s is a good approximation for bank angle. ½ SRT is one needle width of deflection. Note: Use standby turn needle because ADI turn needle is not calibrated for ½ SRT or SRT.</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Start ½ SRT’s from a cardinal heading using a lead point of 3 seconds prior to clocks hand hitting the 6 or 12 o’clock position. Roll into the turn on ADI (approx 25 deg AOB at 250 KIAS) and adjust pitch to maintain altitude. Check turn needle for one needle width of deflection. Check clock for 20 seconds of elapsed time every 30 degrees. Make corrections if off the mark. Use no more than 30 deg AOB or fewer than 10 deg AOB when making corrections. Lead roll out by 10% of AOB. Technique: For small deviations you can check halfway at a 15 degree checkmark for 10 seconds of elapsed time to get an idea at how your correction is developing.</p>
+<h3>SRT Turns:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>A SRT is performed at 3 deg per second which results in a heading change of 30 degrees every 10 seconds. 20% of indicated a/s is a good approximation for bank angel. SRT is two needle width of deflection. Note: Use standby turn needle because ADI turn needle is not calibrated for ½ SRT or SRT. Because your max allowed AOB is 30 degrees, you will not normally perform SRT’s at cruise altitude and a/s. You will use then in the slow flight maneuver and GCA pattern though.</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>The procedure is the same as that of ½ SRT. Ignore the 30 deg AOB limitation to practice these. Practice at different airspeeds.</p>
+<h3>Timed Turns (Partial Panel):</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Because of the unreliability of the standby compass in turns, you will find it necessary to perform timed turns from a known heading in the event of a heading system failure. Use the standby compass to determine the total # of degrees of the desired heading change. Compute the time required for the turn by dividing the heading change by the turn rate (1.5 or 3 deg per second).</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>As the clock’s second hand passed a cardinal point (3, 6, 9, or 12), smoothly roll into the turn, and do not use a lead time. Hold the correct turn needle deflection on the standby turn needle indicator. The smaller size of the standby attitude indicator will make it appear to move faster and less smoothly, and you should be careful not to over control the a/c when flying partial panel. Roll out of the turn at the end of the computed time. Check the standby compass to confirm that you are on the desired heading.</p>
+<h3>Level Speed Change:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>For airspeed increases of less than 20 knots, advance the throttle beyond the power setting for the new airspeed, allowing the a/s to increase, and then reduce the power to the approximate setting to maintain the new a/s at a 5 knot lead point. For a/s increases greater than 20 knots, advance throttle to MRT. Then at a lead of 5 knots reduce the throttle setting to approximately that required for the new speed. Use this method to practice level speed changes between 200-250 KIAS.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>To perform normal a/s decreases, reduce the throttle below the power requirement for the new a/s and then lead the power addition at a 5 knot lead point. For speed decreases from 250-200 KIAS, reduce the throttle to idle and fully extend the speed brakes. When you extend the speed brakes expect a pitch up. Use a 5 knot lead point to retract the speed brakes and set cruise power. Anticipate a nose down movement when you retract the speed brakes.</p>
+<h3>Level Speed Change in ½ SRT:</h3>
+<h3>Accelerating Timed Turn:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Using a 3 second lead, begin maneuver by advancing throttle to MRT and rolling the a/c to a bank angle (approx 10% of a/s) for a ½ SRT. Increase angle of bank and adjust pitch as a/s increases. Maintain 1 needle width deflection. Perform this from 200-250 KIAS and for a specific amount of heading change. Lead power reduction by 5 knots and roll out by 10% of AOB.</p>
+<h3>Decelerating Timed Turn:</h3>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Using a 3 second lead, begin maneuver by reducing throttle to idle and extending the speed brakes while rolling the a/c to a bank angle (approx 10% of a/s) for a ½ SRT. Decrease AOB and adjust pitch as a/s decreases. Maintain 1 needle width deflection. Perform this from 250-200 KIAS and for  a specific amount of heading change. Lead power addition and retract speed brakes 5 knots prior to desired a/s. Lead roll out by 10% of AOB.</p>
+<h3>S-1 Pattern:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Flown at 200 KIAS and constant heading. Reduce power to 700 pph and lower the nose to 3-4 deg nose up, 3 seconds before the second hand reaches the 12 o’clock position. Descent at 1000 fpm for 1000 ft. Scan the clock every 250 ft of altitude change for 15 seconds of elapsed time. Start transition from descent to climb 3 seconds prior to 12 o’clock or 100 ft prior (whichever occurs first). Increase power to 1500 pph and pitch to 7-8 deg nose up. Complete a descent and climb cycle twice. Avoid making large power and pitch corrections by cross-checking VSI and keeping it within +/- 300 fpm of 1000 fpm. Near the end of the last climb, transition to level flight 3 seconds prior or 100 ft prior (whichever occurs first). Reduce power to 1100 fpm and pitch to 5 deg nose up.</p>
+<h3>S-3 Pattern:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Once established at 200 KIAS and on assigned heading, begin maneuver using a 3 second lead on the clock prior to 12 o’clock position. Simultaneously initiate a timed ½ SRT and timed 1,000 fpm descent. Adjust the AOB and descent rate to arrive at transition point (60 seconds elapsed) on speed and on heading (approximately 3 seconds prior to the 12 o’clock position, 5 degrees short of the 90 deg turn, and 100 ft prior to the end of the 1000 ft descent). At the transition point, begin the 200 KIAS, 1,000 fpm rate climb while continuing the ½ SRT turn in the same direction for another 90 degrees. At the appropriate lead for the climb, simultaneously reverse the ½ SRT for another 180 degrees of turn and begin the 1,000 fpm descent. The maneuver is complete at the end of the second climb.</p>
+<h3>Slow Flight:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Begin at level flight 250 KIAS. Decelerate to 200 KIAS by performing a level speed change using the speed brakes. Retract the speed brakes 5 knots prior to 200 knots. Next roll into a 30 deg AOB turn and hold for 90 deg of heading change. Lead roll out by 10% of AOB. Next go power to idle and lower gear and full flaps/slats. 5 knots prior to 150, advance power to 2500 pph and set attitude at 1 deg nose up to hold 150 KIAS. Complete landing checks. When stabilized at 150 KIAS and landing checks complete, initiate a 20 deg AOB turn for 45 deg of heading change, first in one direction and then back to original heading. At the finish of these turns, adjust nose attitude (8 deg nose up) and power (2100 pph) to maintain level flight at optimum AOA. Perform a 10 deg AOB turn for 30 deg heading change and then back to original heading. Extend speed brakes and establish a 500 fpm descent for 1000 ft. Using 10% of VSI as a lead point, adjust pitch and power for level flight at optimum AOA. When stabilized at optimum AOA in level flight, initiate a climb (missed approach) back to original altitude by going throttle to MRT, retracting speed brakes, and raising nose 10 degrees to establish a positive rate of climb. Once you can confirm two positive rates, raise the landing gear. At or above 140 raise the flaps/slats. When your a/s reaches 200 KIAS, raise nose to maintain this a/s. Using 10% of VSI as a lead point, reduce power to the slow cruise setting and adjust pitch for level flight at 200 KIAS at the original altitude. Perform a level speed change to return to 250 KIAS.</p>
+<h3>Steps:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Perform level speed change from 250 to 200 KIAS</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Execute level 30 deg AOB turn for 90 deg of heading change</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Configure a/c for landing (gear down flaps full) (Push power forward to 1000-1200 pph to catch approach idle stop) and stabilize a/s at 150 KIAS (2500 pph, 1 deg nose up). Do landing checks.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Perform level 20 deg AOB turn for 45 deg of heading change and reverse to original heading</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Slow to optimum AOA (2100 pph, 8 deg nose up). Check fuel and confirm on speed value to complete landing checks.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Perform level 10 deg AOB turn for 30 deg of heading change and reverse to original heading</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Extend speed brakes and descend at 500 fpm (so keep power where it is) for 1,000 ft with a/c at optimum AOA.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Establish level flight at optimum AOA</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. Advance throttle to MRT, retract speed brakes, initiate a climb, raise gear and flaps/slats, and climb at 200 KIAS to original altitude</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10.  Establish level flight at slow cruise (200 KIAS)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>11. Perform a level speed change from 200 to 250 KIAS</p>
+<h3>Clean Stall:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Complete the stall and aerobatic checklist prior to executing.</p>
+<h3>Stall/Aerobatic Checklist:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Loose Items - Secure</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Map Case - Secure</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Fuel - ___ (ex. 2.4)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Area - Clear</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Clean stalls are performed clean at 200 KIAS at 12,000 ft AGL minimum. Reduce throttle to idle, and extend the speed brakes to assist slowing down. Retract the speed brakes at 150 KIAS, keep the wings level, and maintain altitude. Do not trim past 150 KIAS. Continue to maintain altitude through rudder shaker into the onset of buffet, and until a wing drop or about 26 units AOA is achieved, whichever occurs first. In the clean configuration, there is little or no aerodynamic stall warning such as buffet or wing rock until immediately prior (1 to 2 knots) to stall. To recover, lower the nose to attain 20-21 units AOA. Simultaneously advance throttle smoothly to MRT, retract speed brakes and level the wings. Hold 21 units AOA until you see two positive rates.</p>
+<h3>Dirty Stall:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Complete the stall and aerobatic checklist or review it if it has been done already. Configure the a/c for level flight with gear down, flaps/slats full, speed brakes out, trimmed up and on speed with landing checks complete (2400 pph). 12,000 ft AGL minimum. Reduce throttle to idle, increase nose attitude to maintain altitude. Do not trim into the stall. Continue to maintain altitude through rudder shaker into the onset of buffet, and until a wing drop or about 29 to 30 units AOA is achieved, whichever occurs first. At the first indication of stall, normally associated with wing drop but no later than 30 units, simultaneously reduce nose attitude to 23-24 units AOA and advance power to MRT, retract the speed brakes and level the wings. Hold 24 units AOA until you see two positive rates.</p>
+<h3>Unusual Attitudes:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>General Procedures</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Controls - Neutralize</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Attitude - Analyze and evaluate to determine best recovery</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Airspeed - Limit in dives</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Bank - Eliminate when nose-low; hold constant when nose-high</p>
+<h3>Nose High Upright:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Throttle MRT, retract speed brakes. Push the nose over to maintain an AOA indication of between 5 and 10 units (you will be between 0 and 1g). Hold AOB constant and hold this AOA until the nose falls through the horizon, settles slightly below the horizon, and the a/c accelerates to 150 KIAS. Then roll wings level, smoothly raise the nose to the horizon (at optimum AOA), and return to level flight.</p>
+<h3>Nose High Inverted:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Throttle MRT, retract speed brakes. Hold AOB constant and pull nose through the horizon while maintaining no more than optimum AOA until the a/c accelerates to 150 KIAS. Level the wings in the shorter direction, raise the nose to the horizon, and adjust the power for straight and level flight. Do not exceed optimum AOA.</p>
+<h3>Nose Low:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>With a/s above 150 KIAS, retard the throttle to idle to control airspeed and to minimize loss of altitude. If a/s is rapidly increasing, extend the speed brakes as necessary. Roll the a/c to wings level in the shortest direction and smoothly pull the nose up to the horizon.</p>
+<h3>Wingover:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Initiated from an altitude of at least 12,000 ft AGL. Complete the stall and aerobatic checklist. Begin at 300 KIAS, on altitude, with the power set to approximately 89%, and on a reference heading. Raise the nose smoothly with wings level to 20 degrees nose up. As the nose continues up, initiate a slow roll in the direction of the maneuver and hit a checkpoint of 45 degrees nose up at 45 deg AOB through 45 degrees of turn. After 90 degrees of turn, the nose passes through the horizon at 90 deg AOB and an a/s of approximately 150-170 KIAS. Reverse the roll and have the a/c hit a checkpoint of 45 degrees nose low at 45 deg AOB through 135 degrees of turn. Roll out of maneuver at a constant rate, increasing back stick pressure to control a/s and altitude. Upon completion, you should be straight and level at 300 KIAS, 180 degrees from original heading, and at approximately the same altitude as the beginning of the maneuver. Now do the same thing in the opposite direction back to the original heading.</p>
+<h3>Barrel Roll:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Initiated from an altitude of at least 12,000 ft AGL. Complete the stall and aerobatic checklist. Begin at 350 KIAS, on altitude, with power set to approximately 92%, and on a reference heading. Bring the nose up to 20 deg nose high while maintaining wings level. Passing 20 degrees, initiate a smooth roll in the direction of the maneuver while scribing an arc around an imaginary 45 deg reference point. (In the T-6 saying more pull than roll, more roll than pull, more pull than roll worked well.). The nose will be at its highest point (about 45 deg nose high) when the a/c is at 90 deg AOB passing through 45 degrees of turn. Continue with a constant rate of roll so that the a/c is inverted wings level and 90 degrees off original heading as the nose passes down through the horizon.Verify a/s over the top is approximately 170-190 KIAS. Continue the roll so that the nose passes through 45 degrees nose down with a 90 deg AOB at 45 degrees of turn. Maintain constant nose movement and roll to exit the barrel roll at 350 KIAS at entry altitude and on entry heading.</p>
+<h3>Flight with Partial Panel:</h3>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Partial panel flight consists of flying with any type of instrument degradation (HUD, ADI, etc). As a result of the difference in size between the ADI display and standby attitude indicator, altimeter, airspeed, and VSI, your control of the a/c may be erratic. Use the HSI display for heading if available. The standby attitude indicator moves a smaller distance for a given control input so keep this in mind to avoid over controlling. The standby instruments also have a tendency to lag (particularly the standby VSI, the others are good), furthering the possibility of overcontrolling. After a correction has been initiated, time must be allowed for instrument indications to catch up to the a/c’s performance. Do not apply an ever-increasing correction. Do not fixate on one standby instrument. Fight the tendency to eliminate a performance instrument from your scan. You’ll have to scan faster and more intently since the instruments are spread apart. Hawk the standby altitude and don’t use the standby VSI unless stabilized. Your “VSI” to maintain level flight is the standby altimeter and how fast the needle is moving either direction.</p>
+<h3>T-45C Configuration Profiles:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Configuration</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Attitude</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Fuel Flow</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>250 KIAS Climbout</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>15-18 deg nose up</p>
+<h3>MRT</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>250 KIAS Clean</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3 deg nose up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1300-1400 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>200 KIAS Clean</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5 deg nose up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1050-1100 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>150 KIAS Gear down flaps half</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1900 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>150 KIAS gear down flaps full</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1 deg nose up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2500 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>On Speed gear down flaps half</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8 deg nose up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1800 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>On Speed gear down flaps full</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8 deg nose up</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2100 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>On Speed gear down flaps half boards out</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2100 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>On Speed gear down flaps full boards out</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2400 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>On speed level off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Add back stick</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Add 300 pph</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>When finished with high work and ready to leave working area, conduct the descent/penetration checks to yourself. This gets you set up for the descent and your first approach.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Descent/Penetration Checks: (Nobody really does these but there is one sim instructor who expects you to know them and do them. (Mr. Breitenfeld))</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Canopy Defog/Temp - As Required</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Set before throttle reduction. The maximum cockpit temperature should be maintained to aid in defogging the windshield and canopy. The following should be considered to determine the preheating required: OAT, humidity, rate of descent, power setting, and cockpit temperature. Should fogging occur with the air flow knob set to MAX DEFOG and the cabin temp knob set to AUTO full hot setting, switch to manual mode, turn and hold cabin temp knob to full hot momentarily, then release knob and return to AUTO mode, DEFOG, full hot position. I think there is gouge about turning the temperature to about 12 o clock or so before the descent but this may be dependent on the day. Just ask your instructor about it once you start flying.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Master Arm - Safe</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Contr Aug - All</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. WX - Checked</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Get ATIS on AUX.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Navaids - Tune/ID</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. STBY Att Indicator - Erect</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. STBY Altimeter - Set</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. LAW - Set</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. MFDS/HUD - NAV Mode</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Compare displays w/ stby instruments</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10.  Fuel - Check</p><h3 style='color:var(--warn)'>Kingsville Comm Script (OCR, verbatim)</h3><h3>DEPARTURE CALL (CH-4).</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>rn right proceed</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet tu</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>direct (RICTO).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX climb and maintain 10 thousand.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX passing three thousand direct (RICTO).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX climb and maintain 10 thousand.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or ’</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or/And</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX VMC Terminate.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX Terminate frequency change approved.</p>
+<h3>MOA CHECK IN (CH-5)</h3>
+<h3>99 IN THE ALPHA CHECK IN.</h3>
+<h3>OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ)</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX will take (VFR/IFR working area).</p></section><section id='recovery' class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0'><h2>6. Recovery — Approach, Arrival, Tower &amp; Landing</h2><h3 style='color:var(--warn)'>Checklist walkthrough (Google Doc, verbatim)</h3><p class='' style='margin:.15rem 0 .15rem 0.0rem'>Check out of working area on channel 5</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 5 Pri: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“99, BI single checking out of 1A-NE, one five thousand WADE (RIVERA) recovery”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Check in with approach on channel 13</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Technique: When you switch to channel 13 switch aux to channel 5 so that you can hear if there will be any conflictions with other a/c on your way to WADDE for example.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 13 Pri: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, Kingsville Approach, Radar Contact, 8 miles west of Kleberg County 9 thousand 1 hundred, say request”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>In the jet at some point 10 minutes out from recovery you want to call base and tell them that you are 10 minutes out most of the time to facilitate hot pits/switching.</p>
+<h3>IFR Recovery:</h3>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 13 Pri: “Request the HI-TACAN 13R, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Blazer 201, proceed direct WADE, climb and maintain one five thousand, Kingsville altimeter 29.92”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Proceed direct Wade, climb and maintain one five thousand, 29.92, Blazer 201”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, cleared HI-TCN 13R, report commencing”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Cleared HI-TCN 13R, WILCO, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Moa rules state to exit at 9,000’ however since you are now back on your IFR flight plan under ATC control, they can clear you to exit at any altitude. If there is other traffic that may conflict in the area, ATC will contact them on the area freq and deconflict with them for you.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Proceed to WAADE and ensure you are set up for the approach. At WAADE and inbound, report commencing and begin your approach. When executing an approach ensure you have completed the “WARP” checks (Weather, Altimeter Setting, Runway in use, perform penetration checks). For a HI TACAN, set published penetration course in HSI and select CDI mode. At the IAF, intercept, and maintain the approach course as published. For a direct entry you do not need to do a lap of holding since this is a turn for alignment and not a HILO (its not bold). If you are coming in for a direct entry just commence the penetration descent and turn towards the penetration course once hitting WAADE to save fuel. At 250 KIAS, reduce power to idle and simultaneously lower the nose to about 5 degrees nose low and then extend the speed brakes and pitch for 10 degrees nose low so you don’t get slow. If you go idle boards while level at 250 and then try to pitch for 10 deg nose low you will get slow.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Kingsville Approach, Blazer 201 commencing”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, Roger switch Kingsville Arrival local channel 12”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Switching one two, Blazer 201”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 12 Pri: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Runway heading to 2 thousand, Blazer 201”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, standby Kingsville Tower”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, Kingsville Tower how do you hear?</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Loud and clear, Blazer 201”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, Roger, report the final approach fix with the gear”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201 Wilco”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Technique for penetration descent Hi-TACAN 13R: If you retract boards at 8k instead of platform that works out well for fuel conservation to stay higher a little longer.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Anticipate reaching 5000 ft AGL on the arc. Allow the LAW to sound, report “Platform” and retract the speed brakes, if still extended. Shallow descent IAW the minute to live rule and reset LAW to the next altitude restriction as directed in your wing’s SOP. Just like how we lowered the nose before extending the speed brakes, start raising the nose towards 2 deg nose down before retracting the speed brakes so you don’t get super fast. 2 deg nose down at idle maintains 250 KIAS. Approaching 5,000 feet you can enter the next law setting and just don’t press enter yet because you need to let the law sound at 5,000. Then when the law sounds all you need to do is press enter and you can simultaneously retract the speed brakes to observe the minute to live rule.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Platform, resetting LAW to 2800 ft”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>At 5-7 nm prior to the FAF, slow to 200 KIAS. We will be at 3000 ft finishing up the arc. Use the turn onto the final approach course to slow from 250 KIAS to 200 KIAS. Go to idle at the lead radial and let the a/s bleed off. Configure the a/c for landing 3-5 nm prior to FAF (pretty much right after turning onto FAC and within 5 radials for the HI-TACAN 13R). When you put the gear down nudge power forward to about 1000-1200 pph to engage the approach idle stop (NATOPS says to do this somewhere). Hold attitude on the horizon and descend while you slow to on speed and do landing checks since the FAF altitude is coming up quick. Reset the law to about 10% below the next altitude before descending so it doesn’t go off.</p>
+<h3>Transitions (Clean to Dirty):</h3>
+<p class='call' style='margin:.15rem 0 .15rem 1.2rem'>Reduce power to idle and extend speed brakes if necessary. Slow to 200 KIAS and note level flight attitude on the ADI display. Select gear down and flaps to half (if required, flaps may be lowered, but not raised, in a turn). The increased lift and drag combination causes a “ballooning” effect that must be countered with firm forward stick force to maintain altitude and prevent climbing. Wait for stick pressure to dampen out before selecting full flaps, if desired. As stick forces settle down, trim nose up as the a/c decelerates. As a/s approaches 160 KIAS, increase power for 150 KIAS (1900 pph for half or 2500 pph for full) (Note: Don’t do this just go right to optimum AOA). Decelerate to optimum AOA (no sooner than 10 nm from runway, 30 deg of FAC) by reducing power, adding noseup trim to maintain level flight, and then adding the appropriate amount of power to achieve level flight.</p>
+<h3>Landing Checks:</h3>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Below 200 kts, gear and __ flaps”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>R/C: “Clear”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Gear - 3 Down</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify all position indicator lights. Gear handle light should be out.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Flaps/Slats - Full/Half/Up</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify with lights. Visually verify slats are down.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Hook - Up/down</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify with hook lever position and hook light.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Harness - As Required</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Probably unlocked unless you are taking a trap or practicing for, or doing actual carrier landings.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Speed Brakes - Extended/Retracted</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify with position indicator lights.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Anti-Skid - On/LT On</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify switch position and that light is on.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Check Fuel State. Then calculate on speed. Below are formulas to estimate and the official table from the checklists.</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Full Flaps On Speed = 110 + half fuel state</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Half Flaps On Speed = 130 + half fuel state</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>No Flaps On Speed = 150 + half fuel state</p>
+<p class='' style='margin:.15rem 0 .15rem 3.5999999999999996rem'>Example: Half flaps and fuel is 2.0, so on speed should be around 140. Table says 141 so it is a close approximation that you can do in the jet instead of having to flip to the table.</p>
+<h3>GRSS WT</h3>
+<h3>FUEL</h3>
+<h3>FULL</h3>
+<h3>HALF</h3>
+<h3>NO FLAP</h3>
+<h3>11.0K</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>0.5</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>114</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>132</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>151</p>
+<h3>11.5K</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1.0</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>117</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>135</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>154</p>
+<h3>12.0K</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1.5</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>119</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>138</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>157</p>
+<h3>12.5K</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2.0</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>122</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>141</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>161</p>
+<h3>13.0K</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2.5</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>124</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>143</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>164</p>
+<h3>13.5K</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3.0</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>126</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>146</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>167</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>8. “Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Descend to FAF altitude configured with speed brakes retracted and slow to on speed. Level off at FAF altitude using a good lead point and power at about 1800 pph to maintain level flight.</p>
+<h3>Optimum AOA Descent and Level Off:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Once established in level flight with desired configuration at optimum AOA, extend speed brakes to begin descent at FAF. Apply forward stick pressure and/or trim to counter nose pitch and influence the nose down toward desired VSI. Initially, this will cause a fast indication. As stick pressure subsides, retrim noseup for optimum AOA and readjust power to maintain desired VSI (Max of 1000 fpm inside FAF).</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>A good power setting for non-precision descent is 1500-1600 pph to achieve a descent rate of 800-1000 fpm. A good power setting for a precision descent is 1700 pph +/- 200 pph. This achieves a 650-700 fpm descent which is perfect for a 3 deg glideslope at half flaps.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Note: Extending boards without adding power will give approximately 500 fpm descent at optimum AOA. Lead corrections to AOA and attitude before they are needed so that corrections are on before the AOA reaches its peak or valley. For example, if fast on AOA and descent rate is good, you must lift the nose to onspeed and reduce power, then you must add power before the AOA could become slow to hold that descent rate. 3 part power corrections like in forms apply.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Approximately 100 feet prior to MDA (200 feet is more conservative and then ease down if needed), add about 300 pph and apply slight backstick pressure to level off while maintaining optimum AOA. If you are approaching MDA fast, better to put a bunch of power in and get fast to avoid busting MDA.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>At the FAF, start the clock (not needed on the HI-TACAN for 13R but a good idea to do it anyways), extend speed brakes, report landing checklist complete on the ICS and make gear down call to ATC. Reset LAW before it goes off (Maybe have it ready right before you hit the FAF or just punch it in early when stabilized and approaching FAF). Forward stick pressure will be required to counter the pitch up due to speed brake extension. Technique: Leave power where it is and extend speed brakes while lowering the nose. Then pull power back to about 1500 pph for a non precision descent.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 14 Pri: “Kingsville Tower, Blazer 201, FAF with gear”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, winds 130 at 15, cleared for the option 13R”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Cleared for the option 13R, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Descend to the MDA at about 800-1000 fpm maintaining on speed and start looking for the runway. Monitor DME for the VDP and MAP. Approximately 100 feet prior to the MDA. add about 300 pph fuel flow and apply slight backstick pressure to level off at MDA.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Transitioning for Landing: With the field in sight and the a/c is in a position to safely land, transition to the final landing configuration (full flaps), and manage the energy state with speed brakes. When transitioning to full flaps, a nose down attitude is required to prevent ballooning. If no intent to execute a missed approach, reduce power to idle at touchdown. You can also just stay at half flaps for a touch and go but make sure if you do the descent rate is less than 600 fpm. Full stops must be done at full flaps.</p>
+<h3>Missed Approach Climb Out and Level Off:</h3>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Simultaneously advance throttle to MRT, retract speed brakes, and rotate at optimum AOA, to approximately 12-15 deg nose up. Maintain this attitude on ADI display and rate of climb should increase toward 2,000 fpm. With two positive rates call for gear. At 125 KIAS minimum flaps may be called for and raised from full to half. With 140 KIAS min the flaps may be called for and raise from full or half to up (do not raise flaps in a turn). If a low level off altitude is required when remaining in the GCA pattern, you can reduce power below MRT to avoid a super high attitude when cleaning up which could cause you to blow through your altitude. As the a/c accelerates towards climb speed (200 KIAS if remaining in the approach pattern/GCA box, 250 KIAS otherwise), adjust backstick to maintain this a/s. Once established in a clean MRT climb (a 200 KIAS MRT climb will stabilize at approximately 4,000 fpm and 20 deg nose up; a 250 KIAS MRT climb will stabilize at approximately 6,000 fpm or greater and 18 deg nose up), lead level off by 1,000 ft, smoothly reducing power for desired a/s and allowing the nose to drop.</p>
+<p class='' style='margin:.15rem 0 .15rem 1.2rem'>Technique for missed approach or climbout into GCA box where you are staying at 200 knots: MRT boards, pause or two, then takeoff attitude (10-12 deg nose up), gear up flaps up then 15 deg nose up. With gear up and clean pull power back to 2200 and go to 10 deg nose up for the remainder of the climb.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>If you have flown an instrument approach to the runway in use, the last person you talked to was a final controller, not Tower (they contacted Tower on your behalf and got your landing clearance for you). Therefore, after you have landed (for a full stop), contact Tower and give them a courtesy call to let them know you’re on the active.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 3 Pri: “Kingsville Tower, Blazer 201, GCA rollout on the right” (as in 13R)</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, right when able, contact Ground”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Roger, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>If you are already up BTN 3 upon landing you do not need to make the gca rollout on the right call. This is really only if you are up BTN 12 for example with a GCA controller.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>After your full stop, taxi clear of the runway in use. Switch ground (ch 2) on pri and monitor. Complete After Landing Checklist at a stop.</p><h3 style='color:var(--warn)'>Kingsville Comm Script (OCR, verbatim)</h3><h3>MOA CHECK OUT (CH-5)</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.</p>
+<h3>APPROACH CHECK IN (CH-13)</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX Kingsville Approach, IDENT.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Approach, BLAZR/HAWK 2XX Cancel VFR to the Initial.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Approach, BLAZR/HAWK 2XX Vectors to the Initial.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R.</p>
+<h3>VFR TO INITIAL</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX proceed to the initial for the 13’s, cancelation received, maintain this frequency for</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>advisories, Kingsville altimeter 29.92.</p>
+<h3>BLAZR/HAWK 2XX WILCO 29.92.</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX switch Kingsville Arrival button 12. —</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX switching 12. :</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Arrival, BLAZR/HAWK 2XX checking in 4 thousand 5 hundred.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2Xx, Kingsville Arrival (traffic advisories if any).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX no traffic between you and the initial squawk standby and contact tower.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX squawking standby switching.</p>
+<h3>IFR TO INITIAL .</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2xXX fly heading 040 descend and maintain 4 thousand, report Kingsville in sight, Kingsville</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>altimeter 29.92.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX, 040 down to 4 thousand, vectors for the initial, WILCO, Kingsville altimeter 29.92.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2Xx field in sight.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX no traffic between you and the initial squawk standby and contact tower.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX squawking standby switching.</p>
+<h3>TOWER CALL (CH-3)</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Tower, BLAZR/HAWK 2XX 15 miles to the West for the initial.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>.BLAZR/HAWK 2XX report the initial for the 13’s</p>
+<h3>BLAZR/HAWK 2XX, WILCO.</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX Initial.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX report the numbers.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX, numbers.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2xXxX left break approved.</p>
+<h3>IFR RECOVERY</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2xXX, direct WAADE, climbing to 15 thousand, 29.92</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2Xx, cleared HI-TCN 13R, report commencing.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Approach, BLAZR/HAWK 2XX commencing.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX, Roger, following this approach your missed approach instructions, fly runway</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>heading, climb and maintain 2 thousand feet.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX runway heading to 2 thousand.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX standby Kingsville Tower.</p>
+<h3>BLAZR/HAWK 2XX.</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2Xx, Kingsville Tower how do you hear?</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX loud and clear.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.</p>
+<h3>BLAZR/HAWK 2XX WILCO.</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX FAF with the gear.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX cleared option 13R.</p>
+<h3>LANDING PATTERN/ TOWER DOWNWIND</h3>
+<h3>ABEAM CALL</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX abeam, gear, (option, touch and go, full stop).</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX, winds 130 at 15 cleared option 13L.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX cleared option 13L.</p>
+<h3>BALL CALL</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2XX Goshawk Ball, fuel state. (ICS no FCLP’s)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>CLARA  **Without Ball **</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Roger Ball</p>
+<h3>DOWNWIND CALLS</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX your interval is abeam mid field, left downwind approved.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX left closed traffic is approved.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX maintain your interval.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XxX interval in sight</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>or</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>BLAZR/HAWK 2XX Roger.</p></section><section id='shutdown' class='card' style='background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0'><h2>7. After Landing, Taxi Back &amp; Shutdown</h2><h3 style='color:var(--warn)'>Checklist walkthrough (Google Doc, verbatim)</h3><h3>After Landing Checklist:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Rolling off runway, put flaps up and retract speed brakes. Do not change configuration until clear of runway and across the hold short.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>1. “Ready to safe in front”</p>
+<p class='call' style='margin:.15rem 0 .15rem 1.2rem'>R/C: “Safe in Back”</p>
+<p class='call' style='margin:.15rem 0 .15rem 1.2rem'>“Safe in Front”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. Flaps - Up ; Check light</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Speed Brake - Retract ; Check light</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Trim - Zero</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Obogs Flow Selector - Off, Mask off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. HUD - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Pitot Heat - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Lights - Down, Down, Down, Middle, Middle, Middle</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Pinky Switch - Middle (Off)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. IFF - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10.  TACAN - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>11.  NAV - Off</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 1 Aux: “Base, 01 on deck” Just say last two numbers. Make this call while pulling off the runway so you know whether to ask ground to taxi to the line, pits, etc.</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“01, welcome back”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>Ch 2 Pri: “Kingsville Ground, Blazer 201, clear of the active on hotel, taxi to my line”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Blazer 201, taxi via hotel delta, cross 35 left and right”</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>“Taxi via hotel delta, cross 35 left and right, Blazer 201”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>On the roll, complete the Before Engine Shutdown Checklist. On your way back to the line you can also unstrap if you’d like if both seats are safe.</p>
+<h3>Before Engine Shutdown (Taxi Back) Checklist:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Left MFD - HSI</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Used to track your ground speed</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2. LAW - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Right MFD, Menu/BIT. Run BITs on any unexpected degraded equipment.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Press MAINT on BIT page</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Verify no a/c exceedances or overflows</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. Right MFD - Off</p>
+<p class='call' style='margin:.15rem 0 .15rem 0.0rem'>5. “No Exceedances, No Overflows”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. Idle RPM - Check</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Once the throttle has been at idle for a second and the RPM has stabilized, verify RPM is 56.5+/-2%.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Standby Attitude Indicator - Cage (Off flag visible)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. PRI and AUX Radio - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Turn radios off once you are out of the ground controlled area/pulling into the line area. Put base in both radios prior to turning them off.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. Left MFD - Menu/BIT</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Setting up to turn GINA off later. Usually I wait to do this until I am parked and am waiting for the 30 seconds to elapse to turn it off.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Follow lineman directions to parking spot.</p>
+<h3>Engine Shutdown Checklist:</h3>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Applicable Engine Limit: Except in an emergency, engine shall be stabilized at idle for at least 30 seconds prior to shutdown.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>1. Set parking brake</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Start a timer on 8 day clock to time for both parking brake and throttle.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>2.</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Turn OBOGS/Anti-G off.</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>“Throttle Off, Canopy”</p>
+<p class='call' style='margin:.15rem 0 .15rem 2.4rem'>R/C: “Clear”</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>3. Throttle - Off (only physically do this once lineman gives you the cut signal)</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Look at 8 day clock for seconds counter so you have a mark for 45 seconds from moving the throttle to off. Usually you get the throttle off around 10 seconds into the 30 second timer for the GINA so at about 55 seconds on the 8 day clock will be your 45 second mark. Good gouge I heard is that when rpm has decayed to about 7% that is about 45 seconds. Open canopy. Ensure gust lock engages (canopy handle forward). Monitor EGT/RPM/FF for normal shutdown.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>4. No sooner than 30 sec after setting parking brake: GINA - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Turn off on BIT page on Left MFD</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>5. Left MFD - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>6. No sooner than 45 sec after moving throttle to off: Fuel Shutoff Handle - Pull</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>7. Engine Switch - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>8. Contr Aug - SBI</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>9. Pinky Switch - Off (Middle Position)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>10. Brake Pressure Accumulator - Should be indicating 2700 psi minimum</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>11. Give lineman wipeout signal and yell wipeout. They will respond by yelling wipeout.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>12. Lateral Stick until HYD1 is depleted</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Cycle half-deflection laterally about neutral at one cycle every two seconds, then let go when hyd1 reaches 0 psi. This is known as the PCU checklist. When HYD1 is depleted, the stick should center itself. If it remains to one side or the other, there is an actuator failure and the a/c is down (tell maintenance). Manually centering the stick is not good because you could be hiding the failure. Let go and the stick should center itself. This check is done once HYD1 is depleted NOT HYD2.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>13. Batt Switches - Off</p>
+<p class='' style='margin:.15rem 0 .15rem 2.4rem'>Check switches and ensure all other equipment is off prior to turning the batteries off.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>14. Seat/MDC - Pinned (Do this before getting out of the jet)</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>After leaving the cockpit, do one final sweep through the cockpit before walking away. Big things to look for: Seat - SAFE, two pins in, fuel shutoff handle - up, engine switch - off, all other equipment is off and map case is empty.</p>
+<p class='' style='margin:.15rem 0 .15rem 0.0rem'>Last thing you look for before walking away is that the seat is safed.</p></section>
+<p><a href="section-cl.html">← CL section</a> · <a href="index.html">Home</a></p></div></body></html>

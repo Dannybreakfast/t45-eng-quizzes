@@ -1,0 +1,1742 @@
+                              NATOPS QUESTION BANK GOUGE
+
+Engineering Books:
+http://www.cnatra.navy.mil/local/docs/pat-­‐pubs/P-­‐1278.BK1.pdf	  
+http://www.cnatra.navy.mil/local/docs/pat-­‐pubs/P-­‐1278.BK2.pdf	  
+
+True or False
+1. What is the EGT limit for engine start?
+(4-2)
+Ground Start – 550°C; Airstart – 600°C
+
+2. What is the MAX allowable overshoot (temperature and time) during engine start?
+(4-2)
+Ground Start – Maximum overshoot for 20°C for 10 seconds. Airstart – Maximum overshoot of
+50°C for 10 seconds. (EGT/RPM warning light will operate at 650±8°C)
+
+3. What is the MAX idle EGT?
+(4-2)
+450°C
+
+4. What is the normal idle rpm with the bleed valve closed?
+(4-2)
+55±2%N2. (1. Bleed valve closed. Nominal RPM will vary depending on engine loading, air
+bleed, ambient conditions and altitude. With airflow knob in the OFF position, idle RPM will
+operate approximately 2% higher than normal. 2. Maximum shift in engine idle RPM between the
+Poststart and Engine Shutdown checks, corrected for standard day, is 2%. Idle RPM will normally
+increase approximately 1% for every 1,500 foot increase in altitude and 1% for every 10°C in
+ambient temperatures.)
+
+5. What is MAX continuous rpm and EGT?
+(4-2)
+RPM: 100%N2. EGT: 550°C
+
+6. What are the MRT rpm and EGT?
+(4-2)
+RPM: 104%N2. EGT: 610°C (30 minutes/flight hour)
+
+7. What is the MAX EGT for an airstart?
+(4-2)
+600°C
+
+8. What is the MAX allowable overshoot (temperature and time) during airstart?
+(4-2)
+Maximum overshoot of 50°C for 10 seconds. (EGT/RPM warning light will operate at 650±8°C)
+
+9. What are the MIN airspeed and MAX altitude limits for an unassisted airstart?
+(11-19, 15-2)
+a) An immediate airstart may be attempted at any altitude/airspeed within 10 seconds of any
+engine flameout or shutdown.
+b) Windmill airstarts are most effective below 25,000 feet MSL and greater than 250 KIAS.
+10. What is the maximum airspeed for landing gear and/or flap/slats extension?
+(4-5)
+≤ 200KIAS
+
+11. What is the maximum gross weight for takeoff?
+(4-9)
+Field Takeoff: 14,500lbs
+Catapult: 14,200lbs
+
+12. Below what altitude (AGL) will a pilot eject if the aircraft is in uncontrollable flight?
+(15-18, 17-4)
+10,000’
+
+13. How is a failure of the undervoltage sensing unit confirmed?
+(2-22, 3-5 Engineering Book #1)
+Voltmeter	  displays	  25	  VDC	  or	  less	  and	  no	  GENERATOR	  warning	  light	  illuminates.	  You	  will	  have	  to	  
+manually	  take	  the	  Generator	  off	  line	  to	  run	  off	  of	  the	  batteries.	  	  
+
+14. The F405-RR-401 engine installed develops 5,527 pounds of thrust at standard sea-level
+conditions.
+(2-1)
+True.
+
+15. The OIL PRESS light on the Caution/Warning Panel (CWP) illuminates if the
+differential pressure increases.
+(2-12)
+False. The light illuminates when the oil pressure differential is low for more than 10 seconds.
+
+16. Protection circuits within the starting system automatically shut down the GTS if the
+GTS idle speed is not achieved within 30 seconds.
+(2-6)
+True.
+
+17. During engine start, the GTS will shut down automatically at approximately 45 percent
+engine rpm.
+(2-6)
+True.
+
+18. The HUD is an electro-optical device located only in the front cockpit that projects flight
+and weapon delivery information in symbolic form into the pilot’s instantaneous field of
+view on a combining glass.
+(2-40)
+True.
+
+19. During ground starting, allow an interval of 3 minutes between each GTS start, and 20
+minutes after three consecutive GTS starts.
+(2-6)
+False. Minimum interval between each GTS start attempt is 3 minutes. After three consecutive
+GTS start attempts, a minimum interval of 30 minutes is required before further start attempts.
+
+20. During ground starting, engine ignition units are continuously energized for 30 seconds
+after the GTS start button is released.
+(2-5)
+False. With weight-on-wheels, ignition ceases immediately when GTS button is released.
+21. Engine light-off normally occurs within 10 seconds (15 seconds maximum) of selecting
+IDLE.
+(2-7, 11-19)
+True. (For an airstart, engine light-off should occur within 5 seconds)
+
+22. After the bleed valve is closed, the engine should stabilize at 55±1 percent rpm at sea
+level. (Increase 1 percent for every 1,500 feet above sea level.)
+(2-7, 4-2)
+False. It should stabilize at 55±2 percent RPM.
+
+23. Immediate airstarts may be attempted at any airspeed and altitude.
+(11-19, 15-2)
+True.
+
+24. After an airstart, when the engine has accelerated and stabilized, the GEN and HYD 2
+should be reset.
+(15-4)
+True.
+
+25. The BIT display will automatically display upon system power-up.
+(2-32, 2-158)
+False. Upon aircraft power up with weight-on-wheels each MFD/MFCD initializes with the
+MENU display. With weight-off-wheels, they revert to the display, option selections, and master
+mode selected prior to the power interruption. (If the DEU fails BIT, DSPY BIT is halted and the
+MFDs/MFCDs return to the BIT display)
+
+26. An unassisted airstart should be conducted below 25,000 feet with a minimum airspeed
+of 250 knots.
+(11-19)
+False. An immediate airstart may be attempted at any altitude/airspeed. A windmill airstart is
+carried out below 25,000 feet and between 250 to 350 KIAS.
+
+27. The aircraft MAX crosswind computed for takeoff and landing is 30 knots.
+(4-7)
+False. Max 90° crosswind is 20 knots (dry runway).
+
+28. The F PRES caution light will illuminate when the fuel pressure falls to 3 psi above
+dynamic pressure.
+(2-18)
+True.
+
+29. The negative-g compartment of the engine fuel feed tank will provide for 30 seconds of
+inverted flight, with maximum power, at sea level.
+(7-6 Engineering Book #1)
+True.
+
+30. During engine start, the fuel boost pump is powered by the Essential Services Bus for 30
+seconds when the GTS start button is pressed.
+(2-15)
+True.
+31. The F PRES caution light illuminates if the boost pump pressure rise is less than 4 psi.
+(2-18)
+False. If outlet pressure falls below 3psig above datum pressure the F PRES caution light
+illuminates. A loss of tank pressurization or loss of either boost pump pressure illuminates the F
+PRES light.
+
+32. The LP PMP caution light will illuminate when the engine-driven low pressure pump
+fails.
+(2-2, 2-12, 6-4 Engineering Book #1)
+True.
+
+33. After an airstart, if the generator is not reset within 30 seconds, the F PRES light will
+illuminate when the bus automatically switches back to the GEN Bus.
+(2-15)
+True.
+
+34. The FUEL caution light will illuminate when the fuel remaining is 350±50 pounds.
+(2-19, 2-21)
+True. Light comes on when usable fuel is less than approximately 350 lbs. There is approximately
+11 gal of unusable fuel so technically this is true.
+
+35. A hot start is indicated by the EGT rapidly rising through 545 °C.
+(2-7)
+True. Engine EGT will not normally rise above 420°C on ground start. Certain conditions may
+cause EGT may rise above 420°C, near the maximum of 550°C, but the rate should be more of a
+concern. If it is “rapidly” rising, it is a hot start.
+
+36. The minimum and maximum fuel flow is 300 pph minimum/4,750 pph maximum.
+(4-8 Engeering Book #1)
+False. Idle: 300-400 pph, Maximum: 6410 pph.
+
+37. After start, the closure of the bleed valve is indicated by 3 percent increase of rpm and
+50 °C drop in EGT.
+(2-1, 2-7)
+True.
+
+38. Once the bleed valve is closed, it will remain so until the GTS start button is pressed.
+(2-1)
+False. If the engine is operating under manual fuel control, the bleed valve remains closed at all
+engine speeds, except during an airstart when it is opened by pressing the GTS start button. Also,
+the bleed valve will open if switching from manual fuel control to main fuel control if N2 is
+below 61±4%. And finally, it will also open upon shutdown when N2 falls to approximately 45%.
+
+39. The display system BIT monitors equipment status and notifies the aircrew if a failure
+or degraded conditions exist. It also allows for initiating BIT of individual aircraft
+equipment.
+(2-158, 25-7 Engineering Book #2)
+False. The display system BIT does monitor equipment status and notifies aircrew of faults,
+however, it is the display system BIT page allows for initiating BIT of individual aircraft.
+40. During an airstart using manual fuel control, after the GTS start button is released, the
+bleed valve remains open for 60 seconds.
+(2-1)
+True.
+
+41. To eliminate transient warnings caused by aircraft maneuvering, the OIL PRESS
+warning is delayed approximately 10 seconds with the landing gear up and locked.
+(2-4, 15-5)
+True.
+
+42. The only portion of the aircraft protected from icing by ducted engine air is the fan
+spinner.
+(2-2, 19-1)
+True (as long as the ducted air is above freezing). A small flow of bleed air is continuously ducted
+forward through the N1 shaft and through the fan spinner to provide heat for anti-icing. The air is
+discharged through an annular slot in the spinner assembly and reenters the compressor. The
+T-45C has no anti-ice capability for either the airframe or canopy. Bleed air is constantly ducted
+from the compressor section to provide heat for engine anti-icing whenever the engine is running.
+
+43. Ignition is inhibited when the throttle is advanced past the IDLE position.
+(2-7)
+False. At 45% N2 the ignition units are de-energized.
+
+44. Manual fuel control, when selected, will provide for automatic fuel scheduling during an
+airstart.
+(2-3, 11-19)
+False. Airstarts may require throttle modulation due to bypassing of the Sub Idle Fuel Control
+Unit (SIFCU).
+
+45. To use the GTS during an airstart, the engine rpm must be below 20 percent.
+(2-6, 11-20)
+True. To prevent shock loading of the ATS clutch, a speed switch inhibits operation of the start
+valve when the N2 RPM is above 20%. The starter is inhibited from cranking the engine if the
+engine RPM is above 20% when the ENGINE switch is momentarily placed to START.
+
+46. An overvoltage of 30.2±0.1 volts or a voltage of less than 25 volts will cause the
+GENERATOR warning light to illuminate.
+(2-2)
+True.
+
+47. The generator will reset automatically after an airstart.
+(11-19, 15-4)
+False. Once stabilized at IDLE, the Generator can then be reset.
+
+48. External electrical power, when used during ground starting, is automatically cut off
+when the engine reaches 45 percent rpm.
+(2-22, 4-2)
+True. But GTS start with external power is prohibited.
+
+49. If both inverters FAIL, the standby attitude indicator becomes the primary attitude
+instrument.
+(2-23)
+False. The attitude information display on the HUD and ADI displays are not affected.
+50. The FIRE warning light illuminates at 300 °C.
+(2-111)
+True.
+
+51. The GTS FIRE warning light illuminates at 300 °C.
+(2-111)
+True.
+
+52. The TP HOT caution light illuminates at 150 °C.
+(2-111)
+True.
+
+53. If the fire warning lights extinguish due to a temperature decrease, an automatic reset
+may take 45 seconds.
+(2-111)
+True.
+
+54. The operating pressure for both hydraulic systems is about 3,000 psi.
+(2-64)
+True.
+
+55. The HYD 2 bypass valve is powered open (to reduce engine loads during airstart), below
+42 percent rpm.
+(2-65, 11-18)
+True. A bypass valve is energized open to return pump pressure when the engine RPM is below
+42% to reduce engine loads during engine start. If RPM is above 45%, the bypass valve can be
+reset by pressing the HYD RESET button.
+
+56. A hand pump is provided to charge the wheel brake accumulator prior to aircraft
+towing.
+(2-64)
+True.
+
+57. Indications of RAT operation is a cycling HYD 2 pressure indicator between 2,500 and
+3,000 psi as control stick demands are made.
+(2-65)
+True.
+
+58. To ensure there is enough pressure to reset the RAT shuttle valve, the engine rpm should
+be above 76 percent.
+(2-66)
+False. The RAT can be reset whenever the HYD 2 pressure is above 2,000 psi. You can also press
+the HYD 2 RESET button with the engine RPM above 45% N2 or HYD 2 pressure above 1,800
+psi and that will close the HYD 2 system bypass valve and will retract the RAT.
+
+59. RAT extension is automatic whenever the HYD 2 pressure falls to 1,500±100 psi.
+(2-66, 2-67)
+True.
+
+60. The HYD caution light illuminates when either HYD 1 or HYD 2 system pressure is
+1,660±110 psi or less.
+(2-67)
+True.
+61. The HYD FAIL warning light illuminates when HYD 1 and 2 systems drop below 600
+psi.
+(2-67)
+False. The emergency system pressure must also be less than 600±50 psi.
+
+62. Yaw damping function is active at all airspeeds.
+(2-70)
+False. Yaw damping is available with weight-off-wheels and less than 217 knots airspeed.
+
+63. The flap ranges are 50° full down and 25° at one-half.
+(2-73)
+True.
+
+64. A SP BRK advisory light illuminates when the speed brakes are not fully retracted.
+(2-76)
+True.
+
+65. On the ground (weight-on-wheels), inadvertently moving the landing gear handle from
+DN to UP will cause the landing gear to retract.
+(2-76)
+False (haha). If the LDG GEAR handle is set to UP with weight-on-wheels, the gear will not
+retract.
+
+66. A red WHEELS warning light will flash and a warning tone will sound if the landing
+gear is not down and locked and the throttle is below approximately 95 percent rpm, when:
+Altitude is 10,000 feet or less and airspeed is 170 knots or less
+OR
+At any altitude and either FLAPS/SLATS switch is not in the UP position.
+(2-77)
+False. Altitude is 7,200 feet MSL and the airspeed is less than 170 knots (less than 9,500±300 feet
+MSL when climbing or 7,700±500 feet MSL when descending)
+Or
+The SLATS/FLAPS levers are not in the UP position.
+
+67. A RED wheels warning light located on the glareshield in both cockpits flashes and a
+tone is audible if the gear is not down and locked in the landing pattern.
+(2-77)
+True.
+
+68. Auto retraction (blowback) of the flaps begins at approximately 200 knots.
+(2-73)
+False. Flaps will not blow back if an overspeed occurs (over 200 knots).
+
+69. The speed brakes will not extend fully above 340 knots.
+(2-75)
+True.
+
+70. If flap/slat selection disagrees between the forward and aft cockpit, the flaps/slats will
+move to the most extended position.
+(2-74)
+False. The levers in each cockpit are mechanically linked and move together so this should not
+happen.
+71. In the event of a HYD 1 system failure, power to the flaps is available from the wheel
+brake/emergency flap accumulator.
+(2-64, 2-73)
+True. (As long is the pressure in the WB/EF accumulator is above 2,200 psi)
+
+72. Following a generator failure the right MFD drops off line and the left MFD shows the
+ADI display. This is normal.
+(2-22)
+True.
+
+73. Emergency hydraulic pressure prevents raising the landing gear handle with weight-on-
+wheels.
+(2-76)
+False. On the ground (weight-on-wheels), inadvertent movement of the handle from DN to UP is
+prevented by a detent.
+
+74. The white aft facing light on the nose landing gear strut illuminates in flight to indicate
+landing gear position.
+(2-153)
+False. There is a forward facing white light (landing/taxi light) that is on when LAND/TAXI light
+switch is ON and gear is down and locked. It automatically extinguishes when gear is retracted.
+There are also the approach lights, which are forward on the nose gear strut. They are controlled
+by the AOA system and function when the landing gear is down and locked in flight.
+
+75. In an actual emergency gear extension, the normal FINAL configuration should be:
+(2-77, 2-78, 16-3)
+a. Emergency gear handle pulled.
+b. Normal landing gear handle DN.
+c. Gear DOOR light illuminated.
+d. WHEELS warning light out.
+e. Red light in the landing gear handle out.
+f. White light on nose landing gear on.
+False. a) The Emergency gear handle should be re-stowed (to get back NWS). Everything else is
+true though.
+
+76. If the SKID caution light illuminates in flight, the following procedure should be used:
+(12-14)
+a. Turn anti-skid off.
+b. Use normal braking techniques.
+False. 1. Go-around if possible. If go-around is not practical: 2. Brakes-Release. 3. ANTI-SKID
+switch-OFF. 4. Brakes-As required. (Take a trap if possible)
+
+77. High gain nose wheel steering is not normally used any time the ground speed exceeds
+20 knots.
+(2-81)
+True. High gain NWS should be used for low speed taxi operations only, at less than 10 knots
+ground speed.
+
+78. In the event a nose wheel steering failure occurs, the system automatically shuts down
+and the yellow NWS caution light illuminates.
+(2-82, 11-38 Engineering Book #1)
+True.
+79. The NWS is always in operation on the deck?
+(2-80)
+True.
+
+80. The launch bar will not extend if the nose wheel angle is greater than 30"degrees from
+center.
+(11-42 Engineering Book #1)
+True.
+
+81. The OXYGEN warning light illuminates when:
+(2-118)
+a. Bleed air temperature 250 °C or above.
+b. Oxygen concentration is low.
+False. The light illuminates when an OBOGS failure is detected. Either low oxygen concentration
+from the concentrator or heat exchanger discharge air temperature exceeding 250°F indicates a
+system failure.
+
+82. IFF Mode C altitude reporting works off the forward cockpit altimeter.
+(2-121, 19-13 Engineering Book #2)
+True.
+
+83. The forward Mach airspeed indicator provides an output to the landing gear warning
+system.
+(2-27, Avionics Fold-Out)
+False. The GPS & INS systems generate airspeed information and that is sent to the GINA then to
+the DEU via the MUX BUS. There is nowhere on the foldout that has the forward mach airspeed
+indicator linked to the landing gear warning system.
+
+84. The aft Mach airspeed indicator provides an output to the control augmentation system.
+(2-28, 2-70, Avionics Fold-Out)
+False. The Control Augmentation System receives airspeed information from the YDC which
+receives information from the SADS system.
+
+85. During the preflight test of the COMM 1 UHF/VHF, the FREQ/CHAN indicator
+displays 888.888; COMM 1 requires service.
+(20-7)
+False. If it reads something other than 888.888, then it requires service.
+
+86. While checking the IFF system, you set the MASTER Control Selector to NORM and
+the Mode Select/TEST 3A switch to TEST after the 2-minute warmup, and you observe the
+following: GO light illuminates, therefore the IFF mode 3A is operational.
+(20-8)
+True.
+
+87. While testing the COMM 2 UHF/VHF, you note the FREQ/CHAN indicator displays
+651; COMM 2 requires service.
+(20-7)
+True. If it reads something other than 888.888, then it requires service.
+
+88. During the VOR/ILS system BIT check, the VOR bearing pointer indicates 90°; VOR/
+ILS system requires service.
+(10-9)
+True.
+89. After pressing the TEST button for 5 seconds during a TACAN BIT check, you observe
+the following:
+(10-9)
+a. HSI TACAN range counter indicates ±1 nm.
+b. HSI TACAN bearing pointer indicates 180±2.5 degrees.
+c. The TACAN system requires service.
+False. (1) The TACAN bearing pointer indicates 180±2.5 degrees. (2) Range reads 0±1 nm. (3)
+The course deviation scale centers.
+
+90. During the preflight of the VOR/ILS system, you set the VOR/ILS control to a valid
+VOR frequency and observe the following:
+(10-9)
+a. VOR light is illuminated.
+b. The VOR bearing pointer indicates 315±3°.
+c. The VOR signal is valid.
+False. (1) The VOR bearing pointer indicates 315±2.5°. (2) The CDI line moves to the left two
+dots maximum. (3) The marker beacon lights illuminate.
+
+91. The STBY attitude indicator provides up to 3 minutes of attitude information after a
+total power failure.
+(2-121)
+False. A minimum of 9 minutes of reliable attitude information (error less than 6°) is available
+after power loss, even though the OFF flag is in view.
+
+92. If the HOOK BYP switch is in the CARRIER position and the hook is not extended, the
+indexer lights in both cockpits will flash and the external approach lights will flash when the
+landing gear is down.
+(2-125)
+True.
+
+93. The localizer and glideslope steering needles for ILS are in view when:
+(20-15)
+a. ILS has been selected.
+b. Valid ILS frequency is tuned.
+True. (And within range)
+
+94. A valid BIT check for the VOR/ILS is as follows:
+(10-9)
+a. Bearing pointer pointing to 315 ± 2.5°.
+b. CDI moves left ± 2 dots.
+c. Marker beacon lights illuminate.
+True.
+
+95. A valid BIT check for the TACAN is as follows:
+(10-9)
+a. #2 needle pointing to 180 ± 2.5°.
+b. 1 NM DME.
+False. (1) The TACAN bearing pointer indicates 180±2.5 degrees. (2) Range reads 0±1 nm. (3)
+The course deviation scale centers.
+96. If cockpit pressure is lost, a warning is provided when the cockpit altitude exceeds
+24,500±500 feet.
+(2-114)
+True.
+
+97. Pressing the ADR pushbutton initiates a 10-second parameter record.
+(2-50)
+False. When pressed, the ADR retains all flight incident and engine parameters from five seconds
+before selection to five seconds after selection.
+
+98. The AV HOT light illuminates when the avionics bay temperature exceeds 153±5 °F on
+the ground.
+(2-116)
+True.
+
+99. The landing gear handle light will remain illuminated until the landing gear have fully
+retracted and the gear doors have closed properly.
+(2-77)
+True.
+
+100. If a launch bar malfunction is indicated, retraction of the landing gear will cause the
+indications of a L BAR malfunction to cease but may not correct the problem.
+(2-90)
+True. Following a 10 second delay, if the launch bar fails to retract, the L BAR light and warning
+tone will occur. If the gear is raised, the light and tone extinguish. When the gear is lowered back
+down, the light illuminate and tone will go off (following a 10 second delay).
+
+101. The wheel brakes remain functional when the wheel brakes/emergency flap
+accumulator pressure gauge displays 0 psi and HYD 1 pressure is normal.
+(2-64, Hydraulic Fold-Out)
+True.
+
+23.9.3 Multiple Choices
+102. The engine bleed valve is:
+(2-1)
+a. Open during engine starting to prevent N2 compressor stalling.
+b. Open during engine acceleration above 61 percent to prevent N1 compressor stalling.
+c. Closed during engine starting to ensure maximum GTS pressure.
+d. Closed during engine acceleration above 80 percent to increase EGT.
+
+103. The major components of the display system consist of:
+(2-27, 2-30)
+a. Four MFDs, a DEU, two DEPs, and a HUD.
+b. Four MFDs, a DEU, a DEP, and two HUDs.
+c. Two MFDs, four DEUs, two DEPs and two HUDs.
+d. Two MFDs, a DEU, two DEPs, and two HUDs.
+104. The LP fuel pump is powered by the:
+(2-2, 12-11)
+a. 115 Vac non essential bus.
+b. 115 Vac essential bus.
+c. Engine-driven gearbox.
+d. 28 Vdc generator bus.
+e. 28 Vdc essential bus.
+
+105. The cockpit EGT indication comes from the:
+(5-17 Engineering Book #1)
+a. ECA.
+b. T6/T2 thermocouple junction box.
+c. FCU.
+d. ADRS.
+e. N2 turbine temperature probe.
+
+106. During the landing rollout, at what speed will anti-skid operation no longer be
+possible?
+(2-85)
+a. 13 to 10 knots.
+b. 35 to 32 knots.
+c. 75 to 72 knots.
+d. 90 to 87 knots.
+
+107. During a landing, the wheels must spin up to !      knots before anti-skid operation
+is possible.
+(2-85)
+a. 20.
+b. 30.
+c. 75.
+d. 90.
+
+108. The Display Electronics Unit (DEU) acts as a ___________ computer.
+(2-27)
+a. display and data.
+b. symbol generator and mission.
+c. display and mission.
+d. display and position.
+
+109. The maximum airspeed for lowering the landing gear is:
+(4-5)
+a. 190 knots.
+b. 200 knots.
+c. 210 knots.
+d. 230 knots.
+
+110. The emergency landing gear extension system is:
+(2-77)
+a. Mechanically controlled and hydraulically operated.
+b. Electrically controlled and hydraulically operated.
+c. Mechanically controlled and gravity operated.
+d. Electrically controlled and mechanically operated.
+111. The maximum airspeed for flying with the landing gear extended is:
+(4-5)
+a. 190 knots.
+b. 200 knots.
+c. 210 knots.
+d. 230 knots.
+
+112. The normal landing gear system is:
+(2-76)
+a. Electrically controlled and hydraulically operated.
+b. Mechanically controlled and gravity operated.
+c. Mechanically controlled and hydraulically operated.
+d. Electrically controlled and mechanically operated.
+
+113. During normal flight operations, the boost pump receives electrical power from the:
+(2-15, 2-25)
+a. 28 Vdc generator bus.
+b. 28 Vdc essential services bus.
+c. 115 Vac essential bus.
+d. 115 Vac non-essential bus.
+
+114. During engine start (ignition switch set to NORMAL and GTS start button depressed),
+the boost pump receives electrical power from the:
+(2-6, 2-10, 2-15, Electrical System Fold-Out)
+a. 28 Vdc generator bus.
+b. 28 Vdc essential services bus.
+c. 115 Vac essential bus.
+d. 115 Vac non-essential bus.
+
+115. The MFD is used __________ and/or ___________ data and each display has
+____________ selection options.
+(25-5 Engineering Book #2)
+a. for navigation, attitude, system.
+b. for flight, mission, format-specific.
+c. to read, enter, twenty.
+d. to enter, change, operational.
+
+116. The FUEL or F PRES indications on the caution/warning panel will be accompanied by
+which tone from the intercom system?
+(2-21)
+a. Caution.
+b. Master alert.
+c. Wheels-up.
+d. Weapon release.
+e. Simulated gunnery.
+
+117. Select all that apply. The GENERATOR warning light will illuminate when:
+(2-22)
+a. Generator output voltage exceeds 30.2±0.1 volts.
+b. Voltage on the 28 Vdc essential services bus is 25 Vdc or less.
+c. The generator trips off-line.
+d. Generator output is between 28.1 to 29.1 Vdc.
+118. Select all that apply. If the generator goes off-line in flight (aircraft 165093 AND UP),
+(2-22)
+a. Reset may be attempted by cycling the GEN RESET switch.
+b. The GENERATOR light on the caution/warning panel illuminates.
+c. The AC INV light on the caution/warning panel illuminates.
+d. Reset may be attempted by cycling the AC RESET switch.
+
+119. Select all that apply. When inverter No. 1 is off-line,
+(2-23)
+a. Reset may be attempted by cycling the AC RESET switch.
+b. The AC INV light on the caution/warning panel illuminates.
+c. Reset may be attempted by cycling the GEN RESET switch.
+d. The GENERATOR light on the caution/warning panel illuminates.
+
+120. The DEU operates as one computer with two capabilities. One of the capabilities of the
+DEU is to act as a display computer. What is the second capability?
+(2-27)
+a. Air Data Computer.
+b. Flight Control Computer.
+c. Mission Computer.
+d. All of the above.
+
+121. Select all that apply. Services connected to the 28 Vdc essential services bus include:
+(2-25)
+a. Stabilator trim.
+b. Flaps control.
+c. AOA Indicator.
+d. TACAN.
+e. Radar altimeter.
+
+122. Select all that apply. Services connected to the 28 Vdc generator bus include:
+(2-25)
+a. Control augmentation system.
+b. Nose wheel steering control.
+c. ILS.
+d. Speed brakes.
+e. Arresting hook.
+(Part of it: yaw damper, rudder trim and ARI)
+
+123. Select all that apply. Instruments powered by the 115 Vac Essential Bus include:
+(2-25) There are NONE
+a. HSI.
+b. ADI.
+c. HUD.
+d. VOR/ILS/MB.
+e. Emergency lights.
+124. Select all that apply. Components powered by the 115 Vac Non-Essential Bus include:
+(2-25)
+a. Radar altimeter.
+b. 5 Vac lighting dimmers.
+c. Taxi/landing lights.
+d. OBOGS heater.
+e. Standby AI.
+
+125. Operation of the emergency jettison switch is inhibited by:
+(21-1)
+a. Weight-on-wheels.
+b. MASTER ARM Switch set to OFF.
+c. Airspeed below 170 knots and either flaps or gear down.
+d. Generator Bus failure.
+
+126. Select all that apply. Weight-on-wheels will inhibit operation of the:
+(21-4, 23-18 Engineering Book #2)
+a. Emergency jettison switch.
+b. Armament Bus services.
+c. HUD.
+d. Video cassette system.
+
+127. The display system used hard-wired interfaces to transmit/receive ___________,
+_______________, and ___________ data between the DEU and its system components.
+(25-6 Engineering Book #2)
+a. sound, serial, digital.
+b. analog, video, discrete.
+c. digital, analog, sound.
+d. discrete, video, digital.
+
+128. Select all that apply. The STRS display selects the:
+(21-5)
+a. Display mode of the HUD.
+b. Type of weapon to be used.
+c. Pylon that will launch the weapon.
+d. Type of bomb launched from the PMBR.
+
+129. Select all that apply. Power to the Armament Bus is controlled by the:
+(21-4)
+a. Master Armament switch.
+b. Master Armament Override switch.
+c. PUSH TO JETT button.
+d. Weapon options.
+
+130. Select all that apply. With NAV selected on the STRS display,
+(21-1)
+a. The HUD will display a NAV mode.
+b. Weapon release is inhibited.
+c. The PUSH TO JETT button is functional.
+131. Select all that apply. In addition to the weapons delivery symbology, the HUD displays
+symbols for the:
+(2-43, 21-8) (Assuming this is in A/G Mode)
+a. AOA system.
+b. Centralized Warning system.
+c. RALT.
+d. ADR.
+e. VOR/ILS equipment.
+
+132. What type of data words are transmitted/received between the DEU and the ADR,
+GINA, and MDL?
+(25-6 Engineering Book #2)
+a. Analog.
+b. Discrete.
+c. Digital.
+d. None of the above.
+
+133. While attempting to start the engine, you see that the GTS advisory light does not
+illuminate. This is an indication of:
+(2-6)
+a. GTS fuel supply failure.
+b. Bleed valve failure.
+c. Low oil pressure.
+d. Engine stall.
+
+134. You are sitting on the flight line preparing for a hop when the MASTER ALERT light
+illuminates. The plane captain points to the top of your aircraft with one hand and waves
+the other in a horizontal figure eight motion. Which one of the following accurately
+represents the situation?
+(20-68)
+a. GTS fire.
+b. Engine fire.
+c. Hydraulic fire.
+d. Oil fire.
+
+135. While starting the engine, you see the EGT rapidly approaching 550 °C. This indicates:
+(13-2)
+a. A hot start.
+b. A wet start.
+c. A hung start.
+d. A false start.
+
+136. While starting the engine, you notice your rpm stagnating at 45 percent, yet your EGT
+slowly continues to rise after the GTS has shut down. These are indications of a:
+(13-2)
+a. Hung start.
+b. Wet start.
+c. Hot Start.
+d. False start.
+137. While starting the engine, you will get what indication if the oil pump is not producing
+enough pressure for proper lubrication of engine parts?
+(2-12)
+a. OIL PRESS light.
+b. LP PUMP light.
+c. BOOST PUMP light.
+d. AV HOT light.
+
+138. While starting the engine, you receive no rise in EGT within 15 seconds after advancing
+the throttle, and the plane captain is pinching his/her nose and pointing at the tail pipe.
+What malfunction are you experiencing?
+(13-2)
+a. Wet start.
+b. Hung start.
+c. Engine icing.
+d. Hot start.
+
+139. The _____ controls and twenty _________________ for the MFD are located on the
+_______________.
+(2-31)
+a. three, option pushbuttons, MFD bezel.
+b. four, control pushbuttons, MFD bezel.
+c. two, display controls, center console.
+d. three, option pushbuttons, center console.
+
+140. Select all that apply. Which of the following indicate an engine fire on start?
+(20-68)
+a. Plane captain makes figure eight motion.
+b. Rising EGT.
+c. MASTER ALERT and FIRE light.
+d. AV HOT light.
+
+141. With the battery switches on, the throttle at OFF, engine start switch at ON, and
+ignition switch at NORMAL, you depress the GTS start button. In 15 seconds the GTS
+advisory light illuminates, and you place the engine start switch to START. What is the next
+indication that you should receive?
+(2-7)
+a. OIL PRESS light illuminates.
+b. GTS light extinguishes.
+c. ECA 2 light illuminates.
+d. READY light illuminates.
+
+142. You are starting the engine and the rpm has stabilized. You advance the throttle
+through 65 percent and return it to IDLE. Checking your rpm and EGT, you find that they
+have not changed from their original position. What malfunction would give you these
+indications?
+(2-1)
+a. GTS fuel supply failure.
+b. Bleed valve failure.
+c. False start.
+d. GTS failure.
+143. NWS is:
+(2-80)
+a. Electrically controlled and mechanically operated.
+b. Mechanically controlled and electrically operated.
+c. Mechanically controlled and operated.
+d. Electrically controlled and hydraulically operated.
+
+144. Each MFD has controls for selecting various display formats, options and sub-modes.
+There are ____ bezel push-buttons that when depressed will initiate the associated function
+for that display.
+(2-31)
+a. 03.
+b. 10.
+c. 20.
+
+145. Select all that apply. If the NWS fails,
+(2-81)
+a. The system shuts itself down.
+b. The system serves as a hydraulic shimmy damper for the nosewheel.
+c. The system will continue to steer in the last commanded direction.
+d. The system generates the 2-second nose-wheel centering command.
+
+146. Select all that apply. After takeoff, with the gear handle up, what indications would you
+expect if the landing gear doors have failed to close and lock?
+(2-77)
+a. Landing gear handle red light.
+b. Landing gear DOOR light remains illuminated.
+c. Wheels warning light.
+d. HYD 1 pressure gauge indicates loss in pressure.
+
+147. What has occurred if after retracting the landing gear, you notice the DOOR light and
+the gear handle light are illuminated but the NOSE, LEFT, RIGHT are extinguished?
+(2-77)
+a. The landing gear doors are closed and locked but the landing gear has failed to retract properly.
+b. The landing gear system, including doors has retracted/closed normally.
+c. One or more landing gear doors are not closed.
+d. The landing gear is down and locked properly, but the gear doors have failed to close.
+
+148. Select all that apply. The fuel system tanks are pressurized in order to:
+(7-9 Engineering Book #1)
+a. Suppress fuel boiling at high altitude.
+b. Aid in fuel transfer.
+c. Keep the collector tank full.
+d. Prevent reverse fuel flow during aircraft maneuvers.
+149. While in flight, you notice a loss of about 25 percent thrust. You have no indications of
+fire, no CWP lights illuminated, and your throttle is working normally. What condition
+could these indications represent?
+(6-3, 6-16 Engineering Book #1)
+a. Bleed valve failure.
+b. Tailpipe overtemp.
+c. Engine overspeed.
+d. ECA failure.
+
+150. You are flying through clouds at 10,000 feet and the outside ambient temperature is 5
+°C when the engine begins to lose power and the EGT begins to rise. Which of the following
+malfunctions is indicated?
+(16-1, 6-3 Engineering Book #1)
+1. Engine surge.
+b. Engine fire.
+c. Engine icing.
+d. Tailpipe fire.
+
+151. The HUD is________________device located in _________cockpit(s) that projects
+______________ and ________________ information in symbolic form into the pilot's
+instantaneous field of view on a combining glass.
+(2-40)
+a. a cathode-ray tube, both, navigation, attitude.
+b. a reflective-glass, the front, performance, ordnance delivery.
+c. an optical, both, attitude, control.
+d. an electro-optical, the front, flight, weapons delivery.
+
+152. A flashing MASTER ALERT light accompanied by an aural warning tone draws your
+attention to the CWP. You observe that the ECA 2 caution light is illuminated. Checking
+engine rpm, EGT, and fuel flow indicators, you observe that rpm, EGT, and fuel flow are
+increasing from previous readings. What condition do these indications represent?
+(12-10)
+a. ECA failure in a no trim condition.
+b. ECA failure in a full trim condition.
+c. ECA single lane failure.
+d. Bleed air valve failure.
+
+153. The major difference between engine malfunctions while in normal fuel control and
+engine malfunctions while in manual fuel control is that when in manual fuel control,
+(2-3, 15-1)
+a. You need not pay attention to engine indicators.
+b. Throttle movements must be made judiciously.
+c. Engine malfunction indications occur at a faster rate.
+d. Reaction time to malfunctions is increased.
+
+154. Which one of the following may indicate an engine failure during takeoff?
+(15-1)
+a. Decreasing rpm and fuel flow.
+b. Increasing airspeed.
+c. Increasing EGT and fuel flow.
+d. Stable EGT, rpm and fuel flow.
+155. While rolling on takeoff, you hear a loud noise, feel a loss of acceleration, and see that
+your EGT is higher than normal. What is the probable cause?
+(15-5)
+a. Engine overspeed.
+b. Engine failure.
+c. Engine fire.
+d. Engine overtemp.
+
+156. What three electrical buses are used by the display system?
+(2-25) (28 Vdc Gen Bus has the HUD and the 26 Vac Non-Essential bus has the DEU)
+a. 28 Vdc generator bus, 28 Vdc essential bus, 115 Vac non-essential bus.
+b. 115 Vac essential bus, 28 Vdc generator bus, 26 Vac essential bus.
+c. 26 Vac non-essential bus, 28 Vdc essential bus, 115 Vac non-essential bus.
+d. 28 Vdc non-essential bus, 26 Vac essential bus, 115 Vac essential bus.
+
+157. During a takeoff with throttle advanced to MRT, you check your gages and find the
+following: rpm is 85︎percent, EGT is 510 °C and fuel flow is normal. All appear stable. What
+condition do these indications represent?
+(4-2)
+a. Engine reduced thrust.
+b. Engine overtemp.
+c. Engine flameout.
+d. Engine stall.
+
+158. In flight, an audible bang or series of bangs accompanied by an increase in EGT and a
+decrease in rpm indicates a ( )?
+(15-5)
+a. Engine stall.
+b. Ac inverter failure.
+c. Bleed valve failure.
+d. Oil pressure failure.
+
+159. Which of the following indicates an engine overspeed condition?
+(2-12)
+a. EGT/RPM warning light ON.
+b. READY advisory light ON.
+c. EGT indicator light ON.
+d. F PRES caution light ON.
+
+160. In flight, the MASTER ALERT begins flashing, the aural tone sounds, and the EGT/
+RPM warning light illuminates. You observe that EGT is 550 °C, and rpm is 108 percent.
+What condition exists?
+(2-12)
+a. Engine stall.
+b. Engine overspeed.
+c. Engine overtemp.
+d. Engine flameout.
+161. A sudden loss of power accompanied by a GENERATOR warning light indicates what
+condition?
+(15-1)
+a. Engine flameout.
+b. Engine overtemp.
+c. Engine overspeed.
+d. Engine stall.
+
+162. Which of the following indicates an engine flameout?
+(15-1)
+a. Sharply decreasing rpm, EGT, and fuel flow.
+b. Sharply rising rpm, EGT, and fuel flow.
+c. Decreasing rpm with rising EGT and fuel flow.
+
+163. Select all that apply. The display system BIT does the following.
+(2-155, 27-134 Engineering Book #2)
+a. Monitors equipment status
+b. Activates the MASTER ALERT light and caution tone.
+c. Notifies aircrew of equipment failure or degraded condition.
+d. Allows for initiating the aircraft system BIT.
+
+164. Which one of the following represents the primary indication(s) of an engine fire?
+(2-12, 2-111)
+a. EGT indication of 600 °C.
+b. MASTER ALERT and FIRE lights with warning tone.
+c. TP HOT caution light.
+d. EGT/RPM warning light.
+
+165. During engine shutdown, the MASTER ALERT flashes while the plane captain points
+towards the aircraft with one hand and waves the other hand in a horizontal figure eight
+pattern. What condition do these indications represent?
+(20-68)
+a. Engine fire.
+b. Brake fire.
+c. Avionics fire.
+d. Normal shutdown.
+
+166. In flight, the FIRE light illuminates but then goes out. What indications would verify
+that you do have an engine fire? Select all that apply.
+(12-3)
+a. EGT indicates 710 °C and TP HOT caution light is on.
+b. EGT/RPM warning light is on and HYD 1 caution is on.
+c. EGT indicates 480 °C, rpm indicates 85 percent, and fuel flow indicates 1640 pph.
+d. EGT indicates 500 °C, rpm indicates 85 percent, and AC INV caution light is on.
+
+167. In normal flight the caution tone sounds, the MASTER ALERT light flashes, and the
+HYD light is on. HYD 1 pressure shows 600 psi. HYD 2 pressure is cycling between 2,500 to
+3,000 psi. Which malfunction has most likely occurred?
+(2-65) (RAT light should be illuminated too)
+a. RAT failure.
+b. HYD 1 and 2 failure (RAT operating).
+c. HYD 2 failure only.
+d. Uncommanded RAT extension.
+168. The AUTO pushbutton selection will initialize a BIT on what equipment in order?
+(2-157, 25-7 Engineering Book #2)
+a. MDL, ADR, GINA, DEU, and RALT.
+b. GINA, DEU, ADR, MDL, and RALT.
+c. RALT, MDL, ADR, GINA, and DEU.
+d. DEU, GINA, ADR, MDL, and RALT.
+
+169. Select all that apply. In flight you hear the caution tone, observe the MASTER ALERT,
+and notice that the HYD light is on. HYD 2 is at 1,300 psi, and HYD 1 is at 3,000. Which
+malfunctions, either separately or together, could cause indications?
+(2-64)
+a. Fluid loss in HYD 2.
+b. Pump failure in HYD 2.
+c. RAT failure.
+d. HYD 2 accumulator failure.
+e. Total hydraulic failure.
+f. HYD 1 and 2 failure with RAT operating.
+
+170. Flight control accumulator pressure (for either hydraulic system) is sufficient when:
+(2-65, 10-3 Engineering Book #1)
+a. Pressure reads 1,100 psi.
+b. Pressure reads 3,000 psi.
+c. System pressure is less than accumulator pressure.
+d. System pressure is greater than accumulator pressure.
+
+171. What malfunctions may have occurred, if cockpit hydraulic indications are normal and
+flight controls do not respond smoothly?
+(2-64)
+a. Failure of both FC accumulators.
+b. Failure of the FC accumulator in HYD 2 only.
+c. Slow pressure loss in HYD 1 only.
+d. Slow pressure loss in HYD 2 only.
+
+172. Select all that apply. Which hydraulic malfunctions could trigger the caution tone along
+with an inoperative speed brake?
+(2-64)
+a. Fluid loss in HYD 1.
+b. Pump failure in HYD 1.
+c. HYD 1 accumulator failure.
+d. Total hydraulic failure.
+e. RAT failure.
+
+173. Select all that apply. If you hear the caution tone in level flight and notice that the
+MASTER ALERT light is flashing and the HYD light is illuminated on the CWP, which of
+the following malfunctions would you suspect?
+(2-64)
+a. Fluid loss in HYD 1.
+b. Pump failure in HYD 1.
+c. HYD 1 accumulator failure.
+d. Total hydraulic failure.
+e. RAT failure.
+174. The three types of BIT checks are:
+(2-154)
+a. Start, Self-test, Maintenance.
+b. Initiated, Failure, Normal.
+c. Power-up, Initiated, Continuous.
+d. Notional, weight-on-wheels, Standard.
+
+175. If the RAT deploys and engine N2 rpm has returned to 85 percent, what will be the
+effect of depressing HYD 2 RESET pushbutton?
+(2-65)
+a. The RAT will retract.
+b. The RAT will remain deployed until HYD 2 pressure is 2,800 psi.
+c. HYD 2 EDP will be switched off-line.
+d. HYD 1 will supply both systems.
+
+176. Under which conditions would you suspect that the RAT has deployed successfully?
+(2-67)
+a. HYD light off.
+b. Initial cycling of HYD 2 pressure between 2,600 to 3,050.
+c. Another aircraft advises that RAT is extended.
+d. All of the above.
+
+177. Select all that apply. In the event of a HYD 1 failure, which flight control systems will
+remain operative?
+(2-64) (Assuming HYD 2 is operative. Assuming no Emergency Flaps are lowered also)
+a. Rudder.
+b. Slats.
+c. Stabilator.
+d. Flaps.
+e. Speed brake.
+
+178. Which flight control systems are hydraulically operated and have redundant power
+supplies?
+(2-64)
+a. Aileron system.
+b. Stabilator system.
+c. Rudder system.
+d. Flap system.
+e. All of the above.
+
+179. Select all that apply. The speed brake system:
+(2-75, 13-35 Engineering Book #1)
+a. has no redundant power source.
+b. is protected by pressure/thermal relief valves.
+c. has panels which blow back at airspeeds greater than 315 knots.
+d. has panels which are fully extended at 70︎degrees.
+180. In the event of a HYD 1 failure, what supplies a back-up to both flight control and
+general services?
+(2-64)
+a. Emergency (RAT) system.
+b. HYD 2.
+c. Wheel brake/emergency flap accumulator.
+d. None: no back-up.
+
+181. The MFD BIT display:
+(2-155) (Both are correct)
+a. will automatically display upon system power-up.
+b. activates the MASTER ALERT and caution tone when a BIT failure is detected.
+c. is available with weight-on-wheels.
+d. must be selected by the pilot.
+
+182. Select all that apply. In the event of a HYD2 EDP failure, what supplies a back-up to
+flight control services?
+(2-64)
+a. HYD1.
+b. Emergency (RAT) system.
+c. Wheel brake/emergency flap accumulator.
+d. None: no back-up.
+
+183. Match each HYD description (left) to its associated pressure (right).
+(2-64)
+                 DESCRIPTION                             ASSOCIATED PRESSURE
+
+1) Normal operations                           a) 3,000 psi
+
+2) RAT extension                               b) HYD 2 drop 1,500 psi
+
+3) Loss of flight control                      c) Both sys 600 psi
+
+4) RAT operating                               d) Cycles 2,500 to 3,000 psi
+
+5) General services lost                       e) HYD 1 1,500 psi
+
+                                               f) HYD 2 600 psi
+
+                                               g) HYD 1 600 psi
+
+
+1) a
+2) b
+3) c
+4) d
+5) e
+184. Select all that apply. N2 compressor bleed air is supplied to the:
+(2-1)
+a. OBOGS.
+b. ECS and cockpit pressurization.
+c. Fuel tank pressurization.
+d. Wing and engine inlet anti-icing system.
+e. Engine oil cooling.
+
+185. Following a generator failure the ____________ MFD drops off line and the _______
+MFD reverts to the _________ display.
+(2-22)
+a. left, right, ADI.
+b. right, left , ADI.
+c. left, right, HSI.
+d. right, left, HSI.
+
+186. When the HOOK BYP switch is set to FIELD,
+(2-125)
+a. The flashing of the AOA indexer and approach lights is enabled when the aircraft is in the
+landing configuration and the hook is retracted.
+b. The flashing of the AOA indexer and approach lights is inhibited when aircraft is in the
+landing configuration and the hook is retracted.
+c. Operation of the arresting HOOK handle is inhibited.
+d. Operation of the arresting hook is remotely controlled by the tower, LSO, or wheels watch
+personnel.
+
+187. The launch bar system is
+(2-89, 1-18 Engineering Book #1)
+a. Electrically controlled, hydraulically extended, and mechanically retracted.
+b. Electrically controlled, mechanically extended, and hydraulically retracted.
+c. Mechanically controlled, hydraulically extended, and mechanically retracted.
+d. Electrically controlled, mechanically extended, and hydraulically retracted.
+
+188. When the launch bar is held by the deck shuttle mechanism, the launch bar
+RETRACT/EXTEND switch is set to EXTEND, and the throttle is advanced past
+intermediate power,
+(11-40 Engineering Book #1)
+a. The launch bar RETRACT/EXTEND switch will remain in the EXTEND position until
+manually placed to RETRACT.
+b. The launch bar RETRACT/EXTEND switch will automatically be reset to the RETRACT
+position.
+c. The launch bar RETRACT/EXTEND switch will remain in the EXTEND position until
+the catapult shuttle reaches the end of the stroke.
+d. The launch bar will automatically retract.
+189. Select all that apply. Which services are completely lost (have no back-up) if HYD 1
+fails.
+(2-64)
+a. Landing gear extension.
+b. Landing gear retraction.
+c. Tail hook extension.
+d. Tail hook retraction.
+e. Nosewheel steering.
+f. Wheel brakes.
+g. Anti-skid.
+h. Launch bar extension.
+i. All of the above.
+
+190. Select all that apply. Which services are inoperative when the generator fails?
+(2-25, 12-4) (None)
+a. Arresting hook up/down logic, warning lights.
+b. Anti-skid control.
+c. Landing gear control.
+d. Landing gear position indicator.
+e. Landing gear down and locked light.
+f. Launch bar control.
+g. NWS.
+h. All of the above.
+
+191. Select all that apply. Which functions are associated with aircraft weight-on-wheels?
+(11-53 Engineering Book #1)
+a. Armament bus enabled.
+b. ECS ram air valve open.
+c. NWS enabled.
+d. Anti-skid enabled.
+e. Launch bar extension enabled.
+f. AOA probe and pitot tube heaters enabled.
+g. None of the above.
+
+192. Some indications of an MFD failure are:
+(25-8 Engineering Book #2)
+a. a blinking screen.
+b. a blank screen.
+c. a stuck pushbutton.
+d. all of the above.
+
+193. During flight, the MASTER ALERT flashes and the warning tone sounds. You check
+the CWP and see that the GENERATOR warning light is illuminated. Immediately you look
+to the Power Management panel and find that the voltmeter displays 28 volts. Which of the
+following units is malfunctioning (aircraft 165080 THRU 165092)?
+(2-22)
+a. Undervoltage unit.
+b. Ac Inverter No. 1.
+c. Ac Inverter No. 2.
+d. Both inverters.
+194. Select all that apply. Which of the following indicate or verify a generator failure with
+low voltage from both batteries?
+(2-22)
+a. Warning tone sounds.
+b. F PRESS light illuminates.
+c. Voltmeter at approximately 22 volts.
+d. Generator will not reset immediately.
+e. All of the above.
+
+195. During flight, the MASTER ALERT flashes and the warning tone sounds. You see that
+the GENERATOR warning light on the CWP is illuminated. Searching for secondary
+indications of a suspected malfunction, you see that the voltmeter on the Electrical Power
+Control Panel displays 22 volts. Which one of the following accurately described the
+malfunction?
+(2-22)
+a. Generator failure with low battery voltage.
+b. Generator failure with high battery voltage.
+c. Single ac inverter failure.
+d. Dual ac inverter failure.
+
+196. While flying straight and level, you notice that the fuel quantity indicator is dropping
+to 0, and your navigation lights, Comm Management system, and AOA system have become
+inoperative. What malfunction is causing this type of condition?
+(2-22, 2-25)
+a. 28 Vdc essential services bus failure.
+b. Undervoltage unit failure.
+c. Overvoltage unit failure.
+d. Double inverter failure.
+
+197. Which one of the following would be inoperable when a 28 Vdc essential services bus
+failure occurs?
+(2-25)
+a. Flap control.
+b. Caution/Warning System.
+c. GINA.
+d. Anti-skid control.
+
+198. If an MFD anomaly occurs to one MFD select _____________, if the anomaly occurs to
+multiple MFDs select____________.
+(15-18)
+a. another display, Display Power ORIDE.
+b. MFD OFF, Display Power RESET.
+c. Display Power NORM, the MFDs OFF.
+d. generator RESET, Display Power RESTART.
+
+199. While flying straight and level, you suddenly experience a total electrical failure.
+Which one of the following would occur?
+(2-25)
+a. Hydraulic system inoperative.
+b. All cockpit lights extinguish.
+c. Stabilators uncontrollable.
+d. Engine stops running.
+200. The wheel brake/emergency flap accumulator provides pressure to fully extend the
+flaps in the event of:
+(2-73)
+a. A HYD 1 failure.
+b. A HYD 2 failure.
+c. A failure in either hydraulic system.
+
+201. After the arresting hook handle has been lowered, what does the intermittent
+illumination of the red light on the hook handle signify?
+(12-13 Engineering Book #1)
+a. The hydraulic actuator/vertical damper has malfunctioned.
+b. The arresting hook has failed to extend.
+c. The arresting hook is extended.
+d. The arresting hook bypass switch has been engaged.
+
+202. What malfunction may have occurred if after a catapult launch, the red L BAR light
+illuminates, it’s associated caution tone sounds, and the HYD 1 pressure gauge displays
+3,000 psi.
+(2-90) (It’s a warning tone though)
+a. The launch bar has failed to retract.
+b. The launch bar has failed to extend.
+c. The launch bar has failed to retract because HYD 1 has failed.
+d. Emergency retraction of the launch bar is underway.
+
+203. The major components of the GINA are the:
+(19-4, 20-18, 21-8 Engineering Book #2) (Up to interpretation)
+a. GPS satellites, INS, and cockpit displays.
+b. GPS processor, INS, and DEU.
+c. GPS, DEU, MFD.
+d. GPS antenna, MFDs, and HUD.
+
+204. After the arresting hook handle has been lowered, what does the continued illumination
+of the red light on the hook handle signify?
+(2-92)
+a. The arresting hook has failed to extend.
+b. The hydraulic actuator/vertical damper has malfunctioned.
+c. The arresting hook is extended.
+d. The arresting hook bypass switch has been engaged.
+
+205. Select all that apply. The OBOGS system:
+(2-117, OBOGS Fold-Out)
+a. Uses bleed air from the engine compressor.
+b. Removes nitrogen and other contaminants through molecular sieves in the oxygen
+concentrator.
+c. Reduces bleed air temperature in the oxygen plenum.
+d. Analyzes the temperature of bleed air that has passed through the oxygen concentrator.
+
+206. The OBOGS heat exchanger:
+(2-117)
+a. Reduces the temperature of engine bleed air.
+b. Reduces the pressure of engine bleed air.
+c. Analyzes the temperature of bleed air that has passed through the oxygen concentrator.
+d. Absorbs contaminants through molecular sieves.
+207. Select all that apply. The oxygen monitor:
+(2-117)
+a. Provides a BIT test using ambient cockpit air.
+b. Provides a warning signal if the BIT test fails.
+c. Heater allows rapid warmup during low cockpit temperatures.
+d. Reduces bleed air temperature in the oxygen plenum.
+
+208. The Display Electronics Unit (DEU) controls the:
+(2-27) (Both)
+a. navigation display.
+b. weapons release logic.
+c. video tape recorder.
+d. MIL-STD-1553B Multiplex Data Bus.
+
+209. Most OBOGS system components are powered by the:
+(2-25)
+a. 28 Vdc essential services bus.
+b. 28 Vdc generator bus.
+c. 115 Vac essential bus.
+d. Fifth stage bleed air pressure.
+
+210. Select all that apply. Which of the following OBOGS components receive bleed air from
+the engine compressor?
+(2-1, 2-117, OBOGS Fold-Out)
+a. Plenum.
+b. Anti-g valve.
+c. Concentrator.
+d. Emergency oxygen system.
+e. All of the above.
+
+211. Which of the following OBOGS components interface with the emergency oxygen
+system?
+(27-94 Engineering Book #2)
+a. Manifold.
+b. Centralized warning system.
+c. Concentrator.
+d. Thermostat.
+e. Monitor.
+
+212. During maneuvers, you notice that your ADI and HSI show errors in heading, roll, and
+pitch. What system may have malfunctioned?
+(2-32)
+a. GINA.
+b. Pitot-static.
+c. AOA system.
+d. Caution/Warning system.
+213. Power to the MFDs is supplied by the:
+(2-25)
+a. 115 Vac Essential Bus.
+b. 115 Vac Non-Essential Bus.
+c. 26 Vac Non-Essential Bus.
+d. 26 Vac Essential Bus.
+
+214. Select all that apply. Information displayed on the ADI and HSI is generated by the:
+(2-28, 2-32)
+a. GINA.
+b. TACAN system.
+c. VOR/ILS systems.
+d. AOA system.
+
+215. Select all that apply. Pitch and roll data are removed from the MFDs when:
+(2-25, 2-32)
+a. A power supply failure occurs.
+b. Attitude signals from GINA are invalid.
+c. The MFD fails.
+d. Roll attitude exceeds 90︎ degrees.
+
+216. When the HOOK BYP switch is in the CARRIER position and the arresting hook was
+not extended during landing sequence, a warning is signaled by the:
+(2-125)
+a. AOA indexer and approach lights.
+b. AOA indicator and approach lights.
+c. AOA indexer and indicator.
+d. AOA indicator.
+
+217. The anti-g system receives air pressure from which of the following?
+(2-117)
+a. OBOGS.
+b. Bleed air shutoff valve.
+c. Air conditioning.
+d. Pressurization.
+
+218. Select all that apply. Which of the following are controlled by the OBOGS/anti-g
+switch?
+(2-117)
+a. Bleed air shutoff valve.
+b. Anti-g.
+c. OBOGS.
+d. All of the above.
+
+219. Select all that apply. Under what conditions may a safe ejection be initiated?
+(17-1)
+a. Canopy fully open.
+b. Canopy closed and locked.
+c. After MDC firing handle shatters canopy.
+d. All of the above.
+220. Select all that apply. Which of the following will shatter the canopy?
+(2-97, 2-100, 17-1)
+a. Pulling the MDC firing handle.
+b. Pulling the seat firing handle.
+c. Impact of the seat canopy breakers.
+d. All of the above.
+
+221. Select all that apply. With throttle above 90 percent rpm, what indications would you
+expect in the event the canopy unlocks?
+(2-98, 27-90 Engineering Book #2)
+a. MASTER ALERT flashes.
+b. Warning tone sounds in headsets.
+c. CANOPY caution light illuminates.
+d. OPEN light illuminates on Caution/Warning panel.
+
+222. Select all that apply. After an ejection the electronic sequencer and barostatic release
+unit fail. What are the indications of this problem?
+(2-100)
+a. Seat has not separated.
+b. Parachute has not deployed.
+c. Both a. and b.
+d. None of the above.
+
+223. Select all that apply. When the SEAT LIGHT switch is set to the SOLO position,
+(2-101)
+a. A pin must be installed in the switch.
+b. The SEAT caution light is inhibited.
+c. The MASTER ALERT and caution tone are inhibited during a SEAT UNARMED
+condition of the aft seat.
+d. All of the above.
+
+224. Select all that apply. When the eject mode selector is set in the SOLO position and the
+FWD seat initiates ejection,
+(2-110, 15-24 Engineering Book #1)
+a. The forward seat fires after a 0.4 second delay.
+b. Only the forward seat fires.
+c. Both seats fire.
+d. The aft seat fires first.
+
+225. Select all that apply. When the eject mode selector is set in the BOTH position and the
+FWD seat initiates ejection,
+(2-110)
+a. The aft seat fires first.
+b. Both seats fire.
+c. Both seats fire simultaneously.
+d. Both a. and b.
+226. During a high altitude ejection, which of the following occurs immediately after the
+drogue chute is deployed?
+(2-106)
+a. The seat is stabilized by the drogue during descent.
+b. The parachute deployment rocket fires.
+c. The seat separates and falls clear.
+d. The parachute deploys.
+
+227. During ground emergencies, the manual override handle:
+(2-108, 15-20 Engineering Book #1)
+a. Provides immediate release of the lower torso and leg restraint harnesses.
+b. Provides immediate release of the lower torso restraint harness only.
+c. Provides immediate release of the upper torso restraint harness only.
+d. Provides immediate release of the leg restraint harness only.
+
+228. Select all that apply. When the eject mode selector is set in the FWD-BOTH/AFT
+SELF position and the forward seat initiates ejection:
+(2-110)
+a. The aft seat fires first.
+b. Both cockpits fire.
+c. Only the forward seat fires.
+d. The forward seat fires first.
+e. Both seats fire simultaneously.
+
+229. Select all that apply. Which indications would you expect to see in the event of an ILS
+localizer failure?
+(22-14 Engineering Book #2)
+a. Vertical steering needle not displayed on the ADI.
+b. CDI removed from the HSI. (only the center portion of the CDI is blanked)
+c. LOCALIZER advisory.
+d. All of the above.
+
+230. Select all that apply. Which indications would you expect to see in the event of a
+TACAN bearing failure?
+(22-10 Engineering Book #2)
+a. PLAN course line removed from HSI.
+b. CDI blanked.
+c. TACAN data block is blanked.
+d. TACAN moves around the perimeter of the compass rose.
+
+231. Select all that apply. Which indications would you expect to see in the event of a VOR
+failure?
+(22-12 Engineering Book #2)
+a. VOR option removed form the HSI.
+b. VOR bearing pointer removed.
+c. OFF flag appears on the HSI.
+d. VOR bearing pointer freezes.
+232. Select all that apply. Which indications would you expect to see in the event of an ILS
+glideslope failure?
+(22-13 Engineering Book #2)
+a. GLIDESLOPE advisory displayed on MFD.
+b. Glideslope steering needle removed.
+c. HSI GS pointer erratic.
+d. All of the above.
+
+233. If all communications become garbled or lost during flight, what malfunction has
+occurred?
+(21-21 Engineering Book #2)
+a. COMM 1 and COMM 2 failure.
+b. COMM control panel failure.
+c. COMM/NAV control transfer panel failure.
+d. ICS failure.
+
+234. IFF MODE C coded transmissions contain:
+(20-8, 19-13 Engineering Book #2)
+a. Altitude information from the main altimeter in the fwd cockpit.
+b. Heading information from the HSI.
+c. Relative bearing from the SAHRS.
+d. Airspeed information from the Airspeed-Mach indicator.
+
+235. Outputs from the VOR/ILS and TACAN systems are displayed on the:
+(2-52)
+a. ADI.
+b. HSI and ADI.
+c. Main altimeter.
+d. Advisory panel.
+
+236. The TACAN system operates with a fixed ground station or another TACAN-equipped
+aircraft and provides:
+(20-48)
+a. Precise relative bearing and/or slant range distance to a TACAN ground station or range
+to a suitably equipped aircraft.
+b. Emergency transmissions for relative bearing and course upon pilot ejection.
+c. A short-range landing approach aid with glideslope.
+d. An indication of marker beacon passage.
+
+237. Select all that apply. The COMM/NAV Control Transfer panel:
+(20-1)
+a. Allows transfer of fwd/aft cockpit command control of UHF/VHF radios.
+b. Allows transfer of control between VOR/ILS and TACAN systems.
+c. Both a. and b.
+d. Provides audio control of all inbound radio signals.
+23.9.4 Completion Questions
+
+238. The four basic steps of preparation for thunderstorm penetration are:
+(19-5)
+H - Heat (Pitot Heat - Check On)
+A - Airspeed/Altitude (250 KIAS, avoid upper 2/3 of storm)
+L - Light (Turn on all cockpit lights)
+T - Tight (Lower seat, strap in for the ride)
+
+239. Describe the visual hand signal used to indicate a question.
+(20-58)
+Hand cupped behind ear as if listening.
+
+240. Describe the day signal to put your flight into cruising formation.
+(20-61)
+Thumb moved backward over shoulder.
+
+241. Describe the visual signal to a wingman to have him turn his IFF to STANDBY.
+(20-60)
+Two fingers pointed toward eyes (meaning IFF/SIF signals followed by: 1. Cut 2. Three digit
+numerals.
+
+242. The day HEFOE signal is a weeping signal followed by a numeral signal 1 to 5. What
+does each number stand for?
+(20-59)
+1. Hydraulic System
+2. Electrical System
+3. Fuel System
+4. Oxygen System
+5. Engine
+
+243. What signal should the ground crew use to indicate hot brakes?
+(20-68)
+Make rapid fanning motion with one hand in front of the face. Point to wheel with other hand.
+
+244. State the immediate action (*) of emergency procedures for the following:
+(12-3)
+a. FIRE — GROUND. 1. Execute Emergency Shutdown/Egress.
+b. FIRE — IN-FLIGHT. 1. Throttle - Minimum For Safe Flight. 2. Secondary Indications -
+Check. If secondary indications exist or fire is confirmed: 3. Eject. If fire is not confirmed and
+control effectiveness remains: 4. Land As Soon As Possible.
+(12-4)
+c. GTS FIRE — GROUND. 1. Execute Emergency Shutdown/Egress.
+d. GTS FIRE — IN-FLIGHT. 1. Engine Switch - Off.
+
+
+
+
+245. What indications/verifications would you expect if, upon touchdown, the nose-wheel
+steering system fails?
+(11-7)
+a. NWS Caution.
+b. NWS AUG Caution.
+c. Continued Illumination of AOA Indexers. (If it failed because of a WONW switch failure)
+d. Sensitive Rudder Inputs.
+
+246. Maximum permissible airspeed for:
+(4-5)
+a. Flaps:
+Normal actuation - 200 KIAS
+Emergency extension - 200 KIAS
+b. Landing gear:
+Normal - 200 KIAS
+Emergency - 200 KIAS
+
+247. State the following limitations:
+(4-2)
+Maximum MRT EGT 610°C (30 min/hr)
+Maximum transient/acceleration EGT - 645°C (less than 20 sec)
+Maximum continuous EGT 550°C
+
+248. State the following limitations:
+(4-2)
+Maximum MRT rpm - 104%
+Maximum transient/acceleration rpm - 106%
+Maximum continuous rpm - 100%
+
+249. State the following limitations:
+(4-2)
+Maximum EGT for ground start - 550°C (max overshoot of 20°C for 10 sec)
+Maximum EGT for airstart - 600°C (max overshoot of 50°C for 10 sec)
+
+250. Maximum allowable gross weight for:
+(4-9)
+Takeoff - 14,500 lbs
+Catapult - 14,200 lbs
+Landing (FCLP) - 13,360 lbs
+Arrestment - 13,360 lbs
+
+251. State the ranges of center of gravity for:
+(4-8)
+Forward limit - (gear up and down) a. 14% MAC (mean aerodynamic chord) for gross weight up
+to 12,000 lbs. b. 15.5% MAC above a gross weight of 12,760 lbs. c. Linear variation between (a)
+and (b).
+Aft Limit - (gear up) a. 21% MAC for greater than 0.80 Mach. b. 23% MAC for less than or equal
+to 0.80 Mach. (gear down) a. 25% MAC with gear extended.
+
+
+
+
+252. Power for the NWS Augmentation system is provided by the 28 Vdc essential services
+bus.
+(2-25)
+True.
+
+253. The NWS Augmentation system provides yaw rate feedback in high gain nose wheel
+steering.
+(2-82)
+False. NWS AUG augments rudder pedal inputs only in low gain nose wheel steering mode.
+
