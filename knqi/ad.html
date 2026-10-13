@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>AIRPORT DIAGRAM — KNQI</title><script src='../auth.js'></script><style>
+:root{--bg:#0f1419;--panel:#1a2332;--panel2:#243044;--text:#e7eef7;--muted:#9bb0c7;--accent:#3d9cf0;--border:#2e3d52;--ok:#2ecc71;--bad:#e74c3c;--warn:#f39c12}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
+a{color:var(--accent)}.crumb{color:var(--muted);font-size:.9rem}.crumb a{text-decoration:none}
+#knqi-currency{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:.6rem .8rem;margin:.6rem 0;font-size:.88rem}
+.badge{display:inline-block;padding:.12rem .5rem;border-radius:999px;font-weight:800;font-size:.78rem;margin:.15rem .2rem 0 0}
+.badge.ok{background:var(--ok);color:#03140a}.badge.bad{background:var(--bad);color:#fff}.badge.warn{background:var(--warn);color:#1b1100}
+.okt{color:var(--ok)}.badt{color:var(--warn)}.small{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+#knqi-refresh{background:var(--accent);color:#041018;border:0;border-radius:8px;padding:.4rem .8rem;font-weight:700;cursor:pointer;margin-top:.4rem}
+.chk{margin-top:.2rem}
+
+.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1rem;max-width:1500px;margin:0 auto;padding:.8rem}
+.plate{position:sticky;top:0;height:100vh;padding:.4rem 0;display:flex;flex-direction:column}
+.pbar{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;margin-bottom:.35rem}
+.pbar button{background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:.3rem .6rem;cursor:pointer;font:inherit;font-size:.85rem}
+.pbar button.on{border-color:var(--accent);color:var(--accent)}
+.pview{flex:1;overflow:auto;background:#fff;border-radius:8px;border:1px solid var(--border);touch-action:pan-x pan-y pinch-zoom}
+.pview img{display:block;width:100%;height:auto;cursor:zoom-in}
+.quiz{padding:.4rem 0 3rem}
+h1{font-size:1.3rem;margin:.2rem 0}
+.q{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem}
+.qtxt{font-weight:650;font-size:1.05rem;margin-bottom:.7rem}
+.opt{display:block;width:100%;text-align:left;background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:.65rem .8rem;margin:.4rem 0;font:inherit;cursor:pointer}
+.opt:hover{border-color:var(--accent)}.opt.right{border-color:var(--ok);background:#173b28}.opt.wrong{border-color:var(--bad);background:#3d1c1c}
+.exp{margin-top:.7rem;padding:.7rem;border-left:3px solid var(--accent);background:#152033;border-radius:6px;font-size:.93rem}
+.nav{display:flex;gap:.5rem;margin-top:.8rem}.nav button{background:var(--accent);color:#041018;border:0;border-radius:999px;padding:.55rem 1.1rem;font-weight:700;cursor:pointer}
+.nav button.ghost{background:transparent;color:var(--accent);border:1px solid var(--border)}
+.stat{color:var(--muted);font-size:.88rem;margin:.4rem 0}
+.prog{height:6px;background:var(--panel2);border-radius:9px;overflow:hidden;margin:.3rem 0 .6rem}.prog>div{height:100%;background:var(--accent);width:0}
+#fs{position:fixed;inset:0;background:#000d;z-index:999;display:none;flex-direction:column}
+#fs .bar{display:flex;gap:.5rem;padding:.5rem;justify-content:flex-end}
+#fs .bar button{background:var(--panel2);color:#fff;border:1px solid var(--border);border-radius:7px;padding:.45rem .8rem;font:inherit}
+#fs .area{flex:1;overflow:auto;touch-action:pan-x pan-y pinch-zoom;background:#fff}
+#fs img{display:block;width:100%;max-width:none}
+@media (max-width:900px){.layout{grid-template-columns:1fr;padding:.4rem}.plate{height:auto;z-index:5;background:var(--bg);top:0}
+ .pview{height:42vh;flex:none}}
+</style><script src='knqi.js' data-base=''></script></head><body>
+<div class='layout'>
+<div class='plate'>
+ <div class='pbar'><button onclick='zoom(1.25)'>＋</button><button onclick='zoom(0.8)'>－</button><button onclick='fs()'>⛶ Fullscreen</button><span class='stat' style='margin:0'>Tap plate to enlarge · pinch to zoom</span></div>
+ <div class='pview'><img id='pimg' alt='AIRPORT DIAGRAM plate' onclick='fs()'/></div>
+</div>
+<div class='quiz'>
+ <div class='crumb'><a href='../index.html'>Home</a> · <a href='../section-knqi.html'>KNQI</a> · AIRPORT DIAGRAM</div>
+ <h1>AIRPORT DIAGRAM</h1>
+ <div class='stat'>NAS Kingsville (KNQI) ·  · 15 questions · missed questions re-queue until answered correctly</div>
+ <div id='knqi-currency' data-plate='ad'>Loading plate currency…</div>
+ <div class='prog'><div id='bar'></div></div><div class='stat' id='stat'></div>
+ <div class='q' id='q'></div>
+ <p class='small'>Training aid only — always brief from the current FAA d-TPP/FLIP plate. Not for navigation.</p>
+ <div class='crumb'><a href='../section-knqi.html'>← KNQI plates</a> · <a href='brief-guide.html'>How to brief a plate</a></div>
+</div></div>
+<div id='fs'><div class='bar'><button onclick='fzoom(1.3)'>＋</button><button onclick='fzoom(0.77)'>－</button><button onclick='fsclose()'>✕ Close</button></div><div class='area'><img id='fsimg' alt='plate fullscreen'/></div></div>
+<script>
+var QS=[["Field elevation?", "50", ["48", "37", "149"], "FIELD ELEV 50 box."], ["Runway dimensions 13R/31L?", "8000 x 198", ["8000 x 197", "8000 x 150", "6000 x 198"], "Diagram labels 8000x198."], ["Runway 17R/35L width?", "197", ["198", "200", "150"], "Diagram: 8000 x 197 on 17R/35L."], ["True heading Rwy 13L/R?", "130.4°", ["130°", "139°", "135.4°"], "Diagram: 130.4°."], ["Rwy 17L/R true heading?", "175.4°", ["170°", "175°", "355.4°"], "Diagram: 175.4°."], ["Magnetic variation?", "3.4° E, annual change 0.1° W (May 2022)", ["3.4° W", "4° E", "0.1° E"], "VAR 3.4°E; MAY 2022 annual rate of change 0.1°W."], ["Lowest threshold elevation?", "37 (Rwy 31R)", ["41 (31L)", "47 (35R)", "48 (13L)"], "ELEV 37 at 31R; 41 at 31L."], ["Control tower height label?", "149", ["142", "50", "187"], "CONTROL TOWER 149."], ["What is E-28?", "Arresting gear (E-28) locations", ["Taxiway", "Elevation 28", "Hold line"], "Diagram symbols labeled E-28 across runways = arresting gear."], ["PCN Rwy 17L-35R?", "60 R/C/W/T", ["49", "48", "56"], "Bottom: Rwy 17L-35R PCN 60 R/C/W/T."], ["PCN 13L-31R?", "49 R/C/W/T", ["48", "60", "56"], "Bottom table."], ["Ground frequency?", "239.05", ["328.4", "124.1", "282.25"], "Top right: GND CON 239.05."], ["Fire station location?", "South of the field near taxiway D west side", ["North by C", "East by H", "Base Ops"], "Diagram: FIRE STATION below taxiway D on west side."], ["Taxiway connecting north ends of 13L and 17R?", "C", ["H", "D", "A"], "Diagram: taxiway C at north."], ["Elevation of 35R threshold?", "47", ["48", "50", "37"], "ELEV 47 at 35R."]], imgs=["img/ad.png"];
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+var queue,done,first,attempts,cur,answered;
+function start(){queue=shuffle(QS.map(function(_,i){return i;}));done=0;first=0;attempts=0;next();}
+function next(){answered=false;
+ if(!queue.length){finish();return;}
+ cur=queue.shift();var q=QS[cur];var opts=shuffle([q[1]].concat(q[2]));
+ var h="<div class='qtxt'>"+q[0]+"</div>";
+ opts.forEach(function(o){h+="<button class='opt' data-c='"+(o===q[1]?1:0)+"'>"+o+"</button>";});
+ h+="<div id='exp'></div>";
+ document.getElementById('q').innerHTML=h;
+ document.querySelectorAll('.opt').forEach(function(b){b.onclick=function(){pick(b);};});
+ upd();}
+function pick(b){if(answered)return;answered=true;attempts++;var q=QS[cur],ok=b.dataset.c==='1';
+ document.querySelectorAll('.opt').forEach(function(x){if(x.dataset.c==='1')x.classList.add('right');});
+ if(!ok){b.classList.add('wrong');queue.push(cur);} else {done++; if(!seen[cur])first++;}
+ seen[cur]=1;
+ document.getElementById('exp').innerHTML="<div class='exp'><b>"+(ok?"Correct.":"Not quite — this one comes back later.")+"</b> Answer: <b>"+q[1]+"</b><br>"+q[3]+"</div><div class='nav'><button onclick='next()'>Next →</button></div>";
+ upd();}
+var seen={};
+function upd(){document.getElementById('stat').textContent="Mastered "+done+" / "+QS.length+" · first-try correct "+first+" · remaining in queue "+(queue.length+(answered?0:1));
+ document.getElementById('bar').style.width=(100*done/QS.length)+"%";}
+function finish(){document.getElementById('q').innerHTML="<div class='qtxt'>Done — all "+QS.length+" mastered.</div><p>First-try score: "+first+" / "+QS.length+" ("+Math.round(100*first/QS.length)+"%). Total attempts "+attempts+".</p><div class='nav'><button onclick='seen={};start()'>Retry</button><a href='../section-knqi.html' style='align-self:center'>← KNQI plates</a></div>";upd();}
+// plate viewer
+var pi=0,z=1;
+function showImg(i){pi=i;document.getElementById('pimg').src=imgs[i];document.querySelectorAll('.pg').forEach(function(b,k){b.classList.toggle('on',k===i);});}
+function zoom(f){z=Math.max(1,Math.min(5,z*f));document.getElementById('pimg').style.width=(100*z)+"%";}
+function fs(){var o=document.getElementById('fs');document.getElementById('fsimg').src=imgs[pi];o.style.display='flex';fz=1;document.getElementById('fsimg').style.width='100%';}
+var fz=1;function fzoom(f){fz=Math.max(1,Math.min(6,fz*f));document.getElementById('fsimg').style.width=(100*fz)+'%';}
+function fsclose(){document.getElementById('fs').style.display='none';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')fsclose();});
+showImg(0);start();
+</script></body></html>

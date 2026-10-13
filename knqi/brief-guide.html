@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>How to brief an approach plate — KNQI</title><script src='../auth.js'></script><style>
+:root{--bg:#0f1419;--panel:#1a2332;--panel2:#243044;--text:#e7eef7;--muted:#9bb0c7;--accent:#3d9cf0;--border:#2e3d52;--ok:#2ecc71;--bad:#e74c3c;--warn:#f39c12}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
+a{color:var(--accent)}.crumb{color:var(--muted);font-size:.9rem}.crumb a{text-decoration:none}
+#knqi-currency{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:.6rem .8rem;margin:.6rem 0;font-size:.88rem}
+.badge{display:inline-block;padding:.12rem .5rem;border-radius:999px;font-weight:800;font-size:.78rem;margin:.15rem .2rem 0 0}
+.badge.ok{background:var(--ok);color:#03140a}.badge.bad{background:var(--bad);color:#fff}.badge.warn{background:var(--warn);color:#1b1100}
+.okt{color:var(--ok)}.badt{color:var(--warn)}.small{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+#knqi-refresh{background:var(--accent);color:#041018;border:0;border-radius:8px;padding:.4rem .8rem;font-weight:700;cursor:pointer;margin-top:.4rem}
+.chk{margin-top:.2rem}
+.wrap{max-width:1000px;margin:0 auto;padding:1.5rem 1rem 3rem}
+header{background:linear-gradient(135deg,#1a2a40,#152033);border:1px solid var(--border);border-radius:12px;padding:1.3rem;margin-bottom:1rem}
+h1{margin:.2rem 0}h2{font-size:1.1rem;color:#c5daf0;border-bottom:1px solid var(--border);padding-bottom:.3rem;margin-top:1.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:.8rem}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--text);display:flex;flex-direction:column}
+.card:hover{border-color:var(--accent)}.card img{width:100%;height:190px;object-fit:cover;object-position:top;background:#fff}
+.card .t{padding:.55rem .7rem;font-weight:650;font-size:.92rem}.card .c{padding:0 .7rem .6rem;color:var(--muted);font-size:.8rem}
+a.study-guide-banner{display:block;margin:0 0 1rem;background:linear-gradient(135deg,#1e3a5f,#1a2a40);border:1px solid var(--accent);border-radius:14px;padding:1rem 1.2rem;color:var(--text);text-decoration:none}
+.sg-title{font-size:1.2rem;font-weight:800;color:#d8ebff;display:block}.sg-sub{color:var(--muted);font-size:.9rem}
+ li{margin:.35rem 0}</style><script src='knqi.js' data-base=''></script></head><body><div class='wrap'><header><div class='crumb'><a href='../index.html'>Home</a> · <a href='../section-knqi.html'>KNQI</a> · Brief guide</div><h1>How to brief an approach plate</h1></header><div id='knqi-currency'></div>
+<h2>1. Before you open the plate</h2><ul>
+<li><b>Currency</b>: check the d-TPP cycle dates on the plate margin (effective/expiration) and the amendment number/date bottom-left. Check NOTAMs.</li>
+<li><b>Weather</b>: ATIS (KNQI 282.25) — runway in use, ceiling/visibility, altimeter, winds. Decide which approach is likely and whether you can legally start it (OPNAV 3710.7 weather/alternate rules for your instrument rating).</li>
+<li><b>Category</b>: approach category = 1.3 Vso / Vref at max landing weight (AIM 5-4-7): A &lt;91, B 91–120, <b>C 121–140</b>, D 141–165, E &gt;165 KIAS. A T-45C on-speed (~17 units AOA) final is roughly 120–135 KIAS, so brief <b>Cat C</b>. If you'll fly faster (e.g. circling at higher speed), use the higher category — never a lower one. HI- plates only publish C/D/E.</li></ul>
+<h2>2. Top-down briefing order (the "strip, plan, profile, mins" flow)</h2><ol>
+<li><b>Title & airport</b>: procedure name (e.g. "ILS Z RWY 13R" — the letter distinguishes procedures to the same runway), airport, date/amendment.</li>
+<li><b>Briefing strip</b>: primary NAVAID frequency/channel and ident (LOC 110.9 I-NQI Chan 46; TACAN NQI Chan 125; NOG Chan 63 on TACAN Y 17R!), final approach course, runway length, TDZE, airport elevation.</li>
+<li><b>Notes</b>: "TACAN required", ALS-inop vis increases, cautions (short intermediate segments), the T (nonstandard takeoff mins/obstacle notes) symbol.</li>
+<li><b>Missed approach</b> (briefed early so it's in your head): the first action verbatim — e.g. "Climb to 500, then climbing right turn to 3000, NQI R-184 to BRAMA and hold."</li>
+<li><b>Comms</b>: ATIS, approach, tower, ground, clearance; ASR/PAR availability.</li>
+<li><b>Plan view</b>: MSA (emergency only, 1000 ft clearance within 25 NM), ESA, IAF(s) and feeders, holding/hold-in-lieu of PT (altitudes, max speed), arcs and lead radials, IF, FAF, terrain/obstacles.</li>
+<li><b>Profile</b>: altitudes at each fix (underlined = minimum, overbar = maximum), glideslope intercept (lightning bolt = precision FAF) vs Maltese cross (non-precision FAF), stepdowns, VDP (V), descent angle/TCH, distances, MAP.</li>
+<li><b>Minimums</b>: your category's DA or MDA, visibility, HAT/HAA. HAT = DA/MDA − TDZE; HAA = circling MDA − airport elevation. Note any ✱ footnotes.</li>
+<li><b>Airport sketch</b>: runway layout, lighting (ALSF-1 on 35R; HIRL/REIL all; TDZL/CL 17L), elevation, then taxi plan.</li></ol>
+<h2>3. Flying it — rules to remember</h2><ul>
+<li><b>Procedure turn / HILPT</b>: not flown when vectored to final, on a NoPT route, or cleared straight-in (FAR 91.175(j), AIM 5-4-9).</li>
+<li><b>Below DA/MDA</b>: only when continuously in position to land with normal maneuvers, flight visibility ≥ published, and required visual references in sight (FAR 91.175(c)). Otherwise go missed at DA / at the MAP.</li>
+<li><b>VDP</b>: don't leave MDA before the VDP unless a normal descent is possible (AIM 5-4-5).</li>
+<li><b>Circling</b>: reversed-C = expanded circling protected area (Cat C ≈ 2.7 NM at ≤1000 MSL). KNQI radar circling only from PAR W/O GS and ASR; circling to 31L NA at night.</li>
+<li><b>Missed approach from a circle</b>: initial climbing turn toward the landing runway, then the published missed (AIM 5-4-21).</li></ul>
+<h2>4. Departures</h2><ul>
+<li>Brief the KINGSVILLE FOUR: runway heading (130/175/310/355), the NQI 7 DME arc direction, the transition radial (CRP R-038 cross JERIR ≥8000; HOBOZ R-339; JUBAK R-125 / RICTO R-225 are local SUA-entry only), DEP CON 121.05/266.8.</li>
+<li>No climb gradient is published on the SID; check the takeoff minimums page for obstacle notes (KNQI lists close-in obstacles only). Standard is 200 ft/NM.</li>
+<li><b>Lost comms</b>: per the SID — if no transmissions one minute after departure, climb to assigned altitude, proceed via the 7 DME arc / departure radial to the fix and transition; climb to filed altitude once established on the departure radial (FAR 91.185 logic).</li></ul>
+<p class='small'>Training aid; verify against NATOPS, CNATRA instrument FTI and the current plate.</p><footer><a href='../section-knqi.html'>← KNQI plates</a></footer></div></body></html>

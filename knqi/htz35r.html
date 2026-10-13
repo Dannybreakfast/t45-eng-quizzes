@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width, initial-scale=1'/><title>HI-TACAN Z RWY 35R — KNQI</title><script src='../auth.js'></script><style>
+:root{--bg:#0f1419;--panel:#1a2332;--panel2:#243044;--text:#e7eef7;--muted:#9bb0c7;--accent:#3d9cf0;--border:#2e3d52;--ok:#2ecc71;--bad:#e74c3c;--warn:#f39c12}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
+a{color:var(--accent)}.crumb{color:var(--muted);font-size:.9rem}.crumb a{text-decoration:none}
+#knqi-currency{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:.6rem .8rem;margin:.6rem 0;font-size:.88rem}
+.badge{display:inline-block;padding:.12rem .5rem;border-radius:999px;font-weight:800;font-size:.78rem;margin:.15rem .2rem 0 0}
+.badge.ok{background:var(--ok);color:#03140a}.badge.bad{background:var(--bad);color:#fff}.badge.warn{background:var(--warn);color:#1b1100}
+.okt{color:var(--ok)}.badt{color:var(--warn)}.small{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+#knqi-refresh{background:var(--accent);color:#041018;border:0;border-radius:8px;padding:.4rem .8rem;font-weight:700;cursor:pointer;margin-top:.4rem}
+.chk{margin-top:.2rem}
+
+.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1rem;max-width:1500px;margin:0 auto;padding:.8rem}
+.plate{position:sticky;top:0;height:100vh;padding:.4rem 0;display:flex;flex-direction:column}
+.pbar{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap;margin-bottom:.35rem}
+.pbar button{background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:.3rem .6rem;cursor:pointer;font:inherit;font-size:.85rem}
+.pbar button.on{border-color:var(--accent);color:var(--accent)}
+.pview{flex:1;overflow:auto;background:#fff;border-radius:8px;border:1px solid var(--border);touch-action:pan-x pan-y pinch-zoom}
+.pview img{display:block;width:100%;height:auto;cursor:zoom-in}
+.quiz{padding:.4rem 0 3rem}
+h1{font-size:1.3rem;margin:.2rem 0}
+.q{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:1rem}
+.qtxt{font-weight:650;font-size:1.05rem;margin-bottom:.7rem}
+.opt{display:block;width:100%;text-align:left;background:var(--panel2);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:.65rem .8rem;margin:.4rem 0;font:inherit;cursor:pointer}
+.opt:hover{border-color:var(--accent)}.opt.right{border-color:var(--ok);background:#173b28}.opt.wrong{border-color:var(--bad);background:#3d1c1c}
+.exp{margin-top:.7rem;padding:.7rem;border-left:3px solid var(--accent);background:#152033;border-radius:6px;font-size:.93rem}
+.nav{display:flex;gap:.5rem;margin-top:.8rem}.nav button{background:var(--accent);color:#041018;border:0;border-radius:999px;padding:.55rem 1.1rem;font-weight:700;cursor:pointer}
+.nav button.ghost{background:transparent;color:var(--accent);border:1px solid var(--border)}
+.stat{color:var(--muted);font-size:.88rem;margin:.4rem 0}
+.prog{height:6px;background:var(--panel2);border-radius:9px;overflow:hidden;margin:.3rem 0 .6rem}.prog>div{height:100%;background:var(--accent);width:0}
+#fs{position:fixed;inset:0;background:#000d;z-index:999;display:none;flex-direction:column}
+#fs .bar{display:flex;gap:.5rem;padding:.5rem;justify-content:flex-end}
+#fs .bar button{background:var(--panel2);color:#fff;border:1px solid var(--border);border-radius:7px;padding:.45rem .8rem;font:inherit}
+#fs .area{flex:1;overflow:auto;touch-action:pan-x pan-y pinch-zoom;background:#fff}
+#fs img{display:block;width:100%;max-width:none}
+@media (max-width:900px){.layout{grid-template-columns:1fr;padding:.4rem}.plate{height:auto;z-index:5;background:var(--bg);top:0}
+ .pview{height:42vh;flex:none}}
+</style><script src='knqi.js' data-base=''></script></head><body>
+<div class='layout'>
+<div class='plate'>
+ <div class='pbar'><button onclick='zoom(1.25)'>＋</button><button onclick='zoom(0.8)'>－</button><button onclick='fs()'>⛶ Fullscreen</button><span class='stat' style='margin:0'>Tap plate to enlarge · pinch to zoom</span></div>
+ <div class='pview'><img id='pimg' alt='HI-TACAN Z RWY 35R plate' onclick='fs()'/></div>
+</div>
+<div class='quiz'>
+ <div class='crumb'><a href='../index.html'>Home</a> · <a href='../section-knqi.html'>KNQI</a> · HI-TACAN Z RWY 35R</div>
+ <h1>HI-TACAN Z RWY 35R</h1>
+ <div class='stat'>NAS Kingsville (KNQI) · Orig 26DEC24 · 18 questions · missed questions re-queue until answered correctly</div>
+ <div id='knqi-currency' data-plate='htz35r'>Loading plate currency…</div>
+ <div class='prog'><div id='bar'></div></div><div class='stat' id='stat'></div>
+ <div class='q' id='q'></div>
+ <p class='small'>Training aid only — always brief from the current FAA d-TPP/FLIP plate. Not for navigation.</p>
+ <div class='crumb'><a href='../section-knqi.html'>← KNQI plates</a> · <a href='brief-guide.html'>How to brief a plate</a></div>
+</div></div>
+<div id='fs'><div class='bar'><button onclick='fzoom(1.3)'>＋</button><button onclick='fzoom(0.77)'>－</button><button onclick='fsclose()'>✕ Close</button></div><div class='area'><img id='fsimg' alt='plate fullscreen'/></div></div>
+<script>
+var QS=[["Final approach course and TACAN?", "004°, NQI Chan 125", ["139°, Chan 125", "184°, Chan 125", "004°, Chan 46"], "Briefing strip: TACAN NQI Chan 125, APCH CRS 004°."], ["TDZE 35R?", "48", ["50", "49", "44"], "Briefing strip: TDZE 48, Arpt Elev 50."], ["IAF and altitude?", "RVERA NQI 31, 17,000", ["BRAMA NQI 12, 3000", "WAADE NQI 26, 15,000", "MACAY 1800"], "Plan view: (IAF) RVERA NQI 31, 17,000."], ["RVERA holding?", "004° inbound (184 outbound), 265K, FL200/17,000", ["004° inbound, 230K, 6000/3000", "319° inbound, 230K", "095° inbound, 265K, 18,000/15,000"], "Plan view: HOLD FL200 / 17,000, 265K at RVERA on R-184."], ["Which arrival must turn in holding at RVERA?", "Arrivals via CRP VORTAC", ["Arrivals via LRD", "Arrivals via BRO", "All arrivals"], "Plan view note: &#x27;Arrivals via CRP VORTAC require turn in holding at RVERA for procedure entry.&#x27;"], ["Brownsville feeder?", "328° at 17,000, 69.2 NM (BRO 116.3 Chan 110)", ["100° at 17,000, 87.1", "194° at 17,000, 59.7", "237° at 15,000"], "Plan view: BRO 17,000 328° (69.2)."], ["Laredo feeder?", "100° at 17,000, 87.1 NM", ["076° at 15,000, 60.5", "328° at 17,000", "004° at 3000"], "Plan view: LRD 17,000 100° (87.1)."], ["CRP feeder?", "194° at 17,000, 59.7 NM", ["237° at 15,000, 49.2", "201° at 3000, 41.7", "232° at 3000, 30.2"], "Plan view: 17,000 194° (59.7)."], ["IF and altitude?", "BRAMA NQI 12, 3000", ["MACAY NQI 5.7, 1800", "RVERA NQI 31, 17,000", "BALTS NQI 12, 3000"], "Plan view/profile: (IF) BRAMA NQI 12, 3000."], ["FAF?", "MACAY NQI 5.7, 1800", ["BRAMA NQI 12", "RICES NQI 0.9", "NQI 1.4"], "Profile Maltese cross MACAY NQI 5.7, 1800."], ["Descent angle/TCH?", "3.04°, TCH 50", ["3.05°, TCH 33", "3.00°, TCH 49", "3.02°, TCH 50"], "Profile: 3.04° TCH 50."], ["S-35R minimums?", "420-3/4, HAT 372", ["420-1/2", "380-5/8", "520-1 3/8"], "Minimums: S-35R* 420-¾ 372 (400-¾) for C/D/E. Cat C. Approach category is set by 1.3 x Vso / Vref at max landing weight (AIM 5-4-7, FAR 97.3): A &lt;91, B 91-120, C 121-140, D 141-165 KIAS. A T-45C flies final on-speed AOA (~17 units) at roughly 120-135 KIAS, which puts it in the 121-140 kt band, so brief Cat C. (Confirm against NATOPS/squadron SOP: if you fly faster, use the higher category; you may never use a lower one.)"], ["What does the * on S-35R minimums refer to?", "When ALS inop, increase Cat CDE vis to 1 mile", ["Night circling NA", "Tower closed increase vis", "Alternate mins NA"], "Notes: &#x27;* When ALS inop, increase CAT CDE vis to 1 mile.&#x27; Runway 35R has ALSF-1 (A1 symbol in the notes and sketch)."], ["Approach lighting on 35R?", "ALSF-1", ["MALSR", "None", "ODALS"], "Notes/airport sketch: ALSF-1 with A1 symbol."], ["Missed approach?", "Climb to 3000 direct NQI TACAN and climbing left turn to intercept NQI R-319 to BALTS and hold; continue climb-in-hold to 3000", ["Climbing right turn to 3000, R-184 to BRAMA", "Climb to 500 then right turn", "Climb to 17,000 direct RVERA"], "Missed approach box &amp; profile icons (3000 ↑, NQI, R-319, BALTS NQI 12)."], ["BALTS holding?", "NQI R-319 at 12 DME, 139° inbound, 230K, 3000-6000", ["R-184 at 12, 004° inbound", "R-319 at 19, 319° inbound", "R-302 at 13"], "Plan view: BALTS NQI 12, hold 139°/319°, 230K, 6000/3000, outbound end NQI 19."], ["VDP?", "NQI 1.4", ["NQI 0.9", "NQI 5.7", "NQI 2.4"], "Profile V at NQI 1.4. RICES NQI 0.9 is the next fix toward the runway."], ["Circling Cat C?", "760-2", ["760-2 1/4", "540-1", "420-3/4"], "Minimums: C 760-2 (HAA 710)."]], imgs=["img/htz35r.png"];
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+var queue,done,first,attempts,cur,answered;
+function start(){queue=shuffle(QS.map(function(_,i){return i;}));done=0;first=0;attempts=0;next();}
+function next(){answered=false;
+ if(!queue.length){finish();return;}
+ cur=queue.shift();var q=QS[cur];var opts=shuffle([q[1]].concat(q[2]));
+ var h="<div class='qtxt'>"+q[0]+"</div>";
+ opts.forEach(function(o){h+="<button class='opt' data-c='"+(o===q[1]?1:0)+"'>"+o+"</button>";});
+ h+="<div id='exp'></div>";
+ document.getElementById('q').innerHTML=h;
+ document.querySelectorAll('.opt').forEach(function(b){b.onclick=function(){pick(b);};});
+ upd();}
+function pick(b){if(answered)return;answered=true;attempts++;var q=QS[cur],ok=b.dataset.c==='1';
+ document.querySelectorAll('.opt').forEach(function(x){if(x.dataset.c==='1')x.classList.add('right');});
+ if(!ok){b.classList.add('wrong');queue.push(cur);} else {done++; if(!seen[cur])first++;}
+ seen[cur]=1;
+ document.getElementById('exp').innerHTML="<div class='exp'><b>"+(ok?"Correct.":"Not quite — this one comes back later.")+"</b> Answer: <b>"+q[1]+"</b><br>"+q[3]+"</div><div class='nav'><button onclick='next()'>Next →</button></div>";
+ upd();}
+var seen={};
+function upd(){document.getElementById('stat').textContent="Mastered "+done+" / "+QS.length+" · first-try correct "+first+" · remaining in queue "+(queue.length+(answered?0:1));
+ document.getElementById('bar').style.width=(100*done/QS.length)+"%";}
+function finish(){document.getElementById('q').innerHTML="<div class='qtxt'>Done — all "+QS.length+" mastered.</div><p>First-try score: "+first+" / "+QS.length+" ("+Math.round(100*first/QS.length)+"%). Total attempts "+attempts+".</p><div class='nav'><button onclick='seen={};start()'>Retry</button><a href='../section-knqi.html' style='align-self:center'>← KNQI plates</a></div>";upd();}
+// plate viewer
+var pi=0,z=1;
+function showImg(i){pi=i;document.getElementById('pimg').src=imgs[i];document.querySelectorAll('.pg').forEach(function(b,k){b.classList.toggle('on',k===i);});}
+function zoom(f){z=Math.max(1,Math.min(5,z*f));document.getElementById('pimg').style.width=(100*z)+"%";}
+function fs(){var o=document.getElementById('fs');document.getElementById('fsimg').src=imgs[pi];o.style.display='flex';fz=1;document.getElementById('fsimg').style.width='100%';}
+var fz=1;function fzoom(f){fz=Math.max(1,Math.min(6,fz*f));document.getElementById('fsimg').style.width=(100*fz)+'%';}
+function fsclose(){document.getElementById('fs').style.display='none';}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')fsclose();});
+showImg(0);start();
+</script></body></html>

@@ -1,0 +1,34 @@
+name: KNQI plates update
+on:
+  schedule:
+    - cron: "17 11 * * *"   # daily 11:17 UTC
+  workflow_dispatch:
+    inputs:
+      cycle:
+        description: "d-TPP cycle (e.g. 2611). Blank = current"
+        required: false
+permissions:
+  contents: write
+concurrency: knqi-plates
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y poppler-utils
+          pip install pillow
+      - name: Fetch plates & update manifest
+        env:
+          DTPP_CYCLE: ${{ github.event.inputs.cycle }}
+        run: python3 knqi/tools/update_plates.py
+      - name: Commit if changed
+        run: |
+          git config user.name "knqi-plates-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add knqi/plates-manifest.json knqi/img
+          if git diff --cached --quiet; then echo "No plate changes"; exit 0; fi
+          CYC=$(python3 -c "import json;print(json.load(open('knqi/plates-manifest.json'))['cycle'])")
+          git commit -m "KNQI plates: update to d-TPP cycle $CYC"
+          git push

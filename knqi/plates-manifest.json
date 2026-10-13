@@ -1,0 +1,385 @@
+{
+ "airport": "KNQI",
+ "faa_id": "NQI",
+ "cycle": "2610",
+ "effective": "0901Z  10/01/26",
+ "expires": "0901Z  10/29/26",
+ "plates": {
+  "sid": {
+   "files": [
+    "00918KINGSVILLE.PDF",
+    "00918KINGSVILLE_C.PDF"
+   ],
+   "images": [
+    "img/sid-1.png",
+    "img/sid-2.png"
+   ],
+   "sha256": [
+    "px:f4b8667bfaafbd8ba3fefa55c86e63300ac303c67069e2de154cd3bf1332cbf0",
+    "px:1d9bcef5effc727bac7c332232ce6e2e3f0bb18161534297bd5c02d95e6cdf10"
+   ],
+   "baseline_sha256": [
+    "px:f4b8667bfaafbd8ba3fefa55c86e63300ac303c67069e2de154cd3bf1332cbf0",
+    "px:1d9bcef5effc727bac7c332232ce6e2e3f0bb18161534297bd5c02d95e6cdf10"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "KINGSVILLE FOUR",
+    "KINGSVILLE FOUR, CONT.1"
+   ],
+   "faa_useraction": [
+    "",
+    ""
+   ]
+  },
+  "ad": {
+   "files": [
+    "00918AD.PDF"
+   ],
+   "images": [
+    "img/ad.png"
+   ],
+   "sha256": [
+    "px:edde73d4bece4b4172dc2bc56b5c6de2d5a795e8ed7ef84b47b2c097d4844c15"
+   ],
+   "baseline_sha256": [
+    "px:edde73d4bece4b4172dc2bc56b5c6de2d5a795e8ed7ef84b47b2c097d4844c15"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "AIRPORT DIAGRAM"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "takeoff": {
+   "files": [
+    "SC3TO.PDF"
+   ],
+   "images": [
+    "img/takeoff.png"
+   ],
+   "sha256": [
+    "txt:f7c6c399050cf684bdea571ed4bd6edc2b67b1ed5d40cfd235c0ae2f4254456a"
+   ],
+   "baseline_sha256": [
+    "txt:f7c6c399050cf684bdea571ed4bd6edc2b67b1ed5d40cfd235c0ae2f4254456a"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "TAKEOFF MINIMUMS"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "radar": {
+   "files": [
+    "SC3RAD.PDF"
+   ],
+   "images": [
+    "img/radar.png"
+   ],
+   "sha256": [
+    "txt:4854fcff3f162505479edddd89a8571d616266b2a86403d49ed4a93e538bfd85"
+   ],
+   "baseline_sha256": [
+    "txt:4854fcff3f162505479edddd89a8571d616266b2a86403d49ed4a93e538bfd85"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "RADAR MINIMUMS"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "izlz13r": {
+   "files": [
+    "00918IZLZ13R.PDF"
+   ],
+   "images": [
+    "img/izlz13r.png"
+   ],
+   "sha256": [
+    "px:498d108002274427ca11a2455a88a39a6d7a062550fa52f7dab9ace57973a244"
+   ],
+   "baseline_sha256": [
+    "px:498d108002274427ca11a2455a88a39a6d7a062550fa52f7dab9ace57973a244"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "ILS Z OR LOC Z RWY 13R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "ixlx13r": {
+   "files": [
+    "00918IXLX13R.PDF"
+   ],
+   "images": [
+    "img/ixlx13r.png"
+   ],
+   "sha256": [
+    "px:ed16acf0fae22f109bb772b32d6c0d70fbe00ca77a29cb2183fd39d1618d3fc9"
+   ],
+   "baseline_sha256": [
+    "px:ed16acf0fae22f109bb772b32d6c0d70fbe00ca77a29cb2183fd39d1618d3fc9"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "ILS X OR LOC X RWY 13R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "hiwlw13r": {
+   "files": [
+    "00918HIWLW13R.PDF"
+   ],
+   "images": [
+    "img/hiwlw13r.png"
+   ],
+   "sha256": [
+    "px:e1fc07e7c711c4e5ba53caf00157fc65e89f257c5e0d87d3514537930b587699"
+   ],
+   "baseline_sha256": [
+    "px:e1fc07e7c711c4e5ba53caf00157fc65e89f257c5e0d87d3514537930b587699"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "HI-ILS W OR LOC W RWY 13R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "hiyly13r": {
+   "files": [
+    "00918HIYLY13R.PDF"
+   ],
+   "images": [
+    "img/hiyly13r.png"
+   ],
+   "sha256": [
+    "px:fffc101a3fc29e6429852b6c14f22ed7f19eb7b316078dcae4467f94c94dec3f"
+   ],
+   "baseline_sha256": [
+    "px:fffc101a3fc29e6429852b6c14f22ed7f19eb7b316078dcae4467f94c94dec3f"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "HI-ILS Y OR LOC Y RWY 13R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "htz13r": {
+   "files": [
+    "00918HTZ13R.PDF"
+   ],
+   "images": [
+    "img/htz13r.png"
+   ],
+   "sha256": [
+    "px:f748913f40447c6f3f591d7b1d80ea437acd56249db1f12c02228242f6611bf1"
+   ],
+   "baseline_sha256": [
+    "px:f748913f40447c6f3f591d7b1d80ea437acd56249db1f12c02228242f6611bf1"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "HI-TACAN Z RWY 13R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "htz35r": {
+   "files": [
+    "00918HTZ35R.PDF"
+   ],
+   "images": [
+    "img/htz35r.png"
+   ],
+   "sha256": [
+    "px:43e7088b2e442877b845cedbd6697251bd4fc5cb82da47236bf93e99e94163ae"
+   ],
+   "baseline_sha256": [
+    "px:43e7088b2e442877b845cedbd6697251bd4fc5cb82da47236bf93e99e94163ae"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "HI-TACAN Z RWY 35R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "t13lr": {
+   "files": [
+    "00918T13LR.PDF"
+   ],
+   "images": [
+    "img/t13lr.png"
+   ],
+   "sha256": [
+    "px:a01d1cdbb3cc8f34cc17364aed6822f61c85125561743f13de77859b68d3e379"
+   ],
+   "baseline_sha256": [
+    "px:a01d1cdbb3cc8f34cc17364aed6822f61c85125561743f13de77859b68d3e379"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "TACAN RWY 13L/R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "t17l": {
+   "files": [
+    "00918T17L.PDF"
+   ],
+   "images": [
+    "img/t17l.png"
+   ],
+   "sha256": [
+    "px:0ad0b01597bdb974bc51799169b79402023ad7fc022bf93264ec674b9de5aefb"
+   ],
+   "baseline_sha256": [
+    "px:0ad0b01597bdb974bc51799169b79402023ad7fc022bf93264ec674b9de5aefb"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "TACAN RWY 17L"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "t31lr": {
+   "files": [
+    "00918T31LR.PDF"
+   ],
+   "images": [
+    "img/t31lr.png"
+   ],
+   "sha256": [
+    "px:d03326e5bd50e16ebc7b85436528498adf8368e3dc61d5af07116eb2a4d53d8b"
+   ],
+   "baseline_sha256": [
+    "px:d03326e5bd50e16ebc7b85436528498adf8368e3dc61d5af07116eb2a4d53d8b"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "TACAN RWY 31L/R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "ty17r": {
+   "files": [
+    "00918TY17R.PDF"
+   ],
+   "images": [
+    "img/ty17r.png"
+   ],
+   "sha256": [
+    "px:d8d30ce99f9196b103ee7d5347e02428e09262e3afc250a5cf3f9c4537dca884"
+   ],
+   "baseline_sha256": [
+    "px:d8d30ce99f9196b103ee7d5347e02428e09262e3afc250a5cf3f9c4537dca884"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "TACAN Y RWY 17R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "ty35r": {
+   "files": [
+    "00918TY35R.PDF"
+   ],
+   "images": [
+    "img/ty35r.png"
+   ],
+   "sha256": [
+    "px:4fbf928ee67f8052a47830fd1a0c932efc263ba452e93675febe936d13b92736"
+   ],
+   "baseline_sha256": [
+    "px:4fbf928ee67f8052a47830fd1a0c932efc263ba452e93675febe936d13b92736"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "TACAN Y RWY 35R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  },
+  "tz17r": {
+   "files": [
+    "00918TZ17R.PDF"
+   ],
+   "images": [
+    "img/tz17r.png"
+   ],
+   "sha256": [
+    "px:06fb9e13f30b0802bb1d2abaa561d163bac65d876697e0a26988afdd0956105a"
+   ],
+   "baseline_sha256": [
+    "px:06fb9e13f30b0802bb1d2abaa561d163bac65d876697e0a26988afdd0956105a"
+   ],
+   "changed": false,
+   "baseline_cycle": "2610",
+   "missing": false,
+   "chart_names": [
+    "TACAN Z RWY 17R"
+   ],
+   "faa_useraction": [
+    ""
+   ]
+  }
+ },
+ "unquizzed_new_charts": [],
+ "checked_utc": "2026-10-13T22:09Z"
+}
