@@ -485,3 +485,162 @@ A: while pulling off the runway  _(Doc)_
 
 **[Comms 6. Landing ICS, After Landing & Shutdown]** Q: Radios before turning off:
 A: Put base in both radios prior to turning them off  _(Doc)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)
+A: Rear cockpit (R/C): “LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)
+A: Pilot (front): “LIGHTS AND TONES”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “LIGHTS AND TONES”
+A: Pilot (front): “THROTTLE OFF, GTS”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “THROTTLE OFF, GTS”
+A: Rear cockpit (R/C): “CLEAR”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “CLEAR”
+A: Pilot (front): “No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)
+A: Pilot: Clearance delivery, KARP 101 single, clearance on request.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Clearance Delivery): Clearance delivery, KARP 101 single, clearance on request.
+A: Clearance Delivery: KARP 101 clearance on request.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Clearance Delivery (Clearance Delivery): KARP 101 clearance on request.
+A: Clearance Delivery: KARP 101, I have your clearance [advisory] ready to copy.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Clearance Delivery (Clearance Delivery): KARP 101, I have your clearance [advisory] ready to copy.
+A: Pilot: KARP 101 ready to copy.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Clearance Delivery): KARP 101 ready to copy.
+A: Clearance Delivery: KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Clearance Delivery (Clearance Delivery): KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.
+A: Pilot: KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Clearance Delivery): KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.
+A: Clearance Delivery: KARP 101, readback correct.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Clearance Delivery (Clearance Delivery): KARP 101, readback correct.
+A: Pilot (front): SNA: “GOOD TONE, GOOD BIT”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): SNA: “GOOD TONE, GOOD BIT”
+A: Pilot (front): “WATCH YOUR KNEES”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “WATCH YOUR KNEES”
+A: Rear cockpit (R/C): “CLEAR”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “CLEAR”
+A: Pilot (front): “CANOPY”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “CANOPY”
+A: Rear cockpit (R/C): “CLEAR” (Doc: “Rail Clear”)  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “CLEAR” (Doc: “Rail Clear”)
+A: Pilot (front): “Mask on, flow on in the front. OBOGS integrity check.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “Mask on, flow on in the front. OBOGS integrity check.”
+A: Rear cockpit (R/C): “Mask on, flow on in back.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “Mask on, flow on in back.”
+A: Pilot (front): “Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)
+A: Rear cockpit (R/C): “Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”
+A: Pilot: McCain ground, KARP 101, single taxi with information Charlie.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Ground): McCain ground, KARP 101, single taxi with information Charlie.
+A: McCain Ground: KARP 101, ground, taxi 1 right via alpha bravo.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: McCain Ground (Ground): KARP 101, ground, taxi 1 right via alpha bravo.
+A: Pilot: 101, taxi 1 right via alpha bravo.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Ground): 101, taxi 1 right via alpha bravo.
+A: Pilot: Base 01, out of chocks.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Base): Base 01, out of chocks.
+A: Base: Have a good flight.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Base (Base): Have a good flight.
+A: Pilot (front): “ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”
+A: Rear cockpit (R/C): “ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)
+A: Pilot (front): “ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”
+A: Pilot (front): “READY TO SAFE IN FRONT”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “READY TO SAFE IN FRONT”
+A: Rear cockpit (R/C): “SAFE IN BACK”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “SAFE IN BACK”
+A: Pilot (front): “SAFE IN FRONT”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “SAFE IN FRONT”
+A: Pilot (front): “No exceedances, no overflows, good jet in the front.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “No exceedances, no overflows, good jet in the front.”
+A: Rear cockpit (R/C): “Good jet in the back.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Rear cockpit (R/C) (ICS): “Good jet in the back.”
+A: Pilot: [McCain Ground], KARP 101, single, clear the active, taxi my line.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Ground): [McCain Ground], KARP 101, single, clear the active, taxi my line.
+A: McCain Ground: KARP 101, ground, taxi to the line via alpha.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: McCain Ground (Ground): KARP 101, ground, taxi to the line via alpha.
+A: Pilot: 101 to the line via alpha.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Ground): 101 to the line via alpha.
+A: Pilot: Base, 01, safe on deck.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Base): Base, 01, safe on deck.
+A: Base: Welcome back.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Base (Base): Welcome back.
+A: Pilot: Maintenance, 01, in and up.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Maintenance): Maintenance, 01, in and up.
+A: Maintenance: 01, park bravo.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Maintenance (Maintenance): 01, park bravo.
+A: Pilot: 01, park bravo.  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (Maintenance): 01, park bravo.
+A: Pilot (front): “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: Pilot (front) (ICS): “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)
+A: Rear cockpit (R/C): “Roger.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: clearance squawk:
+A: 4230  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: departure in the clearance:
+A: UNION 1 departure, runway heading to 7,000 feet, expect block 9 to 230, 10 minutes after departure  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: departure frequency in the clearance:
+A: Departure button four  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: when do you call Ground from final checks?
+A: If leaving final checks and not going to marshall  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: Base check-out wording vs Kingsville sources:
+A: Video “Base 01, out of chocks.” / Script “STRIKE, 2XX out of chocks.” / Doc “Base, 01 Taxi”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: Base call on landing:
+A: “Base, 01, safe on deck.” → “Welcome back.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: Maintenance call for parking:
+A: “Maintenance, 01, in and up.” → “01, park bravo.”  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: when are both radios turned off?
+A: Once back in the line area with all radio calls complete  _(CNATRA Ground Ops video)_
+
+**[Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls]** Q: CNATRA video: ATIS information in the Ground call:
+A: information Charlie  _(CNATRA Ground Ops video)_

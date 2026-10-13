@@ -1,0 +1,130 @@
+[00:00] Welcome. This video will cover T-45 ground operations to include pre-start through takeoff
+[00:10] and after landing through engine shutdown checklists, beginning with pre-start. Alternate
+[00:17] battery one and two on to check individual voltage between 24 and 29 volts. Turn the
+[00:21] master alert light out, turn both bat switches on, adjust seat pedals, check fuel quantity,
+[00:27] check skid light on, check fire light out, then initiate an ICS check. ICS check, switch
+[00:43] is set, norm 2.9. Loud and clear, switch is set, norm both 2.9. Ensure all appropriate
+[00:49] warning and caution lights are on. Test lights, tones, and indexers. Check hide one,
+[00:55] hide two, and brake pressure indicates zero, zero, 1250 respectively. Check the flap
+[01:00] pause light matches flaps, gear pause light is on, common nav trans set as desired, no
+[01:06] off-lag in the AOA gauge, pause and form lights as desired, pinky switch as required,
+[01:12] visor down, canopy as desired
+[01:50] Next, signal for engine start. When the PC gives the start engine signal, turn the
+[02:03] engine switch to start. The ready light should illuminate within 15 seconds. At 17
+[02:14] to 20 percent N2, and when the PC gives the run-up signal, advance the throttle
+[02:18] to idle, monitor engine instruments, and ensure the oil pressure light goes out.
+[02:37] Next check for 27 to 29 volts in the voltmeter. Turn the Obog's anti-G switch on. Turn
+[02:45] on displays, radios, and nav aids, and set as desired, and set IFF to standby. Moving
+[02:59] to post-start checks, you'll notice that not all steps are completed in the
+[03:01] order listed on the checklist. Pilots will likely develop their own technique
+[03:05] for completing the steps, but it's important that all steps are completed.
+[03:10] Give the engine run-up signal. When returned by the PC, slowly advance the
+[03:14] throttle to 70 percent. As you advance the throttle, EGT should initially climb and
+[03:28] then drop by around 50 degrees. Press the hide to reset button. Hide pressure should
+[03:32] indicate 3,000 PSI with the light out. Hold the fuel control switch and test. The
+[03:39] M fuel light should eliminate, and RPM should drop a maximum of 6 percent. Then set fuel
+[03:43] control switch norm. The light should go out, and RPM return to normal. Next set
+[03:47] throttle idle, and note EGT and RPM. Check the bit maintenance and data
+[03:53] aircraft sub levels for exceedances and alignment progress.
+[03:58] No exceedances, no overflows, four sats, waiting on qual. While waiting on qual to
+[04:03] count down, work ahead on the checklist by checking stab and aileron trim, as
+[04:07] well as getting clearance. Clearance delivery, KARP 101 single, clearance on
+[04:14] request. KARP 101 clearance on request.
+[04:37] Qual is counting down. With decrement in qual, initiate a control log bit. This could take up to 120 seconds to complete.
+[04:49] Simulate a logs bit. KARP 101, I have your clearance advisement ready to copy.
+[04:54] KARP 101 ready to copy. KARP 101, you're clear to area one via the
+[05:00] union one departure. On departure, runway heading to 7,000 feet. Expect
+[05:04] block 9 to 230, 10 minutes after departure. Departure button four, squawk
+[05:08] 4230. KARP 101 is clear to area one via the union departure. Runway heading up
+[05:13] to 7, expect 9 to 230, 10 minutes after departure. Departure button four,
+[05:17] squawk 4230. KARP 101, readback correct. While waiting on the
+[05:23] control log bit, set up waypoints, nav source, and flight instruments, which
+[05:27] will also be covered in the taxi and instrument checks.
+[06:13] When the control log bit is finished and the light is out, check and set rudder trim to neutral.
+[06:40] We'll now cover plane captain checks.
+[06:42] Watch your knees. Clear.
+[06:47] Following PC signals, first check flight controls. Engage nosewheel steering then lower flaps.
+[06:59] Put the hook down and open speed brakes.
+[07:05] Visually check flaps and slats and check the speed brake and hook lights.
+[07:10] Again following PC signals, put the hook up, close speed brakes, and set flaps to half.
+[07:21] Visually check flaps and slats and speed brake and hook light out.
+[07:24] Canopy.
+[07:25] Clear.
+[07:27] Close the canopy before taxiing out.
+[07:30] Next we'll cover taxi and instrument checks.
+[07:32] Prior to FAM solo, these will be done in marshall. However, in later stages, they will be done on the roll.
+[07:38] When ready to taxi out, release the parking brake.
+[07:43] Following PC hand signals, begin taxiing out and apply and release brakes for a brake check.
+[07:48] Make sure nosewheel steering is engaged and working properly while taxiing out.
+[07:53] Check all flight instruments are set as required.
+[08:00] Once moving, execute an OBOGS integrity ground check, making sure to press the ADR event record button.
+[08:06] Mask on, flow on in the front. OBOGS integrity check.
+[08:09] Mask on, flow on in back.
+[08:12] Taxi and instrument checks. Altimeters 2992, VOR set 110.10.
+[08:17] TacAnset 56X-Ray, Squawkin 4230, standby.
+[08:22] Altimeter set 2992, VOR 110.1, TacAnset 56X-Ray in back.
+[09:18] Follow the final checkers direction into final checks.
+[09:39] If leaving final checks and not going to marshall, call ground.
+[09:42] McCain ground, KARP 101, single taxi with information Charlie.
+[09:46] KARP 101, ground, taxi 1 right via alpha bravo.
+[09:50] 101, taxi 1 right via alpha bravo.
+[09:53] Also call base.
+[09:55] Base 01, out of chocks.
+[09:58] Have a good flight.
+[09:59] Finally, while taxiing to the hold short, execute take off checks.
+[10:09] Take off checklist, control logs all, anti skids on with the light.
+[10:12] Flaps and sats are set half, indicate half, slats visually checked down.
+[10:16] Shrimp 00, 2 degrees nose up, canopy.
+[10:19] Close and lock, light out, arrows align.
+[10:22] I'm attached 8 points, pins removed, right arm in the front.
+[10:26] I'm attached 8 points, pins removed, selector set both, armed in back.
+[10:29] Arm in the front, take off checks complete.
+[10:36] We'll now move to post flight procedures with after landing and before shutdown checklists,
+[10:40] which will be done while taxiing back to the line.
+[10:43] Again, while the checks don't have to be done in order, it's important that all steps are completed.
+[10:48] Once clear of the runway, safe seats in both cockpits.
+[10:58] Ready to safe in front?
+[11:02] Safe in back.
+[11:04] Safe in front.
+[11:06] Retract speed brakes.
+[11:08] Raise flaps and slats.
+[11:11] Set trim to zero.
+[11:14] Turn the o-bog's flow selector off.
+[11:17] Turn off nav and IFF equipment.
+[11:20] Check the bit page, bit any degraded equipment, turn the law off,
+[11:25] go to the maintenance page, check for aircraft exceedances.
+[11:29] No exceedances, no overflows, good jet in the front.
+[11:32] Good jet in the back.
+[11:34] Call ground for taxi back to the line.
+[11:36] Vacating ground, CARP 101, single, clear the active, taxi my line.
+[11:41] CARP 101, ground, taxi to the line via alpha.
+[11:45] 101 to the line via alpha.
+[11:47] Next call base.
+[11:49] Base, 01, safe on deck.
+[11:52] Welcome back.
+[11:54] Call maintenance and note your assigned row for parking.
+[11:57] Maintenance, 01, in and up.
+[12:00] 01, park bravo.
+[12:02] 01, park bravo.
+[12:04] Cage your standby gyro and continue turning off equipment.
+[12:08] Note idle RPM on the taxi back and ensure it is within plus or minus two percent of NATOPS.
+[12:43] Once back in the line area with all radio calls complete, turn off both radios.
+[12:47] All my equipment's off and back, I'll be clear of canopy and o-bogs on shutdown.
+[13:14] Roger.
+[13:16] Wrapping up with the engine shutdown checklist.
+[13:18] Once you've come to a stop in your assigned spot, set the parking brake.
+[13:25] Turn the o-bogs NIG switch off, then turn the throttle off once the PC gives the cut engine signal.
+[13:38] Next monitor EGT, RPM, and fuel flow for normal shutdown.
+[13:46] With the throttle off, you can also open the canopy.
+[13:56] Thirty seconds after setting the parking brake, turn the GINA power off, as well as the left MFD.
+[14:15] Forty-five seconds after throttle off, turn the engine switch as well as anti-skid switch off in the forward cockpit.
+[14:23] Pull the fuel shutoff handle.
+[14:25] Turn pause and form lights off.
+[14:30] Check for a minimum of 2,700 PSI in the brake pressure accumulator.
+[14:35] Fifty seconds after throttle off, following PC head signals, cycle the control stick one half lateral deflection every two seconds until high one pressure reaches zero PSI.
+[14:56] Go picky switch off.
+[15:01] Turn console and main instrument panel lights off.
+[15:06] Remove MDL and VCR tape as required.
+[15:11] Download and remove the USB device and cover the control panel as required.
+[15:16] Turn both bat switches off.
+[15:19] Finally, before exiting the aircraft, ensure the seat and MDC firing handles are pinned.

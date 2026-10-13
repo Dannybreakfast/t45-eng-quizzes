@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls</h1>
+    <div class="meta">87 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 87</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Roger.”", "“CLEAR” (Doc: “Rail Clear”)", "“ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)", "“LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)"], "ans": 3, "expl": "CNATRA Ground Ops video: “ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”) → “LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“CANOPY”", "“Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)", "“LIGHTS AND TONES”", "“No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)"], "ans": 2, "expl": "CNATRA Ground Ops video: “LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”) → “LIGHTS AND TONES”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““LIGHTS AND TONES”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“THROTTLE OFF, GTS”", "“Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)", "“No exceedances, no overflows, good jet in the front.”", "“No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)"], "ans": 0, "expl": "CNATRA Ground Ops video: “LIGHTS AND TONES” → “THROTTLE OFF, GTS”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““THROTTLE OFF, GTS”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Mask on, flow on in back.”", "“ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)", "“Roger.”", "“CLEAR”"], "ans": 3, "expl": "CNATRA Ground Ops video: “THROTTLE OFF, GTS” → “CLEAR”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““CLEAR”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)", "“No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)", "“ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)", "SNA: “GOOD TONE, GOOD BIT”"], "ans": 1, "expl": "CNATRA Ground Ops video: “CLEAR” → “No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)” — What comes next? (Pilot → Clearance Delivery, Clearance Delivery)", "opts": ["Base, 01, safe on deck.", "KARP 101 ready to copy.", "Clearance delivery, KARP 101 single, clearance on request.", "Maintenance, 01, in and up."], "ans": 2, "expl": "CNATRA Ground Ops video: “No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”) → Clearance delivery, KARP 101 single, clearance on request."}, {"q": "[Pilot → Clearance Delivery (Clearance Delivery)] “Clearance delivery, KARP 101 single, clearance on request.” — What comes next? (Clearance Delivery → Pilot, Clearance Delivery)", "opts": ["KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.", "KARP 101, readback correct.", "KARP 101, I have your clearance [advisory] ready to copy.", "KARP 101 clearance on request."], "ans": 3, "expl": "CNATRA Ground Ops video: Clearance delivery, KARP 101 single, clearance on request. → KARP 101 clearance on request."}, {"q": "[Clearance Delivery → Pilot (Clearance Delivery)] “KARP 101 clearance on request.” — What comes next? (Clearance Delivery → Pilot, Clearance Delivery)", "opts": ["“CLEAR”", "KARP 101, I have your clearance [advisory] ready to copy.", "KARP 101, readback correct.", "KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230."], "ans": 1, "expl": "CNATRA Ground Ops video: KARP 101 clearance on request. → KARP 101, I have your clearance [advisory] ready to copy."}, {"q": "[Clearance Delivery → Pilot (Clearance Delivery)] “KARP 101, I have your clearance [advisory] ready to copy.” — What comes next? (Pilot → Clearance Delivery, Clearance Delivery)", "opts": ["KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.", "01, park bravo.", "KARP 101 ready to copy.", "McCain ground, KARP 101, single taxi with information Charlie."], "ans": 2, "expl": "CNATRA Ground Ops video: KARP 101, I have your clearance [advisory] ready to copy. → KARP 101 ready to copy."}, {"q": "[Pilot → Clearance Delivery (Clearance Delivery)] “KARP 101 ready to copy.” — What comes next? (Clearance Delivery → Pilot, Clearance Delivery)", "opts": ["KARP 101 clearance on request.", "KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.", "KARP 101, I have your clearance [advisory] ready to copy.", "KARP 101, readback correct."], "ans": 1, "expl": "CNATRA Ground Ops video: KARP 101 ready to copy. → KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230."}, {"q": "[Clearance Delivery → Pilot (Clearance Delivery)] “KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.” — What comes next? (Pilot → Clearance Delivery, Clearance Delivery)", "opts": ["KARP 101 ready to copy.", "KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.", "01, park bravo.", "101 to the line via alpha."], "ans": 1, "expl": "CNATRA Ground Ops video: KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230. → KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230."}, {"q": "[Pilot → Clearance Delivery (Clearance Delivery)] “KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.” — What comes next? (Clearance Delivery → Pilot, Clearance Delivery)", "opts": ["KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.", "KARP 101, I have your clearance [advisory] ready to copy.", "KARP 101, readback correct.", "KARP 101 clearance on request."], "ans": 2, "expl": "CNATRA Ground Ops video: KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230. → KARP 101, readback correct."}, {"q": "[Clearance Delivery → Pilot (Clearance Delivery)] “KARP 101, readback correct.” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)", "“No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)", "“CANOPY”", "SNA: “GOOD TONE, GOOD BIT”"], "ans": 3, "expl": "CNATRA Ground Ops video: KARP 101, readback correct. → SNA: “GOOD TONE, GOOD BIT”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] “SNA: “GOOD TONE, GOOD BIT”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“SAFE IN FRONT”", "“CANOPY”", "“ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)", "“WATCH YOUR KNEES”"], "ans": 3, "expl": "CNATRA Ground Ops video: SNA: “GOOD TONE, GOOD BIT” → “WATCH YOUR KNEES”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““WATCH YOUR KNEES”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)", "“SAFE IN BACK”", "“LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)", "“CLEAR”"], "ans": 3, "expl": "CNATRA Ground Ops video: “WATCH YOUR KNEES” → “CLEAR”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““CLEAR”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”", "“CANOPY”", "“SAFE IN FRONT”", "“Mask on, flow on in the front. OBOGS integrity check.”"], "ans": 1, "expl": "CNATRA Ground Ops video: “CLEAR” → “CANOPY”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““CANOPY”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“CLEAR”", "“CLEAR” (Doc: “Rail Clear”)", "“LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)", "“Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”"], "ans": 1, "expl": "CNATRA Ground Ops video: “CANOPY” → “CLEAR” (Doc: “Rail Clear”)"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““CLEAR” (Doc: “Rail Clear”)” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”", "“ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”", "“CANOPY”", "“Mask on, flow on in the front. OBOGS integrity check.”"], "ans": 3, "expl": "CNATRA Ground Ops video: “CLEAR” (Doc: “Rail Clear”) → “Mask on, flow on in the front. OBOGS integrity check.”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Mask on, flow on in the front. OBOGS integrity check.”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“SAFE IN BACK”", "“Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”", "“Mask on, flow on in back.”", "“Roger.”"], "ans": 2, "expl": "CNATRA Ground Ops video: “Mask on, flow on in the front. OBOGS integrity check.” → “Mask on, flow on in back.”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Mask on, flow on in back.”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["SNA: “GOOD TONE, GOOD BIT”", "“CANOPY”", "“WATCH YOUR KNEES”", "“Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)"], "ans": 3, "expl": "CNATRA Ground Ops video: “Mask on, flow on in back.” → “Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)", "“CLEAR”", "“Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”", "“Good jet in the back.”"], "ans": 2, "expl": "CNATRA Ground Ops video: “Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”) → “Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”” — What comes next? (Pilot → McCain Ground, Ground)", "opts": ["McCain ground, KARP 101, single taxi with information Charlie.", "KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.", "101, taxi 1 right via alpha bravo.", "Clearance delivery, KARP 101 single, clearance on request."], "ans": 0, "expl": "CNATRA Ground Ops video: “Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.” → McCain ground, KARP 101, single taxi with information Charlie."}, {"q": "[Pilot → McCain Ground (Ground)] “McCain ground, KARP 101, single taxi with information Charlie.” — What comes next? (McCain Ground → Pilot, Ground)", "opts": ["KARP 101, ground, taxi 1 right via alpha bravo.", "KARP 101, readback correct.", "01, park bravo.", "KARP 101, ground, taxi to the line via alpha."], "ans": 0, "expl": "CNATRA Ground Ops video: McCain ground, KARP 101, single taxi with information Charlie. → KARP 101, ground, taxi 1 right via alpha bravo."}, {"q": "[McCain Ground → Pilot (Ground)] “KARP 101, ground, taxi 1 right via alpha bravo.” — What comes next? (Pilot → McCain Ground, Ground)", "opts": ["101, taxi 1 right via alpha bravo.", "01, park bravo.", "Clearance delivery, KARP 101 single, clearance on request.", "KARP 101 ready to copy."], "ans": 0, "expl": "CNATRA Ground Ops video: KARP 101, ground, taxi 1 right via alpha bravo. → 101, taxi 1 right via alpha bravo."}, {"q": "[Pilot → McCain Ground (Ground)] “101, taxi 1 right via alpha bravo.” — What comes next? (Pilot → Base, Base)", "opts": ["Maintenance, 01, in and up.", "Base 01, out of chocks.", "101 to the line via alpha.", "01, park bravo."], "ans": 1, "expl": "CNATRA Ground Ops video: 101, taxi 1 right via alpha bravo. → Base 01, out of chocks."}, {"q": "[Pilot → Base (Base)] “Base 01, out of chocks.” — What comes next? (Base → Pilot, Base)", "opts": ["Welcome back.", "Have a good flight.", "“ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”", "“SAFE IN BACK”"], "ans": 1, "expl": "CNATRA Ground Ops video: Base 01, out of chocks. → Have a good flight."}, {"q": "[Base → Pilot (Base)] “Have a good flight.” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“THROTTLE OFF, GTS”", "“READY TO SAFE IN FRONT”", "“ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”", "“ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”"], "ans": 2, "expl": "CNATRA Ground Ops video: Have a good flight. → “ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”", "“SAFE IN BACK”", "“ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)", "“LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)"], "ans": 2, "expl": "CNATRA Ground Ops video: “ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT” → “ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)", "“READY TO SAFE IN FRONT”", "“ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”", "“All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)"], "ans": 2, "expl": "CNATRA Ground Ops video: “ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”) → “ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“CANOPY”", "“Mask on, flow on in the front. OBOGS integrity check.”", "“READY TO SAFE IN FRONT”", "“SAFE IN FRONT”"], "ans": 2, "expl": "CNATRA Ground Ops video: “ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE” → “READY TO SAFE IN FRONT”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““READY TO SAFE IN FRONT”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“SAFE IN BACK”", "“CLEAR”", "“Good jet in the back.”", "“LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)"], "ans": 0, "expl": "CNATRA Ground Ops video: “READY TO SAFE IN FRONT” → “SAFE IN BACK”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““SAFE IN BACK”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)", "“Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)", "“ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”", "“SAFE IN FRONT”"], "ans": 3, "expl": "CNATRA Ground Ops video: “SAFE IN BACK” → “SAFE IN FRONT”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““SAFE IN FRONT”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“THROTTLE OFF, GTS”", "“Mask on, flow on in the front. OBOGS integrity check.”", "“ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”", "“No exceedances, no overflows, good jet in the front.”"], "ans": 3, "expl": "CNATRA Ground Ops video: “SAFE IN FRONT” → “No exceedances, no overflows, good jet in the front.”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““No exceedances, no overflows, good jet in the front.”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“SAFE IN BACK”", "“ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)", "“Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”", "“Good jet in the back.”"], "ans": 3, "expl": "CNATRA Ground Ops video: “No exceedances, no overflows, good jet in the front.” → “Good jet in the back.”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Good jet in the back.”” — What comes next? (Pilot → McCain Ground, Ground)", "opts": ["01, park bravo.", "101 to the line via alpha.", "Base, 01, safe on deck.", "[McCain Ground], KARP 101, single, clear the active, taxi my line."], "ans": 3, "expl": "CNATRA Ground Ops video: “Good jet in the back.” → [McCain Ground], KARP 101, single, clear the active, taxi my line."}, {"q": "[Pilot → McCain Ground (Ground)] “[McCain Ground], KARP 101, single, clear the active, taxi my line.” — What comes next? (McCain Ground → Pilot, Ground)", "opts": ["KARP 101, I have your clearance [advisory] ready to copy.", "KARP 101, ground, taxi 1 right via alpha bravo.", "KARP 101, ground, taxi to the line via alpha.", "“CLEAR”"], "ans": 2, "expl": "CNATRA Ground Ops video: [McCain Ground], KARP 101, single, clear the active, taxi my line. → KARP 101, ground, taxi to the line via alpha."}, {"q": "[McCain Ground → Pilot (Ground)] “KARP 101, ground, taxi to the line via alpha.” — What comes next? (Pilot → McCain Ground, Ground)", "opts": ["01, park bravo.", "McCain ground, KARP 101, single taxi with information Charlie.", "101 to the line via alpha.", "Base 01, out of chocks."], "ans": 2, "expl": "CNATRA Ground Ops video: KARP 101, ground, taxi to the line via alpha. → 101 to the line via alpha."}, {"q": "[Pilot → McCain Ground (Ground)] “101 to the line via alpha.” — What comes next? (Pilot → Base, Base)", "opts": ["Maintenance, 01, in and up.", "01, park bravo.", "[McCain Ground], KARP 101, single, clear the active, taxi my line.", "Base, 01, safe on deck."], "ans": 3, "expl": "CNATRA Ground Ops video: 101 to the line via alpha. → Base, 01, safe on deck."}, {"q": "[Pilot → Base (Base)] “Base, 01, safe on deck.” — What comes next? (Base → Pilot, Base)", "opts": ["KARP 101 ready to copy.", "McCain ground, KARP 101, single taxi with information Charlie.", "Welcome back.", "Have a good flight."], "ans": 2, "expl": "CNATRA Ground Ops video: Base, 01, safe on deck. → Welcome back."}, {"q": "[Base → Pilot (Base)] “Welcome back.” — What comes next? (Pilot → Maintenance, Maintenance)", "opts": ["101, taxi 1 right via alpha bravo.", "KARP 101 ready to copy.", "KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.", "Maintenance, 01, in and up."], "ans": 3, "expl": "CNATRA Ground Ops video: Welcome back. → Maintenance, 01, in and up."}, {"q": "[Pilot → Maintenance (Maintenance)] “Maintenance, 01, in and up.” — What comes next? (Maintenance → Pilot, Maintenance)", "opts": ["“No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)", "Base 01, out of chocks.", "01, park bravo.", "KARP 101, I have your clearance [advisory] ready to copy."], "ans": 2, "expl": "CNATRA Ground Ops video: Maintenance, 01, in and up. → 01, park bravo."}, {"q": "[Maintenance → Pilot (Maintenance)] “01, park bravo.” — What comes next? (Pilot → Maintenance, Maintenance)", "opts": ["101, taxi 1 right via alpha bravo.", "01, park bravo.", "[McCain Ground], KARP 101, single, clear the active, taxi my line.", "101 to the line via alpha."], "ans": 1, "expl": "CNATRA Ground Ops video: 01, park bravo. → 01, park bravo."}, {"q": "[Pilot → Maintenance (Maintenance)] “01, park bravo.” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)", "“ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)", "“CANOPY”", "“SAFE IN FRONT”"], "ans": 0, "expl": "CNATRA Ground Ops video: 01, park bravo. → “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Mask on, flow on in back.”", "“Roger.”", "“LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)", "“SAFE IN BACK”"], "ans": 1, "expl": "CNATRA Ground Ops video: “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear) → “Roger.”"}, {"q": "Who transmits this, and to whom? “Clearance delivery, KARP 101 single, clearance on request.”", "opts": ["Clearance Delivery → Pilot", "Pilot → Clearance Delivery", "STRIKE (Base) → Clearance Delivery", "Kingsville Ground → Clearance Delivery"], "ans": 1, "expl": "CNATRA Ground Ops video (Clearance Delivery)"}, {"q": "Who transmits this, and to whom? “KARP 101 clearance on request.”", "opts": ["Pilot → Clearance Delivery", "Kingsville Approach/Arrival → Pilot", "Clearance Delivery → Pilot", "Kingsville Clearance → Pilot"], "ans": 2, "expl": "CNATRA Ground Ops video (Clearance Delivery)"}, {"q": "Who transmits this, and to whom? “KARP 101, I have your clearance [advisory] ready to copy.”", "opts": ["Base → Pilot", "Clearance Delivery → Pilot", "Pilot → Clearance Delivery", "Kingsville Ground → Pilot"], "ans": 1, "expl": "CNATRA Ground Ops video (Clearance Delivery)"}, {"q": "Who transmits this, and to whom? “KARP 101 ready to copy.”", "opts": ["Pilot → Clearance Delivery", "Clearance Delivery → Clearance Delivery", "Kingsville Departure → Clearance Delivery", "Clearance Delivery → Pilot"], "ans": 0, "expl": "CNATRA Ground Ops video (Clearance Delivery)"}, {"q": "Who transmits this, and to whom? “KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.”", "opts": ["Kingsville Arrival → Pilot", "Tower/LSO → Pilot", "Pilot → Clearance Delivery", "Clearance Delivery → Pilot"], "ans": 3, "expl": "CNATRA Ground Ops video (Clearance Delivery)"}, {"q": "Who transmits this, and to whom? “KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.”", "opts": ["Pilot → Clearance Delivery", "Maintenance → Clearance Delivery", "Clearance Delivery → Pilot", "Tower/LSO → Clearance Delivery"], "ans": 0, "expl": "CNATRA Ground Ops video (Clearance Delivery)"}, {"q": "Who transmits this, and to whom? “KARP 101, readback correct.”", "opts": ["Clearance Delivery → Pilot", "Maintenance → Pilot", "Kingsville Ground → Pilot", "Pilot → Clearance Delivery"], "ans": 0, "expl": "CNATRA Ground Ops video (Clearance Delivery)"}, {"q": "Who transmits this, and to whom? “McCain ground, KARP 101, single taxi with information Charlie.”", "opts": ["McCain Ground → Pilot", "Kingsville Tower → McCain Ground", "Pilot → McCain Ground", "Maintenance → McCain Ground"], "ans": 2, "expl": "CNATRA Ground Ops video (Ground)"}, {"q": "Who transmits this, and to whom? “KARP 101, ground, taxi 1 right via alpha bravo.”", "opts": ["McCain Ground → Pilot", "Kingsville Departure → Pilot", "Pilot → McCain Ground", "Kingsville Ground → Pilot"], "ans": 0, "expl": "CNATRA Ground Ops video (Ground)"}, {"q": "Who transmits this, and to whom? “101, taxi 1 right via alpha bravo.”", "opts": ["Maintenance → McCain Ground", "Pilot → McCain Ground", "McCain Ground → Pilot", "STRIKE (Base) → McCain Ground"], "ans": 1, "expl": "CNATRA Ground Ops video (Ground)"}, {"q": "Who transmits this, and to whom? “Base 01, out of chocks.”", "opts": ["Base → Base", "Kingsville Approach/Arrival → Base", "Base → Pilot", "Pilot → Base"], "ans": 3, "expl": "CNATRA Ground Ops video (Base)"}, {"q": "Who transmits this, and to whom? “Have a good flight.”", "opts": ["Maintenance → Pilot", "Base → Pilot", "Pilot → Base", "Kingsville Approach → Pilot"], "ans": 1, "expl": "CNATRA Ground Ops video (Base)"}, {"q": "Who transmits this, and to whom? “[McCain Ground], KARP 101, single, clear the active, taxi my line.”", "opts": ["Pilot → McCain Ground", "Kingsville Tower → McCain Ground", "Clearance Delivery → McCain Ground", "McCain Ground → Pilot"], "ans": 0, "expl": "CNATRA Ground Ops video (Ground)"}, {"q": "Who transmits this, and to whom? “KARP 101, ground, taxi to the line via alpha.”", "opts": ["Kingsville Tower → Pilot", "Pilot → McCain Ground", "Kingsville Approach/Arrival → Pilot", "McCain Ground → Pilot"], "ans": 3, "expl": "CNATRA Ground Ops video (Ground)"}, {"q": "Who transmits this, and to whom? “101 to the line via alpha.”", "opts": ["Pilot → McCain Ground", "STRIKE (Base) → McCain Ground", "McCain Ground → Pilot", "Kingsville Clearance → McCain Ground"], "ans": 0, "expl": "CNATRA Ground Ops video (Ground)"}, {"q": "Who transmits this, and to whom? “Base, 01, safe on deck.”", "opts": ["Kingsville Departure → Base", "Base → Pilot", "Pilot → Base", "Kingsville Ground → Base"], "ans": 2, "expl": "CNATRA Ground Ops video (Base)"}, {"q": "Who transmits this, and to whom? “Maintenance, 01, in and up.”", "opts": ["Maintenance → Pilot", "Kingsville Departure → Maintenance", "Pilot → Maintenance", "Kingsville Tower → Maintenance"], "ans": 2, "expl": "CNATRA Ground Ops video (Maintenance)"}, {"q": "Which radio/channel is this call made on? “Clearance delivery, KARP 101 single, clearance on request.”", "opts": ["Ch 3 Pri", "Maintenance", "Clearance Delivery", "Ch 5 Pri (237.85)"], "ans": 2, "expl": "CNATRA Ground Ops video: Clearance Delivery"}, {"q": "Which radio/channel is this call made on? “KARP 101 clearance on request.”", "opts": ["Ch 2 Pri", "Ch 12 Pri", "Ch 13 Pri", "Clearance Delivery"], "ans": 3, "expl": "CNATRA Ground Ops video: Clearance Delivery"}, {"q": "Which radio/channel is this call made on? “KARP 101, I have your clearance [advisory] ready to copy.”", "opts": ["Ch 30 Pri", "Ch 2 Pri", "Ch 29 Pri", "Clearance Delivery"], "ans": 3, "expl": "CNATRA Ground Ops video: Clearance Delivery"}, {"q": "Which radio/channel is this call made on? “KARP 101 ready to copy.”", "opts": ["Ch 29 Pri", "Clearance Delivery", "Ch 12 Pri", "Ch 3 Pri"], "ans": 1, "expl": "CNATRA Ground Ops video: Clearance Delivery"}, {"q": "Which radio/channel is this call made on? “KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.”", "opts": ["Ground", "Ch 2 Pri", "Clearance Delivery", "Ch 5 Pri (237.85)"], "ans": 2, "expl": "CNATRA Ground Ops video: Clearance Delivery"}, {"q": "Which radio/channel is this call made on? “KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.”", "opts": ["Ch 30 Pri", "Clearance Delivery", "Ch 5 Pri (237.85)", "Ch 2 Pri"], "ans": 1, "expl": "CNATRA Ground Ops video: Clearance Delivery"}, {"q": "Which radio/channel is this call made on? “KARP 101, readback correct.”", "opts": ["Ch 13 Pri", "Ch 3 Pri", "Ch 4 Pri", "Clearance Delivery"], "ans": 3, "expl": "CNATRA Ground Ops video: Clearance Delivery"}, {"q": "Which radio/channel is this call made on? “McCain ground, KARP 101, single taxi with information Charlie.”", "opts": ["Ch 2 Pri", "Ground", "Ch 5 Pri (237.85)", "Ch 30 Pri"], "ans": 1, "expl": "CNATRA Ground Ops video: Ground"}, {"q": "Which radio/channel is this call made on? “KARP 101, ground, taxi 1 right via alpha bravo.”", "opts": ["Clearance Delivery", "Ch 2 Pri", "Ch 4 Pri", "Ground"], "ans": 3, "expl": "CNATRA Ground Ops video: Ground"}, {"q": "Which radio/channel is this call made on? “101, taxi 1 right via alpha bravo.”", "opts": ["Ch 29 Pri", "Clearance Delivery", "Ground", "Ch 13 Pri"], "ans": 2, "expl": "CNATRA Ground Ops video: Ground"}, {"q": "Which radio/channel is this call made on? “Base 01, out of chocks.”", "opts": ["Ch 29 Pri", "Ch 4 Pri", "Base", "Ch 12 Pri"], "ans": 2, "expl": "CNATRA Ground Ops video: Base"}, {"q": "Which radio/channel is this call made on? “Have a good flight.”", "opts": ["Ch 13 Pri", "Ground", "Ch 2 Pri", "Base"], "ans": 3, "expl": "CNATRA Ground Ops video: Base"}, {"q": "Which radio/channel is this call made on? “[McCain Ground], KARP 101, single, clear the active, taxi my line.”", "opts": ["Ch 13 Pri", "Ground", "Ch 12 Pri", "Ch 4 Pri"], "ans": 1, "expl": "CNATRA Ground Ops video: Ground"}, {"q": "Which radio/channel is this call made on? “KARP 101, ground, taxi to the line via alpha.”", "opts": ["Ch 13 Pri", "Ch 5 Pri (237.85)", "Ground", "Base"], "ans": 2, "expl": "CNATRA Ground Ops video: Ground"}, {"q": "Which radio/channel is this call made on? “101 to the line via alpha.”", "opts": ["Ch 5 Pri (237.85)", "Maintenance", "Ch 13 Pri", "Ground"], "ans": 3, "expl": "CNATRA Ground Ops video: Ground"}, {"q": "Which radio/channel is this call made on? “Base, 01, safe on deck.”", "opts": ["Maintenance", "Ch 5 Pri (237.85)", "Base", "Ch 13 Pri"], "ans": 2, "expl": "CNATRA Ground Ops video: Base"}, {"q": "Which radio/channel is this call made on? “Maintenance, 01, in and up.”", "opts": ["Ch 5 Pri (237.85)", "Maintenance", "Ch 13 Pri", "Base"], "ans": 1, "expl": "CNATRA Ground Ops video: Maintenance"}, {"q": "CNATRA video: clearance squawk:", "opts": ["4230", "4320", "513X", "1200"], "ans": 0, "expl": "CNATRA Ground Ops video: Departure button four, squawk 4230."}, {"q": "CNATRA video: departure in the clearance:", "opts": ["runway heading to 5,000, expect 230 in 5", "UNION 1 departure, runway heading to 7,000 feet, expect block 9 to 230, 10 minutes after departure", "UNION 1, climb and maintain 10,000", "KINGS 3 Departure RICTO transition"], "ans": 1, "expl": "CNATRA Ground Ops video: you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure."}, {"q": "CNATRA video: departure frequency in the clearance:", "opts": ["button 12", "Departure button four", "button 3", "button 13"], "ans": 1, "expl": "CNATRA Ground Ops video: Departure button four (same as Kingsville Comm Script ‘Departure Local button 4’)."}, {"q": "CNATRA video: when do you call Ground from final checks?", "opts": ["If leaving final checks and not going to marshall", "After the takeoff checklist", "Only from marshall", "Always from the line"], "ans": 0, "expl": "CNATRA Ground Ops video: If leaving final checks and not going to marshall, call ground."}, {"q": "CNATRA video: Base check-out wording vs Kingsville sources:", "opts": ["Video “Base 01, out of chocks.” / Script “STRIKE, 2XX out of chocks.” / Doc “Base, 01 Taxi”", "all say “out of chocks”", "Video “Base, 01 taxi”", "all say “Base, 01 Taxi”"], "ans": 0, "expl": "CNATRA Ground Ops video: Base 01, out of chocks."}, {"q": "CNATRA video: Base call on landing:", "opts": ["“Base, 01, safe on deck.” → “Welcome back.”", "“Base, 01 in chocks” → “Roger”", "“Base, 01 on deck” → “01, welcome back”", "“Base, 01 RTB” → “Welcome back”"], "ans": 0, "expl": "CNATRA Ground Ops video: Base, 01, safe on deck. / Welcome back. (Doc: “Base, 01 on deck” / “01, welcome back”)"}, {"q": "CNATRA video: Maintenance call for parking:", "opts": ["“Line, 01 in chocks” → “park alpha”", "“Maintenance, 01, in and up.” → “01, park bravo.”", "no maintenance call", "“Maintenance, 01, on deck” → “Roger”"], "ans": 1, "expl": "CNATRA Ground Ops video: Call maintenance and note your assigned row for parking. Maintenance, 01, in and up. / 01, park bravo."}, {"q": "CNATRA video: when are both radios turned off?", "opts": ["Once back in the line area with all radio calls complete", "Before taxi back", "After engine shutdown", "At the hold short"], "ans": 0, "expl": "CNATRA Ground Ops video: Once back in the line area with all radio calls complete, turn off both radios."}, {"q": "CNATRA video: ATIS information in the Ground call:", "opts": ["information Charlie", "no ATIS", "information Bravo", "information Alpha"], "ans": 0, "expl": "CNATRA Ground Ops video: McCain ground, KARP 101, single taxi with information Charlie."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

@@ -876,7 +876,7 @@ A: half-deflection about neutral at one cycle every two seconds until HYD1 reach
 A: there is an actuator failure and the a/c is down (tell maintenance)
 > Doc (Checklist walkthrough): If it remains to one side or the other, there is an actuator failure and the a/c is down (tell maintenance).
 
-**[7. After Landing, Taxi Back & Shutdown]** Q: Engine Shutdown order after Fuel Shutoff Handle - Pull:
+**[7. After Landing, Taxi Back & Shutdown]** Q: Per the Doc, Engine Shutdown order after Fuel Shutoff Handle - Pull (CNATRA video puts Engine Switch OFF before Fuel Shutoff PULL):
 A: Engine Switch - Off, Contr Aug - SBI, Pinky Switch - Off
 > Doc (Checklist walkthrough): 6. Fuel Shutoff Handle - Pull 7. Engine Switch - Off 8. Contr Aug - SBI 9. Pinky Switch - Off (Middle Position)
 
@@ -891,3 +891,195 @@ A: Batt Switches - Off, Seat/MDC - Pinned
 **[7. After Landing, Taxi Back & Shutdown]** Q: Last thing you look for before walking away:
 A: that the seat is safed
 > Doc (Checklist walkthrough): Last thing you look for before walking away is that the seat is safed.
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Pre Start step 1:
+A: BATT 1 & BATT 2....ON — ALTERNATE EACH BATTERY TO CHECK INDIVIDUAL VOLTAGE; 24-29VDC
+> CNATRA Ground Ops video (on-screen checklist): 1. BATT 1 & BATT 2....ON ALTERNATE EACH BATTERY TO CHECK INDIVIDUAL VOLTAGE; 24-29VDC 2. MASTER ALERT LT....OUT 3. BOTH BATT SWITCHES....ON
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Pre Start step 2 (after the battery check):
+A: MASTER ALERT LT....OUT
+> CNATRA Ground Ops video (on-screen checklist): 2. MASTER ALERT LT....OUT
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Pre Start: USB handling under BOTH BATT SWITCHES ON:
+A: INSERT USB INTO USB SOCKET • UPLOAD/USB UPLOAD/SELECT AT WYPT • WHEN UPLOAD COMPLETED, STOW USB
+> CNATRA Ground Ops video (on-screen checklist): 3. BOTH BATT SWITCHES....ON • INSERT USB INTO USB SOCKET • UPLOAD/USB UPLOAD/SELECT AT WYPT • WHEN UPLOAD COMPLETED, STOW USB
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Pre Start items 6-7:
+A: ADVISORY LIGHTS....SKID LT ON; FIRE LIGHT....OUT
+> CNATRA Ground Ops video (on-screen checklist): 6. ADVISORY LIGHTS....SKID LT ON 7. FIRE LIGHT....OUT
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Warning/caution lights that must be ON before start (CNATRA panel graphic, highlighted):
+A: HYD, CANOPY, OXYGEN, OIL PRES, GENERATOR, HYD FAIL, LP PUMP, F PRES, SKID
+> CNATRA Ground Ops video (on-screen checklist): 9. WARNING/CAUTION LIGHTS (ENSURE THE FOLLOWING ON) — matches the Doc's “441 (Oxygen, Generator, Oil Press, Hyd Fail; Hyd, Canopy, LP Pump, F Pres; Skid)”
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Pre Start step 10 (after “LIGHTS AND TONES”):
+A: LTS/TONES/AOA INDXERS....TEST
+> CNATRA Ground Ops video (on-screen checklist): F/C: “LIGHTS AND TONES” 10. LTS/TONES/AOA INDXERS....TEST 11. HYD1/HYD2/BRAKE PRESS....0/0/1250
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: HYD1 / HYD2 / BRAKE PRESS before start:
+A: 0/0/1250
+> CNATRA Ground Ops video (on-screen checklist): 11. HYD1/HYD2/BRAKE PRESS....0/0/1250
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Pre Start: last two items:
+A: NWS CAUTION LIGHT....CHECK ON; VERIFY THROTTLE OFF
+> CNATRA Ground Ops video (on-screen checklist): 20. PADDLE SWITCH....PRESS/RELEASE 21. NWS CAUTION LIGHT....CHECK ON 22. VERIFY THROTTLE OFF
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Pre Start: HELMET VISOR / CANOPY:
+A: HELMET VISOR....DOWN; CANOPY....AS DESIRED
+> CNATRA Ground Ops video (on-screen checklist): 18. HELMET VISOR....DOWN 19. CANOPY....AS DESIRED
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Engine Start: THROTTLE....IDLE at:
+A: 17-20% N2 • MONITOR ENG INST/OIL PRES LT OUT
+> CNATRA Ground Ops video (on-screen checklist): 3. THROTTLE....IDLE @ 17-20% N2 • MONITOR ENG INST/OIL PRES LT OUT
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Narration: when do you advance the throttle to idle at 17-20% N2?
+A: when the PC gives the run-up signal
+> CNATRA Ground Ops video (narration): At 17 to 20 percent N2, and when the PC gives the run-up signal, advance the throttle to idle
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Engine Start: item 9:
+A: IFF....STBY
+> CNATRA Ground Ops video (on-screen checklist): 9. IFF....STBY
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Engine Start item order after voltmeter:
+A: OBOGS/ANTI-G SWITCH ON → HUD/MFDS ON/SET BRIGHTNESS → UHF/VHF RADIOS ON → VOR/ILS/TACAN ON/AS DESIRED → IFF STBY
+> CNATRA Ground Ops video (on-screen checklist): 4. VOLTMETER ✓27-29V 5. OBOGS/ANTI-G SWITCH....ON 6. HUD/MFDS....ON/SET BRIGHTNESS 7. UHF/VHF RADIOS....ON 8. VOR/ILS/TACAN....ON/AS DESIRED 9. IFF....STBY
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Post Start step 6 (THROTTLE IDLE) expected indications:
+A: EGT DROP ~50°C/~3%RPM RISE/RPM±2% OF IDLE (BLEED VALVE CLOSED)
+> CNATRA Ground Ops video (on-screen checklist): 6. THROTTLE....IDLE • EGT DROP ~50°C/~3%RPM RISE/RPM±2% OF IDLE (BLEED VALVE CLOSED)
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Fuel Ctrl switch back to NORM — expected:
+A: (LT OUT, PREVIOUS RPM)
+> CNATRA Ground Ops video (on-screen checklist): 5. FUEL CTRL SWITCH....NORM • (LT OUT, PREVIOUS RPM)
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: If ALN quality is not decrementing (CNATRA):
+A: VERIFY A/C PRESENT POS (WYPT 0) • WYP ZERO ENTER • RST OPTION SELECT • AFTER 50 SEC VERIFY QUAL DECREMENTING
+> CNATRA Ground Ops video (on-screen checklist): - IF ALN QUALITY NOT DECREMENTING •VERIFY A/C PRESENT POS....WYPT 0 •WYP ZERO....ENTER •RST OPTION....SELECT •AFTER 50 SEC..VERIFY QUAL DECREMENTING
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CTRL AUG BIT precondition (CNATRA):
+A: IF QUAL DECREMENTING AND 4 SATS
+> CNATRA Ground Ops video (on-screen checklist): 9. IF QUAL DECREMENTING AND 4 SATS CTRL AUG BIT....PERFORM
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CTRL AUG BIT steps (CNATRA):
+A: PADDLE SW PRESS/CAUG LT ON → CONT AUG SW RESET/C AUG OUT → CONTR AUG SW SBI TO ALL → CAUG LT ON, OUT IN 120SEC MAX
+> CNATRA Ground Ops video (on-screen checklist): •PADDLE SW....PRESS/CAUG LT ON •CONT AUG SW....RESET/C AUG OUT •CONTR AUG SW....SBI TO ALL •CAUG LT ON, OUT IN 120SEC MAX
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Pitch trim range check (CNATRA):
+A: -3 TO +8°
+> CNATRA Ground Ops video (on-screen checklist): 10. STAB TRIM....CHECK • PITCH TRIM....-3 TO +8° • STBY STAB TRIM....CHECK • PITCH TRIM....2-3° NOSE UP
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Rudder trim is checked/set neutral:
+A: WHEN C AUG IBIT FINISHED/LT OUT
+> CNATRA Ground Ops video (on-screen checklist): 12. WHEN C AUG IBIT FINISHED/LT OUT • RUD TRIM....CHECK/SET NEUTRAL
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Post Start 14 LAW (CNATRA) and the call:
+A: LAW....BIT CHECK/SET — SNA: “GOOD TONE, GOOD BIT”
+> CNATRA Ground Ops video (on-screen checklist): 14. LAW....BIT CHECK/SET SNA: “GOOD TONE, GOOD BIT” 15. BINGO....SET
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Post Start STBY ALT / HUD ALT tolerances:
+A: STBY ALT within 75' of FLD ELEV; HUD ALT within 10' FLD ELEV (else adjust BARO DLTA per PCL)
+> CNATRA Ground Ops video (on-screen checklist): 16. STBY ALT....SET BARO PRESS • CHECK W/IN 75' OF FLD ELEV 17. HUD ALT....✓ W/IN 10' FLD ELEV • IF NOT W/IN 10', ADJUST BARO DLTA PER PCL
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Post Start items 18-20 (CNATRA):
+A: BIT DISPLAY....NOTE DEGDS; WAYPOINTS....PROGRAM; NAV SOURCE....SELECT
+> CNATRA Ground Ops video (on-screen checklist): 18. BIT DISPLAY....NOTE DEGDS 19. WAYPOINTS....PROGRAM 20. NAV SOURCE....SELECT
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: OBOGS INTEGRITY GROUND CHECK steps:
+A: O2 MASK(S) ON • OBOGS FLOW SELECTOR(S) ON • ADR EVENT RECORD BUTTON PRESS
+> CNATRA Ground Ops video (on-screen checklist): 22. OBOGS INTEGRITY GROUND CHECK: • O2 MASK(S)....ON • OBOGS FLOW SELECTOR(S)....ON • ADR EVENT RECORD BUTTON....PRESS
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: OBOGS integrity check: if the O2 light illuminates within ___, perform the ___:
+A: 60 SEC; OXYGEN WARNING LIGHT EP
+> CNATRA Ground Ops video (on-screen checklist): IF O2 LT ILLUMINATES W/IN 60 SEC PERFORM OXYGEN WARNING LIGHT EP
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: When is the OBOGS integrity ground check done (narration)?
+A: Once moving (taxiing out)
+> CNATRA Ground Ops video (narration): Once moving, execute an OBOGS integrity ground check, making sure to press the ADR event record button.
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: OBOGS integrity ICS exchange (narration):
+A: “Mask on, flow on in the front. OBOGS integrity check.” → “Mask on, flow on in back.”
+> CNATRA Ground Ops video (narration): Mask on, flow on in the front. OBOGS integrity check. / Mask on, flow on in back.
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Post Start item 23 (last):
+A: ANTI-G TEST....PRESS
+> CNATRA Ground Ops video (on-screen checklist): 23. ANTI-G TEST....PRESS
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: PC checklist step 3 (CNATRA) when PC signals:
+A: SPEEDBRAKES EXTEND • FLAPS/SLAT LEVER FULL • HOOK DOWN • LBAR AS REQ'D
+> CNATRA Ground Ops video (on-screen checklist): 3. SPEEDBRAKES....EXTEND •FLAPS/SLAT LEVER....FULL • HOOK....DOWN • LBAR....AS REQ'D
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: PC canopy call/response (CNATRA):
+A: F/C: “CANOPY” R/C: “CLEAR”
+> CNATRA Ground Ops video (on-screen checklist): - WHEN PLANE CAPTAIN SIGNALS: F/C: “CANOPY” R/C: “CLEAR” 7. CANOPY....CLOSE (Doc says R/C “Rail Clear”)
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Narration: taxi & instrument checks prior to FAM solo are done:
+A: in marshall (in later stages, on the roll)
+> CNATRA Ground Ops video (narration): Prior to FAM solo, these will be done in marshall. However, in later stages, they will be done on the roll.
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Taxi/Instrument checklist first three:
+A: PARKING BRAKE RELEASE • WHEEL BRAKES CHECK • NWS CHECK
+> CNATRA Ground Ops video (on-screen checklist): 1. PARKING BRAKE....RELEASE 2. WHEEL BRAKES....CHECK 3. NWS....CHECK
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Taxi/Instrument: CLOCK....
+A: SET/RUNNING
+> CNATRA Ground Ops video (on-screen checklist): • CLOCK....SET/RUNNING
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Taxi checks complete call (CNATRA on-screen):
+A: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”
+> CNATRA Ground Ops video (on-screen checklist): “ALT SET , VOR SET , TCN SET , IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE” (Doc adds indicating ___ on standby/glass)
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Takeoff checklist: CANOPY:
+A: CLOSED/LOCKED/LT OUT
+> CNATRA Ground Ops video (on-screen checklist): 5. CANOPY....CLOSED/LOCKED/LT OUT (narration adds “arrows align”; Doc adds “Seal Inflated”)
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Narration R/C harness response adds:
+A: “attached 8 points, pins removed, selector set both, armed in back”
+> CNATRA Ground Ops video (narration): I'm attached 8 points, pins removed, selector set both, armed in back.
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA After Landing step 6 sub-items:
+A: HUD OFF • PITOT HEAT OFF • STROBES OFF • TAXI LIGHT AS REQ'D • VCR SWITCH OFF
+> CNATRA Ground Ops video (on-screen checklist): 6. NAV/IFF EQUIP....OFF • HUD....OFF • PITOT HEAT....OFF • STROBES....OFF • TAXI LIGHT....AS REQ'D • VCR SWITCH....OFF
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Before shutdown exceedance call (narration):
+A: “No exceedances, no overflows, good jet in the front.” → “Good jet in the back.”
+> CNATRA Ground Ops video (narration): No exceedances, no overflows, good jet in the front. / Good jet in the back.
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: CNATRA Before Engine Shutdown order:
+A: BIT PAGE • IBIT DEGD EQUIP/RECORD • LAW OFF • MAINT PAGE • EXCEEDENCE CHECK • RIGHT MFD OFF • RADIOS OFF • VCR OFF • STBY ATT GYRO CAGED • IDLE RPM
+> CNATRA Ground Ops video (on-screen checklist): 1. BIT PAGE 2. PERFORM IBIT ON DEGD EQUIP....RECORD 3. LAW....OFF 4. MAINT PAGE 5. AIRCRAFT EXCEEDENCE 6. RIGHT MFD 7. UHF/VHF RADIOS 8. VCR SWITCH 9. STBY ATT GYRO....CAGED (OFF FLAG) 10. IDLE RPM....± 2% OF NATOPS
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Idle RPM on taxi back (CNATRA):
+A: ± 2% OF NATOPS
+> CNATRA Ground Ops video (on-screen checklist): 10. IDLE RPM....± 2% OF NATOPS
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Engine Shutdown: items at 30 SECONDS AFTER PRK BRK SET:
+A: GINA POWER OFF; LEFT MFD OFF
+> CNATRA Ground Ops video (on-screen checklist): - 30 SECONDS AFTER PRK BRK SET: 6. GINA POWER....OFF 7. LEFT MFD....OFF
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Engine Shutdown: items at 45 SECONDS AFTER THROTTLE OFF (CNATRA order):
+A: ENGINE SWITCH (F/C ONLY) OFF → FUEL SHUTOFF HANDLE PULL → POS/FORM LIGHTS OFF → CHECK BRK PRESS ACCUM MIN 2700PSI
+> CNATRA Ground Ops video (on-screen checklist): - 45 SECONDS AFTER THROTTLE OFF: 8. ENGINE SWITCH (F/C ONLY)....OFF 9. FUEL SHUTOFF HANDLE....PULL 10. POS/FORM LIGHTS....OFF 11. CHECK BRK PRESS ACCUM....MIN 2700PSI (Doc has Fuel Shutoff first, then Engine Switch)
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Narration: at 45 seconds after throttle off, in the forward cockpit turn off:
+A: the engine switch as well as anti-skid switch
+> CNATRA Ground Ops video (narration): Forty-five seconds after throttle off, turn the engine switch as well as anti-skid switch off in the forward cockpit.
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: PCU (control stick) check timing (CNATRA):
+A: 50 SECONDS AFTER THROTTLE OFF
+> CNATRA Ground Ops video (on-screen checklist): - 50 SECONDS AFTER THROTTLE OFF: 12. CTRL STICK...1/2 Lat Defection at 1 cycle per 2 secs. Neutalize when HYD1 reaches 0 PSI
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Engine Shutdown items 13-14 (CNATRA):
+A: PINKY SWITCH OFF; CONSOLE/MIP LITS OFF
+> CNATRA Ground Ops video (on-screen checklist): 13. PINKY SWITCH....OFF 14. CONSOLE/MIP LITS....OFF
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Engine Shutdown: MDL / VCR TAPE / USB:
+A: MDL REMOVE • VCR TAPE REMOVE • USB/DOWNLOAD INSERT/INITIATE • USB DEVICE UNPLUG/STOW • CONTROL PANEL SECURE COVER
+> CNATRA Ground Ops video (on-screen checklist): 15. MDL....REMOVE VCR TAPE....REMOVE 17. USB/DOWNLOAD....INSERT/INITIATE USB DEVICE....UNPLUG/STOW CONTROL PANEL....SECURE COVER
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Final two CNATRA shutdown items:
+A: BATT SWITCHES (2&2) OFF; SEAT/MDC PINNED
+> CNATRA Ground Ops video (on-screen checklist): 20. BATT SWITCHES (2&2)....OFF 21. SEAT/MDC....PINNED
+
+**[8. CNATRA Ground Ops Video — Official Checklists]** Q: Narration: before the throttle-off call, the front seat says (shutdown):
+A: “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” → “Roger.”
+> CNATRA Ground Ops video (narration): All my equipment's off and back, I'll be clear of canopy and o-bogs on shutdown. / Roger. (ASR; Doc: “Throttle Off, Canopy” R/C “Clear”)

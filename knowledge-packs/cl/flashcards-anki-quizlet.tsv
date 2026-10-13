@@ -217,7 +217,55 @@ Gouge: RPM decayed to about ___ ≈ 45 seconds:	7%
 Brake Pressure Accumulator minimum at shutdown:	2700 psi
 PCU check: cycle the stick laterally:	half-deflection about neutral at one cycle every two seconds until HYD1 reaches 0 psi
 If the stick stays to one side after HYD1 is depleted:	there is an actuator failure and the a/c is down (tell maintenance)
-Engine Shutdown order after Fuel Shutoff Handle - Pull:	Engine Switch - Off, Contr Aug - SBI, Pinky Switch - Off
+Per the Doc, Engine Shutdown order after Fuel Shutoff Handle - Pull (CNATRA video puts Engine Switch OFF before Fuel Shutoff PULL):	Engine Switch - Off, Contr Aug - SBI, Pinky Switch - Off
 Wipeout before PCU check: you yell / lineman responds:	“wipeout” / “wipeout”
 Last two shutdown items:	Batt Switches - Off, Seat/MDC - Pinned
 Last thing you look for before walking away:	that the seat is safed
+CNATRA Pre Start step 1:	BATT 1 & BATT 2....ON — ALTERNATE EACH BATTERY TO CHECK INDIVIDUAL VOLTAGE; 24-29VDC
+CNATRA Pre Start step 2 (after the battery check):	MASTER ALERT LT....OUT
+CNATRA Pre Start: USB handling under BOTH BATT SWITCHES ON:	INSERT USB INTO USB SOCKET • UPLOAD/USB UPLOAD/SELECT AT WYPT • WHEN UPLOAD COMPLETED, STOW USB
+CNATRA Pre Start items 6-7:	ADVISORY LIGHTS....SKID LT ON; FIRE LIGHT....OUT
+Warning/caution lights that must be ON before start (CNATRA panel graphic, highlighted):	HYD, CANOPY, OXYGEN, OIL PRES, GENERATOR, HYD FAIL, LP PUMP, F PRES, SKID
+CNATRA Pre Start step 10 (after “LIGHTS AND TONES”):	LTS/TONES/AOA INDXERS....TEST
+HYD1 / HYD2 / BRAKE PRESS before start:	0/0/1250
+CNATRA Pre Start: last two items:	NWS CAUTION LIGHT....CHECK ON; VERIFY THROTTLE OFF
+CNATRA Pre Start: HELMET VISOR / CANOPY:	HELMET VISOR....DOWN; CANOPY....AS DESIRED
+CNATRA Engine Start: THROTTLE....IDLE at:	17-20% N2 • MONITOR ENG INST/OIL PRES LT OUT
+Narration: when do you advance the throttle to idle at 17-20% N2?	when the PC gives the run-up signal
+CNATRA Engine Start: item 9:	IFF....STBY
+CNATRA Engine Start item order after voltmeter:	OBOGS/ANTI-G SWITCH ON → HUD/MFDS ON/SET BRIGHTNESS → UHF/VHF RADIOS ON → VOR/ILS/TACAN ON/AS DESIRED → IFF STBY
+CNATRA Post Start step 6 (THROTTLE IDLE) expected indications:	EGT DROP ~50°C/~3%RPM RISE/RPM±2% OF IDLE (BLEED VALVE CLOSED)
+Fuel Ctrl switch back to NORM — expected:	(LT OUT, PREVIOUS RPM)
+If ALN quality is not decrementing (CNATRA):	VERIFY A/C PRESENT POS (WYPT 0) • WYP ZERO ENTER • RST OPTION SELECT • AFTER 50 SEC VERIFY QUAL DECREMENTING
+CTRL AUG BIT precondition (CNATRA):	IF QUAL DECREMENTING AND 4 SATS
+CTRL AUG BIT steps (CNATRA):	PADDLE SW PRESS/CAUG LT ON → CONT AUG SW RESET/C AUG OUT → CONTR AUG SW SBI TO ALL → CAUG LT ON, OUT IN 120SEC MAX
+Pitch trim range check (CNATRA):	-3 TO +8°
+Rudder trim is checked/set neutral:	WHEN C AUG IBIT FINISHED/LT OUT
+Post Start 14 LAW (CNATRA) and the call:	LAW....BIT CHECK/SET — SNA: “GOOD TONE, GOOD BIT”
+Post Start STBY ALT / HUD ALT tolerances:	STBY ALT within 75' of FLD ELEV; HUD ALT within 10' FLD ELEV (else adjust BARO DLTA per PCL)
+Post Start items 18-20 (CNATRA):	BIT DISPLAY....NOTE DEGDS; WAYPOINTS....PROGRAM; NAV SOURCE....SELECT
+OBOGS INTEGRITY GROUND CHECK steps:	O2 MASK(S) ON • OBOGS FLOW SELECTOR(S) ON • ADR EVENT RECORD BUTTON PRESS
+OBOGS integrity check: if the O2 light illuminates within ___, perform the ___:	60 SEC; OXYGEN WARNING LIGHT EP
+When is the OBOGS integrity ground check done (narration)?	Once moving (taxiing out)
+OBOGS integrity ICS exchange (narration):	“Mask on, flow on in the front. OBOGS integrity check.” → “Mask on, flow on in back.”
+Post Start item 23 (last):	ANTI-G TEST....PRESS
+PC checklist step 3 (CNATRA) when PC signals:	SPEEDBRAKES EXTEND • FLAPS/SLAT LEVER FULL • HOOK DOWN • LBAR AS REQ'D
+PC canopy call/response (CNATRA):	F/C: “CANOPY” R/C: “CLEAR”
+Narration: taxi & instrument checks prior to FAM solo are done:	in marshall (in later stages, on the roll)
+Taxi/Instrument checklist first three:	PARKING BRAKE RELEASE • WHEEL BRAKES CHECK • NWS CHECK
+Taxi/Instrument: CLOCK....	SET/RUNNING
+Taxi checks complete call (CNATRA on-screen):	“ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”
+CNATRA Takeoff checklist: CANOPY:	CLOSED/LOCKED/LT OUT
+Narration R/C harness response adds:	“attached 8 points, pins removed, selector set both, armed in back”
+CNATRA After Landing step 6 sub-items:	HUD OFF • PITOT HEAT OFF • STROBES OFF • TAXI LIGHT AS REQ'D • VCR SWITCH OFF
+Before shutdown exceedance call (narration):	“No exceedances, no overflows, good jet in the front.” → “Good jet in the back.”
+CNATRA Before Engine Shutdown order:	BIT PAGE • IBIT DEGD EQUIP/RECORD • LAW OFF • MAINT PAGE • EXCEEDENCE CHECK • RIGHT MFD OFF • RADIOS OFF • VCR OFF • STBY ATT GYRO CAGED • IDLE RPM
+Idle RPM on taxi back (CNATRA):	± 2% OF NATOPS
+Engine Shutdown: items at 30 SECONDS AFTER PRK BRK SET:	GINA POWER OFF; LEFT MFD OFF
+Engine Shutdown: items at 45 SECONDS AFTER THROTTLE OFF (CNATRA order):	ENGINE SWITCH (F/C ONLY) OFF → FUEL SHUTOFF HANDLE PULL → POS/FORM LIGHTS OFF → CHECK BRK PRESS ACCUM MIN 2700PSI
+Narration: at 45 seconds after throttle off, in the forward cockpit turn off:	the engine switch as well as anti-skid switch
+PCU (control stick) check timing (CNATRA):	50 SECONDS AFTER THROTTLE OFF
+Engine Shutdown items 13-14 (CNATRA):	PINKY SWITCH OFF; CONSOLE/MIP LITS OFF
+Engine Shutdown: MDL / VCR TAPE / USB:	MDL REMOVE • VCR TAPE REMOVE • USB/DOWNLOAD INSERT/INITIATE • USB DEVICE UNPLUG/STOW • CONTROL PANEL SECURE COVER
+Final two CNATRA shutdown items:	BATT SWITCHES (2&2) OFF; SEAT/MDC PINNED
+Narration: before the throttle-off call, the front seat says (shutdown):	“All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” → “Roger.”

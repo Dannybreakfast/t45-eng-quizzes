@@ -150,3 +150,51 @@
 13. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “Throttle Off, Canopy”  _(Doc)_
 14. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “Clear”  _(Doc)_
 15. **Pilot → Lineman** [Outside (to lineman)] — Give lineman wipeout signal and yell wipeout. They will respond by yelling wipeout.  _(Doc)_
+
+## Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls
+
+1. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)  _(CNATRA Ground Ops video)_
+2. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)  _(CNATRA Ground Ops video)_
+3. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “LIGHTS AND TONES”  _(CNATRA Ground Ops video)_
+4. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “THROTTLE OFF, GTS”  _(CNATRA Ground Ops video)_
+5. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “CLEAR”  _(CNATRA Ground Ops video)_
+6. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)  _(CNATRA Ground Ops video)_
+7. **Pilot → Clearance Delivery** [Clearance Delivery] — Clearance delivery, KARP 101 single, clearance on request.  _(CNATRA Ground Ops video)_
+8. **Clearance Delivery → Pilot** [Clearance Delivery] — KARP 101 clearance on request.  _(CNATRA Ground Ops video)_
+9. **Clearance Delivery → Pilot** [Clearance Delivery] — KARP 101, I have your clearance [advisory] ready to copy.  _(CNATRA Ground Ops video)_
+10. **Pilot → Clearance Delivery** [Clearance Delivery] — KARP 101 ready to copy.  _(CNATRA Ground Ops video)_
+11. **Clearance Delivery → Pilot** [Clearance Delivery] — KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.  _(CNATRA Ground Ops video)_
+12. **Pilot → Clearance Delivery** [Clearance Delivery] — KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.  _(CNATRA Ground Ops video)_
+13. **Clearance Delivery → Pilot** [Clearance Delivery] — KARP 101, readback correct.  _(CNATRA Ground Ops video)_
+14. **Pilot (front) → Rear cockpit (R/C)** [ICS] — SNA: “GOOD TONE, GOOD BIT”  _(CNATRA Ground Ops video)_
+15. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “WATCH YOUR KNEES”  _(CNATRA Ground Ops video)_
+16. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “CLEAR”  _(CNATRA Ground Ops video)_
+17. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “CANOPY”  _(CNATRA Ground Ops video)_
+18. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “CLEAR” (Doc: “Rail Clear”)  _(CNATRA Ground Ops video)_
+19. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “Mask on, flow on in the front. OBOGS integrity check.”  _(CNATRA Ground Ops video)_
+20. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “Mask on, flow on in back.”  _(CNATRA Ground Ops video)_
+21. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)  _(CNATRA Ground Ops video)_
+22. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”  _(CNATRA Ground Ops video)_
+23. **Pilot → McCain Ground** [Ground] — McCain ground, KARP 101, single taxi with information Charlie.  _(CNATRA Ground Ops video)_
+24. **McCain Ground → Pilot** [Ground] — KARP 101, ground, taxi 1 right via alpha bravo.  _(CNATRA Ground Ops video)_
+25. **Pilot → McCain Ground** [Ground] — 101, taxi 1 right via alpha bravo.  _(CNATRA Ground Ops video)_
+26. **Pilot → Base** [Base] — Base 01, out of chocks.  _(CNATRA Ground Ops video)_
+27. **Base → Pilot** [Base] — Have a good flight.  _(CNATRA Ground Ops video)_
+28. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”  _(CNATRA Ground Ops video)_
+29. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)  _(CNATRA Ground Ops video)_
+30. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”  _(CNATRA Ground Ops video)_
+31. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “READY TO SAFE IN FRONT”  _(CNATRA Ground Ops video)_
+32. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “SAFE IN BACK”  _(CNATRA Ground Ops video)_
+33. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “SAFE IN FRONT”  _(CNATRA Ground Ops video)_
+34. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “No exceedances, no overflows, good jet in the front.”  _(CNATRA Ground Ops video)_
+35. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “Good jet in the back.”  _(CNATRA Ground Ops video)_
+36. **Pilot → McCain Ground** [Ground] — [McCain Ground], KARP 101, single, clear the active, taxi my line.  _(CNATRA Ground Ops video)_
+37. **McCain Ground → Pilot** [Ground] — KARP 101, ground, taxi to the line via alpha.  _(CNATRA Ground Ops video)_
+38. **Pilot → McCain Ground** [Ground] — 101 to the line via alpha.  _(CNATRA Ground Ops video)_
+39. **Pilot → Base** [Base] — Base, 01, safe on deck.  _(CNATRA Ground Ops video)_
+40. **Base → Pilot** [Base] — Welcome back.  _(CNATRA Ground Ops video)_
+41. **Pilot → Maintenance** [Maintenance] — Maintenance, 01, in and up.  _(CNATRA Ground Ops video)_
+42. **Maintenance → Pilot** [Maintenance] — 01, park bravo.  _(CNATRA Ground Ops video)_
+43. **Pilot → Maintenance** [Maintenance] — 01, park bravo.  _(CNATRA Ground Ops video)_
+44. **Pilot (front) → Rear cockpit (R/C)** [ICS] — “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)  _(CNATRA Ground Ops video)_
+45. **Rear cockpit (R/C) → Pilot (front)** [ICS] — “Roger.”  _(CNATRA Ground Ops video)_

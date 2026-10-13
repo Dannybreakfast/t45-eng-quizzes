@@ -160,3 +160,56 @@ Rear cockpit (R/C) (ICS): “Clear”	Pilot: Give lineman wipeout signal and yel
 “GCA rollout on the right” call is not needed when:	you are already up BTN 3 upon landing
 Make the “on deck” Base call when:	while pulling off the runway
 Radios before turning off:	Put base in both radios prior to turning them off
+Pilot (front) (ICS): “ICS CHECK, SWITCHES SET, NORM, (FUEL)” (narration: “ICS check, switches set, norm, 2.9”)	Rear cockpit (R/C): “LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)
+Rear cockpit (R/C) (ICS): “LOUD & CLEAR, SWITCHES SET, NORM, BOTH, (FUEL)” (narration: “Loud and clear, switches set, norm, both, 2.9”)	Pilot (front): “LIGHTS AND TONES”
+Pilot (front) (ICS): “LIGHTS AND TONES”	Pilot (front): “THROTTLE OFF, GTS”
+Pilot (front) (ICS): “THROTTLE OFF, GTS”	Rear cockpit (R/C): “CLEAR”
+Rear cockpit (R/C) (ICS): “CLEAR”	Pilot (front): “No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)
+Pilot (front) (ICS): “No exceedances, no overflows, four sats, waiting on qual.” (slide: “NO EXCEEDENCE/OVERFLOW” “4 SATS/QUAL COUNTING DN”)	Pilot: Clearance delivery, KARP 101 single, clearance on request.
+Pilot (Clearance Delivery): Clearance delivery, KARP 101 single, clearance on request.	Clearance Delivery: KARP 101 clearance on request.
+Clearance Delivery (Clearance Delivery): KARP 101 clearance on request.	Clearance Delivery: KARP 101, I have your clearance [advisory] ready to copy.
+Clearance Delivery (Clearance Delivery): KARP 101, I have your clearance [advisory] ready to copy.	Pilot: KARP 101 ready to copy.
+Pilot (Clearance Delivery): KARP 101 ready to copy.	Clearance Delivery: KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.
+Clearance Delivery (Clearance Delivery): KARP 101, you're clear to area one via the UNION 1 departure. On departure, runway heading to 7,000 feet. Expect block 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.	Pilot: KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.
+Pilot (Clearance Delivery): KARP 101 is clear to area one via the UNION departure. Runway heading up to 7, expect 9 to 230, 10 minutes after departure. Departure button four, squawk 4230.	Clearance Delivery: KARP 101, readback correct.
+Clearance Delivery (Clearance Delivery): KARP 101, readback correct.	Pilot (front): SNA: “GOOD TONE, GOOD BIT”
+Pilot (front) (ICS): SNA: “GOOD TONE, GOOD BIT”	Pilot (front): “WATCH YOUR KNEES”
+Pilot (front) (ICS): “WATCH YOUR KNEES”	Rear cockpit (R/C): “CLEAR”
+Rear cockpit (R/C) (ICS): “CLEAR”	Pilot (front): “CANOPY”
+Pilot (front) (ICS): “CANOPY”	Rear cockpit (R/C): “CLEAR” (Doc: “Rail Clear”)
+Rear cockpit (R/C) (ICS): “CLEAR” (Doc: “Rail Clear”)	Pilot (front): “Mask on, flow on in the front. OBOGS integrity check.”
+Pilot (front) (ICS): “Mask on, flow on in the front. OBOGS integrity check.”	Rear cockpit (R/C): “Mask on, flow on in back.”
+Rear cockpit (R/C) (ICS): “Mask on, flow on in back.”	Pilot (front): “Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)
+Pilot (front) (ICS): “Taxi and instrument checks. Altimeter set 29.92, VOR set 110.10, TACAN set 56X, squawking 4230, standby.” (slide: “ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”)	Rear cockpit (R/C): “Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”
+Rear cockpit (R/C) (ICS): “Altimeter set 29.92, VOR 110.1, TACAN set 56X in back.”	Pilot: McCain ground, KARP 101, single taxi with information Charlie.
+Pilot (Ground): McCain ground, KARP 101, single taxi with information Charlie.	McCain Ground: KARP 101, ground, taxi 1 right via alpha bravo.
+McCain Ground (Ground): KARP 101, ground, taxi 1 right via alpha bravo.	Pilot: 101, taxi 1 right via alpha bravo.
+Pilot (Ground): 101, taxi 1 right via alpha bravo.	Pilot: Base 01, out of chocks.
+Pilot (Base): Base 01, out of chocks.	Base: Have a good flight.
+Base (Base): Have a good flight.	Pilot (front): “ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”
+Pilot (front) (ICS): “ATTACHED 8 POINTS, PINS REMOVED, READY TO ARM IN FRONT”	Rear cockpit (R/C): “ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)
+Rear cockpit (R/C) (ICS): “ATTACHED 8 POINTS, PINS REMOVED, ARMED IN BACK” (narration adds “selector set both”)	Pilot (front): “ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”
+Pilot (front) (ICS): “ARMED IN FRONT” “TAKEOFF CHECKS COMPLETE”	Pilot (front): “READY TO SAFE IN FRONT”
+Pilot (front) (ICS): “READY TO SAFE IN FRONT”	Rear cockpit (R/C): “SAFE IN BACK”
+Rear cockpit (R/C) (ICS): “SAFE IN BACK”	Pilot (front): “SAFE IN FRONT”
+Pilot (front) (ICS): “SAFE IN FRONT”	Pilot (front): “No exceedances, no overflows, good jet in the front.”
+Pilot (front) (ICS): “No exceedances, no overflows, good jet in the front.”	Rear cockpit (R/C): “Good jet in the back.”
+Rear cockpit (R/C) (ICS): “Good jet in the back.”	Pilot: [McCain Ground], KARP 101, single, clear the active, taxi my line.
+Pilot (Ground): [McCain Ground], KARP 101, single, clear the active, taxi my line.	McCain Ground: KARP 101, ground, taxi to the line via alpha.
+McCain Ground (Ground): KARP 101, ground, taxi to the line via alpha.	Pilot: 101 to the line via alpha.
+Pilot (Ground): 101 to the line via alpha.	Pilot: Base, 01, safe on deck.
+Pilot (Base): Base, 01, safe on deck.	Base: Welcome back.
+Base (Base): Welcome back.	Pilot: Maintenance, 01, in and up.
+Pilot (Maintenance): Maintenance, 01, in and up.	Maintenance: 01, park bravo.
+Maintenance (Maintenance): 01, park bravo.	Pilot: 01, park bravo.
+Pilot (Maintenance): 01, park bravo.	Pilot (front): “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)
+Pilot (front) (ICS): “All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” (ASR; partly unclear)	Rear cockpit (R/C): “Roger.”
+CNATRA video: clearance squawk:	4230
+CNATRA video: departure in the clearance:	UNION 1 departure, runway heading to 7,000 feet, expect block 9 to 230, 10 minutes after departure
+CNATRA video: departure frequency in the clearance:	Departure button four
+CNATRA video: when do you call Ground from final checks?	If leaving final checks and not going to marshall
+CNATRA video: Base check-out wording vs Kingsville sources:	Video “Base 01, out of chocks.” / Script “STRIKE, 2XX out of chocks.” / Doc “Base, 01 Taxi”
+CNATRA video: Base call on landing:	“Base, 01, safe on deck.” → “Welcome back.”
+CNATRA video: Maintenance call for parking:	“Maintenance, 01, in and up.” → “01, park bravo.”
+CNATRA video: when are both radios turned off?	Once back in the line area with all radio calls complete
+CNATRA video: ATIS information in the Ground call:	information Charlie

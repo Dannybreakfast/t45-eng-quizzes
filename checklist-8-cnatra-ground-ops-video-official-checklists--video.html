@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Checklist 8. CNATRA Ground Ops Video — Official Checklists — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Checklist 8. CNATRA Ground Ops Video — Official Checklists</h1>
+    <div class="meta">48 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 48</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Checklist 8. CNATRA Ground Ops Video — Official Checklists</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "CNATRA Pre Start step 1:", "opts": ["ICS....CHECK", "MASTER ALERT LT....OUT", "BATT 1 & BATT 2....ON — ALTERNATE EACH BATTERY TO CHECK INDIVIDUAL VOLTAGE; 24-29VDC", "BOTH BATT SWITCHES....ON"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 1. BATT 1 & BATT 2....ON ALTERNATE EACH BATTERY TO CHECK INDIVIDUAL VOLTAGE; 24-29VDC 2. MASTER ALERT LT....OUT 3. BOTH BATT SWITCHES....ON"}, {"q": "CNATRA Pre Start step 2 (after the battery check):", "opts": ["FIRE LIGHT....OUT", "SEAT [PEDALS]....ADJUST", "MASTER ALERT LT....OUT", "FUEL QUANTITY....CHECK"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 2. MASTER ALERT LT....OUT"}, {"q": "CNATRA Pre Start: USB handling under BOTH BATT SWITCHES ON:", "opts": ["No USB step on prestart", "USB upload on the DATA/GPS page after taxi", "INSERT USB INTO USB SOCKET • UPLOAD/USB UPLOAD/SELECT AT WYPT • WHEN UPLOAD COMPLETED, STOW USB", "Insert USB after engine start"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 3. BOTH BATT SWITCHES....ON • INSERT USB INTO USB SOCKET • UPLOAD/USB UPLOAD/SELECT AT WYPT • WHEN UPLOAD COMPLETED, STOW USB"}, {"q": "CNATRA Pre Start items 6-7:", "opts": ["SKID LT OFF; FIRE LIGHT....TEST", "NWS LT ON; FIRE LIGHT....OUT", "ADVISORY LIGHTS....SKID LT ON; FIRE LIGHT....OUT", "ADVISORY LIGHTS....OFF; FIRE LIGHT....ON"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 6. ADVISORY LIGHTS....SKID LT ON 7. FIRE LIGHT....OUT"}, {"q": "Warning/caution lights that must be ON before start (CNATRA panel graphic, highlighted):", "opts": ["OXYGEN, GENERATOR, OIL PRES only", "SEAT, FUEL, OXYGEN, GTS FIRE", "HYD, CANOPY, OXYGEN, OIL PRES, GENERATOR, HYD FAIL, LP PUMP, F PRES, SKID", "HYD, CANOPY, NWS, C AUG, SKID"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 9. WARNING/CAUTION LIGHTS (ENSURE THE FOLLOWING ON) — matches the Doc's “441 (Oxygen, Generator, Oil Press, Hyd Fail; Hyd, Canopy, LP Pump, F Pres; Skid)”"}, {"q": "CNATRA Pre Start step 10 (after “LIGHTS AND TONES”):", "opts": ["FLAP POS LT....MATCHES FLAPS", "PADDLE SWITCH....PRESS/RELEASE", "HYD1/HYD2/BRAKE PRESS....0/0/1250", "LTS/TONES/AOA INDXERS....TEST"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): F/C: “LIGHTS AND TONES” 10. LTS/TONES/AOA INDXERS....TEST 11. HYD1/HYD2/BRAKE PRESS....0/0/1250"}, {"q": "HYD1 / HYD2 / BRAKE PRESS before start:", "opts": ["0/0/2700", "3000/3000/1250", "0/0/1250", "1250/0/0"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 11. HYD1/HYD2/BRAKE PRESS....0/0/1250"}, {"q": "CNATRA Pre Start: last two items:", "opts": ["NWS CAUTION LIGHT....CHECK ON; VERIFY THROTTLE OFF", "PADDLE SWITCH....PRESS; CANOPY....CLOSED", "GEAR POS LTS....ON; FLAPS....UP", "HELMET VISOR....DOWN; THROTTLE....IDLE"], "ans": 0, "expl": "CNATRA Ground Ops video (on-screen checklist): 20. PADDLE SWITCH....PRESS/RELEASE 21. NWS CAUTION LIGHT....CHECK ON 22. VERIFY THROTTLE OFF"}, {"q": "CNATRA Pre Start: HELMET VISOR / CANOPY:", "opts": ["VISOR....UP; CANOPY....CLOSED", "HELMET VISOR....DOWN; CANOPY....AS DESIRED", "VISOR....AS DESIRED; CANOPY....OPEN", "VISOR....DOWN; CANOPY....CLOSED/LOCKED"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): 18. HELMET VISOR....DOWN 19. CANOPY....AS DESIRED"}, {"q": "CNATRA Engine Start: THROTTLE....IDLE at:", "opts": ["10-15% N2", "45% N2", "20-25% N2", "17-20% N2 • MONITOR ENG INST/OIL PRES LT OUT"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): 3. THROTTLE....IDLE @ 17-20% N2 • MONITOR ENG INST/OIL PRES LT OUT"}, {"q": "Narration: when do you advance the throttle to idle at 17-20% N2?", "opts": ["after 45%", "when the GTS light goes out", "when the PC gives the run-up signal", "immediately when the ready light comes on"], "ans": 2, "expl": "CNATRA Ground Ops video (narration): At 17 to 20 percent N2, and when the PC gives the run-up signal, advance the throttle to idle"}, {"q": "CNATRA Engine Start: item 9:", "opts": ["IFF....STBY", "IFF....OFF", "IFF....NORM", "IFF....MODE 3/C"], "ans": 0, "expl": "CNATRA Ground Ops video (on-screen checklist): 9. IFF....STBY"}, {"q": "CNATRA Engine Start item order after voltmeter:", "opts": ["Radios → HUD → OBOGS → IFF → TACAN", "IFF → TACAN → Radios → HUD → OBOGS", "HUD → OBOGS → IFF → Radios → TACAN", "OBOGS/ANTI-G SWITCH ON → HUD/MFDS ON/SET BRIGHTNESS → UHF/VHF RADIOS ON → VOR/ILS/TACAN ON/AS DESIRED → IFF STBY"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): 4. VOLTMETER ✓27-29V 5. OBOGS/ANTI-G SWITCH....ON 6. HUD/MFDS....ON/SET BRIGHTNESS 7. UHF/VHF RADIOS....ON 8. VOR/ILS/TACAN....ON/AS DESIRED 9. IFF....STBY"}, {"q": "CNATRA Post Start step 6 (THROTTLE IDLE) expected indications:", "opts": ["EGT RISE ~50°C/~3% RPM DROP", "EGT DROP ~50°C/~3%RPM RISE/RPM±2% OF IDLE (BLEED VALVE CLOSED)", "No change", "EGT DROP ~20°C/RPM ±5%"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): 6. THROTTLE....IDLE • EGT DROP ~50°C/~3%RPM RISE/RPM±2% OF IDLE (BLEED VALVE CLOSED)"}, {"q": "Fuel Ctrl switch back to NORM — expected:", "opts": ["M FUEL light stays on", "RPM drops 6%", "(LT OUT, PREVIOUS RPM)", "EGT rises 50°C"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 5. FUEL CTRL SWITCH....NORM • (LT OUT, PREVIOUS RPM)"}, {"q": "If ALN quality is not decrementing (CNATRA):", "opts": ["Wait 3 minutes and re-check", "VERIFY A/C PRESENT POS (WYPT 0) • WYP ZERO ENTER • RST OPTION SELECT • AFTER 50 SEC VERIFY QUAL DECREMENTING", "Select HYBD and continue", "Cycle GINA power"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): - IF ALN QUALITY NOT DECREMENTING •VERIFY A/C PRESENT POS....WYPT 0 •WYP ZERO....ENTER •RST OPTION....SELECT •AFTER 50 SEC..VERIFY QUAL DECREMENTING"}, {"q": "CTRL AUG BIT precondition (CNATRA):", "opts": ["IF QUAL DECREMENTING AND 4 SATS", "When N2 stabilizes at 70%", "After the PC checks", "When the NWS caution is out"], "ans": 0, "expl": "CNATRA Ground Ops video (on-screen checklist): 9. IF QUAL DECREMENTING AND 4 SATS CTRL AUG BIT....PERFORM"}, {"q": "CTRL AUG BIT steps (CNATRA):", "opts": ["PADDLE → ALL → RESET", "RESET → PADDLE → ALL", "CONTR AUG ALL → RESET → PADDLE", "PADDLE SW PRESS/CAUG LT ON → CONT AUG SW RESET/C AUG OUT → CONTR AUG SW SBI TO ALL → CAUG LT ON, OUT IN 120SEC MAX"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): •PADDLE SW....PRESS/CAUG LT ON •CONT AUG SW....RESET/C AUG OUT •CONTR AUG SW....SBI TO ALL •CAUG LT ON, OUT IN 120SEC MAX"}, {"q": "Pitch trim range check (CNATRA):", "opts": ["-5 TO +10°", "-3 TO +5°", "-3 TO +8°", "0 TO +8°"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 10. STAB TRIM....CHECK • PITCH TRIM....-3 TO +8° • STBY STAB TRIM....CHECK • PITCH TRIM....2-3° NOSE UP"}, {"q": "Rudder trim is checked/set neutral:", "opts": ["before the C AUG BIT", "during the 70% check", "WHEN C AUG IBIT FINISHED/LT OUT", "on the takeoff checklist"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 12. WHEN C AUG IBIT FINISHED/LT OUT • RUD TRIM....CHECK/SET NEUTRAL"}, {"q": "Post Start 14 LAW (CNATRA) and the call:", "opts": ["LAW....TEST — “Good BIT”", "LAW....200 — “LAW set”", "LAW....BIT CHECK/SET — SNA: “GOOD TONE, GOOD BIT”", "LAW....OFF — “LAW off”"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 14. LAW....BIT CHECK/SET SNA: “GOOD TONE, GOOD BIT” 15. BINGO....SET"}, {"q": "Post Start STBY ALT / HUD ALT tolerances:", "opts": ["both 75'", "STBY 10'; HUD 75'", "STBY ALT within 75' of FLD ELEV; HUD ALT within 10' FLD ELEV (else adjust BARO DLTA per PCL)", "STBY 100'; HUD 10'"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 16. STBY ALT....SET BARO PRESS • CHECK W/IN 75' OF FLD ELEV 17. HUD ALT....✓ W/IN 10' FLD ELEV • IF NOT W/IN 10', ADJUST BARO DLTA PER PCL"}, {"q": "Post Start items 18-20 (CNATRA):", "opts": ["BINGO SET; LAW SET; HSI", "IFF NORM; TACAN SET; VOR SET", "BIT DISPLAY....NOTE DEGDS; WAYPOINTS....PROGRAM; NAV SOURCE....SELECT", "WAYPOINTS; BIT; ANTI-G"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 18. BIT DISPLAY....NOTE DEGDS 19. WAYPOINTS....PROGRAM 20. NAV SOURCE....SELECT"}, {"q": "OBOGS INTEGRITY GROUND CHECK steps:", "opts": ["Mask off • Flow off • ADR press", "O2 MASK(S) ON • OBOGS FLOW SELECTOR(S) ON • ADR EVENT RECORD BUTTON PRESS", "Press OBOGS BIT 2 sec • Mask on", "Anti-G test • Flow on"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): 22. OBOGS INTEGRITY GROUND CHECK: • O2 MASK(S)....ON • OBOGS FLOW SELECTOR(S)....ON • ADR EVENT RECORD BUTTON....PRESS"}, {"q": "OBOGS integrity check: if the O2 light illuminates within ___, perform the ___:", "opts": ["15 SEC; OBOGS BIT again", "30 SEC; Emergency shutdown", "60 SEC; Abort", "60 SEC; OXYGEN WARNING LIGHT EP"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): IF O2 LT ILLUMINATES W/IN 60 SEC PERFORM OXYGEN WARNING LIGHT EP"}, {"q": "When is the OBOGS integrity ground check done (narration)?", "opts": ["At the hold short", "Once moving (taxiing out)", "Before engine start", "At the final checker only"], "ans": 1, "expl": "CNATRA Ground Ops video (narration): Once moving, execute an OBOGS integrity ground check, making sure to press the ADR event record button."}, {"q": "OBOGS integrity ICS exchange (narration):", "opts": ["“Mask on, flow on” → “Clear”", "“Flow on” → “Mask on in back”", "“OBOGS check” → “Good flow”", "“Mask on, flow on in the front. OBOGS integrity check.” → “Mask on, flow on in back.”"], "ans": 3, "expl": "CNATRA Ground Ops video (narration): Mask on, flow on in the front. OBOGS integrity check. / Mask on, flow on in back."}, {"q": "Post Start item 23 (last):", "opts": ["BINGO....SET", "OBOGS ELECTRONIC BIT", "ANTI-G TEST....PRESS", "NAV SOURCE....SELECT"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 23. ANTI-G TEST....PRESS"}, {"q": "PC checklist step 3 (CNATRA) when PC signals:", "opts": ["FLAPS FULL only", "SPEEDBRAKES EXTEND • FLAPS/SLAT LEVER FULL • HOOK DOWN • LBAR AS REQ'D", "SPEEDBRAKES RETRACT • FLAPS HALF • HOOK UP", "HOOK DOWN • NWS OFF"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): 3. SPEEDBRAKES....EXTEND •FLAPS/SLAT LEVER....FULL • HOOK....DOWN • LBAR....AS REQ'D"}, {"q": "PC canopy call/response (CNATRA):", "opts": ["“Canopy” / “Rail Clear”", "“Clear” / “Canopy”", "“Canopy coming down” / “Clear”", "F/C: “CANOPY” R/C: “CLEAR”"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): - WHEN PLANE CAPTAIN SIGNALS: F/C: “CANOPY” R/C: “CLEAR” 7. CANOPY....CLOSE (Doc says R/C “Rail Clear”)"}, {"q": "Narration: taxi & instrument checks prior to FAM solo are done:", "opts": ["in marshall (in later stages, on the roll)", "at the final checker", "at the hold short", "on the roll always"], "ans": 0, "expl": "CNATRA Ground Ops video (narration): Prior to FAM solo, these will be done in marshall. However, in later stages, they will be done on the roll."}, {"q": "Taxi/Instrument checklist first three:", "opts": ["INSTRUMENTS • BRAKES • NWS", "BRAKES • PARKING BRAKE • GINA", "NWS • BRAKES • INSTRUMENTS", "PARKING BRAKE RELEASE • WHEEL BRAKES CHECK • NWS CHECK"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): 1. PARKING BRAKE....RELEASE 2. WHEEL BRAKES....CHECK 3. NWS....CHECK"}, {"q": "Taxi/Instrument: CLOCK....", "opts": ["OFF", "HACK", "SET/RUNNING", "ZERO"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): • CLOCK....SET/RUNNING"}, {"q": "Taxi checks complete call (CNATRA on-screen):", "opts": ["“Taxi Checks Complete”", "“Altimeters, VOR, TACAN, Takeoff checks complete”", "“ALT SET, VOR SET, TCN SET, IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE”", "“Good headings, no off flags”"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): “ALT SET , VOR SET , TCN SET , IFF SET” “TAXI & INSTRUMENT CHECKS COMPLETE” (Doc adds indicating ___ on standby/glass)"}, {"q": "CNATRA Takeoff checklist: CANOPY:", "opts": ["CLOSED/LT ON", "CLOSED/LOCKED/LT OUT/SEAL INFLATED", "CLOSED/LOCKED/LT OUT", "AS DESIRED"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 5. CANOPY....CLOSED/LOCKED/LT OUT (narration adds “arrows align”; Doc adds “Seal Inflated”)"}, {"q": "Narration R/C harness response adds:", "opts": ["“attached 8 points, pins removed, selector set both, armed in back”", "“pins removed, ready in back”", "nothing", "“harness locked, armed in back”"], "ans": 0, "expl": "CNATRA Ground Ops video (narration): I'm attached 8 points, pins removed, selector set both, armed in back."}, {"q": "CNATRA After Landing step 6 sub-items:", "opts": ["HUD OFF • PITOT HEAT OFF • STROBES OFF • TAXI LIGHT AS REQ'D • VCR SWITCH OFF", "Lights Down x3 Middle x3", "Radios OFF", "HUD • TACAN • NAV • IFF OFF"], "ans": 0, "expl": "CNATRA Ground Ops video (on-screen checklist): 6. NAV/IFF EQUIP....OFF • HUD....OFF • PITOT HEAT....OFF • STROBES....OFF • TAXI LIGHT....AS REQ'D • VCR SWITCH....OFF"}, {"q": "Before shutdown exceedance call (narration):", "opts": ["“No exceedances, no overflows” → “Clear”", "“No exceedances, no overflows, good jet in the front.” → “Good jet in the back.”", "“Exceedances checked” → “Safe in back”", "“Good jet” → “Roger”"], "ans": 1, "expl": "CNATRA Ground Ops video (narration): No exceedances, no overflows, good jet in the front. / Good jet in the back."}, {"q": "CNATRA Before Engine Shutdown order:", "opts": ["IDLE RPM first", "LAW • BIT • MAINT • RADIOS • RMFD • GYRO", "BIT PAGE • IBIT DEGD EQUIP/RECORD • LAW OFF • MAINT PAGE • EXCEEDENCE CHECK • RIGHT MFD OFF • RADIOS OFF • VCR OFF • STBY ATT GYRO CAGED • IDLE RPM", "RADIOS • BIT • LAW • GYRO • RPM"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 1. BIT PAGE 2. PERFORM IBIT ON DEGD EQUIP....RECORD 3. LAW....OFF 4. MAINT PAGE 5. AIRCRAFT EXCEEDENCE 6. RIGHT MFD 7. UHF/VHF RADIOS 8. VCR SWITCH 9. STBY ATT GYRO....CAGED (OFF FLAG) 10. IDLE RPM....± 2% OF NATOPS"}, {"q": "Idle RPM on taxi back (CNATRA):", "opts": ["± 5% of NATOPS", "± 2% OF NATOPS", "± 2% of 70%", "exactly 52%"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): 10. IDLE RPM....± 2% OF NATOPS"}, {"q": "Engine Shutdown: items at 30 SECONDS AFTER PRK BRK SET:", "opts": ["BATT SWITCHES OFF", "GINA POWER OFF; LEFT MFD OFF", "FUEL SHUTOFF HANDLE PULL", "ENGINE SWITCH OFF"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): - 30 SECONDS AFTER PRK BRK SET: 6. GINA POWER....OFF 7. LEFT MFD....OFF"}, {"q": "Engine Shutdown: items at 45 SECONDS AFTER THROTTLE OFF (CNATRA order):", "opts": ["ENGINE SWITCH → BATT OFF", "ENGINE SWITCH (F/C ONLY) OFF → FUEL SHUTOFF HANDLE PULL → POS/FORM LIGHTS OFF → CHECK BRK PRESS ACCUM MIN 2700PSI", "GINA OFF → LEFT MFD OFF", "FUEL SHUTOFF PULL → ENGINE SWITCH OFF → CONTR AUG SBI"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): - 45 SECONDS AFTER THROTTLE OFF: 8. ENGINE SWITCH (F/C ONLY)....OFF 9. FUEL SHUTOFF HANDLE....PULL 10. POS/FORM LIGHTS....OFF 11. CHECK BRK PRESS ACCUM....MIN 2700PSI (Doc has Fuel Shutoff first, then Engine Switch)"}, {"q": "Narration: at 45 seconds after throttle off, in the forward cockpit turn off:", "opts": ["the pinky switch", "the GINA", "the engine switch as well as anti-skid switch", "the batteries"], "ans": 2, "expl": "CNATRA Ground Ops video (narration): Forty-five seconds after throttle off, turn the engine switch as well as anti-skid switch off in the forward cockpit."}, {"q": "PCU (control stick) check timing (CNATRA):", "opts": ["immediately after batteries off", "45 seconds after throttle off", "50 SECONDS AFTER THROTTLE OFF", "30 seconds after parking brake"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): - 50 SECONDS AFTER THROTTLE OFF: 12. CTRL STICK...1/2 Lat Defection at 1 cycle per 2 secs. Neutalize when HYD1 reaches 0 PSI"}, {"q": "Engine Shutdown items 13-14 (CNATRA):", "opts": ["GINA OFF; LMFD OFF", "BATT OFF; SEAT PINNED", "ENGINE SWITCH OFF; CONTR AUG SBI", "PINKY SWITCH OFF; CONSOLE/MIP LITS OFF"], "ans": 3, "expl": "CNATRA Ground Ops video (on-screen checklist): 13. PINKY SWITCH....OFF 14. CONSOLE/MIP LITS....OFF"}, {"q": "Engine Shutdown: MDL / VCR TAPE / USB:", "opts": ["Remove MDL before engine start", "MDL REMOVE • VCR TAPE REMOVE • USB/DOWNLOAD INSERT/INITIATE • USB DEVICE UNPLUG/STOW • CONTROL PANEL SECURE COVER", "USB at prestart only", "Leave MDL installed"], "ans": 1, "expl": "CNATRA Ground Ops video (on-screen checklist): 15. MDL....REMOVE VCR TAPE....REMOVE 17. USB/DOWNLOAD....INSERT/INITIATE USB DEVICE....UNPLUG/STOW CONTROL PANEL....SECURE COVER"}, {"q": "Final two CNATRA shutdown items:", "opts": ["ENGINE OFF; BATT OFF", "CANOPY CLOSED; SEAT SAFE", "BATT SWITCHES (2&2) OFF; SEAT/MDC PINNED", "SEAT/MDC PINNED; BATT OFF"], "ans": 2, "expl": "CNATRA Ground Ops video (on-screen checklist): 20. BATT SWITCHES (2&2)....OFF 21. SEAT/MDC....PINNED"}, {"q": "Narration: before the throttle-off call, the front seat says (shutdown):", "opts": ["“All my equipment's off ... I'll be clear of canopy and OBOGS on shutdown.” → “Roger.”", "“Engine off” → “Roger”", "“Ready to shut down” → “Clear”", "“Throttle off, canopy” → “Clear”"], "ans": 0, "expl": "CNATRA Ground Ops video (narration): All my equipment's off and back, I'll be clear of canopy and o-bogs on shutdown. / Roger. (ASR; Doc: “Throttle Off, Canopy” R/C “Clear”)"}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

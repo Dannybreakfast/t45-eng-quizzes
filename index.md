@@ -2,7 +2,7 @@
 
 Offline multiple-choice practice. Missed questions are requeued until mastered.
 
-**103 quizzes · 2628 total questions**
+**105 quizzes · 2763 total questions**
 
 ## [ENG](section-eng.html) — Systems / Engineering
 
@@ -162,9 +162,11 @@ Offline multiple-choice practice. Missed questions are requeued until mastered.
 - [Checklist 5. Departure, 10K Checks & MOA (Enroute)](checklist-5-departure-10k-checks-moa-enroute--enroute.html) — 33 Q
 - [Checklist 6. Recovery — Approach, Arrival, Tower & Landing](checklist-6-recovery-approach-arrival-tower-landing--recovery.html) — 48 Q
 - [Checklist 7. After Landing, Taxi Back & Shutdown](checklist-7-after-landing-taxi-back-shutdown--shutdown.html) — 25 Q
+- [Checklist 8. CNATRA Ground Ops Video — Official Checklists](checklist-8-cnatra-ground-ops-video-official-checklists--video.html) — 48 Q
 - [Comms 1. Clearance, Base/Strike & Ground](comms-1-clearance-base-strike-ground--c-ground.html) — 60 Q
 - [Comms 2. Tower, Takeoff ICS & Departure](comms-2-tower-takeoff-ics-departure--c-depart.html) — 43 Q
 - [Comms 3. MOA (Ch 5) & Enroute ICS](comms-3-moa-ch-5-enroute-ics--c-moa.html) — 32 Q
 - [Comms 4. Recovery — Approach, Arrival & Tower](comms-4-recovery-approach-arrival-tower--c-recovery.html) — 66 Q
 - [Comms 5. VFR Initial, Break & Landing Pattern](comms-5-vfr-initial-break-landing-pattern--c-pattern.html) — 81 Q
 - [Comms 6. Landing ICS, After Landing & Shutdown](comms-6-landing-ics-after-landing-shutdown--c-afterland.html) — 32 Q
+- [Comms 7. CNATRA Ground Ops Video (McCain/Meridian) calls](comms-7-cnatra-ground-ops-video-mccain-meridian-calls--c-video.html) — 87 Q
