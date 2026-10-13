@@ -1,9 +1,9 @@
 {
  "airport": "KNQI",
  "faa_id": "NQI",
- "cycle": "2610",
- "effective": "0901Z  10/01/26",
- "expires": "0901Z  10/29/26",
+ "cycle": "2611",
+ "effective": "0901Z  10/29/26",
+ "expires": "0901Z  11/26/26",
  "plates": {
   "sid": {
    "files": [
@@ -23,7 +23,7 @@
     "px:1d9bcef5effc727bac7c332232ce6e2e3f0bb18161534297bd5c02d95e6cdf10"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "KINGSVILLE FOUR",
@@ -48,7 +48,7 @@
     "px:edde73d4bece4b4172dc2bc56b5c6de2d5a795e8ed7ef84b47b2c097d4844c15"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "AIRPORT DIAGRAM"
@@ -65,13 +65,13 @@
     "img/takeoff.png"
    ],
    "sha256": [
-    "txt:f7c6c399050cf684bdea571ed4bd6edc2b67b1ed5d40cfd235c0ae2f4254456a"
+    "txt:311704393d66592bbe7669e87539d6d40322a600dff6fce0dba2c1bed4e1f2ca"
    ],
    "baseline_sha256": [
-    "txt:f7c6c399050cf684bdea571ed4bd6edc2b67b1ed5d40cfd235c0ae2f4254456a"
+    "txt:311704393d66592bbe7669e87539d6d40322a600dff6fce0dba2c1bed4e1f2ca"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "TAKEOFF MINIMUMS"
@@ -88,13 +88,13 @@
     "img/radar.png"
    ],
    "sha256": [
-    "txt:4854fcff3f162505479edddd89a8571d616266b2a86403d49ed4a93e538bfd85"
+    "txt:5315894bd32c6563fbae2c5dc77d70cf4ec92ff0a0595a3e1e4c055526063b36"
    ],
    "baseline_sha256": [
-    "txt:4854fcff3f162505479edddd89a8571d616266b2a86403d49ed4a93e538bfd85"
+    "txt:5315894bd32c6563fbae2c5dc77d70cf4ec92ff0a0595a3e1e4c055526063b36"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "RADAR MINIMUMS"
@@ -111,19 +111,19 @@
     "img/izlz13r.png"
    ],
    "sha256": [
-    "px:498d108002274427ca11a2455a88a39a6d7a062550fa52f7dab9ace57973a244"
+    "px:e46bbe13d2f8ba33b4606dedcf8e09494266d29930a2c12e0a12777695b0fc22"
    ],
    "baseline_sha256": [
-    "px:498d108002274427ca11a2455a88a39a6d7a062550fa52f7dab9ace57973a244"
+    "px:e46bbe13d2f8ba33b4606dedcf8e09494266d29930a2c12e0a12777695b0fc22"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "ILS Z OR LOC Z RWY 13R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "ixlx13r": {
@@ -134,19 +134,19 @@
     "img/ixlx13r.png"
    ],
    "sha256": [
-    "px:ed16acf0fae22f109bb772b32d6c0d70fbe00ca77a29cb2183fd39d1618d3fc9"
+    "px:fc9f8fb999c5738a7a83134544f1db821b62ed2d37ef4715bc6291f16074328e"
    ],
    "baseline_sha256": [
-    "px:ed16acf0fae22f109bb772b32d6c0d70fbe00ca77a29cb2183fd39d1618d3fc9"
+    "px:fc9f8fb999c5738a7a83134544f1db821b62ed2d37ef4715bc6291f16074328e"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "ILS X OR LOC X RWY 13R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "hiwlw13r": {
@@ -157,19 +157,19 @@
     "img/hiwlw13r.png"
    ],
    "sha256": [
-    "px:e1fc07e7c711c4e5ba53caf00157fc65e89f257c5e0d87d3514537930b587699"
+    "px:766126bf8ff61640d032b02bb3e4f3fdc776567bf36ae694ec84784327c68cd8"
    ],
    "baseline_sha256": [
-    "px:e1fc07e7c711c4e5ba53caf00157fc65e89f257c5e0d87d3514537930b587699"
+    "px:766126bf8ff61640d032b02bb3e4f3fdc776567bf36ae694ec84784327c68cd8"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "HI-ILS W OR LOC W RWY 13R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "hiyly13r": {
@@ -180,19 +180,19 @@
     "img/hiyly13r.png"
    ],
    "sha256": [
-    "px:fffc101a3fc29e6429852b6c14f22ed7f19eb7b316078dcae4467f94c94dec3f"
+    "px:b2636353e194e870b91f8e1ac6393882fb2b1c50f78f38cb53c2e582e0402af0"
    ],
    "baseline_sha256": [
-    "px:fffc101a3fc29e6429852b6c14f22ed7f19eb7b316078dcae4467f94c94dec3f"
+    "px:b2636353e194e870b91f8e1ac6393882fb2b1c50f78f38cb53c2e582e0402af0"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "HI-ILS Y OR LOC Y RWY 13R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "htz13r": {
@@ -203,19 +203,19 @@
     "img/htz13r.png"
    ],
    "sha256": [
-    "px:f748913f40447c6f3f591d7b1d80ea437acd56249db1f12c02228242f6611bf1"
+    "px:619093afe8a840f9f173c26c79f4d4c248c987dfb723bd78223cd575ae57ddfc"
    ],
    "baseline_sha256": [
-    "px:f748913f40447c6f3f591d7b1d80ea437acd56249db1f12c02228242f6611bf1"
+    "px:619093afe8a840f9f173c26c79f4d4c248c987dfb723bd78223cd575ae57ddfc"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "HI-TACAN Z RWY 13R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "htz35r": {
@@ -226,19 +226,19 @@
     "img/htz35r.png"
    ],
    "sha256": [
-    "px:43e7088b2e442877b845cedbd6697251bd4fc5cb82da47236bf93e99e94163ae"
+    "px:b83566123ebf3485074d3a4557f205af2e479e9bd545ae3593d9122009631e1b"
    ],
    "baseline_sha256": [
-    "px:43e7088b2e442877b845cedbd6697251bd4fc5cb82da47236bf93e99e94163ae"
+    "px:b83566123ebf3485074d3a4557f205af2e479e9bd545ae3593d9122009631e1b"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "HI-TACAN Z RWY 35R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "t13lr": {
@@ -249,19 +249,19 @@
     "img/t13lr.png"
    ],
    "sha256": [
-    "px:a01d1cdbb3cc8f34cc17364aed6822f61c85125561743f13de77859b68d3e379"
+    "px:127c2d73ff6cd6280e86500dfdb55bcb0edff600a72d7e95fa7ea97b9b4c9cd2"
    ],
    "baseline_sha256": [
-    "px:a01d1cdbb3cc8f34cc17364aed6822f61c85125561743f13de77859b68d3e379"
+    "px:127c2d73ff6cd6280e86500dfdb55bcb0edff600a72d7e95fa7ea97b9b4c9cd2"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "TACAN RWY 13L/R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "t17l": {
@@ -272,19 +272,19 @@
     "img/t17l.png"
    ],
    "sha256": [
-    "px:0ad0b01597bdb974bc51799169b79402023ad7fc022bf93264ec674b9de5aefb"
+    "px:4a62f80c2994027216e492c6ef51aa200ddcc3cd686832f3385792c11ac78893"
    ],
    "baseline_sha256": [
-    "px:0ad0b01597bdb974bc51799169b79402023ad7fc022bf93264ec674b9de5aefb"
+    "px:4a62f80c2994027216e492c6ef51aa200ddcc3cd686832f3385792c11ac78893"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "TACAN RWY 17L"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "t31lr": {
@@ -295,19 +295,19 @@
     "img/t31lr.png"
    ],
    "sha256": [
-    "px:d03326e5bd50e16ebc7b85436528498adf8368e3dc61d5af07116eb2a4d53d8b"
+    "px:306f817e800331f83e8533fb2177f82a32da557575a102c9635534e27872f572"
    ],
    "baseline_sha256": [
-    "px:d03326e5bd50e16ebc7b85436528498adf8368e3dc61d5af07116eb2a4d53d8b"
+    "px:306f817e800331f83e8533fb2177f82a32da557575a102c9635534e27872f572"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "TACAN RWY 31L/R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "ty17r": {
@@ -318,19 +318,19 @@
     "img/ty17r.png"
    ],
    "sha256": [
-    "px:d8d30ce99f9196b103ee7d5347e02428e09262e3afc250a5cf3f9c4537dca884"
+    "px:a2a89cbe1fd6bfdb71702c7491b4ff2ee9162360abade07d71f84c184f11985b"
    ],
    "baseline_sha256": [
-    "px:d8d30ce99f9196b103ee7d5347e02428e09262e3afc250a5cf3f9c4537dca884"
+    "px:a2a89cbe1fd6bfdb71702c7491b4ff2ee9162360abade07d71f84c184f11985b"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "TACAN Y RWY 17R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "ty35r": {
@@ -341,19 +341,19 @@
     "img/ty35r.png"
    ],
    "sha256": [
-    "px:4fbf928ee67f8052a47830fd1a0c932efc263ba452e93675febe936d13b92736"
+    "px:27a790dc3916bc8691f12744d914739bc46bf15f4040792aae254920c756c1e0"
    ],
    "baseline_sha256": [
-    "px:4fbf928ee67f8052a47830fd1a0c932efc263ba452e93675febe936d13b92736"
+    "px:27a790dc3916bc8691f12744d914739bc46bf15f4040792aae254920c756c1e0"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "TACAN Y RWY 35R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   },
   "tz17r": {
@@ -364,22 +364,22 @@
     "img/tz17r.png"
    ],
    "sha256": [
-    "px:06fb9e13f30b0802bb1d2abaa561d163bac65d876697e0a26988afdd0956105a"
+    "px:617e1727d9c449c4fcd743ce2710b21e241be9ab220e66e84b360ecc09793c60"
    ],
    "baseline_sha256": [
-    "px:06fb9e13f30b0802bb1d2abaa561d163bac65d876697e0a26988afdd0956105a"
+    "px:617e1727d9c449c4fcd743ce2710b21e241be9ab220e66e84b360ecc09793c60"
    ],
    "changed": false,
-   "baseline_cycle": "2610",
+   "baseline_cycle": "2611",
    "missing": false,
    "chart_names": [
     "TACAN Z RWY 17R"
    ],
    "faa_useraction": [
-    ""
+    "C"
    ]
   }
  },
  "unquizzed_new_charts": [],
- "checked_utc": "2026-10-13T22:09Z"
+ "checked_utc": "2026-10-13T23:55Z"
 }

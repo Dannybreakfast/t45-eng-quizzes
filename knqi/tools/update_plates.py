@@ -61,6 +61,7 @@ def main():
                 blk = txt.split("KNQI", 1)[1][:3000] if "KNQI" in txt else ""
                 import re
                 blk = re.sub(r"\d{2} [A-Z]{3} \d{4} to \d{2} [A-Z]{3} \d{4}", "", blk)
+                blk = " ".join(blk.split())
                 h = "txt:" + hashlib.sha256(blk.encode()).hexdigest()  # NQI text block, cycle dates removed
             else:
                 h = None

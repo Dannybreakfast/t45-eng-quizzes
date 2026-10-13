@@ -5,11 +5,11 @@ CATC = ("Cat C. Approach category is set by 1.3 x Vso / Vref at max landing weig
         "use the higher category; you may never use a lower one.)")
 MAP13 = "Missed approach box at top of plate + profile icons (500 ↑, 3000 climbing right turn, NQI R-184, BRAMA NQI 12)."
 COMMS = [
- ("What is the Kingsville ATIS frequency on this plate?", "282.25", ["124.1", "239.05", "328.4"],
+ ("What is the Kingsville ATIS frequency on this plate?", "282.25", ["124.1", "239.05", "290.45"],
   "Communications strip (briefing strip): ATIS 282.25 (UHF only, the ★ means part-time). Get ATIS before the approach brief so you have the runway, altimeter and weather to compare with the minimums."),
- ("Which pair are the Kingsville Tower frequencies?", "124.1 / 377.05", ["119.9 / 290.45", "239.05 / 328.4", "121.05 / 266.8"],
+ ("Which pair are the Kingsville Tower frequencies?", "124.1 / 377.05", ["119.9 / 290.45", "239.05 / 282.25", "121.05 / 266.8"],
   "Communications strip: TOWER★ 124.1 VHF / 377.05 UHF. The ★ means tower is part-time; the radar mins page notes higher vis on some approaches when tower is closed."),
- ("Approach Control frequencies listed are:", "119.9 / 290.45", ["124.1 / 377.05", "121.05 / 266.8", "282.25 / 328.4"],
+ ("Approach Control frequencies listed are:", "119.9 / 290.45", ["124.1 / 377.05", "121.05 / 266.8", "282.25 / 239.05"],
   "Communications strip: APP CON 119.9 and 290.45. (121.05/266.8 is DEP CON on the KINGSVILLE FOUR.)"),
 ]
 def mins_note(): return ""
@@ -48,9 +48,11 @@ PLATES["izlz13r"] = dict(title="ILS Z or LOC Z RWY 13R", kind="IAP", amdt="Orig 
   "Minimums: S-LOC 13R Cat A/B 460-1; Cat C/D 460-1⅛, HAT 410. " + CATC),
  ("Circling minimums Cat C?", "760-2 (HAA 710)", ["540-1", "760-2 1/4", "460-1 1/8"],
   "Minimums: CIRCLING A/B 540-1 (HAA 490); C 760-2 (HAA 710); D 760-2¼. The circling HAA is referenced to airport elevation (50), straight-in HAT to TDZE (50)."),
- ("What does the white 'C' (negative/reverse) symbol in front of CIRCLING mean?", "Circling uses the expanded circling-approach protected area (newer TERPS criteria) - radius depends on category and MSL altitude",
-  ["Circling not authorized at night", "Circling Cat C only", "Circling requires ATC approval"],
-  "Minimums table 'C' in a box. Per AIM 5-4-20 / Terminal Procedures legend, the reversed C means the expanded circling protected area applies; for Cat C at 1000 MSL or less the radius is 2.7 NM (vs 1.7 NM old criteria)."),
+ ("The comm strip on this cycle-2611 plate lists ATIS, APP CON, TOWER, GND CON and ASR/PAR. Where do you find Clearance Delivery (328.4)?", "Not on this approach plate - it's on the airport diagram and the KINGSVILLE FOUR comm list",
+  ["In the APP CON box", "It's the UHF half of the Tower box", "On the radar minimums page"],
+  "Communications strip, cycle 2611: the CLNC DEL box was removed from all KNQI approach plates. CLNC DEL 328.4 is still published on the airport diagram (top right) and the KINGSVILLE FOUR departure comm list. You get clearance before taxi, not from the approach plate."),
+ ("Which fix is charted in the plan view right at the runway end on the final course?", "PEXIE, I-NQI 0.7", ["KOCUS, I-NQI 5.5", "JELES, I-NQI 12.2", "BRAMA, NQI 12"],
+  "Plan view (newly charted in cycle 2611) and profile: PEXIE I-NQI 0.7 near the 13R threshold, where the LOC missed approach starts. On the ILS the missed approach starts at DA 250, not at PEXIE: brief which one applies to the approach you're flying."),
  ("TDZE and airport elevation?", "TDZE 50, airport 50", ["TDZE 49, airport 50", "TDZE 50, airport 48", "TDZE 44, airport 50"],
   "Briefing strip and airport sketch: TDZE 50, Arpt Elev 50 (Rwy ldg 8000). DA 250 - TDZE 50 = HAT 200."),
  ("Missed approach instructions?", "Climb to 500, then climbing right turn to 3000, intercept NQI TACAN R-184 to BRAMA and hold",
@@ -71,7 +73,7 @@ PLATES["izlz13r"] = dict(title="ILS Z or LOC Z RWY 13R", kind="IAP", amdt="Orig 
   "Plan view: from CRP (115.5, Chan 102) 233° at 3000 for 32.1 NM to JELES."),
  ("Approach lighting / runway lighting for 13R per the airport sketch?", "No ALS on 13R; HIRL all runways, REIL all runways",
   ["ALSF-1 on 13R", "MALSR on 13R", "No runway edge lights"],
-  "Airport sketch notes: HIRL all rwys, REIL all rwys, TDZL/CL Rwy 17L. Only 35R shows an A1 (ALSF-1). No approach lights on 13R is why vis is ¾ not ½ on the ILS."),
+  "Airport sketch notes: HIRL all rwys, REIL all rwys, TDZL/RCLS Rwy 17L. Only 35R shows an A1 (ALSF-1). No approach lights on 13R is why vis is ¾ not ½ on the ILS."),
  ("ASR/PAR in the comms strip means:", "Radar approaches (ASR and PAR) are available - see the Radar Minimums page", ["Only ASR on 13R", "PAR not available", "Radar vectors only"],
   "Comm strip box 'ASR/PAR'. Radar minimums are published separately (RADAR INSTRUMENT APPROACH MINIMUMS page)."),
  ("Legal to descend below DA 250 on the ILS?", "Only if the aircraft is continuously in position to land using normal maneuvers, flight vis ≥ 3/4, and required visual references are distinctly visible (FAR 91.175(c))",
@@ -82,6 +84,8 @@ PLATES["izlz13r"] = dict(title="ILS Z or LOC Z RWY 13R", kind="IAP", amdt="Orig 
 ])
 
 PLATES["ixlx13r"] = dict(title="ILS X or LOC X RWY 13R", kind="IAP", amdt="Orig 26DEC24", qs=[
+ ("Clearance Delivery frequency on this approach plate?", "Not shown: the CLNC DEL box was removed in cycle 2611", ["328.4", "239.05", "282.25"], "Comm strip lists ATIS, APP CON, TOWER, GND CON, ASR/PAR. 328.4 is still on the airport diagram and the SID."),
+ ("Which fix is charted in the plan view at the runway end on the 130° final?", "PEXIE NQI 1.5", ["KOCUS NQI 6.3", "NQI 2.1", "JELES NQI 13"], "Plan view (newly charted in cycle 2611) and profile: PEXIE NQI 1.5. On the LOC it's the end of the final segment, where the missed approach starts; on the ILS you go missed at DA 250."),
  ("Key difference between ILS X and ILS Z RWY 13R?", "ILS X fixes are defined by NQI TACAN DME (no I-NQI DME listed); ILS Z uses LOC/DME I-NQI",
   ["ILS X has higher minimums", "ILS X is for Cat E only", "ILS X has a different final course"],
   "Briefing strip: ILS X shows 'LOC I-NQI 110.9' (no DME channel); ILS Z shows 'LOC/DME I-NQI 110.9 Chan 46'. Fixes on X: JELES NQI 13, KOCUS NQI 6.3, NQI 2.1, PEXIE NQI 1.5."),
@@ -111,6 +115,10 @@ PLATES["ixlx13r"] = dict(title="ILS X or LOC X RWY 13R", kind="IAP", amdt="Orig 
 HIGHC = ("HI- plates are high-altitude penetration procedures (military jet), published for Cat C/D/E only. ")
 def hi_ils(var, jeles, kocus, pexie, vdp):
     return [
+ ("Which fix is charted in the plan view at the runway end on final (new in cycle 2611)?", "PEXIE " + pexie, ["KOCUS " + kocus, "JELES " + jeles, "WINKI NQI 13"],
+  "Plan view now shows PEXIE " + pexie + " next to the runway. It's the end of the LOC final segment, where the LOC missed approach starts; the ILS missed approach starts at DA."),
+ ("Does the comm strip on this plate list Clearance Delivery?", "No: ATIS, APP CON, TOWER, GND CON and ASR/PAR only (CLNC DEL removed in cycle 2611)", ["Yes, 328.4", "Yes, 121.05", "Yes, combined with GND 239.05"],
+  "Communications strip, cycle 2611. CLNC DEL 328.4 is still published on the airport diagram and the KINGSVILLE FOUR."),
  ("Where does the high-altitude penetration start (IAF)?", "WAADE, NQI 26 DME on R-275 side, at 15,000", ["JELES at 3000", "WINKI at 8000", "BRAMA at 3000"],
   "Plan view: (IAF) WAADE NQI 26, 15,000† ('† or as assigned'). " + HIGHC),
  ("Holding pattern at WAADE: speed and altitudes?", "265K, 15,000-18,000; inbound 095°", ["230K, 3000-6000", "265K, 15,000-FL180, inbound 275°", "310K, 8000-15000"],
@@ -155,6 +163,7 @@ PLATES["hiyly13r"] = dict(title="HI-ILS Y or LOC Y RWY 13R", kind="IAP", amdt="O
   ["Y is a Cat A/B procedure", "Y has a different penetration", "Y missed approach turns left"], "Profile: JELES I-NQI 12.2 / NQI 13, KOCUS I-NQI 5.5, I-NQI 1.3, PEXIE I-NQI 0.7.")])
 
 PLATES["htz13r"] = dict(title="HI-TACAN Z RWY 13R", kind="IAP", amdt="Orig 26DEC24", qs=[
+ ("Which fix is now charted in the plan view near the runway end (cycle 2611)?", "FEDOB NQI 1.5", ["CELNU NQI 6.3", "ZOLLY NQI 12", "NQI 2.4"], "Plan view shows FEDOB NQI 1.5 just short of the runway (also on the profile), at the end of the final segment where the missed approach starts."),
  ("TACAN channel and final approach course?", "NQI Chan 125, 139°", ["I-NQI Chan 46, 130°", "NOG Chan 63, 146°", "NQI Chan 125, 130°"],
   "Briefing strip: TACAN NQI Chan 125, APCH CRS 139° (offset from the 130° runway - not straight in alignment for the ILS)."),
  ("IAF and its minimum altitude?", "WAADE NQI 26, 15,000 (or as assigned)", ["BALTS NQI 12, 3000", "ZOLLY NQI 12, 8000", "CELNU NQI 6.3, 1800"], "Plan view: (IAF) WAADE NQI 26 †15,000, † 'or as assigned'."),
@@ -182,6 +191,7 @@ PLATES["htz13r"] = dict(title="HI-TACAN Z RWY 13R", kind="IAP", amdt="Orig 26DEC
 ])
 
 PLATES["htz35r"] = dict(title="HI-TACAN Z RWY 35R", kind="IAP", amdt="Orig 26DEC24", qs=[
+ ("Which fix is now charted in the plan view at the runway end (cycle 2611)?", "RICES NQI 0.9", ["MACAY NQI 5.7", "NQI 1.4", "BRAMA NQI 12"], "Plan view shows RICES NQI 0.9 at the 35R end (also on the profile), at the end of the final segment where the missed approach starts."),
  ("Final approach course and TACAN?", "004°, NQI Chan 125", ["139°, Chan 125", "184°, Chan 125", "004°, Chan 46"], "Briefing strip: TACAN NQI Chan 125, APCH CRS 004°."),
  ("TDZE 35R?", "48", ["50", "49", "44"], "Briefing strip: TDZE 48, Arpt Elev 50."),
  ("IAF and altitude?", "RVERA NQI 31, 17,000", ["BRAMA NQI 12, 3000", "WAADE NQI 26, 15,000", "MACAY 1800"], "Plan view: (IAF) RVERA NQI 31, 17,000."),
@@ -205,6 +215,7 @@ PLATES["htz35r"] = dict(title="HI-TACAN Z RWY 35R", kind="IAP", amdt="Orig 26DEC
 
 TAC_STD = lambda: []
 PLATES["t13lr"] = dict(title="TACAN RWY 13L/R", kind="IAP", amdt="Amdt 2 26DEC24", qs=[
+ ("Which fix is now charted in the plan view near the runway end (cycle 2611)?", "FEDOB NQI 1.5", ["CELNU NQI 6.3", "NQI 2.3", "BALTS NQI 12"], "Plan view shows FEDOB NQI 1.5 just short of the runways, plus the profile. It's the end of the final segment, where the missed approach starts (VDP at NQI 2.3 comes before it)."),
  ("Final approach course?", "139°", ["130°", "319°", "146°"], "APCH CRS 139° - one course serving both parallel runways."),
  ("IF/IAF and altitude?", "BALTS NQI 12, 3000", ["CELNU NQI 6.3, 1800", "BRAMA NQI 12, 3000", "WAADE NQI 26"], "Plan view: (IF/IAF) BALTS NQI 12, 3000."),
  ("BALTS hold-in-lieu of PT?", "319° outbound/139° inbound on R-319, 230K, 3000-6000, outbound to NQI 19", ["004° inbound, 230K", "095° inbound, 265K", "146° inbound, 4000/1800"], "Plan view: HOLD 6000/3000, 230K, 139°/319°, NQI 19."),
@@ -222,10 +233,11 @@ PLATES["t13lr"] = dict(title="TACAN RWY 13L/R", kind="IAP", amdt="Amdt 2 26DEC24
  ("Missed approach?", "Climbing right turn to 3000 to intercept NQI TACAN R-184 to BRAMA and hold", ["Climb to 3000 direct NQI, left R-319 BALTS", "Climb to 500 then right", "Left turn to 1800 NOG R-146"], "Missed approach strip."),
  ("BRAMA holding pattern?", "NQI R-184 at 12 DME, 004° inbound, 230K, 3000-6000", ["R-319 at 12, 139° inbound", "R-184 at 18, 184° inbound", "R-146 NOG 14"], "Plan view BRAMA NQI 12, 004°/184°, 230K, 6000/3000, NQI 18."),
  ("Distance CELNU to runway?", "4.8 NM", ["6.3 NM", "5.7 NM", "2.3 NM"], "Profile scale 4.8 NM + 0.5."),
- ("Runway with TDZL/CL?", "17L", ["13R", "35R", "All runways"], "Sketch notes: TDZL/CL Rwy 17L."),
+ ("Which runway has touchdown zone and runway centerline lights (TDZL/RCLS)?", "17L", ["13R", "35R", "All runways"], "Airport sketch notes (cycle 2611): TDZL/RCLS Rwy 17L. RCLS = runway centerline lighting system; it was labeled TDZL/CL in 2610."),
 ])
 
 PLATES["t17l"] = dict(title="TACAN RWY 17L", kind="IAP", amdt="Amdt 2 26DEC24", qs=[
+ ("Which fix is now charted in the plan view at the runway end (cycle 2611)?", "PEBSE NQI 1.4", ["KELLA NQI 6.2", "CUBUR NQI 3.5", "MACAW NQI 12"], "Plan view shows PEBSE NQI 1.4 just north of the field, plus the profile. It's the end of the final segment, where the missed approach starts."),
  ("Final approach course?", "170°", ["165°", "175°", "184°"], "APCH CRS 170°."),
  ("TDZE 17L?", "49", ["50", "48", "47"], "Briefing strip: TDZE 49."),
  ("IAFs?", "BALTS NQI 12 (3000) and MACAW NQI 12", ["BRAMA and BALTS", "CRP and BRAMA", "KELLA and CUBUR"], "Plan view: (IAF) BALTS NQI 12 3000, (IAF) MACAW NQI 12."),
@@ -240,12 +252,13 @@ PLATES["t17l"] = dict(title="TACAN RWY 17L", kind="IAP", amdt="Amdt 2 26DEC24", 
  ("Missed approach?", "Climb to 3000 direct NQI TACAN and climbing right turn to intercept NQI R-184 to BRAMA and hold", ["Climbing right turn to 3000, R-184", "Climb to 3000, left R-319 BALTS", "Climb to 500, right turn"], "Missed approach box."),
  ("Circling Cat C?", "760-2", ["540-1", "760-2 1/4", "360-1"], "Minimums: C 760-2 (HAA 710)."),
  ("BALTS holding?", "139° inbound, 230K, 3000-6000, NQI 19", ["004° inbound", "319° inbound, 265K", "170° inbound"], "Plan view hold at BALTS: 6000/3000, 230K, 139°/319°."),
- ("Lighting special to 17L?", "TDZL and centerline lights", ["ALSF-1", "No HIRL", "PAPI only"], "Sketch: TDZL/CL Rwy 17L."),
+ ("Lighting special to 17L?", "TDZL/RCLS (touchdown zone and runway centerline lights)", ["ALSF-1", "No HIRL", "PAPI only"], "Airport sketch notes (cycle 2611): TDZL/RCLS Rwy 17L. No approach light system is shown for 17L, which is why vis stays 1 SM."),
  ("Distances on profile: KELLA→CUBUR and CUBUR→threshold?", "2.7 NM and 2.1 NM", ["4.8 and 0.5", "2.4 and 2.5", "2.9 and 1.9"], "Profile scale: 2.7 NM, 2.1 NM."),
  ("CRP feeder?", "232° at 3000, 30.2 NM", ["233°, 32.1", "237°, 49.2", "201°, 41.7"], "Plan view: 3000 232° (30.2)."),
 ])
 
 PLATES["t31lr"] = dict(title="TACAN RWY 31L/R", kind="IAP", amdt="Amdt 2 26DEC24", qs=[
+ ("Clearance Delivery on this approach plate's comm strip?", "Not listed (CLNC DEL removed in cycle 2611)", ["328.4", "239.05", "121.05"], "Comm strip, cycle 2611: ATIS, APP CON, TOWER, GND CON, ASR/PAR. 328.4 is still on the airport diagram and the SID."),
  ("Final approach course?", "292°", ["310°", "319°", "302°"], "APCH CRS 292°."),
  ("TDZE 31L and 31R?", "47 and 44", ["50 and 50", "49 and 50", "48 and 44"], "Briefing strip: Rwy 31L TDZE 47, Rwy 31R TDZE 44."),
  ("IAF and altitude?", "BRAMA NQI 12, 3000", ["DESEA NQI 12", "BALTS NQI 12", "MELOY 1800"], "Plan view: (IAF) BRAMA NQI 12, 3000."),
@@ -266,6 +279,7 @@ PLATES["t31lr"] = dict(title="TACAN RWY 31L/R", kind="IAP", amdt="Amdt 2 26DEC24
 ])
 
 PLATES["ty17r"] = dict(title="TACAN Y RWY 17R", kind="IAP", amdt="Amdt 2 26DEC24", qs=[
+ ("Which fix is now charted in the plan view at the runway end (cycle 2611)?", "WORAR NOG 25.5", ["GROVI NOG 23", "TOMZA NOG 20.6", "CELUR NOG 14"], "Plan view shows WORAR NOG 25.5 next to the runway, plus the profile. It's the end of the final segment, where the missed approach starts (the climbing LEFT turn to 1800)."),
  ("Which TACAN does this approach use?", "Orange Grove NOG, Chan 63", ["NQI Chan 125", "CRP Chan 102", "I-NQI Chan 46"], "Briefing strip: TACAN NOG Chan 63 - not the field TACAN. Brief this carefully; set Chan 63."),
  ("Final approach course?", "146°", ["165°", "170°", "326°"], "APCH CRS 146°."),
  ("IF/IAF?", "CELUR NOG 14", ["TOMZA NOG 20.6", "HINKE CRP 15", "BALTS"], "Plan view: (IF/IAF) CELUR NOG 14."),
@@ -285,6 +299,7 @@ PLATES["ty17r"] = dict(title="TACAN Y RWY 17R", kind="IAP", amdt="Amdt 2 26DEC24
 ])
 
 PLATES["ty35r"] = dict(title="TACAN Y RWY 35R", kind="IAP", amdt="Orig 26DEC24", qs=[
+ ("The CIRCLING row on this cycle-2611 plate: Cat C minimums?", "760-2 (HAA 710)", ["760-2 1/4", "540-1", "420-3/4"], "Minimums: CIRCLING A/B 540-1, C 760-2, D 760-2¼. (The reversed-C symbol that was in front of CIRCLING in 2610 was removed in 2611.)"),
  ("Final approach course?", "004°", ["184°", "355°", "319°"], "APCH CRS 004°."),
  ("IF/IAF?", "BRAMA NQI 12, 3000", ["RVERA NQI 31", "MACAY 5.7", "BALTS 12"], "Plan view: (IF/IAF) BRAMA NQI 12."),
  ("BRAMA hold-in-lieu?", "004° inbound, 230K, 3000-6000, outbound end NQI 18", ["184° inbound", "265K FL200/17,000", "139° inbound"], "Plan view: HOLD 6000/3000, 230K."),
@@ -312,7 +327,7 @@ PLATES["tz17r"] = dict(title="TACAN Z RWY 17R", kind="IAP", amdt="Amdt 2 02OCT25
  ("Stepdown?", "OTOBE NQI 3.3, 860", ["JOXAP 1.4, 400", "WOREV 1800", "OTOBE 920"], "Profile: OTOBE NQI 3.3, 860."),
  ("VDP?", "NQI 1.9", ["NQI 1.4", "NQI 3.3", "NQI 2.3"], "Profile V at NQI 1.9; JOXAP NQI 1.4 follows."),
  ("S-17R minimums?", "400-1 (HAT 351), all cats", ["520-1 3/8", "360-1", "420-3/4"], "Minimums: S-17R 400-1 351 (400-1) A-D. " + CATC),
- ("Circling Cat A? (note this plate splits A and B)", "480-1 (HAA 430)", ["500-1", "540-1", "760-2"], "Minimums CIRCLING: A 480-1, B 500-1, C 760-2, D 760-2¼. Note no reversed-C symbol here."),
+ ("Circling Cat A? (note this plate splits A and B)", "480-1 (HAA 430)", ["500-1", "540-1", "760-2"], "Minimums CIRCLING: A 480-1, B 500-1, C 760-2, D 760-2¼."),
  ("Circling Cat C?", "760-2", ["500-1", "760-2 1/4", "480-1"], "Minimums."),
  ("Descent angle/TCH?", "3.05°, TCH 50", ["3.04°, TCH 50", "3.05°, TCH 33", "3.01°, TCH 50"], "Profile 3.05° TCH 50."),
  ("Missed approach?", "Climb to 3000 direct NQI TACAN and climbing right turn to intercept NQI R-184 to BRAMA and hold", ["Left turn R-319 BALTS", "Climbing left turn 1800 NOG", "Climb to 500 then right"], "Missed approach box."),

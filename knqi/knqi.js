@@ -23,7 +23,7 @@
     var cur= eff && exp && now>=eff && now<exp;
     var p= pid && m.plates[pid];
     var h="<span class='cyc'>d-TPP cycle <b>"+m.cycle+"</b> · effective "+(eff?fmt(eff):m.effective)+" → expires "+(exp?fmt(exp):m.expires)+" (0901Z)</span> "+
-      "<span class='badge "+(cur?"ok":"bad")+"'>"+(cur?"CURRENT":"EXPIRED")+"</span>";
+      (cur?"<span class='badge ok'>CURRENT</span>":(eff&&now<eff?"<span class='badge warn'>NOT YET EFFECTIVE — starts "+fmt(eff)+"</span>":"<span class='badge bad'>EXPIRED</span>"));
     if(p && p.changed) h+=" <span class='badge warn'>CHART CHANGED since questions were written (cycle "+p.baseline_cycle+") — review answers against the plate</span>";
     if(p && p.missing) h+=" <span class='badge bad'>No longer listed in d-TPP</span>";
     if(!pid){
@@ -39,7 +39,8 @@
       fetch(base+"plates-manifest.json?ts="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(m2){
         var a=airac(new Date());
         if(m2.cycle!==m.cycle){ out.innerHTML="Manifest was updated to cycle "+m2.cycle+" — <a href='javascript:location.reload()'>reload page</a>."; return; }
-        if(a.id===m2.cycle) out.innerHTML="<b class='okt'>Up to date</b> — cycle "+a.id+" ("+fmt(a.eff)+"–"+fmt(a.exp)+") is what this site has.";
+        if(m2.cycle>a.id) out.innerHTML="<b class='badt'>This site already has the next cycle</b> ("+m2.cycle+"); the current cycle is "+a.id+" until "+fmt(a.exp)+".";
+        else if(a.id===m2.cycle) out.innerHTML="<b class='okt'>Up to date</b> — cycle "+a.id+" ("+fmt(a.eff)+"–"+fmt(a.exp)+") is what this site has.";
         else out.innerHTML="<b class='badt'>A new cycle is out:</b> "+a.id+" (effective "+fmt(a.eff)+"). Site has "+m2.cycle+". <a href='"+DTPP+"' target='_blank' rel='noopener'>Open FAA d-TPP for NQI</a> or <a href='"+ACTIONS+"' target='_blank' rel='noopener'>run the update workflow</a> (Run workflow button).";
       }).catch(function(e){out.textContent="Could not load manifest: "+e;});
     };
