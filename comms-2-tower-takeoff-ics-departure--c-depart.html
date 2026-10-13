@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Comms 2. Tower, Takeoff ICS &amp; Departure — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Comms 2. Tower, Takeoff ICS &amp; Departure</h1>
+    <div class="meta">43 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 43</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Comms 2. Tower, Takeoff ICS &amp; Departure</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "[Pilot → Kingsville Tower (Ch 3 Pri)] “Kingsville Tower, BLAZR/HAWK 2XX take off.” — What comes next? (Kingsville Tower → Pilot, Ch 3 Pri)", "opts": ["“Clear”", "BLAZR/HAWK 2XX cleared for takeoff 13R, switching.", "“Blazer 201”", "BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure."], "ans": 3, "expl": "Comm Script: Kingsville Tower, BLAZR/HAWK 2XX take off. → BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure."}, {"q": "[Kingsville Tower → Pilot (Ch 3 Pri)] “BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure.” — What comes next? (Pilot → Kingsville Tower, Ch 3 Pri)", "opts": ["BLAZR/HAWK 2XX cleared for takeoff 13R, switching.", "Kingsville Tower, BLAZR/HAWK 2XX take off.", "“Climb and maintain ten thousand, request the full SID for training, Blazer 201”", "BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure."], "ans": 0, "expl": "Comm Script: BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure. → BLAZR/HAWK 2XX cleared for takeoff 13R, switching."}, {"q": "[Pilot → Kingsville Tower (Ch 3 Pri)] “BLAZR/HAWK 2XX cleared for takeoff 13R, switching.” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”", "“Groove is Clear”", "“Platform. LAW set 5,000”", "“Good headings, no off flags, watch your knees”"], "ans": 1, "expl": "Doc: BLAZR/HAWK 2XX cleared for takeoff 13R, switching. → “Groove is Clear”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Groove is Clear”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Airspeed Alive”", "“140, gear, flaps”", "“High Speed, Good Line”", "“Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”"], "ans": 3, "expl": "Doc: “Groove is Clear” → “Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Clear”", "“Fuel Control Normal”", "“Ready in Back”", "“Good Handle”"], "ans": 1, "expl": "Doc: “Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right” → “Fuel Control Normal”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Fuel Control Normal”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“High Speed, Good Line”", "“Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”", "“Good headings, no off flags, watch your knees”", "“Airspeed Alive”"], "ans": 2, "expl": "Doc: “Fuel Control Normal” → “Good headings, no off flags, watch your knees”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Good headings, no off flags, watch your knees”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Good Handle”", "“Ready in Back”", "“Fuel Control Normal”", "“Clear”"], "ans": 3, "expl": "Doc: “Good headings, no off flags, watch your knees” → “Clear”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Clear”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”", "“Platform. LAW set 5,000”", "“High Speed, Good Line”", "“140, gear, flaps”"], "ans": 0, "expl": "Doc: “Clear” → “Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Clear”", "“Ready in Back”", "“Fuel Control Normal”", "BLAZR/HAWK 2XX cleared for takeoff 13R, switching."], "ans": 1, "expl": "Doc: “Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front” → “Ready in Back”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Ready in Back”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Clean Below 200, Good Handle”", "“High Speed, Good Line”", "“Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”", "“Airspeed Alive”"], "ans": 3, "expl": "Doc: “Ready in Back” → “Airspeed Alive”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Airspeed Alive”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Groove is Clear”", "“Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”", "“High Speed, Good Line”", "“140, gear, flaps”"], "ans": 2, "expl": "Doc: “Airspeed Alive” → “High Speed, Good Line”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““High Speed, Good Line”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Platform. LAW set 5,000”", "“140, gear, flaps”", "“Groove is Clear”", "“Good headings, no off flags, watch your knees”"], "ans": 1, "expl": "Doc: “High Speed, Good Line” → “140, gear, flaps”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““140, gear, flaps”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Ready in Back”", "“Fuel Control Normal”", "“Clear”", "“Good Handle”"], "ans": 2, "expl": "Doc: “140, gear, flaps” → “Clear”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Clear”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“High Speed, Good Line”", "“Clean Below 200, Good Handle”", "“140, gear, flaps”", "“Platform. LAW set 5,000”"], "ans": 1, "expl": "Doc: “Clear” → “Clean Below 200, Good Handle”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Clean Below 200, Good Handle”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Clear”", "BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.", "“Good Handle”", "“Ready in Back”"], "ans": 2, "expl": "Doc: “Clean Below 200, Good Handle” → “Good Handle”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Good Handle”” — What comes next? (Pilot → Kingsville Departure, Ch 4 Pri)", "opts": ["Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.", "BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.", "Kingsville Tower, BLAZR/HAWK 2XX take off.", "“Blazer 201”"], "ans": 0, "expl": "Comm Script: “Good Handle” → Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand."}, {"q": "[Pilot → Kingsville Departure (Ch 4 Pri)] “Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.” — What comes next? (Kingsville Departure → Pilot, Ch 4 Pri)", "opts": ["“140, gear, flaps”", "Kingsville Tower, BLAZR/HAWK 2XX take off.", "“Blazer 201, roger, you’re cleared on the SID”", "BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand."], "ans": 3, "expl": "Comm Script: Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand. → BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand."}, {"q": "[Kingsville Departure → Pilot (Ch 4 Pri)] “BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand.” — What comes next? (Pilot → Kingsville Departure, Ch 4 Pri)", "opts": ["Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.", "BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.", "“Climb and maintain ten thousand, request the full SID for training, Blazer 201”", "“Blazer 201”"], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. → BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure."}, {"q": "[Pilot → Kingsville Departure (Ch 4 Pri)] “BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.” — What comes next? (Pilot → Kingsville Departure, Ch 4 Pri)", "opts": ["Kingsville Tower, BLAZR/HAWK 2XX take off.", "Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.", "BLAZR/HAWK 2XX cleared for takeoff 13R, switching.", "“Climb and maintain ten thousand, request the full SID for training, Blazer 201”"], "ans": 3, "expl": "Doc: BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure. → “Climb and maintain ten thousand, request the full SID for training, Blazer 201”"}, {"q": "[Pilot → Kingsville Departure (Ch 4 Pri)] ““Climb and maintain ten thousand, request the full SID for training, Blazer 201”” — What comes next? (Kingsville Departure → Pilot, Ch 4 Pri)", "opts": ["BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure.", "“140, gear, flaps”", "“Blazer 201, roger, you’re cleared on the SID”", "BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand."], "ans": 2, "expl": "Doc: “Climb and maintain ten thousand, request the full SID for training, Blazer 201” → “Blazer 201, roger, you’re cleared on the SID”"}, {"q": "[Kingsville Departure → Pilot (Ch 4 Pri)] ““Blazer 201, roger, you’re cleared on the SID”” — What comes next? (Pilot → Kingsville Departure, Ch 4 Pri)", "opts": ["Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.", "BLAZR/HAWK 2XX cleared for takeoff 13R, switching.", "BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.", "“Blazer 201”"], "ans": 3, "expl": "Doc: “Blazer 201, roger, you’re cleared on the SID” → “Blazer 201”"}, {"q": "[Pilot → Kingsville Departure (Ch 4 Pri)] ““Blazer 201”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”", "“Clean Below 200, Good Handle”", "“Platform. LAW set 5,000”", "“High Speed, Good Line”"], "ans": 2, "expl": "Doc: “Blazer 201” → “Platform. LAW set 5,000”"}, {"q": "Who transmits this, and to whom? “Kingsville Tower, BLAZR/HAWK 2XX take off.”", "opts": ["Kingsville Arrival → Kingsville Tower", "Kingsville Tower → Pilot", "Kingsville Ground → Kingsville Tower", "Pilot → Kingsville Tower"], "ans": 3, "expl": "Comm Script (Ch 3 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure.”", "opts": ["Kingsville Tower → Pilot", "Base → Pilot", "Last aircraft to check in → Pilot", "Pilot → Kingsville Tower"], "ans": 0, "expl": "Comm Script (Ch 3 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX cleared for takeoff 13R, switching.”", "opts": ["Pilot → Kingsville Tower", "Last aircraft to check in → Kingsville Tower", "Kingsville Tower → Pilot", "Kingsville Approach → Kingsville Tower"], "ans": 0, "expl": "Comm Script (Ch 3 Pri)"}, {"q": "Who transmits this, and to whom? “Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.”", "opts": ["Kingsville Departure → Pilot", "Kingsville Ground → Kingsville Departure", "Kingsville Approach/Arrival → Kingsville Departure", "Pilot → Kingsville Departure"], "ans": 3, "expl": "Comm Script (Ch 4 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand.”", "opts": ["Kingsville Tower → Pilot", "Pilot → Kingsville Departure", "Kingsville Departure → Pilot", "Kingsville Approach/Arrival → Pilot"], "ans": 2, "expl": "Comm Script (Ch 4 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.”", "opts": ["Pilot → Kingsville Departure", "Last aircraft to check in → Kingsville Departure", "Kingsville Departure → Pilot", "Kingsville Tower → Kingsville Departure"], "ans": 0, "expl": "Comm Script (Ch 4 Pri)"}, {"q": "Who transmits this, and to whom? ““Climb and maintain ten thousand, request the full SID for training, Blazer 201””", "opts": ["Kingsville Departure → Pilot", "Kingsville Tower → Kingsville Departure", "Pilot → Kingsville Departure", "Kingsville Departure → Kingsville Departure"], "ans": 2, "expl": "Doc (Ch 4 Pri)"}, {"q": "Who transmits this, and to whom? ““Blazer 201, roger, you’re cleared on the SID””", "opts": ["Kingsville Approach → Pilot", "Pilot → Kingsville Departure", "Pilot → Pilot", "Kingsville Departure → Pilot"], "ans": 3, "expl": "Doc (Ch 4 Pri)"}, {"q": "Which radio/channel is this call made on? “Kingsville Tower, BLAZR/HAWK 2XX take off.”", "opts": ["Ch 12 Pri", "Ch 13 Pri", "Ch 3 Pri", "Ch 2 Pri"], "ans": 2, "expl": "Comm Script: Ch 3 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure.”", "opts": ["Ch 30 Pri", "Ch 29 Pri", "Ch 3 Pri", "Ch 4 Pri"], "ans": 2, "expl": "Comm Script: Ch 3 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX cleared for takeoff 13R, switching.”", "opts": ["Ch 3 Pri", "Ch 29 Pri", "Ch 2 Pri", "Ch 30 Pri"], "ans": 0, "expl": "Comm Script: Ch 3 Pri"}, {"q": "Which radio/channel is this call made on? “Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.”", "opts": ["Ch 12 Pri", "Ch 30 Pri", "Ch 29 Pri", "Ch 4 Pri"], "ans": 3, "expl": "Comm Script: Ch 4 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand.”", "opts": ["Ch 3 Pri", "Ch 1 Aux", "Ch 13 Pri", "Ch 4 Pri"], "ans": 3, "expl": "Comm Script: Ch 4 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.”", "opts": ["Ch 2 Pri", "Ch 4 Pri", "Ch 29 Pri", "Ch 3 Pri"], "ans": 1, "expl": "Comm Script: Ch 4 Pri"}, {"q": "Which radio/channel is this call made on? ““Climb and maintain ten thousand, request the full SID for training, Blazer 201””", "opts": ["Ch 1 Aux", "Ch 2 Pri", "Ch 13 Pri", "Ch 4 Pri"], "ans": 3, "expl": "Doc: Ch 4 Pri"}, {"q": "Which radio/channel is this call made on? ““Blazer 201, roger, you’re cleared on the SID””", "opts": ["Ch 13 Pri", "Ch 4 Pri", "Ch 12 Pri", "Ch 29 Pri"], "ans": 1, "expl": "Doc: Ch 4 Pri"}, {"q": "Radio auto-switches to Tower (Ch 3 Pri) at:", "opts": ["1500 ft prior to hold short (Abeam the arresting gear)", "500 ft prior to hold short", "the hold short line", "on Ground’s instruction"], "ans": 0, "expl": "Doc: 1500 ft prior to hold short (Abeam the arresting gear), auto switch to tower on channel 3 on PRI."}, {"q": "Departure is on which PRI channel?", "opts": ["Ch 13", "Ch 4", "Ch 3", "Ch 5"], "ans": 1, "expl": "Comm Script: DEPARTURE CALL (CH-4)."}, {"q": "Tower winds / runway in the takeoff clearance:", "opts": ["wind 130 at 5, runway 13L", "wind 150 at 13, runway 13R", "wind 130 at 15, runway 13R", "wind 310 at 15, runway 31L"], "ans": 2, "expl": "Comm Script: wind 130 at 15, runway 13R, cleared for takeoff, change to departure."}, {"q": "Departure radar contact: turn point / fix:", "opts": ["passing three thousand feet turn right proceed direct (RICTO)", "passing two thousand direct RIVERA", "passing three thousand turn left direct RICTO", "passing five thousand turn left direct WADE"], "ans": 0, "expl": "Comm Script: radar contact passing three thousand feet turn right proceed direct (RICTO)."}, {"q": "Call Tower for takeoff when (Doc)?", "opts": ["before even turning into the hold short area", "after hold short checks", "after stopping at the hold short", "when lined up"], "ans": 0, "expl": "Doc: Call tower for takeoff before even turning into the hold short area so that maybe you can just roll right from taxi out onto the runway."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

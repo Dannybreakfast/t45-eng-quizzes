@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Comms 1. Clearance, Base/Strike &amp; Ground — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Comms 1. Clearance, Base/Strike &amp; Ground</h1>
+    <div class="meta">62 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 62</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Comms 1. Clearance, Base/Strike &amp; Ground</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "[— → ATIS (Ch 30 Pri)] “Pri Radio - On, Channel 30 (ATIS) — When done listening, switch to ch 29, turn off, put altimeter setting in” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Watch your knees”", "“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”", "“Canopy”", "“ICS check, switches set, Norm, Fuel __”"], "ans": 3, "expl": "Doc: Pri Radio - On, Channel 30 (ATIS) — When done listening, switch to ch 29, turn off, put altimeter setting in → “ICS check, switches set, Norm, Fuel __”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““ICS check, switches set, Norm, Fuel __”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Clear”", "“Rail Clear”", "“Loud and Clear, switches set, Norm, Both, Fuel __”", "“Attached 8 Points, Pins Removed, Armed in Back”"], "ans": 2, "expl": "Doc: “ICS check, switches set, Norm, Fuel __” → “Loud and Clear, switches set, Norm, Both, Fuel __”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Loud and Clear, switches set, Norm, Both, Fuel __”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Good tone, Good BIT”", "“Throttle off, GTS”", "“Mask on, Flow on”", "“Lights and Tones”"], "ans": 3, "expl": "Doc: “Loud and Clear, switches set, Norm, Both, Fuel __” → “Lights and Tones”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Lights and Tones”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Throttle off, GTS”", "“ICS check, switches set, Norm, Fuel __”", "“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”", "“Canopy”"], "ans": 0, "expl": "Doc: “Lights and Tones” → “Throttle off, GTS”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Throttle off, GTS”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Attached 8 Points, Pins Removed, Armed in Back”", "“Rail Clear”", "“Loud and Clear, switches set, Norm, Both, Fuel __”", "“Clear”"], "ans": 3, "expl": "Doc: “Throttle off, GTS” → “Clear”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Clear”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”", "“Attached 8 Points, Pins Removed, Ready to Arm in Front”", "“Canopy”", "“Armed in Front, Takeoff Checks Complete”"], "ans": 0, "expl": "Doc: “Clear” → “No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Lights and Tones”", "“Mask on, Flow on”", "“ICS check, switches set, Norm, Fuel __”", "“Attached 8 Points, Pins Removed, Ready to Arm in Front”"], "ans": 1, "expl": "Doc: “No Exceedances, No Overflows, 4 SATS, QUALS Counting Down” → “Mask on, Flow on”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Mask on, Flow on”” — What comes next? (Pilot → Kingsville Clearance, Ch 29 Pri)", "opts": ["BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.", "Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)", "BLAZR/HAWK 2XX Switching", "Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS)."], "ans": 1, "expl": "Comm Script: “Mask on, Flow on” → Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)"}, {"q": "[Pilot → Kingsville Clearance (Ch 29 Pri)] “Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)” — What comes next? (Kingsville Clearance → Pilot, Ch 29 Pri)", "opts": ["BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.", "“Rail Clear”", "“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”", "BLAZR/HAWK 2XX read back correct, frequency change approved."], "ans": 0, "expl": "Comm Script: Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy) → BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4."}, {"q": "[Kingsville Clearance → Pilot (Ch 29 Pri)] “BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.” — What comes next? (Pilot → Kingsville Clearance, Ch 29 Pri)", "opts": ["BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.", "BLAZR/HAWK 2XX Switching", "BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.", "“Armed in Front, Takeoff Checks Complete”"], "ans": 2, "expl": "Comm Script: BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4. → BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4."}, {"q": "[Pilot → Kingsville Clearance (Ch 29 Pri)] “BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.” — What comes next? (Kingsville Clearance → Pilot, Ch 29 Pri)", "opts": ["BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.", "“Canopy”", "BLAZR/HAWK 2XX read back correct, frequency change approved.", "2XX have a good flight."], "ans": 2, "expl": "Comm Script: BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4. → BLAZR/HAWK 2XX read back correct, frequency change approved."}, {"q": "[Kingsville Clearance → Pilot (Ch 29 Pri)] “BLAZR/HAWK 2XX read back correct, frequency change approved.” — What comes next? (Pilot → Kingsville Clearance, Ch 29 Pri)", "opts": ["STRIKE, 2XX out of chocks.", "BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.", "BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.", "BLAZR/HAWK 2XX Switching"], "ans": 3, "expl": "Comm Script: BLAZR/HAWK 2XX read back correct, frequency change approved. → BLAZR/HAWK 2XX Switching"}, {"q": "[Pilot → Kingsville Clearance (Ch 29 Pri)] “BLAZR/HAWK 2XX Switching” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”", "“Good tone, Good BIT”", "“Watch your knees”", "“Lights and Tones”"], "ans": 1, "expl": "Doc: BLAZR/HAWK 2XX Switching → “Good tone, Good BIT”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Good tone, Good BIT”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Watch your knees”", "“Throttle off, GTS”", "“ICS check, switches set, Norm, Fuel __”", "“Canopy”"], "ans": 0, "expl": "Doc: “Good tone, Good BIT” → “Watch your knees”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Watch your knees”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Loud and Clear, switches set, Norm, Both, Fuel __”", "“Rail Clear”", "“Clear”", "“Attached 8 Points, Pins Removed, Armed in Back”"], "ans": 2, "expl": "Doc: “Watch your knees” → “Clear”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Clear”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Canopy”", "“Mask on, Flow on”", "“ICS check, switches set, Norm, Fuel __”", "“Throttle off, GTS”"], "ans": 0, "expl": "Doc: “Clear” → “Canopy”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Canopy”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Attached 8 Points, Pins Removed, Armed in Back”", "“Rail Clear”", "“Clear”", "“Loud and Clear, switches set, Norm, Both, Fuel __”"], "ans": 1, "expl": "Doc: “Canopy” → “Rail Clear”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Rail Clear”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Attached 8 Points, Pins Removed, Ready to Arm in Front”", "“Good tone, Good BIT”", "“Mask on, Flow on”", "“Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete”"], "ans": 3, "expl": "Doc: “Rail Clear” → “Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”", "“Lights and Tones”", "“Mask on, Flow on”", "“Attached 8 Points, Pins Removed, Ready to Arm in Front”"], "ans": 3, "expl": "Doc: “Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete” → “Attached 8 Points, Pins Removed, Ready to Arm in Front”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Attached 8 Points, Pins Removed, Ready to Arm in Front”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["“Loud and Clear, switches set, Norm, Both, Fuel __”", "BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.", "“Attached 8 Points, Pins Removed, Armed in Back”", "“Clear”"], "ans": 2, "expl": "Doc: “Attached 8 Points, Pins Removed, Ready to Arm in Front” → “Attached 8 Points, Pins Removed, Armed in Back”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Attached 8 Points, Pins Removed, Armed in Back”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Armed in Front, Takeoff Checks Complete”", "“Watch your knees”", "“Canopy”", "“Lights and Tones”"], "ans": 0, "expl": "Doc: “Attached 8 Points, Pins Removed, Armed in Back” → “Armed in Front, Takeoff Checks Complete”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Armed in Front, Takeoff Checks Complete”” — What comes next? (Pilot → STRIKE (Base), Ch 1 Aux)", "opts": ["Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).", "“Base, 01 Taxi” (You just say the last two numbers)", "STRIKE, 2XX out of chocks.", "BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha."], "ans": 2, "expl": "Comm Script: “Armed in Front, Takeoff Checks Complete” → STRIKE, 2XX out of chocks."}, {"q": "[Pilot → STRIKE (Base) (Ch 1 Aux)] “STRIKE, 2XX out of chocks.” — What comes next? (STRIKE (Base) → Pilot, Ch 1 Aux)", "opts": ["BLAZR/HAWK 2XX Switching", "2XX have a good flight.", "“Clear”", "Pri Radio - On, Channel 30 (ATIS) — When done listening, switch to ch 29, turn off, put altimeter setting in"], "ans": 1, "expl": "Comm Script: STRIKE, 2XX out of chocks. → 2XX have a good flight."}, {"q": "[STRIKE (Base) → Pilot (Ch 1 Aux)] “2XX have a good flight.” — What comes next? (Pilot → Base, Ch 1 Aux)", "opts": ["BLAZR/HAWK 2XX Switching", "STRIKE, 2XX out of chocks.", "“Base, 01 Taxi” (You just say the last two numbers)", "BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha."], "ans": 2, "expl": "Doc: 2XX have a good flight. → “Base, 01 Taxi” (You just say the last two numbers)"}, {"q": "[Pilot → Base (Ch 1 Aux)] ““Base, 01 Taxi” (You just say the last two numbers)” — What comes next? (Base → Pilot, Ch 1 Aux)", "opts": ["“Clear”", "“Good tone, Good BIT”", "“201 have a good flight”", "BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4."], "ans": 2, "expl": "Doc: “Base, 01 Taxi” (You just say the last two numbers) → “201 have a good flight”"}, {"q": "[Base → Pilot (Ch 1 Aux)] ““201 have a good flight”” — What comes next? (Pilot → Kingsville Ground, Ch 2 Pri)", "opts": ["BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.", "BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.", "Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).", "Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)"], "ans": 2, "expl": "Comm Script: “201 have a good flight” → Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS)."}, {"q": "[Pilot → Kingsville Ground (Ch 2 Pri)] “Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).” — What comes next? (Kingsville Ground → Pilot, Ch 2 Pri)", "opts": ["BLAZR/HAWK 2XX Switching", "“Attached 8 Points, Pins Removed, Armed in Back”", "“Watch your knees”", "BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha."], "ans": 3, "expl": "Comm Script: Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS). → BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha."}, {"q": "[Kingsville Ground → Pilot (Ch 2 Pri)] “BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.” — What comes next? (Pilot → Kingsville Ground, Ch 2 Pri)", "opts": ["Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)", "BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.", "“Base, 01 Taxi” (You just say the last two numbers)", "BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4."], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha. → BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha."}, {"q": "Who transmits this, and to whom? “Pri Radio - On, Channel 30 (ATIS) — When done listening, switch to ch 29, turn off, put altimeter setting in”", "opts": ["Kingsville Departure → ATIS", "ATIS → —", "— → ATIS", "Pilot → ATIS"], "ans": 2, "expl": "Doc (Ch 30 Pri)"}, {"q": "Who transmits this, and to whom? “Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)”", "opts": ["Kingsville Clearance → Pilot", "Kingsville Departure → Kingsville Clearance", "Pilot → Kingsville Clearance", "Kingsville Tower → Kingsville Clearance"], "ans": 2, "expl": "Comm Script (Ch 29 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.”", "opts": ["Pilot → Kingsville Clearance", "Base → Pilot", "Last aircraft to check in → Pilot", "Kingsville Clearance → Pilot"], "ans": 3, "expl": "Comm Script (Ch 29 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.”", "opts": ["Kingsville Clearance → Pilot", "Kingsville Departure → Kingsville Clearance", "Base → Kingsville Clearance", "Pilot → Kingsville Clearance"], "ans": 3, "expl": "Comm Script (Ch 29 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX read back correct, frequency change approved.”", "opts": ["Pilot → Kingsville Clearance", "Kingsville Tower → Pilot", "Base → Pilot", "Kingsville Clearance → Pilot"], "ans": 3, "expl": "Comm Script (Ch 29 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX Switching”", "opts": ["Kingsville Clearance → Kingsville Clearance", "Kingsville Clearance → Pilot", "Kingsville Ground → Kingsville Clearance", "Pilot → Kingsville Clearance"], "ans": 3, "expl": "Comm Script (Ch 29 Pri)"}, {"q": "Who transmits this, and to whom? “STRIKE, 2XX out of chocks.”", "opts": ["Base → STRIKE (Base)", "STRIKE (Base) → Pilot", "Pilot → STRIKE (Base)", "Kingsville Tower → STRIKE (Base)"], "ans": 2, "expl": "Comm Script (Ch 1 Aux)"}, {"q": "Who transmits this, and to whom? “2XX have a good flight.”", "opts": ["Last aircraft to check in → Pilot", "Pilot → Pilot", "Pilot → STRIKE (Base)", "STRIKE (Base) → Pilot"], "ans": 3, "expl": "Comm Script (Ch 1 Aux)"}, {"q": "Who transmits this, and to whom? ““Base, 01 Taxi” (You just say the last two numbers)”", "opts": ["Pilot → Base", "Tower/LSO → Base", "Base → Pilot", "Kingsville Ground → Base"], "ans": 0, "expl": "Doc (Ch 1 Aux)"}, {"q": "Who transmits this, and to whom? ““201 have a good flight””", "opts": ["Pilot → Base", "Base → Pilot", "Last aircraft to check in → Pilot", "STRIKE (Base) → Pilot"], "ans": 1, "expl": "Doc (Ch 1 Aux)"}, {"q": "Who transmits this, and to whom? “Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).”", "opts": ["Kingsville Ground → Pilot", "Kingsville Approach → Kingsville Ground", "Pilot → Kingsville Ground", "Base → Kingsville Ground"], "ans": 2, "expl": "Comm Script (Ch 2 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.”", "opts": ["Pilot → Kingsville Ground", "Kingsville Ground → Pilot", "Kingsville Arrival → Pilot", "Kingsville Clearance → Pilot"], "ans": 1, "expl": "Comm Script (Ch 2 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.”", "opts": ["Kingsville Ground → Pilot", "Tower/LSO → Kingsville Ground", "Pilot → Kingsville Ground", "Kingsville Approach → Kingsville Ground"], "ans": 2, "expl": "Comm Script (Ch 2 Pri)"}, {"q": "Which radio/channel is this call made on? “Pri Radio - On, Channel 30 (ATIS) — When done listening, switch to ch 29, turn off, put altimeter setting in”", "opts": ["Ch 3 Pri", "Ch 13 Pri", "Ch 30 Pri", "Ch 1 Aux"], "ans": 2, "expl": "Doc: Ch 30 Pri"}, {"q": "Which radio/channel is this call made on? “Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)”", "opts": ["Ch 13 Pri", "Ch 29 Pri", "Ch 2 Pri", "Ch 4 Pri"], "ans": 1, "expl": "Comm Script: Ch 29 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.”", "opts": ["Ch 5 Pri (237.85)", "Ch 29 Pri", "Ch 1 Aux", "Ch 2 Pri"], "ans": 1, "expl": "Comm Script: Ch 29 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.”", "opts": ["Ch 3 Pri", "Ch 5 Pri (237.85)", "Ch 30 Pri", "Ch 29 Pri"], "ans": 3, "expl": "Comm Script: Ch 29 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX read back correct, frequency change approved.”", "opts": ["Ch 29 Pri", "Ch 2 Pri", "Ch 3 Pri", "Ch 1 Aux"], "ans": 0, "expl": "Comm Script: Ch 29 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX Switching”", "opts": ["Ch 5 Pri (237.85)", "Ch 30 Pri", "Ch 3 Pri", "Ch 29 Pri"], "ans": 3, "expl": "Comm Script: Ch 29 Pri"}, {"q": "Which radio/channel is this call made on? “STRIKE, 2XX out of chocks.”", "opts": ["Ch 1 Aux", "Ch 5 Pri (237.85)", "Ch 12 Pri", "Ch 13 Pri"], "ans": 0, "expl": "Comm Script: Ch 1 Aux"}, {"q": "Which radio/channel is this call made on? “2XX have a good flight.”", "opts": ["Ch 5 Pri (237.85)", "Ch 1 Aux", "Ch 29 Pri", "Ch 4 Pri"], "ans": 1, "expl": "Comm Script: Ch 1 Aux"}, {"q": "Which radio/channel is this call made on? ““Base, 01 Taxi” (You just say the last two numbers)”", "opts": ["Ch 13 Pri", "Ch 12 Pri", "Ch 4 Pri", "Ch 1 Aux"], "ans": 3, "expl": "Doc: Ch 1 Aux"}, {"q": "Which radio/channel is this call made on? ““201 have a good flight””", "opts": ["Ch 2 Pri", "Ch 13 Pri", "Ch 4 Pri", "Ch 1 Aux"], "ans": 3, "expl": "Doc: Ch 1 Aux"}, {"q": "Which radio/channel is this call made on? “Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).”", "opts": ["Ch 30 Pri", "Ch 1 Aux", "Ch 3 Pri", "Ch 2 Pri"], "ans": 3, "expl": "Comm Script: Ch 2 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.”", "opts": ["Ch 4 Pri", "Ch 1 Aux", "Ch 3 Pri", "Ch 2 Pri"], "ans": 3, "expl": "Comm Script: Ch 2 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.”", "opts": ["Ch 5 Pri (237.85)", "Ch 30 Pri", "Ch 4 Pri", "Ch 2 Pri"], "ans": 3, "expl": "Comm Script: Ch 2 Pri"}, {"q": "Clearance Delivery is on which PRI channel?", "opts": ["Ch 2", "Ch 29", "Ch 30", "Ch 1"], "ans": 1, "expl": "Comm Script: CLEARANCE CALL (CH-29)"}, {"q": "ATIS is on which PRI channel (Doc)?", "opts": ["Channel 13", "Channel 3", "Channel 30", "Channel 29"], "ans": 2, "expl": "Doc: Pri Radio - On, Channel 30 (ATIS)"}, {"q": "Squawk given in the Comm Script clearance:", "opts": ["0513", "531X", "1200", "513X"], "ans": 3, "expl": "Comm Script: SQUAWK 513X, Departure Local button 4."}, {"q": "Departure frequency given in the clearance:", "opts": ["button 3", "button 13", "Departure Local button 4", "button 12"], "ans": 2, "expl": "Comm Script: Departure Local button 4."}, {"q": "Base/STRIKE is called on:", "opts": ["Ch 1 Aux", "Ch 1 Pri", "Ch 2 Aux", "Ch 29 Pri"], "ans": 0, "expl": "Doc: Contact Base (Ch1) on Aux and Ground (Ch 2) on Pri prior to leaving the Marshall Area"}, {"q": "On the Base call you say:", "opts": ["side number and runway", "just the last two numbers (“Base, 01 Taxi”)", "full callsign “Blazer 201”", "“Strike, Blazer 201”"], "ans": 1, "expl": "Doc: Ch 1 Aux: “Base, 01 Taxi” You just say the last two numbers"}, {"q": "Where are Base and Ground called from (Doc)?", "opts": ["the Marshall Area (not from the line)", "the hold short", "the line, before taxi", "the final checker"], "ans": 0, "expl": "Doc: Contact Base (Ch1) on Aux and Ground (Ch 2) on Pri prior to leaving the Marshall Area"}, {"q": "Sheet: after ATIS, Pri Radio is set to:", "opts": ["Ch29 + OFF", "Ch2 + ON", "Ch30 + OFF", "Ch1 + ON"], "ans": 0, "expl": "Sheet: 5. Pri Radio: Switch to Ch29 + OFF"}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

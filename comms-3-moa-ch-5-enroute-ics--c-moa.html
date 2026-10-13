@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Comms 3. MOA (Ch 5) &amp; Enroute ICS — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Comms 3. MOA (Ch 5) &amp; Enroute ICS</h1>
+    <div class="meta">32 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 32</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Comms 3. MOA (Ch 5) &amp; Enroute ICS</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”” — What comes next? (Pilot → Kingsville Departure, Ch 4 Pri)", "opts": ["BLAZR/HAWK 2XX VMC Terminate.", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.", "99 IN THE ALPHA CHECK IN.", "BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”"], "ans": 0, "expl": "Comm Script: “Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.” → BLAZR/HAWK 2XX VMC Terminate."}, {"q": "[Pilot → Kingsville Departure (Ch 4 Pri)] “BLAZR/HAWK 2XX VMC Terminate.” — What comes next? (Kingsville Departure → Pilot, Ch 4 Pri)", "opts": ["“Three, Two, One, Hack, One, Two, Three”", "BLAZR/HAWK 2XX Terminate frequency change approved.", "OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.”", "“Ready”"], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XX VMC Terminate. → BLAZR/HAWK 2XX Terminate frequency change approved."}, {"q": "[Kingsville Departure → Pilot (Ch 4 Pri)] “BLAZR/HAWK 2XX Terminate frequency change approved.” — What comes next? (Pilot → Kingsville Departure, Ch 4 Pri)", "opts": ["BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”", "“Frequency change approved, Blazer 201”", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.", "99 IN THE ALPHA CHECK IN."], "ans": 1, "expl": "Doc: BLAZR/HAWK 2XX Terminate frequency change approved. → “Frequency change approved, Blazer 201”"}, {"q": "[Pilot → Kingsville Departure (Ch 4 Pri)] ““Frequency change approved, Blazer 201”” — What comes next? (Pilot → All aircraft in Kings 1A, Ch 5 Pri (237.85))", "opts": ["99 IN THE ALPHA CHECK IN.", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.", "BLAZR/HAWK 2XX VMC Terminate.", "BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”"], "ans": 0, "expl": "Comm Script: “Frequency change approved, Blazer 201” → 99 IN THE ALPHA CHECK IN."}, {"q": "[Pilot → All aircraft in Kings 1A (Ch 5 Pri (237.85))] “99 IN THE ALPHA CHECK IN.” — What comes next? (Last aircraft to check in → Pilot, Ch 5 Pri (237.85))", "opts": ["“Frequency change approved, Blazer 201”", "OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.”", "“Three, Two, One, Hack, One, Two, Three”", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”"], "ans": 1, "expl": "Comm Script + Doc: 99 IN THE ALPHA CHECK IN. → OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.”"}, {"q": "[Last aircraft to check in → Pilot (Ch 5 Pri (237.85))] “OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.”” — What comes next? (Pilot → All aircraft in Kings 1A, Ch 5 Pri (237.85))", "opts": ["“Frequency change approved, Blazer 201”", "BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.", "BLAZR/HAWK 2XX VMC Terminate."], "ans": 1, "expl": "Comm Script + Doc: OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.” → BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”"}, {"q": "[Pilot → All aircraft in Kings 1A (Ch 5 Pri (237.85))] “BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Three, Two, One, Hack, One, Two, Three”", "“Frequency change approved, Blazer 201”", "“Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”", "“Standby for time hack”"], "ans": 3, "expl": "Doc: BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE” → “Standby for time hack”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Standby for time hack”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["BLAZR/HAWK 2XX VMC Terminate.", "BLAZR/HAWK 2XX Terminate frequency change approved.", "BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”", "“Ready”"], "ans": 3, "expl": "Doc: “Standby for time hack” → “Ready”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Ready”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”", "99 IN THE ALPHA CHECK IN.", "“Three, Two, One, Hack, One, Two, Three”", "“Standby for time hack”"], "ans": 2, "expl": "Doc: “Ready” → “Three, Two, One, Hack, One, Two, Three”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Three, Two, One, Hack, One, Two, Three”” — What comes next? (Pilot → All aircraft in Kings 1A, Ch 5 Pri (237.85))", "opts": ["“Frequency change approved, Blazer 201”", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”", "BLAZR/HAWK 2XX VMC Terminate."], "ans": 2, "expl": "Comm Script + Doc: “Three, Two, One, Hack, One, Two, Three” → BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”"}, {"q": "[Pilot → All aircraft in Kings 1A (Ch 5 Pri (237.85))] “BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”” — What comes next? (Pilot → All aircraft in Kings 1A, Ch 5 Pri (237.85))", "opts": ["BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”", "BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.", "“Frequency change approved, Blazer 201”", "99 IN THE ALPHA CHECK IN."], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville” → BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery."}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX VMC Terminate.”", "opts": ["STRIKE (Base) → Kingsville Departure", "Kingsville Departure → Pilot", "Pilot → Kingsville Departure", "Kingsville Approach/Arrival → Kingsville Departure"], "ans": 2, "expl": "Comm Script (Ch 4 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX Terminate frequency change approved.”", "opts": ["Pilot → Kingsville Departure", "Kingsville Approach/Arrival → Pilot", "Kingsville Departure → Pilot", "Pilot → Pilot"], "ans": 2, "expl": "Comm Script (Ch 4 Pri)"}, {"q": "Who transmits this, and to whom? ““Frequency change approved, Blazer 201””", "opts": ["Last aircraft to check in → Kingsville Departure", "STRIKE (Base) → Kingsville Departure", "Kingsville Departure → Pilot", "Pilot → Kingsville Departure"], "ans": 3, "expl": "Doc (Ch 4 Pri)"}, {"q": "Who transmits this, and to whom? “99 IN THE ALPHA CHECK IN.”", "opts": ["Kingsville Tower → All aircraft in Kings 1A", "Pilot → All aircraft in Kings 1A", "All aircraft in Kings 1A → Pilot", "STRIKE (Base) → All aircraft in Kings 1A"], "ans": 1, "expl": "Comm Script (Ch 5 Pri (237.85))"}, {"q": "Who transmits this, and to whom? “OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.””", "opts": ["Base → Pilot", "Pilot → Last aircraft to check in", "Kingsville Ground → Pilot", "Last aircraft to check in → Pilot"], "ans": 3, "expl": "Comm Script + Doc (Ch 5 Pri (237.85))"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE””", "opts": ["Kingsville Approach/Arrival → All aircraft in Kings 1A", "Pilot → All aircraft in Kings 1A", "All aircraft in Kings 1A → Pilot", "STRIKE (Base) → All aircraft in Kings 1A"], "ans": 1, "expl": "Comm Script + Doc (Ch 5 Pri (237.85))"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville””", "opts": ["Kingsville Departure → All aircraft in Kings 1A", "All aircraft in Kings 1A → Pilot", "Base → All aircraft in Kings 1A", "Pilot → All aircraft in Kings 1A"], "ans": 3, "expl": "Comm Script + Doc (Ch 5 Pri (237.85))"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.”", "opts": ["Pilot → All aircraft in Kings 1A", "STRIKE (Base) → All aircraft in Kings 1A", "All aircraft in Kings 1A → Pilot", "Kingsville Ground → All aircraft in Kings 1A"], "ans": 0, "expl": "Comm Script (Ch 5 Pri (237.85))"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX VMC Terminate.”", "opts": ["Ch 4 Pri", "Ch 12 Pri", "Ch 29 Pri", "Ch 30 Pri"], "ans": 0, "expl": "Comm Script: Ch 4 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX Terminate frequency change approved.”", "opts": ["Ch 1 Aux", "Ch 13 Pri", "Ch 29 Pri", "Ch 4 Pri"], "ans": 3, "expl": "Comm Script: Ch 4 Pri"}, {"q": "Which radio/channel is this call made on? ““Frequency change approved, Blazer 201””", "opts": ["Ch 13 Pri", "Ch 4 Pri", "Ch 12 Pri", "Ch 30 Pri"], "ans": 1, "expl": "Doc: Ch 4 Pri"}, {"q": "Which radio/channel is this call made on? “99 IN THE ALPHA CHECK IN.”", "opts": ["Ch 1 Aux", "Ch 29 Pri", "Ch 2 Pri", "Ch 5 Pri (237.85)"], "ans": 3, "expl": "Comm Script: Ch 5 Pri (237.85)"}, {"q": "Which radio/channel is this call made on? “OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.””", "opts": ["Ch 30 Pri", "Ch 29 Pri", "Ch 5 Pri (237.85)", "Ch 12 Pri"], "ans": 2, "expl": "Comm Script + Doc: Ch 5 Pri (237.85)"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE””", "opts": ["Ch 1 Aux", "Ch 30 Pri", "Ch 5 Pri (237.85)", "Ch 13 Pri"], "ans": 2, "expl": "Comm Script + Doc: Ch 5 Pri (237.85)"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville””", "opts": ["Ch 1 Aux", "Ch 3 Pri", "Ch 5 Pri (237.85)", "Ch 30 Pri"], "ans": 2, "expl": "Comm Script + Doc: Ch 5 Pri (237.85)"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.”", "opts": ["Ch 3 Pri", "Ch 5 Pri (237.85)", "Ch 12 Pri", "Ch 13 Pri"], "ans": 1, "expl": "Comm Script: Ch 5 Pri (237.85)"}, {"q": "Kings 1A (Ch 5) frequency should read:", "opts": ["237.85", "273.85", "327.85", "237.58"], "ans": 0, "expl": "Doc: On Ch 5, it should read 237.85."}, {"q": "How do you verify the Ch 5 preset?", "opts": ["switching to Aux", "momentarily switching pri radio to READ", "calling Departure", "pressing IDENT"], "ans": 1, "expl": "Doc: ensure that the ch 5 preset is set to the correct frequency by momentarily switching pri radio to READ."}, {"q": "No response to the 99 check in means:", "opts": ["call again in 2 minutes", "no one is working the area (radio silence) — check freq", "contact Departure", "the MOA is closed"], "ans": 1, "expl": "Comm Script: (NO RESPONSE CHECK FREQ); Doc: If no one is working in the area, there will be radio silence."}, {"q": "99 responses give:", "opts": ["only the number of aircraft", "callsigns and altitudes", "flight types (not callsigns) and where they are working", "callsigns and fuel"], "ans": 2, "expl": "Doc: the last flight to check in will respond with the flight types (not callsigns) and where they are working."}, {"q": "After someone checks in after you, you are responsible for:", "opts": ["only your own block", "relaying to Departure", "nothing", "reporting all flights and where they are working in the area"], "ans": 3, "expl": "Doc: when someone else checks in you are responsible for reporting all flights and where they are working in the area."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

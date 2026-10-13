@@ -1,0 +1,162 @@
+— (Ch 30 Pri): Pri Radio - On, Channel 30 (ATIS) — When done listening, switch to ch 29, turn off, put altimeter setting in	Pilot (front): “ICS check, switches set, Norm, Fuel __”
+Pilot (front) (ICS): “ICS check, switches set, Norm, Fuel __”	Rear cockpit (R/C): “Loud and Clear, switches set, Norm, Both, Fuel __”
+Rear cockpit (R/C) (ICS): “Loud and Clear, switches set, Norm, Both, Fuel __”	Pilot (front): “Lights and Tones”
+Pilot (front) (ICS): “Lights and Tones”	Pilot (front): “Throttle off, GTS”
+Pilot (front) (ICS): “Throttle off, GTS”	Rear cockpit (R/C): “Clear”
+Rear cockpit (R/C) (ICS): “Clear”	Pilot (front): “No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”
+Pilot (front) (ICS): “No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”	Pilot (front): “Mask on, Flow on”
+Pilot (front) (ICS): “Mask on, Flow on”	Pilot: Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)
+Pilot (Ch 29 Pri): Kingsville Clearance, BLAZR/HAWK 2XX (Premont 2 on Request, Ready to Copy)	Kingsville Clearance: BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.
+Kingsville Clearance (Ch 29 Pri): BLAZR/HAWK 2XX you are cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.	Pilot: BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.
+Pilot (Ch 29 Pri): BLAZR/HAWK 2XX is cleared to Kingsville via the KINGS 3 Departure RICTO transition, Premont 2 coded route, on departure climb and maintain 7 thousand expect 230 in 10, SQUAWK 513X, Departure Local button 4.	Kingsville Clearance: BLAZR/HAWK 2XX read back correct, frequency change approved.
+Kingsville Clearance (Ch 29 Pri): BLAZR/HAWK 2XX read back correct, frequency change approved.	Pilot: BLAZR/HAWK 2XX Switching
+Pilot (Ch 29 Pri): BLAZR/HAWK 2XX Switching	Pilot (front): “Good tone, Good BIT”
+Pilot (front) (ICS): “Good tone, Good BIT”	Pilot (front): “Watch your knees”
+Pilot (front) (ICS): “Watch your knees”	Rear cockpit (R/C): “Clear”
+Rear cockpit (R/C) (ICS): “Clear”	Pilot (front): “Canopy”
+Pilot (front) (ICS): “Canopy”	Rear cockpit (R/C): “Rail Clear”
+Rear cockpit (R/C) (ICS): “Rail Clear”	Pilot (front): “Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete”
+Pilot (front) (ICS): “Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete”	Pilot (front): “Attached 8 Points, Pins Removed, Ready to Arm in Front”
+Pilot (front) (ICS): “Attached 8 Points, Pins Removed, Ready to Arm in Front”	Rear cockpit (R/C): “Attached 8 Points, Pins Removed, Armed in Back”
+Rear cockpit (R/C) (ICS): “Attached 8 Points, Pins Removed, Armed in Back”	Pilot (front): “Armed in Front, Takeoff Checks Complete”
+Pilot (front) (ICS): “Armed in Front, Takeoff Checks Complete”	Pilot: STRIKE, 2XX out of chocks.
+Pilot (Ch 1 Aux): STRIKE, 2XX out of chocks.	STRIKE (Base): 2XX have a good flight.
+STRIKE (Base) (Ch 1 Aux): 2XX have a good flight.	Pilot: “Base, 01 Taxi” (You just say the last two numbers)
+Pilot (Ch 1 Aux): “Base, 01 Taxi” (You just say the last two numbers)	Base: “201 have a good flight”
+Base (Ch 1 Aux): “201 have a good flight”	Pilot: Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).
+Pilot (Ch 2 Pri): Kingsville Ground, BLAZR/HAWK 2XX, taxi with ALPHA (current ATIS).	Kingsville Ground: BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.
+Kingsville Ground (Ch 2 Pri): BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.	Pilot: BLAZR/HAWK 2XX taxi to 13R via Bravo Alpha.
+Clearance Delivery is on which PRI channel?	Ch 29
+ATIS is on which PRI channel (Doc)?	Channel 30
+Squawk given in the Comm Script clearance:	513X
+Departure frequency given in the clearance:	Departure Local button 4
+Base/STRIKE is called on:	Ch 1 Aux
+On the Base call you say:	just the last two numbers (“Base, 01 Taxi”)
+Where are Base and Ground called from (Doc)?	the Marshall Area (not from the line)
+Sheet: after ATIS, Pri Radio is set to:	Ch29 + OFF
+Pilot (Ch 3 Pri): Kingsville Tower, BLAZR/HAWK 2XX take off.	Kingsville Tower: BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure.
+Kingsville Tower (Ch 3 Pri): BLAZR/HAWK 2XX wind 130 at 15, runway 13R, cleared for takeoff, change to departure.	Pilot: BLAZR/HAWK 2XX cleared for takeoff 13R, switching.
+Pilot (Ch 3 Pri): BLAZR/HAWK 2XX cleared for takeoff 13R, switching.	Pilot (front): “Groove is Clear”
+Pilot (front) (ICS): “Groove is Clear”	Pilot (front): “Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”
+Pilot (front) (ICS): “Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”	Rear cockpit (R/C): “Fuel Control Normal”
+Rear cockpit (R/C) (ICS): “Fuel Control Normal”	Pilot (front): “Good headings, no off flags, watch your knees”
+Pilot (front) (ICS): “Good headings, no off flags, watch your knees”	Rear cockpit (R/C): “Clear”
+Rear cockpit (R/C) (ICS): “Clear”	Pilot (front): “Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”
+Pilot (front) (ICS): “Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”	Rear cockpit (R/C): “Ready in Back”
+Rear cockpit (R/C) (ICS): “Ready in Back”	Pilot (front): “Airspeed Alive”
+Pilot (front) (ICS): “Airspeed Alive”	Pilot (front): “High Speed, Good Line”
+Pilot (front) (ICS): “High Speed, Good Line”	Pilot (front): “140, gear, flaps”
+Pilot (front) (ICS): “140, gear, flaps”	Rear cockpit (R/C): “Clear”
+Rear cockpit (R/C) (ICS): “Clear”	Pilot (front): “Clean Below 200, Good Handle”
+Pilot (front) (ICS): “Clean Below 200, Good Handle”	Rear cockpit (R/C): “Good Handle”
+Rear cockpit (R/C) (ICS): “Good Handle”	Pilot: Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.
+Pilot (Ch 4 Pri): Kingsville Departure, BLAZR/HAWK 2XX passing XXX Hundred/Thousand.	Kingsville Departure: BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand.
+Kingsville Departure (Ch 4 Pri): BLAZR/HAWK 2XX Kingsville Departure radar contact passing three thousand feet turn right proceed direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand.	Pilot: BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.
+Pilot (Ch 4 Pri): BLAZR/HAWK 2XX passing three thousand direct (RICTO). Or BLAZR/HAWK 2XX climb and maintain 10 thousand. Or BLAZR/HAWK 2XX Request to fly the Kings 3 Departure.	Pilot: “Climb and maintain ten thousand, request the full SID for training, Blazer 201”
+Pilot (Ch 4 Pri): “Climb and maintain ten thousand, request the full SID for training, Blazer 201”	Kingsville Departure: “Blazer 201, roger, you’re cleared on the SID”
+Kingsville Departure (Ch 4 Pri): “Blazer 201, roger, you’re cleared on the SID”	Pilot: “Blazer 201”
+Pilot (Ch 4 Pri): “Blazer 201”	Pilot (front): “Platform. LAW set 5,000”
+Radio auto-switches to Tower (Ch 3 Pri) at:	1500 ft prior to hold short (Abeam the arresting gear)
+Departure is on which PRI channel?	Ch 4
+Tower winds / runway in the takeoff clearance:	wind 130 at 15, runway 13R
+Departure radar contact: turn point / fix:	passing three thousand feet turn right proceed direct (RICTO)
+Call Tower for takeoff when (Doc)?	before even turning into the hold short area
+Pilot (front) (ICS): “Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”	Pilot: BLAZR/HAWK 2XX VMC Terminate.
+Pilot (Ch 4 Pri): BLAZR/HAWK 2XX VMC Terminate.	Kingsville Departure: BLAZR/HAWK 2XX Terminate frequency change approved.
+Kingsville Departure (Ch 4 Pri): BLAZR/HAWK 2XX Terminate frequency change approved.	Pilot: “Frequency change approved, Blazer 201”
+Pilot (Ch 4 Pri): “Frequency change approved, Blazer 201”	Pilot: 99 IN THE ALPHA CHECK IN.
+Pilot (Ch 5 Pri (237.85)): 99 IN THE ALPHA CHECK IN.	Last aircraft to check in: OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.”
+Last aircraft to check in (Ch 5 Pri (237.85)): OTHER AIRCRAFT RESPOND IF ANY (NO RESPONSE CHECK FREQ) — e.g. “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.”	Pilot: BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”
+Pilot (Ch 5 Pri (237.85)): BLAZR/HAWK 2XX will take (VFR/IFR working area). — Doc: “99, BI single claims 1A-NE”	Pilot (front): “Standby for time hack”
+Pilot (front) (ICS): “Standby for time hack”	Rear cockpit (R/C): “Ready”
+Rear cockpit (R/C) (ICS): “Ready”	Pilot (front): “Three, Two, One, Hack, One, Two, Three”
+Pilot (front) (ICS): “Three, Two, One, Hack, One, Two, Three”	Pilot: BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”
+Pilot (Ch 5 Pri (237.85)): BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 9 thousand, RTB Kingsville. — Doc: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”	Pilot: BLAZR/HAWK 2XX checking out of (VFR/IFR working area), 15 (17) thousand WADE(RIVERA) recovery.
+Kings 1A (Ch 5) frequency should read:	237.85
+How do you verify the Ch 5 preset?	momentarily switching pri radio to READ
+No response to the 99 check in means:	no one is working the area (radio silence) — check freq
+99 responses give:	flight types (not callsigns) and where they are working
+After someone checks in after you, you are responsible for:	reporting all flights and where they are working in the area
+Pilot (Ch 13 Pri): Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request. — Doc: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request.	Kingsville Approach: BLAZR/HAWK 2XX Kingsville Approach, IDENT.
+Kingsville Approach (Ch 13 Pri): BLAZR/HAWK 2XX Kingsville Approach, IDENT.	Kingsville Approach: BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.
+Kingsville Approach (Ch 13 Pri): BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.	Pilot: Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”
+Pilot (Ch 13 Pri): Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”	Kingsville Approach: BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92
+Kingsville Approach (Ch 13 Pri): BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92	Pilot: BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92
+Pilot (Ch 13 Pri): BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92	Kingsville Approach: BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.
+Kingsville Approach (Ch 13 Pri): BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.	Pilot: BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.
+Pilot (Ch 13 Pri): BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.	Pilot: Kingsville Approach, BLAZR/HAWK 2XX commencing.
+Pilot (Ch 13 Pri): Kingsville Approach, BLAZR/HAWK 2XX commencing.	Kingsville Approach: BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”
+Kingsville Approach (Ch 13 Pri): BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”	Pilot: BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”
+Pilot (Ch 13 Pri): BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”	Pilot: Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”
+Pilot (Arrival (Ch 14 per Script / Ch 12 per Doc)): Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”	Kingsville Arrival: BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet.
+Kingsville Arrival (Arrival): BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet.	Pilot: BLAZR/HAWK 2XX runway heading to 2 thousand.
+Pilot (Arrival): BLAZR/HAWK 2XX runway heading to 2 thousand.	Kingsville Arrival: BLAZR/HAWK 2XX standby Kingsville Tower.
+Kingsville Arrival (Arrival): BLAZR/HAWK 2XX standby Kingsville Tower.	Pilot: BLAZR/HAWK 2XX.
+Pilot (Arrival): BLAZR/HAWK 2XX.	Kingsville Tower: BLAZR/HAWK 2XX, Kingsville Tower how do you hear?
+Kingsville Tower (Arrival): BLAZR/HAWK 2XX, Kingsville Tower how do you hear?	Pilot: BLAZR/HAWK 2XX loud and clear.
+Pilot (Arrival): BLAZR/HAWK 2XX loud and clear.	Kingsville Tower: BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.
+Kingsville Tower (Arrival): BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.	Pilot: BLAZR/HAWK 2XX WILCO.
+Pilot (Arrival): BLAZR/HAWK 2XX WILCO.	Pilot (front): “Platform, resetting LAW to 2800 ft”
+Pilot (front) (ICS): “Platform, resetting LAW to 2800 ft”	Pilot (front): “Below 200 kts, gear and __ flaps”
+Pilot (front) (ICS): “Below 200 kts, gear and __ flaps”	Rear cockpit (R/C): “Clear”
+Rear cockpit (R/C) (ICS): “Clear”	Pilot (front): “Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”
+Pilot (front) (ICS): “Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”	Pilot: BLAZR/HAWK 2XX FAF with the gear.
+Pilot (Arrival (Doc: Ch 14 Pri)): BLAZR/HAWK 2XX FAF with the gear.	Kingsville Tower: BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R.
+Kingsville Tower (Arrival (Doc: Ch 14 Pri)): BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R.	Pilot: BLAZR/HAWK 2XX cleared option 13R.
+Approach is on which PRI channel?	Ch 13
+Technique on switching to Ch 13: Aux goes to:	channel 5
+When to press IDENT on approach check-in:	after saying flash request
+Call base when how far out from recovery?	10 minutes
+IFR recovery altimeter given by Approach:	Kingsville altimeter 29.92
+Arrival local channel after commencing — Comm Script vs Doc:	Comm Script 14 / Doc 12
+After an instrument approach, the last controller before landing is:	a final controller, not Tower
+Pilot (Ch 13 Pri): Kingsville Approach, BLAZR/HAWK 2XX Cancel VFR to the Initial. (Or Vectors to the Initial.)	Kingsville Approach: BLAZR/HAWK 2XX proceed to the initial for the 13’s, cancelation received, maintain this frequency for advisories, Kingsville altimeter 29.92.
+Kingsville Approach (Ch 13 Pri): BLAZR/HAWK 2XX proceed to the initial for the 13’s, cancelation received, maintain this frequency for advisories, Kingsville altimeter 29.92.	Pilot: BLAZR/HAWK 2XX WILCO 29.92.
+Pilot (Ch 13 Pri): BLAZR/HAWK 2XX WILCO 29.92.	Kingsville Approach: BLAZR/HAWK 2XX switch Kingsville Arrival button 12.
+Kingsville Approach (Ch 13 Pri): BLAZR/HAWK 2XX switch Kingsville Arrival button 12.	Pilot: BLAZR/HAWK 2XX switching 12.
+Pilot (Ch 13 Pri): BLAZR/HAWK 2XX switching 12.	Pilot: Kingsville Arrival, BLAZR/HAWK 2XX checking in 4 thousand 5 hundred.
+Pilot (Ch 12 Pri): Kingsville Arrival, BLAZR/HAWK 2XX checking in 4 thousand 5 hundred.	Kingsville Arrival: BLAZR/HAWK 2XX, Kingsville Arrival (traffic advisories if any).
+Kingsville Arrival (Ch 12 Pri): BLAZR/HAWK 2XX, Kingsville Arrival (traffic advisories if any).	Kingsville Arrival: BLAZR/HAWK 2XX no traffic between you and the initial squawk standby and contact tower.
+Kingsville Arrival (Ch 12 Pri): BLAZR/HAWK 2XX no traffic between you and the initial squawk standby and contact tower.	Pilot: BLAZR/HAWK 2XX squawking standby switching.
+Pilot (Ch 12 Pri): BLAZR/HAWK 2XX squawking standby switching.	Kingsville Approach/Arrival: BLAZR/HAWK 2XX fly heading 040 descend and maintain 4 thousand, report Kingsville in sight, Kingsville altimeter 29.92.
+Kingsville Approach/Arrival (IFR to initial): BLAZR/HAWK 2XX fly heading 040 descend and maintain 4 thousand, report Kingsville in sight, Kingsville altimeter 29.92.	Pilot: BLAZR/HAWK 2XX, 040 down to 4 thousand, vectors for the initial, WILCO, Kingsville altimeter 29.92.
+Pilot (IFR to initial): BLAZR/HAWK 2XX, 040 down to 4 thousand, vectors for the initial, WILCO, Kingsville altimeter 29.92.	Pilot: BLAZR/HAWK 2XX field in sight.
+Pilot (IFR to initial): BLAZR/HAWK 2XX field in sight.	Kingsville Approach/Arrival: BLAZR/HAWK 2XX no traffic between you and the initial squawk standby and contact tower. → BLAZR/HAWK 2XX squawking standby switching.
+Kingsville Approach/Arrival (IFR to initial): BLAZR/HAWK 2XX no traffic between you and the initial squawk standby and contact tower. → BLAZR/HAWK 2XX squawking standby switching.	Pilot: Kingsville Tower, BLAZR/HAWK 2XX 15 miles to the West for the initial.
+Pilot (Ch 3 Pri): Kingsville Tower, BLAZR/HAWK 2XX 15 miles to the West for the initial.	Kingsville Tower: BLAZR/HAWK 2XX report the initial for the 13’s
+Kingsville Tower (Ch 3 Pri): BLAZR/HAWK 2XX report the initial for the 13’s	Pilot: BLAZR/HAWK 2XX, WILCO.
+Pilot (Ch 3 Pri): BLAZR/HAWK 2XX, WILCO.	Pilot: BLAZR/HAWK 2XX Initial.
+Pilot (Ch 3 Pri): BLAZR/HAWK 2XX Initial.	Kingsville Tower: BLAZR/HAWK 2XX report the numbers.
+Kingsville Tower (Ch 3 Pri): BLAZR/HAWK 2XX report the numbers.	Pilot: BLAZR/HAWK 2XX, numbers.
+Pilot (Ch 3 Pri): BLAZR/HAWK 2XX, numbers.	Kingsville Tower: BLAZR/HAWK 2XX left break approved.
+Kingsville Tower (Ch 3 Pri): BLAZR/HAWK 2XX left break approved.	Pilot: BLAZR/HAWK 2XX abeam, gear, (option, touch and go, full stop).
+Pilot (Ch 3 Pri): BLAZR/HAWK 2XX abeam, gear, (option, touch and go, full stop).	Kingsville Tower: BLAZR/HAWK 2XX, winds 130 at 15 cleared option 13L.
+Kingsville Tower (Ch 3 Pri): BLAZR/HAWK 2XX, winds 130 at 15 cleared option 13L.	Pilot: BLAZR/HAWK 2XX cleared option 13L.
+Pilot (Ch 3 Pri): BLAZR/HAWK 2XX cleared option 13L.	Pilot: 2XX Goshawk Ball, fuel state. (ICS no FCLP’s) — Or CLARA **Without Ball**
+Pilot (Ch 3 Pri): 2XX Goshawk Ball, fuel state. (ICS no FCLP’s) — Or CLARA **Without Ball**	Tower/LSO: Roger Ball
+Tower/LSO (Ch 3 Pri): Roger Ball	Kingsville Tower: BLAZR/HAWK 2XX your interval is abeam mid field, left downwind approved. Or BLAZR/HAWK 2XX left closed traffic is approved. Or BLAZR/HAWK 2XX maintain your interval.
+Kingsville Tower (Ch 3 Pri): BLAZR/HAWK 2XX your interval is abeam mid field, left downwind approved. Or BLAZR/HAWK 2XX left closed traffic is approved. Or BLAZR/HAWK 2XX maintain your interval.	Pilot: BLAZR/HAWK 2XX interval in sight (or BLAZR/HAWK 2XX Roger.)
+VFR to initial: Arrival button:	12
+VFR Arrival check-in altitude:	4 thousand 5 hundred
+IFR to initial vector:	heading 040, descend and maintain 4 thousand
+Tower initial call distance/direction:	15 miles to the West
+Break direction approved by Tower in the script:	left break
+Ball call is:	“2XX Goshawk Ball, fuel state.”
+Without the ball you call:	CLARA
+Pilot (Ch 3 Pri): “Kingsville Tower, Blazer 201, GCA rollout on the right” (as in 13R)	Kingsville Tower: “Blazer 201, right when able, contact Ground”
+Kingsville Tower (Ch 3 Pri): “Blazer 201, right when able, contact Ground”	Pilot: “Roger, Blazer 201”
+Pilot (Ch 3 Pri): “Roger, Blazer 201”	Pilot (front): “Ready to safe in front”
+Pilot (front) (ICS): “Ready to safe in front”	Rear cockpit (R/C): “Safe in Back”
+Rear cockpit (R/C) (ICS): “Safe in Back”	Pilot (front): “Safe in Front”
+Pilot (front) (ICS): “Safe in Front”	Pilot: “Base, 01 on deck” (Just say last two numbers)
+Pilot (Ch 1 Aux): “Base, 01 on deck” (Just say last two numbers)	Base: “01, welcome back”
+Base (Ch 1 Aux): “01, welcome back”	Pilot: “Kingsville Ground, Blazer 201, clear of the active on hotel, taxi to my line”
+Pilot (Ch 2 Pri): “Kingsville Ground, Blazer 201, clear of the active on hotel, taxi to my line”	Kingsville Ground: “Blazer 201, taxi via hotel delta, cross 35 left and right”
+Kingsville Ground (Ch 2 Pri): “Blazer 201, taxi via hotel delta, cross 35 left and right”	Pilot: “Taxi via hotel delta, cross 35 left and right, Blazer 201”
+Pilot (Ch 2 Pri): “Taxi via hotel delta, cross 35 left and right, Blazer 201”	Pilot (front): “No Exceedances, No Overflows”
+Pilot (front) (ICS): “No Exceedances, No Overflows”	Pilot (front): “Throttle Off, Canopy”
+Pilot (front) (ICS): “Throttle Off, Canopy”	Rear cockpit (R/C): “Clear”
+Rear cockpit (R/C) (ICS): “Clear”	Pilot: Give lineman wipeout signal and yell wipeout. They will respond by yelling wipeout.
+“GCA rollout on the right” call is not needed when:	you are already up BTN 3 upon landing
+Make the “on deck” Base call when:	while pulling off the runway
+Radios before turning off:	Put base in both radios prior to turning them off

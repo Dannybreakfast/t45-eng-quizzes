@@ -1,0 +1,101 @@
+“ICS check, switches set, Norm, Fuel __”
+R/C: “Loud and Clear, switches set, Norm, Both, Fuel __”
+9. “Lights and Tones”
+“Throttle off, GTS”
+R/C: “Clear”
+After saying “throttle off, GTS”, place fuel shutoff handle down
+Now looking for fuel flow to come up and EGT light off to occur within 15 seconds. Monitor the start and make sure EGT doesn’t rise too fast. Looking for 45% RPM for everything to come on. (GTS and Ready light will extinguish). Look for normal start “light show”. Oil press warning light should go off around 20% rpm (Look For It to go off). Oxygen light won’t be off until obogs switch is turned on. Generator light should go off around 45%.
+“No Exceedances, No Overflows, 4 SATS, QUALS Counting Down”
+Put visor down. “Mask on, Flow on” You need to have the mask on for about a minute. Usually when I start the PC checks and do the wipe out and all that once they direct me to raise my hands is when I’ll reach down and turn the flow off and then take the mask off for the rest of the time until we are getting close to the hold short.
+14.  Ch 29 Pri: “Kingsville Clearance, Blazer 201, Premont 2 on request ready to copy”
+Check no degradations. Box RADALT to test the LAW. You should hear an aural tone. “Good tone, Good BIT”. Sometimes I just hit this on the taxi to final checks because RADALT hasn’t shown up yet on this screen but regardless don’t change the right MFD to anything other than the BIT page until you have done this test so that you remember to do it.
+1. “Watch your knees” R/C: “Clear”
+Signal for closing canopy: Tap the top of your head. Lineman will give same signal back to you. “Canopy” R/C: “Rail Clear”. Close canopy and lock it. Ensure canopy caution light extinguishes.
+5. “Altimeter Set __.__, indicating ___ on standby, ___ on glass. VOR Set ___.__, TACAN Set ___, IFF Set XXXX in Standby, Taxi Checks Complete”
+“Attached 8 Points, Pins Removed, Ready to Arm in Front”
+R/C: “Attached 8 Points, Pins Removed, Armed in Back”
+“Armed in Front, Takeoff Checks Complete”
+Contact Base (Ch1) on Aux and Ground (Ch 2) on Pri prior to leaving the Marshall Area: ATC or Base Responses in Blue
+Ch 1 Aux: “Base, 01 Taxi” You just say the last two numbers
+“201 have a good flight”
+Ch 2 Pri: “Kingsville Ground, Blazer 201, taxi with alpha”
+“Blazer 201 taxi to 13R via Bravo Alpha”
+“Taxi to 13R via Bravo Alpha, Blazer 201”
+Ch 3 Pri: “Kingsville Tower, Blazer 201, takeoff”
+“Blazer 201, wind 130 at 15, runway 13R cleared for takeoff, change to departure”
+“Cleared for takeoff runway 13R, switching, Blazer 201”
+“Groove is Clear”
+7. “Fuel Control Normal, Pitot Heat on, Lights on, IFF XXXX Norm, No AV BITS, Winds are left to right”
+R/C: “Fuel Control Normal”
+1. “Good headings, no off flags, watch your knees”
+R/C: “Clear”
+7. “Good EGT, RPM, Fuel Flow, No warnings or cautions, Hyds 3x3, Good Volts, Time is +02, Ready in Front”
+R/C: “Ready in Back”
+“Airspeed Alive”
+“High Speed, Good Line”
+“140, gear, flaps”
+R/C: “Clear”
+“Clean Below 200, Good Handle”
+R/C: “Good Handle”
+Ch 4 Pri: “Kingsville Departure, Blazer 201 passing XXX Hundred/Thousand”
+“Blazer 201 Kingsville Departure radar contact, climb and maintain ten thousand, passing three thousand feet turn right proceed direct RICTO”
+“Climb and maintain ten thousand, request the full SID for training, Blazer 201”
+“Blazer 201, roger, you’re cleared on the SID”
+“Blazer 201”
+“Platform. LAW set 5,000”
+“Engine and Flight Instruments checked. Hyds 3x3, good volts. Cabin pressure X,XXX’. Fuel X.X lbs. LAW set XXXX.”
+Ch 4 Pri: “Kingsville Departure, Blazer 201, VMC Terminate”
+“Blazer 201, Kingsville Departure, terminate, frequency change approved”
+“Frequency change approved, Blazer 201”
+Prior to entering MOA, make 99 call to see if anyone else is working it. If anyone is working in the area, the last flight to check in will respond with the flight types (not callsigns) and where they are working. For example “99, forms flight of two working 1A-SW, BI flight of one working 1A-NW.” You need to make a note of who is working and where because when someone else checks in you are responsible for reporting all flights and where they are working in the area. If no one is working in the area, there will be radio silence. Before claiming an area, ensure that the ch 5 preset is set to the correct frequency by momentarily switching pri radio to READ. On Ch 5, it should read 237.85. If this is not the frequency assigned to ch 5, you will have to manually enter the correct frequency and make the call again. If it is the correct frequency, you have confirmed no one is working in the area and can claim any area you’d like.
+Ch 5 Pri: “99 in the Alpha check in”
+“99, BI single claims 1A-NE”
+“One Zero Thousand, Mark; Two Fifty, Mark
+“Standby for time hack”
+R/C: “Ready”
+“Three, Two, One, Hack, One, Two, Three”
+Partial panel flight consists of flying with any type of instrument degradation (HUD, ADI, etc). As a result of the difference in size between the ADI display and standby attitude indicator, altimeter, airspeed, and VSI, your control of the a/c may be erratic. Use the HSI display for heading if available. The standby attitude indicator moves a smaller distance for a given control input so keep this in mind to avoid over controlling. The standby instruments also have a tendency to lag (particularly the standby VSI, the others are good), furthering the possibility of overcontrolling. After a correction has been initiated, time must be allowed for instrument indications to catch up to the a/c’s performance. Do not apply an ever-increasing correction. Do not fixate on one standby instrument. Fight the tendency to eliminate a performance instrument from your scan. You’ll have to scan faster and more intently since the instruments are spread apart. Hawk the standby altitude and don’t use the standby VSI unless stabilized. Your “VSI” to maintain level flight is the standby altimeter and how fast the needle is moving either direction.
+Ch 5 Pri: “99, BI single checking out of 1A-NE, 9 thousand, RTB Kingsville”
+“99, BI single checking out of 1A-NE, one five thousand WADE (RIVERA) recovery”
+Ch 13 Pri: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request.
+“Blazer 201, Kingsville Approach, Radar Contact, 8 miles west of Kleberg County 9 thousand 1 hundred, say request”
+Ch 13 Pri: “Request the HI-TACAN 13R, Blazer 201”
+“Proceed direct Wade, climb and maintain one five thousand, 29.92, Blazer 201”
+“Blazer 201, cleared HI-TCN 13R, report commencing”
+“Cleared HI-TCN 13R, WILCO, Blazer 201”
+Proceed to WAADE and ensure you are set up for the approach. At WAADE and inbound, report commencing and begin your approach. When executing an approach ensure you have completed the “WARP” checks (Weather, Altimeter Setting, Runway in use, perform penetration checks). For a HI TACAN, set published penetration course in HSI and select CDI mode. At the IAF, intercept, and maintain the approach course as published. For a direct entry you do not need to do a lap of holding since this is a turn for alignment and not a HILO (its not bold). If you are coming in for a direct entry just commence the penetration descent and turn towards the penetration course once hitting WAADE to save fuel. At 250 KIAS, reduce power to idle and simultaneously lower the nose to about 5 degrees nose low and then extend the speed brakes and pitch for 10 degrees nose low so you don’t get slow. If you go idle boards while level at 250 and then try to pitch for 10 deg nose low you will get slow.
+“Kingsville Approach, Blazer 201 commencing”
+“Blazer 201, Roger switch Kingsville Arrival local channel 12”
+“Switching one two, Blazer 201”
+Ch 12 Pri: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”
+“Blazer 201, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet”
+“Runway heading to 2 thousand, Blazer 201”
+“Blazer 201, standby Kingsville Tower”
+“Blazer 201”
+“Blazer 201, Kingsville Tower how do you hear?
+“Loud and clear, Blazer 201”
+“Blazer 201, Roger, report the final approach fix with the gear”
+“Blazer 201 Wilco”
+Anticipate reaching 5000 ft AGL on the arc. Allow the LAW to sound, report “Platform” and retract the speed brakes, if still extended. Shallow descent IAW the minute to live rule and reset LAW to the next altitude restriction as directed in your wing’s SOP. Just like how we lowered the nose before extending the speed brakes, start raising the nose towards 2 deg nose down before retracting the speed brakes so you don’t get super fast. 2 deg nose down at idle maintains 250 KIAS. Approaching 5,000 feet you can enter the next law setting and just don’t press enter yet because you need to let the law sound at 5,000. Then when the law sounds all you need to do is press enter and you can simultaneously retract the speed brakes to observe the minute to live rule.
+“Platform, resetting LAW to 2800 ft”
+Reduce power to idle and extend speed brakes if necessary. Slow to 200 KIAS and note level flight attitude on the ADI display. Select gear down and flaps to half (if required, flaps may be lowered, but not raised, in a turn). The increased lift and drag combination causes a “ballooning” effect that must be countered with firm forward stick force to maintain altitude and prevent climbing. Wait for stick pressure to dampen out before selecting full flaps, if desired. As stick forces settle down, trim nose up as the a/c decelerates. As a/s approaches 160 KIAS, increase power for 150 KIAS (1900 pph for half or 2500 pph for full) (Note: Don’t do this just go right to optimum AOA). Decelerate to optimum AOA (no sooner than 10 nm from runway, 30 deg of FAC) by reducing power, adding noseup trim to maintain level flight, and then adding the appropriate amount of power to achieve level flight.
+“Below 200 kts, gear and __ flaps”
+R/C: “Clear”
+8. “Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”
+Ch 14 Pri: “Kingsville Tower, Blazer 201, FAF with gear”
+“Blazer 201, winds 130 at 15, cleared for the option 13R”
+“Cleared for the option 13R, Blazer 201”
+Ch 3 Pri: “Kingsville Tower, Blazer 201, GCA rollout on the right” (as in 13R)
+“Blazer 201, right when able, contact Ground”
+“Roger, Blazer 201”
+1. “Ready to safe in front”
+R/C: “Safe in Back”
+“Safe in Front”
+Ch 1 Aux: “Base, 01 on deck” Just say last two numbers. Make this call while pulling off the runway so you know whether to ask ground to taxi to the line, pits, etc.
+“01, welcome back”
+Ch 2 Pri: “Kingsville Ground, Blazer 201, clear of the active on hotel, taxi to my line”
+“Blazer 201, taxi via hotel delta, cross 35 left and right”
+“Taxi via hotel delta, cross 35 left and right, Blazer 201”
+5. “No Exceedances, No Overflows”
+“Throttle Off, Canopy”
+R/C: “Clear”

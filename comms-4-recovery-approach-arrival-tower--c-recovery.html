@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Comms 4. Recovery — Approach, Arrival &amp; Tower — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-cl.html">CL</a> · Checklist / Comm Flow</div>
+    <h1>Comms 4. Recovery — Approach, Arrival &amp; Tower</h1>
+    <div class="meta">66 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 66</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">Checklist / Comm Flow</div>
+    <h2 style="margin:0.2rem 0">Comms 4. Recovery — Approach, Arrival &amp; Tower</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-cl.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CL</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-cl.html">← CL</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "[Pilot → Kingsville Approach (Ch 13 Pri)] “Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request. — Doc: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request.” — What comes next? (Kingsville Approach → Pilot, Ch 13 Pri)", "opts": ["BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92", "BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.", "BLAZR/HAWK 2XX Kingsville Approach, IDENT.", "BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”"], "ans": 2, "expl": "Comm Script: Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request. — Doc: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request. → BLAZR/HAWK 2XX Kingsville Approach, IDENT."}, {"q": "[Kingsville Approach → Pilot (Ch 13 Pri)] “BLAZR/HAWK 2XX Kingsville Approach, IDENT.” — What comes next? (Kingsville Approach → Pilot, Ch 13 Pri)", "opts": ["BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.", "BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.", "BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92", "BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”"], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XX Kingsville Approach, IDENT. → BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request."}, {"q": "[Kingsville Approach → Pilot (Ch 13 Pri)] “BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.” — What comes next? (Pilot → Kingsville Approach, Ch 13 Pri)", "opts": ["Kingsville Approach, BLAZR/HAWK 2XX commencing.", "Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”", "BLAZR/HAWK 2XX FAF with the gear.", "BLAZR/HAWK 2XX runway heading to 2 thousand."], "ans": 1, "expl": "Comm Script + Doc: BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request. → Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”"}, {"q": "[Pilot → Kingsville Approach (Ch 13 Pri)] “Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”” — What comes next? (Kingsville Approach → Pilot, Ch 13 Pri)", "opts": ["BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”", "BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.", "BLAZR/HAWK 2XX Kingsville Approach, IDENT.", "BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92"], "ans": 3, "expl": "Comm Script: Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201” → BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92"}, {"q": "[Kingsville Approach → Pilot (Ch 13 Pri)] “BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92” — What comes next? (Pilot → Kingsville Approach, Ch 13 Pri)", "opts": ["BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92", "BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.", "BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”", "BLAZR/HAWK 2XX FAF with the gear."], "ans": 0, "expl": "Comm Script: BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92 → BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92"}, {"q": "[Pilot → Kingsville Approach (Ch 13 Pri)] “BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92” — What comes next? (Kingsville Approach → Pilot, Ch 13 Pri)", "opts": ["BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.", "BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92", "BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.", "BLAZR/HAWK 2XX Kingsville Approach, IDENT."], "ans": 0, "expl": "Comm Script: BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92 → BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing."}, {"q": "[Kingsville Approach → Pilot (Ch 13 Pri)] “BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.” — What comes next? (Pilot → Kingsville Approach, Ch 13 Pri)", "opts": ["BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.", "BLAZR/HAWK 2XX cleared option 13R.", "BLAZR/HAWK 2XX runway heading to 2 thousand.", "BLAZR/HAWK 2XX loud and clear."], "ans": 0, "expl": "Comm Script: BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing. → BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO."}, {"q": "[Pilot → Kingsville Approach (Ch 13 Pri)] “BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.” — What comes next? (Pilot → Kingsville Approach, Ch 13 Pri)", "opts": ["Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”", "BLAZR/HAWK 2XX runway heading to 2 thousand.", "Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”", "Kingsville Approach, BLAZR/HAWK 2XX commencing."], "ans": 3, "expl": "Comm Script: BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO. → Kingsville Approach, BLAZR/HAWK 2XX commencing."}, {"q": "[Pilot → Kingsville Approach (Ch 13 Pri)] “Kingsville Approach, BLAZR/HAWK 2XX commencing.” — What comes next? (Kingsville Approach → Pilot, Ch 13 Pri)", "opts": ["BLAZR/HAWK 2XX Kingsville Approach, IDENT.", "BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.", "BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”", "BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92"], "ans": 2, "expl": "Comm Script vs Doc (conflict): Kingsville Approach, BLAZR/HAWK 2XX commencing. → BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”"}, {"q": "[Kingsville Approach → Pilot (Ch 13 Pri)] “BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12”” — What comes next? (Pilot → Kingsville Approach, Ch 13 Pri)", "opts": ["Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”", "BLAZR/HAWK 2XX WILCO.", "BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”", "BLAZR/HAWK 2XX FAF with the gear."], "ans": 2, "expl": "Comm Script vs Doc (conflict): BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12” → BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”"}, {"q": "[Pilot → Kingsville Approach (Ch 13 Pri)] “BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”” — What comes next? (Pilot → Kingsville Arrival, Arrival (Ch 14 per Script / Ch 12 per Doc))", "opts": ["BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92", "BLAZR/HAWK 2XX runway heading to 2 thousand.", "Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”", "BLAZR/HAWK 2XX FAF with the gear."], "ans": 2, "expl": "Comm Script + Doc: BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201” → Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”"}, {"q": "[Pilot → Kingsville Arrival (Arrival (Ch 14 per Script / Ch 12 per Doc))] “Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”” — What comes next? (Kingsville Arrival → Pilot, Arrival)", "opts": ["BLAZR/HAWK 2XX standby Kingsville Tower.", "BLAZR/HAWK 2XX runway heading to 2 thousand.", "BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet.", "BLAZR/HAWK 2XX WILCO."], "ans": 2, "expl": "Comm Script: Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred” → BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet."}, {"q": "[Kingsville Arrival → Pilot (Arrival)] “BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet.” — What comes next? (Pilot → Kingsville Arrival, Arrival)", "opts": ["BLAZR/HAWK 2XX runway heading to 2 thousand.", "BLAZR/HAWK 2XX cleared option 13R.", "BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92", "Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”"], "ans": 0, "expl": "Comm Script: BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet. → BLAZR/HAWK 2XX runway heading to 2 thousand."}, {"q": "[Pilot → Kingsville Arrival (Arrival)] “BLAZR/HAWK 2XX runway heading to 2 thousand.” — What comes next? (Kingsville Arrival → Pilot, Arrival)", "opts": ["BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.", "BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet.", "“Below 200 kts, gear and __ flaps”", "BLAZR/HAWK 2XX standby Kingsville Tower."], "ans": 3, "expl": "Comm Script: BLAZR/HAWK 2XX runway heading to 2 thousand. → BLAZR/HAWK 2XX standby Kingsville Tower."}, {"q": "[Kingsville Arrival → Pilot (Arrival)] “BLAZR/HAWK 2XX standby Kingsville Tower.” — What comes next? (Pilot → Kingsville Arrival, Arrival)", "opts": ["Kingsville Approach, BLAZR/HAWK 2XX commencing.", "BLAZR/HAWK 2XX.", "BLAZR/HAWK 2XX loud and clear.", "BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO."], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XX standby Kingsville Tower. → BLAZR/HAWK 2XX."}, {"q": "[Pilot → Kingsville Arrival (Arrival)] “BLAZR/HAWK 2XX.” — What comes next? (Kingsville Tower → Pilot, Arrival)", "opts": ["BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.", "Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201”", "BLAZR/HAWK 2XX, Kingsville Tower how do you hear?", "BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R."], "ans": 2, "expl": "Comm Script: BLAZR/HAWK 2XX. → BLAZR/HAWK 2XX, Kingsville Tower how do you hear?"}, {"q": "[Kingsville Tower → Pilot (Arrival)] “BLAZR/HAWK 2XX, Kingsville Tower how do you hear?” — What comes next? (Pilot → Kingsville Tower, Arrival)", "opts": ["BLAZR/HAWK 2XX FAF with the gear.", "Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request. — Doc: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request.", "Kingsville Approach, BLAZR/HAWK 2XX commencing.", "BLAZR/HAWK 2XX loud and clear."], "ans": 3, "expl": "Comm Script: BLAZR/HAWK 2XX, Kingsville Tower how do you hear? → BLAZR/HAWK 2XX loud and clear."}, {"q": "[Pilot → Kingsville Tower (Arrival)] “BLAZR/HAWK 2XX loud and clear.” — What comes next? (Kingsville Tower → Pilot, Arrival)", "opts": ["BLAZR/HAWK 2XX.", "BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.", "BLAZR/HAWK 2XX, Kingsville Tower how do you hear?", "BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R."], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XX loud and clear. → BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear."}, {"q": "[Kingsville Tower → Pilot (Arrival)] “BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.” — What comes next? (Pilot → Kingsville Tower, Arrival)", "opts": ["BLAZR/HAWK 2XX runway heading to 2 thousand.", "BLAZR/HAWK 2XX.", "BLAZR/HAWK 2XX WILCO.", "Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request. — Doc: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request."], "ans": 2, "expl": "Comm Script: BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear. → BLAZR/HAWK 2XX WILCO."}, {"q": "[Pilot → Kingsville Tower (Arrival)] “BLAZR/HAWK 2XX WILCO.” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["“Platform, resetting LAW to 2800 ft”", "“Below 200 kts, gear and __ flaps”", "“Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”", "BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing."], "ans": 0, "expl": "Doc: BLAZR/HAWK 2XX WILCO. → “Platform, resetting LAW to 2800 ft”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Platform, resetting LAW to 2800 ft”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["BLAZR/HAWK 2XX loud and clear.", "“Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”", "“Below 200 kts, gear and __ flaps”", "BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”"], "ans": 2, "expl": "Doc: “Platform, resetting LAW to 2800 ft” → “Below 200 kts, gear and __ flaps”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Below 200 kts, gear and __ flaps”” — What comes next? (Rear cockpit (R/C) → Pilot (front), ICS)", "opts": ["Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred”", "BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.", "“Clear”", "BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”"], "ans": 2, "expl": "Doc: “Below 200 kts, gear and __ flaps” → “Clear”"}, {"q": "[Rear cockpit (R/C) → Pilot (front) (ICS)] ““Clear”” — What comes next? (Pilot (front) → Rear cockpit (R/C), ICS)", "opts": ["BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.", "“Below 200 kts, gear and __ flaps”", "“Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”", "“Platform, resetting LAW to 2800 ft”"], "ans": 2, "expl": "Doc: “Clear” → “Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”"}, {"q": "[Pilot (front) → Rear cockpit (R/C) (ICS)] ““Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete”” — What comes next? (Pilot → Kingsville Tower, Arrival (Doc: Ch 14 Pri))", "opts": ["BLAZR/HAWK 2XX FAF with the gear.", "BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201”", "BLAZR/HAWK 2XX WILCO.", "BLAZR/HAWK 2XX loud and clear."], "ans": 0, "expl": "Comm Script: “Gear three down and locked, flaps set ____ (full/half/up), indicating____ (full/half/up), hook___(up/down), harness____(locked/unlocked), speed brakes_____(extended/retracted), anti-skid on, light on, fuel X.X, on-speed is XXX. Landing Checks Complete” → BLAZR/HAWK 2XX FAF with the gear."}, {"q": "[Pilot → Kingsville Tower (Arrival (Doc: Ch 14 Pri))] “BLAZR/HAWK 2XX FAF with the gear.” — What comes next? (Kingsville Tower → Pilot, Arrival (Doc: Ch 14 Pri))", "opts": ["BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R.", "“Below 200 kts, gear and __ flaps”", "BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.", "BLAZR/HAWK 2XX, Kingsville Tower how do you hear?"], "ans": 0, "expl": "Comm Script: BLAZR/HAWK 2XX FAF with the gear. → BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R."}, {"q": "[Kingsville Tower → Pilot (Arrival (Doc: Ch 14 Pri))] “BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R.” — What comes next? (Pilot → Kingsville Tower, Arrival (Doc: Ch 14 Pri))", "opts": ["BLAZR/HAWK 2XX.", "BLAZR/HAWK 2XX cleared option 13R.", "BLAZR/HAWK 2XX loud and clear.", "BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO."], "ans": 1, "expl": "Comm Script: BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R. → BLAZR/HAWK 2XX cleared option 13R."}, {"q": "Who transmits this, and to whom? “Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request. — Doc: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request.”", "opts": ["Kingsville Departure → Kingsville Approach", "Pilot → Kingsville Approach", "Base → Kingsville Approach", "Kingsville Approach → Pilot"], "ans": 1, "expl": "Comm Script + Doc (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX Kingsville Approach, IDENT.”", "opts": ["Kingsville Approach → Pilot", "Pilot → Kingsville Approach", "Base → Pilot", "Kingsville Arrival → Pilot"], "ans": 0, "expl": "Comm Script (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.”", "opts": ["Last aircraft to check in → Pilot", "Pilot → Kingsville Approach", "Kingsville Approach → Pilot", "Tower/LSO → Pilot"], "ans": 2, "expl": "Comm Script (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201””", "opts": ["Kingsville Arrival → Kingsville Approach", "Kingsville Approach → Pilot", "Pilot → Kingsville Approach", "Last aircraft to check in → Kingsville Approach"], "ans": 2, "expl": "Comm Script + Doc (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92”", "opts": ["Kingsville Approach → Pilot", "Last aircraft to check in → Pilot", "Kingsville Ground → Pilot", "Pilot → Kingsville Approach"], "ans": 0, "expl": "Comm Script (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92”", "opts": ["Kingsville Approach → Pilot", "STRIKE (Base) → Kingsville Approach", "Pilot → Kingsville Approach", "Last aircraft to check in → Kingsville Approach"], "ans": 2, "expl": "Comm Script (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.”", "opts": ["Base → Pilot", "Kingsville Approach → Pilot", "Pilot → Kingsville Approach", "STRIKE (Base) → Pilot"], "ans": 1, "expl": "Comm Script (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.”", "opts": ["Last aircraft to check in → Kingsville Approach", "Pilot → Kingsville Approach", "Kingsville Approach → Pilot", "Base → Kingsville Approach"], "ans": 1, "expl": "Comm Script (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “Kingsville Approach, BLAZR/HAWK 2XX commencing.”", "opts": ["Kingsville Approach → Kingsville Approach", "Pilot → Kingsville Approach", "Tower/LSO → Kingsville Approach", "Kingsville Approach → Pilot"], "ans": 1, "expl": "Comm Script (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12””", "opts": ["Kingsville Approach → Pilot", "Pilot → Kingsville Approach", "Kingsville Ground → Pilot", "Kingsville Tower → Pilot"], "ans": 0, "expl": "Comm Script vs Doc (conflict) (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201””", "opts": ["Tower/LSO → Kingsville Approach", "Pilot → Kingsville Approach", "Base → Kingsville Approach", "Kingsville Approach → Pilot"], "ans": 1, "expl": "Comm Script vs Doc (conflict) (Ch 13 Pri)"}, {"q": "Who transmits this, and to whom? “Kingsville Arrival, BLAZR/HAWK 2XX XX thousand request touch-n-go, climb out for GCA Box. — Doc: “Kingsville Arrival, Blazer 201, one four thousand 500 hundred””", "opts": ["Pilot → Kingsville Arrival", "Kingsville Ground → Kingsville Arrival", "Kingsville Arrival → Pilot", "STRIKE (Base) → Kingsville Arrival"], "ans": 0, "expl": "Comm Script + Doc (Arrival (Ch 14 per Script / Ch 12 per Doc))"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, Roger, following this approach your missed approach instructions, fly runway heading, climb and maintain 2 thousand feet.”", "opts": ["Pilot → Kingsville Arrival", "Tower/LSO → Pilot", "Kingsville Departure → Pilot", "Kingsville Arrival → Pilot"], "ans": 3, "expl": "Comm Script (Arrival)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX runway heading to 2 thousand.”", "opts": ["Last aircraft to check in → Kingsville Arrival", "Kingsville Arrival → Pilot", "Kingsville Departure → Kingsville Arrival", "Pilot → Kingsville Arrival"], "ans": 3, "expl": "Comm Script (Arrival)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX standby Kingsville Tower.”", "opts": ["Pilot → Kingsville Arrival", "Kingsville Arrival → Pilot", "STRIKE (Base) → Pilot", "Tower/LSO → Pilot"], "ans": 1, "expl": "Comm Script (Arrival)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, Kingsville Tower how do you hear?”", "opts": ["Kingsville Tower → Pilot", "Kingsville Approach/Arrival → Pilot", "Pilot → Kingsville Tower", "Last aircraft to check in → Pilot"], "ans": 0, "expl": "Comm Script (Arrival)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX loud and clear.”", "opts": ["Kingsville Tower → Kingsville Tower", "Tower/LSO → Kingsville Tower", "Pilot → Kingsville Tower", "Kingsville Tower → Pilot"], "ans": 2, "expl": "Comm Script (Arrival)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX, Roger, report the final approach fix with the gear.”", "opts": ["Kingsville Departure → Pilot", "Pilot → Kingsville Tower", "Tower/LSO → Pilot", "Kingsville Tower → Pilot"], "ans": 3, "expl": "Comm Script (Arrival)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX WILCO.”", "opts": ["Kingsville Approach/Arrival → Kingsville Tower", "Kingsville Tower → Pilot", "Pilot → Kingsville Tower", "Kingsville Approach → Kingsville Tower"], "ans": 2, "expl": "Comm Script (Arrival)"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX FAF with the gear.”", "opts": ["Pilot → Kingsville Tower", "Kingsville Tower → Pilot", "Kingsville Approach/Arrival → Kingsville Tower", "STRIKE (Base) → Kingsville Tower"], "ans": 0, "expl": "Comm Script (Arrival (Doc: Ch 14 Pri))"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XXx, winds 130 at 15, cleared for the option 13R.”", "opts": ["Tower/LSO → Pilot", "Kingsville Tower → Pilot", "Pilot → Kingsville Tower", "STRIKE (Base) → Pilot"], "ans": 1, "expl": "Comm Script (Arrival (Doc: Ch 14 Pri))"}, {"q": "Who transmits this, and to whom? “BLAZR/HAWK 2XX cleared option 13R.”", "opts": ["Kingsville Tower → Kingsville Tower", "Pilot → Kingsville Tower", "Kingsville Tower → Pilot", "Kingsville Clearance → Kingsville Tower"], "ans": 1, "expl": "Comm Script (Arrival (Doc: Ch 14 Pri))"}, {"q": "Which radio/channel is this call made on? “Kingsville Approach, BLAZR/HAWK 2XX XX Thousand with ATIS, request. — Doc: “Kingsville Approach, Blazer 201 one five thousand with information bravo, flash request” Hit IDENT after saying flash request.”", "opts": ["Ch 13 Pri", "Ch 2 Pri", "Ch 30 Pri", "Ch 29 Pri"], "ans": 0, "expl": "Comm Script + Doc: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX Kingsville Approach, IDENT.”", "opts": ["Ch 3 Pri", "Ch 13 Pri", "Ch 4 Pri", "Ch 2 Pri"], "ans": 1, "expl": "Comm Script: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX Radar Contact, 8 miles West of Kleberg County 9 thousand 1 hundred, say request.”", "opts": ["Ch 29 Pri", "Ch 5 Pri (237.85)", "Ch 3 Pri", "Ch 13 Pri"], "ans": 3, "expl": "Comm Script: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “Kingsville Approach, BLAZR/HAWK 2XX request HI-TCN 13R. — Doc: “Request the HI-TACAN 13R, Blazer 201””", "opts": ["Ch 29 Pri", "Ch 12 Pri", "Ch 3 Pri", "Ch 13 Pri"], "ans": 3, "expl": "Comm Script + Doc: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX, proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92”", "opts": ["Ch 30 Pri", "Ch 2 Pri", "Ch 13 Pri", "Ch 1 Aux"], "ans": 2, "expl": "Comm Script: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX, direct WAADE, climbing to 15 thousand, 29.92”", "opts": ["Ch 5 Pri (237.85)", "Ch 30 Pri", "Ch 12 Pri", "Ch 13 Pri"], "ans": 3, "expl": "Comm Script: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX, cleared HI-TCN 13R, report commencing.”", "opts": ["Ch 4 Pri", "Ch 3 Pri", "Ch 30 Pri", "Ch 13 Pri"], "ans": 3, "expl": "Comm Script: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX, cleared HI-TCN 13R, WILCO.”", "opts": ["Ch 3 Pri", "Ch 13 Pri", "Ch 2 Pri", "Ch 4 Pri"], "ans": 1, "expl": "Comm Script: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “Kingsville Approach, BLAZR/HAWK 2XX commencing.”", "opts": ["Ch 12 Pri", "Ch 13 Pri", "Ch 5 Pri (237.85)", "Ch 1 Aux"], "ans": 1, "expl": "Comm Script: Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX, Roger switch Kingsville Arrival local channel 14. — Doc: “Blazer 201, Roger switch Kingsville Arrival local channel 12””", "opts": ["Ch 1 Aux", "Ch 4 Pri", "Ch 29 Pri", "Ch 13 Pri"], "ans": 3, "expl": "Comm Script vs Doc (conflict): Ch 13 Pri"}, {"q": "Which radio/channel is this call made on? “BLAZR/HAWK 2XX switching 14. (KINGSVILLE ARRIVAL DISCRETE FREQUENCY) — Doc: “Switching one two, Blazer 201””", "opts": ["Ch 13 Pri", "Ch 4 Pri", "Ch 30 Pri", "Ch 2 Pri"], "ans": 0, "expl": "Comm Script vs Doc (conflict): Ch 13 Pri"}, {"q": "Approach is on which PRI channel?", "opts": ["Ch 14", "Ch 13", "Ch 12", "Ch 4"], "ans": 1, "expl": "Comm Script: APPROACH CHECK IN (CH-13)"}, {"q": "Technique on switching to Ch 13: Aux goes to:", "opts": ["channel 5", "channel 3", "channel 1", "channel 30"], "ans": 0, "expl": "Doc: When you switch to channel 13 switch aux to channel 5"}, {"q": "When to press IDENT on approach check-in:", "opts": ["at radar contact", "after saying flash request", "before transmitting", "when told “IDENT”only"], "ans": 1, "expl": "Doc: Hit IDENT after saying flash request."}, {"q": "Call base when how far out from recovery?", "opts": ["10 minutes", "20 minutes", "15 minutes", "5 minutes"], "ans": 0, "expl": "Doc: at some point 10 minutes out from recovery you want to call base"}, {"q": "IFR recovery altimeter given by Approach:", "opts": ["29.82", "30.02", "Kingsville altimeter 29.92", "29.29"], "ans": 2, "expl": "Comm Script: proceed direct WADE, climb and maintain 15 thousand, Kingsville altimeter 29.92"}, {"q": "Arrival local channel after commencing — Comm Script vs Doc:", "opts": ["Script 12 / Doc 14", "both 13", "both 14", "Comm Script 14 / Doc 12"], "ans": 3, "expl": "Comm Script: switch Kingsville Arrival local channel 14. Doc: switch Kingsville Arrival local channel 12. (conflict)"}, {"q": "After an instrument approach, the last controller before landing is:", "opts": ["Approach", "Ground", "Tower", "a final controller, not Tower"], "ans": 3, "expl": "Doc: the last person you talked to was a final controller, not Tower (they contacted Tower on your behalf and got your landing clearance for you)."}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

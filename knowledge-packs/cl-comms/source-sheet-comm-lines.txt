@@ -1,0 +1,17 @@
+Check: Seats safe, pins removed, Prk Brk pulled, all equipment off
+3. Pri Radio - ATIS
+5. Pri Radio: Switch to Ch29 + OFF
+7. Throttle - Verify OFF; "ICS Check, switches set, Fuel _____"
+8. "Lights and Tones"
+1. "Throttle OFF, GTS"
+7. OBOGS/Anti-G + HUD | 9. Pri + Aux Radio | 11.VOR_TAC_IFF
+70% Check Signal
+5. Manual Fuel - Check (<6%)
+6. Throttle - IDLE; "No exceedances or overflows, 4 sats, quals ____"
+8. Trim Checks
+10. OBOGS Flow Sel - ON; "MASK ON, FLOW ON"
+11. RALT BIT - TEST; "GOOD TONE GOOD BIT"
+13. Grab Clearance, switch ground
+0. "WATCH YOUR KNEES" "CLEAR" (SIGNAL)
+6. "CANOPY' "CLEAR"
+7. Prk Brk - Release, Brake Check, Salute
