@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CO3201 (7) TACAN/VOR DME Approach — T-45 Quiz</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --panel: #1a2332;
+  --panel2: #243044;
+  --text: #e7eef7;
+  --muted: #9bb0c7;
+  --accent: #3d9cf0;
+  --accent2: #2a7fd4;
+  --good: #2ecc71;
+  --bad: #e74c3c;
+  --warn: #f0b429;
+  --border: #2e3d52;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.45;
+  min-height: 100vh;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+header.quiz-head {
+  background: linear-gradient(135deg, #1a2a40, #152033);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1.25rem;
+}
+header.quiz-head .crumb { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.35rem; }
+header.quiz-head h1 { margin: 0 0 0.35rem; font-size: 1.35rem; font-weight: 700; }
+header.quiz-head .meta { color: var(--muted); font-size: 0.9rem; }
+.progress {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 0.75rem 0 1rem; color: var(--muted); font-size: 0.9rem;
+}
+.bar {
+  height: 6px; background: var(--panel2); border-radius: 99px; overflow: hidden; margin-bottom: 1rem;
+}
+.bar > span { display: block; height: 100%; background: var(--accent); width: 0%; transition: width .25s; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.2rem;
+  margin-bottom: 1rem;
+}
+.card h2 { margin: 0 0 1rem; font-size: 1.05rem; font-weight: 600; }
+.options { display: grid; gap: 0.55rem; }
+.opt {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  background: var(--panel2);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 0.75rem 0.85rem;
+  cursor: pointer;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+  transition: border-color .15s, background .15s;
+}
+.opt:hover:not(:disabled) { border-color: var(--accent); }
+.opt:disabled { cursor: default; opacity: 0.95; }
+.opt .letter {
+  flex: 0 0 1.6rem; height: 1.6rem; border-radius: 50%;
+  background: #31465f; display: grid; place-items: center;
+  font-weight: 700; font-size: 0.85rem;
+}
+.opt span + span, #q-text { white-space: pre-line; }
+.opt.correct { border-color: var(--good); background: rgba(46,204,113,.12); }
+.opt.correct .letter { background: var(--good); color: #062; }
+.opt.wrong { border-color: var(--bad); background: rgba(231,76,60,.12); }
+.opt.wrong .letter { background: var(--bad); color: #fff; }
+.opt.reveal-correct { border-color: var(--good); }
+.expl {
+  margin-top: 0.9rem; padding: 0.75rem 0.85rem;
+  background: rgba(61,156,240,.1); border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0; color: #cfe6fa; font-size: 0.92rem;
+  display: none;
+}
+.expl.show { display: block; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+button.btn {
+  appearance: none; border: none; border-radius: 999px;
+  padding: 0.65rem 1.2rem; font: inherit; font-weight: 600; cursor: pointer;
+}
+button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: #041018; }
+.btn-primary:hover:not(:disabled) { background: var(--accent2); color: #fff; }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--muted); }
+.results {
+  display: none; text-align: center;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.75rem 1.25rem;
+}
+.results.show { display: block; }
+.results .score {
+  font-size: 2.5rem; font-weight: 800; margin: 0.4rem 0;
+}
+.results .score.good { color: var(--good); }
+.results .score.mid { color: var(--warn); }
+.results .score.bad { color: var(--bad); }
+.review { margin-top: 1.25rem; text-align: left; }
+.review details {
+  background: var(--panel2); border-radius: 8px; padding: 0.6rem 0.8rem; margin-bottom: 0.45rem;
+}
+.review summary { cursor: pointer; font-weight: 600; }
+.footer-nav { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 560px) {
+  header.quiz-head h1 { font-size: 1.15rem; }
+  .card { padding: 1rem 0.9rem; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="quiz-head">
+    <div class="crumb"><a href="index.html">Home</a> · <a href="section-co3201.html">CO3201</a> · CO3201 Instrument Procedures</div>
+    <h1>CO3201 (7) TACAN/VOR DME Approach</h1>
+    <div class="meta">37 multiple-choice questions · offline · tap an answer</div>
+  </header>
+
+  <div id="quiz-ui">
+    <div class="progress">
+      <span id="prog-label">Question 1 of 37</span>
+      <span id="score-live">Score: 0</span>
+    </div>
+    <div class="bar"><span id="bar-fill"></span></div>
+    <div class="card" id="card">
+      <h2 id="q-text"></h2>
+      <div class="options" id="options"></div>
+      <div class="expl" id="expl"></div>
+      <div class="actions">
+        <button class="btn btn-primary" id="next-btn" disabled>Next</button>
+        <button class="btn btn-ghost" id="reset-btn" type="button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results">
+    <div class="crumb">CO3201 Instrument Procedures</div>
+    <h2 style="margin:0.2rem 0">CO3201 (7) TACAN/VOR DME Approach</h2>
+    <div class="score" id="final-score"></div>
+    <p id="final-msg"></p>
+    <div class="actions" style="justify-content:center">
+      <button class="btn btn-primary" id="retry-btn">Retry Quiz</button>
+      <a class="btn btn-ghost" href="section-co3201.html" style="display:inline-block;padding:0.65rem 1.2rem;border-radius:999px;border:1px solid var(--border)">Back to CO3201</a>
+    </div>
+    <div class="review" id="review"></div>
+  </div>
+
+  <div class="footer-nav"><a href="section-co3201.html">← CO3201</a> · <a href="index.html">Home</a></div>
+</div>
+<script>
+const QUESTIONS = [{"q": "What makes arcing approaches possible with TACAN (and VOR/DME)?", "opts": ["The equipment supplies both range and distance information", "The HUD steering arrow", "Radar vectors", "The equipment supplies glidepath information"], "ans": 0, "expl": "Correct: The equipment supplies both range and distance information · Source: \"TACAN (and VOR/DME) navigation equipment supplies both range and distance information, making arcing approaches possible.\""}, {"q": "Because range information is available, which fixes can be determined by DME?", "opts": ["Downwind, base and final", "FAF only", "IAF, FAF, and MAP", "IAF and DA only"], "ans": 2, "expl": "Correct: IAF, FAF, and MAP · Source: \"Because range information is available, you can determine the fixes (IAF, FAF, and MAP) defined by DME (Figure 6-31).\""}, {"q": "The course line may be used for tracking:", "opts": ["Only the missed approach course", "Only the arc", "All radials on the approach (e.g., initial inbound radial, final approach course)", "Only the final approach course"], "ans": 2, "expl": "Correct: All radials on the approach (e.g., initial inbound radial, final approach course) · Source: \"The course line may be used for tracking all radials on the approach (e.g., initial inbound radial, final approach course).\""}, {"q": "HI TACAN — before reaching the IAF you:", "opts": ["Extend speed brakes and report leaving altitude", "Configure for landing and slow to 200 KIAS", "Set the final approach course and select MAP mode", "Complete the \"WARP\" checks, set the published penetration course in the HSI, and select CDI mode"], "ans": 3, "expl": "Correct: Complete the \"WARP\" checks, set the published penetration course in the HSI, and select CDI mode · Source: \"When executing a HI TACAN/VOR DME approach, before reaching the IAF, complete the \"WARP\" checks, set the published penetration course in the HSI display and select CDI mode.\""}, {"q": "HI TACAN — HSI mode selected before the IAF:", "opts": ["MAP mode", "HUD mode", "DATA mode", "CDI mode"], "ans": 3, "expl": "Correct: CDI mode · Source: \"...set the published penetration course in the HSI display and select CDI mode.\""}, {"q": "HI TACAN — at the IAF:", "opts": ["Start the clock", "Intercept and maintain the approach course as published", "Make the gear down call", "Slow to 200 KIAS"], "ans": 1, "expl": "Correct: Intercept and maintain the approach course as published · Source: \"At the IAF, intercept and maintain the approach course as published.\""}, {"q": "HI TACAN — at 250 KIAS you:", "opts": ["Reduce power to idle, extend the speed brakes and lower the nose (~10 degrees nose down)", "Advance to MRT and climb", "Configure for landing", "Reduce to 700 pph and lower nose 1-2 degrees"], "ans": 0, "expl": "Correct: Reduce power to idle, extend the speed brakes and lower the nose (~10 degrees nose down) · Source: \"At 250 KIAS reduce power to idle, extend the speed brakes and lower the nose to maintain 250 KIAS (approximately 10 degrees nose down).\""}, {"q": "HI TACAN — when commencing the approach, report to ATC:", "opts": ["Platform", "Landing checklist complete", "Gear down", "Leaving altitude"], "ans": 3, "expl": "Correct: Leaving altitude · Source: \"Report leaving altitude to ATC when commencing the approach.\""}, {"q": "HI TACAN — after retracting speed brakes, nose attitude to maintain 250 KIAS is approximately:", "opts": ["2 degrees nose down", "10 degrees nose down", "5 degrees nose down", "Level"], "ans": 0, "expl": "Correct: 2 degrees nose down · Source: \"Retract the speed brakes when no longer required and raise nose to maintain 250 KIAS (Approximately 2 degrees nose down).\""}, {"q": "HI TACAN — anticipating what altitude do you allow the LAW to sound and report \"Platform\"?", "opts": ["1,500 feet AGL", "5000 feet MSL", "5000 feet AGL", "10,000 feet AGL"], "ans": 2, "expl": "Correct: 5000 feet AGL · Source: \"Anticipate reaching 5000 feet AGL, allow the LAW to sound, report \"Platform\" and retract the speed brakes, if still extended.\""}, {"q": "HI TACAN — the call made at 5000 feet AGL is:", "opts": ["\"Leaving altitude\"", "\"Platform\"", "\"Minimums\"", "\"Gear down\""], "ans": 1, "expl": "Correct: \"Platform\" · Source: \"Anticipate reaching 5000 feet AGL, allow the LAW to sound, report \"Platform\" and retract the speed brakes, if still extended.\""}, {"q": "HI TACAN — after Platform you:", "opts": ["Extend the speed brakes", "Shallow the descent IAW the minute to live rule and reset the LAW to the next altitude restriction", "Configure for landing immediately", "Increase descent to 6,000 fpm"], "ans": 1, "expl": "Correct: Shallow the descent IAW the minute to live rule and reset the LAW to the next altitude restriction · Source: \"Shallow descent IAW the minute to live rule and reset the LAW to the next altitude restriction as directed in your wing's SOP.\""}, {"q": "Lead turns onto and off of the arc by:", "opts": ["2.0 nm always", "10% of your AOB", "10% of your ground speed", "1% of your ground speed"], "ans": 3, "expl": "Correct: 1% of your ground speed · Source: \"Lead all turns onto and off of the arc by 1% of your ground speed.\""}, {"q": "Published \"Lead Radials\" (LR's) provide what lead?", "opts": ["1.0 nm", "1% of ground speed", "5 nm", "2.0 nm"], "ans": 3, "expl": "Correct: 2.0 nm · Source: \"Published \"Lead Radials\" (LR's) provide 2.0 nm lead to assist in turning to an intermediate or final approach course.\""}, {"q": "The decelerating level speed change in a 1/2 SRT practiced in BI advances the aircraft approximately:", "opts": ["2 NM", "1 NM", "0.5 NM", "5 NM"], "ans": 0, "expl": "Correct: 2 NM · Source: \"The decelerating level speed change in a 1/2 standard rate turn practiced in BI will advance the aircraft approximately 2 NM.\""}, {"q": "If turns are flown at 250 KIAS, lead required is:", "opts": ["Slightly less", "Double", "Slightly more", "The same"], "ans": 2, "expl": "Correct: Slightly more · Source: \"Slightly more lead will be required if turns are flown at 250 KIAS.\""}, {"q": "TACAN — slow to 200 KIAS at:", "opts": ["10 nm prior to the FAF", "5-7 nm prior to the FAF", "At the FAF", "3-5 nm prior to the FAF"], "ans": 1, "expl": "Correct: 5-7 nm prior to the FAF · Source: \"At 5-7 nm prior to the FAF, slow to 200 KIAS.\""}, {"q": "TACAN — configure for landing and perform the landing checklist at:", "opts": ["At the FAF", "At the IAF", "3-5 nm prior to FAF (speed brakes retracted)", "5-7 nm prior to FAF"], "ans": 2, "expl": "Correct: 3-5 nm prior to FAF (speed brakes retracted) · Source: \"Configure the aircraft for landing 3-5 nm prior to FAF and perform landing checklist (Speed brakes retracted).\""}, {"q": "TACAN — to the FAF you maintain:", "opts": ["250 KIAS", "Speed brakes extended", "Published course and altitude", "1,000 fpm descent"], "ans": 2, "expl": "Correct: Published course and altitude · Source: \"Maintain published course and altitude to the FAF.\""}, {"q": "Lead all level offs by:", "opts": ["10% of AOB", "10% of your VSI", "1% of your ground speed", "100 ft always"], "ans": 1, "expl": "Correct: 10% of your VSI · Source: \"Lead all level offs by 10% of your VSI.\""}, {"q": "Using the 10% VSI rule, at 1,000 fpm you begin the level off about:", "opts": ["10 ft prior", "100 ft prior", "1,000 ft prior", "300 ft prior"], "ans": 1, "expl": "Correct: 100 ft prior · Source: \"Lead all level offs by 10% of your VSI.\""}, {"q": "Low altitude TACAN/VOR DME approach procedures are:", "opts": ["Completely different from a penetration", "Flown only at 250 KIAS", "Flown with no speed brakes ever", "Essentially the same as those used for a high altitude penetration"], "ans": 3, "expl": "Correct: Essentially the same as those used for a high altitude penetration · Source: \"When executing a low altitude TACAN/VOR DME approach, the procedures are essentially the same as those used for a high altitude penetration.\""}, {"q": "TERPS speed criteria used when designing low altitude approaches:", "opts": ["200 knot", "150 knot", "250 knot", "180 knot"], "ans": 0, "expl": "Correct: 200 knot · Source: \"When designing low altitude approaches, a 200 knot Terminal Instrument Procedures (TERPS) speed criteria is used.\""}, {"q": "Approaches involving a procedure turn should be flown at a maximum of:", "opts": ["230 KIAS", "200 KIAS", "250 KIAS", "150 KIAS"], "ans": 1, "expl": "Correct: 200 KIAS · Source: \"As discussed earlier, approaches involving a procedure turn should be flown at a maximum airspeed of 200 KIAS.\""}, {"q": "A long No PT track or arc:", "opts": ["Must be flown at 150 KIAS", "Must be flown dirty", "Must be flown at exactly 200 KIAS", "May be flown at a higher airspeed if traffic permits"], "ans": 3, "expl": "Correct: May be flown at a higher airspeed if traffic permits · Source: \"A long No PT track or arc may be flown at a higher airspeed if traffic permits.\""}, {"q": "At the higher speed on a No PT track or arc, consider:", "opts": ["Reduced lead", "The larger turn radius required", "The lower fuel flow", "The smaller turn radius"], "ans": 1, "expl": "Correct: The larger turn radius required · Source: \"Consideration should be given to the larger turn radius required at the higher speed.\""}, {"q": "Speed brakes may be unnecessary prior to the FAF if:", "opts": ["Slowing from 250 KIAS is not required prior to transitioning to the landing configuration", "You are above 5000 ft AGL", "Winds are calm", "The approach has a procedure turn"], "ans": 0, "expl": "Correct: Slowing from 250 KIAS is not required prior to transitioning to the landing configuration · Source: \"Speed brakes may be unnecessary prior to the FAF if slowing from 250 KIAS is not required prior to transitioning to the landing configuration.\""}, {"q": "At the FAF (TACAN) you:", "opts": ["Start the clock, extend speed brakes, report landing checklist complete on the ICS, make gear down call to ATC", "Report Platform and reset the LAW", "Configure for landing and slow to 200 KIAS", "Report leaving altitude and retract speed brakes"], "ans": 0, "expl": "Correct: Start the clock, extend speed brakes, report landing checklist complete on the ICS, make gear down call to ATC · Source: \"At the FAF, start the clock, extend speed brakes, report landing checklist complete on the ICS and make gear down call to ATC.\""}, {"q": "At the FAF, the landing checklist complete report is made on ___ and the gear down call to ___.", "opts": ["ICS; ATC", "Tower; ICS", "ICS; Base", "ATC; ICS"], "ans": 0, "expl": "Correct: ICS; ATC · Source: \"At the FAF, start the clock, extend speed brakes, report landing checklist complete on the ICS and make gear down call to ATC.\""}, {"q": "Speed brake extension at the FAF requires:", "opts": ["Forward stick pressure to counter the pitch up", "Reduced power", "Aft stick to counter the pitch down", "No control input"], "ans": 0, "expl": "Correct: Forward stick pressure to counter the pitch up · Source: \"Forward stick pressure will be required to counter the pitch up due to speed brake extension.\""}, {"q": "After the FAF, descend to the MDA while monitoring ___ for the MAP.", "opts": ["The VSI", "The clock only", "Your DME", "The radar altimeter"], "ans": 2, "expl": "Correct: Your DME · Source: \"Descend to the MDA and start looking for the runway while monitoring your DME for the MAP.\""}, {"q": "Plan your descent to be in level flight at the MDA:", "opts": ["Prior to reaching the MAP", "After the MAP", "At the FAF", "At the MAP"], "ans": 0, "expl": "Correct: Prior to reaching the MAP · Source: \"Plan your descent to be in level flight at the MDA prior to reaching the MAP.\""}, {"q": "Maximum descent rate from the FAF (TACAN):", "opts": ["1,000 fpm", "2,000 fpm", "1,500 fpm", "500 fpm"], "ans": 0, "expl": "Correct: 1,000 fpm · Source: \"Do not exceed 1,000 fpm.\""}, {"q": "Keep heading changes small so you don't chase:", "opts": ["The final approach course on the HSI or the course situation steering arrow on the HUD", "The DME", "The glidepath", "The VSI"], "ans": 0, "expl": "Correct: The final approach course on the HSI or the course situation steering arrow on the HUD · Source: \"Keep heading changes small so you don't chase the final approach course on the HSI display or the course situation steering arrow on the HUD.\""}, {"q": "Approximately 100 feet prior to the MDA you:", "opts": ["Reduce about 300 pph and push forward", "Retract speed brakes only", "Add MRT", "Add about 300 pph fuel flow and apply slight backstick pressure"], "ans": 3, "expl": "Correct: Add about 300 pph fuel flow and apply slight backstick pressure · Source: \"Approximately 100 feet prior to the MDA, add about 300 pph fuel flow and apply slight backstick pressure to level off at MDA.\""}, {"q": "How much fuel flow is added to level off at MDA?", "opts": ["About 100 pph", "About 1,500 pph", "About 700 pph", "About 300 pph"], "ans": 3, "expl": "Correct: About 300 pph · Source: \"Approximately 100 feet prior to the MDA, add about 300 pph fuel flow and apply slight backstick pressure to level off at MDA.\""}, {"q": "At the MAP without the runway environment in sight or unable to land safely:", "opts": ["Continue to the DA", "Enter holding", "Descend 100 ft below MDA", "Execute a missed approach"], "ans": 3, "expl": "Correct: Execute a missed approach · Source: \"When you reach the MAP, if you don't have the runway environment in sight or determine that a safe landing is not possible, execute a missed approach.\""}];
+let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
+let queue = QUESTIONS.map((_, i) => i);
+
+const $ = (id) => document.getElementById(id);
+const letters = ["A","B","C","D"];
+
+function render() {
+  answered = false;
+  const q = QUESTIONS[queue[idx]];
+  $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+  $("q-text").textContent = q.q;
+  $("expl").className = "expl";
+  $("expl").textContent = "";
+  $("next-btn").disabled = true;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  const box = $("options");
+  box.innerHTML = "";
+  q.opts.forEach((opt, i) => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.type = "button";
+    btn.innerHTML = `<span class="letter">${letters[i]}</span><span>${escapeHtml(opt)}</span>`;
+    btn.addEventListener("click", () => choose(i, btn));
+    box.appendChild(btn);
+  });
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function choose(i, btn) {
+  if (answered) return;
+  answered = true;
+  const questionIndex = queue[idx];
+  const q = QUESTIONS[questionIndex];
+  const buttons = [...$("options").querySelectorAll(".opt")];
+  buttons.forEach(b => b.disabled = true);
+  const correct = i === q.ans;
+  if (correct) {
+    mastered++;
+    btn.classList.add("correct");
+  } else {
+    misses++;
+    queue.push(questionIndex);
+    btn.classList.add("wrong");
+    buttons[q.ans].classList.add("correct");
+  }
+  history.push({ qi: questionIndex, pick: i, correct });
+  if (q.expl) {
+    $("expl").textContent = q.expl;
+    $("expl").classList.add("show");
+  }
+  $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
+  $("next-btn").textContent = idx >= queue.length - 1 ? "See Results" : "Next";
+  $("next-btn").disabled = false;
+  $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
+}
+
+function next() {
+  if (!answered) return;
+  if (idx >= queue.length - 1) {
+    showResults();
+    return;
+  }
+  idx++;
+  render();
+}
+
+function showResults() {
+  $("quiz-ui").style.display = "none";
+  $("results").classList.add("show");
+  const pct = Math.round((mastered / QUESTIONS.length) * 100);
+  const el = $("final-score");
+  el.textContent = `${mastered} / ${QUESTIONS.length} mastered (${pct}%)`;
+  el.className = "score " + (pct >= 80 ? "good" : pct >= 60 ? "mid" : "bad");
+  $("final-msg").textContent = `${misses} misses/retries · ${history.length} total attempts`;
+  const rev = $("review");
+  rev.innerHTML = "<h3>Review</h3>";
+  history.forEach(h => {
+    const q = QUESTIONS[h.qi];
+    const d = document.createElement("details");
+    d.innerHTML = `<summary>${h.correct ? "✅" : "❌"} Q${h.qi+1}: ${escapeHtml(q.q.slice(0,90))}${q.q.length>90?"…":""}</summary>
+      <p><strong>Your answer:</strong> ${escapeHtml(q.opts[h.pick])}</p>
+      <p><strong>Correct:</strong> ${escapeHtml(q.opts[q.ans])}</p>
+      ${q.expl ? `<p><strong>Why:</strong> ${escapeHtml(q.expl)}</p>` : ""}`;
+    rev.appendChild(d);
+  });
+}
+
+function reset() {
+  idx = 0; mastered = 0; misses = 0; answered = false; history = [];
+  queue = QUESTIONS.map((_, i) => i);
+  $("results").classList.remove("show");
+  $("quiz-ui").style.display = "block";
+  render();
+}
+
+$("next-btn").addEventListener("click", next);
+$("reset-btn").addEventListener("click", reset);
+$("retry-btn").addEventListener("click", reset);
+render();
+</script>
+</body>
+</html>

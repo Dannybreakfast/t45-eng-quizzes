@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>CO3201 — T-45 Quizzes</title>
+<script src="auth.js"></script>
+<style>
+:root {
+  --bg:#0f1419; --panel:#1a2332; --panel2:#243044; --text:#e7eef7; --muted:#9bb0c7;
+  --accent:#3d9cf0; --accent2:#2a7fd4; --border:#2e3d52; --radius:12px;
+  --font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin:0; font-family:var(--font); background:var(--bg); color:var(--text); line-height:1.45; }
+.wrap { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+header {
+  background: linear-gradient(135deg,#1a2a40,#152033);
+  border:1px solid var(--border); border-radius: var(--radius);
+  padding: 1.5rem 1.4rem; margin-bottom: 1.5rem;
+}
+h1 { margin:0 0 .4rem; font-size:1.6rem; }
+.sub { color:var(--muted); }
+.crumb { color:var(--muted); font-size:0.9rem; margin-bottom:0.45rem; }
+.crumb a { color:var(--accent); text-decoration:none; }
+.crumb a:hover { text-decoration:underline; }
+.stats { color:var(--muted); font-size:.95rem; margin-top:.5rem; }
+.section-grid {
+  display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem; margin-top: 0.25rem;
+}
+a.section-btn {
+  display:flex; flex-direction:column; justify-content:center; align-items:flex-start;
+  gap:0.35rem; min-height: 7.5rem;
+  background: linear-gradient(160deg, #1e2d44, #162033);
+  border: 1px solid var(--border); border-radius: 14px;
+  padding: 1.25rem 1.3rem; color: var(--text); text-decoration:none;
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+a.section-btn:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px rgba(61,156,240,.25);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+a.section-btn .code {
+  font-size: 1.85rem; font-weight: 800; letter-spacing: 0.04em; color: #d8ebff;
+}
+a.section-btn .name { color: var(--muted); font-size: 0.95rem; }
+a.section-btn .count {
+  margin-top: 0.35rem; font-size: 0.9rem; color: var(--accent);
+  font-weight: 600;
+}
+.topic { margin-bottom: 1.75rem; }
+.topic h2 {
+  margin:0 0 .6rem; font-size:1.15rem; color:#c5daf0;
+  border-bottom:1px solid var(--border); padding-bottom:.35rem;
+}
+ul { list-style:none; padding:0; margin:0; }
+li { margin:0 0 .4rem; }
+li a {
+  display:flex; justify-content:space-between; gap:1rem; align-items:center;
+  background:var(--panel); border:1px solid var(--border); border-radius:10px;
+  padding:.7rem .9rem; color:var(--text); text-decoration:none;
+}
+li a:hover { border-color:var(--accent); }
+li .count { color:var(--muted); font-size:.85rem; white-space:nowrap; }
+footer { margin-top:2rem; color:var(--muted); font-size:.85rem; }
+.back-home { margin-bottom: 1rem; }
+.back-home a { color: var(--accent); text-decoration: none; }
+.back-home a:hover { text-decoration: underline; }
+
+a.study-guide-banner {
+  display:flex; flex-direction:column; gap:0.25rem;
+  margin: 0 0 1.25rem;
+  background: linear-gradient(135deg, #1e3a5f, #1a2a40);
+  border: 1px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  color: var(--text); text-decoration:none;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.2);
+  transition: border-color .15s, transform .15s, box-shadow .15s;
+}
+a.study-guide-banner:hover {
+  border-color: #7ec4f8;
+  box-shadow: 0 0 0 1px rgba(61,156,240,.4);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+a.study-guide-banner .sg-title {
+  font-size: 1.25rem; font-weight: 800; color: #d8ebff; letter-spacing: 0.02em;
+}
+a.study-guide-banner .sg-sub { color: var(--muted); font-size: 0.92rem; }
+a.study-guide-banner .sg-cta { color: var(--accent); font-weight: 700; font-size: 0.95rem; margin-top: 0.15rem; }
+</style></head><body><div class='wrap'>
+<header>
+<div class='crumb'><a href='index.html'>Home</a> · CO3201</div>
+<h1>CO3201 — Instrument Procedures</h1>
+<div class='stats'>10 quizzes · 440 questions · 220 flashcards</div></header>
+<div class='back-home'><a href='index.html'>← All sections</a> · <a href='knowledge-packs/co3201/index.html'>CO3201 knowledge pack</a></div>
+<a class='study-guide-banner' href='co3201-study-guide.html'><span class='sg-title'>CO3201 Study Guide</span><span class='sg-sub'>Turn pattern · 1/2 SRT · level speed change · slow flight · S-1 · penetration · TACAN/VOR DME · PAR/ASR — verbatim source</span><span class='sg-cta'>Open study guide →</span></a><a class='study-guide-banner' href='co3201-flashcards.html'><span class='sg-title'>CO3201 Flashcards</span><span class='sg-sub'>220 flip cards · <a href='co3201-flashcards.tsv'>Anki/Quizlet TSV</a></span><span class='sg-cta'>Open flashcards →</span></a>
+<section class='topic'><h2>Master quiz</h2><ul>
+<li><a href='co3201-all-master-quiz.html'><span>CO3201 — Master Quiz (all topics)</span><span class='count'>220 Q</span></a></li>
+</ul></section>
+<section class='topic'><h2>Quizzes by topic</h2><ul>
+<li><a href='co3201-1-turns.html'><span>CO3201 (1) Normal Turns &amp; Turn Pattern</span><span class='count'>24 Q</span></a></li>
+<li><a href='co3201-2-srt.html'><span>CO3201 (2) 1/2 Standard Rate Turn</span><span class='count'>9 Q</span></a></li>
+<li><a href='co3201-3-lsc.html'><span>CO3201 (3) Level Speed Change</span><span class='count'>13 Q</span></a></li>
+<li><a href='co3201-4-slow.html'><span>CO3201 (4) Slow Flight</span><span class='count'>33 Q</span></a></li>
+<li><a href='co3201-5-s1.html'><span>CO3201 (5) S-1 Pattern</span><span class='count'>12 Q</span></a></li>
+<li><a href='co3201-6-pen.html'><span>CO3201 (6) High-Altitude Penetration</span><span class='count'>10 Q</span></a></li>
+<li><a href='co3201-7-tacan.html'><span>CO3201 (7) TACAN/VOR DME Approach</span><span class='count'>37 Q</span></a></li>
+<li><a href='co3201-8-gca.html'><span>CO3201 (8) PAR Approach — GCA Basics, Comms &amp; Pattern</span><span class='count'>56 Q</span></a></li>
+<li><a href='co3201-9-final.html'><span>CO3201 (9) PAR &amp; ASR Final Approach</span><span class='count'>26 Q</span></a></li>
+</ul></section>
+<footer><a href='index.html' style='color:var(--accent)'>← Home</a></footer></div></body></html>
