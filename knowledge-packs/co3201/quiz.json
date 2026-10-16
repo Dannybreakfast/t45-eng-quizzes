@@ -133,17 +133,6 @@
  },
  {
   "topic": "Normal Turns & Turn Pattern",
-  "q": "Using the 10% AOB lead, roll-out from a 30-degree AOB turn begins about how many degrees before the desired heading?",
-  "answer": "3 degrees",
-  "distractors": [
-   "10 degrees",
-   "30 degrees",
-   "1 degree"
-  ],
-  "source": "Use a lead point of approximately 10% of the angle of bank for initiating your roll-out."
- },
- {
-  "topic": "Normal Turns & Turn Pattern",
   "q": "The turn pattern consists of:",
   "answer": "Three pairs of left and right turns",
   "distractors": [
@@ -1332,17 +1321,6 @@
  },
  {
   "topic": "TACAN/VOR DME Approach",
-  "q": "Using the 10% VSI rule, at 1,000 fpm you begin the level off about:",
-  "answer": "100 ft prior",
-  "distractors": [
-   "10 ft prior",
-   "300 ft prior",
-   "1,000 ft prior"
-  ],
-  "source": "Lead all level offs by 10% of your VSI."
- },
- {
-  "topic": "TACAN/VOR DME Approach",
   "q": "Low altitude TACAN/VOR DME approach procedures are:",
   "answer": "Essentially the same as those used for a high altitude penetration",
   "distractors": [
@@ -2418,5 +2396,577 @@
    "ASR; TACAN only"
   ],
   "source": "If you do not have the runway environment in sight when you reach the DA, execute a missed approach … Upon reaching the MAP, if you do not have the runway in sight … execute the missed approach as instructed."
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: how long does each maneuver (the descent, the climb) last?",
+  "answer": "1 minute",
+  "distractors": [
+   "30 seconds",
+   "2 minutes",
+   "15 seconds"
+  ],
+  "source": "S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS."
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: the S-1 descent/climb sequence is performed:",
+  "answer": "A minimum of two times",
+  "distractors": [
+   "Exactly once",
+   "A minimum of three times",
+   "A maximum of two times"
+  ],
+  "source": "S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS."
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: the entire S-1 maneuver is flown on:",
+  "answer": "A constant heading and at a constant airspeed of 200 KIAS",
+  "distractors": [
+   "A constant heading at 250 KIAS",
+   "Alternating headings at 200 KIAS",
+   "A constant heading at optimum AOA"
+  ],
+  "source": "S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS."
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: the S-1 pattern consists of:",
+  "answer": "A 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft",
+  "distractors": [
+   "A 1,000-fpm climb for 1,000 ft followed by a 1,000-fpm descent",
+   "A 500-fpm descent for 1,000 ft followed by a 500-fpm climb",
+   "A 1,000-fpm descent for 500 ft followed by a 1,000-fpm climb for 500 ft"
+  ],
+  "source": "S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS."
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: transition at the top into each descent (in order):",
+  "answer": "1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS",
+  "distractors": [
+   "1. Lower nose 2. Reduce RPM 3. Maintain 200 KIAS",
+   "1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS",
+   "1. Reduce RPM to level flight setting 2. Lower nose to level flight"
+  ],
+  "source": "Figure 3-1 (diagram): Transition — 1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS"
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: transition at the bottom into each climb (in order):",
+  "answer": "1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS",
+  "distractors": [
+   "1. Raise nose 2. Throttle to climb power 3. Maintain 200 KIAS",
+   "1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS",
+   "1. Throttle to MRT 2. Raise nose 3. Maintain 250 KIAS"
+  ],
+  "source": "Figure 3-1 (diagram): Transition — 1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS"
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: the final transition at the top (end of the maneuver):",
+  "answer": "1. Reduce RPM to level flight setting 2. Lower nose to level flight",
+  "distractors": [
+   "1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS",
+   "1. Throttle to climb power 2. Raise nose",
+   "1. Throttle to MRT 2. Raise nose to level flight"
+  ],
+  "source": "Figure 3-1 (diagram): Transition — 1. Reduce RPM to level flight setting 2. Lower nose to level flight"
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: first step of the transition into a descent:",
+  "answer": "Reduce RPM",
+  "distractors": [
+   "Lower nose",
+   "Maintain 200 KIAS",
+   "Throttle to climb power"
+  ],
+  "source": "Figure 3-1 (diagram): Transition — 1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS"
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: first step of the transition into a climb:",
+  "answer": "Throttle to climb power",
+  "distractors": [
+   "Raise nose",
+   "Maintain 200 KIAS",
+   "Reduce RPM"
+  ],
+  "source": "Figure 3-1 (diagram): Transition — 1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS"
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: the bottom transitions are started:",
+  "answer": "100 ft or 3 sec prior to the 12",
+  "distractors": [
+   "50 ft or 5 sec prior to the 12",
+   "At the 12",
+   "200 ft or 6 sec prior to the 12"
+  ],
+  "source": "Figure 3-1 (diagram): 100 ft or 3 sec prior to the 12"
+ },
+ {
+  "topic": "S-1 Pattern",
+  "q": "Figure 3-1: what altitude mark is shown on the climbs?",
+  "answer": "900 ft",
+  "distractors": [
+   "100 ft",
+   "500 ft",
+   "1000 ft"
+  ],
+  "source": "Figure 3-1 (diagram): 900 ft (marked on the climbs)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment A is:",
+  "answer": "LEVEL FLIGHT",
+  "distractors": [
+   "MISSED APPROACH",
+   "45-DEGREE TURN (20° AOB)",
+   "90-DEGREE TURN (30° AOB)"
+  ],
+  "source": "Figure 3-3 legend: A. LEVEL FLIGHT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment B is:",
+  "answer": "LEVEL SPEED CHANGE",
+  "distractors": [
+   "90-DEGREE TURN (30° AOB)",
+   "LANDING CONFIGURATION",
+   "FINAL APPROACH SPEED"
+  ],
+  "source": "Figure 3-3 legend: B. LEVEL SPEED CHANGE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment C is:",
+  "answer": "90-DEGREE TURN (30° AOB)",
+  "distractors": [
+   "45-DEGREE TURN (20° AOB)",
+   "30-DEGREE TURN (10° AOB)",
+   "LANDING CONFIGURATION"
+  ],
+  "source": "Figure 3-3 legend: C. 90-DEGREE TURN (30° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment D is:",
+  "answer": "LANDING CONFIGURATION",
+  "distractors": [
+   "30-DEGREE TURN (10° AOB)",
+   "90-DEGREE TURN (30° AOB)",
+   "45-DEGREE TURN (20° AOB)"
+  ],
+  "source": "Figure 3-3 legend: D. LANDING CONFIGURATION"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment E is:",
+  "answer": "45-DEGREE TURN (20° AOB)",
+  "distractors": [
+   "LANDING CONFIGURATION",
+   "30-DEGREE TURN (10° AOB)",
+   "LEVEL FLIGHT"
+  ],
+  "source": "Figure 3-3 legend: E. 45-DEGREE TURN (20° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment F is:",
+  "answer": "45-DEGREE TURN (20° AOB)",
+  "distractors": [
+   "SLOW CRUISE",
+   "90-DEGREE TURN (30° AOB)",
+   "LANDING CONFIGURATION"
+  ],
+  "source": "Figure 3-3 legend: F. 45-DEGREE TURN (20° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment G is:",
+  "answer": "FINAL APPROACH SPEED",
+  "distractors": [
+   "LANDING CONFIGURATION",
+   "LEVEL FLIGHT",
+   "SLOW CRUISE"
+  ],
+  "source": "Figure 3-3 legend: G. FINAL APPROACH SPEED"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment H is:",
+  "answer": "30-DEGREE TURN (10° AOB)",
+  "distractors": [
+   "SLOW CRUISE",
+   "LEVEL FLIGHT",
+   "MISSED APPROACH"
+  ],
+  "source": "Figure 3-3 legend: H. 30-DEGREE TURN (10° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment I is:",
+  "answer": "30-DEGREE TURN (10° AOB)",
+  "distractors": [
+   "FINAL APPROACH SPEED",
+   "LEVEL FLIGHT",
+   "45-DEGREE TURN (20° AOB)"
+  ],
+  "source": "Figure 3-3 legend: I. 30-DEGREE TURN (10° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment J is:",
+  "answer": "ON-SPEED DESCENT",
+  "distractors": [
+   "LEVEL FLIGHT",
+   "SLOW CRUISE",
+   "45-DEGREE TURN (20° AOB)"
+  ],
+  "source": "Figure 3-3 legend: J. ON-SPEED DESCENT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment K is:",
+  "answer": "ON-SPEED LEVEL FLIGHT",
+  "distractors": [
+   "30-DEGREE TURN (10° AOB)",
+   "MISSED APPROACH",
+   "90-DEGREE TURN (30° AOB)"
+  ],
+  "source": "Figure 3-3 legend: K. ON-SPEED LEVEL FLIGHT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment L is:",
+  "answer": "MISSED APPROACH",
+  "distractors": [
+   "30-DEGREE TURN (10° AOB)",
+   "ON-SPEED LEVEL FLIGHT",
+   "LEVEL SPEED CHANGE"
+  ],
+  "source": "Figure 3-3 legend: L. MISSED APPROACH"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment M is:",
+  "answer": "SLOW CRUISE",
+  "distractors": [
+   "LANDING CONFIGURATION",
+   "30-DEGREE TURN (10° AOB)",
+   "45-DEGREE TURN (20° AOB)"
+  ],
+  "source": "Figure 3-3 legend: M. SLOW CRUISE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment N is:",
+  "answer": "LEVEL SPEED CHANGE",
+  "distractors": [
+   "MISSED APPROACH",
+   "30-DEGREE TURN (10° AOB)",
+   "LANDING CONFIGURATION"
+  ],
+  "source": "Figure 3-3 legend: N. LEVEL SPEED CHANGE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3 Slow Flight Maneuver: segment O is:",
+  "answer": "LEVEL FLIGHT",
+  "distractors": [
+   "90-DEGREE TURN (30° AOB)",
+   "ON-SPEED LEVEL FLIGHT",
+   "LEVEL SPEED CHANGE"
+  ],
+  "source": "Figure 3-3 legend: O. LEVEL FLIGHT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"LEVEL FLIGHT\"?",
+  "answer": "A and O",
+  "distractors": [
+   "H",
+   "I",
+   "G"
+  ],
+  "source": "Figure 3-3 legend: A. LEVEL FLIGHT; O. LEVEL FLIGHT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"LEVEL SPEED CHANGE\"?",
+  "answer": "B and N",
+  "distractors": [
+   "E",
+   "I",
+   "C"
+  ],
+  "source": "Figure 3-3 legend: B. LEVEL SPEED CHANGE; N. LEVEL SPEED CHANGE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"90-DEGREE TURN (30° AOB)\"?",
+  "answer": "C",
+  "distractors": [
+   "F",
+   "D",
+   "G"
+  ],
+  "source": "Figure 3-3 legend: C. 90-DEGREE TURN (30° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"LANDING CONFIGURATION\"?",
+  "answer": "D",
+  "distractors": [
+   "H",
+   "I",
+   "E"
+  ],
+  "source": "Figure 3-3 legend: D. LANDING CONFIGURATION"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"45-DEGREE TURN (20° AOB)\"?",
+  "answer": "E and F",
+  "distractors": [
+   "K",
+   "O",
+   "B"
+  ],
+  "source": "Figure 3-3 legend: E. 45-DEGREE TURN (20° AOB); F. 45-DEGREE TURN (20° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"FINAL APPROACH SPEED\"?",
+  "answer": "G",
+  "distractors": [
+   "M",
+   "J",
+   "D"
+  ],
+  "source": "Figure 3-3 legend: G. FINAL APPROACH SPEED"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"30-DEGREE TURN (10° AOB)\"?",
+  "answer": "H and I",
+  "distractors": [
+   "D",
+   "B",
+   "G"
+  ],
+  "source": "Figure 3-3 legend: H. 30-DEGREE TURN (10° AOB); I. 30-DEGREE TURN (10° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"ON-SPEED DESCENT\"?",
+  "answer": "J",
+  "distractors": [
+   "G",
+   "A",
+   "C"
+  ],
+  "source": "Figure 3-3 legend: J. ON-SPEED DESCENT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"ON-SPEED LEVEL FLIGHT\"?",
+  "answer": "K",
+  "distractors": [
+   "N",
+   "G",
+   "M"
+  ],
+  "source": "Figure 3-3 legend: K. ON-SPEED LEVEL FLIGHT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"MISSED APPROACH\"?",
+  "answer": "L",
+  "distractors": [
+   "E",
+   "G",
+   "O"
+  ],
+  "source": "Figure 3-3 legend: L. MISSED APPROACH"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment letter(s) are \"SLOW CRUISE\"?",
+  "answer": "M",
+  "distractors": [
+   "E",
+   "F",
+   "A"
+  ],
+  "source": "Figure 3-3 legend: M. SLOW CRUISE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows A (LEVEL FLIGHT)?",
+  "answer": "B. LEVEL SPEED CHANGE",
+  "distractors": [
+   "E. 45-DEGREE TURN (20° AOB)",
+   "D. LANDING CONFIGURATION",
+   "A. LEVEL FLIGHT"
+  ],
+  "source": "Figure 3-3 legend: A. LEVEL FLIGHT → B. LEVEL SPEED CHANGE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows B (LEVEL SPEED CHANGE)?",
+  "answer": "C. 90-DEGREE TURN (30° AOB)",
+  "distractors": [
+   "B. LEVEL SPEED CHANGE",
+   "H. 30-DEGREE TURN (10° AOB)",
+   "A. LEVEL FLIGHT"
+  ],
+  "source": "Figure 3-3 legend: B. LEVEL SPEED CHANGE → C. 90-DEGREE TURN (30° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows C (90-DEGREE TURN (30° AOB))?",
+  "answer": "D. LANDING CONFIGURATION",
+  "distractors": [
+   "J. ON-SPEED DESCENT",
+   "C. 90-DEGREE TURN (30° AOB)",
+   "L. MISSED APPROACH"
+  ],
+  "source": "Figure 3-3 legend: C. 90-DEGREE TURN (30° AOB) → D. LANDING CONFIGURATION"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows D (LANDING CONFIGURATION)?",
+  "answer": "E. 45-DEGREE TURN (20° AOB)",
+  "distractors": [
+   "M. SLOW CRUISE",
+   "K. ON-SPEED LEVEL FLIGHT",
+   "H. 30-DEGREE TURN (10° AOB)"
+  ],
+  "source": "Figure 3-3 legend: D. LANDING CONFIGURATION → E. 45-DEGREE TURN (20° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows E (45-DEGREE TURN (20° AOB))?",
+  "answer": "F. 45-DEGREE TURN (20° AOB)",
+  "distractors": [
+   "B. LEVEL SPEED CHANGE",
+   "L. MISSED APPROACH",
+   "M. SLOW CRUISE"
+  ],
+  "source": "Figure 3-3 legend: E. 45-DEGREE TURN (20° AOB) → F. 45-DEGREE TURN (20° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows F (45-DEGREE TURN (20° AOB))?",
+  "answer": "G. FINAL APPROACH SPEED",
+  "distractors": [
+   "E. 45-DEGREE TURN (20° AOB)",
+   "M. SLOW CRUISE",
+   "H. 30-DEGREE TURN (10° AOB)"
+  ],
+  "source": "Figure 3-3 legend: F. 45-DEGREE TURN (20° AOB) → G. FINAL APPROACH SPEED"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows G (FINAL APPROACH SPEED)?",
+  "answer": "H. 30-DEGREE TURN (10° AOB)",
+  "distractors": [
+   "L. MISSED APPROACH",
+   "J. ON-SPEED DESCENT",
+   "G. FINAL APPROACH SPEED"
+  ],
+  "source": "Figure 3-3 legend: G. FINAL APPROACH SPEED → H. 30-DEGREE TURN (10° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows H (30-DEGREE TURN (10° AOB))?",
+  "answer": "I. 30-DEGREE TURN (10° AOB)",
+  "distractors": [
+   "B. LEVEL SPEED CHANGE",
+   "G. FINAL APPROACH SPEED",
+   "C. 90-DEGREE TURN (30° AOB)"
+  ],
+  "source": "Figure 3-3 legend: H. 30-DEGREE TURN (10° AOB) → I. 30-DEGREE TURN (10° AOB)"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows I (30-DEGREE TURN (10° AOB))?",
+  "answer": "J. ON-SPEED DESCENT",
+  "distractors": [
+   "A. LEVEL FLIGHT",
+   "D. LANDING CONFIGURATION",
+   "C. 90-DEGREE TURN (30° AOB)"
+  ],
+  "source": "Figure 3-3 legend: I. 30-DEGREE TURN (10° AOB) → J. ON-SPEED DESCENT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows J (ON-SPEED DESCENT)?",
+  "answer": "K. ON-SPEED LEVEL FLIGHT",
+  "distractors": [
+   "G. FINAL APPROACH SPEED",
+   "A. LEVEL FLIGHT",
+   "D. LANDING CONFIGURATION"
+  ],
+  "source": "Figure 3-3 legend: J. ON-SPEED DESCENT → K. ON-SPEED LEVEL FLIGHT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows K (ON-SPEED LEVEL FLIGHT)?",
+  "answer": "L. MISSED APPROACH",
+  "distractors": [
+   "B. LEVEL SPEED CHANGE",
+   "E. 45-DEGREE TURN (20° AOB)",
+   "M. SLOW CRUISE"
+  ],
+  "source": "Figure 3-3 legend: K. ON-SPEED LEVEL FLIGHT → L. MISSED APPROACH"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows L (MISSED APPROACH)?",
+  "answer": "M. SLOW CRUISE",
+  "distractors": [
+   "E. 45-DEGREE TURN (20° AOB)",
+   "J. ON-SPEED DESCENT",
+   "L. MISSED APPROACH"
+  ],
+  "source": "Figure 3-3 legend: L. MISSED APPROACH → M. SLOW CRUISE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows M (SLOW CRUISE)?",
+  "answer": "N. LEVEL SPEED CHANGE",
+  "distractors": [
+   "K. ON-SPEED LEVEL FLIGHT",
+   "L. MISSED APPROACH",
+   "H. 30-DEGREE TURN (10° AOB)"
+  ],
+  "source": "Figure 3-3 legend: M. SLOW CRUISE → N. LEVEL SPEED CHANGE"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: which segment follows N (LEVEL SPEED CHANGE)?",
+  "answer": "O. LEVEL FLIGHT",
+  "distractors": [
+   "K. ON-SPEED LEVEL FLIGHT",
+   "C. 90-DEGREE TURN (30° AOB)",
+   "B. LEVEL SPEED CHANGE"
+  ],
+  "source": "Figure 3-3 legend: N. LEVEL SPEED CHANGE → O. LEVEL FLIGHT"
+ },
+ {
+  "topic": "Slow Flight",
+  "q": "Figure 3-3: how many lettered segments (A through O) are in the slow flight maneuver legend?",
+  "answer": "15",
+  "distractors": [
+   "12",
+   "14",
+   "13"
+  ],
+  "source": "Figure 3-3 legend: A. LEVEL FLIGHT … O. LEVEL FLIGHT"
  }
 ]

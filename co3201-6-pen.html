@@ -125,6 +125,16 @@ button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
   header.quiz-head h1 { font-size: 1.15rem; }
   .card { padding: 1rem 0.9rem; }
 }
+
+.figwrap{display:block}
+.figpanel{display:none;background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:.4rem;margin-bottom:1rem}
+.figpanel img{display:block;width:100%;height:auto;cursor:zoom-in}
+.figpanel .cap{color:#222;font-size:.8rem;text-align:center;padding:.2rem}
+body.hasfig .wrap{max-width:1350px}
+body.hasfig .figpanel{display:block}
+@media (min-width:900px){body.hasfig .figwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem;align-items:start}
+body.hasfig .figpanel{position:sticky;top:.5rem;max-height:calc(100vh - 1rem);overflow:auto;order:2}}
+@media (max-width:899px){body.hasfig .figpanel{position:sticky;top:0;z-index:5;max-height:42vh;overflow:auto}}
 </style>
 </head>
 <body>
@@ -135,7 +145,7 @@ button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
     <div class="meta">10 multiple-choice questions · offline · tap an answer</div>
   </header>
 
-  <div id="quiz-ui">
+  <div class="figwrap"><div class="figpanel" id="figpanel"><a id="figlink" target="_blank"><img id="figimg" alt=""/></a><div class="cap" id="figcap"></div></div><div id="quiz-ui">
     <div class="progress">
       <span id="prog-label">Question 1 of 10</span>
       <span id="score-live">Score: 0</span>
@@ -152,6 +162,7 @@ button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
     </div>
   </div>
 
+  </div>
   <div class="results" id="results">
     <div class="crumb">CO3201 Instrument Procedures</div>
     <h2 style="margin:0.2rem 0">CO3201 (6) High-Altitude Penetration</h2>
@@ -167,7 +178,9 @@ button.btn:disabled { opacity: 0.45; cursor: not-allowed; }
   <div class="footer-nav"><a href="section-co3201.html">← CO3201</a> · <a href="index.html">Home</a></div>
 </div>
 <script>
-const QUESTIONS = [{"q": "High altitude penetration is commenced by:", "opts": ["Lowering the nose and accelerating to 250 KIAS", "Reducing to idle at 200 KIAS", "Extending speed brakes at cruise speed", "Turning to the final approach course"], "ans": 0, "expl": "Correct: Lowering the nose and accelerating to 250 KIAS · Source: \"...Commence a high altitude penetration by lowering the nose and accelerating to 250 KIAS.\""}, {"q": "At 250 KIAS in the penetration you:", "opts": ["Reduce power to flight IDLE, lower the nose and extend the speed brakes", "Reduce to 700 pph and lower the nose 1-2 degrees", "Advance to MRT", "Configure for landing"], "ans": 0, "expl": "Correct: Reduce power to flight IDLE, lower the nose and extend the speed brakes · Source: \"At 250 KIAS, reduce power to flight IDLE, lower the nose and extend the speed brakes.\""}, {"q": "Penetration descent rate:", "opts": ["2,000-3,000 fpm", "6,000-8,000 fpm", "1,000 fpm", "4,000-6,000 fpm"], "ans": 3, "expl": "Correct: 4,000-6,000 fpm · Source: \"Adjust nose attitude as required to maintain 250 KIAS and 4,000-6,000 fpm descent (approximately 10 degrees nose down).\""}, {"q": "Penetration nose attitude (approx.):", "opts": ["5 degrees nose down", "2 degrees nose down", "10 degrees nose down", "15 degrees nose down"], "ans": 2, "expl": "Correct: 10 degrees nose down · Source: \"...(approximately 10 degrees nose down).\""}, {"q": "Penetration airspeed maintained:", "opts": ["300 KIAS", "200 KIAS", "250 KIAS", "150 KIAS"], "ans": 2, "expl": "Correct: 250 KIAS · Source: \"Adjust nose attitude as required to maintain 250 KIAS and 4,000-6,000 fpm descent\""}, {"q": "When a penetration turn altitude is not published, start the turn:", "opts": ["At 10 DME", "After descending one third of the altitude", "After descending one half the total altitude between the IAF and FAF altitudes", "At 5,000 ft AGL"], "ans": 2, "expl": "Correct: After descending one half the total altitude between the IAF and FAF altitudes · Source: \"When a penetration turn altitude is not published, start the turn after descending one half the total altitude between the IAF and FAF altitudes.\""}, {"q": "Before reaching the penetration turn altitude:", "opts": ["Configure for landing", "Set the final approach course in the HSI", "Report gear down", "Retract the speed brakes"], "ans": 1, "expl": "Correct: Set the final approach course in the HSI · Source: \"Before reaching the penetration turn altitude set the final approach course in the HSI.\""}, {"q": "Maximum AOB to intercept the final during the penetration:", "opts": ["45 degrees", "10 degrees", "20 degrees", "30 degrees"], "ans": 3, "expl": "Correct: 30 degrees · Source: \"Do not exceed 30 degrees AOB to intercept the final and do not descend below the depicted turn completion altitude until established on the final approach course.\""}, {"q": "Do not descend below the depicted turn completion altitude until:", "opts": ["Passing the IAF", "Established on the final approach course", "Speed brakes are retracted", "The LAW sounds"], "ans": 1, "expl": "Correct: Established on the final approach course · Source: \"...do not descend below the depicted turn completion altitude until established on the final approach course.\""}, {"q": "NOTE for the penetration descent:", "opts": ["Do not exceed 10 degrees AOB", "Do not exceed 1,000 fpm", "Do not exceed the \"minute-to-live\" rule", "Do not extend speed brakes above 250 KIAS"], "ans": 2, "expl": "Correct: Do not exceed the \"minute-to-live\" rule · Source: \"NOTE Do not exceed the \"minute-to-live\" rule in the penetration descent.\""}];
+
+function showFig(q){const p=document.getElementById('figpanel');if(q&&q.fig){document.body.classList.add('hasfig');const im=document.getElementById('figimg');if(im.getAttribute('src')!==q.fig[0]){im.src=q.fig[0];im.alt=q.fig[1];}document.getElementById('figcap').textContent=q.fig[1]+' (tap to open full size)';}else{document.body.classList.remove('hasfig');}}
+const QUESTIONS = [{"q": "High altitude penetration is commenced by:", "opts": ["Lowering the nose and accelerating to 250 KIAS", "Reducing to idle at 200 KIAS", "Turning to the final approach course", "Extending speed brakes at cruise speed"], "ans": 0, "expl": "Correct: Lowering the nose and accelerating to 250 KIAS · Source: \"...Commence a high altitude penetration by lowering the nose and accelerating to 250 KIAS.\""}, {"q": "At 250 KIAS in the penetration you:", "opts": ["Configure for landing", "Reduce power to flight IDLE, lower the nose and extend the speed brakes", "Reduce to 700 pph and lower the nose 1-2 degrees", "Advance to MRT"], "ans": 1, "expl": "Correct: Reduce power to flight IDLE, lower the nose and extend the speed brakes · Source: \"At 250 KIAS, reduce power to flight IDLE, lower the nose and extend the speed brakes.\""}, {"q": "Penetration descent rate:", "opts": ["2,000-3,000 fpm", "6,000-8,000 fpm", "4,000-6,000 fpm", "1,000 fpm"], "ans": 2, "expl": "Correct: 4,000-6,000 fpm · Source: \"Adjust nose attitude as required to maintain 250 KIAS and 4,000-6,000 fpm descent (approximately 10 degrees nose down).\""}, {"q": "Penetration nose attitude (approx.):", "opts": ["15 degrees nose down", "2 degrees nose down", "5 degrees nose down", "10 degrees nose down"], "ans": 3, "expl": "Correct: 10 degrees nose down · Source: \"...(approximately 10 degrees nose down).\""}, {"q": "Penetration airspeed maintained:", "opts": ["300 KIAS", "200 KIAS", "250 KIAS", "150 KIAS"], "ans": 2, "expl": "Correct: 250 KIAS · Source: \"Adjust nose attitude as required to maintain 250 KIAS and 4,000-6,000 fpm descent\""}, {"q": "When a penetration turn altitude is not published, start the turn:", "opts": ["After descending one half the total altitude between the IAF and FAF altitudes", "After descending one third of the altitude", "At 10 DME", "At 5,000 ft AGL"], "ans": 0, "expl": "Correct: After descending one half the total altitude between the IAF and FAF altitudes · Source: \"When a penetration turn altitude is not published, start the turn after descending one half the total altitude between the IAF and FAF altitudes.\""}, {"q": "Before reaching the penetration turn altitude:", "opts": ["Report gear down", "Retract the speed brakes", "Configure for landing", "Set the final approach course in the HSI"], "ans": 3, "expl": "Correct: Set the final approach course in the HSI · Source: \"Before reaching the penetration turn altitude set the final approach course in the HSI.\""}, {"q": "Maximum AOB to intercept the final during the penetration:", "opts": ["30 degrees", "20 degrees", "10 degrees", "45 degrees"], "ans": 0, "expl": "Correct: 30 degrees · Source: \"Do not exceed 30 degrees AOB to intercept the final and do not descend below the depicted turn completion altitude until established on the final approach course.\""}, {"q": "Do not descend below the depicted turn completion altitude until:", "opts": ["The LAW sounds", "Established on the final approach course", "Speed brakes are retracted", "Passing the IAF"], "ans": 1, "expl": "Correct: Established on the final approach course · Source: \"...do not descend below the depicted turn completion altitude until established on the final approach course.\""}, {"q": "NOTE for the penetration descent:", "opts": ["Do not exceed 10 degrees AOB", "Do not exceed the \"minute-to-live\" rule", "Do not extend speed brakes above 250 KIAS", "Do not exceed 1,000 fpm"], "ans": 1, "expl": "Correct: Do not exceed the \"minute-to-live\" rule · Source: \"NOTE Do not exceed the \"minute-to-live\" rule in the penetration descent.\""}];
 let idx = 0, mastered = 0, misses = 0, answered = false, history = [];
 let queue = QUESTIONS.map((_, i) => i);
 
@@ -180,7 +193,7 @@ function render() {
   $("prog-label").textContent = `Mastered ${mastered} of ${QUESTIONS.length} · ${queue.length - idx} in queue`;
   $("score-live").textContent = `Score: ${mastered}/${QUESTIONS.length} · Misses: ${misses}`;
   $("bar-fill").style.width = `${(mastered/QUESTIONS.length)*100}%`;
-  $("q-text").textContent = q.q;
+  $("q-text").textContent = q.q; showFig(q); if(q.fig) document.getElementById("figlink").href=q.fig[0];
   $("expl").className = "expl";
   $("expl").textContent = "";
   $("next-btn").disabled = true;

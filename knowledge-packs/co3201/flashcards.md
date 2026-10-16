@@ -48,10 +48,6 @@
 **A:** 10% AOB  
 > Lead point for roll-out: 10% AOB
 
-**Q:** Using the 10% AOB lead, roll-out from a 30-degree AOB turn begins about how many degrees before the desired heading?  
-**A:** 3 degrees  
-> Use a lead point of approximately 10% of the angle of bank for initiating your roll-out.
-
 **Q:** The turn pattern consists of:  
 **A:** Three pairs of left and right turns  
 > Consisting of three pairs of left and right turns, the turn pattern gives you practice in smoothly performing a series of linked turns at a constant altitude and airspeed.
@@ -484,10 +480,6 @@
 **A:** 10% of your VSI  
 > Lead all level offs by 10% of your VSI.
 
-**Q:** Using the 10% VSI rule, at 1,000 fpm you begin the level off about:  
-**A:** 100 ft prior  
-> Lead all level offs by 10% of your VSI.
-
 **Q:** Low altitude TACAN/VOR DME approach procedures are:  
 **A:** Essentially the same as those used for a high altitude penetration  
 > When executing a low altitude TACAN/VOR DME approach, the procedures are essentially the same as those used for a high altitude penetration.
@@ -879,4 +871,212 @@
 **Q:** Decision altitude (DA) is used on the ___; MDA/MAP on the ___.  
 **A:** PAR; ASR  
 > If you do not have the runway environment in sight when you reach the DA, execute a missed approach … Upon reaching the MAP, if you do not have the runway in sight … execute the missed approach as instructed.
+
+**Q:** Figure 3-1: how long does each maneuver (the descent, the climb) last?  
+**A:** 1 minute  
+> S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS.
+
+**Q:** Figure 3-1: the S-1 descent/climb sequence is performed:  
+**A:** A minimum of two times  
+> S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS.
+
+**Q:** Figure 3-1: the entire S-1 maneuver is flown on:  
+**A:** A constant heading and at a constant airspeed of 200 KIAS  
+> S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS.
+
+**Q:** Figure 3-1: the S-1 pattern consists of:  
+**A:** A 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft  
+> S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS.
+
+**Q:** Figure 3-1: transition at the top into each descent (in order):  
+**A:** 1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS  
+> Figure 3-1 (diagram): Transition — 1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS
+
+**Q:** Figure 3-1: transition at the bottom into each climb (in order):  
+**A:** 1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS  
+> Figure 3-1 (diagram): Transition — 1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS
+
+**Q:** Figure 3-1: the final transition at the top (end of the maneuver):  
+**A:** 1. Reduce RPM to level flight setting 2. Lower nose to level flight  
+> Figure 3-1 (diagram): Transition — 1. Reduce RPM to level flight setting 2. Lower nose to level flight
+
+**Q:** Figure 3-1: first step of the transition into a descent:  
+**A:** Reduce RPM  
+> Figure 3-1 (diagram): Transition — 1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS
+
+**Q:** Figure 3-1: first step of the transition into a climb:  
+**A:** Throttle to climb power  
+> Figure 3-1 (diagram): Transition — 1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS
+
+**Q:** Figure 3-1: the bottom transitions are started:  
+**A:** 100 ft or 3 sec prior to the 12  
+> Figure 3-1 (diagram): 100 ft or 3 sec prior to the 12
+
+**Q:** Figure 3-1: what altitude mark is shown on the climbs?  
+**A:** 900 ft  
+> Figure 3-1 (diagram): 900 ft (marked on the climbs)
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment A is:  
+**A:** LEVEL FLIGHT  
+> Figure 3-3 legend: A. LEVEL FLIGHT
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment B is:  
+**A:** LEVEL SPEED CHANGE  
+> Figure 3-3 legend: B. LEVEL SPEED CHANGE
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment C is:  
+**A:** 90-DEGREE TURN (30° AOB)  
+> Figure 3-3 legend: C. 90-DEGREE TURN (30° AOB)
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment D is:  
+**A:** LANDING CONFIGURATION  
+> Figure 3-3 legend: D. LANDING CONFIGURATION
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment E is:  
+**A:** 45-DEGREE TURN (20° AOB)  
+> Figure 3-3 legend: E. 45-DEGREE TURN (20° AOB)
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment F is:  
+**A:** 45-DEGREE TURN (20° AOB)  
+> Figure 3-3 legend: F. 45-DEGREE TURN (20° AOB)
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment G is:  
+**A:** FINAL APPROACH SPEED  
+> Figure 3-3 legend: G. FINAL APPROACH SPEED
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment H is:  
+**A:** 30-DEGREE TURN (10° AOB)  
+> Figure 3-3 legend: H. 30-DEGREE TURN (10° AOB)
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment I is:  
+**A:** 30-DEGREE TURN (10° AOB)  
+> Figure 3-3 legend: I. 30-DEGREE TURN (10° AOB)
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment J is:  
+**A:** ON-SPEED DESCENT  
+> Figure 3-3 legend: J. ON-SPEED DESCENT
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment K is:  
+**A:** ON-SPEED LEVEL FLIGHT  
+> Figure 3-3 legend: K. ON-SPEED LEVEL FLIGHT
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment L is:  
+**A:** MISSED APPROACH  
+> Figure 3-3 legend: L. MISSED APPROACH
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment M is:  
+**A:** SLOW CRUISE  
+> Figure 3-3 legend: M. SLOW CRUISE
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment N is:  
+**A:** LEVEL SPEED CHANGE  
+> Figure 3-3 legend: N. LEVEL SPEED CHANGE
+
+**Q:** Figure 3-3 Slow Flight Maneuver: segment O is:  
+**A:** LEVEL FLIGHT  
+> Figure 3-3 legend: O. LEVEL FLIGHT
+
+**Q:** Figure 3-3: which segment letter(s) are "LEVEL FLIGHT"?  
+**A:** A and O  
+> Figure 3-3 legend: A. LEVEL FLIGHT; O. LEVEL FLIGHT
+
+**Q:** Figure 3-3: which segment letter(s) are "LEVEL SPEED CHANGE"?  
+**A:** B and N  
+> Figure 3-3 legend: B. LEVEL SPEED CHANGE; N. LEVEL SPEED CHANGE
+
+**Q:** Figure 3-3: which segment letter(s) are "90-DEGREE TURN (30° AOB)"?  
+**A:** C  
+> Figure 3-3 legend: C. 90-DEGREE TURN (30° AOB)
+
+**Q:** Figure 3-3: which segment letter(s) are "LANDING CONFIGURATION"?  
+**A:** D  
+> Figure 3-3 legend: D. LANDING CONFIGURATION
+
+**Q:** Figure 3-3: which segment letter(s) are "45-DEGREE TURN (20° AOB)"?  
+**A:** E and F  
+> Figure 3-3 legend: E. 45-DEGREE TURN (20° AOB); F. 45-DEGREE TURN (20° AOB)
+
+**Q:** Figure 3-3: which segment letter(s) are "FINAL APPROACH SPEED"?  
+**A:** G  
+> Figure 3-3 legend: G. FINAL APPROACH SPEED
+
+**Q:** Figure 3-3: which segment letter(s) are "30-DEGREE TURN (10° AOB)"?  
+**A:** H and I  
+> Figure 3-3 legend: H. 30-DEGREE TURN (10° AOB); I. 30-DEGREE TURN (10° AOB)
+
+**Q:** Figure 3-3: which segment letter(s) are "ON-SPEED DESCENT"?  
+**A:** J  
+> Figure 3-3 legend: J. ON-SPEED DESCENT
+
+**Q:** Figure 3-3: which segment letter(s) are "ON-SPEED LEVEL FLIGHT"?  
+**A:** K  
+> Figure 3-3 legend: K. ON-SPEED LEVEL FLIGHT
+
+**Q:** Figure 3-3: which segment letter(s) are "MISSED APPROACH"?  
+**A:** L  
+> Figure 3-3 legend: L. MISSED APPROACH
+
+**Q:** Figure 3-3: which segment letter(s) are "SLOW CRUISE"?  
+**A:** M  
+> Figure 3-3 legend: M. SLOW CRUISE
+
+**Q:** Figure 3-3: which segment follows A (LEVEL FLIGHT)?  
+**A:** B. LEVEL SPEED CHANGE  
+> Figure 3-3 legend: A. LEVEL FLIGHT → B. LEVEL SPEED CHANGE
+
+**Q:** Figure 3-3: which segment follows B (LEVEL SPEED CHANGE)?  
+**A:** C. 90-DEGREE TURN (30° AOB)  
+> Figure 3-3 legend: B. LEVEL SPEED CHANGE → C. 90-DEGREE TURN (30° AOB)
+
+**Q:** Figure 3-3: which segment follows C (90-DEGREE TURN (30° AOB))?  
+**A:** D. LANDING CONFIGURATION  
+> Figure 3-3 legend: C. 90-DEGREE TURN (30° AOB) → D. LANDING CONFIGURATION
+
+**Q:** Figure 3-3: which segment follows D (LANDING CONFIGURATION)?  
+**A:** E. 45-DEGREE TURN (20° AOB)  
+> Figure 3-3 legend: D. LANDING CONFIGURATION → E. 45-DEGREE TURN (20° AOB)
+
+**Q:** Figure 3-3: which segment follows E (45-DEGREE TURN (20° AOB))?  
+**A:** F. 45-DEGREE TURN (20° AOB)  
+> Figure 3-3 legend: E. 45-DEGREE TURN (20° AOB) → F. 45-DEGREE TURN (20° AOB)
+
+**Q:** Figure 3-3: which segment follows F (45-DEGREE TURN (20° AOB))?  
+**A:** G. FINAL APPROACH SPEED  
+> Figure 3-3 legend: F. 45-DEGREE TURN (20° AOB) → G. FINAL APPROACH SPEED
+
+**Q:** Figure 3-3: which segment follows G (FINAL APPROACH SPEED)?  
+**A:** H. 30-DEGREE TURN (10° AOB)  
+> Figure 3-3 legend: G. FINAL APPROACH SPEED → H. 30-DEGREE TURN (10° AOB)
+
+**Q:** Figure 3-3: which segment follows H (30-DEGREE TURN (10° AOB))?  
+**A:** I. 30-DEGREE TURN (10° AOB)  
+> Figure 3-3 legend: H. 30-DEGREE TURN (10° AOB) → I. 30-DEGREE TURN (10° AOB)
+
+**Q:** Figure 3-3: which segment follows I (30-DEGREE TURN (10° AOB))?  
+**A:** J. ON-SPEED DESCENT  
+> Figure 3-3 legend: I. 30-DEGREE TURN (10° AOB) → J. ON-SPEED DESCENT
+
+**Q:** Figure 3-3: which segment follows J (ON-SPEED DESCENT)?  
+**A:** K. ON-SPEED LEVEL FLIGHT  
+> Figure 3-3 legend: J. ON-SPEED DESCENT → K. ON-SPEED LEVEL FLIGHT
+
+**Q:** Figure 3-3: which segment follows K (ON-SPEED LEVEL FLIGHT)?  
+**A:** L. MISSED APPROACH  
+> Figure 3-3 legend: K. ON-SPEED LEVEL FLIGHT → L. MISSED APPROACH
+
+**Q:** Figure 3-3: which segment follows L (MISSED APPROACH)?  
+**A:** M. SLOW CRUISE  
+> Figure 3-3 legend: L. MISSED APPROACH → M. SLOW CRUISE
+
+**Q:** Figure 3-3: which segment follows M (SLOW CRUISE)?  
+**A:** N. LEVEL SPEED CHANGE  
+> Figure 3-3 legend: M. SLOW CRUISE → N. LEVEL SPEED CHANGE
+
+**Q:** Figure 3-3: which segment follows N (LEVEL SPEED CHANGE)?  
+**A:** O. LEVEL FLIGHT  
+> Figure 3-3 legend: N. LEVEL SPEED CHANGE → O. LEVEL FLIGHT
+
+**Q:** Figure 3-3: how many lettered segments (A through O) are in the slow flight maneuver legend?  
+**A:** 15  
+> Figure 3-3 legend: A. LEVEL FLIGHT … O. LEVEL FLIGHT
 

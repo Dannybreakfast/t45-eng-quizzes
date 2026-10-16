@@ -1,6 +1,6 @@
 # CO3201 — Source Text (verbatim)
 
-> Source: provided by Dan Beckham. Wording kept verbatim; only obvious typos fixed ("straight-and- level" → "straight-and-level"; missing space before "S-1 Pattern.png"). Figures referenced in the source are not included.
+> Source: provided by Dan Beckham. Wording kept verbatim; only obvious typos fixed ("straight-and- level" → "straight-and-level"; missing space before "S-1 Pattern.png"). Figures 3-1 and 3-3 were provided separately; Figures 6-28, 6-29 and 6-31 are not included.
 
 ## Turn Pattern
 
@@ -49,7 +49,25 @@ Wings Level Speed Decrease. To perform normal airspeed decreases, reduce the pow
 11. Establish level flight at slow cruise (200 KIAS).
 12. Perform a level speed change from 200 to 250 KIAS
 
-*[Figure not included: "Slow flight maneuver.png"]*
+![Figure 3-3 Slow Flight Maneuver](../../img/co3201/slow-flight.png)
+
+**Figure 3-3 Slow Flight Maneuver** — legend:
+
+- A. LEVEL FLIGHT
+- B. LEVEL SPEED CHANGE
+- C. 90-DEGREE TURN (30° AOB)
+- D. LANDING CONFIGURATION
+- E. 45-DEGREE TURN (20° AOB)
+- F. 45-DEGREE TURN (20° AOB)
+- G. FINAL APPROACH SPEED
+- H. 30-DEGREE TURN (10° AOB)
+- I. 30-DEGREE TURN (10° AOB)
+- J. ON-SPEED DESCENT
+- K. ON-SPEED LEVEL FLIGHT
+- L. MISSED APPROACH
+- M. SLOW CRUISE
+- N. LEVEL SPEED CHANGE
+- O. LEVEL FLIGHT
 
 ## S-1 Pattern
 
@@ -61,7 +79,17 @@ Wings Level Speed Decrease. To perform normal airspeed decreases, reduce the pow
 
 Initiate the maneuver at an airspeed of 200 KIAS by reducing power to approximately 700 pph and lowering the nose approximately 1-2 degrees, 3 seconds before the second hand reaches the 12 o'clock position on the clock. Descend at 1,000 fpm for 1,000 ft and then climb at 1,000 fpm for 1,000 ft. In order to transition from descent to climb and back to descent at the proper altitudes, start your transition 100 ft or 3 seconds (whichever occurs first) prior to the end of a climb or descent.
 
-*[Figure not included: "S-1 Pattern.png"]*
+![Figure 3-1 S-1 Pattern](../../img/co3201/s1-pattern.png)
+
+S-1 Pattern. The S-1 pattern consists of a 1,000-fpm descent for 1,000 ft followed by a 1,000-fpm climb for 1,000 ft (each maneuver lasting 1 minute in duration). This descent/climb sequence is performed a minimum of two times (Figure 3-1). Fly the entire maneuver on a constant heading and at a constant airspeed of 200 KIAS.
+
+**Figure 3-1 S-1 Pattern** — diagram text:
+
+- Transition (at the top, into each descent): 1. Reduce RPM 2. Lower nose 3. Maintain 200 KIAS
+- Transition (final, at the top): 1. Reduce RPM to level flight setting 2. Lower nose to level flight
+- Transition (at the bottom, into each climb): 1. Throttle to climb power 2. Raise nose 3. Maintain 200 KIAS
+- 100 ft or 3 sec prior to the 12
+- Labels: 200 KIAS · 3 sec · Constant heading · 1000 ft · 900 ft (marked on the climbs) · 100 ft · 12
 
 ## High-Altitude Penetration
 
